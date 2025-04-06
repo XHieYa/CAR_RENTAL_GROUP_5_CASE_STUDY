@@ -29,6 +29,8 @@ Public Class Form1
 
         If count > 0 Then
             MessageBox.Show("Login Successfully", "info", MessageBoxButtons.OK, MessageBoxIcon.Information) 'Will be key to transfering to next Form
+            Me.Hide()
+            Form2.Show()
         Else
             MessageBox.Show("Login Error") 'Error Message if account is not existing
 
@@ -52,7 +54,7 @@ Public Class Form1
         Next
         Dim username As String = siusername.Text 'for username checker turns siusername to username variable
         If UsernameExists(username) Then 'uses the UsernameExists Function mentioned above
-            MessageBox.Show("Username already exists. Please choose a different username.", "Info", MessageBoxButtons.OK, MessageBoxIcon.Information) 'Error Message if Username is Already Existing
+            MessageBox.Show("Username already exists. Use Another Username", "Info", MessageBoxButtons.OK, MessageBoxIcon.Information) 'Error Message if Username is Already Existing
         Else
             Try
                 Dim query As String = "Insert Into login (Username, Fullname, Password, Age, Sex, Address, Date) VALUES (@Username, @Fullname, @Password, @Age, @Sex, @Address, @Date)" 'Basically putting the value on their own cells for the database
