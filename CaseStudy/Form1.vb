@@ -68,7 +68,7 @@ Public Class Form1
                 command.Parameters.AddWithValue("@Date", DateTimePickerDOB.Value.Date)
                 con.Open()
                 command.ExecuteNonQuery() 'Used to create or change data within the database
-                MessageBox.Show("Successfuly Registered Please Log-in", "INFO", MessageBoxButtons.OK, MessageBoxIcon.Information) 'Message confirming your info has been saved
+                MessageBox.Show("Successfuly Registered Please Log-in", "inf", MessageBoxButtons.OK, MessageBoxIcon.Information) 'Message confirming your info has been saved
             Catch ex As Exception
                 MessageBox.Show($"Error adding account: {ex.Message} ") 'Error message if smthng happen within the server
             Finally
