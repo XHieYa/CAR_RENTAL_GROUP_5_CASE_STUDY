@@ -28,7 +28,7 @@ Public Class Form1
         con.Close()
 
         If count > 0 Then
-            MessageBox.Show("Login Successfully", "Info", MessageBoxButtons.OK, MessageBoxIcon.Information) 'Will be key to transfering to next Form
+            MessageBox.Show("Login Successfully", "info", MessageBoxButtons.OK, MessageBoxIcon.Information) 'Will be key to transfering to next Form
             Me.Hide()
             Form2.Show()
         Else
@@ -68,7 +68,7 @@ Public Class Form1
                 command.Parameters.AddWithValue("@Date", DateTimePickerDOB.Value.Date)
                 con.Open()
                 command.ExecuteNonQuery() 'Used to create or change data within the database
-                MessageBox.Show("Successfuly Registered Please Log-in", "INFO", MessageBoxButtons.OK, MessageBoxIcon.Information) 'Message confirming your info has been saved
+                MessageBox.Show("Successfuly Registered Please Log-in", "info", MessageBoxButtons.OK, MessageBoxIcon.Information) 'Message confirming your info has been saved
             Catch ex As Exception
                 MessageBox.Show($"Error adding account: {ex.Message} ") 'Error message if smthng happen within the server
             Finally
