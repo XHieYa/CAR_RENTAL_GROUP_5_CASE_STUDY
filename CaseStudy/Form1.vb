@@ -28,7 +28,7 @@ Public Class Form1
         con.Close()
 
         If count > 0 Then
-            MessageBox.Show("Login Successfully", "info", MessageBoxButtons.OK, MessageBoxIcon.Information) 'Will be key to transfering to next Form
+            MessageBox.Show("Login Successfully", "INFO", MessageBoxButtons.OK, MessageBoxIcon.Information) 'Will be key to transfering to next Form
             Me.Hide()
             Form2.Show()
         Else
@@ -47,7 +47,7 @@ Public Class Form1
         For Each item As Control In GroupBox2.Controls 'Checks if every Box Is accounted for
             If (TypeOf item Is TextBox) Then
                 If (item.Text = "") Then
-                    MessageBox.Show("All Fields Must be Filled up", "Info", MessageBoxButtons.OK, MessageBoxIcon.Information) 'Error message if things are not field up
+                    MessageBox.Show("All Fields Must be Filled up", "INFO", MessageBoxButtons.OK, MessageBoxIcon.Information) 'Error message if things are not field up
                     Return
                 End If
             End If
