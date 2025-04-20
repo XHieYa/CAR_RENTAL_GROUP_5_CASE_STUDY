@@ -30,7 +30,6 @@ Public Class Form1
         If count > 0 Then
             MessageBox.Show("Login Successfully", "info", MessageBoxButtons.OK, MessageBoxIcon.Information) 'Will be key to transfering to next Form
             Me.Hide()
-            Form2.Show()
         Else
             MessageBox.Show("Login Error") 'Error Message if account is not existing
 
