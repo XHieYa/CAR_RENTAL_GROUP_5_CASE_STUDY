@@ -54,7 +54,7 @@ Public Class LoginForm
         Next
         Dim username As String = siusername.Text 'for username checker turns siusername to username variable
         If UsernameExists(username) Then 'uses the UsernameExists Function mentioned above
-            MessageBox.Show("Username already exists. Use Another Username", "INFO", MessageBoxButtons.OK, MessageBoxIcon.Information) 'Error Message if Username is Already Existing
+            MessageBox.Show("Username already exists. Use Another Username", "Info", MessageBoxButtons.OK, MessageBoxIcon.Information) 'Error Message if Username is Already Existing
         Else
             Try
                 Dim query As String = "Insert Into login (Username, Fullname, Password, Age, Sex, Address, Date) VALUES (@Username, @Fullname, @Password, @Age, @Sex, @Address, @Date)" 'Basically putting the value on their own cells for the database
@@ -68,7 +68,7 @@ Public Class LoginForm
                 command.Parameters.AddWithValue("@Date", DateTimePickerDOB.Value.Date)
                 con.Open()
                 command.ExecuteNonQuery() 'Used to create or change data within the database
-                MessageBox.Show("Successfuly Registered Please Log-in", "INFO", MessageBoxButtons.OK, MessageBoxIcon.Information) 'Message confirming your info has been saved
+                MessageBox.Show("Successfuly Registered Please Log-in", "info", MessageBoxButtons.OK, MessageBoxIcon.Information) 'Message confirming your info has been saved
             Catch ex As Exception
                 MessageBox.Show($"Error adding account: {ex.Message} ") 'Error message if smthng happen within the server
             Finally
