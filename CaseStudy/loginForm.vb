@@ -15,6 +15,7 @@ Public Class loginForm
             MessageBox.Show("An error occurred: " & ex.Message)
             Return False
         Finally
+
             con.Close() 'Closes Connection to SQL
         End Try
     End Function
@@ -30,7 +31,7 @@ Public Class loginForm
         If count > 0 Then
             MessageBox.Show("Login Successfully", "info", MessageBoxButtons.OK, MessageBoxIcon.Information) 'Will be key to transfering to next Form
             Me.Hide()
-            Form1.Show()
+            Dashboard.Show()
         Else
             MessageBox.Show("Login Error") 'Error Message if account is not existing
 
@@ -97,5 +98,17 @@ Public Class loginForm
         If Not Char.IsControl(e.KeyChar) AndAlso Not Char.IsDigit(e.KeyChar) Then
             e.Handled = True
         End If
+    End Sub
+
+    Private Sub LinkLabel2_LinkClicked(sender As Object, e As LinkLabelLinkClickedEventArgs) Handles LinkLabel2.LinkClicked
+        siusername.Text = "" 'clears sign in for privacy
+        sifullname.Text = ""
+        siage.Text = ""
+        sipassword.Text = ""
+        siaddress.Text = ""
+        Cmbsex.Items.Clear()
+        DateTimePickerDOB.Value = Now
+        GroupBox2.Enabled = False 'Makes you relogin to ensure you created the account and it works succesfully
+        GroupBox1.Enabled = True
     End Sub
 End Class

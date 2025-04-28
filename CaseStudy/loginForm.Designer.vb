@@ -32,6 +32,7 @@ Partial Class loginForm
         Label3 = New Label()
         Label1 = New Label()
         GroupBox2 = New GroupBox()
+        LinkLabel2 = New LinkLabel()
         Label11 = New Label()
         sifullname = New TextBox()
         Cmbsex = New ComboBox()
@@ -48,6 +49,7 @@ Partial Class loginForm
         Label6 = New Label()
         Label5 = New Label()
         Label2 = New Label()
+        Cmbage = New ComboBox()
         GroupBox1.SuspendLayout()
         GroupBox2.SuspendLayout()
         SuspendLayout()
@@ -142,6 +144,8 @@ Partial Class loginForm
         ' 
         ' GroupBox2
         ' 
+        GroupBox2.Controls.Add(Cmbage)
+        GroupBox2.Controls.Add(LinkLabel2)
         GroupBox2.Controls.Add(Label11)
         GroupBox2.Controls.Add(sifullname)
         GroupBox2.Controls.Add(Cmbsex)
@@ -163,6 +167,16 @@ Partial Class loginForm
         GroupBox2.Size = New Size(393, 447)
         GroupBox2.TabIndex = 1
         GroupBox2.TabStop = False
+        ' 
+        ' LinkLabel2
+        ' 
+        LinkLabel2.AutoSize = True
+        LinkLabel2.Location = New Point(6, 263)
+        LinkLabel2.Name = "LinkLabel2"
+        LinkLabel2.Size = New Size(182, 15)
+        LinkLabel2.TabIndex = 8
+        LinkLabel2.TabStop = True
+        LinkLabel2.Text = "Have an Account already? Log-in"
         ' 
         ' Label11
         ' 
@@ -299,14 +313,23 @@ Partial Class loginForm
         Label2.TabIndex = 1
         Label2.Text = "Sign-In"
         ' 
-        ' Form1
+        ' Cmbage
+        ' 
+        Cmbage.FormattingEnabled = True
+        Cmbage.Items.AddRange(New Object() {"1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12", "13", "14", "15", "16", "17", "18", "19", "20", "21", "22", "23", "24", "25", "26", "27", "28", "29", "30", "31", "32", "33", "34", "35", "36", "37", "38", "39", "40", "41", "42", "43", "44", "45", "46", "47", "48", "49", "50", "51", "52", "53", "54", "55", "56", "57", "58", "59", "60", "61", "62", "63", "64", "65", "66", "67", "68", "69", "70", "71", "72", "73", "74", "75", "76", "77", "78", "79", "80", "81", "82", "83", "84", "85", "86", "87", "88", "89", "90", "91", "92", "93", "94", "95", "96", "97", "98", "99", "100"})
+        Cmbage.Location = New Point(262, 112)
+        Cmbage.Name = "Cmbage"
+        Cmbage.Size = New Size(41, 23)
+        Cmbage.TabIndex = 19
+        ' 
+        ' loginForm
         ' 
         AutoScaleDimensions = New SizeF(7F, 15F)
         AutoScaleMode = AutoScaleMode.Font
         ClientSize = New Size(800, 450)
         Controls.Add(GroupBox2)
         Controls.Add(GroupBox1)
-        Name = "Form1"
+        Name = "loginForm"
         Text = "Form1"
         GroupBox1.ResumeLayout(False)
         GroupBox1.PerformLayout()
@@ -341,5 +364,7 @@ Partial Class loginForm
     Friend WithEvents CheckBox1 As CheckBox
     Friend WithEvents Label11 As Label
     Friend WithEvents sifullname As TextBox
+    Friend WithEvents LinkLabel2 As LinkLabel
+    Friend WithEvents Cmbage As ComboBox
 
 End Class
