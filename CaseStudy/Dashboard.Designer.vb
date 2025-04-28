@@ -24,6 +24,7 @@ Partial Class Dashboard
     Private Sub InitializeComponent()
         TabControl1 = New TabControl()
         TabPage1 = New TabPage()
+        lblDOB = New Label()
         lblAddress = New Label()
         lblSex = New Label()
         lblAge = New Label()
@@ -31,17 +32,22 @@ Partial Class Dashboard
         Label2 = New Label()
         lblgreet = New Label()
         TabPage2 = New TabPage()
-        TabPage3 = New TabPage()
-        lblDOB = New Label()
+        Label3 = New Label()
+        Label1 = New Label()
+        BtnUpdate = New Button()
+        ToDOB = New DateTimePicker()
+        FromDOB = New DateTimePicker()
+        DGLogs = New DataGridView()
         TabControl1.SuspendLayout()
         TabPage1.SuspendLayout()
+        TabPage2.SuspendLayout()
+        CType(DGLogs, ComponentModel.ISupportInitialize).BeginInit()
         SuspendLayout()
         ' 
         ' TabControl1
         ' 
         TabControl1.Controls.Add(TabPage1)
         TabControl1.Controls.Add(TabPage2)
-        TabControl1.Controls.Add(TabPage3)
         TabControl1.Location = New Point(-1, -2)
         TabControl1.Name = "TabControl1"
         TabControl1.SelectedIndex = 0
@@ -64,6 +70,15 @@ Partial Class Dashboard
         TabPage1.TabIndex = 0
         TabPage1.Text = "Home"
         TabPage1.UseVisualStyleBackColor = True
+        ' 
+        ' lblDOB
+        ' 
+        lblDOB.AutoSize = True
+        lblDOB.Location = New Point(6, 93)
+        lblDOB.Name = "lblDOB"
+        lblDOB.Size = New Size(112, 15)
+        lblDOB.TabIndex = 6
+        lblDOB.Text = "Date Of Birth: [User]"
         ' 
         ' lblAddress
         ' 
@@ -121,6 +136,12 @@ Partial Class Dashboard
         ' 
         ' TabPage2
         ' 
+        TabPage2.Controls.Add(Label3)
+        TabPage2.Controls.Add(Label1)
+        TabPage2.Controls.Add(BtnUpdate)
+        TabPage2.Controls.Add(ToDOB)
+        TabPage2.Controls.Add(FromDOB)
+        TabPage2.Controls.Add(DGLogs)
         TabPage2.Location = New Point(4, 24)
         TabPage2.Name = "TabPage2"
         TabPage2.Padding = New Padding(3)
@@ -129,23 +150,54 @@ Partial Class Dashboard
         TabPage2.Text = "Logs"
         TabPage2.UseVisualStyleBackColor = True
         ' 
-        ' TabPage3
+        ' Label3
         ' 
-        TabPage3.Location = New Point(4, 24)
-        TabPage3.Name = "TabPage3"
-        TabPage3.Size = New Size(794, 427)
-        TabPage3.TabIndex = 2
-        TabPage3.Text = "Settings"
-        TabPage3.UseVisualStyleBackColor = True
+        Label3.AutoSize = True
+        Label3.Location = New Point(315, 397)
+        Label3.Name = "Label3"
+        Label3.Size = New Size(25, 15)
+        Label3.TabIndex = 5
+        Label3.Text = "To: "
         ' 
-        ' lblDOB
+        ' Label1
         ' 
-        lblDOB.AutoSize = True
-        lblDOB.Location = New Point(6, 93)
-        lblDOB.Name = "lblDOB"
-        lblDOB.Size = New Size(112, 15)
-        lblDOB.TabIndex = 6
-        lblDOB.Text = "Date Of Birth: [User]"
+        Label1.AutoSize = True
+        Label1.Location = New Point(44, 397)
+        Label1.Name = "Label1"
+        Label1.Size = New Size(38, 15)
+        Label1.TabIndex = 4
+        Label1.Text = "From:"
+        ' 
+        ' BtnUpdate
+        ' 
+        BtnUpdate.Location = New Point(666, 393)
+        BtnUpdate.Name = "BtnUpdate"
+        BtnUpdate.Size = New Size(75, 23)
+        BtnUpdate.TabIndex = 3
+        BtnUpdate.Text = "Update"
+        BtnUpdate.UseVisualStyleBackColor = True
+        ' 
+        ' ToDOB
+        ' 
+        ToDOB.Location = New Point(346, 393)
+        ToDOB.Name = "ToDOB"
+        ToDOB.Size = New Size(200, 23)
+        ToDOB.TabIndex = 2
+        ' 
+        ' FromDOB
+        ' 
+        FromDOB.Location = New Point(88, 393)
+        FromDOB.Name = "FromDOB"
+        FromDOB.Size = New Size(200, 23)
+        FromDOB.TabIndex = 1
+        ' 
+        ' DGLogs
+        ' 
+        DGLogs.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize
+        DGLogs.Location = New Point(0, 0)
+        DGLogs.Name = "DGLogs"
+        DGLogs.Size = New Size(794, 376)
+        DGLogs.TabIndex = 0
         ' 
         ' Dashboard
         ' 
@@ -158,13 +210,15 @@ Partial Class Dashboard
         TabControl1.ResumeLayout(False)
         TabPage1.ResumeLayout(False)
         TabPage1.PerformLayout()
+        TabPage2.ResumeLayout(False)
+        TabPage2.PerformLayout()
+        CType(DGLogs, ComponentModel.ISupportInitialize).EndInit()
         ResumeLayout(False)
     End Sub
 
     Friend WithEvents TabControl1 As TabControl
     Friend WithEvents TabPage1 As TabPage
     Friend WithEvents TabPage2 As TabPage
-    Friend WithEvents TabPage3 As TabPage
     Friend WithEvents Label2 As Label
     Friend WithEvents lblgreet As Label
     Friend WithEvents lblFullName As Label
@@ -172,4 +226,10 @@ Partial Class Dashboard
     Friend WithEvents lblSex As Label
     Friend WithEvents lblAge As Label
     Friend WithEvents lblDOB As Label
+    Friend WithEvents Label3 As Label
+    Friend WithEvents Label1 As Label
+    Friend WithEvents BtnUpdate As Button
+    Friend WithEvents ToDOB As DateTimePicker
+    Friend WithEvents FromDOB As DateTimePicker
+    Friend WithEvents DGLogs As DataGridView
 End Class
