@@ -437,7 +437,7 @@ Partial Class Form4
         ClientSize = New Size(496, 752)
         Controls.Add(Panel1)
         Name = "Form4"
-        Text = "Form4"
+        Text = "DetailsReceipt"
         Panel1.ResumeLayout(False)
         Panel1.PerformLayout()
         GroupBox1.ResumeLayout(False)
