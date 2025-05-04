@@ -29,6 +29,36 @@ Partial Class Camping_Cars
         C = New Button()
         B = New Button()
         Panel3 = New Panel()
+        Label208 = New Label()
+        Label209 = New Label()
+        Label210 = New Label()
+        Label211 = New Label()
+        Label212 = New Label()
+        Label213 = New Label()
+        Label214 = New Label()
+        Label215 = New Label()
+        Label216 = New Label()
+        Label217 = New Label()
+        Label198 = New Label()
+        Label199 = New Label()
+        Label200 = New Label()
+        Label201 = New Label()
+        Label202 = New Label()
+        Label203 = New Label()
+        Label204 = New Label()
+        Label205 = New Label()
+        Label206 = New Label()
+        Label207 = New Label()
+        Label178 = New Label()
+        Label179 = New Label()
+        Label180 = New Label()
+        Label181 = New Label()
+        Label182 = New Label()
+        Label183 = New Label()
+        Label184 = New Label()
+        Label185 = New Label()
+        Label186 = New Label()
+        Label187 = New Label()
         Label42 = New Label()
         Label41 = New Label()
         Label40 = New Label()
@@ -71,6 +101,14 @@ Partial Class Camping_Cars
         Label43 = New Label()
         Label4 = New Label()
         Panel1 = New Panel()
+        Label171 = New Label()
+        Label170 = New Label()
+        PictureBox29 = New PictureBox()
+        PictureBox28 = New PictureBox()
+        PictureBox27 = New PictureBox()
+        PictureBox26 = New PictureBox()
+        PictureBox25 = New PictureBox()
+        PictureBox6 = New PictureBox()
         Label19 = New Label()
         Label18 = New Label()
         PictureBox5 = New PictureBox()
@@ -84,6 +122,49 @@ Partial Class Camping_Cars
         C1 = New Button()
         B1 = New Button()
         Panel4 = New Panel()
+        Label59 = New Label()
+        Label62 = New Label()
+        Label67 = New Label()
+        Label68 = New Label()
+        Label218 = New Label()
+        Label219 = New Label()
+        Label220 = New Label()
+        Label221 = New Label()
+        Label222 = New Label()
+        Label223 = New Label()
+        Label224 = New Label()
+        Label225 = New Label()
+        Label226 = New Label()
+        Label228 = New Label()
+        Label229 = New Label()
+        Label230 = New Label()
+        Label231 = New Label()
+        Label232 = New Label()
+        Label233 = New Label()
+        Label234 = New Label()
+        Label235 = New Label()
+        Label236 = New Label()
+        Label237 = New Label()
+        Label69 = New Label()
+        Label70 = New Label()
+        Label71 = New Label()
+        Label72 = New Label()
+        Label73 = New Label()
+        Label74 = New Label()
+        Label75 = New Label()
+        Label76 = New Label()
+        Label77 = New Label()
+        Label78 = New Label()
+        Label188 = New Label()
+        Label189 = New Label()
+        Label190 = New Label()
+        Label191 = New Label()
+        Label192 = New Label()
+        Label193 = New Label()
+        Label194 = New Label()
+        Label195 = New Label()
+        Label196 = New Label()
+        Label197 = New Label()
         Label44 = New Label()
         Label45 = New Label()
         Label46 = New Label()
@@ -100,32 +181,14 @@ Partial Class Camping_Cars
         Label55 = New Label()
         Label56 = New Label()
         Label57 = New Label()
-        Label58 = New Label()
-        Label59 = New Label()
-        Label60 = New Label()
-        Label61 = New Label()
-        Label62 = New Label()
-        Label63 = New Label()
-        Label64 = New Label()
-        Label65 = New Label()
-        Label66 = New Label()
-        Label67 = New Label()
-        Label68 = New Label()
-        Label69 = New Label()
-        Label70 = New Label()
-        Label71 = New Label()
-        Label72 = New Label()
-        Label73 = New Label()
-        Label74 = New Label()
-        Label75 = New Label()
-        Label76 = New Label()
-        Label77 = New Label()
-        Label78 = New Label()
         Label79 = New Label()
         Panel5 = New Panel()
         Label80 = New Label()
         Label81 = New Label()
         Panel6 = New Panel()
+        Label172 = New Label()
+        Label173 = New Label()
+        PictureBox30 = New PictureBox()
         Label82 = New Label()
         Label83 = New Label()
         PictureBox7 = New PictureBox()
@@ -140,6 +203,57 @@ Partial Class Camping_Cars
         C2 = New Button()
         B2 = New Button()
         Panel7 = New Panel()
+        Label110 = New Label()
+        Label114 = New Label()
+        Label115 = New Label()
+        Label116 = New Label()
+        Label117 = New Label()
+        Label118 = New Label()
+        Label119 = New Label()
+        Label120 = New Label()
+        Label227 = New Label()
+        Label238 = New Label()
+        Label239 = New Label()
+        Label240 = New Label()
+        Label241 = New Label()
+        Label242 = New Label()
+        Label243 = New Label()
+        Label244 = New Label()
+        Label245 = New Label()
+        Label246 = New Label()
+        Label247 = New Label()
+        Label248 = New Label()
+        Label249 = New Label()
+        Label250 = New Label()
+        Label251 = New Label()
+        Label252 = New Label()
+        Label253 = New Label()
+        Label254 = New Label()
+        Label255 = New Label()
+        Label256 = New Label()
+        Label257 = New Label()
+        Label258 = New Label()
+        Label259 = New Label()
+        Label58 = New Label()
+        Label60 = New Label()
+        Label61 = New Label()
+        Label63 = New Label()
+        Label64 = New Label()
+        Label65 = New Label()
+        Label66 = New Label()
+        Label100 = New Label()
+        Label101 = New Label()
+        Label102 = New Label()
+        Label103 = New Label()
+        Label104 = New Label()
+        Label105 = New Label()
+        Label106 = New Label()
+        Label107 = New Label()
+        Label108 = New Label()
+        Label109 = New Label()
+        Label111 = New Label()
+        Label112 = New Label()
+        Label113 = New Label()
         Label86 = New Label()
         Label87 = New Label()
         Label88 = New Label()
@@ -156,32 +270,15 @@ Partial Class Camping_Cars
         Label97 = New Label()
         Label98 = New Label()
         Label99 = New Label()
-        Label100 = New Label()
-        Label101 = New Label()
-        Label102 = New Label()
-        Label103 = New Label()
-        Label104 = New Label()
-        Label105 = New Label()
-        Label106 = New Label()
-        Label107 = New Label()
-        Label108 = New Label()
-        Label109 = New Label()
-        Label110 = New Label()
-        Label111 = New Label()
-        Label112 = New Label()
-        Label113 = New Label()
-        Label114 = New Label()
-        Label115 = New Label()
-        Label116 = New Label()
-        Label117 = New Label()
-        Label118 = New Label()
-        Label119 = New Label()
-        Label120 = New Label()
         Label121 = New Label()
         Panel8 = New Panel()
         Label122 = New Label()
         Label123 = New Label()
         Panel9 = New Panel()
+        Label174 = New Label()
+        Label175 = New Label()
+        PictureBox31 = New PictureBox()
+        PictureBox32 = New PictureBox()
         Label124 = New Label()
         Label125 = New Label()
         PictureBox13 = New PictureBox()
@@ -196,6 +293,53 @@ Partial Class Camping_Cars
         C3 = New Button()
         B3 = New Button()
         Panel10 = New Panel()
+        Label143 = New Label()
+        Label145 = New Label()
+        Label146 = New Label()
+        Label149 = New Label()
+        Label150 = New Label()
+        Label151 = New Label()
+        Label152 = New Label()
+        Label153 = New Label()
+        Label154 = New Label()
+        Label155 = New Label()
+        Label156 = New Label()
+        Label157 = New Label()
+        Label158 = New Label()
+        Label159 = New Label()
+        Label160 = New Label()
+        Label161 = New Label()
+        Label162 = New Label()
+        Label260 = New Label()
+        Label261 = New Label()
+        Label262 = New Label()
+        Label263 = New Label()
+        Label264 = New Label()
+        Label265 = New Label()
+        Label266 = New Label()
+        Label267 = New Label()
+        Label268 = New Label()
+        Label269 = New Label()
+        Label270 = New Label()
+        Label271 = New Label()
+        Label272 = New Label()
+        Label273 = New Label()
+        Label274 = New Label()
+        Label275 = New Label()
+        Label276 = New Label()
+        Label277 = New Label()
+        Label278 = New Label()
+        Label279 = New Label()
+        Label280 = New Label()
+        Label281 = New Label()
+        Label282 = New Label()
+        Label283 = New Label()
+        Label284 = New Label()
+        Label285 = New Label()
+        Label286 = New Label()
+        Label287 = New Label()
+        Label288 = New Label()
+        Label289 = New Label()
         Label128 = New Label()
         Label129 = New Label()
         Label130 = New Label()
@@ -212,45 +356,13 @@ Partial Class Camping_Cars
         Label139 = New Label()
         Label140 = New Label()
         Label141 = New Label()
-        Label142 = New Label()
-        Label143 = New Label()
-        Label144 = New Label()
-        Label145 = New Label()
-        Label146 = New Label()
-        Label147 = New Label()
-        Label148 = New Label()
-        Label149 = New Label()
-        Label150 = New Label()
-        Label151 = New Label()
-        Label152 = New Label()
-        Label153 = New Label()
-        Label154 = New Label()
-        Label155 = New Label()
-        Label156 = New Label()
-        Label157 = New Label()
-        Label158 = New Label()
-        Label159 = New Label()
-        Label160 = New Label()
-        Label161 = New Label()
-        Label162 = New Label()
         Label163 = New Label()
         Panel11 = New Panel()
         Label164 = New Label()
         Label165 = New Label()
         Panel12 = New Panel()
-        Label166 = New Label()
-        Label167 = New Label()
-        Label168 = New Label()
-        Label169 = New Label()
-        PictureBox6 = New PictureBox()
-        PictureBox25 = New PictureBox()
-        PictureBox26 = New PictureBox()
-        PictureBox27 = New PictureBox()
-        PictureBox28 = New PictureBox()
-        PictureBox29 = New PictureBox()
-        PictureBox30 = New PictureBox()
-        PictureBox31 = New PictureBox()
-        PictureBox32 = New PictureBox()
+        Label176 = New Label()
+        Label177 = New Label()
         PictureBox19 = New PictureBox()
         PictureBox20 = New PictureBox()
         PictureBox21 = New PictureBox()
@@ -259,11 +371,21 @@ Partial Class Camping_Cars
         PictureBox24 = New PictureBox()
         PictureBox33 = New PictureBox()
         PictureBox34 = New PictureBox()
+        Label166 = New Label()
+        Label167 = New Label()
+        Label168 = New Label()
+        Label169 = New Label()
         TabControl1.SuspendLayout()
         TabPage1.SuspendLayout()
         Panel3.SuspendLayout()
         Panel2.SuspendLayout()
         Panel1.SuspendLayout()
+        CType(PictureBox29, ComponentModel.ISupportInitialize).BeginInit()
+        CType(PictureBox28, ComponentModel.ISupportInitialize).BeginInit()
+        CType(PictureBox27, ComponentModel.ISupportInitialize).BeginInit()
+        CType(PictureBox26, ComponentModel.ISupportInitialize).BeginInit()
+        CType(PictureBox25, ComponentModel.ISupportInitialize).BeginInit()
+        CType(PictureBox6, ComponentModel.ISupportInitialize).BeginInit()
         CType(PictureBox5, ComponentModel.ISupportInitialize).BeginInit()
         CType(PictureBox4, ComponentModel.ISupportInitialize).BeginInit()
         CType(PictureBox3, ComponentModel.ISupportInitialize).BeginInit()
@@ -273,6 +395,7 @@ Partial Class Camping_Cars
         Panel4.SuspendLayout()
         Panel5.SuspendLayout()
         Panel6.SuspendLayout()
+        CType(PictureBox30, ComponentModel.ISupportInitialize).BeginInit()
         CType(PictureBox7, ComponentModel.ISupportInitialize).BeginInit()
         CType(PictureBox8, ComponentModel.ISupportInitialize).BeginInit()
         CType(PictureBox9, ComponentModel.ISupportInitialize).BeginInit()
@@ -283,6 +406,8 @@ Partial Class Camping_Cars
         Panel7.SuspendLayout()
         Panel8.SuspendLayout()
         Panel9.SuspendLayout()
+        CType(PictureBox31, ComponentModel.ISupportInitialize).BeginInit()
+        CType(PictureBox32, ComponentModel.ISupportInitialize).BeginInit()
         CType(PictureBox13, ComponentModel.ISupportInitialize).BeginInit()
         CType(PictureBox14, ComponentModel.ISupportInitialize).BeginInit()
         CType(PictureBox15, ComponentModel.ISupportInitialize).BeginInit()
@@ -293,15 +418,6 @@ Partial Class Camping_Cars
         Panel10.SuspendLayout()
         Panel11.SuspendLayout()
         Panel12.SuspendLayout()
-        CType(PictureBox6, ComponentModel.ISupportInitialize).BeginInit()
-        CType(PictureBox25, ComponentModel.ISupportInitialize).BeginInit()
-        CType(PictureBox26, ComponentModel.ISupportInitialize).BeginInit()
-        CType(PictureBox27, ComponentModel.ISupportInitialize).BeginInit()
-        CType(PictureBox28, ComponentModel.ISupportInitialize).BeginInit()
-        CType(PictureBox29, ComponentModel.ISupportInitialize).BeginInit()
-        CType(PictureBox30, ComponentModel.ISupportInitialize).BeginInit()
-        CType(PictureBox31, ComponentModel.ISupportInitialize).BeginInit()
-        CType(PictureBox32, ComponentModel.ISupportInitialize).BeginInit()
         CType(PictureBox19, ComponentModel.ISupportInitialize).BeginInit()
         CType(PictureBox20, ComponentModel.ISupportInitialize).BeginInit()
         CType(PictureBox21, ComponentModel.ISupportInitialize).BeginInit()
@@ -375,6 +491,36 @@ Partial Class Camping_Cars
         ' Panel3
         ' 
         Panel3.BorderStyle = BorderStyle.Fixed3D
+        Panel3.Controls.Add(Label208)
+        Panel3.Controls.Add(Label209)
+        Panel3.Controls.Add(Label210)
+        Panel3.Controls.Add(Label211)
+        Panel3.Controls.Add(Label212)
+        Panel3.Controls.Add(Label213)
+        Panel3.Controls.Add(Label214)
+        Panel3.Controls.Add(Label215)
+        Panel3.Controls.Add(Label216)
+        Panel3.Controls.Add(Label217)
+        Panel3.Controls.Add(Label198)
+        Panel3.Controls.Add(Label199)
+        Panel3.Controls.Add(Label200)
+        Panel3.Controls.Add(Label201)
+        Panel3.Controls.Add(Label202)
+        Panel3.Controls.Add(Label203)
+        Panel3.Controls.Add(Label204)
+        Panel3.Controls.Add(Label205)
+        Panel3.Controls.Add(Label206)
+        Panel3.Controls.Add(Label207)
+        Panel3.Controls.Add(Label178)
+        Panel3.Controls.Add(Label179)
+        Panel3.Controls.Add(Label180)
+        Panel3.Controls.Add(Label181)
+        Panel3.Controls.Add(Label182)
+        Panel3.Controls.Add(Label183)
+        Panel3.Controls.Add(Label184)
+        Panel3.Controls.Add(Label185)
+        Panel3.Controls.Add(Label186)
+        Panel3.Controls.Add(Label187)
         Panel3.Controls.Add(Label42)
         Panel3.Controls.Add(Label41)
         Panel3.Controls.Add(Label40)
@@ -417,6 +563,306 @@ Partial Class Camping_Cars
         Panel3.Name = "Panel3"
         Panel3.Size = New Size(494, 546)
         Panel3.TabIndex = 1
+        ' 
+        ' Label208
+        ' 
+        Label208.AutoSize = True
+        Label208.Font = New Font("Century", 9F, FontStyle.Underline)
+        Label208.Location = New Point(367, 257)
+        Label208.Name = "Label208"
+        Label208.Size = New Size(85, 18)
+        Label208.TabIndex = 68
+        Label208.Text = "Sun Blinds"
+        ' 
+        ' Label209
+        ' 
+        Label209.AutoSize = True
+        Label209.Font = New Font("Century", 9F, FontStyle.Underline)
+        Label209.Location = New Point(32, 254)
+        Label209.Name = "Label209"
+        Label209.Size = New Size(127, 18)
+        Label209.TabIndex = 67
+        Label209.Text = "Pillows/Blankets"
+        ' 
+        ' Label210
+        ' 
+        Label210.AutoSize = True
+        Label210.Font = New Font("Century", 9F, FontStyle.Underline)
+        Label210.Location = New Point(367, 217)
+        Label210.Name = "Label210"
+        Label210.Size = New Size(61, 18)
+        Label210.TabIndex = 66
+        Label210.Text = "Towbar"
+        ' 
+        ' Label211
+        ' 
+        Label211.AutoSize = True
+        Label211.Font = New Font("Century", 9F, FontStyle.Underline)
+        Label211.Location = New Point(367, 197)
+        Label211.Name = "Label211"
+        Label211.Size = New Size(103, 18)
+        Label211.TabIndex = 65
+        Label211.Text = "Mosquito Net"
+        ' 
+        ' Label212
+        ' 
+        Label212.AutoSize = True
+        Label212.Font = New Font("Century", 9F, FontStyle.Underline)
+        Label212.Location = New Point(367, 177)
+        Label212.Name = "Label212"
+        Label212.Size = New Size(50, 18)
+        Label212.TabIndex = 64
+        Label212.Text = "Toilet"
+        ' 
+        ' Label213
+        ' 
+        Label213.AutoSize = True
+        Label213.Font = New Font("Century", 10.2F)
+        Label213.Location = New Point(338, 257)
+        Label213.Name = "Label213"
+        Label213.Size = New Size(23, 21)
+        Label213.TabIndex = 63
+        Label213.Text = "🗹"
+        ' 
+        ' Label214
+        ' 
+        Label214.AutoSize = True
+        Label214.Font = New Font("Century", 10.2F)
+        Label214.Location = New Point(338, 237)
+        Label214.Name = "Label214"
+        Label214.Size = New Size(23, 21)
+        Label214.TabIndex = 62
+        Label214.Text = "🗹"
+        ' 
+        ' Label215
+        ' 
+        Label215.AutoSize = True
+        Label215.Font = New Font("Century", 10.2F)
+        Label215.Location = New Point(338, 217)
+        Label215.Name = "Label215"
+        Label215.Size = New Size(23, 21)
+        Label215.TabIndex = 61
+        Label215.Text = "🗹"
+        ' 
+        ' Label216
+        ' 
+        Label216.AutoSize = True
+        Label216.Font = New Font("Century", 10.2F)
+        Label216.Location = New Point(338, 197)
+        Label216.Name = "Label216"
+        Label216.Size = New Size(23, 21)
+        Label216.TabIndex = 60
+        Label216.Text = "🗹"
+        ' 
+        ' Label217
+        ' 
+        Label217.AutoSize = True
+        Label217.Font = New Font("Century", 10.2F)
+        Label217.Location = New Point(338, 177)
+        Label217.Name = "Label217"
+        Label217.Size = New Size(23, 21)
+        Label217.TabIndex = 59
+        Label217.Text = "🗹"
+        ' 
+        ' Label198
+        ' 
+        Label198.AutoSize = True
+        Label198.Font = New Font("Century", 9F, FontStyle.Underline)
+        Label198.Location = New Point(209, 254)
+        Label198.Name = "Label198"
+        Label198.Size = New Size(71, 18)
+        Label198.TabIndex = 58
+        Label198.Text = "Aux-port"
+        ' 
+        ' Label199
+        ' 
+        Label199.AutoSize = True
+        Label199.Font = New Font("Century", 9F, FontStyle.Underline)
+        Label199.Location = New Point(209, 234)
+        Label199.Name = "Label199"
+        Label199.Size = New Size(75, 18)
+        Label199.TabIndex = 57
+        Label199.Text = "AC in cab"
+        ' 
+        ' Label200
+        ' 
+        Label200.AutoSize = True
+        Label200.Font = New Font("Century", 9F, FontStyle.Underline)
+        Label200.Location = New Point(209, 214)
+        Label200.Name = "Label200"
+        Label200.Size = New Size(127, 18)
+        Label200.TabIndex = 56
+        Label200.Text = "AC in living area"
+        ' 
+        ' Label201
+        ' 
+        Label201.AutoSize = True
+        Label201.Font = New Font("Century", 9F, FontStyle.Underline)
+        Label201.Location = New Point(209, 194)
+        Label201.Name = "Label201"
+        Label201.Size = New Size(39, 18)
+        Label201.TabIndex = 55
+        Label201.Text = "GPS"
+        ' 
+        ' Label202
+        ' 
+        Label202.AutoSize = True
+        Label202.Font = New Font("Century", 9F, FontStyle.Underline)
+        Label202.Location = New Point(209, 174)
+        Label202.Name = "Label202"
+        Label202.Size = New Size(61, 18)
+        Label202.TabIndex = 54
+        Label202.Text = "Shower"
+        ' 
+        ' Label203
+        ' 
+        Label203.AutoSize = True
+        Label203.Font = New Font("Century", 10.2F)
+        Label203.Location = New Point(180, 254)
+        Label203.Name = "Label203"
+        Label203.Size = New Size(23, 21)
+        Label203.TabIndex = 53
+        Label203.Text = "🗹"
+        ' 
+        ' Label204
+        ' 
+        Label204.AutoSize = True
+        Label204.Font = New Font("Century", 10.2F)
+        Label204.Location = New Point(180, 234)
+        Label204.Name = "Label204"
+        Label204.Size = New Size(23, 21)
+        Label204.TabIndex = 52
+        Label204.Text = "🗹"
+        ' 
+        ' Label205
+        ' 
+        Label205.AutoSize = True
+        Label205.Font = New Font("Century", 10.2F)
+        Label205.Location = New Point(180, 214)
+        Label205.Name = "Label205"
+        Label205.Size = New Size(23, 21)
+        Label205.TabIndex = 51
+        Label205.Text = "🗹"
+        ' 
+        ' Label206
+        ' 
+        Label206.AutoSize = True
+        Label206.Font = New Font("Century", 10.2F)
+        Label206.Location = New Point(180, 194)
+        Label206.Name = "Label206"
+        Label206.Size = New Size(23, 21)
+        Label206.TabIndex = 50
+        Label206.Text = "🗹"
+        ' 
+        ' Label207
+        ' 
+        Label207.AutoSize = True
+        Label207.Font = New Font("Century", 10.2F)
+        Label207.Location = New Point(180, 174)
+        Label207.Name = "Label207"
+        Label207.Size = New Size(23, 21)
+        Label207.TabIndex = 49
+        Label207.Text = "🗹"
+        ' 
+        ' Label178
+        ' 
+        Label178.AutoSize = True
+        Label178.Font = New Font("Century", 9F, FontStyle.Underline)
+        Label178.Location = New Point(392, 116)
+        Label178.Name = "Label178"
+        Label178.Size = New Size(61, 18)
+        Label178.TabIndex = 48
+        Label178.Text = "3500 kg"
+        ' 
+        ' Label179
+        ' 
+        Label179.AutoSize = True
+        Label179.Font = New Font("Century", 9F, FontStyle.Underline)
+        Label179.Location = New Point(392, 96)
+        Label179.Name = "Label179"
+        Label179.Size = New Size(61, 18)
+        Label179.TabIndex = 47
+        Label179.Text = "2900 kg"
+        ' 
+        ' Label180
+        ' 
+        Label180.AutoSize = True
+        Label180.Font = New Font("Century", 9F, FontStyle.Underline)
+        Label180.Location = New Point(392, 76)
+        Label180.Name = "Label180"
+        Label180.Size = New Size(89, 18)
+        Label180.TabIndex = 46
+        Label180.Text = "2.95 meters"
+        ' 
+        ' Label181
+        ' 
+        Label181.AutoSize = True
+        Label181.Font = New Font("Century", 9F, FontStyle.Underline)
+        Label181.Location = New Point(392, 58)
+        Label181.Name = "Label181"
+        Label181.Size = New Size(89, 18)
+        Label181.TabIndex = 45
+        Label181.Text = "6.95 meters"
+        ' 
+        ' Label182
+        ' 
+        Label182.AutoSize = True
+        Label182.Font = New Font("Century", 9F, FontStyle.Underline)
+        Label182.Location = New Point(392, 38)
+        Label182.Name = "Label182"
+        Label182.Size = New Size(89, 18)
+        Label182.TabIndex = 44
+        Label182.Text = "2.51 meters"
+        ' 
+        ' Label183
+        ' 
+        Label183.AutoSize = True
+        Label183.Font = New Font("Century", 9F, FontStyle.Bold)
+        Label183.Location = New Point(271, 116)
+        Label183.Name = "Label183"
+        Label183.Size = New Size(117, 18)
+        Label183.TabIndex = 43
+        Label183.Text = "Total Weight:"
+        ' 
+        ' Label184
+        ' 
+        Label184.AutoSize = True
+        Label184.Font = New Font("Century", 9F, FontStyle.Bold)
+        Label184.Location = New Point(271, 96)
+        Label184.Name = "Label184"
+        Label184.Size = New Size(114, 18)
+        Label184.TabIndex = 42
+        Label184.Text = "Curb Weight:"
+        ' 
+        ' Label185
+        ' 
+        Label185.AutoSize = True
+        Label185.Font = New Font("Century", 9F, FontStyle.Bold)
+        Label185.Location = New Point(271, 76)
+        Label185.Name = "Label185"
+        Label185.Size = New Size(68, 18)
+        Label185.TabIndex = 41
+        Label185.Text = "Height:"
+        ' 
+        ' Label186
+        ' 
+        Label186.AutoSize = True
+        Label186.Font = New Font("Century", 9F, FontStyle.Bold)
+        Label186.Location = New Point(271, 58)
+        Label186.Name = "Label186"
+        Label186.Size = New Size(69, 18)
+        Label186.TabIndex = 40
+        Label186.Text = "Length:"
+        ' 
+        ' Label187
+        ' 
+        Label187.AutoSize = True
+        Label187.Font = New Font("Century", 9F, FontStyle.Bold)
+        Label187.Location = New Point(271, 38)
+        Label187.Name = "Label187"
+        Label187.Size = New Size(62, 18)
+        Label187.TabIndex = 39
+        Label187.Text = "Width:"
         ' 
         ' Label42
         ' 
@@ -505,9 +951,9 @@ Partial Class Camping_Cars
         Label36.Font = New Font("Felix Titling", 10.2F, FontStyle.Bold)
         Label36.Location = New Point(3, 478)
         Label36.Name = "Label36"
-        Label36.Size = New Size(353, 20)
+        Label36.Size = New Size(305, 20)
         Label36.TabIndex = 32
-        Label36.Text = "RATES FOR THE TOYOTA FORTUNER :" & vbCrLf
+        Label36.Text = "RATES FOR THE MOTORHOME 1 :" & vbCrLf
         ' 
         ' Label35
         ' 
@@ -583,57 +1029,57 @@ Partial Class Camping_Cars
         ' 
         Label28.AutoSize = True
         Label28.Font = New Font("Century", 9F, FontStyle.Underline)
-        Label28.Location = New Point(135, 271)
+        Label28.Location = New Point(369, 239)
         Label28.Name = "Label28"
-        Label28.Size = New Size(214, 18)
+        Label28.Size = New Size(120, 18)
         Label28.TabIndex = 24
-        Label28.Text = "ESS (Emergency Stop Signal)"
+        Label28.Text = "Hot/Cold Water"
         ' 
         ' Label27
         ' 
         Label27.AutoSize = True
         Label27.Font = New Font("Century", 9F, FontStyle.Underline)
-        Label27.Location = New Point(135, 251)
+        Label27.Location = New Point(32, 234)
         Label27.Name = "Label27"
-        Label27.Size = New Size(248, 18)
+        Label27.Size = New Size(146, 18)
         Label27.TabIndex = 23
-        Label27.Text = "ESC (Electronic Stability Control)"
+        Label27.Text = "Kitchen Equipment"
         ' 
         ' Label26
         ' 
         Label26.AutoSize = True
         Label26.Font = New Font("Century", 9F, FontStyle.Underline)
-        Label26.Location = New Point(135, 231)
+        Label26.Location = New Point(32, 214)
         Label26.Name = "Label26"
-        Label26.Size = New Size(295, 18)
+        Label26.Size = New Size(107, 18)
         Label26.TabIndex = 22
-        Label26.Text = "EBD (Electronic Brakefore Distribution)"
+        Label26.Text = "Cooking Plate"
         ' 
         ' Label25
         ' 
         Label25.AutoSize = True
         Label25.Font = New Font("Century", 9F, FontStyle.Underline)
-        Label25.Location = New Point(135, 211)
+        Label25.Location = New Point(32, 194)
         Label25.Name = "Label25"
-        Label25.Size = New Size(234, 18)
+        Label25.Size = New Size(63, 18)
         Label25.TabIndex = 21
-        Label25.Text = "ABS (Anti-lock Braking System)"
+        Label25.Text = "Freezer"
         ' 
         ' Label24
         ' 
         Label24.AutoSize = True
         Label24.Font = New Font("Century", 9F, FontStyle.Underline)
-        Label24.Location = New Point(135, 191)
+        Label24.Location = New Point(32, 174)
         Label24.Name = "Label24"
-        Label24.Size = New Size(62, 18)
+        Label24.Size = New Size(55, 18)
         Label24.TabIndex = 20
-        Label24.Text = "Airbags"
+        Label24.Text = "Fridge"
         ' 
         ' Label23
         ' 
         Label23.AutoSize = True
         Label23.Font = New Font("Century", 10.2F)
-        Label23.Location = New Point(99, 272)
+        Label23.Location = New Point(3, 254)
         Label23.Name = "Label23"
         Label23.Size = New Size(23, 21)
         Label23.TabIndex = 19
@@ -643,7 +1089,7 @@ Partial Class Camping_Cars
         ' 
         Label22.AutoSize = True
         Label22.Font = New Font("Century", 10.2F)
-        Label22.Location = New Point(99, 252)
+        Label22.Location = New Point(3, 234)
         Label22.Name = "Label22"
         Label22.Size = New Size(23, 21)
         Label22.TabIndex = 18
@@ -653,7 +1099,7 @@ Partial Class Camping_Cars
         ' 
         Label21.AutoSize = True
         Label21.Font = New Font("Century", 10.2F)
-        Label21.Location = New Point(99, 232)
+        Label21.Location = New Point(3, 214)
         Label21.Name = "Label21"
         Label21.Size = New Size(23, 21)
         Label21.TabIndex = 17
@@ -663,7 +1109,7 @@ Partial Class Camping_Cars
         ' 
         Label20.AutoSize = True
         Label20.Font = New Font("Century", 10.2F)
-        Label20.Location = New Point(99, 212)
+        Label20.Location = New Point(3, 194)
         Label20.Name = "Label20"
         Label20.Size = New Size(23, 21)
         Label20.TabIndex = 16
@@ -673,7 +1119,7 @@ Partial Class Camping_Cars
         ' 
         Label17.AutoSize = True
         Label17.Font = New Font("Century", 10.2F)
-        Label17.Location = New Point(99, 192)
+        Label17.Location = New Point(3, 174)
         Label17.Name = "Label17"
         Label17.Size = New Size(23, 21)
         Label17.TabIndex = 15
@@ -683,27 +1129,27 @@ Partial Class Camping_Cars
         ' 
         Label16.AutoSize = True
         Label16.Font = New Font("Felix Titling", 10.2F, FontStyle.Bold)
-        Label16.Location = New Point(3, 168)
+        Label16.Location = New Point(3, 147)
         Label16.Name = "Label16"
-        Label16.Size = New Size(180, 20)
+        Label16.Size = New Size(113, 20)
         Label16.TabIndex = 14
-        Label16.Text = "SAFETY FEATURES :"
+        Label16.Text = "AMENITIES :"
         ' 
         ' Label15
         ' 
         Label15.AutoSize = True
         Label15.Font = New Font("Century", 9F, FontStyle.Underline)
-        Label15.Location = New Point(165, 138)
+        Label15.Location = New Point(126, 116)
         Label15.Name = "Label15"
-        Label15.Size = New Size(99, 18)
+        Label15.Size = New Size(57, 18)
         Label15.TabIndex = 13
-        Label15.Text = "Midsize SUV"
+        Label15.Text = "Hymer"
         ' 
         ' Label14
         ' 
         Label14.AutoSize = True
         Label14.Font = New Font("Century", 9F, FontStyle.Underline)
-        Label14.Location = New Point(165, 118)
+        Label14.Location = New Point(126, 96)
         Label14.Name = "Label14"
         Label14.Size = New Size(80, 18)
         Label14.TabIndex = 12
@@ -713,7 +1159,7 @@ Partial Class Camping_Cars
         ' 
         Label13.AutoSize = True
         Label13.Font = New Font("Century", 9F, FontStyle.Underline)
-        Label13.Location = New Point(165, 98)
+        Label13.Location = New Point(126, 76)
         Label13.Name = "Label13"
         Label13.Size = New Size(61, 18)
         Label13.TabIndex = 11
@@ -723,37 +1169,37 @@ Partial Class Camping_Cars
         ' 
         Label12.AutoSize = True
         Label12.Font = New Font("Century", 9F, FontStyle.Underline)
-        Label12.Location = New Point(165, 60)
+        Label12.Location = New Point(126, 58)
         Label12.Name = "Label12"
-        Label12.Size = New Size(311, 36)
+        Label12.Size = New Size(137, 18)
         Label12.TabIndex = 10
-        Label12.Text = "2.7-liter gasoline engine, as well as 2.4 and " & vbCrLf & "2.8-liter diesel engines" & vbCrLf
+        Label12.Text = "Fiat Ducato 2.8TD"
         ' 
         ' Label11
         ' 
         Label11.AutoSize = True
         Label11.Font = New Font("Century", 9F, FontStyle.Underline)
-        Label11.Location = New Point(165, 40)
+        Label11.Location = New Point(126, 38)
         Label11.Name = "Label11"
-        Label11.Size = New Size(119, 18)
+        Label11.Size = New Size(53, 18)
         Label11.TabIndex = 9
-        Label11.Text = "Gasoline/Diesel"
+        Label11.Text = "Diesel"
         ' 
         ' Label10
         ' 
         Label10.AutoSize = True
         Label10.Font = New Font("Century", 9F, FontStyle.Bold)
-        Label10.Location = New Point(21, 138)
+        Label10.Location = New Point(3, 116)
         Label10.Name = "Label10"
-        Label10.Size = New Size(97, 18)
+        Label10.Size = New Size(122, 18)
         Label10.TabIndex = 8
-        Label10.Text = "Body Type:"
+        Label10.Text = "Manufacturer:"
         ' 
         ' Label9
         ' 
         Label9.AutoSize = True
         Label9.Font = New Font("Century", 9F, FontStyle.Bold)
-        Label9.Location = New Point(21, 118)
+        Label9.Location = New Point(3, 96)
         Label9.Name = "Label9"
         Label9.Size = New Size(76, 18)
         Label9.TabIndex = 7
@@ -763,7 +1209,7 @@ Partial Class Camping_Cars
         ' 
         Label8.AutoSize = True
         Label8.Font = New Font("Century", 9F, FontStyle.Bold)
-        Label8.Location = New Point(21, 98)
+        Label8.Location = New Point(3, 76)
         Label8.Name = "Label8"
         Label8.Size = New Size(120, 18)
         Label8.TabIndex = 6
@@ -773,17 +1219,17 @@ Partial Class Camping_Cars
         ' 
         Label7.AutoSize = True
         Label7.Font = New Font("Century", 9F, FontStyle.Bold)
-        Label7.Location = New Point(21, 60)
+        Label7.Location = New Point(3, 58)
         Label7.Name = "Label7"
-        Label7.Size = New Size(69, 18)
+        Label7.Size = New Size(62, 18)
         Label7.TabIndex = 5
-        Label7.Text = "Engine:"
+        Label7.Text = "Model:"
         ' 
         ' Label6
         ' 
         Label6.AutoSize = True
         Label6.Font = New Font("Century", 9F, FontStyle.Bold)
-        Label6.Location = New Point(21, 40)
+        Label6.Location = New Point(3, 40)
         Label6.Name = "Label6"
         Label6.Size = New Size(93, 18)
         Label6.TabIndex = 4
@@ -823,16 +1269,18 @@ Partial Class Camping_Cars
         ' 
         Label4.AutoSize = True
         Label4.Font = New Font("Century", 9F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
-        Label4.Location = New Point(18, 28)
+        Label4.Location = New Point(33, 28)
         Label4.Name = "Label4"
-        Label4.Size = New Size(764, 36)
+        Label4.Size = New Size(723, 54)
         Label4.TabIndex = 2
-        Label4.Text = "The Toyota Fortuner is a robust and reliable SUV, ideal for comfortable and spacious family " & vbCrLf & "travel or group adventures. Engine and capable handling make it suitable for various terrains."
+        Label4.Text = resources.GetString("Label4.Text")
         Label4.TextAlign = ContentAlignment.TopCenter
         ' 
         ' Panel1
         ' 
         Panel1.BorderStyle = BorderStyle.Fixed3D
+        Panel1.Controls.Add(Label171)
+        Panel1.Controls.Add(Label170)
         Panel1.Controls.Add(PictureBox29)
         Panel1.Controls.Add(PictureBox28)
         Panel1.Controls.Add(PictureBox27)
@@ -853,15 +1301,89 @@ Partial Class Camping_Cars
         Panel1.Size = New Size(780, 442)
         Panel1.TabIndex = 0
         ' 
+        ' Label171
+        ' 
+        Label171.AutoSize = True
+        Label171.Font = New Font("Century", 9F, FontStyle.Underline)
+        Label171.Location = New Point(141, 47)
+        Label171.Name = "Label171"
+        Label171.Size = New Size(77, 18)
+        Label171.TabIndex = 16
+        Label171.Text = "ABC 1234"
+        ' 
+        ' Label170
+        ' 
+        Label170.AutoSize = True
+        Label170.Font = New Font("Century", 9F, FontStyle.Bold)
+        Label170.Location = New Point(12, 47)
+        Label170.Name = "Label170"
+        Label170.Size = New Size(123, 18)
+        Label170.TabIndex = 15
+        Label170.Text = "Plate Number:"
+        ' 
+        ' PictureBox29
+        ' 
+        PictureBox29.BorderStyle = BorderStyle.Fixed3D
+        PictureBox29.Location = New Point(65, 68)
+        PictureBox29.Name = "PictureBox29"
+        PictureBox29.Size = New Size(148, 108)
+        PictureBox29.TabIndex = 14
+        PictureBox29.TabStop = False
+        ' 
+        ' PictureBox28
+        ' 
+        PictureBox28.BorderStyle = BorderStyle.Fixed3D
+        PictureBox28.Location = New Point(65, 182)
+        PictureBox28.Name = "PictureBox28"
+        PictureBox28.Size = New Size(148, 108)
+        PictureBox28.TabIndex = 13
+        PictureBox28.TabStop = False
+        ' 
+        ' PictureBox27
+        ' 
+        PictureBox27.BorderStyle = BorderStyle.Fixed3D
+        PictureBox27.Location = New Point(9, 303)
+        PictureBox27.Name = "PictureBox27"
+        PictureBox27.Size = New Size(148, 108)
+        PictureBox27.TabIndex = 12
+        PictureBox27.TabStop = False
+        ' 
+        ' PictureBox26
+        ' 
+        PictureBox26.BorderStyle = BorderStyle.Fixed3D
+        PictureBox26.Location = New Point(163, 303)
+        PictureBox26.Name = "PictureBox26"
+        PictureBox26.Size = New Size(148, 108)
+        PictureBox26.TabIndex = 11
+        PictureBox26.TabStop = False
+        ' 
+        ' PictureBox25
+        ' 
+        PictureBox25.BorderStyle = BorderStyle.Fixed3D
+        PictureBox25.Location = New Point(317, 303)
+        PictureBox25.Name = "PictureBox25"
+        PictureBox25.Size = New Size(148, 108)
+        PictureBox25.TabIndex = 10
+        PictureBox25.TabStop = False
+        ' 
+        ' PictureBox6
+        ' 
+        PictureBox6.BorderStyle = BorderStyle.Fixed3D
+        PictureBox6.Location = New Point(471, 303)
+        PictureBox6.Name = "PictureBox6"
+        PictureBox6.Size = New Size(148, 108)
+        PictureBox6.TabIndex = 9
+        PictureBox6.TabStop = False
+        ' 
         ' Label19
         ' 
         Label19.AutoSize = True
         Label19.Font = New Font("Century", 9F, FontStyle.Underline)
         Label19.Location = New Point(75, 29)
         Label19.Name = "Label19"
-        Label19.Size = New Size(48, 18)
+        Label19.Size = New Size(51, 18)
         Label19.TabIndex = 8
-        Label19.Text = "Black"
+        Label19.Text = "White"
         ' 
         ' Label18
         ' 
@@ -885,7 +1407,7 @@ Partial Class Camping_Cars
         ' PictureBox4
         ' 
         PictureBox4.BorderStyle = BorderStyle.Fixed3D
-        PictureBox4.Location = New Point(471, 21)
+        PictureBox4.Location = New Point(523, 16)
         PictureBox4.Name = "PictureBox4"
         PictureBox4.Size = New Size(250, 135)
         PictureBox4.TabIndex = 5
@@ -894,7 +1416,7 @@ Partial Class Camping_Cars
         ' PictureBox3
         ' 
         PictureBox3.BorderStyle = BorderStyle.Fixed3D
-        PictureBox3.Location = New Point(471, 162)
+        PictureBox3.Location = New Point(523, 157)
         PictureBox3.Name = "PictureBox3"
         PictureBox3.Size = New Size(250, 135)
         PictureBox3.TabIndex = 4
@@ -903,7 +1425,7 @@ Partial Class Camping_Cars
         ' PictureBox2
         ' 
         PictureBox2.BorderStyle = BorderStyle.Fixed3D
-        PictureBox2.Location = New Point(215, 161)
+        PictureBox2.Location = New Point(267, 156)
         PictureBox2.Name = "PictureBox2"
         PictureBox2.Size = New Size(250, 135)
         PictureBox2.TabIndex = 3
@@ -912,7 +1434,7 @@ Partial Class Camping_Cars
         ' PictureBox1
         ' 
         PictureBox1.BorderStyle = BorderStyle.Fixed3D
-        PictureBox1.Location = New Point(215, 20)
+        PictureBox1.Location = New Point(267, 15)
         PictureBox1.Name = "PictureBox1"
         PictureBox1.Size = New Size(250, 135)
         PictureBox1.TabIndex = 2
@@ -926,7 +1448,7 @@ Partial Class Camping_Cars
         Label3.Name = "Label3"
         Label3.Size = New Size(40, 18)
         Label3.TabIndex = 1
-        Label3.Text = "2016"
+        Label3.Text = "2006"
         ' 
         ' Label2
         ' 
@@ -976,6 +1498,49 @@ Partial Class Camping_Cars
         ' Panel4
         ' 
         Panel4.BorderStyle = BorderStyle.Fixed3D
+        Panel4.Controls.Add(Label59)
+        Panel4.Controls.Add(Label62)
+        Panel4.Controls.Add(Label67)
+        Panel4.Controls.Add(Label68)
+        Panel4.Controls.Add(Label218)
+        Panel4.Controls.Add(Label219)
+        Panel4.Controls.Add(Label220)
+        Panel4.Controls.Add(Label221)
+        Panel4.Controls.Add(Label222)
+        Panel4.Controls.Add(Label223)
+        Panel4.Controls.Add(Label224)
+        Panel4.Controls.Add(Label225)
+        Panel4.Controls.Add(Label226)
+        Panel4.Controls.Add(Label228)
+        Panel4.Controls.Add(Label229)
+        Panel4.Controls.Add(Label230)
+        Panel4.Controls.Add(Label231)
+        Panel4.Controls.Add(Label232)
+        Panel4.Controls.Add(Label233)
+        Panel4.Controls.Add(Label234)
+        Panel4.Controls.Add(Label235)
+        Panel4.Controls.Add(Label236)
+        Panel4.Controls.Add(Label237)
+        Panel4.Controls.Add(Label69)
+        Panel4.Controls.Add(Label70)
+        Panel4.Controls.Add(Label71)
+        Panel4.Controls.Add(Label72)
+        Panel4.Controls.Add(Label73)
+        Panel4.Controls.Add(Label74)
+        Panel4.Controls.Add(Label75)
+        Panel4.Controls.Add(Label76)
+        Panel4.Controls.Add(Label77)
+        Panel4.Controls.Add(Label78)
+        Panel4.Controls.Add(Label188)
+        Panel4.Controls.Add(Label189)
+        Panel4.Controls.Add(Label190)
+        Panel4.Controls.Add(Label191)
+        Panel4.Controls.Add(Label192)
+        Panel4.Controls.Add(Label193)
+        Panel4.Controls.Add(Label194)
+        Panel4.Controls.Add(Label195)
+        Panel4.Controls.Add(Label196)
+        Panel4.Controls.Add(Label197)
         Panel4.Controls.Add(Label44)
         Panel4.Controls.Add(Label45)
         Panel4.Controls.Add(Label46)
@@ -992,38 +1557,447 @@ Partial Class Camping_Cars
         Panel4.Controls.Add(Label55)
         Panel4.Controls.Add(Label56)
         Panel4.Controls.Add(Label57)
-        Panel4.Controls.Add(Label58)
-        Panel4.Controls.Add(Label59)
-        Panel4.Controls.Add(Label60)
-        Panel4.Controls.Add(Label61)
-        Panel4.Controls.Add(Label62)
-        Panel4.Controls.Add(Label63)
-        Panel4.Controls.Add(Label64)
-        Panel4.Controls.Add(Label65)
-        Panel4.Controls.Add(Label66)
-        Panel4.Controls.Add(Label67)
-        Panel4.Controls.Add(Label68)
-        Panel4.Controls.Add(Label69)
-        Panel4.Controls.Add(Label70)
-        Panel4.Controls.Add(Label71)
-        Panel4.Controls.Add(Label72)
-        Panel4.Controls.Add(Label73)
-        Panel4.Controls.Add(Label74)
-        Panel4.Controls.Add(Label75)
-        Panel4.Controls.Add(Label76)
-        Panel4.Controls.Add(Label77)
-        Panel4.Controls.Add(Label78)
         Panel4.Controls.Add(Label79)
         Panel4.Location = New Point(792, 6)
         Panel4.Name = "Panel4"
         Panel4.Size = New Size(494, 546)
         Panel4.TabIndex = 5
         ' 
+        ' Label59
+        ' 
+        Label59.AutoSize = True
+        Label59.Font = New Font("Century", 9F, FontStyle.Underline)
+        Label59.Location = New Point(32, 257)
+        Label59.Name = "Label59"
+        Label59.Size = New Size(50, 18)
+        Label59.TabIndex = 98
+        Label59.Text = "Toilet"
+        ' 
+        ' Label62
+        ' 
+        Label62.AutoSize = True
+        Label62.Font = New Font("Century", 9F, FontStyle.Underline)
+        Label62.Location = New Point(367, 180)
+        Label62.Name = "Label62"
+        Label62.Size = New Size(82, 18)
+        Label62.TabIndex = 95
+        Label62.Text = "Sun blinds"
+        ' 
+        ' Label67
+        ' 
+        Label67.AutoSize = True
+        Label67.Font = New Font("Century", 10.2F)
+        Label67.Location = New Point(338, 180)
+        Label67.Name = "Label67"
+        Label67.Size = New Size(23, 21)
+        Label67.TabIndex = 90
+        Label67.Text = "🗹"
+        ' 
+        ' Label68
+        ' 
+        Label68.AutoSize = True
+        Label68.Font = New Font("Century", 9F, FontStyle.Underline)
+        Label68.Location = New Point(209, 257)
+        Label68.Name = "Label68"
+        Label68.Size = New Size(182, 18)
+        Label68.TabIndex = 89
+        Label68.Text = "Trailer connector: 13 pin"
+        ' 
+        ' Label218
+        ' 
+        Label218.AutoSize = True
+        Label218.Font = New Font("Century", 9F, FontStyle.Underline)
+        Label218.Location = New Point(209, 237)
+        Label218.Name = "Label218"
+        Label218.Size = New Size(103, 18)
+        Label218.TabIndex = 88
+        Label218.Text = "Mosquito Net"
+        ' 
+        ' Label219
+        ' 
+        Label219.AutoSize = True
+        Label219.Font = New Font("Century", 9F, FontStyle.Underline)
+        Label219.Location = New Point(209, 217)
+        Label219.Name = "Label219"
+        Label219.Size = New Size(54, 18)
+        Label219.TabIndex = 87
+        Label219.Text = "Blinds"
+        ' 
+        ' Label220
+        ' 
+        Label220.AutoSize = True
+        Label220.Font = New Font("Century", 9F, FontStyle.Underline)
+        Label220.Location = New Point(209, 197)
+        Label220.Name = "Label220"
+        Label220.Size = New Size(137, 18)
+        Label220.TabIndex = 86
+        Label220.Text = "Blackout Curtains"
+        ' 
+        ' Label221
+        ' 
+        Label221.AutoSize = True
+        Label221.Font = New Font("Century", 9F, FontStyle.Underline)
+        Label221.Location = New Point(209, 177)
+        Label221.Name = "Label221"
+        Label221.Size = New Size(65, 18)
+        Label221.TabIndex = 85
+        Label221.Text = "Heating"
+        ' 
+        ' Label222
+        ' 
+        Label222.AutoSize = True
+        Label222.Font = New Font("Century", 10.2F)
+        Label222.Location = New Point(180, 257)
+        Label222.Name = "Label222"
+        Label222.Size = New Size(23, 21)
+        Label222.TabIndex = 84
+        Label222.Text = "🗹"
+        ' 
+        ' Label223
+        ' 
+        Label223.AutoSize = True
+        Label223.Font = New Font("Century", 10.2F)
+        Label223.Location = New Point(180, 237)
+        Label223.Name = "Label223"
+        Label223.Size = New Size(23, 21)
+        Label223.TabIndex = 83
+        Label223.Text = "🗹"
+        ' 
+        ' Label224
+        ' 
+        Label224.AutoSize = True
+        Label224.Font = New Font("Century", 10.2F)
+        Label224.Location = New Point(180, 217)
+        Label224.Name = "Label224"
+        Label224.Size = New Size(23, 21)
+        Label224.TabIndex = 82
+        Label224.Text = "🗹"
+        ' 
+        ' Label225
+        ' 
+        Label225.AutoSize = True
+        Label225.Font = New Font("Century", 10.2F)
+        Label225.Location = New Point(180, 197)
+        Label225.Name = "Label225"
+        Label225.Size = New Size(23, 21)
+        Label225.TabIndex = 81
+        Label225.Text = "🗹"
+        ' 
+        ' Label226
+        ' 
+        Label226.AutoSize = True
+        Label226.Font = New Font("Century", 10.2F)
+        Label226.Location = New Point(180, 177)
+        Label226.Name = "Label226"
+        Label226.Size = New Size(23, 21)
+        Label226.TabIndex = 80
+        Label226.Text = "🗹"
+        ' 
+        ' Label228
+        ' 
+        Label228.AutoSize = True
+        Label228.Font = New Font("Century", 9F, FontStyle.Underline)
+        Label228.Location = New Point(32, 237)
+        Label228.Name = "Label228"
+        Label228.Size = New Size(146, 18)
+        Label228.TabIndex = 78
+        Label228.Text = "Kitchen Equipment"
+        ' 
+        ' Label229
+        ' 
+        Label229.AutoSize = True
+        Label229.Font = New Font("Century", 9F, FontStyle.Underline)
+        Label229.Location = New Point(32, 217)
+        Label229.Name = "Label229"
+        Label229.Size = New Size(107, 18)
+        Label229.TabIndex = 77
+        Label229.Text = "Cooking Plate"
+        ' 
+        ' Label230
+        ' 
+        Label230.AutoSize = True
+        Label230.Font = New Font("Century", 9F, FontStyle.Underline)
+        Label230.Location = New Point(32, 197)
+        Label230.Name = "Label230"
+        Label230.Size = New Size(63, 18)
+        Label230.TabIndex = 76
+        Label230.Text = "Freezer"
+        ' 
+        ' Label231
+        ' 
+        Label231.AutoSize = True
+        Label231.Font = New Font("Century", 9F, FontStyle.Underline)
+        Label231.Location = New Point(32, 177)
+        Label231.Name = "Label231"
+        Label231.Size = New Size(55, 18)
+        Label231.TabIndex = 75
+        Label231.Text = "Fridge"
+        ' 
+        ' Label232
+        ' 
+        Label232.AutoSize = True
+        Label232.Font = New Font("Century", 10.2F)
+        Label232.Location = New Point(3, 257)
+        Label232.Name = "Label232"
+        Label232.Size = New Size(23, 21)
+        Label232.TabIndex = 74
+        Label232.Text = "🗹"
+        ' 
+        ' Label233
+        ' 
+        Label233.AutoSize = True
+        Label233.Font = New Font("Century", 10.2F)
+        Label233.Location = New Point(3, 237)
+        Label233.Name = "Label233"
+        Label233.Size = New Size(23, 21)
+        Label233.TabIndex = 73
+        Label233.Text = "🗹"
+        ' 
+        ' Label234
+        ' 
+        Label234.AutoSize = True
+        Label234.Font = New Font("Century", 10.2F)
+        Label234.Location = New Point(3, 217)
+        Label234.Name = "Label234"
+        Label234.Size = New Size(23, 21)
+        Label234.TabIndex = 72
+        Label234.Text = "🗹"
+        ' 
+        ' Label235
+        ' 
+        Label235.AutoSize = True
+        Label235.Font = New Font("Century", 10.2F)
+        Label235.Location = New Point(3, 197)
+        Label235.Name = "Label235"
+        Label235.Size = New Size(23, 21)
+        Label235.TabIndex = 71
+        Label235.Text = "🗹"
+        ' 
+        ' Label236
+        ' 
+        Label236.AutoSize = True
+        Label236.Font = New Font("Century", 10.2F)
+        Label236.Location = New Point(3, 177)
+        Label236.Name = "Label236"
+        Label236.Size = New Size(23, 21)
+        Label236.TabIndex = 70
+        Label236.Text = "🗹"
+        ' 
+        ' Label237
+        ' 
+        Label237.AutoSize = True
+        Label237.Font = New Font("Felix Titling", 10.2F, FontStyle.Bold)
+        Label237.Location = New Point(3, 150)
+        Label237.Name = "Label237"
+        Label237.Size = New Size(113, 20)
+        Label237.TabIndex = 69
+        Label237.Text = "AMENITIES :"
+        ' 
+        ' Label69
+        ' 
+        Label69.AutoSize = True
+        Label69.Font = New Font("Century", 9F, FontStyle.Underline)
+        Label69.Location = New Point(392, 115)
+        Label69.Name = "Label69"
+        Label69.Size = New Size(61, 18)
+        Label69.TabIndex = 68
+        Label69.Text = "1000 kg"
+        ' 
+        ' Label70
+        ' 
+        Label70.AutoSize = True
+        Label70.Font = New Font("Century", 9F, FontStyle.Underline)
+        Label70.Location = New Point(392, 95)
+        Label70.Name = "Label70"
+        Label70.Size = New Size(53, 18)
+        Label70.TabIndex = 67
+        Label70.Text = "830 kg"
+        ' 
+        ' Label71
+        ' 
+        Label71.AutoSize = True
+        Label71.Font = New Font("Century", 9F, FontStyle.Underline)
+        Label71.Location = New Point(392, 75)
+        Label71.Name = "Label71"
+        Label71.Size = New Size(81, 18)
+        Label71.TabIndex = 66
+        Label71.Text = "2.2 meters"
+        ' 
+        ' Label72
+        ' 
+        Label72.AutoSize = True
+        Label72.Font = New Font("Century", 9F, FontStyle.Underline)
+        Label72.Location = New Point(392, 57)
+        Label72.Name = "Label72"
+        Label72.Size = New Size(89, 18)
+        Label72.TabIndex = 65
+        Label72.Text = "5.63 meters"
+        ' 
+        ' Label73
+        ' 
+        Label73.AutoSize = True
+        Label73.Font = New Font("Century", 9F, FontStyle.Underline)
+        Label73.Location = New Point(392, 37)
+        Label73.Name = "Label73"
+        Label73.Size = New Size(69, 18)
+        Label73.TabIndex = 64
+        Label73.Text = "2 meters"
+        ' 
+        ' Label74
+        ' 
+        Label74.AutoSize = True
+        Label74.Font = New Font("Century", 9F, FontStyle.Bold)
+        Label74.Location = New Point(271, 115)
+        Label74.Name = "Label74"
+        Label74.Size = New Size(117, 18)
+        Label74.TabIndex = 63
+        Label74.Text = "Total Weight:"
+        ' 
+        ' Label75
+        ' 
+        Label75.AutoSize = True
+        Label75.Font = New Font("Century", 9F, FontStyle.Bold)
+        Label75.Location = New Point(271, 95)
+        Label75.Name = "Label75"
+        Label75.Size = New Size(114, 18)
+        Label75.TabIndex = 62
+        Label75.Text = "Curb Weight:"
+        ' 
+        ' Label76
+        ' 
+        Label76.AutoSize = True
+        Label76.Font = New Font("Century", 9F, FontStyle.Bold)
+        Label76.Location = New Point(271, 75)
+        Label76.Name = "Label76"
+        Label76.Size = New Size(68, 18)
+        Label76.TabIndex = 61
+        Label76.Text = "Height:"
+        ' 
+        ' Label77
+        ' 
+        Label77.AutoSize = True
+        Label77.Font = New Font("Century", 9F, FontStyle.Bold)
+        Label77.Location = New Point(271, 57)
+        Label77.Name = "Label77"
+        Label77.Size = New Size(69, 18)
+        Label77.TabIndex = 60
+        Label77.Text = "Length:"
+        ' 
+        ' Label78
+        ' 
+        Label78.AutoSize = True
+        Label78.Font = New Font("Century", 9F, FontStyle.Bold)
+        Label78.Location = New Point(271, 37)
+        Label78.Name = "Label78"
+        Label78.Size = New Size(62, 18)
+        Label78.TabIndex = 59
+        Label78.Text = "Width:"
+        ' 
+        ' Label188
+        ' 
+        Label188.AutoSize = True
+        Label188.Font = New Font("Century", 9F, FontStyle.Underline)
+        Label188.Location = New Point(126, 115)
+        Label188.Name = "Label188"
+        Label188.Size = New Size(57, 18)
+        Label188.TabIndex = 58
+        Label188.Text = "Hymer"
+        ' 
+        ' Label189
+        ' 
+        Label189.AutoSize = True
+        Label189.Font = New Font("Century", 9F, FontStyle.Underline)
+        Label189.Location = New Point(126, 95)
+        Label189.Name = "Label189"
+        Label189.Size = New Size(80, 18)
+        Label189.TabIndex = 57
+        Label189.Text = "Unlimited"
+        ' 
+        ' Label190
+        ' 
+        Label190.AutoSize = True
+        Label190.Font = New Font("Century", 9F, FontStyle.Underline)
+        Label190.Location = New Point(126, 75)
+        Label190.Name = "Label190"
+        Label190.Size = New Size(61, 18)
+        Label190.TabIndex = 56
+        Label190.Text = "Manual"
+        ' 
+        ' Label191
+        ' 
+        Label191.AutoSize = True
+        Label191.Font = New Font("Century", 9F, FontStyle.Underline)
+        Label191.Location = New Point(126, 57)
+        Label191.Name = "Label191"
+        Label191.Size = New Size(141, 18)
+        Label191.TabIndex = 55
+        Label191.Text = "Touring Troll LMT"
+        ' 
+        ' Label192
+        ' 
+        Label192.AutoSize = True
+        Label192.Font = New Font("Century", 9F, FontStyle.Underline)
+        Label192.Location = New Point(126, 37)
+        Label192.Name = "Label192"
+        Label192.Size = New Size(53, 18)
+        Label192.TabIndex = 54
+        Label192.Text = "Diesel"
+        ' 
+        ' Label193
+        ' 
+        Label193.AutoSize = True
+        Label193.Font = New Font("Century", 9F, FontStyle.Bold)
+        Label193.Location = New Point(3, 115)
+        Label193.Name = "Label193"
+        Label193.Size = New Size(122, 18)
+        Label193.TabIndex = 53
+        Label193.Text = "Manufacturer:"
+        ' 
+        ' Label194
+        ' 
+        Label194.AutoSize = True
+        Label194.Font = New Font("Century", 9F, FontStyle.Bold)
+        Label194.Location = New Point(3, 95)
+        Label194.Name = "Label194"
+        Label194.Size = New Size(76, 18)
+        Label194.TabIndex = 52
+        Label194.Text = "Mileage:"
+        ' 
+        ' Label195
+        ' 
+        Label195.AutoSize = True
+        Label195.Font = New Font("Century", 9F, FontStyle.Bold)
+        Label195.Location = New Point(3, 75)
+        Label195.Name = "Label195"
+        Label195.Size = New Size(120, 18)
+        Label195.TabIndex = 51
+        Label195.Text = "Transmission:"
+        ' 
+        ' Label196
+        ' 
+        Label196.AutoSize = True
+        Label196.Font = New Font("Century", 9F, FontStyle.Bold)
+        Label196.Location = New Point(3, 57)
+        Label196.Name = "Label196"
+        Label196.Size = New Size(62, 18)
+        Label196.TabIndex = 50
+        Label196.Text = "Model:"
+        ' 
+        ' Label197
+        ' 
+        Label197.AutoSize = True
+        Label197.Font = New Font("Century", 9F, FontStyle.Bold)
+        Label197.Location = New Point(3, 39)
+        Label197.Name = "Label197"
+        Label197.Size = New Size(93, 18)
+        Label197.TabIndex = 49
+        Label197.Text = "Fuel Type:"
+        ' 
         ' Label44
         ' 
         Label44.AutoSize = True
         Label44.Font = New Font("Century", 10.2F, FontStyle.Underline)
-        Label44.Location = New Point(329, 420)
+        Label44.Location = New Point(329, 400)
         Label44.Name = "Label44"
         Label44.Size = New Size(75, 21)
         Label44.TabIndex = 38
@@ -1033,7 +2007,7 @@ Partial Class Camping_Cars
         ' 
         Label45.AutoSize = True
         Label45.Font = New Font("Century", 13.8F, FontStyle.Underline, GraphicsUnit.Point, CByte(0))
-        Label45.Location = New Point(278, 441)
+        Label45.Location = New Point(278, 421)
         Label45.Name = "Label45"
         Label45.Size = New Size(97, 28)
         Label45.TabIndex = 37
@@ -1043,7 +2017,7 @@ Partial Class Camping_Cars
         ' 
         Label46.AutoSize = True
         Label46.Font = New Font("Century", 10.2F, FontStyle.Underline)
-        Label46.Location = New Point(329, 378)
+        Label46.Location = New Point(329, 358)
         Label46.Name = "Label46"
         Label46.Size = New Size(75, 21)
         Label46.TabIndex = 36
@@ -1053,7 +2027,7 @@ Partial Class Camping_Cars
         ' 
         Label47.AutoSize = True
         Label47.Font = New Font("Century", 10.2F, FontStyle.Underline)
-        Label47.Location = New Point(329, 399)
+        Label47.Location = New Point(329, 379)
         Label47.Name = "Label47"
         Label47.Size = New Size(75, 21)
         Label47.TabIndex = 35
@@ -1063,7 +2037,7 @@ Partial Class Camping_Cars
         ' 
         Label48.AutoSize = True
         Label48.Font = New Font("Century", 10.2F, FontStyle.Underline)
-        Label48.Location = New Point(329, 357)
+        Label48.Location = New Point(329, 337)
         Label48.Name = "Label48"
         Label48.Size = New Size(75, 21)
         Label48.TabIndex = 34
@@ -1073,7 +2047,7 @@ Partial Class Camping_Cars
         ' 
         Label49.AutoSize = True
         Label49.Font = New Font("Century", 10.2F, FontStyle.Underline)
-        Label49.Location = New Point(329, 334)
+        Label49.Location = New Point(329, 314)
         Label49.Name = "Label49"
         Label49.Size = New Size(75, 21)
         Label49.TabIndex = 33
@@ -1082,7 +2056,7 @@ Partial Class Camping_Cars
         ' SD1
         ' 
         SD1.Font = New Font("Century", 9F, FontStyle.Bold)
-        SD1.Location = New Point(161, 506)
+        SD1.Location = New Point(162, 497)
         SD1.Name = "SD1"
         SD1.Size = New Size(134, 29)
         SD1.TabIndex = 4
@@ -1092,7 +2066,7 @@ Partial Class Camping_Cars
         ' WD1
         ' 
         WD1.Font = New Font("Century", 9F, FontStyle.Bold)
-        WD1.Location = New Point(21, 507)
+        WD1.Location = New Point(22, 498)
         WD1.Name = "WD1"
         WD1.Size = New Size(134, 29)
         WD1.TabIndex = 5
@@ -1104,17 +2078,17 @@ Partial Class Camping_Cars
         ' 
         Label50.AutoSize = True
         Label50.Font = New Font("Felix Titling", 10.2F, FontStyle.Bold)
-        Label50.Location = New Point(3, 483)
+        Label50.Location = New Point(3, 472)
         Label50.Name = "Label50"
-        Label50.Size = New Size(363, 20)
+        Label50.Size = New Size(310, 20)
         Label50.TabIndex = 32
-        Label50.Text = "RATES FOR THE MITSUBISHI XPANDER :"
+        Label50.Text = "RATES FOR THE MOTORHOME 2 :"
         ' 
         ' Label51
         ' 
         Label51.AutoSize = True
         Label51.Font = New Font("Century", 10.2F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
-        Label51.Location = New Point(132, 448)
+        Label51.Location = New Point(132, 428)
         Label51.Name = "Label51"
         Label51.Size = New Size(145, 21)
         Label51.TabIndex = 31
@@ -1124,7 +2098,7 @@ Partial Class Camping_Cars
         ' 
         Label52.AutoSize = True
         Label52.Font = New Font("Century", 9F, FontStyle.Bold)
-        Label52.Location = New Point(97, 421)
+        Label52.Location = New Point(97, 401)
         Label52.Name = "Label52"
         Label52.Size = New Size(134, 18)
         Label52.TabIndex = 30
@@ -1134,7 +2108,7 @@ Partial Class Camping_Cars
         ' 
         Label53.AutoSize = True
         Label53.Font = New Font("Century", 9F, FontStyle.Bold)
-        Label53.Location = New Point(97, 400)
+        Label53.Location = New Point(97, 380)
         Label53.Name = "Label53"
         Label53.Size = New Size(139, 18)
         Label53.TabIndex = 29
@@ -1144,7 +2118,7 @@ Partial Class Camping_Cars
         ' 
         Label54.AutoSize = True
         Label54.Font = New Font("Century", 9F, FontStyle.Bold)
-        Label54.Location = New Point(97, 379)
+        Label54.Location = New Point(97, 359)
         Label54.Name = "Label54"
         Label54.Size = New Size(156, 18)
         Label54.TabIndex = 28
@@ -1154,7 +2128,7 @@ Partial Class Camping_Cars
         ' 
         Label55.AutoSize = True
         Label55.Font = New Font("Century", 9F, FontStyle.Bold)
-        Label55.Location = New Point(97, 358)
+        Label55.Location = New Point(97, 338)
         Label55.Name = "Label55"
         Label55.Size = New Size(157, 18)
         Label55.TabIndex = 27
@@ -1164,7 +2138,7 @@ Partial Class Camping_Cars
         ' 
         Label56.AutoSize = True
         Label56.Font = New Font("Century", 9F, FontStyle.Bold)
-        Label56.Location = New Point(97, 337)
+        Label56.Location = New Point(97, 317)
         Label56.Name = "Label56"
         Label56.Size = New Size(106, 18)
         Label56.TabIndex = 26
@@ -1174,221 +2148,11 @@ Partial Class Camping_Cars
         ' 
         Label57.AutoSize = True
         Label57.Font = New Font("Felix Titling", 10.2F, FontStyle.Bold)
-        Label57.Location = New Point(3, 311)
+        Label57.Location = New Point(3, 291)
         Label57.Name = "Label57"
         Label57.Size = New Size(180, 20)
         Label57.TabIndex = 25
         Label57.Text = "SAFETY FEATURES :"
-        ' 
-        ' Label58
-        ' 
-        Label58.AutoSize = True
-        Label58.Font = New Font("Century", 9F, FontStyle.Underline)
-        Label58.Location = New Point(135, 273)
-        Label58.Name = "Label58"
-        Label58.Size = New Size(93, 18)
-        Label58.TabIndex = 24
-        Label58.Text = "Immobilizer"
-        ' 
-        ' Label59
-        ' 
-        Label59.AutoSize = True
-        Label59.Font = New Font("Century", 9F, FontStyle.Underline)
-        Label59.Location = New Point(135, 253)
-        Label59.Name = "Label59"
-        Label59.Size = New Size(115, 18)
-        Label59.TabIndex = 23
-        Label59.Text = "Security Alarm"
-        ' 
-        ' Label60
-        ' 
-        Label60.AutoSize = True
-        Label60.Font = New Font("Century", 9F, FontStyle.Underline)
-        Label60.Location = New Point(135, 233)
-        Label60.Name = "Label60"
-        Label60.Size = New Size(295, 18)
-        Label60.TabIndex = 22
-        Label60.Text = "EBD (Electronic Brakefore Distribution)"
-        ' 
-        ' Label61
-        ' 
-        Label61.AutoSize = True
-        Label61.Font = New Font("Century", 9F, FontStyle.Underline)
-        Label61.Location = New Point(135, 213)
-        Label61.Name = "Label61"
-        Label61.Size = New Size(234, 18)
-        Label61.TabIndex = 21
-        Label61.Text = "ABS (Anti-lock Braking System)"
-        ' 
-        ' Label62
-        ' 
-        Label62.AutoSize = True
-        Label62.Font = New Font("Century", 9F, FontStyle.Underline)
-        Label62.Location = New Point(135, 193)
-        Label62.Name = "Label62"
-        Label62.Size = New Size(144, 18)
-        Label62.TabIndex = 20
-        Label62.Text = "Dual Front Airbags"
-        ' 
-        ' Label63
-        ' 
-        Label63.AutoSize = True
-        Label63.Font = New Font("Century", 10.2F)
-        Label63.Location = New Point(99, 274)
-        Label63.Name = "Label63"
-        Label63.Size = New Size(23, 21)
-        Label63.TabIndex = 19
-        Label63.Text = "🗹"
-        ' 
-        ' Label64
-        ' 
-        Label64.AutoSize = True
-        Label64.Font = New Font("Century", 10.2F)
-        Label64.Location = New Point(99, 254)
-        Label64.Name = "Label64"
-        Label64.Size = New Size(23, 21)
-        Label64.TabIndex = 18
-        Label64.Text = "🗹"
-        ' 
-        ' Label65
-        ' 
-        Label65.AutoSize = True
-        Label65.Font = New Font("Century", 10.2F)
-        Label65.Location = New Point(99, 234)
-        Label65.Name = "Label65"
-        Label65.Size = New Size(23, 21)
-        Label65.TabIndex = 17
-        Label65.Text = "🗹"
-        ' 
-        ' Label66
-        ' 
-        Label66.AutoSize = True
-        Label66.Font = New Font("Century", 10.2F)
-        Label66.Location = New Point(99, 214)
-        Label66.Name = "Label66"
-        Label66.Size = New Size(23, 21)
-        Label66.TabIndex = 16
-        Label66.Text = "🗹"
-        ' 
-        ' Label67
-        ' 
-        Label67.AutoSize = True
-        Label67.Font = New Font("Century", 10.2F)
-        Label67.Location = New Point(99, 194)
-        Label67.Name = "Label67"
-        Label67.Size = New Size(23, 21)
-        Label67.TabIndex = 15
-        Label67.Text = "🗹"
-        ' 
-        ' Label68
-        ' 
-        Label68.AutoSize = True
-        Label68.Font = New Font("Felix Titling", 10.2F, FontStyle.Bold)
-        Label68.Location = New Point(3, 170)
-        Label68.Name = "Label68"
-        Label68.Size = New Size(180, 20)
-        Label68.TabIndex = 14
-        Label68.Text = "SAFETY FEATURES :"
-        ' 
-        ' Label69
-        ' 
-        Label69.AutoSize = True
-        Label69.Font = New Font("Century", 9F, FontStyle.Underline)
-        Label69.Location = New Point(165, 137)
-        Label69.Name = "Label69"
-        Label69.Size = New Size(227, 18)
-        Label69.TabIndex = 13
-        Label69.Text = "Compact, off-road-capable SUV"
-        ' 
-        ' Label70
-        ' 
-        Label70.AutoSize = True
-        Label70.Font = New Font("Century", 9F, FontStyle.Underline)
-        Label70.Location = New Point(165, 117)
-        Label70.Name = "Label70"
-        Label70.Size = New Size(80, 18)
-        Label70.TabIndex = 12
-        Label70.Text = "Unlimited"
-        ' 
-        ' Label71
-        ' 
-        Label71.AutoSize = True
-        Label71.Font = New Font("Century", 9F, FontStyle.Underline)
-        Label71.Location = New Point(165, 97)
-        Label71.Name = "Label71"
-        Label71.Size = New Size(241, 18)
-        Label71.TabIndex = 11
-        Label71.Text = "Manual or AGS (Auto Gear Shift)"
-        ' 
-        ' Label72
-        ' 
-        Label72.AutoSize = True
-        Label72.Font = New Font("Century", 9F, FontStyle.Underline)
-        Label72.Location = New Point(165, 60)
-        Label72.Name = "Label72"
-        Label72.Size = New Size(268, 36)
-        Label72.TabIndex = 10
-        Label72.Text = "1.5-liter, 4-cylinder, DOHC 16-Valve " & vbCrLf & "gasoline engine"
-        ' 
-        ' Label73
-        ' 
-        Label73.AutoSize = True
-        Label73.Font = New Font("Century", 9F, FontStyle.Underline)
-        Label73.Location = New Point(165, 40)
-        Label73.Name = "Label73"
-        Label73.Size = New Size(70, 18)
-        Label73.TabIndex = 9
-        Label73.Text = "Gasoline"
-        ' 
-        ' Label74
-        ' 
-        Label74.AutoSize = True
-        Label74.Font = New Font("Century", 9F, FontStyle.Bold)
-        Label74.Location = New Point(21, 137)
-        Label74.Name = "Label74"
-        Label74.Size = New Size(97, 18)
-        Label74.TabIndex = 8
-        Label74.Text = "Body Type:"
-        ' 
-        ' Label75
-        ' 
-        Label75.AutoSize = True
-        Label75.Font = New Font("Century", 9F, FontStyle.Bold)
-        Label75.Location = New Point(21, 117)
-        Label75.Name = "Label75"
-        Label75.Size = New Size(76, 18)
-        Label75.TabIndex = 7
-        Label75.Text = "Mileage:"
-        ' 
-        ' Label76
-        ' 
-        Label76.AutoSize = True
-        Label76.Font = New Font("Century", 9F, FontStyle.Bold)
-        Label76.Location = New Point(21, 97)
-        Label76.Name = "Label76"
-        Label76.Size = New Size(120, 18)
-        Label76.TabIndex = 6
-        Label76.Text = "Transmission:"
-        ' 
-        ' Label77
-        ' 
-        Label77.AutoSize = True
-        Label77.Font = New Font("Century", 9F, FontStyle.Bold)
-        Label77.Location = New Point(21, 60)
-        Label77.Name = "Label77"
-        Label77.Size = New Size(69, 18)
-        Label77.TabIndex = 5
-        Label77.Text = "Engine:"
-        ' 
-        ' Label78
-        ' 
-        Label78.AutoSize = True
-        Label78.Font = New Font("Century", 9F, FontStyle.Bold)
-        Label78.Location = New Point(21, 40)
-        Label78.Name = "Label78"
-        Label78.Size = New Size(93, 18)
-        Label78.TabIndex = 4
-        Label78.Text = "Fuel Type:"
         ' 
         ' Label79
         ' 
@@ -1424,9 +2188,9 @@ Partial Class Camping_Cars
         ' 
         Label81.AutoSize = True
         Label81.Font = New Font("Century", 9F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
-        Label81.Location = New Point(17, 28)
+        Label81.Location = New Point(9, 24)
         Label81.Name = "Label81"
-        Label81.Size = New Size(752, 54)
+        Label81.Size = New Size(764, 54)
         Label81.TabIndex = 2
         Label81.Text = resources.GetString("Label81.Text")
         Label81.TextAlign = ContentAlignment.TopCenter
@@ -1434,6 +2198,8 @@ Partial Class Camping_Cars
         ' Panel6
         ' 
         Panel6.BorderStyle = BorderStyle.Fixed3D
+        Panel6.Controls.Add(Label172)
+        Panel6.Controls.Add(Label173)
         Panel6.Controls.Add(PictureBox30)
         Panel6.Controls.Add(Label82)
         Panel6.Controls.Add(Label83)
@@ -1450,15 +2216,44 @@ Partial Class Camping_Cars
         Panel6.Size = New Size(780, 442)
         Panel6.TabIndex = 4
         ' 
+        ' Label172
+        ' 
+        Label172.AutoSize = True
+        Label172.Font = New Font("Century", 9F, FontStyle.Underline)
+        Label172.Location = New Point(141, 47)
+        Label172.Name = "Label172"
+        Label172.Size = New Size(77, 18)
+        Label172.TabIndex = 12
+        Label172.Text = "ABC 1234"
+        ' 
+        ' Label173
+        ' 
+        Label173.AutoSize = True
+        Label173.Font = New Font("Century", 9F, FontStyle.Bold)
+        Label173.Location = New Point(12, 47)
+        Label173.Name = "Label173"
+        Label173.Size = New Size(123, 18)
+        Label173.TabIndex = 11
+        Label173.Text = "Plate Number:"
+        ' 
+        ' PictureBox30
+        ' 
+        PictureBox30.BorderStyle = BorderStyle.Fixed3D
+        PictureBox30.Location = New Point(3, 150)
+        PictureBox30.Name = "PictureBox30"
+        PictureBox30.Size = New Size(250, 135)
+        PictureBox30.TabIndex = 9
+        PictureBox30.TabStop = False
+        ' 
         ' Label82
         ' 
         Label82.AutoSize = True
         Label82.Font = New Font("Century", 9F, FontStyle.Underline)
         Label82.Location = New Point(75, 29)
         Label82.Name = "Label82"
-        Label82.Size = New Size(51, 18)
+        Label82.Size = New Size(50, 18)
         Label82.TabIndex = 8
-        Label82.Text = "White"
+        Label82.Text = "Silver"
         ' 
         ' Label83
         ' 
@@ -1473,7 +2268,7 @@ Partial Class Camping_Cars
         ' PictureBox7
         ' 
         PictureBox7.BorderStyle = BorderStyle.Fixed3D
-        PictureBox7.Location = New Point(422, 291)
+        PictureBox7.Location = New Point(519, 291)
         PictureBox7.Name = "PictureBox7"
         PictureBox7.Size = New Size(250, 135)
         PictureBox7.TabIndex = 6
@@ -1482,7 +2277,7 @@ Partial Class Camping_Cars
         ' PictureBox8
         ' 
         PictureBox8.BorderStyle = BorderStyle.Fixed3D
-        PictureBox8.Location = New Point(166, 291)
+        PictureBox8.Location = New Point(263, 291)
         PictureBox8.Name = "PictureBox8"
         PictureBox8.Size = New Size(250, 135)
         PictureBox8.TabIndex = 6
@@ -1491,7 +2286,7 @@ Partial Class Camping_Cars
         ' PictureBox9
         ' 
         PictureBox9.BorderStyle = BorderStyle.Fixed3D
-        PictureBox9.Location = New Point(422, 9)
+        PictureBox9.Location = New Point(519, 9)
         PictureBox9.Name = "PictureBox9"
         PictureBox9.Size = New Size(250, 135)
         PictureBox9.TabIndex = 5
@@ -1518,7 +2313,7 @@ Partial Class Camping_Cars
         ' PictureBox12
         ' 
         PictureBox12.BorderStyle = BorderStyle.Fixed3D
-        PictureBox12.Location = New Point(166, 9)
+        PictureBox12.Location = New Point(263, 9)
         PictureBox12.Name = "PictureBox12"
         PictureBox12.Size = New Size(250, 135)
         PictureBox12.TabIndex = 2
@@ -1532,7 +2327,7 @@ Partial Class Camping_Cars
         Label84.Name = "Label84"
         Label84.Size = New Size(40, 18)
         Label84.TabIndex = 1
-        Label84.Text = "2018"
+        Label84.Text = "2001"
         ' 
         ' Label85
         ' 
@@ -1581,6 +2376,57 @@ Partial Class Camping_Cars
         ' Panel7
         ' 
         Panel7.BorderStyle = BorderStyle.Fixed3D
+        Panel7.Controls.Add(Label110)
+        Panel7.Controls.Add(Label114)
+        Panel7.Controls.Add(Label115)
+        Panel7.Controls.Add(Label116)
+        Panel7.Controls.Add(Label117)
+        Panel7.Controls.Add(Label118)
+        Panel7.Controls.Add(Label119)
+        Panel7.Controls.Add(Label120)
+        Panel7.Controls.Add(Label227)
+        Panel7.Controls.Add(Label238)
+        Panel7.Controls.Add(Label239)
+        Panel7.Controls.Add(Label240)
+        Panel7.Controls.Add(Label241)
+        Panel7.Controls.Add(Label242)
+        Panel7.Controls.Add(Label243)
+        Panel7.Controls.Add(Label244)
+        Panel7.Controls.Add(Label245)
+        Panel7.Controls.Add(Label246)
+        Panel7.Controls.Add(Label247)
+        Panel7.Controls.Add(Label248)
+        Panel7.Controls.Add(Label249)
+        Panel7.Controls.Add(Label250)
+        Panel7.Controls.Add(Label251)
+        Panel7.Controls.Add(Label252)
+        Panel7.Controls.Add(Label253)
+        Panel7.Controls.Add(Label254)
+        Panel7.Controls.Add(Label255)
+        Panel7.Controls.Add(Label256)
+        Panel7.Controls.Add(Label257)
+        Panel7.Controls.Add(Label258)
+        Panel7.Controls.Add(Label259)
+        Panel7.Controls.Add(Label58)
+        Panel7.Controls.Add(Label60)
+        Panel7.Controls.Add(Label61)
+        Panel7.Controls.Add(Label63)
+        Panel7.Controls.Add(Label64)
+        Panel7.Controls.Add(Label65)
+        Panel7.Controls.Add(Label66)
+        Panel7.Controls.Add(Label100)
+        Panel7.Controls.Add(Label101)
+        Panel7.Controls.Add(Label102)
+        Panel7.Controls.Add(Label103)
+        Panel7.Controls.Add(Label104)
+        Panel7.Controls.Add(Label105)
+        Panel7.Controls.Add(Label106)
+        Panel7.Controls.Add(Label107)
+        Panel7.Controls.Add(Label108)
+        Panel7.Controls.Add(Label109)
+        Panel7.Controls.Add(Label111)
+        Panel7.Controls.Add(Label112)
+        Panel7.Controls.Add(Label113)
         Panel7.Controls.Add(Label86)
         Panel7.Controls.Add(Label87)
         Panel7.Controls.Add(Label88)
@@ -1597,32 +2443,521 @@ Partial Class Camping_Cars
         Panel7.Controls.Add(Label97)
         Panel7.Controls.Add(Label98)
         Panel7.Controls.Add(Label99)
-        Panel7.Controls.Add(Label100)
-        Panel7.Controls.Add(Label101)
-        Panel7.Controls.Add(Label102)
-        Panel7.Controls.Add(Label103)
-        Panel7.Controls.Add(Label104)
-        Panel7.Controls.Add(Label105)
-        Panel7.Controls.Add(Label106)
-        Panel7.Controls.Add(Label107)
-        Panel7.Controls.Add(Label108)
-        Panel7.Controls.Add(Label109)
-        Panel7.Controls.Add(Label110)
-        Panel7.Controls.Add(Label111)
-        Panel7.Controls.Add(Label112)
-        Panel7.Controls.Add(Label113)
-        Panel7.Controls.Add(Label114)
-        Panel7.Controls.Add(Label115)
-        Panel7.Controls.Add(Label116)
-        Panel7.Controls.Add(Label117)
-        Panel7.Controls.Add(Label118)
-        Panel7.Controls.Add(Label119)
-        Panel7.Controls.Add(Label120)
         Panel7.Controls.Add(Label121)
         Panel7.Location = New Point(792, 6)
         Panel7.Name = "Panel7"
         Panel7.Size = New Size(494, 546)
         Panel7.TabIndex = 10
+        ' 
+        ' Label110
+        ' 
+        Label110.AutoSize = True
+        Label110.Font = New Font("Century", 9F, FontStyle.Underline)
+        Label110.Location = New Point(367, 260)
+        Label110.Name = "Label110"
+        Label110.Size = New Size(85, 18)
+        Label110.TabIndex = 119
+        Label110.Text = "Sun Blinds"
+        ' 
+        ' Label114
+        ' 
+        Label114.AutoSize = True
+        Label114.Font = New Font("Century", 9F, FontStyle.Underline)
+        Label114.Location = New Point(209, 199)
+        Label114.Name = "Label114"
+        Label114.Size = New Size(83, 18)
+        Label114.TabIndex = 118
+        Label114.Text = "Hot Water"
+        ' 
+        ' Label115
+        ' 
+        Label115.AutoSize = True
+        Label115.Font = New Font("Century", 9F, FontStyle.Underline)
+        Label115.Location = New Point(367, 239)
+        Label115.Name = "Label115"
+        Label115.Size = New Size(62, 18)
+        Label115.TabIndex = 117
+        Label115.Text = "Awning"
+        ' 
+        ' Label116
+        ' 
+        Label116.AutoSize = True
+        Label116.Font = New Font("Century", 9F, FontStyle.Underline)
+        Label116.Location = New Point(367, 219)
+        Label116.Name = "Label116"
+        Label116.Size = New Size(103, 18)
+        Label116.TabIndex = 116
+        Label116.Text = "Mosquito Net"
+        ' 
+        ' Label117
+        ' 
+        Label117.AutoSize = True
+        Label117.Font = New Font("Century", 9F, FontStyle.Underline)
+        Label117.Location = New Point(367, 199)
+        Label117.Name = "Label117"
+        Label117.Size = New Size(50, 18)
+        Label117.TabIndex = 115
+        Label117.Text = "Toilet"
+        ' 
+        ' Label118
+        ' 
+        Label118.AutoSize = True
+        Label118.Font = New Font("Century", 10.2F)
+        Label118.Location = New Point(338, 260)
+        Label118.Name = "Label118"
+        Label118.Size = New Size(23, 21)
+        Label118.TabIndex = 114
+        Label118.Text = "🗹"
+        ' 
+        ' Label119
+        ' 
+        Label119.AutoSize = True
+        Label119.Font = New Font("Century", 10.2F)
+        Label119.Location = New Point(338, 240)
+        Label119.Name = "Label119"
+        Label119.Size = New Size(23, 21)
+        Label119.TabIndex = 113
+        Label119.Text = "🗹"
+        ' 
+        ' Label120
+        ' 
+        Label120.AutoSize = True
+        Label120.Font = New Font("Century", 10.2F)
+        Label120.Location = New Point(338, 220)
+        Label120.Name = "Label120"
+        Label120.Size = New Size(23, 21)
+        Label120.TabIndex = 112
+        Label120.Text = "🗹"
+        ' 
+        ' Label227
+        ' 
+        Label227.AutoSize = True
+        Label227.Font = New Font("Century", 10.2F)
+        Label227.Location = New Point(338, 200)
+        Label227.Name = "Label227"
+        Label227.Size = New Size(23, 21)
+        Label227.TabIndex = 111
+        Label227.Text = "🗹"
+        ' 
+        ' Label238
+        ' 
+        Label238.AutoSize = True
+        Label238.Font = New Font("Century", 10.2F)
+        Label238.Location = New Point(338, 180)
+        Label238.Name = "Label238"
+        Label238.Size = New Size(23, 21)
+        Label238.TabIndex = 110
+        Label238.Text = "🗹"
+        ' 
+        ' Label239
+        ' 
+        Label239.AutoSize = True
+        Label239.Font = New Font("Century", 9F, FontStyle.Underline)
+        Label239.Location = New Point(209, 257)
+        Label239.Name = "Label239"
+        Label239.Size = New Size(71, 18)
+        Label239.TabIndex = 109
+        Label239.Text = "Aux-port"
+        ' 
+        ' Label240
+        ' 
+        Label240.AutoSize = True
+        Label240.Font = New Font("Century", 9F, FontStyle.Underline)
+        Label240.Location = New Point(209, 237)
+        Label240.Name = "Label240"
+        Label240.Size = New Size(75, 18)
+        Label240.TabIndex = 108
+        Label240.Text = "AC in cab"
+        ' 
+        ' Label241
+        ' 
+        Label241.AutoSize = True
+        Label241.Font = New Font("Century", 9F, FontStyle.Underline)
+        Label241.Location = New Point(209, 217)
+        Label241.Name = "Label241"
+        Label241.Size = New Size(127, 18)
+        Label241.TabIndex = 107
+        Label241.Text = "AC in living area"
+        ' 
+        ' Label242
+        ' 
+        Label242.AutoSize = True
+        Label242.Font = New Font("Century", 9F, FontStyle.Underline)
+        Label242.Location = New Point(367, 179)
+        Label242.Name = "Label242"
+        Label242.Size = New Size(29, 18)
+        Label242.TabIndex = 106
+        Label242.Text = "TV"
+        ' 
+        ' Label243
+        ' 
+        Label243.AutoSize = True
+        Label243.Font = New Font("Century", 9F, FontStyle.Underline)
+        Label243.Location = New Point(209, 177)
+        Label243.Name = "Label243"
+        Label243.Size = New Size(61, 18)
+        Label243.TabIndex = 105
+        Label243.Text = "Shower"
+        ' 
+        ' Label244
+        ' 
+        Label244.AutoSize = True
+        Label244.Font = New Font("Century", 10.2F)
+        Label244.Location = New Point(180, 257)
+        Label244.Name = "Label244"
+        Label244.Size = New Size(23, 21)
+        Label244.TabIndex = 104
+        Label244.Text = "🗹"
+        ' 
+        ' Label245
+        ' 
+        Label245.AutoSize = True
+        Label245.Font = New Font("Century", 10.2F)
+        Label245.Location = New Point(180, 237)
+        Label245.Name = "Label245"
+        Label245.Size = New Size(23, 21)
+        Label245.TabIndex = 103
+        Label245.Text = "🗹"
+        ' 
+        ' Label246
+        ' 
+        Label246.AutoSize = True
+        Label246.Font = New Font("Century", 10.2F)
+        Label246.Location = New Point(180, 217)
+        Label246.Name = "Label246"
+        Label246.Size = New Size(23, 21)
+        Label246.TabIndex = 102
+        Label246.Text = "🗹"
+        ' 
+        ' Label247
+        ' 
+        Label247.AutoSize = True
+        Label247.Font = New Font("Century", 10.2F)
+        Label247.Location = New Point(180, 197)
+        Label247.Name = "Label247"
+        Label247.Size = New Size(23, 21)
+        Label247.TabIndex = 101
+        Label247.Text = "🗹"
+        ' 
+        ' Label248
+        ' 
+        Label248.AutoSize = True
+        Label248.Font = New Font("Century", 10.2F)
+        Label248.Location = New Point(180, 177)
+        Label248.Name = "Label248"
+        Label248.Size = New Size(23, 21)
+        Label248.TabIndex = 100
+        Label248.Text = "🗹"
+        ' 
+        ' Label249
+        ' 
+        Label249.AutoSize = True
+        Label249.Font = New Font("Century", 9F, FontStyle.Underline)
+        Label249.Location = New Point(32, 257)
+        Label249.Name = "Label249"
+        Label249.Size = New Size(137, 18)
+        Label249.TabIndex = 99
+        Label249.Text = "Blackout Curtains"
+        ' 
+        ' Label250
+        ' 
+        Label250.AutoSize = True
+        Label250.Font = New Font("Century", 9F, FontStyle.Underline)
+        Label250.Location = New Point(32, 237)
+        Label250.Name = "Label250"
+        Label250.Size = New Size(146, 18)
+        Label250.TabIndex = 98
+        Label250.Text = "Kitchen Equipment"
+        ' 
+        ' Label251
+        ' 
+        Label251.AutoSize = True
+        Label251.Font = New Font("Century", 9F, FontStyle.Underline)
+        Label251.Location = New Point(32, 217)
+        Label251.Name = "Label251"
+        Label251.Size = New Size(107, 18)
+        Label251.TabIndex = 97
+        Label251.Text = "Cooking Plate"
+        ' 
+        ' Label252
+        ' 
+        Label252.AutoSize = True
+        Label252.Font = New Font("Century", 9F, FontStyle.Underline)
+        Label252.Location = New Point(32, 197)
+        Label252.Name = "Label252"
+        Label252.Size = New Size(63, 18)
+        Label252.TabIndex = 96
+        Label252.Text = "Freezer"
+        ' 
+        ' Label253
+        ' 
+        Label253.AutoSize = True
+        Label253.Font = New Font("Century", 9F, FontStyle.Underline)
+        Label253.Location = New Point(32, 177)
+        Label253.Name = "Label253"
+        Label253.Size = New Size(55, 18)
+        Label253.TabIndex = 95
+        Label253.Text = "Fridge"
+        ' 
+        ' Label254
+        ' 
+        Label254.AutoSize = True
+        Label254.Font = New Font("Century", 10.2F)
+        Label254.Location = New Point(3, 257)
+        Label254.Name = "Label254"
+        Label254.Size = New Size(23, 21)
+        Label254.TabIndex = 94
+        Label254.Text = "🗹"
+        ' 
+        ' Label255
+        ' 
+        Label255.AutoSize = True
+        Label255.Font = New Font("Century", 10.2F)
+        Label255.Location = New Point(3, 237)
+        Label255.Name = "Label255"
+        Label255.Size = New Size(23, 21)
+        Label255.TabIndex = 93
+        Label255.Text = "🗹"
+        ' 
+        ' Label256
+        ' 
+        Label256.AutoSize = True
+        Label256.Font = New Font("Century", 10.2F)
+        Label256.Location = New Point(3, 217)
+        Label256.Name = "Label256"
+        Label256.Size = New Size(23, 21)
+        Label256.TabIndex = 92
+        Label256.Text = "🗹"
+        ' 
+        ' Label257
+        ' 
+        Label257.AutoSize = True
+        Label257.Font = New Font("Century", 10.2F)
+        Label257.Location = New Point(3, 197)
+        Label257.Name = "Label257"
+        Label257.Size = New Size(23, 21)
+        Label257.TabIndex = 91
+        Label257.Text = "🗹"
+        ' 
+        ' Label258
+        ' 
+        Label258.AutoSize = True
+        Label258.Font = New Font("Century", 10.2F)
+        Label258.Location = New Point(3, 177)
+        Label258.Name = "Label258"
+        Label258.Size = New Size(23, 21)
+        Label258.TabIndex = 90
+        Label258.Text = "🗹"
+        ' 
+        ' Label259
+        ' 
+        Label259.AutoSize = True
+        Label259.Font = New Font("Felix Titling", 10.2F, FontStyle.Bold)
+        Label259.Location = New Point(3, 150)
+        Label259.Name = "Label259"
+        Label259.Size = New Size(113, 20)
+        Label259.TabIndex = 89
+        Label259.Text = "AMENITIES :"
+        ' 
+        ' Label58
+        ' 
+        Label58.AutoSize = True
+        Label58.Font = New Font("Century", 9F, FontStyle.Underline)
+        Label58.Location = New Point(392, 114)
+        Label58.Name = "Label58"
+        Label58.Size = New Size(61, 18)
+        Label58.TabIndex = 88
+        Label58.Text = "3500 kg"
+        ' 
+        ' Label60
+        ' 
+        Label60.AutoSize = True
+        Label60.Font = New Font("Century", 9F, FontStyle.Underline)
+        Label60.Location = New Point(392, 94)
+        Label60.Name = "Label60"
+        Label60.Size = New Size(61, 18)
+        Label60.TabIndex = 87
+        Label60.Text = "3006 kg"
+        ' 
+        ' Label61
+        ' 
+        Label61.AutoSize = True
+        Label61.Font = New Font("Century", 9F, FontStyle.Underline)
+        Label61.Location = New Point(392, 74)
+        Label61.Name = "Label61"
+        Label61.Size = New Size(81, 18)
+        Label61.TabIndex = 86
+        Label61.Text = "3.1 meters"
+        ' 
+        ' Label63
+        ' 
+        Label63.AutoSize = True
+        Label63.Font = New Font("Century", 9F, FontStyle.Underline)
+        Label63.Location = New Point(392, 56)
+        Label63.Name = "Label63"
+        Label63.Size = New Size(81, 18)
+        Label63.TabIndex = 85
+        Label63.Text = "6.8 meters"
+        ' 
+        ' Label64
+        ' 
+        Label64.AutoSize = True
+        Label64.Font = New Font("Century", 9F, FontStyle.Underline)
+        Label64.Location = New Point(392, 36)
+        Label64.Name = "Label64"
+        Label64.Size = New Size(81, 18)
+        Label64.TabIndex = 84
+        Label64.Text = "2.3 meters"
+        ' 
+        ' Label65
+        ' 
+        Label65.AutoSize = True
+        Label65.Font = New Font("Century", 9F, FontStyle.Bold)
+        Label65.Location = New Point(271, 114)
+        Label65.Name = "Label65"
+        Label65.Size = New Size(117, 18)
+        Label65.TabIndex = 83
+        Label65.Text = "Total Weight:"
+        ' 
+        ' Label66
+        ' 
+        Label66.AutoSize = True
+        Label66.Font = New Font("Century", 9F, FontStyle.Bold)
+        Label66.Location = New Point(271, 94)
+        Label66.Name = "Label66"
+        Label66.Size = New Size(114, 18)
+        Label66.TabIndex = 82
+        Label66.Text = "Curb Weight:"
+        ' 
+        ' Label100
+        ' 
+        Label100.AutoSize = True
+        Label100.Font = New Font("Century", 9F, FontStyle.Bold)
+        Label100.Location = New Point(271, 74)
+        Label100.Name = "Label100"
+        Label100.Size = New Size(68, 18)
+        Label100.TabIndex = 81
+        Label100.Text = "Height:"
+        ' 
+        ' Label101
+        ' 
+        Label101.AutoSize = True
+        Label101.Font = New Font("Century", 9F, FontStyle.Bold)
+        Label101.Location = New Point(271, 56)
+        Label101.Name = "Label101"
+        Label101.Size = New Size(69, 18)
+        Label101.TabIndex = 80
+        Label101.Text = "Length:"
+        ' 
+        ' Label102
+        ' 
+        Label102.AutoSize = True
+        Label102.Font = New Font("Century", 9F, FontStyle.Bold)
+        Label102.Location = New Point(271, 36)
+        Label102.Name = "Label102"
+        Label102.Size = New Size(62, 18)
+        Label102.TabIndex = 79
+        Label102.Text = "Width:"
+        ' 
+        ' Label103
+        ' 
+        Label103.AutoSize = True
+        Label103.Font = New Font("Century", 9F, FontStyle.Underline)
+        Label103.Location = New Point(126, 114)
+        Label103.Name = "Label103"
+        Label103.Size = New Size(69, 18)
+        Label103.TabIndex = 78
+        Label103.Text = "Benimar"
+        ' 
+        ' Label104
+        ' 
+        Label104.AutoSize = True
+        Label104.Font = New Font("Century", 9F, FontStyle.Underline)
+        Label104.Location = New Point(126, 94)
+        Label104.Name = "Label104"
+        Label104.Size = New Size(80, 18)
+        Label104.TabIndex = 77
+        Label104.Text = "Unlimited"
+        ' 
+        ' Label105
+        ' 
+        Label105.AutoSize = True
+        Label105.Font = New Font("Century", 9F, FontStyle.Underline)
+        Label105.Location = New Point(126, 74)
+        Label105.Name = "Label105"
+        Label105.Size = New Size(61, 18)
+        Label105.TabIndex = 76
+        Label105.Text = "Manual"
+        ' 
+        ' Label106
+        ' 
+        Label106.AutoSize = True
+        Label106.Font = New Font("Century", 9F, FontStyle.Underline)
+        Label106.Location = New Point(126, 56)
+        Label106.Name = "Label106"
+        Label106.Size = New Size(101, 18)
+        Label106.TabIndex = 75
+        Label106.Text = "Sport 340 UP"
+        ' 
+        ' Label107
+        ' 
+        Label107.AutoSize = True
+        Label107.Font = New Font("Century", 9F, FontStyle.Underline)
+        Label107.Location = New Point(126, 36)
+        Label107.Name = "Label107"
+        Label107.Size = New Size(53, 18)
+        Label107.TabIndex = 74
+        Label107.Text = "Diesel"
+        ' 
+        ' Label108
+        ' 
+        Label108.AutoSize = True
+        Label108.Font = New Font("Century", 9F, FontStyle.Bold)
+        Label108.Location = New Point(3, 114)
+        Label108.Name = "Label108"
+        Label108.Size = New Size(122, 18)
+        Label108.TabIndex = 73
+        Label108.Text = "Manufacturer:"
+        ' 
+        ' Label109
+        ' 
+        Label109.AutoSize = True
+        Label109.Font = New Font("Century", 9F, FontStyle.Bold)
+        Label109.Location = New Point(3, 94)
+        Label109.Name = "Label109"
+        Label109.Size = New Size(76, 18)
+        Label109.TabIndex = 72
+        Label109.Text = "Mileage:"
+        ' 
+        ' Label111
+        ' 
+        Label111.AutoSize = True
+        Label111.Font = New Font("Century", 9F, FontStyle.Bold)
+        Label111.Location = New Point(3, 74)
+        Label111.Name = "Label111"
+        Label111.Size = New Size(120, 18)
+        Label111.TabIndex = 71
+        Label111.Text = "Transmission:"
+        ' 
+        ' Label112
+        ' 
+        Label112.AutoSize = True
+        Label112.Font = New Font("Century", 9F, FontStyle.Bold)
+        Label112.Location = New Point(3, 56)
+        Label112.Name = "Label112"
+        Label112.Size = New Size(62, 18)
+        Label112.TabIndex = 70
+        Label112.Text = "Model:"
+        ' 
+        ' Label113
+        ' 
+        Label113.AutoSize = True
+        Label113.Font = New Font("Century", 9F, FontStyle.Bold)
+        Label113.Location = New Point(3, 38)
+        Label113.Name = "Label113"
+        Label113.Size = New Size(93, 18)
+        Label113.TabIndex = 69
+        Label113.Text = "Fuel Type:"
         ' 
         ' Label86
         ' 
@@ -1711,9 +3046,9 @@ Partial Class Camping_Cars
         Label92.Font = New Font("Felix Titling", 10.2F, FontStyle.Bold)
         Label92.Location = New Point(3, 480)
         Label92.Name = "Label92"
-        Label92.Size = New Size(330, 20)
+        Label92.Size = New Size(311, 20)
         Label92.TabIndex = 32
-        Label92.Text = "RATES FOR THE TOYOTA AVANZA :"
+        Label92.Text = "RATES FOR THE MOTORHOME 3 :"
         ' 
         ' Label93
         ' 
@@ -1785,216 +3120,6 @@ Partial Class Camping_Cars
         Label99.TabIndex = 25
         Label99.Text = "SAFETY FEATURES :"
         ' 
-        ' Label100
-        ' 
-        Label100.AutoSize = True
-        Label100.Font = New Font("Century", 9F, FontStyle.Underline)
-        Label100.Location = New Point(135, 274)
-        Label100.Name = "Label100"
-        Label100.Size = New Size(181, 18)
-        Label100.TabIndex = 24
-        Label100.Text = "Reverse parking sensors"
-        ' 
-        ' Label101
-        ' 
-        Label101.AutoSize = True
-        Label101.Font = New Font("Century", 9F, FontStyle.Underline)
-        Label101.Location = New Point(135, 254)
-        Label101.Name = "Label101"
-        Label101.Size = New Size(307, 18)
-        Label101.TabIndex = 23
-        Label101.Text = "EBD (Electronic Brake-force Distribution)"
-        ' 
-        ' Label102
-        ' 
-        Label102.AutoSize = True
-        Label102.Font = New Font("Century", 9F, FontStyle.Underline)
-        Label102.Location = New Point(135, 234)
-        Label102.Name = "Label102"
-        Label102.Size = New Size(248, 18)
-        Label102.TabIndex = 22
-        Label102.Text = "ESC (Electronic Stability Control)"
-        ' 
-        ' Label103
-        ' 
-        Label103.AutoSize = True
-        Label103.Font = New Font("Century", 9F, FontStyle.Underline)
-        Label103.Location = New Point(135, 214)
-        Label103.Name = "Label103"
-        Label103.Size = New Size(234, 18)
-        Label103.TabIndex = 21
-        Label103.Text = "ABS (Anti-lock Braking System)"
-        ' 
-        ' Label104
-        ' 
-        Label104.AutoSize = True
-        Label104.Font = New Font("Century", 9F, FontStyle.Underline)
-        Label104.Location = New Point(135, 194)
-        Label104.Name = "Label104"
-        Label104.Size = New Size(62, 18)
-        Label104.TabIndex = 20
-        Label104.Text = "Airbags"
-        ' 
-        ' Label105
-        ' 
-        Label105.AutoSize = True
-        Label105.Font = New Font("Century", 10.2F)
-        Label105.Location = New Point(99, 275)
-        Label105.Name = "Label105"
-        Label105.Size = New Size(23, 21)
-        Label105.TabIndex = 19
-        Label105.Text = "🗹"
-        ' 
-        ' Label106
-        ' 
-        Label106.AutoSize = True
-        Label106.Font = New Font("Century", 10.2F)
-        Label106.Location = New Point(99, 255)
-        Label106.Name = "Label106"
-        Label106.Size = New Size(23, 21)
-        Label106.TabIndex = 18
-        Label106.Text = "🗹"
-        ' 
-        ' Label107
-        ' 
-        Label107.AutoSize = True
-        Label107.Font = New Font("Century", 10.2F)
-        Label107.Location = New Point(99, 235)
-        Label107.Name = "Label107"
-        Label107.Size = New Size(23, 21)
-        Label107.TabIndex = 17
-        Label107.Text = "🗹"
-        ' 
-        ' Label108
-        ' 
-        Label108.AutoSize = True
-        Label108.Font = New Font("Century", 10.2F)
-        Label108.Location = New Point(99, 215)
-        Label108.Name = "Label108"
-        Label108.Size = New Size(23, 21)
-        Label108.TabIndex = 16
-        Label108.Text = "🗹"
-        ' 
-        ' Label109
-        ' 
-        Label109.AutoSize = True
-        Label109.Font = New Font("Century", 10.2F)
-        Label109.Location = New Point(99, 195)
-        Label109.Name = "Label109"
-        Label109.Size = New Size(23, 21)
-        Label109.TabIndex = 15
-        Label109.Text = "🗹"
-        ' 
-        ' Label110
-        ' 
-        Label110.AutoSize = True
-        Label110.Font = New Font("Felix Titling", 10.2F, FontStyle.Bold)
-        Label110.Location = New Point(3, 171)
-        Label110.Name = "Label110"
-        Label110.Size = New Size(180, 20)
-        Label110.TabIndex = 14
-        Label110.Text = "SAFETY FEATURES :"
-        ' 
-        ' Label111
-        ' 
-        Label111.AutoSize = True
-        Label111.Font = New Font("Century", 9F, FontStyle.Underline)
-        Label111.Location = New Point(165, 136)
-        Label111.Name = "Label111"
-        Label111.Size = New Size(216, 18)
-        Label111.TabIndex = 13
-        Label111.Text = "MPV (Multi-Purpose Vehicle)"
-        ' 
-        ' Label112
-        ' 
-        Label112.AutoSize = True
-        Label112.Font = New Font("Century", 9F, FontStyle.Underline)
-        Label112.Location = New Point(165, 116)
-        Label112.Name = "Label112"
-        Label112.Size = New Size(80, 18)
-        Label112.TabIndex = 12
-        Label112.Text = "Unlimited"
-        ' 
-        ' Label113
-        ' 
-        Label113.AutoSize = True
-        Label113.Font = New Font("Century", 9F, FontStyle.Underline)
-        Label113.Location = New Point(165, 96)
-        Label113.Name = "Label113"
-        Label113.Size = New Size(165, 18)
-        Label113.TabIndex = 11
-        Label113.Text = "AGS (Auto Gear Shift)"
-        ' 
-        ' Label114
-        ' 
-        Label114.AutoSize = True
-        Label114.Font = New Font("Century", 9F, FontStyle.Underline)
-        Label114.Location = New Point(165, 60)
-        Label114.Name = "Label114"
-        Label114.Size = New Size(263, 36)
-        Label114.TabIndex = 10
-        Label114.Text = "2-Cylinder, In-line, 16-Valve DOHC " & vbCrLf & "with Dual VVT-i"
-        ' 
-        ' Label115
-        ' 
-        Label115.AutoSize = True
-        Label115.Font = New Font("Century", 9F, FontStyle.Underline)
-        Label115.Location = New Point(165, 40)
-        Label115.Name = "Label115"
-        Label115.Size = New Size(70, 18)
-        Label115.TabIndex = 9
-        Label115.Text = "Gasoline"
-        ' 
-        ' Label116
-        ' 
-        Label116.AutoSize = True
-        Label116.Font = New Font("Century", 9F, FontStyle.Bold)
-        Label116.Location = New Point(21, 136)
-        Label116.Name = "Label116"
-        Label116.Size = New Size(97, 18)
-        Label116.TabIndex = 8
-        Label116.Text = "Body Type:"
-        ' 
-        ' Label117
-        ' 
-        Label117.AutoSize = True
-        Label117.Font = New Font("Century", 9F, FontStyle.Bold)
-        Label117.Location = New Point(21, 116)
-        Label117.Name = "Label117"
-        Label117.Size = New Size(76, 18)
-        Label117.TabIndex = 7
-        Label117.Text = "Mileage:"
-        ' 
-        ' Label118
-        ' 
-        Label118.AutoSize = True
-        Label118.Font = New Font("Century", 9F, FontStyle.Bold)
-        Label118.Location = New Point(21, 96)
-        Label118.Name = "Label118"
-        Label118.Size = New Size(120, 18)
-        Label118.TabIndex = 6
-        Label118.Text = "Transmission:"
-        ' 
-        ' Label119
-        ' 
-        Label119.AutoSize = True
-        Label119.Font = New Font("Century", 9F, FontStyle.Bold)
-        Label119.Location = New Point(21, 60)
-        Label119.Name = "Label119"
-        Label119.Size = New Size(69, 18)
-        Label119.TabIndex = 5
-        Label119.Text = "Engine:"
-        ' 
-        ' Label120
-        ' 
-        Label120.AutoSize = True
-        Label120.Font = New Font("Century", 9F, FontStyle.Bold)
-        Label120.Location = New Point(21, 40)
-        Label120.Name = "Label120"
-        Label120.Size = New Size(93, 18)
-        Label120.TabIndex = 4
-        Label120.Text = "Fuel Type:"
-        ' 
         ' Label121
         ' 
         Label121.AutoSize = True
@@ -2029,9 +3154,9 @@ Partial Class Camping_Cars
         ' 
         Label123.AutoSize = True
         Label123.Font = New Font("Century", 9F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
-        Label123.Location = New Point(37, 27)
+        Label123.Location = New Point(-2, 26)
         Label123.Name = "Label123"
-        Label123.Size = New Size(721, 54)
+        Label123.Size = New Size(787, 54)
         Label123.TabIndex = 2
         Label123.Text = resources.GetString("Label123.Text")
         Label123.TextAlign = ContentAlignment.TopCenter
@@ -2039,6 +3164,8 @@ Partial Class Camping_Cars
         ' Panel9
         ' 
         Panel9.BorderStyle = BorderStyle.Fixed3D
+        Panel9.Controls.Add(Label174)
+        Panel9.Controls.Add(Label175)
         Panel9.Controls.Add(PictureBox31)
         Panel9.Controls.Add(PictureBox32)
         Panel9.Controls.Add(Label124)
@@ -2056,15 +3183,53 @@ Partial Class Camping_Cars
         Panel9.Size = New Size(780, 442)
         Panel9.TabIndex = 9
         ' 
+        ' Label174
+        ' 
+        Label174.AutoSize = True
+        Label174.Font = New Font("Century", 9F, FontStyle.Underline)
+        Label174.Location = New Point(141, 47)
+        Label174.Name = "Label174"
+        Label174.Size = New Size(77, 18)
+        Label174.TabIndex = 12
+        Label174.Text = "ABC 1234"
+        ' 
+        ' Label175
+        ' 
+        Label175.AutoSize = True
+        Label175.Font = New Font("Century", 9F, FontStyle.Bold)
+        Label175.Location = New Point(12, 47)
+        Label175.Name = "Label175"
+        Label175.Size = New Size(123, 18)
+        Label175.TabIndex = 11
+        Label175.Text = "Plate Number:"
+        ' 
+        ' PictureBox31
+        ' 
+        PictureBox31.BorderStyle = BorderStyle.Fixed3D
+        PictureBox31.Location = New Point(7, 291)
+        PictureBox31.Name = "PictureBox31"
+        PictureBox31.Size = New Size(250, 135)
+        PictureBox31.TabIndex = 10
+        PictureBox31.TabStop = False
+        ' 
+        ' PictureBox32
+        ' 
+        PictureBox32.BorderStyle = BorderStyle.Fixed3D
+        PictureBox32.Location = New Point(7, 150)
+        PictureBox32.Name = "PictureBox32"
+        PictureBox32.Size = New Size(250, 135)
+        PictureBox32.TabIndex = 9
+        PictureBox32.TabStop = False
+        ' 
         ' Label124
         ' 
         Label124.AutoSize = True
         Label124.Font = New Font("Century", 9F, FontStyle.Underline)
         Label124.Location = New Point(75, 29)
         Label124.Name = "Label124"
-        Label124.Size = New Size(41, 18)
+        Label124.Size = New Size(51, 18)
         Label124.TabIndex = 8
-        Label124.Text = "Blue"
+        Label124.Text = "White"
         ' 
         ' Label125
         ' 
@@ -2187,6 +3352,53 @@ Partial Class Camping_Cars
         ' Panel10
         ' 
         Panel10.BorderStyle = BorderStyle.Fixed3D
+        Panel10.Controls.Add(Label143)
+        Panel10.Controls.Add(Label145)
+        Panel10.Controls.Add(Label146)
+        Panel10.Controls.Add(Label149)
+        Panel10.Controls.Add(Label150)
+        Panel10.Controls.Add(Label151)
+        Panel10.Controls.Add(Label152)
+        Panel10.Controls.Add(Label153)
+        Panel10.Controls.Add(Label154)
+        Panel10.Controls.Add(Label155)
+        Panel10.Controls.Add(Label156)
+        Panel10.Controls.Add(Label157)
+        Panel10.Controls.Add(Label158)
+        Panel10.Controls.Add(Label159)
+        Panel10.Controls.Add(Label160)
+        Panel10.Controls.Add(Label161)
+        Panel10.Controls.Add(Label162)
+        Panel10.Controls.Add(Label260)
+        Panel10.Controls.Add(Label261)
+        Panel10.Controls.Add(Label262)
+        Panel10.Controls.Add(Label263)
+        Panel10.Controls.Add(Label264)
+        Panel10.Controls.Add(Label265)
+        Panel10.Controls.Add(Label266)
+        Panel10.Controls.Add(Label267)
+        Panel10.Controls.Add(Label268)
+        Panel10.Controls.Add(Label269)
+        Panel10.Controls.Add(Label270)
+        Panel10.Controls.Add(Label271)
+        Panel10.Controls.Add(Label272)
+        Panel10.Controls.Add(Label273)
+        Panel10.Controls.Add(Label274)
+        Panel10.Controls.Add(Label275)
+        Panel10.Controls.Add(Label276)
+        Panel10.Controls.Add(Label277)
+        Panel10.Controls.Add(Label278)
+        Panel10.Controls.Add(Label279)
+        Panel10.Controls.Add(Label280)
+        Panel10.Controls.Add(Label281)
+        Panel10.Controls.Add(Label282)
+        Panel10.Controls.Add(Label283)
+        Panel10.Controls.Add(Label284)
+        Panel10.Controls.Add(Label285)
+        Panel10.Controls.Add(Label286)
+        Panel10.Controls.Add(Label287)
+        Panel10.Controls.Add(Label288)
+        Panel10.Controls.Add(Label289)
         Panel10.Controls.Add(Label128)
         Panel10.Controls.Add(Label129)
         Panel10.Controls.Add(Label130)
@@ -2203,32 +3415,481 @@ Partial Class Camping_Cars
         Panel10.Controls.Add(Label139)
         Panel10.Controls.Add(Label140)
         Panel10.Controls.Add(Label141)
-        Panel10.Controls.Add(Label142)
-        Panel10.Controls.Add(Label143)
-        Panel10.Controls.Add(Label144)
-        Panel10.Controls.Add(Label145)
-        Panel10.Controls.Add(Label146)
-        Panel10.Controls.Add(Label147)
-        Panel10.Controls.Add(Label148)
-        Panel10.Controls.Add(Label149)
-        Panel10.Controls.Add(Label150)
-        Panel10.Controls.Add(Label151)
-        Panel10.Controls.Add(Label152)
-        Panel10.Controls.Add(Label153)
-        Panel10.Controls.Add(Label154)
-        Panel10.Controls.Add(Label155)
-        Panel10.Controls.Add(Label156)
-        Panel10.Controls.Add(Label157)
-        Panel10.Controls.Add(Label158)
-        Panel10.Controls.Add(Label159)
-        Panel10.Controls.Add(Label160)
-        Panel10.Controls.Add(Label161)
-        Panel10.Controls.Add(Label162)
         Panel10.Controls.Add(Label163)
         Panel10.Location = New Point(792, 6)
         Panel10.Name = "Panel10"
         Panel10.Size = New Size(494, 546)
         Panel10.TabIndex = 10
+        ' 
+        ' Label143
+        ' 
+        Label143.AutoSize = True
+        Label143.Font = New Font("Century", 9F, FontStyle.Underline)
+        Label143.Location = New Point(209, 199)
+        Label143.Name = "Label143"
+        Label143.Size = New Size(78, 18)
+        Label143.TabIndex = 169
+        Label143.Text = "Bluetooth"
+        ' 
+        ' Label145
+        ' 
+        Label145.AutoSize = True
+        Label145.Font = New Font("Century", 9F, FontStyle.Underline)
+        Label145.Location = New Point(367, 219)
+        Label145.Name = "Label145"
+        Label145.Size = New Size(103, 18)
+        Label145.TabIndex = 167
+        Label145.Text = "Mosquito Net"
+        ' 
+        ' Label146
+        ' 
+        Label146.AutoSize = True
+        Label146.Font = New Font("Century", 9F, FontStyle.Underline)
+        Label146.Location = New Point(367, 199)
+        Label146.Name = "Label146"
+        Label146.Size = New Size(85, 18)
+        Label146.TabIndex = 166
+        Label146.Text = "Sun Blinds"
+        ' 
+        ' Label149
+        ' 
+        Label149.AutoSize = True
+        Label149.Font = New Font("Century", 10.2F)
+        Label149.Location = New Point(338, 220)
+        Label149.Name = "Label149"
+        Label149.Size = New Size(23, 21)
+        Label149.TabIndex = 163
+        Label149.Text = "🗹"
+        ' 
+        ' Label150
+        ' 
+        Label150.AutoSize = True
+        Label150.Font = New Font("Century", 10.2F)
+        Label150.Location = New Point(338, 200)
+        Label150.Name = "Label150"
+        Label150.Size = New Size(23, 21)
+        Label150.TabIndex = 162
+        Label150.Text = "🗹"
+        ' 
+        ' Label151
+        ' 
+        Label151.AutoSize = True
+        Label151.Font = New Font("Century", 10.2F)
+        Label151.Location = New Point(338, 180)
+        Label151.Name = "Label151"
+        Label151.Size = New Size(23, 21)
+        Label151.TabIndex = 161
+        Label151.Text = "🗹"
+        ' 
+        ' Label152
+        ' 
+        Label152.AutoSize = True
+        Label152.Font = New Font("Century", 9F, FontStyle.Underline)
+        Label152.Location = New Point(209, 257)
+        Label152.Name = "Label152"
+        Label152.Size = New Size(71, 18)
+        Label152.TabIndex = 160
+        Label152.Text = "Aux-port"
+        ' 
+        ' Label153
+        ' 
+        Label153.AutoSize = True
+        Label153.Font = New Font("Century", 9F, FontStyle.Underline)
+        Label153.Location = New Point(209, 237)
+        Label153.Name = "Label153"
+        Label153.Size = New Size(75, 18)
+        Label153.TabIndex = 159
+        Label153.Text = "AC in cab"
+        ' 
+        ' Label154
+        ' 
+        Label154.AutoSize = True
+        Label154.Font = New Font("Century", 9F, FontStyle.Underline)
+        Label154.Location = New Point(209, 217)
+        Label154.Name = "Label154"
+        Label154.Size = New Size(127, 18)
+        Label154.TabIndex = 158
+        Label154.Text = "AC in living area"
+        ' 
+        ' Label155
+        ' 
+        Label155.AutoSize = True
+        Label155.Font = New Font("Century", 9F, FontStyle.Underline)
+        Label155.Location = New Point(367, 179)
+        Label155.Name = "Label155"
+        Label155.Size = New Size(61, 18)
+        Label155.TabIndex = 157
+        Label155.Text = "Towbar"
+        ' 
+        ' Label156
+        ' 
+        Label156.AutoSize = True
+        Label156.Font = New Font("Century", 9F, FontStyle.Underline)
+        Label156.Location = New Point(209, 177)
+        Label156.Name = "Label156"
+        Label156.Size = New Size(39, 18)
+        Label156.TabIndex = 156
+        Label156.Text = "GPS"
+        ' 
+        ' Label157
+        ' 
+        Label157.AutoSize = True
+        Label157.Font = New Font("Century", 10.2F)
+        Label157.Location = New Point(180, 257)
+        Label157.Name = "Label157"
+        Label157.Size = New Size(23, 21)
+        Label157.TabIndex = 155
+        Label157.Text = "🗹"
+        ' 
+        ' Label158
+        ' 
+        Label158.AutoSize = True
+        Label158.Font = New Font("Century", 10.2F)
+        Label158.Location = New Point(180, 237)
+        Label158.Name = "Label158"
+        Label158.Size = New Size(23, 21)
+        Label158.TabIndex = 154
+        Label158.Text = "🗹"
+        ' 
+        ' Label159
+        ' 
+        Label159.AutoSize = True
+        Label159.Font = New Font("Century", 10.2F)
+        Label159.Location = New Point(180, 217)
+        Label159.Name = "Label159"
+        Label159.Size = New Size(23, 21)
+        Label159.TabIndex = 153
+        Label159.Text = "🗹"
+        ' 
+        ' Label160
+        ' 
+        Label160.AutoSize = True
+        Label160.Font = New Font("Century", 10.2F)
+        Label160.Location = New Point(180, 197)
+        Label160.Name = "Label160"
+        Label160.Size = New Size(23, 21)
+        Label160.TabIndex = 152
+        Label160.Text = "🗹"
+        ' 
+        ' Label161
+        ' 
+        Label161.AutoSize = True
+        Label161.Font = New Font("Century", 10.2F)
+        Label161.Location = New Point(180, 177)
+        Label161.Name = "Label161"
+        Label161.Size = New Size(23, 21)
+        Label161.TabIndex = 151
+        Label161.Text = "🗹"
+        ' 
+        ' Label162
+        ' 
+        Label162.AutoSize = True
+        Label162.Font = New Font("Century", 9F, FontStyle.Underline)
+        Label162.Location = New Point(32, 257)
+        Label162.Name = "Label162"
+        Label162.Size = New Size(121, 18)
+        Label162.TabIndex = 150
+        Label162.Text = "Parking sensors"
+        ' 
+        ' Label260
+        ' 
+        Label260.AutoSize = True
+        Label260.Font = New Font("Century", 9F, FontStyle.Underline)
+        Label260.Location = New Point(32, 237)
+        Label260.Name = "Label260"
+        Label260.Size = New Size(137, 18)
+        Label260.TabIndex = 149
+        Label260.Text = "Blackout Curtains"
+        ' 
+        ' Label261
+        ' 
+        Label261.AutoSize = True
+        Label261.Font = New Font("Century", 9F, FontStyle.Underline)
+        Label261.Location = New Point(32, 217)
+        Label261.Name = "Label261"
+        Label261.Size = New Size(146, 18)
+        Label261.TabIndex = 148
+        Label261.Text = "Kitchen Equipment"
+        ' 
+        ' Label262
+        ' 
+        Label262.AutoSize = True
+        Label262.Font = New Font("Century", 9F, FontStyle.Underline)
+        Label262.Location = New Point(32, 197)
+        Label262.Name = "Label262"
+        Label262.Size = New Size(107, 18)
+        Label262.TabIndex = 147
+        Label262.Text = "Cooking Plate"
+        ' 
+        ' Label263
+        ' 
+        Label263.AutoSize = True
+        Label263.Font = New Font("Century", 9F, FontStyle.Underline)
+        Label263.Location = New Point(32, 177)
+        Label263.Name = "Label263"
+        Label263.Size = New Size(55, 18)
+        Label263.TabIndex = 146
+        Label263.Text = "Fridge"
+        ' 
+        ' Label264
+        ' 
+        Label264.AutoSize = True
+        Label264.Font = New Font("Century", 10.2F)
+        Label264.Location = New Point(3, 257)
+        Label264.Name = "Label264"
+        Label264.Size = New Size(23, 21)
+        Label264.TabIndex = 145
+        Label264.Text = "🗹"
+        ' 
+        ' Label265
+        ' 
+        Label265.AutoSize = True
+        Label265.Font = New Font("Century", 10.2F)
+        Label265.Location = New Point(3, 237)
+        Label265.Name = "Label265"
+        Label265.Size = New Size(23, 21)
+        Label265.TabIndex = 144
+        Label265.Text = "🗹"
+        ' 
+        ' Label266
+        ' 
+        Label266.AutoSize = True
+        Label266.Font = New Font("Century", 10.2F)
+        Label266.Location = New Point(3, 217)
+        Label266.Name = "Label266"
+        Label266.Size = New Size(23, 21)
+        Label266.TabIndex = 143
+        Label266.Text = "🗹"
+        ' 
+        ' Label267
+        ' 
+        Label267.AutoSize = True
+        Label267.Font = New Font("Century", 10.2F)
+        Label267.Location = New Point(3, 197)
+        Label267.Name = "Label267"
+        Label267.Size = New Size(23, 21)
+        Label267.TabIndex = 142
+        Label267.Text = "🗹"
+        ' 
+        ' Label268
+        ' 
+        Label268.AutoSize = True
+        Label268.Font = New Font("Century", 10.2F)
+        Label268.Location = New Point(3, 177)
+        Label268.Name = "Label268"
+        Label268.Size = New Size(23, 21)
+        Label268.TabIndex = 141
+        Label268.Text = "🗹"
+        ' 
+        ' Label269
+        ' 
+        Label269.AutoSize = True
+        Label269.Font = New Font("Felix Titling", 10.2F, FontStyle.Bold)
+        Label269.Location = New Point(3, 150)
+        Label269.Name = "Label269"
+        Label269.Size = New Size(113, 20)
+        Label269.TabIndex = 140
+        Label269.Text = "AMENITIES :"
+        ' 
+        ' Label270
+        ' 
+        Label270.AutoSize = True
+        Label270.Font = New Font("Century", 9F, FontStyle.Underline)
+        Label270.Location = New Point(392, 114)
+        Label270.Name = "Label270"
+        Label270.Size = New Size(61, 18)
+        Label270.TabIndex = 139
+        Label270.Text = "3000 kg"
+        ' 
+        ' Label271
+        ' 
+        Label271.AutoSize = True
+        Label271.Font = New Font("Century", 9F, FontStyle.Underline)
+        Label271.Location = New Point(392, 94)
+        Label271.Name = "Label271"
+        Label271.Size = New Size(61, 18)
+        Label271.TabIndex = 138
+        Label271.Text = "2600 kg"
+        ' 
+        ' Label272
+        ' 
+        Label272.AutoSize = True
+        Label272.Font = New Font("Century", 9F, FontStyle.Underline)
+        Label272.Location = New Point(392, 74)
+        Label272.Name = "Label272"
+        Label272.Size = New Size(89, 18)
+        Label272.TabIndex = 137
+        Label272.Text = "2.05 meters"
+        ' 
+        ' Label273
+        ' 
+        Label273.AutoSize = True
+        Label273.Font = New Font("Century", 9F, FontStyle.Underline)
+        Label273.Location = New Point(392, 56)
+        Label273.Name = "Label273"
+        Label273.Size = New Size(89, 18)
+        Label273.TabIndex = 136
+        Label273.Text = "4.97 meters"
+        ' 
+        ' Label274
+        ' 
+        Label274.AutoSize = True
+        Label274.Font = New Font("Century", 9F, FontStyle.Underline)
+        Label274.Location = New Point(392, 36)
+        Label274.Name = "Label274"
+        Label274.Size = New Size(89, 18)
+        Label274.TabIndex = 135
+        Label274.Text = "1.98 meters"
+        ' 
+        ' Label275
+        ' 
+        Label275.AutoSize = True
+        Label275.Font = New Font("Century", 9F, FontStyle.Bold)
+        Label275.Location = New Point(271, 114)
+        Label275.Name = "Label275"
+        Label275.Size = New Size(117, 18)
+        Label275.TabIndex = 134
+        Label275.Text = "Total Weight:"
+        ' 
+        ' Label276
+        ' 
+        Label276.AutoSize = True
+        Label276.Font = New Font("Century", 9F, FontStyle.Bold)
+        Label276.Location = New Point(271, 94)
+        Label276.Name = "Label276"
+        Label276.Size = New Size(114, 18)
+        Label276.TabIndex = 133
+        Label276.Text = "Curb Weight:"
+        ' 
+        ' Label277
+        ' 
+        Label277.AutoSize = True
+        Label277.Font = New Font("Century", 9F, FontStyle.Bold)
+        Label277.Location = New Point(271, 74)
+        Label277.Name = "Label277"
+        Label277.Size = New Size(68, 18)
+        Label277.TabIndex = 132
+        Label277.Text = "Height:"
+        ' 
+        ' Label278
+        ' 
+        Label278.AutoSize = True
+        Label278.Font = New Font("Century", 9F, FontStyle.Bold)
+        Label278.Location = New Point(271, 56)
+        Label278.Name = "Label278"
+        Label278.Size = New Size(69, 18)
+        Label278.TabIndex = 131
+        Label278.Text = "Length:"
+        ' 
+        ' Label279
+        ' 
+        Label279.AutoSize = True
+        Label279.Font = New Font("Century", 9F, FontStyle.Bold)
+        Label279.Location = New Point(271, 36)
+        Label279.Name = "Label279"
+        Label279.Size = New Size(62, 18)
+        Label279.TabIndex = 130
+        Label279.Text = "Width:"
+        ' 
+        ' Label280
+        ' 
+        Label280.AutoSize = True
+        Label280.Font = New Font("Century", 9F, FontStyle.Underline)
+        Label280.Location = New Point(126, 114)
+        Label280.Name = "Label280"
+        Label280.Size = New Size(42, 18)
+        Label280.TabIndex = 129
+        Label280.Text = "Ford"
+        ' 
+        ' Label281
+        ' 
+        Label281.AutoSize = True
+        Label281.Font = New Font("Century", 9F, FontStyle.Underline)
+        Label281.Location = New Point(126, 94)
+        Label281.Name = "Label281"
+        Label281.Size = New Size(80, 18)
+        Label281.TabIndex = 128
+        Label281.Text = "Unlimited"
+        ' 
+        ' Label282
+        ' 
+        Label282.AutoSize = True
+        Label282.Font = New Font("Century", 9F, FontStyle.Underline)
+        Label282.Location = New Point(126, 74)
+        Label282.Name = "Label282"
+        Label282.Size = New Size(61, 18)
+        Label282.TabIndex = 127
+        Label282.Text = "Manual"
+        ' 
+        ' Label283
+        ' 
+        Label283.AutoSize = True
+        Label283.Font = New Font("Century", 9F, FontStyle.Underline)
+        Label283.Location = New Point(126, 56)
+        Label283.Name = "Label283"
+        Label283.Size = New Size(96, 18)
+        Label283.TabIndex = 126
+        Label283.Text = "Camper Van"
+        ' 
+        ' Label284
+        ' 
+        Label284.AutoSize = True
+        Label284.Font = New Font("Century", 9F, FontStyle.Underline)
+        Label284.Location = New Point(126, 36)
+        Label284.Name = "Label284"
+        Label284.Size = New Size(53, 18)
+        Label284.TabIndex = 125
+        Label284.Text = "Diesel"
+        ' 
+        ' Label285
+        ' 
+        Label285.AutoSize = True
+        Label285.Font = New Font("Century", 9F, FontStyle.Bold)
+        Label285.Location = New Point(3, 114)
+        Label285.Name = "Label285"
+        Label285.Size = New Size(122, 18)
+        Label285.TabIndex = 124
+        Label285.Text = "Manufacturer:"
+        ' 
+        ' Label286
+        ' 
+        Label286.AutoSize = True
+        Label286.Font = New Font("Century", 9F, FontStyle.Bold)
+        Label286.Location = New Point(3, 94)
+        Label286.Name = "Label286"
+        Label286.Size = New Size(76, 18)
+        Label286.TabIndex = 123
+        Label286.Text = "Mileage:"
+        ' 
+        ' Label287
+        ' 
+        Label287.AutoSize = True
+        Label287.Font = New Font("Century", 9F, FontStyle.Bold)
+        Label287.Location = New Point(3, 74)
+        Label287.Name = "Label287"
+        Label287.Size = New Size(120, 18)
+        Label287.TabIndex = 122
+        Label287.Text = "Transmission:"
+        ' 
+        ' Label288
+        ' 
+        Label288.AutoSize = True
+        Label288.Font = New Font("Century", 9F, FontStyle.Bold)
+        Label288.Location = New Point(3, 56)
+        Label288.Name = "Label288"
+        Label288.Size = New Size(62, 18)
+        Label288.TabIndex = 121
+        Label288.Text = "Model:"
+        ' 
+        ' Label289
+        ' 
+        Label289.AutoSize = True
+        Label289.Font = New Font("Century", 9F, FontStyle.Bold)
+        Label289.Location = New Point(3, 38)
+        Label289.Name = "Label289"
+        Label289.Size = New Size(93, 18)
+        Label289.TabIndex = 120
+        Label289.Text = "Fuel Type:"
         ' 
         ' Label128
         ' 
@@ -2317,9 +3978,9 @@ Partial Class Camping_Cars
         Label134.Font = New Font("Felix Titling", 10.2F, FontStyle.Bold)
         Label134.Location = New Point(3, 478)
         Label134.Name = "Label134"
-        Label134.Size = New Size(326, 20)
+        Label134.Size = New Size(292, 20)
         Label134.TabIndex = 32
-        Label134.Text = "RATES FOR THE TOYOTA INNOVA :"
+        Label134.Text = "RATES FOR THE CAMPER VAN :"
         ' 
         ' Label135
         ' 
@@ -2391,216 +4052,6 @@ Partial Class Camping_Cars
         Label141.TabIndex = 25
         Label141.Text = "SAFETY FEATURES :"
         ' 
-        ' Label142
-        ' 
-        Label142.AutoSize = True
-        Label142.Font = New Font("Century", 9F, FontStyle.Underline)
-        Label142.Location = New Point(135, 271)
-        Label142.Name = "Label142"
-        Label142.Size = New Size(187, 18)
-        Label142.TabIndex = 24
-        Label142.Text = "Isofix Child Seat Anchors"
-        ' 
-        ' Label143
-        ' 
-        Label143.AutoSize = True
-        Label143.Font = New Font("Century", 9F, FontStyle.Underline)
-        Label143.Location = New Point(135, 251)
-        Label143.Name = "Label143"
-        Label143.Size = New Size(281, 18)
-        Label143.TabIndex = 23
-        Label143.Text = "ESC (Electronic Stability Distribution)"
-        ' 
-        ' Label144
-        ' 
-        Label144.AutoSize = True
-        Label144.Font = New Font("Century", 9F, FontStyle.Underline)
-        Label144.Location = New Point(135, 231)
-        Label144.Name = "Label144"
-        Label144.Size = New Size(295, 18)
-        Label144.TabIndex = 22
-        Label144.Text = "EBD (Electronic Brakefore Distribution)"
-        ' 
-        ' Label145
-        ' 
-        Label145.AutoSize = True
-        Label145.Font = New Font("Century", 9F, FontStyle.Underline)
-        Label145.Location = New Point(135, 211)
-        Label145.Name = "Label145"
-        Label145.Size = New Size(234, 18)
-        Label145.TabIndex = 21
-        Label145.Text = "ABS (Anti-lock Braking System)"
-        ' 
-        ' Label146
-        ' 
-        Label146.AutoSize = True
-        Label146.Font = New Font("Century", 9F, FontStyle.Underline)
-        Label146.Location = New Point(135, 191)
-        Label146.Name = "Label146"
-        Label146.Size = New Size(62, 18)
-        Label146.TabIndex = 20
-        Label146.Text = "Airbags"
-        ' 
-        ' Label147
-        ' 
-        Label147.AutoSize = True
-        Label147.Font = New Font("Century", 10.2F)
-        Label147.Location = New Point(99, 272)
-        Label147.Name = "Label147"
-        Label147.Size = New Size(23, 21)
-        Label147.TabIndex = 19
-        Label147.Text = "🗹"
-        ' 
-        ' Label148
-        ' 
-        Label148.AutoSize = True
-        Label148.Font = New Font("Century", 10.2F)
-        Label148.Location = New Point(99, 252)
-        Label148.Name = "Label148"
-        Label148.Size = New Size(23, 21)
-        Label148.TabIndex = 18
-        Label148.Text = "🗹"
-        ' 
-        ' Label149
-        ' 
-        Label149.AutoSize = True
-        Label149.Font = New Font("Century", 10.2F)
-        Label149.Location = New Point(99, 232)
-        Label149.Name = "Label149"
-        Label149.Size = New Size(23, 21)
-        Label149.TabIndex = 17
-        Label149.Text = "🗹"
-        ' 
-        ' Label150
-        ' 
-        Label150.AutoSize = True
-        Label150.Font = New Font("Century", 10.2F)
-        Label150.Location = New Point(99, 212)
-        Label150.Name = "Label150"
-        Label150.Size = New Size(23, 21)
-        Label150.TabIndex = 16
-        Label150.Text = "🗹"
-        ' 
-        ' Label151
-        ' 
-        Label151.AutoSize = True
-        Label151.Font = New Font("Century", 10.2F)
-        Label151.Location = New Point(99, 192)
-        Label151.Name = "Label151"
-        Label151.Size = New Size(23, 21)
-        Label151.TabIndex = 15
-        Label151.Text = "🗹"
-        ' 
-        ' Label152
-        ' 
-        Label152.AutoSize = True
-        Label152.Font = New Font("Felix Titling", 10.2F, FontStyle.Bold)
-        Label152.Location = New Point(3, 166)
-        Label152.Name = "Label152"
-        Label152.Size = New Size(180, 20)
-        Label152.TabIndex = 14
-        Label152.Text = "SAFETY FEATURES :"
-        ' 
-        ' Label153
-        ' 
-        Label153.AutoSize = True
-        Label153.Font = New Font("Century", 9F, FontStyle.Underline)
-        Label153.Location = New Point(165, 138)
-        Label153.Name = "Label153"
-        Label153.Size = New Size(216, 18)
-        Label153.TabIndex = 13
-        Label153.Text = "MPV (Multi-Purpose Vehicle)"
-        ' 
-        ' Label154
-        ' 
-        Label154.AutoSize = True
-        Label154.Font = New Font("Century", 9F, FontStyle.Underline)
-        Label154.Location = New Point(165, 118)
-        Label154.Name = "Label154"
-        Label154.Size = New Size(80, 18)
-        Label154.TabIndex = 12
-        Label154.Text = "Unlimited"
-        ' 
-        ' Label155
-        ' 
-        Label155.AutoSize = True
-        Label155.Font = New Font("Century", 9F, FontStyle.Underline)
-        Label155.Location = New Point(165, 98)
-        Label155.Name = "Label155"
-        Label155.Size = New Size(241, 18)
-        Label155.TabIndex = 11
-        Label155.Text = "Manual or AGS (Auto Gear Shift)"
-        ' 
-        ' Label156
-        ' 
-        Label156.AutoSize = True
-        Label156.Font = New Font("Century", 9F, FontStyle.Underline)
-        Label156.Location = New Point(165, 60)
-        Label156.Name = "Label156"
-        Label156.Size = New Size(252, 36)
-        Label156.TabIndex = 10
-        Label156.Text = "2.8-liter (2755 cc) 4-cylinder, inline" & vbCrLf & "DOHC engine" & vbCrLf
-        ' 
-        ' Label157
-        ' 
-        Label157.AutoSize = True
-        Label157.Font = New Font("Century", 9F, FontStyle.Underline)
-        Label157.Location = New Point(165, 40)
-        Label157.Name = "Label157"
-        Label157.Size = New Size(53, 18)
-        Label157.TabIndex = 9
-        Label157.Text = "Diesel"
-        ' 
-        ' Label158
-        ' 
-        Label158.AutoSize = True
-        Label158.Font = New Font("Century", 9F, FontStyle.Bold)
-        Label158.Location = New Point(21, 138)
-        Label158.Name = "Label158"
-        Label158.Size = New Size(97, 18)
-        Label158.TabIndex = 8
-        Label158.Text = "Body Type:"
-        ' 
-        ' Label159
-        ' 
-        Label159.AutoSize = True
-        Label159.Font = New Font("Century", 9F, FontStyle.Bold)
-        Label159.Location = New Point(21, 118)
-        Label159.Name = "Label159"
-        Label159.Size = New Size(76, 18)
-        Label159.TabIndex = 7
-        Label159.Text = "Mileage:"
-        ' 
-        ' Label160
-        ' 
-        Label160.AutoSize = True
-        Label160.Font = New Font("Century", 9F, FontStyle.Bold)
-        Label160.Location = New Point(21, 98)
-        Label160.Name = "Label160"
-        Label160.Size = New Size(120, 18)
-        Label160.TabIndex = 6
-        Label160.Text = "Transmission:"
-        ' 
-        ' Label161
-        ' 
-        Label161.AutoSize = True
-        Label161.Font = New Font("Century", 9F, FontStyle.Bold)
-        Label161.Location = New Point(21, 60)
-        Label161.Name = "Label161"
-        Label161.Size = New Size(69, 18)
-        Label161.TabIndex = 5
-        Label161.Text = "Engine:"
-        ' 
-        ' Label162
-        ' 
-        Label162.AutoSize = True
-        Label162.Font = New Font("Century", 9F, FontStyle.Bold)
-        Label162.Location = New Point(21, 40)
-        Label162.Name = "Label162"
-        Label162.Size = New Size(93, 18)
-        Label162.TabIndex = 4
-        Label162.Text = "Fuel Type:"
-        ' 
         ' Label163
         ' 
         Label163.AutoSize = True
@@ -2637,14 +4088,16 @@ Partial Class Camping_Cars
         Label165.Font = New Font("Century", 9F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
         Label165.Location = New Point(33, 31)
         Label165.Name = "Label165"
-        Label165.Size = New Size(724, 36)
+        Label165.Size = New Size(723, 54)
         Label165.TabIndex = 2
-        Label165.Text = "The Toyota Innova is a spacious and reliable MPV, ideal for comfortable group travel. Its " & vbCrLf & "versality and fuel efficiency make it a practical choice for exploring various destinations."
+        Label165.Text = resources.GetString("Label165.Text")
         Label165.TextAlign = ContentAlignment.TopCenter
         ' 
         ' Panel12
         ' 
         Panel12.BorderStyle = BorderStyle.Fixed3D
+        Panel12.Controls.Add(Label176)
+        Panel12.Controls.Add(Label177)
         Panel12.Controls.Add(PictureBox19)
         Panel12.Controls.Add(PictureBox20)
         Panel12.Controls.Add(PictureBox21)
@@ -2662,126 +4115,25 @@ Partial Class Camping_Cars
         Panel12.Size = New Size(780, 442)
         Panel12.TabIndex = 9
         ' 
-        ' Label166
+        ' Label176
         ' 
-        Label166.AutoSize = True
-        Label166.Font = New Font("Century", 9F, FontStyle.Underline)
-        Label166.Location = New Point(75, 29)
-        Label166.Name = "Label166"
-        Label166.Size = New Size(48, 18)
-        Label166.TabIndex = 8
-        Label166.Text = "Black"
+        Label176.AutoSize = True
+        Label176.Font = New Font("Century", 9F, FontStyle.Underline)
+        Label176.Location = New Point(141, 47)
+        Label176.Name = "Label176"
+        Label176.Size = New Size(77, 18)
+        Label176.TabIndex = 20
+        Label176.Text = "ABC 1234"
         ' 
-        ' Label167
+        ' Label177
         ' 
-        Label167.AutoSize = True
-        Label167.Font = New Font("Century", 9F, FontStyle.Bold)
-        Label167.Location = New Point(12, 29)
-        Label167.Name = "Label167"
-        Label167.Size = New Size(57, 18)
-        Label167.TabIndex = 7
-        Label167.Text = "Color:"
-        ' 
-        ' Label168
-        ' 
-        Label168.AutoSize = True
-        Label168.Font = New Font("Century", 9F, FontStyle.Underline)
-        Label168.Location = New Point(120, 9)
-        Label168.Name = "Label168"
-        Label168.Size = New Size(40, 18)
-        Label168.TabIndex = 1
-        Label168.Text = "2019"
-        ' 
-        ' Label169
-        ' 
-        Label169.AutoSize = True
-        Label169.Font = New Font("Century", 9F, FontStyle.Bold)
-        Label169.Location = New Point(12, 9)
-        Label169.Name = "Label169"
-        Label169.Size = New Size(105, 18)
-        Label169.TabIndex = 0
-        Label169.Text = "Model Year:"
-        ' 
-        ' PictureBox6
-        ' 
-        PictureBox6.BorderStyle = BorderStyle.Fixed3D
-        PictureBox6.Location = New Point(471, 303)
-        PictureBox6.Name = "PictureBox6"
-        PictureBox6.Size = New Size(148, 108)
-        PictureBox6.TabIndex = 9
-        PictureBox6.TabStop = False
-        ' 
-        ' PictureBox25
-        ' 
-        PictureBox25.BorderStyle = BorderStyle.Fixed3D
-        PictureBox25.Location = New Point(317, 303)
-        PictureBox25.Name = "PictureBox25"
-        PictureBox25.Size = New Size(148, 108)
-        PictureBox25.TabIndex = 10
-        PictureBox25.TabStop = False
-        ' 
-        ' PictureBox26
-        ' 
-        PictureBox26.BorderStyle = BorderStyle.Fixed3D
-        PictureBox26.Location = New Point(163, 303)
-        PictureBox26.Name = "PictureBox26"
-        PictureBox26.Size = New Size(148, 108)
-        PictureBox26.TabIndex = 11
-        PictureBox26.TabStop = False
-        ' 
-        ' PictureBox27
-        ' 
-        PictureBox27.BorderStyle = BorderStyle.Fixed3D
-        PictureBox27.Location = New Point(9, 303)
-        PictureBox27.Name = "PictureBox27"
-        PictureBox27.Size = New Size(148, 108)
-        PictureBox27.TabIndex = 12
-        PictureBox27.TabStop = False
-        ' 
-        ' PictureBox28
-        ' 
-        PictureBox28.BorderStyle = BorderStyle.Fixed3D
-        PictureBox28.Location = New Point(9, 181)
-        PictureBox28.Name = "PictureBox28"
-        PictureBox28.Size = New Size(148, 108)
-        PictureBox28.TabIndex = 13
-        PictureBox28.TabStop = False
-        ' 
-        ' PictureBox29
-        ' 
-        PictureBox29.BorderStyle = BorderStyle.Fixed3D
-        PictureBox29.Location = New Point(9, 67)
-        PictureBox29.Name = "PictureBox29"
-        PictureBox29.Size = New Size(148, 108)
-        PictureBox29.TabIndex = 14
-        PictureBox29.TabStop = False
-        ' 
-        ' PictureBox30
-        ' 
-        PictureBox30.BorderStyle = BorderStyle.Fixed3D
-        PictureBox30.Location = New Point(3, 150)
-        PictureBox30.Name = "PictureBox30"
-        PictureBox30.Size = New Size(250, 135)
-        PictureBox30.TabIndex = 9
-        PictureBox30.TabStop = False
-        ' 
-        ' PictureBox31
-        ' 
-        PictureBox31.BorderStyle = BorderStyle.Fixed3D
-        PictureBox31.Location = New Point(7, 291)
-        PictureBox31.Name = "PictureBox31"
-        PictureBox31.Size = New Size(250, 135)
-        PictureBox31.TabIndex = 10
-        PictureBox31.TabStop = False
-        ' 
-        ' PictureBox32
-        ' 
-        PictureBox32.BorderStyle = BorderStyle.Fixed3D
-        PictureBox32.Location = New Point(7, 150)
-        PictureBox32.Name = "PictureBox32"
-        PictureBox32.Size = New Size(250, 135)
-        PictureBox32.TabIndex = 9
-        PictureBox32.TabStop = False
+        Label177.AutoSize = True
+        Label177.Font = New Font("Century", 9F, FontStyle.Bold)
+        Label177.Location = New Point(12, 47)
+        Label177.Name = "Label177"
+        Label177.Size = New Size(123, 18)
+        Label177.TabIndex = 19
+        Label177.Text = "Plate Number:"
         ' 
         ' PictureBox19
         ' 
@@ -2855,6 +4207,46 @@ Partial Class Camping_Cars
         PictureBox34.TabIndex = 11
         PictureBox34.TabStop = False
         ' 
+        ' Label166
+        ' 
+        Label166.AutoSize = True
+        Label166.Font = New Font("Century", 9F, FontStyle.Underline)
+        Label166.Location = New Point(75, 29)
+        Label166.Name = "Label166"
+        Label166.Size = New Size(105, 18)
+        Label166.TabIndex = 8
+        Label166.Text = "Rusty Orange"
+        ' 
+        ' Label167
+        ' 
+        Label167.AutoSize = True
+        Label167.Font = New Font("Century", 9F, FontStyle.Bold)
+        Label167.Location = New Point(12, 29)
+        Label167.Name = "Label167"
+        Label167.Size = New Size(57, 18)
+        Label167.TabIndex = 7
+        Label167.Text = "Color:"
+        ' 
+        ' Label168
+        ' 
+        Label168.AutoSize = True
+        Label168.Font = New Font("Century", 9F, FontStyle.Underline)
+        Label168.Location = New Point(120, 9)
+        Label168.Name = "Label168"
+        Label168.Size = New Size(40, 18)
+        Label168.TabIndex = 1
+        Label168.Text = "2022"
+        ' 
+        ' Label169
+        ' 
+        Label169.AutoSize = True
+        Label169.Font = New Font("Century", 9F, FontStyle.Bold)
+        Label169.Location = New Point(12, 9)
+        Label169.Name = "Label169"
+        Label169.Size = New Size(105, 18)
+        Label169.TabIndex = 0
+        Label169.Text = "Model Year:"
+        ' 
         ' Camping_Cars
         ' 
         AutoScaleDimensions = New SizeF(8F, 20F)
@@ -2872,6 +4264,12 @@ Partial Class Camping_Cars
         Panel2.PerformLayout()
         Panel1.ResumeLayout(False)
         Panel1.PerformLayout()
+        CType(PictureBox29, ComponentModel.ISupportInitialize).EndInit()
+        CType(PictureBox28, ComponentModel.ISupportInitialize).EndInit()
+        CType(PictureBox27, ComponentModel.ISupportInitialize).EndInit()
+        CType(PictureBox26, ComponentModel.ISupportInitialize).EndInit()
+        CType(PictureBox25, ComponentModel.ISupportInitialize).EndInit()
+        CType(PictureBox6, ComponentModel.ISupportInitialize).EndInit()
         CType(PictureBox5, ComponentModel.ISupportInitialize).EndInit()
         CType(PictureBox4, ComponentModel.ISupportInitialize).EndInit()
         CType(PictureBox3, ComponentModel.ISupportInitialize).EndInit()
@@ -2884,6 +4282,7 @@ Partial Class Camping_Cars
         Panel5.PerformLayout()
         Panel6.ResumeLayout(False)
         Panel6.PerformLayout()
+        CType(PictureBox30, ComponentModel.ISupportInitialize).EndInit()
         CType(PictureBox7, ComponentModel.ISupportInitialize).EndInit()
         CType(PictureBox8, ComponentModel.ISupportInitialize).EndInit()
         CType(PictureBox9, ComponentModel.ISupportInitialize).EndInit()
@@ -2897,6 +4296,8 @@ Partial Class Camping_Cars
         Panel8.PerformLayout()
         Panel9.ResumeLayout(False)
         Panel9.PerformLayout()
+        CType(PictureBox31, ComponentModel.ISupportInitialize).EndInit()
+        CType(PictureBox32, ComponentModel.ISupportInitialize).EndInit()
         CType(PictureBox13, ComponentModel.ISupportInitialize).EndInit()
         CType(PictureBox14, ComponentModel.ISupportInitialize).EndInit()
         CType(PictureBox15, ComponentModel.ISupportInitialize).EndInit()
@@ -2910,15 +4311,6 @@ Partial Class Camping_Cars
         Panel11.PerformLayout()
         Panel12.ResumeLayout(False)
         Panel12.PerformLayout()
-        CType(PictureBox6, ComponentModel.ISupportInitialize).EndInit()
-        CType(PictureBox25, ComponentModel.ISupportInitialize).EndInit()
-        CType(PictureBox26, ComponentModel.ISupportInitialize).EndInit()
-        CType(PictureBox27, ComponentModel.ISupportInitialize).EndInit()
-        CType(PictureBox28, ComponentModel.ISupportInitialize).EndInit()
-        CType(PictureBox29, ComponentModel.ISupportInitialize).EndInit()
-        CType(PictureBox30, ComponentModel.ISupportInitialize).EndInit()
-        CType(PictureBox31, ComponentModel.ISupportInitialize).EndInit()
-        CType(PictureBox32, ComponentModel.ISupportInitialize).EndInit()
         CType(PictureBox19, ComponentModel.ISupportInitialize).EndInit()
         CType(PictureBox20, ComponentModel.ISupportInitialize).EndInit()
         CType(PictureBox21, ComponentModel.ISupportInitialize).EndInit()
@@ -3008,27 +4400,6 @@ Partial Class Camping_Cars
     Friend WithEvents Label55 As Label
     Friend WithEvents Label56 As Label
     Friend WithEvents Label57 As Label
-    Friend WithEvents Label58 As Label
-    Friend WithEvents Label59 As Label
-    Friend WithEvents Label60 As Label
-    Friend WithEvents Label61 As Label
-    Friend WithEvents Label62 As Label
-    Friend WithEvents Label63 As Label
-    Friend WithEvents Label64 As Label
-    Friend WithEvents Label65 As Label
-    Friend WithEvents Label66 As Label
-    Friend WithEvents Label67 As Label
-    Friend WithEvents Label68 As Label
-    Friend WithEvents Label69 As Label
-    Friend WithEvents Label70 As Label
-    Friend WithEvents Label71 As Label
-    Friend WithEvents Label72 As Label
-    Friend WithEvents Label73 As Label
-    Friend WithEvents Label74 As Label
-    Friend WithEvents Label75 As Label
-    Friend WithEvents Label76 As Label
-    Friend WithEvents Label77 As Label
-    Friend WithEvents Label78 As Label
     Friend WithEvents Label79 As Label
     Friend WithEvents Panel5 As Panel
     Friend WithEvents Label80 As Label
@@ -3064,27 +4435,6 @@ Partial Class Camping_Cars
     Friend WithEvents Label97 As Label
     Friend WithEvents Label98 As Label
     Friend WithEvents Label99 As Label
-    Friend WithEvents Label100 As Label
-    Friend WithEvents Label101 As Label
-    Friend WithEvents Label102 As Label
-    Friend WithEvents Label103 As Label
-    Friend WithEvents Label104 As Label
-    Friend WithEvents Label105 As Label
-    Friend WithEvents Label106 As Label
-    Friend WithEvents Label107 As Label
-    Friend WithEvents Label108 As Label
-    Friend WithEvents Label109 As Label
-    Friend WithEvents Label110 As Label
-    Friend WithEvents Label111 As Label
-    Friend WithEvents Label112 As Label
-    Friend WithEvents Label113 As Label
-    Friend WithEvents Label114 As Label
-    Friend WithEvents Label115 As Label
-    Friend WithEvents Label116 As Label
-    Friend WithEvents Label117 As Label
-    Friend WithEvents Label118 As Label
-    Friend WithEvents Label119 As Label
-    Friend WithEvents Label120 As Label
     Friend WithEvents Label121 As Label
     Friend WithEvents Panel8 As Panel
     Friend WithEvents Label122 As Label
@@ -3120,27 +4470,6 @@ Partial Class Camping_Cars
     Friend WithEvents Label139 As Label
     Friend WithEvents Label140 As Label
     Friend WithEvents Label141 As Label
-    Friend WithEvents Label142 As Label
-    Friend WithEvents Label143 As Label
-    Friend WithEvents Label144 As Label
-    Friend WithEvents Label145 As Label
-    Friend WithEvents Label146 As Label
-    Friend WithEvents Label147 As Label
-    Friend WithEvents Label148 As Label
-    Friend WithEvents Label149 As Label
-    Friend WithEvents Label150 As Label
-    Friend WithEvents Label151 As Label
-    Friend WithEvents Label152 As Label
-    Friend WithEvents Label153 As Label
-    Friend WithEvents Label154 As Label
-    Friend WithEvents Label155 As Label
-    Friend WithEvents Label156 As Label
-    Friend WithEvents Label157 As Label
-    Friend WithEvents Label158 As Label
-    Friend WithEvents Label159 As Label
-    Friend WithEvents Label160 As Label
-    Friend WithEvents Label161 As Label
-    Friend WithEvents Label162 As Label
     Friend WithEvents Label163 As Label
     Friend WithEvents Panel11 As Panel
     Friend WithEvents Label164 As Label
@@ -3167,4 +4496,183 @@ Partial Class Camping_Cars
     Friend WithEvents PictureBox24 As PictureBox
     Friend WithEvents PictureBox33 As PictureBox
     Friend WithEvents PictureBox34 As PictureBox
+    Friend WithEvents Label171 As Label
+    Friend WithEvents Label170 As Label
+    Friend WithEvents Label172 As Label
+    Friend WithEvents Label173 As Label
+    Friend WithEvents Label174 As Label
+    Friend WithEvents Label175 As Label
+    Friend WithEvents Label176 As Label
+    Friend WithEvents Label177 As Label
+    Friend WithEvents Label178 As Label
+    Friend WithEvents Label179 As Label
+    Friend WithEvents Label180 As Label
+    Friend WithEvents Label181 As Label
+    Friend WithEvents Label182 As Label
+    Friend WithEvents Label183 As Label
+    Friend WithEvents Label184 As Label
+    Friend WithEvents Label185 As Label
+    Friend WithEvents Label186 As Label
+    Friend WithEvents Label187 As Label
+    Friend WithEvents Label69 As Label
+    Friend WithEvents Label70 As Label
+    Friend WithEvents Label71 As Label
+    Friend WithEvents Label72 As Label
+    Friend WithEvents Label73 As Label
+    Friend WithEvents Label74 As Label
+    Friend WithEvents Label75 As Label
+    Friend WithEvents Label76 As Label
+    Friend WithEvents Label77 As Label
+    Friend WithEvents Label78 As Label
+    Friend WithEvents Label188 As Label
+    Friend WithEvents Label189 As Label
+    Friend WithEvents Label190 As Label
+    Friend WithEvents Label191 As Label
+    Friend WithEvents Label192 As Label
+    Friend WithEvents Label193 As Label
+    Friend WithEvents Label194 As Label
+    Friend WithEvents Label195 As Label
+    Friend WithEvents Label196 As Label
+    Friend WithEvents Label197 As Label
+    Friend WithEvents Label198 As Label
+    Friend WithEvents Label199 As Label
+    Friend WithEvents Label200 As Label
+    Friend WithEvents Label201 As Label
+    Friend WithEvents Label202 As Label
+    Friend WithEvents Label203 As Label
+    Friend WithEvents Label204 As Label
+    Friend WithEvents Label205 As Label
+    Friend WithEvents Label206 As Label
+    Friend WithEvents Label207 As Label
+    Friend WithEvents Label208 As Label
+    Friend WithEvents Label209 As Label
+    Friend WithEvents Label210 As Label
+    Friend WithEvents Label211 As Label
+    Friend WithEvents Label212 As Label
+    Friend WithEvents Label213 As Label
+    Friend WithEvents Label214 As Label
+    Friend WithEvents Label215 As Label
+    Friend WithEvents Label216 As Label
+    Friend WithEvents Label217 As Label
+    Friend WithEvents Label59 As Label
+    Friend WithEvents Label62 As Label
+    Friend WithEvents Label67 As Label
+    Friend WithEvents Label68 As Label
+    Friend WithEvents Label218 As Label
+    Friend WithEvents Label219 As Label
+    Friend WithEvents Label220 As Label
+    Friend WithEvents Label221 As Label
+    Friend WithEvents Label222 As Label
+    Friend WithEvents Label223 As Label
+    Friend WithEvents Label224 As Label
+    Friend WithEvents Label225 As Label
+    Friend WithEvents Label226 As Label
+    Friend WithEvents Label228 As Label
+    Friend WithEvents Label229 As Label
+    Friend WithEvents Label230 As Label
+    Friend WithEvents Label231 As Label
+    Friend WithEvents Label232 As Label
+    Friend WithEvents Label233 As Label
+    Friend WithEvents Label234 As Label
+    Friend WithEvents Label235 As Label
+    Friend WithEvents Label236 As Label
+    Friend WithEvents Label237 As Label
+    Friend WithEvents Label110 As Label
+    Friend WithEvents Label114 As Label
+    Friend WithEvents Label115 As Label
+    Friend WithEvents Label116 As Label
+    Friend WithEvents Label117 As Label
+    Friend WithEvents Label118 As Label
+    Friend WithEvents Label119 As Label
+    Friend WithEvents Label120 As Label
+    Friend WithEvents Label227 As Label
+    Friend WithEvents Label238 As Label
+    Friend WithEvents Label239 As Label
+    Friend WithEvents Label240 As Label
+    Friend WithEvents Label241 As Label
+    Friend WithEvents Label242 As Label
+    Friend WithEvents Label243 As Label
+    Friend WithEvents Label244 As Label
+    Friend WithEvents Label245 As Label
+    Friend WithEvents Label246 As Label
+    Friend WithEvents Label247 As Label
+    Friend WithEvents Label248 As Label
+    Friend WithEvents Label249 As Label
+    Friend WithEvents Label250 As Label
+    Friend WithEvents Label251 As Label
+    Friend WithEvents Label252 As Label
+    Friend WithEvents Label253 As Label
+    Friend WithEvents Label254 As Label
+    Friend WithEvents Label255 As Label
+    Friend WithEvents Label256 As Label
+    Friend WithEvents Label257 As Label
+    Friend WithEvents Label258 As Label
+    Friend WithEvents Label259 As Label
+    Friend WithEvents Label58 As Label
+    Friend WithEvents Label60 As Label
+    Friend WithEvents Label61 As Label
+    Friend WithEvents Label63 As Label
+    Friend WithEvents Label64 As Label
+    Friend WithEvents Label65 As Label
+    Friend WithEvents Label66 As Label
+    Friend WithEvents Label100 As Label
+    Friend WithEvents Label101 As Label
+    Friend WithEvents Label102 As Label
+    Friend WithEvents Label103 As Label
+    Friend WithEvents Label104 As Label
+    Friend WithEvents Label105 As Label
+    Friend WithEvents Label106 As Label
+    Friend WithEvents Label107 As Label
+    Friend WithEvents Label108 As Label
+    Friend WithEvents Label109 As Label
+    Friend WithEvents Label111 As Label
+    Friend WithEvents Label112 As Label
+    Friend WithEvents Label113 As Label
+    Friend WithEvents Label143 As Label
+    Friend WithEvents Label145 As Label
+    Friend WithEvents Label146 As Label
+    Friend WithEvents Label149 As Label
+    Friend WithEvents Label150 As Label
+    Friend WithEvents Label151 As Label
+    Friend WithEvents Label152 As Label
+    Friend WithEvents Label153 As Label
+    Friend WithEvents Label154 As Label
+    Friend WithEvents Label155 As Label
+    Friend WithEvents Label156 As Label
+    Friend WithEvents Label157 As Label
+    Friend WithEvents Label158 As Label
+    Friend WithEvents Label159 As Label
+    Friend WithEvents Label160 As Label
+    Friend WithEvents Label161 As Label
+    Friend WithEvents Label162 As Label
+    Friend WithEvents Label260 As Label
+    Friend WithEvents Label261 As Label
+    Friend WithEvents Label262 As Label
+    Friend WithEvents Label263 As Label
+    Friend WithEvents Label264 As Label
+    Friend WithEvents Label265 As Label
+    Friend WithEvents Label266 As Label
+    Friend WithEvents Label267 As Label
+    Friend WithEvents Label268 As Label
+    Friend WithEvents Label269 As Label
+    Friend WithEvents Label270 As Label
+    Friend WithEvents Label271 As Label
+    Friend WithEvents Label272 As Label
+    Friend WithEvents Label273 As Label
+    Friend WithEvents Label274 As Label
+    Friend WithEvents Label275 As Label
+    Friend WithEvents Label276 As Label
+    Friend WithEvents Label277 As Label
+    Friend WithEvents Label278 As Label
+    Friend WithEvents Label279 As Label
+    Friend WithEvents Label280 As Label
+    Friend WithEvents Label281 As Label
+    Friend WithEvents Label282 As Label
+    Friend WithEvents Label283 As Label
+    Friend WithEvents Label284 As Label
+    Friend WithEvents Label285 As Label
+    Friend WithEvents Label286 As Label
+    Friend WithEvents Label287 As Label
+    Friend WithEvents Label288 As Label
+    Friend WithEvents Label289 As Label
 End Class

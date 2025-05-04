@@ -193,6 +193,12 @@ Partial Class Ten_to_Fifteen_Seaters
         PictureBox18 = New PictureBox()
         Label126 = New Label()
         Label127 = New Label()
+        Label171 = New Label()
+        Label170 = New Label()
+        Label128 = New Label()
+        Label129 = New Label()
+        Label130 = New Label()
+        Label131 = New Label()
         TabControl1.SuspendLayout()
         TabPage1.SuspendLayout()
         Panel3.SuspendLayout()
@@ -746,6 +752,8 @@ Partial Class Ten_to_Fifteen_Seaters
         ' Panel1
         ' 
         Panel1.BorderStyle = BorderStyle.Fixed3D
+        Panel1.Controls.Add(Label171)
+        Panel1.Controls.Add(Label170)
         Panel1.Controls.Add(Label19)
         Panel1.Controls.Add(Label18)
         Panel1.Controls.Add(PictureBox6)
@@ -1351,6 +1359,8 @@ Partial Class Ten_to_Fifteen_Seaters
         ' Panel6
         ' 
         Panel6.BorderStyle = BorderStyle.Fixed3D
+        Panel6.Controls.Add(Label128)
+        Panel6.Controls.Add(Label129)
         Panel6.Controls.Add(Label82)
         Panel6.Controls.Add(Label83)
         Panel6.Controls.Add(PictureBox7)
@@ -1955,6 +1965,8 @@ Partial Class Ten_to_Fifteen_Seaters
         ' Panel9
         ' 
         Panel9.BorderStyle = BorderStyle.Fixed3D
+        Panel9.Controls.Add(Label130)
+        Panel9.Controls.Add(Label131)
         Panel9.Controls.Add(Label124)
         Panel9.Controls.Add(Label125)
         Panel9.Controls.Add(PictureBox13)
@@ -2063,6 +2075,66 @@ Partial Class Ten_to_Fifteen_Seaters
         Label127.Size = New Size(105, 18)
         Label127.TabIndex = 0
         Label127.Text = "Model Year:"
+        ' 
+        ' Label171
+        ' 
+        Label171.AutoSize = True
+        Label171.Font = New Font("Century", 9F, FontStyle.Underline)
+        Label171.Location = New Point(141, 47)
+        Label171.Name = "Label171"
+        Label171.Size = New Size(77, 18)
+        Label171.TabIndex = 12
+        Label171.Text = "ABC 1234"
+        ' 
+        ' Label170
+        ' 
+        Label170.AutoSize = True
+        Label170.Font = New Font("Century", 9F, FontStyle.Bold)
+        Label170.Location = New Point(12, 47)
+        Label170.Name = "Label170"
+        Label170.Size = New Size(123, 18)
+        Label170.TabIndex = 11
+        Label170.Text = "Plate Number:"
+        ' 
+        ' Label128
+        ' 
+        Label128.AutoSize = True
+        Label128.Font = New Font("Century", 9F, FontStyle.Underline)
+        Label128.Location = New Point(141, 47)
+        Label128.Name = "Label128"
+        Label128.Size = New Size(77, 18)
+        Label128.TabIndex = 12
+        Label128.Text = "ABC 1234"
+        ' 
+        ' Label129
+        ' 
+        Label129.AutoSize = True
+        Label129.Font = New Font("Century", 9F, FontStyle.Bold)
+        Label129.Location = New Point(12, 47)
+        Label129.Name = "Label129"
+        Label129.Size = New Size(123, 18)
+        Label129.TabIndex = 11
+        Label129.Text = "Plate Number:"
+        ' 
+        ' Label130
+        ' 
+        Label130.AutoSize = True
+        Label130.Font = New Font("Century", 9F, FontStyle.Underline)
+        Label130.Location = New Point(141, 47)
+        Label130.Name = "Label130"
+        Label130.Size = New Size(77, 18)
+        Label130.TabIndex = 12
+        Label130.Text = "ABC 1234"
+        ' 
+        ' Label131
+        ' 
+        Label131.AutoSize = True
+        Label131.Font = New Font("Century", 9F, FontStyle.Bold)
+        Label131.Location = New Point(12, 47)
+        Label131.Name = "Label131"
+        Label131.Size = New Size(123, 18)
+        Label131.TabIndex = 11
+        Label131.Text = "Plate Number:"
         ' 
         ' Ten_to_Fifteen_Seaters
         ' 
@@ -2287,4 +2359,10 @@ Partial Class Ten_to_Fifteen_Seaters
     Friend WithEvents PictureBox18 As PictureBox
     Friend WithEvents Label126 As Label
     Friend WithEvents Label127 As Label
+    Friend WithEvents Label171 As Label
+    Friend WithEvents Label170 As Label
+    Friend WithEvents Label128 As Label
+    Friend WithEvents Label129 As Label
+    Friend WithEvents Label130 As Label
+    Friend WithEvents Label131 As Label
 End Class
