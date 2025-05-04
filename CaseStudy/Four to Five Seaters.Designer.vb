@@ -250,6 +250,14 @@ Partial Class Four_to_Five_Seaters
         PictureBox24 = New PictureBox()
         Label168 = New Label()
         Label169 = New Label()
+        Label170 = New Label()
+        Label171 = New Label()
+        Label172 = New Label()
+        Label173 = New Label()
+        Label174 = New Label()
+        Label175 = New Label()
+        Label176 = New Label()
+        Label177 = New Label()
         TabControl1.SuspendLayout()
         TabPage1.SuspendLayout()
         Panel3.SuspendLayout()
@@ -815,6 +823,8 @@ Partial Class Four_to_Five_Seaters
         ' Panel1
         ' 
         Panel1.BorderStyle = BorderStyle.Fixed3D
+        Panel1.Controls.Add(Label171)
+        Panel1.Controls.Add(Label170)
         Panel1.Controls.Add(Label19)
         Panel1.Controls.Add(Label18)
         Panel1.Controls.Add(PictureBox6)
@@ -1420,6 +1430,8 @@ Partial Class Four_to_Five_Seaters
         ' Panel6
         ' 
         Panel6.BorderStyle = BorderStyle.Fixed3D
+        Panel6.Controls.Add(Label172)
+        Panel6.Controls.Add(Label173)
         Panel6.Controls.Add(PictureBox25)
         Panel6.Controls.Add(Label82)
         Panel6.Controls.Add(Label83)
@@ -2034,6 +2046,8 @@ Partial Class Four_to_Five_Seaters
         ' Panel9
         ' 
         Panel9.BorderStyle = BorderStyle.Fixed3D
+        Panel9.Controls.Add(Label174)
+        Panel9.Controls.Add(Label175)
         Panel9.Controls.Add(Label124)
         Panel9.Controls.Add(Label125)
         Panel9.Controls.Add(PictureBox13)
@@ -2638,6 +2652,8 @@ Partial Class Four_to_Five_Seaters
         ' Panel12
         ' 
         Panel12.BorderStyle = BorderStyle.Fixed3D
+        Panel12.Controls.Add(Label176)
+        Panel12.Controls.Add(Label177)
         Panel12.Controls.Add(Label166)
         Panel12.Controls.Add(Label167)
         Panel12.Controls.Add(PictureBox19)
@@ -2746,6 +2762,86 @@ Partial Class Four_to_Five_Seaters
         Label169.Size = New Size(105, 18)
         Label169.TabIndex = 0
         Label169.Text = "Model Year:"
+        ' 
+        ' Label170
+        ' 
+        Label170.AutoSize = True
+        Label170.Font = New Font("Century", 9F, FontStyle.Bold)
+        Label170.Location = New Point(12, 47)
+        Label170.Name = "Label170"
+        Label170.Size = New Size(123, 18)
+        Label170.TabIndex = 9
+        Label170.Text = "Plate Number:"
+        ' 
+        ' Label171
+        ' 
+        Label171.AutoSize = True
+        Label171.Font = New Font("Century", 9F, FontStyle.Underline)
+        Label171.Location = New Point(141, 47)
+        Label171.Name = "Label171"
+        Label171.Size = New Size(77, 18)
+        Label171.TabIndex = 10
+        Label171.Text = "ABC 1234"
+        ' 
+        ' Label172
+        ' 
+        Label172.AutoSize = True
+        Label172.Font = New Font("Century", 9F, FontStyle.Underline)
+        Label172.Location = New Point(141, 47)
+        Label172.Name = "Label172"
+        Label172.Size = New Size(77, 18)
+        Label172.TabIndex = 12
+        Label172.Text = "ABC 1234"
+        ' 
+        ' Label173
+        ' 
+        Label173.AutoSize = True
+        Label173.Font = New Font("Century", 9F, FontStyle.Bold)
+        Label173.Location = New Point(12, 47)
+        Label173.Name = "Label173"
+        Label173.Size = New Size(123, 18)
+        Label173.TabIndex = 11
+        Label173.Text = "Plate Number:"
+        ' 
+        ' Label174
+        ' 
+        Label174.AutoSize = True
+        Label174.Font = New Font("Century", 9F, FontStyle.Underline)
+        Label174.Location = New Point(141, 47)
+        Label174.Name = "Label174"
+        Label174.Size = New Size(77, 18)
+        Label174.TabIndex = 12
+        Label174.Text = "ABC 1234"
+        ' 
+        ' Label175
+        ' 
+        Label175.AutoSize = True
+        Label175.Font = New Font("Century", 9F, FontStyle.Bold)
+        Label175.Location = New Point(12, 47)
+        Label175.Name = "Label175"
+        Label175.Size = New Size(123, 18)
+        Label175.TabIndex = 11
+        Label175.Text = "Plate Number:"
+        ' 
+        ' Label176
+        ' 
+        Label176.AutoSize = True
+        Label176.Font = New Font("Century", 9F, FontStyle.Underline)
+        Label176.Location = New Point(141, 47)
+        Label176.Name = "Label176"
+        Label176.Size = New Size(77, 18)
+        Label176.TabIndex = 12
+        Label176.Text = "ABC 1234"
+        ' 
+        ' Label177
+        ' 
+        Label177.AutoSize = True
+        Label177.Font = New Font("Century", 9F, FontStyle.Bold)
+        Label177.Location = New Point(12, 47)
+        Label177.Name = "Label177"
+        Label177.Size = New Size(123, 18)
+        Label177.TabIndex = 11
+        Label177.Text = "Plate Number:"
         ' 
         ' Four_to_Five_Seaters
         ' 
@@ -3041,4 +3137,12 @@ Partial Class Four_to_Five_Seaters
     Friend WithEvents Label168 As Label
     Friend WithEvents Label169 As Label
     Friend WithEvents PictureBox25 As PictureBox
+    Friend WithEvents Label171 As Label
+    Friend WithEvents Label170 As Label
+    Friend WithEvents Label172 As Label
+    Friend WithEvents Label173 As Label
+    Friend WithEvents Label174 As Label
+    Friend WithEvents Label175 As Label
+    Friend WithEvents Label176 As Label
+    Friend WithEvents Label177 As Label
 End Class
