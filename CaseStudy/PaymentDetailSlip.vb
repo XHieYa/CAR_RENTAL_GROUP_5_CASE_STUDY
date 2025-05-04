@@ -18,8 +18,8 @@ Public Class PaymentDetailSlip
             Else
                 Con.Open()
                 Dim cmd As New SqlCommand(query, Con)
-                cmd.Parameters.AddWithValue("@Fdate", DateOnly.FromDateTime(FromDate.Value.Date))
-                cmd.Parameters.AddWithValue("@Tdate", DateOnly.FromDateTime(ToDate.Value.Date))
+                cmd.Parameters.AddWithValue("@Fdate", FromDate.Value.Date)
+                cmd.Parameters.AddWithValue("@Tdate", ToDate.Value.Date)
                 cmd.ExecuteNonQuery()
             End If
         Catch ex As Exception

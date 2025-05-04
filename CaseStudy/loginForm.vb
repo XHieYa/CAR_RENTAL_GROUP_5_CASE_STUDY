@@ -31,7 +31,7 @@ Public Class loginForm
         If count > 0 Then
             MessageBox.Show("Login Successfully", "INFO", MessageBoxButtons.OK, MessageBoxIcon.Information) 'Will be key to transfering to next Form
             Me.Hide()
-            Dashboard.Show()
+            BookingForm.Show()
         Else
             MessageBox.Show("Login Error") 'Error Message if account is not existing
 

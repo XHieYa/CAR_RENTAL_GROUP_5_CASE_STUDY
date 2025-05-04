@@ -28,7 +28,7 @@ Partial Class BookingForm
         ToDOB = New DateTimePicker()
         FromDOB = New DateTimePicker()
         GroupBox1 = New GroupBox()
-        TxtCar = New TextBox()
+        TxtCarID = New TextBox()
         BtnConfirm = New Button()
         BtnShow = New Button()
         DGVSchedules = New DataGridView()
@@ -78,7 +78,7 @@ Partial Class BookingForm
         ' 
         ' GroupBox1
         ' 
-        GroupBox1.Controls.Add(TxtCar)
+        GroupBox1.Controls.Add(TxtCarID)
         GroupBox1.Controls.Add(BtnConfirm)
         GroupBox1.Controls.Add(FromDOB)
         GroupBox1.Controls.Add(Label3)
@@ -91,12 +91,12 @@ Partial Class BookingForm
         GroupBox1.TabStop = False
         GroupBox1.Text = "GroupBox1"
         ' 
-        ' TxtCar
+        ' TxtCarID
         ' 
-        TxtCar.Location = New Point(45, 26)
-        TxtCar.Name = "TxtCar"
-        TxtCar.Size = New Size(200, 23)
-        TxtCar.TabIndex = 11
+        TxtCarID.Location = New Point(45, 26)
+        TxtCarID.Name = "TxtCarID"
+        TxtCarID.Size = New Size(200, 23)
+        TxtCarID.TabIndex = 11
         ' 
         ' BtnConfirm
         ' 
@@ -169,7 +169,7 @@ Partial Class BookingForm
     Friend WithEvents GroupBox1 As GroupBox
     Friend WithEvents BtnConfirm As Button
     Friend WithEvents BtnShow As Button
-    Friend WithEvents TxtCar As TextBox
+    Friend WithEvents TxtCarID As TextBox
     Friend WithEvents DGVSchedules As DataGridView
     Friend WithEvents Button1 As Button
     Friend WithEvents BtnBookedDate As Button
