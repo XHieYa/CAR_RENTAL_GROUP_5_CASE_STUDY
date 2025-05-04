@@ -117,11 +117,6 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="Label165.Text" xml:space="preserve">
-    <value>Explore the great outdoors in our comfortable and reliable Ford campervan! This perfect 
-vehicle for adventurers offers everything you need for a memorable road trip, combining 
-the freedom of the open road with the convenience of a home away from home.</value>
-  </data>
   <data name="Label4.Text" xml:space="preserve">
     <value>Experience the open road in comfort and style with Hymer motorhome rental! This fully 
 equipped RV offers a luxurious and convenient way to explore, with all the amenities you
@@ -136,5 +131,10 @@ relaxing and memorable camping holiday is included.</value>
     <value>Explore the countryside in comfort and convenience with Benimar's motorhome rentals! These 
 well-equipped RVs offer a perfect blend of space and functionality, ideal for families or couples 
 seeking a memorable road trip. Enjoy the freedom of the open road with all the comforts of home.</value>
+  </data>
+  <data name="Label165.Text" xml:space="preserve">
+    <value>Explore the great outdoors in our comfortable and reliable Ford campervan! This perfect 
+vehicle for adventurers offers everything you need for a memorable road trip, combining 
+the freedom of the open road with the convenience of a home away from home.</value>
   </data>
 </root>

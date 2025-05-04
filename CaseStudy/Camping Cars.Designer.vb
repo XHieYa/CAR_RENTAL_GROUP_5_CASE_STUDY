@@ -927,7 +927,7 @@ Partial Class Camping_Cars
         ' SD
         ' 
         SD.Font = New Font("Century", 9F, FontStyle.Bold)
-        SD.Location = New Point(161, 501)
+        SD.Location = New Point(114, 504)
         SD.Name = "SD"
         SD.Size = New Size(134, 29)
         SD.TabIndex = 4
@@ -937,7 +937,7 @@ Partial Class Camping_Cars
         ' WD
         ' 
         WD.Font = New Font("Century", 9F, FontStyle.Bold)
-        WD.Location = New Point(21, 502)
+        WD.Location = New Point(254, 504)
         WD.Name = "WD"
         WD.Size = New Size(134, 29)
         WD.TabIndex = 5
@@ -2056,7 +2056,7 @@ Partial Class Camping_Cars
         ' SD1
         ' 
         SD1.Font = New Font("Century", 9F, FontStyle.Bold)
-        SD1.Location = New Point(162, 497)
+        SD1.Location = New Point(117, 500)
         SD1.Name = "SD1"
         SD1.Size = New Size(134, 29)
         SD1.TabIndex = 4
@@ -2066,7 +2066,7 @@ Partial Class Camping_Cars
         ' WD1
         ' 
         WD1.Font = New Font("Century", 9F, FontStyle.Bold)
-        WD1.Location = New Point(22, 498)
+        WD1.Location = New Point(257, 501)
         WD1.Name = "WD1"
         WD1.Size = New Size(134, 29)
         WD1.TabIndex = 5
@@ -3022,7 +3022,7 @@ Partial Class Camping_Cars
         ' SD2
         ' 
         SD2.Font = New Font("Century", 9F, FontStyle.Bold)
-        SD2.Location = New Point(161, 503)
+        SD2.Location = New Point(114, 505)
         SD2.Name = "SD2"
         SD2.Size = New Size(134, 29)
         SD2.TabIndex = 4
@@ -3032,7 +3032,7 @@ Partial Class Camping_Cars
         ' WD2
         ' 
         WD2.Font = New Font("Century", 9F, FontStyle.Bold)
-        WD2.Location = New Point(21, 504)
+        WD2.Location = New Point(254, 505)
         WD2.Name = "WD2"
         WD2.Size = New Size(134, 29)
         WD2.TabIndex = 5
@@ -3954,7 +3954,7 @@ Partial Class Camping_Cars
         ' SD3
         ' 
         SD3.Font = New Font("Century", 9F, FontStyle.Bold)
-        SD3.Location = New Point(161, 501)
+        SD3.Location = New Point(114, 504)
         SD3.Name = "SD3"
         SD3.Size = New Size(134, 29)
         SD3.TabIndex = 4
@@ -3964,7 +3964,7 @@ Partial Class Camping_Cars
         ' WD3
         ' 
         WD3.Font = New Font("Century", 9F, FontStyle.Bold)
-        WD3.Location = New Point(21, 502)
+        WD3.Location = New Point(254, 505)
         WD3.Name = "WD3"
         WD3.Size = New Size(134, 29)
         WD3.TabIndex = 5

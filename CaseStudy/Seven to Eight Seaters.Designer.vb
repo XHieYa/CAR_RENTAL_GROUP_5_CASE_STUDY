@@ -70,6 +70,8 @@ Partial Class Seven_to_Eight_Seaters
         Label43 = New Label()
         Label4 = New Label()
         Panel1 = New Panel()
+        Label171 = New Label()
+        Label170 = New Label()
         Label19 = New Label()
         Label18 = New Label()
         PictureBox6 = New PictureBox()
@@ -126,6 +128,8 @@ Partial Class Seven_to_Eight_Seaters
         Label80 = New Label()
         Label81 = New Label()
         Panel6 = New Panel()
+        Label172 = New Label()
+        Label173 = New Label()
         Label82 = New Label()
         Label83 = New Label()
         PictureBox7 = New PictureBox()
@@ -182,6 +186,8 @@ Partial Class Seven_to_Eight_Seaters
         Label122 = New Label()
         Label123 = New Label()
         Panel9 = New Panel()
+        Label174 = New Label()
+        Label175 = New Label()
         Label124 = New Label()
         Label125 = New Label()
         PictureBox13 = New PictureBox()
@@ -238,6 +244,8 @@ Partial Class Seven_to_Eight_Seaters
         Label164 = New Label()
         Label165 = New Label()
         Panel12 = New Panel()
+        Label176 = New Label()
+        Label177 = New Label()
         Label166 = New Label()
         Label167 = New Label()
         PictureBox19 = New PictureBox()
@@ -249,14 +257,6 @@ Partial Class Seven_to_Eight_Seaters
         Label168 = New Label()
         Label169 = New Label()
         Label1 = New Label()
-        Label171 = New Label()
-        Label170 = New Label()
-        Label172 = New Label()
-        Label173 = New Label()
-        Label174 = New Label()
-        Label175 = New Label()
-        Label176 = New Label()
-        Label177 = New Label()
         TabControl1.SuspendLayout()
         TabPage1.SuspendLayout()
         Panel3.SuspendLayout()
@@ -458,7 +458,7 @@ Partial Class Seven_to_Eight_Seaters
         ' SD
         ' 
         SD.Font = New Font("Century", 9F, FontStyle.Bold)
-        SD.Location = New Point(161, 501)
+        SD.Location = New Point(116, 503)
         SD.Name = "SD"
         SD.Size = New Size(134, 29)
         SD.TabIndex = 4
@@ -468,7 +468,7 @@ Partial Class Seven_to_Eight_Seaters
         ' WD
         ' 
         WD.Font = New Font("Century", 9F, FontStyle.Bold)
-        WD.Location = New Point(21, 502)
+        WD.Location = New Point(256, 503)
         WD.Name = "WD"
         WD.Size = New Size(134, 29)
         WD.TabIndex = 5
@@ -827,6 +827,26 @@ Partial Class Seven_to_Eight_Seaters
         Panel1.Size = New Size(780, 442)
         Panel1.TabIndex = 0
         ' 
+        ' Label171
+        ' 
+        Label171.AutoSize = True
+        Label171.Font = New Font("Century", 9F, FontStyle.Underline)
+        Label171.Location = New Point(141, 47)
+        Label171.Name = "Label171"
+        Label171.Size = New Size(77, 18)
+        Label171.TabIndex = 12
+        Label171.Text = "ABC 1234"
+        ' 
+        ' Label170
+        ' 
+        Label170.AutoSize = True
+        Label170.Font = New Font("Century", 9F, FontStyle.Bold)
+        Label170.Location = New Point(12, 47)
+        Label170.Name = "Label170"
+        Label170.Size = New Size(123, 18)
+        Label170.TabIndex = 11
+        Label170.Text = "Plate Number:"
+        ' 
         ' Label19
         ' 
         Label19.AutoSize = True
@@ -1065,7 +1085,7 @@ Partial Class Seven_to_Eight_Seaters
         ' SD1
         ' 
         SD1.Font = New Font("Century", 9F, FontStyle.Bold)
-        SD1.Location = New Point(161, 506)
+        SD1.Location = New Point(118, 507)
         SD1.Name = "SD1"
         SD1.Size = New Size(134, 29)
         SD1.TabIndex = 4
@@ -1075,7 +1095,7 @@ Partial Class Seven_to_Eight_Seaters
         ' WD1
         ' 
         WD1.Font = New Font("Century", 9F, FontStyle.Bold)
-        WD1.Location = New Point(21, 507)
+        WD1.Location = New Point(258, 507)
         WD1.Name = "WD1"
         WD1.Size = New Size(134, 29)
         WD1.TabIndex = 5
@@ -1434,6 +1454,26 @@ Partial Class Seven_to_Eight_Seaters
         Panel6.Size = New Size(780, 442)
         Panel6.TabIndex = 4
         ' 
+        ' Label172
+        ' 
+        Label172.AutoSize = True
+        Label172.Font = New Font("Century", 9F, FontStyle.Underline)
+        Label172.Location = New Point(141, 47)
+        Label172.Name = "Label172"
+        Label172.Size = New Size(77, 18)
+        Label172.TabIndex = 12
+        Label172.Text = "ABC 1234"
+        ' 
+        ' Label173
+        ' 
+        Label173.AutoSize = True
+        Label173.Font = New Font("Century", 9F, FontStyle.Bold)
+        Label173.Location = New Point(12, 47)
+        Label173.Name = "Label173"
+        Label173.Size = New Size(123, 18)
+        Label173.TabIndex = 11
+        Label173.Text = "Plate Number:"
+        ' 
         ' Label82
         ' 
         Label82.AutoSize = True
@@ -1671,7 +1711,7 @@ Partial Class Seven_to_Eight_Seaters
         ' SD2
         ' 
         SD2.Font = New Font("Century", 9F, FontStyle.Bold)
-        SD2.Location = New Point(161, 503)
+        SD2.Location = New Point(119, 505)
         SD2.Name = "SD2"
         SD2.Size = New Size(134, 29)
         SD2.TabIndex = 4
@@ -1681,7 +1721,7 @@ Partial Class Seven_to_Eight_Seaters
         ' WD2
         ' 
         WD2.Font = New Font("Century", 9F, FontStyle.Bold)
-        WD2.Location = New Point(21, 504)
+        WD2.Location = New Point(259, 505)
         WD2.Name = "WD2"
         WD2.Size = New Size(134, 29)
         WD2.TabIndex = 5
@@ -2040,6 +2080,26 @@ Partial Class Seven_to_Eight_Seaters
         Panel9.Size = New Size(780, 442)
         Panel9.TabIndex = 9
         ' 
+        ' Label174
+        ' 
+        Label174.AutoSize = True
+        Label174.Font = New Font("Century", 9F, FontStyle.Underline)
+        Label174.Location = New Point(141, 47)
+        Label174.Name = "Label174"
+        Label174.Size = New Size(77, 18)
+        Label174.TabIndex = 12
+        Label174.Text = "ABC 1234"
+        ' 
+        ' Label175
+        ' 
+        Label175.AutoSize = True
+        Label175.Font = New Font("Century", 9F, FontStyle.Bold)
+        Label175.Location = New Point(12, 47)
+        Label175.Name = "Label175"
+        Label175.Size = New Size(123, 18)
+        Label175.TabIndex = 11
+        Label175.Text = "Plate Number:"
+        ' 
         ' Label124
         ' 
         Label124.AutoSize = True
@@ -2277,7 +2337,7 @@ Partial Class Seven_to_Eight_Seaters
         ' SD3
         ' 
         SD3.Font = New Font("Century", 9F, FontStyle.Bold)
-        SD3.Location = New Point(161, 501)
+        SD3.Location = New Point(107, 503)
         SD3.Name = "SD3"
         SD3.Size = New Size(134, 29)
         SD3.TabIndex = 4
@@ -2287,7 +2347,7 @@ Partial Class Seven_to_Eight_Seaters
         ' WD3
         ' 
         WD3.Font = New Font("Century", 9F, FontStyle.Bold)
-        WD3.Location = New Point(21, 502)
+        WD3.Location = New Point(247, 503)
         WD3.Name = "WD3"
         WD3.Size = New Size(134, 29)
         WD3.TabIndex = 5
@@ -2646,6 +2706,26 @@ Partial Class Seven_to_Eight_Seaters
         Panel12.Size = New Size(780, 442)
         Panel12.TabIndex = 9
         ' 
+        ' Label176
+        ' 
+        Label176.AutoSize = True
+        Label176.Font = New Font("Century", 9F, FontStyle.Underline)
+        Label176.Location = New Point(141, 47)
+        Label176.Name = "Label176"
+        Label176.Size = New Size(77, 18)
+        Label176.TabIndex = 12
+        Label176.Text = "ABC 1234"
+        ' 
+        ' Label177
+        ' 
+        Label177.AutoSize = True
+        Label177.Font = New Font("Century", 9F, FontStyle.Bold)
+        Label177.Location = New Point(12, 47)
+        Label177.Name = "Label177"
+        Label177.Size = New Size(123, 18)
+        Label177.TabIndex = 11
+        Label177.Text = "Plate Number:"
+        ' 
         ' Label166
         ' 
         Label166.AutoSize = True
@@ -2750,86 +2830,6 @@ Partial Class Seven_to_Eight_Seaters
         Label1.TabIndex = 4
         Label1.Text = "The available vehicle options inlcude seven- and eight-seater models." & vbCrLf
         Label1.TextAlign = ContentAlignment.TopCenter
-        ' 
-        ' Label171
-        ' 
-        Label171.AutoSize = True
-        Label171.Font = New Font("Century", 9F, FontStyle.Underline)
-        Label171.Location = New Point(141, 47)
-        Label171.Name = "Label171"
-        Label171.Size = New Size(77, 18)
-        Label171.TabIndex = 12
-        Label171.Text = "ABC 1234"
-        ' 
-        ' Label170
-        ' 
-        Label170.AutoSize = True
-        Label170.Font = New Font("Century", 9F, FontStyle.Bold)
-        Label170.Location = New Point(12, 47)
-        Label170.Name = "Label170"
-        Label170.Size = New Size(123, 18)
-        Label170.TabIndex = 11
-        Label170.Text = "Plate Number:"
-        ' 
-        ' Label172
-        ' 
-        Label172.AutoSize = True
-        Label172.Font = New Font("Century", 9F, FontStyle.Underline)
-        Label172.Location = New Point(141, 47)
-        Label172.Name = "Label172"
-        Label172.Size = New Size(77, 18)
-        Label172.TabIndex = 12
-        Label172.Text = "ABC 1234"
-        ' 
-        ' Label173
-        ' 
-        Label173.AutoSize = True
-        Label173.Font = New Font("Century", 9F, FontStyle.Bold)
-        Label173.Location = New Point(12, 47)
-        Label173.Name = "Label173"
-        Label173.Size = New Size(123, 18)
-        Label173.TabIndex = 11
-        Label173.Text = "Plate Number:"
-        ' 
-        ' Label174
-        ' 
-        Label174.AutoSize = True
-        Label174.Font = New Font("Century", 9F, FontStyle.Underline)
-        Label174.Location = New Point(141, 47)
-        Label174.Name = "Label174"
-        Label174.Size = New Size(77, 18)
-        Label174.TabIndex = 12
-        Label174.Text = "ABC 1234"
-        ' 
-        ' Label175
-        ' 
-        Label175.AutoSize = True
-        Label175.Font = New Font("Century", 9F, FontStyle.Bold)
-        Label175.Location = New Point(12, 47)
-        Label175.Name = "Label175"
-        Label175.Size = New Size(123, 18)
-        Label175.TabIndex = 11
-        Label175.Text = "Plate Number:"
-        ' 
-        ' Label176
-        ' 
-        Label176.AutoSize = True
-        Label176.Font = New Font("Century", 9F, FontStyle.Underline)
-        Label176.Location = New Point(141, 47)
-        Label176.Name = "Label176"
-        Label176.Size = New Size(77, 18)
-        Label176.TabIndex = 12
-        Label176.Text = "ABC 1234"
-        ' 
-        ' Label177
-        ' 
-        Label177.AutoSize = True
-        Label177.Font = New Font("Century", 9F, FontStyle.Bold)
-        Label177.Location = New Point(12, 47)
-        Label177.Name = "Label177"
-        Label177.Size = New Size(123, 18)
-        Label177.TabIndex = 11
-        Label177.Text = "Plate Number:"
         ' 
         ' Seven_to_Eight_Seaters
         ' 

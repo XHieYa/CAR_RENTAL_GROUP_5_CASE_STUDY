@@ -71,6 +71,8 @@ Partial Class Ten_to_Fifteen_Seaters
         Label43 = New Label()
         Label4 = New Label()
         Panel1 = New Panel()
+        Label171 = New Label()
+        Label170 = New Label()
         Label19 = New Label()
         Label18 = New Label()
         PictureBox6 = New PictureBox()
@@ -127,6 +129,8 @@ Partial Class Ten_to_Fifteen_Seaters
         Label80 = New Label()
         Label81 = New Label()
         Panel6 = New Panel()
+        Label128 = New Label()
+        Label129 = New Label()
         Label82 = New Label()
         Label83 = New Label()
         PictureBox7 = New PictureBox()
@@ -183,6 +187,8 @@ Partial Class Ten_to_Fifteen_Seaters
         Label122 = New Label()
         Label123 = New Label()
         Panel9 = New Panel()
+        Label130 = New Label()
+        Label131 = New Label()
         Label124 = New Label()
         Label125 = New Label()
         PictureBox13 = New PictureBox()
@@ -193,12 +199,6 @@ Partial Class Ten_to_Fifteen_Seaters
         PictureBox18 = New PictureBox()
         Label126 = New Label()
         Label127 = New Label()
-        Label171 = New Label()
-        Label170 = New Label()
-        Label128 = New Label()
-        Label129 = New Label()
-        Label130 = New Label()
-        Label131 = New Label()
         TabControl1.SuspendLayout()
         TabPage1.SuspendLayout()
         Panel3.SuspendLayout()
@@ -400,7 +400,7 @@ Partial Class Ten_to_Fifteen_Seaters
         ' SD
         ' 
         SD.Font = New Font("Century", 9F, FontStyle.Bold)
-        SD.Location = New Point(161, 501)
+        SD.Location = New Point(115, 503)
         SD.Name = "SD"
         SD.Size = New Size(134, 29)
         SD.TabIndex = 4
@@ -410,7 +410,7 @@ Partial Class Ten_to_Fifteen_Seaters
         ' WD
         ' 
         WD.Font = New Font("Century", 9F, FontStyle.Bold)
-        WD.Location = New Point(21, 502)
+        WD.Location = New Point(255, 504)
         WD.Name = "WD"
         WD.Size = New Size(134, 29)
         WD.TabIndex = 5
@@ -769,6 +769,26 @@ Partial Class Ten_to_Fifteen_Seaters
         Panel1.Size = New Size(780, 442)
         Panel1.TabIndex = 0
         ' 
+        ' Label171
+        ' 
+        Label171.AutoSize = True
+        Label171.Font = New Font("Century", 9F, FontStyle.Underline)
+        Label171.Location = New Point(141, 47)
+        Label171.Name = "Label171"
+        Label171.Size = New Size(77, 18)
+        Label171.TabIndex = 12
+        Label171.Text = "ABC 1234"
+        ' 
+        ' Label170
+        ' 
+        Label170.AutoSize = True
+        Label170.Font = New Font("Century", 9F, FontStyle.Bold)
+        Label170.Location = New Point(12, 47)
+        Label170.Name = "Label170"
+        Label170.Size = New Size(123, 18)
+        Label170.TabIndex = 11
+        Label170.Text = "Plate Number:"
+        ' 
         ' Label19
         ' 
         Label19.AutoSize = True
@@ -875,7 +895,7 @@ Partial Class Ten_to_Fifteen_Seaters
         TabPage2.Padding = New Padding(3)
         TabPage2.Size = New Size(1292, 603)
         TabPage2.TabIndex = 1
-        TabPage2.Text = "TOYOTA HIACE COMMUTER"
+        TabPage2.Text = "TOYOTA HIACE COMMUTER VAN"
         TabPage2.UseVisualStyleBackColor = True
         ' 
         ' C1
@@ -1007,7 +1027,7 @@ Partial Class Ten_to_Fifteen_Seaters
         ' SD1
         ' 
         SD1.Font = New Font("Century", 9F, FontStyle.Bold)
-        SD1.Location = New Point(161, 506)
+        SD1.Location = New Point(120, 506)
         SD1.Name = "SD1"
         SD1.Size = New Size(134, 29)
         SD1.TabIndex = 4
@@ -1017,7 +1037,7 @@ Partial Class Ten_to_Fifteen_Seaters
         ' WD1
         ' 
         WD1.Font = New Font("Century", 9F, FontStyle.Bold)
-        WD1.Location = New Point(21, 507)
+        WD1.Location = New Point(260, 506)
         WD1.Name = "WD1"
         WD1.Size = New Size(134, 29)
         WD1.TabIndex = 5
@@ -1031,9 +1051,9 @@ Partial Class Ten_to_Fifteen_Seaters
         Label50.Font = New Font("Felix Titling", 10.2F, FontStyle.Bold)
         Label50.Location = New Point(3, 483)
         Label50.Name = "Label50"
-        Label50.Size = New Size(422, 20)
+        Label50.Size = New Size(469, 20)
         Label50.TabIndex = 32
-        Label50.Text = "RATES FOR THE TOYOTA HIACE COMMUTER :"
+        Label50.Text = "RATES FOR THE TOYOTA HIACE COMMUTER VAN :"
         ' 
         ' Label51
         ' 
@@ -1376,6 +1396,26 @@ Partial Class Ten_to_Fifteen_Seaters
         Panel6.Size = New Size(780, 442)
         Panel6.TabIndex = 4
         ' 
+        ' Label128
+        ' 
+        Label128.AutoSize = True
+        Label128.Font = New Font("Century", 9F, FontStyle.Underline)
+        Label128.Location = New Point(141, 47)
+        Label128.Name = "Label128"
+        Label128.Size = New Size(77, 18)
+        Label128.TabIndex = 12
+        Label128.Text = "ABC 1234"
+        ' 
+        ' Label129
+        ' 
+        Label129.AutoSize = True
+        Label129.Font = New Font("Century", 9F, FontStyle.Bold)
+        Label129.Location = New Point(12, 47)
+        Label129.Name = "Label129"
+        Label129.Size = New Size(123, 18)
+        Label129.TabIndex = 11
+        Label129.Text = "Plate Number:"
+        ' 
         ' Label82
         ' 
         Label82.AutoSize = True
@@ -1481,7 +1521,7 @@ Partial Class Ten_to_Fifteen_Seaters
         TabPage3.Name = "TabPage3"
         TabPage3.Size = New Size(1292, 603)
         TabPage3.TabIndex = 2
-        TabPage3.Text = "TOYOTA HIACE GRANDIA"
+        TabPage3.Text = "TOYOTA HIACE GRANDIA VAN"
         TabPage3.UseVisualStyleBackColor = True
         ' 
         ' C2
@@ -1613,7 +1653,7 @@ Partial Class Ten_to_Fifteen_Seaters
         ' SD2
         ' 
         SD2.Font = New Font("Century", 9F, FontStyle.Bold)
-        SD2.Location = New Point(161, 503)
+        SD2.Location = New Point(120, 505)
         SD2.Name = "SD2"
         SD2.Size = New Size(134, 29)
         SD2.TabIndex = 4
@@ -1623,7 +1663,7 @@ Partial Class Ten_to_Fifteen_Seaters
         ' WD2
         ' 
         WD2.Font = New Font("Century", 9F, FontStyle.Bold)
-        WD2.Location = New Point(21, 504)
+        WD2.Location = New Point(260, 505)
         WD2.Name = "WD2"
         WD2.Size = New Size(134, 29)
         WD2.TabIndex = 5
@@ -1637,9 +1677,9 @@ Partial Class Ten_to_Fifteen_Seaters
         Label92.Font = New Font("Felix Titling", 10.2F, FontStyle.Bold)
         Label92.Location = New Point(3, 480)
         Label92.Name = "Label92"
-        Label92.Size = New Size(391, 20)
+        Label92.Size = New Size(448, 20)
         Label92.TabIndex = 32
-        Label92.Text = "RATES FOR THE TOYOTA HIACE GRANDIA"
+        Label92.Text = "RATES FOR THE TOYOTA HIACE GRANDIA VAN :"
         ' 
         ' Label93
         ' 
@@ -1982,6 +2022,26 @@ Partial Class Ten_to_Fifteen_Seaters
         Panel9.Size = New Size(780, 442)
         Panel9.TabIndex = 9
         ' 
+        ' Label130
+        ' 
+        Label130.AutoSize = True
+        Label130.Font = New Font("Century", 9F, FontStyle.Underline)
+        Label130.Location = New Point(141, 47)
+        Label130.Name = "Label130"
+        Label130.Size = New Size(77, 18)
+        Label130.TabIndex = 12
+        Label130.Text = "ABC 1234"
+        ' 
+        ' Label131
+        ' 
+        Label131.AutoSize = True
+        Label131.Font = New Font("Century", 9F, FontStyle.Bold)
+        Label131.Location = New Point(12, 47)
+        Label131.Name = "Label131"
+        Label131.Size = New Size(123, 18)
+        Label131.TabIndex = 11
+        Label131.Text = "Plate Number:"
+        ' 
         ' Label124
         ' 
         Label124.AutoSize = True
@@ -2075,66 +2135,6 @@ Partial Class Ten_to_Fifteen_Seaters
         Label127.Size = New Size(105, 18)
         Label127.TabIndex = 0
         Label127.Text = "Model Year:"
-        ' 
-        ' Label171
-        ' 
-        Label171.AutoSize = True
-        Label171.Font = New Font("Century", 9F, FontStyle.Underline)
-        Label171.Location = New Point(141, 47)
-        Label171.Name = "Label171"
-        Label171.Size = New Size(77, 18)
-        Label171.TabIndex = 12
-        Label171.Text = "ABC 1234"
-        ' 
-        ' Label170
-        ' 
-        Label170.AutoSize = True
-        Label170.Font = New Font("Century", 9F, FontStyle.Bold)
-        Label170.Location = New Point(12, 47)
-        Label170.Name = "Label170"
-        Label170.Size = New Size(123, 18)
-        Label170.TabIndex = 11
-        Label170.Text = "Plate Number:"
-        ' 
-        ' Label128
-        ' 
-        Label128.AutoSize = True
-        Label128.Font = New Font("Century", 9F, FontStyle.Underline)
-        Label128.Location = New Point(141, 47)
-        Label128.Name = "Label128"
-        Label128.Size = New Size(77, 18)
-        Label128.TabIndex = 12
-        Label128.Text = "ABC 1234"
-        ' 
-        ' Label129
-        ' 
-        Label129.AutoSize = True
-        Label129.Font = New Font("Century", 9F, FontStyle.Bold)
-        Label129.Location = New Point(12, 47)
-        Label129.Name = "Label129"
-        Label129.Size = New Size(123, 18)
-        Label129.TabIndex = 11
-        Label129.Text = "Plate Number:"
-        ' 
-        ' Label130
-        ' 
-        Label130.AutoSize = True
-        Label130.Font = New Font("Century", 9F, FontStyle.Underline)
-        Label130.Location = New Point(141, 47)
-        Label130.Name = "Label130"
-        Label130.Size = New Size(77, 18)
-        Label130.TabIndex = 12
-        Label130.Text = "ABC 1234"
-        ' 
-        ' Label131
-        ' 
-        Label131.AutoSize = True
-        Label131.Font = New Font("Century", 9F, FontStyle.Bold)
-        Label131.Location = New Point(12, 47)
-        Label131.Name = "Label131"
-        Label131.Size = New Size(123, 18)
-        Label131.TabIndex = 11
-        Label131.Text = "Plate Number:"
         ' 
         ' Ten_to_Fifteen_Seaters
         ' 
