@@ -38,6 +38,7 @@ Partial Class Dashboard
         ToDOB = New DateTimePicker()
         FromDOB = New DateTimePicker()
         DGLogs = New DataGridView()
+        Button1 = New Button()
         TabControl1.SuspendLayout()
         TabPage1.SuspendLayout()
         TabPage2.SuspendLayout()
@@ -56,6 +57,7 @@ Partial Class Dashboard
         ' 
         ' TabPage1
         ' 
+        TabPage1.Controls.Add(Button1)
         TabPage1.Controls.Add(lblDOB)
         TabPage1.Controls.Add(lblAddress)
         TabPage1.Controls.Add(lblSex)
@@ -199,6 +201,15 @@ Partial Class Dashboard
         DGLogs.Size = New Size(794, 376)
         DGLogs.TabIndex = 0
         ' 
+        ' Button1
+        ' 
+        Button1.Location = New Point(567, 328)
+        Button1.Name = "Button1"
+        Button1.Size = New Size(114, 30)
+        Button1.TabIndex = 7
+        Button1.Text = "Button1"
+        Button1.UseVisualStyleBackColor = True
+        ' 
         ' Dashboard
         ' 
         AutoScaleDimensions = New SizeF(7F, 15F)
@@ -232,4 +243,5 @@ Partial Class Dashboard
     Friend WithEvents ToDOB As DateTimePicker
     Friend WithEvents FromDOB As DateTimePicker
     Friend WithEvents DGLogs As DataGridView
+    Friend WithEvents Button1 As Button
 End Class
