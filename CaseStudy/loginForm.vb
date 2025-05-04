@@ -29,7 +29,7 @@ Public Class loginForm
         con.Close()
 
         If count > 0 Then
-            MessageBox.Show("Login Successfully", "info", MessageBoxButtons.OK, MessageBoxIcon.Information) 'Will be key to transfering to next Form
+            MessageBox.Show("Login Successfully", "INFO", MessageBoxButtons.OK, MessageBoxIcon.Information) 'Will be key to transfering to next Form
             Me.Hide()
             Dashboard.Show()
         Else

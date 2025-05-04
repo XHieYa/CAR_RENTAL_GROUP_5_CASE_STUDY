@@ -29,11 +29,11 @@ Public Class Dashboard
         Dim myReader As SqlDataReader = cmd.ExecuteReader() 'MAKES A SQL READER IN ORDER TO READ THE DATA THAT'S IN THE DATA BASE
         If myReader.HasRows Then 'CHECKS IF THE USERNAME/ROW HAS A DATA
             myReader.Read() 'EXECUTES READ COMMAND
-            lblFullName.Text = "Full Name: " & myReader("Fullname").ToString() 'PLACES THE VARIABLES TO THE LABELS
-            lblAge.Text = "Age: " & myReader("Age").ToString()
-            lblSex.Text = "Sex: " & myReader("Sex").ToString()
-            lblAddress.Text = "Address: " & myReader("Address").ToString()
-            lblDOB.Text = "Date Of Birth: " & myReader("Date").ToString()
+            lblFullName.Text = myReader("Fullname").ToString() 'PLACES THE VARIABLES TO THE LABELS
+            lblAge.Text = myReader("Age").ToString()
+            lblSex.Text = myReader("Sex").ToString()
+            lblAddress.Text = myReader("Address").ToString()
+            lblDOB.Text = myReader("Date").ToString()
         End If
         con.Close() 'CLOSES THE CONNECTION
 
@@ -53,5 +53,10 @@ Public Class Dashboard
         Catch ex As Exception
             MessageBox.Show($"Error Updating Logs: {ex.Message}") 'ERROR MESSAGE
         End Try
+    End Sub
+
+    Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
+        BookingForm.Show()
+        Me.Hide()
     End Sub
 End Class
