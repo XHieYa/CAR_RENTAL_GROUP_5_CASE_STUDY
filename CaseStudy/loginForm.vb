@@ -67,7 +67,7 @@ Public Class loginForm
                 command.Parameters.AddWithValue("@Age", siage.Text)
                 command.Parameters.AddWithValue("@Sex", Cmbsex.SelectedItem.ToString())
                 command.Parameters.AddWithValue("@Address", siaddress.Text)
-                command.Parameters.AddWithValue("@Date", DateTimePickerDOB.Value.Date)
+                command.Parameters.AddWithValue("@Date", DateOnly.FromDateTime(DateTimePickerDOB.Value.Date))
                 con.Open()
                 command.ExecuteNonQuery() 'Used to create or change data within the database
                 MessageBox.Show("Successfuly Registered Please Log-in", "info", MessageBoxButtons.OK, MessageBoxIcon.Information) 'Message confirming your info has been saved
