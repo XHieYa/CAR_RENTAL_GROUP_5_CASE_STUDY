@@ -110,6 +110,7 @@ Partial Class Seaters
         ' 
         ' FourFive
         ' 
+        FourFive.Font = New Font("Century", 7.8F, FontStyle.Bold)
         FourFive.Location = New Point(500, 251)
         FourFive.Name = "FourFive"
         FourFive.Size = New Size(130, 29)
@@ -188,6 +189,7 @@ Partial Class Seaters
         ' 
         ' TenFifteen
         ' 
+        TenFifteen.Font = New Font("Century", 7.8F, FontStyle.Bold)
         TenFifteen.Location = New Point(500, 251)
         TenFifteen.Name = "TenFifteen"
         TenFifteen.Size = New Size(130, 29)
@@ -258,6 +260,7 @@ Partial Class Seaters
         ' 
         ' SevenEight
         ' 
+        SevenEight.Font = New Font("Century", 7.8F, FontStyle.Bold)
         SevenEight.Location = New Point(499, 251)
         SevenEight.Name = "SevenEight"
         SevenEight.Size = New Size(130, 29)
@@ -327,6 +330,7 @@ Partial Class Seaters
         ' 
         ' CampingCars
         ' 
+        CampingCars.Font = New Font("Century", 7.8F, FontStyle.Bold)
         CampingCars.Location = New Point(499, 251)
         CampingCars.Name = "CampingCars"
         CampingCars.Size = New Size(130, 29)
