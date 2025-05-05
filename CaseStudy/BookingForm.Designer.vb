@@ -30,10 +30,10 @@ Partial Class BookingForm
         GroupBox1 = New GroupBox()
         TxtCarID = New TextBox()
         BtnConfirm = New Button()
-        BtnShow = New Button()
         DGVSchedules = New DataGridView()
-        Button1 = New Button()
-        BtnBookedDate = New Button()
+        Cartxt = New TextBox()
+        Label2 = New Label()
+        Label4 = New Label()
         GroupBox1.SuspendLayout()
         CType(DGVSchedules, ComponentModel.ISupportInitialize).BeginInit()
         SuspendLayout()
@@ -47,7 +47,7 @@ Partial Class BookingForm
         ' Label3
         ' 
         Label3.AutoSize = True
-        Label3.Location = New Point(14, 88)
+        Label3.Location = New Point(6, 112)
         Label3.Name = "Label3"
         Label3.Size = New Size(25, 15)
         Label3.TabIndex = 9
@@ -56,7 +56,7 @@ Partial Class BookingForm
         ' Label1
         ' 
         Label1.AutoSize = True
-        Label1.Location = New Point(1, 59)
+        Label1.Location = New Point(6, 83)
         Label1.Name = "Label1"
         Label1.Size = New Size(38, 15)
         Label1.TabIndex = 8
@@ -64,20 +64,23 @@ Partial Class BookingForm
         ' 
         ' ToDOB
         ' 
-        ToDOB.Location = New Point(45, 84)
+        ToDOB.Location = New Point(54, 106)
         ToDOB.Name = "ToDOB"
         ToDOB.Size = New Size(200, 23)
         ToDOB.TabIndex = 7
         ' 
         ' FromDOB
         ' 
-        FromDOB.Location = New Point(45, 55)
+        FromDOB.Location = New Point(54, 77)
         FromDOB.Name = "FromDOB"
         FromDOB.Size = New Size(200, 23)
         FromDOB.TabIndex = 6
         ' 
         ' GroupBox1
         ' 
+        GroupBox1.Controls.Add(Label4)
+        GroupBox1.Controls.Add(Label2)
+        GroupBox1.Controls.Add(Cartxt)
         GroupBox1.Controls.Add(TxtCarID)
         GroupBox1.Controls.Add(BtnConfirm)
         GroupBox1.Controls.Add(FromDOB)
@@ -86,38 +89,31 @@ Partial Class BookingForm
         GroupBox1.Controls.Add(ToDOB)
         GroupBox1.Location = New Point(12, 12)
         GroupBox1.Name = "GroupBox1"
-        GroupBox1.Size = New Size(260, 144)
+        GroupBox1.Size = New Size(260, 162)
         GroupBox1.TabIndex = 10
         GroupBox1.TabStop = False
         GroupBox1.Text = "GroupBox1"
         ' 
         ' TxtCarID
         ' 
-        TxtCarID.Location = New Point(45, 26)
+        TxtCarID.Location = New Point(54, 48)
         TxtCarID.Name = "TxtCarID"
         TxtCarID.Size = New Size(200, 23)
         TxtCarID.TabIndex = 11
         ' 
         ' BtnConfirm
         ' 
-        BtnConfirm.Location = New Point(6, 113)
+        BtnConfirm.Location = New Point(15, 135)
         BtnConfirm.Name = "BtnConfirm"
         BtnConfirm.Size = New Size(75, 23)
         BtnConfirm.TabIndex = 10
         BtnConfirm.Text = "Confirm"
         BtnConfirm.UseVisualStyleBackColor = True
         ' 
-        ' BtnShow
-        ' 
-        BtnShow.Location = New Point(797, 63)
-        BtnShow.Name = "BtnShow"
-        BtnShow.Size = New Size(104, 23)
-        BtnShow.TabIndex = 11
-        BtnShow.Text = "ShowSchedules"
-        BtnShow.UseVisualStyleBackColor = True
-        ' 
         ' DGVSchedules
         ' 
+        DGVSchedules.AllowUserToAddRows = False
+        DGVSchedules.AllowUserToDeleteRows = False
         DGVSchedules.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill
         DGVSchedules.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize
         DGVSchedules.Location = New Point(12, 186)
@@ -125,33 +121,37 @@ Partial Class BookingForm
         DGVSchedules.Size = New Size(1134, 351)
         DGVSchedules.TabIndex = 12
         ' 
-        ' Button1
+        ' Cartxt
         ' 
-        Button1.Location = New Point(797, 12)
-        Button1.Name = "Button1"
-        Button1.Size = New Size(104, 23)
-        Button1.TabIndex = 13
-        Button1.Text = "test"
-        Button1.UseVisualStyleBackColor = True
+        Cartxt.Location = New Point(54, 19)
+        Cartxt.Name = "Cartxt"
+        Cartxt.Size = New Size(200, 23)
+        Cartxt.TabIndex = 12
         ' 
-        ' BtnBookedDate
+        ' Label2
         ' 
-        BtnBookedDate.Location = New Point(763, 151)
-        BtnBookedDate.Name = "BtnBookedDate"
-        BtnBookedDate.Size = New Size(147, 23)
-        BtnBookedDate.TabIndex = 14
-        BtnBookedDate.Text = "Show Booked Date"
-        BtnBookedDate.UseVisualStyleBackColor = True
+        Label2.AutoSize = True
+        Label2.Location = New Point(6, 22)
+        Label2.Name = "Label2"
+        Label2.Size = New Size(28, 15)
+        Label2.TabIndex = 13
+        Label2.Text = "Car:"
+        ' 
+        ' Label4
+        ' 
+        Label4.AutoSize = True
+        Label4.Location = New Point(6, 56)
+        Label4.Name = "Label4"
+        Label4.Size = New Size(43, 15)
+        Label4.TabIndex = 14
+        Label4.Text = "ID No.:"
         ' 
         ' BookingForm
         ' 
         AutoScaleDimensions = New SizeF(7F, 15F)
         AutoScaleMode = AutoScaleMode.Font
         ClientSize = New Size(1158, 549)
-        Controls.Add(BtnBookedDate)
-        Controls.Add(Button1)
         Controls.Add(DGVSchedules)
-        Controls.Add(BtnShow)
         Controls.Add(GroupBox1)
         Controls.Add(MnthC)
         Name = "BookingForm"
@@ -168,9 +168,9 @@ Partial Class BookingForm
     Friend WithEvents FromDOB As DateTimePicker
     Friend WithEvents GroupBox1 As GroupBox
     Friend WithEvents BtnConfirm As Button
-    Friend WithEvents BtnShow As Button
     Friend WithEvents TxtCarID As TextBox
     Friend WithEvents DGVSchedules As DataGridView
-    Friend WithEvents Button1 As Button
-    Friend WithEvents BtnBookedDate As Button
+    Friend WithEvents Label4 As Label
+    Friend WithEvents Label2 As Label
+    Friend WithEvents Cartxt As TextBox
 End Class

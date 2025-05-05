@@ -23,8 +23,9 @@ Partial Class PaymentDetailSlip
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Panel1 = New Panel()
+        GroupBox5 = New GroupBox()
         GroupBox3 = New GroupBox()
-        TextBox11 = New TextBox()
+        txtCarID = New TextBox()
         Label12 = New Label()
         TextBox10 = New TextBox()
         Label11 = New Label()
@@ -33,7 +34,7 @@ Partial Class PaymentDetailSlip
         Label10 = New Label()
         Label9 = New Label()
         txtCarName = New TextBox()
-        TextBox7 = New TextBox()
+        txtPlateNumber = New TextBox()
         Label8 = New Label()
         Label7 = New Label()
         GroupBox4 = New GroupBox()
@@ -60,7 +61,6 @@ Partial Class PaymentDetailSlip
         Label3 = New Label()
         Label2 = New Label()
         Label1 = New Label()
-        GroupBox5 = New GroupBox()
         Panel1.SuspendLayout()
         GroupBox3.SuspendLayout()
         GroupBox4.SuspendLayout()
@@ -82,9 +82,18 @@ Partial Class PaymentDetailSlip
         Panel1.Size = New Size(419, 546)
         Panel1.TabIndex = 2
         ' 
+        ' GroupBox5
+        ' 
+        GroupBox5.Location = New Point(281, 356)
+        GroupBox5.Name = "GroupBox5"
+        GroupBox5.Size = New Size(133, 190)
+        GroupBox5.TabIndex = 5
+        GroupBox5.TabStop = False
+        GroupBox5.Text = "Receipt"
+        ' 
         ' GroupBox3
         ' 
-        GroupBox3.Controls.Add(TextBox11)
+        GroupBox3.Controls.Add(txtCarID)
         GroupBox3.Controls.Add(Label12)
         GroupBox3.Controls.Add(TextBox10)
         GroupBox3.Controls.Add(Label11)
@@ -93,7 +102,7 @@ Partial Class PaymentDetailSlip
         GroupBox3.Controls.Add(Label10)
         GroupBox3.Controls.Add(Label9)
         GroupBox3.Controls.Add(txtCarName)
-        GroupBox3.Controls.Add(TextBox7)
+        GroupBox3.Controls.Add(txtPlateNumber)
         GroupBox3.Controls.Add(Label8)
         GroupBox3.Controls.Add(Label7)
         GroupBox3.Location = New Point(8, 190)
@@ -105,15 +114,15 @@ Partial Class PaymentDetailSlip
         GroupBox3.TabStop = False
         GroupBox3.Text = "Car Details"
         ' 
-        ' TextBox11
+        ' txtCarID
         ' 
-        TextBox11.Location = New Point(101, 84)
-        TextBox11.Margin = New Padding(3, 2, 3, 2)
-        TextBox11.Multiline = True
-        TextBox11.Name = "TextBox11"
-        TextBox11.ReadOnly = True
-        TextBox11.Size = New Size(303, 26)
-        TextBox11.TabIndex = 24
+        txtCarID.Location = New Point(101, 84)
+        txtCarID.Margin = New Padding(3, 2, 3, 2)
+        txtCarID.Multiline = True
+        txtCarID.Name = "txtCarID"
+        txtCarID.ReadOnly = True
+        txtCarID.Size = New Size(303, 26)
+        txtCarID.TabIndex = 24
         ' 
         ' Label12
         ' 
@@ -191,15 +200,15 @@ Partial Class PaymentDetailSlip
         txtCarName.Size = New Size(303, 26)
         txtCarName.TabIndex = 16
         ' 
-        ' TextBox7
+        ' txtPlateNumber
         ' 
-        TextBox7.Location = New Point(101, 54)
-        TextBox7.Margin = New Padding(3, 2, 3, 2)
-        TextBox7.Multiline = True
-        TextBox7.Name = "TextBox7"
-        TextBox7.ReadOnly = True
-        TextBox7.Size = New Size(303, 26)
-        TextBox7.TabIndex = 15
+        txtPlateNumber.Location = New Point(101, 54)
+        txtPlateNumber.Margin = New Padding(3, 2, 3, 2)
+        txtPlateNumber.Multiline = True
+        txtPlateNumber.Name = "txtPlateNumber"
+        txtPlateNumber.ReadOnly = True
+        txtPlateNumber.Size = New Size(303, 26)
+        txtPlateNumber.TabIndex = 15
         ' 
         ' Label8
         ' 
@@ -472,15 +481,6 @@ Partial Class PaymentDetailSlip
         Label1.TabIndex = 0
         Label1.Text = "FullName"
         ' 
-        ' GroupBox5
-        ' 
-        GroupBox5.Location = New Point(281, 356)
-        GroupBox5.Name = "GroupBox5"
-        GroupBox5.Size = New Size(133, 190)
-        GroupBox5.TabIndex = 5
-        GroupBox5.TabStop = False
-        GroupBox5.Text = "Receipt"
-        ' 
         ' PaymentDetailSlip
         ' 
         AutoScaleDimensions = New SizeF(7F, 15F)
@@ -521,10 +521,10 @@ Partial Class PaymentDetailSlip
     Friend WithEvents Label10 As Label
     Friend WithEvents Label9 As Label
     Friend WithEvents txtCarName As TextBox
-    Friend WithEvents TextBox7 As TextBox
+    Friend WithEvents txtPlateNumber As TextBox
     Friend WithEvents Label8 As Label
     Friend WithEvents Label7 As Label
-    Friend WithEvents TextBox11 As TextBox
+    Friend WithEvents txtCarID As TextBox
     Friend WithEvents Label12 As Label
     Friend WithEvents TextBox10 As TextBox
     Friend WithEvents Label11 As Label
