@@ -552,9 +552,9 @@ Partial Class Seven_to_Eight_Seaters
         Label29.Font = New Font("Felix Titling", 10.2F, FontStyle.Bold)
         Label29.Location = New Point(3, 303)
         Label29.Name = "Label29"
-        Label29.Size = New Size(180, 20)
+        Label29.Size = New Size(202, 20)
         Label29.TabIndex = 25
-        Label29.Text = "SAFETY FEATURES :"
+        Label29.Text = "CAR REPORT CARD :"
         ' 
         ' Label28
         ' 
@@ -1179,9 +1179,9 @@ Partial Class Seven_to_Eight_Seaters
         Label57.Font = New Font("Felix Titling", 10.2F, FontStyle.Bold)
         Label57.Location = New Point(3, 311)
         Label57.Name = "Label57"
-        Label57.Size = New Size(180, 20)
+        Label57.Size = New Size(202, 20)
         Label57.TabIndex = 25
-        Label57.Text = "SAFETY FEATURES :"
+        Label57.Text = "CAR REPORT CARD :"
         ' 
         ' Label58
         ' 
@@ -1805,9 +1805,9 @@ Partial Class Seven_to_Eight_Seaters
         Label99.Font = New Font("Felix Titling", 10.2F, FontStyle.Bold)
         Label99.Location = New Point(3, 307)
         Label99.Name = "Label99"
-        Label99.Size = New Size(180, 20)
+        Label99.Size = New Size(202, 20)
         Label99.TabIndex = 25
-        Label99.Text = "SAFETY FEATURES :"
+        Label99.Text = "CAR REPORT CARD :"
         ' 
         ' Label100
         ' 
@@ -2431,9 +2431,9 @@ Partial Class Seven_to_Eight_Seaters
         Label141.Font = New Font("Felix Titling", 10.2F, FontStyle.Bold)
         Label141.Location = New Point(3, 303)
         Label141.Name = "Label141"
-        Label141.Size = New Size(180, 20)
+        Label141.Size = New Size(202, 20)
         Label141.TabIndex = 25
-        Label141.Text = "SAFETY FEATURES :"
+        Label141.Text = "CAR REPORT CARD :"
         ' 
         ' Label142
         ' 
