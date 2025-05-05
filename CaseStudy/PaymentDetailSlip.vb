@@ -11,7 +11,7 @@ Public Class PaymentDetailSlip
     End Sub
     Private Sub BookingAdd()
         Dim Con As New SqlConnection("Data Source=(localdb)\MSSQLLocalDB;Initial Catalog=CustomerDB;Integrated Security=True;Connect Timeout=30;Encrypt=False;Trust Server Certificate=False;Application Intent=ReadWrite;Multi Subnet Failover=False")
-        Dim query As String = "Insert Into Booking (CarName, StartBookDate, EndBookDate) Values ('" & txtCarName.Text & "',@Fdate, @Tdate)"
+        Dim query As String = "Insert Into Booking (CarID, CarName, StartBookDate, EndBookDate) Values (@CarID,'" & txtCarName.Text & "',@Fdate, @Tdate)"
         Try
             If FromDate.Value = ToDate.Value Then
                 MessageBox.Show("Cannot Book Within The Same Day", "info", MessageBoxButtons.OK, MessageBoxIcon.Warning)

@@ -1,5 +1,5 @@
 ﻿Imports System.Runtime.InteropServices.JavaScript.JSType
-Imports System.Windows.Forms.VisualStyles.VisualStyleElement.StartPanel
+Imports System.Windows.Forms.VisualStyles.VisualStyleElement.StartPanel 'From StyleBackground from DataGrid
 Imports Microsoft.Data.SqlClient 'Importing SQL Database Access Commands
 Public Class BookingForm
     Private Sub BtnShow_Click(sender As Object, e As EventArgs) Handles BtnShow.Click
@@ -17,70 +17,75 @@ Public Class BookingForm
         End If
     End Sub
     Private Sub ColumnLoader()
+        DGVSchedules.Columns.Clear()
         DGVSchedules.Columns.Add("CarName", "Car Name")
-        Dim DaysInMonth As Integer = DateTime.DaysInMonth(MnthC.SelectionStart.Year, MnthC.SelectionStart.Month)
-        For i = 1 To DaysInMonth
-            DGVSchedules.Columns.Add(i, i)
-        Next
-    End Sub
-    Private Sub RowLoader()
-        Dim con As New SqlConnection("Data Source=(localdb)\MSSQLLocalDB;Initial Catalog=CustomerDB;Integrated Security=True;Connect Timeout=30;Encrypt=False;Trust Server Certificate=False;Application Intent=ReadWrite;Multi Subnet Failover=False")
-        Dim query As String = "SELECT COUNT (CarID) FROM Booking"
-        con.Open()
-        Dim cmd As New SqlCommand(query, con)
-        Dim count As Integer = Convert.ToInt32(cmd.ExecuteScalar())
-        Dim carRead As SqlDataReader = cmd.ExecuteReader
-        For i = 1 To count
-            DGVSchedules.Rows.Add(i.ToString)
+
+        Dim daysInMonth As Integer = DateTime.DaysInMonth(MnthC.SelectionStart.Year, MnthC.SelectionStart.Month)
+        For i = 1 To daysInMonth
+            DGVSchedules.Columns.Add(i.ToString(), i.ToString())
         Next
     End Sub
 
-    Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
-        ColumnLoader()
+    Private Sub RowLoader()
+        DGVSchedules.Rows.Clear()
+
+        Dim con As New SqlConnection("Data Source=(localdb)\MSSQLLocalDB;Initial Catalog=CustomerDB;Integrated Security=True")
+        Dim query As String = "SELECT DISTINCT CarID, CarName FROM Booking ORDER BY CarID"
+
+        con.Open()
+        Dim cmd As New SqlCommand(query, con)
+        Dim reader As SqlDataReader = cmd.ExecuteReader()
+
+        While reader.Read()
+            Dim carName As String = reader("CarName").ToString()
+            Dim rowIndex As Integer = DGVSchedules.Rows.Add()
+            DGVSchedules.Rows(rowIndex).Cells("CarName").Value = carName
+        End While
+
+        con.Close()
     End Sub
 
     Private Sub MnthC_DateChanged(sender As Object, e As DateRangeEventArgs) Handles MnthC.DateChanged
-        DGVSchedules.Columns.Clear()
-        DGVSchedules.Rows.Clear()
         ColumnLoader()
         RowLoader()
-
+        ScheduleShower()
     End Sub
+    Private Sub ScheduleShower()
+        Dim con As New SqlConnection("Data Source=(localdb)\MSSQLLocalDB;Initial Catalog=CustomerDB;Integrated Security=True")
 
-    Private Sub BtnBookedDate_Click(sender As Object, e As EventArgs) Handles BtnBookedDate.Click
-        Dim con As New SqlConnection("Data Source=(localdb)\MSSQLLocalDB;Initial Catalog=CustomerDB;Integrated Security=True;Connect Timeout=30;Encrypt=False;Trust Server Certificate=False;Application Intent=ReadWrite;Multi Subnet Failover=False")
+        Dim selectedMonth As DateTime = New DateTime(MnthC.SelectionStart.Year, MnthC.SelectionStart.Month, 1)
+        Dim startOfMonth As DateTime = selectedMonth
+        Dim endOfMonth As DateTime = selectedMonth.AddMonths(1).AddDays(-1)
+
+        Dim query As String = "SELECT CarID, StartBookDate, EndBookDate FROM Booking WHERE StartBookDate <= @EndOfMonth AND EndBookDate >= @StartOfMonth"
+        ' This query gets bookings that overlap the current month
+
+        Dim cmd As New SqlCommand(query, con)
+        cmd.Parameters.AddWithValue("@StartOfMonth", startOfMonth)
+        cmd.Parameters.AddWithValue("@EndOfMonth", endOfMonth)
 
         con.Open()
-        Dim query As String = "SELECT * FROM Booking WHERE StartBookDate >= @ST AND EndBookDate <= @ET"
-        Dim Start = New DateTime(MnthC.SelectionStart.Year, MnthC.SelectionStart.Month, 1)
-        Dim EndD = Start.AddMonths(1)
-        Dim cmd As New SqlCommand(query, con)
-        cmd.Parameters.AddWithValue("@ST", Start)
-        cmd.Parameters.AddWithValue("@ET", EndD)
-        Dim myReader As SqlDataReader = cmd.ExecuteReader()
-        While myReader.Read
-            Dim CarID As Integer = myReader.GetInt32(0)
-            Dim StartDate As DateTime = myReader.GetDateTime(1)
-            Dim EndDate As DateTime = myReader.GetDateTime(2)
+        Dim reader As SqlDataReader = cmd.ExecuteReader()
 
-            Dim StartDay As Integer = StartDate.Day
-            Dim EndDay As Integer = EndDate.Day
-            Dim TotalDays As Integer = EndDay - StartDay
-            DGVSchedules(StartDay, CarID - 1).Style.BackColor = Color.Red
+        While reader.Read()
+            Dim carID As Integer = reader.GetInt32(0)
+            Dim startDate As DateTime = reader.GetDateTime(1)
+            Dim endDate As DateTime = reader.GetDateTime(2)
 
-            For i = 1 To TotalDays
-                DGVSchedules(StartDay + i, CarID - 1).Style.BackColor = Color.Red
-                TotalDays -= 1
-            Next
+            Dim rowIndex As Integer = carID - 1
 
-
-
-
-
+            Dim currentDate As DateTime = startDate
+            While currentDate <= endDate
+                If currentDate.Month = startOfMonth.Month AndAlso currentDate.Year = startOfMonth.Year Then
+                    Dim colIndex As Integer = currentDate.Day
+                    If rowIndex >= 0 AndAlso rowIndex < DGVSchedules.Rows.Count AndAlso colIndex >= 1 AndAlso colIndex < DGVSchedules.ColumnCount Then
+                        DGVSchedules.Rows(rowIndex).Cells(colIndex).Style.BackColor = Color.Red
+                    End If
+                End If
+                currentDate = currentDate.AddDays(1)
+            End While
         End While
 
-
-
-
+        con.Close()
     End Sub
 End Class
