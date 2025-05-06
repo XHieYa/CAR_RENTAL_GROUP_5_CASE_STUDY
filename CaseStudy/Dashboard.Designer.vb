@@ -24,6 +24,7 @@ Partial Class Dashboard
     Private Sub InitializeComponent()
         TabControl1 = New TabControl()
         TabPage1 = New TabPage()
+        Button1 = New Button()
         lblDOB = New Label()
         lblAddress = New Label()
         lblSex = New Label()
@@ -38,7 +39,7 @@ Partial Class Dashboard
         ToDOB = New DateTimePicker()
         FromDOB = New DateTimePicker()
         DGLogs = New DataGridView()
-        Button1 = New Button()
+        Label4 = New Label()
         TabControl1.SuspendLayout()
         TabPage1.SuspendLayout()
         TabPage2.SuspendLayout()
@@ -57,6 +58,7 @@ Partial Class Dashboard
         ' 
         ' TabPage1
         ' 
+        TabPage1.Controls.Add(Label4)
         TabPage1.Controls.Add(Button1)
         TabPage1.Controls.Add(lblDOB)
         TabPage1.Controls.Add(lblAddress)
@@ -72,6 +74,15 @@ Partial Class Dashboard
         TabPage1.TabIndex = 0
         TabPage1.Text = "Home"
         TabPage1.UseVisualStyleBackColor = True
+        ' 
+        ' Button1
+        ' 
+        Button1.Location = New Point(567, 328)
+        Button1.Name = "Button1"
+        Button1.Size = New Size(114, 30)
+        Button1.TabIndex = 7
+        Button1.Text = "Button1"
+        Button1.UseVisualStyleBackColor = True
         ' 
         ' lblDOB
         ' 
@@ -201,14 +212,14 @@ Partial Class Dashboard
         DGLogs.Size = New Size(794, 376)
         DGLogs.TabIndex = 0
         ' 
-        ' Button1
+        ' Label4
         ' 
-        Button1.Location = New Point(567, 328)
-        Button1.Name = "Button1"
-        Button1.Size = New Size(114, 30)
-        Button1.TabIndex = 7
-        Button1.Text = "Button1"
-        Button1.UseVisualStyleBackColor = True
+        Label4.AutoSize = True
+        Label4.Location = New Point(9, 108)
+        Label4.Name = "Label4"
+        Label4.Size = New Size(112, 15)
+        Label4.TabIndex = 8
+        Label4.Text = "Date Of Birth: [User]"
         ' 
         ' Dashboard
         ' 
@@ -244,4 +255,5 @@ Partial Class Dashboard
     Friend WithEvents FromDOB As DateTimePicker
     Friend WithEvents DGLogs As DataGridView
     Friend WithEvents Button1 As Button
+    Friend WithEvents Label4 As Label
 End Class
