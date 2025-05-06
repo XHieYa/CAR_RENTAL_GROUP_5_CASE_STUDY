@@ -121,7 +121,7 @@ Public Class loginForm
         GroupBox1.Enabled = True
     End Sub
 
-    Private Sub cbShowPasswordSI_CheckedChanged(sender As Object, e As EventArgs) Handles cbShowPasswordSI.CheckedChanged
+    Private Sub cbShowPasswordSI_CheckedChanged(sender As Object, e As EventArgs) Handles cbShowPasswordSI.CheckedChanged 'same as the checkbox above
         If cbShowPasswordSI.Checked = True Then
             txtPassword.PasswordChar = ""
         Else

@@ -34,13 +34,13 @@ Partial Class Dashboard
         Label2 = New Label()
         lblgreet = New Label()
         TabPage2 = New TabPage()
+        BtnDelete = New Button()
         Label3 = New Label()
         Label1 = New Label()
         BtnUpdate = New Button()
         ToDOB = New DateTimePicker()
         FromDOB = New DateTimePicker()
         DGLogs = New DataGridView()
-        BtnDelete = New Button()
         TabControl1.SuspendLayout()
         TabPage1.SuspendLayout()
         TabPage2.SuspendLayout()
@@ -174,6 +174,15 @@ Partial Class Dashboard
         TabPage2.Text = "Logs"
         TabPage2.UseVisualStyleBackColor = True
         ' 
+        ' BtnDelete
+        ' 
+        BtnDelete.Location = New Point(697, 393)
+        BtnDelete.Name = "BtnDelete"
+        BtnDelete.Size = New Size(75, 23)
+        BtnDelete.TabIndex = 6
+        BtnDelete.Text = "Delete"
+        BtnDelete.UseVisualStyleBackColor = True
+        ' 
         ' Label3
         ' 
         Label3.AutoSize = True
@@ -217,20 +226,16 @@ Partial Class Dashboard
         ' 
         ' DGLogs
         ' 
+        DGLogs.AllowUserToAddRows = False
+        DGLogs.AllowUserToDeleteRows = False
+        DGLogs.AllowUserToResizeColumns = False
+        DGLogs.AllowUserToResizeRows = False
         DGLogs.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize
         DGLogs.Location = New Point(0, 0)
         DGLogs.Name = "DGLogs"
+        DGLogs.ReadOnly = True
         DGLogs.Size = New Size(794, 376)
         DGLogs.TabIndex = 0
-        ' 
-        ' BtnDelete
-        ' 
-        BtnDelete.Location = New Point(697, 393)
-        BtnDelete.Name = "BtnDelete"
-        BtnDelete.Size = New Size(75, 23)
-        BtnDelete.TabIndex = 6
-        BtnDelete.Text = "Delete"
-        BtnDelete.UseVisualStyleBackColor = True
         ' 
         ' Dashboard
         ' 

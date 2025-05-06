@@ -7,7 +7,7 @@ Public Class Dashboard
         FromDOB.Value = DateTime.Now
         ToDOB.Value = DateTime.Now
     End Sub
-    Private Sub LoadLogs() 'Function to load data within the database (USE MS ACCESS HERE JUST CHANGE SQL TO MSACCESS FORM)
+    Private Sub LoadLogs() 'Function to load data within the database
         Try
             Dim query As String = "SELECT * From Booking WHERE Username = @Username" 'Finds EVERY SAME USERNAME(UNIQUE ID)
             Dim cmd As New SqlCommand(query, con)
@@ -41,10 +41,10 @@ Public Class Dashboard
         con.Close() 'CLOSES THE CONNECTION
 
     End Sub
-    Private Function Checker() As Boolean
-        Dim query As String = "SELECT COUNT(*) FROM Booking WHERE CarID = @CarID AND Username <> @Username AND StartBookDate <= @NewEndDate AND EndBookDate >= @NewStartDate"
+    Private Function Checker() As Boolean 'Checks for exisiting data/in between dates of existing schedules so you cant update to a day that's preoccupied
+        Dim query As String = "SELECT COUNT(*) FROM Booking WHERE CarID = @CarID AND Username <> @Username AND StartBookDate <= @NewEndDate AND EndBookDate >= @NewStartDate" 'Iterates where it finds CarID to check if the date thats to be updated is not already taken
         Using cmd As New SqlCommand(query, con)
-            cmd.Parameters.AddWithValue("@CarID", DGLogs.CurrentRow.Cells("CarID").Value)
+            cmd.Parameters.AddWithValue("@CarID", DGLogs.CurrentRow.Cells("CarID").Value) 'Gets the value of the selected row and specific cell
             cmd.Parameters.AddWithValue("@Username", DGLogs.CurrentRow.Cells("Username").Value)
             cmd.Parameters.AddWithValue("@NewStartDate", FromDOB.Value.Date)
             cmd.Parameters.AddWithValue("@NewEndDate", ToDOB.Value.Date)
@@ -62,18 +62,18 @@ Public Class Dashboard
         Return True
     End Function
     Private Sub BtnUpdate_Click(sender As Object, e As EventArgs) Handles BtnUpdate.Click
-        If ToDOB.Value.Date <= FromDOB.Value.Date Then
-            MessageBox.Show("End date must be later than start date.", "INFO", MessageBoxButtons.OK, MessageBoxIcon.Warning)
+        If ToDOB.Value.Date <= FromDOB.Value.Date Then 'If condition so no same date/reverse the update (going back time)
+            MessageBox.Show("Not Equal to Each Other Nor The ToDate must be higher than From", "INFO", MessageBoxButtons.OK, MessageBoxIcon.Warning)
             Exit Sub
         End If
-        If DGLogs.SelectedRows.Count = 0 Then
+        If DGLogs.SelectedRows.Count = 0 Then 'If no selected log/cell 
             MessageBox.Show("Select A Row From The Left Empty Space that you wanna Update", "INFO", MessageBoxButtons.OK, MessageBoxIcon.Asterisk)
             Exit Sub
         End If
-        If Not Checker() Then Exit Sub
+        If Not Checker() Then Exit Sub 'If checker is not confirmed then exit cause theres a problem ye got tired of commenting
         Try
-            Dim BookingID As Integer = Convert.ToInt32(DGLogs.CurrentRow.Cells("BookingID").Value)
-            Dim query As String = "UPDATE Booking SET StartBookDate = @FromDate, EndBookDate = @ToDate WHERE BookingID = @BookingID"
+            Dim BookingID As Integer = Convert.ToInt32(DGLogs.CurrentRow.Cells("BookingID").Value) 'Gets the booking ID of the Cell also within the data base
+            Dim query As String = "UPDATE Booking SET StartBookDate = @FromDate, EndBookDate = @ToDate WHERE BookingID = @BookingID" 'Finds the Booking ID to SPECIFICALLY UPDATE THE ROW ONLY
             Dim cmd As New SqlCommand(query, con)
             cmd.Parameters.AddWithValue("@FromDate", FromDOB.Value)
             cmd.Parameters.AddWithValue("@ToDate", ToDOB.Value)
@@ -103,7 +103,7 @@ Public Class Dashboard
         End If
     End Sub
 
-    Private Sub BtnDelete_Click(sender As Object, e As EventArgs) Handles BtnDelete.Click
+    Private Sub BtnDelete_Click(sender As Object, e As EventArgs) Handles BtnDelete.Click ' Deletes just refer back to the items im done
         If DGLogs.SelectedRows.Count = 0 Then
             MessageBox.Show("Please select a row to delete.")
             Exit Sub
