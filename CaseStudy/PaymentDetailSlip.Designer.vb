@@ -54,10 +54,10 @@ Partial Class PaymentDetailSlip
         txtEmail = New TextBox()
         GroupBox1 = New GroupBox()
         txtDOB = New TextBox()
-        txtSex = New TextBox()
+        txtAge = New TextBox()
         Label6 = New Label()
         txtFullName = New TextBox()
-        txtAge = New TextBox()
+        txtUsername = New TextBox()
         Label3 = New Label()
         Label2 = New Label()
         Label1 = New Label()
@@ -389,10 +389,10 @@ Partial Class PaymentDetailSlip
         ' GroupBox1
         ' 
         GroupBox1.Controls.Add(txtDOB)
-        GroupBox1.Controls.Add(txtSex)
+        GroupBox1.Controls.Add(txtAge)
         GroupBox1.Controls.Add(Label6)
         GroupBox1.Controls.Add(txtFullName)
-        GroupBox1.Controls.Add(txtAge)
+        GroupBox1.Controls.Add(txtUsername)
         GroupBox1.Controls.Add(Label3)
         GroupBox1.Controls.Add(Label2)
         GroupBox1.Controls.Add(Label1)
@@ -413,18 +413,18 @@ Partial Class PaymentDetailSlip
         txtDOB.Multiline = True
         txtDOB.Name = "txtDOB"
         txtDOB.ReadOnly = True
-        txtDOB.Size = New Size(223, 24)
+        txtDOB.Size = New Size(152, 24)
         txtDOB.TabIndex = 14
         ' 
-        ' txtSex
+        ' txtAge
         ' 
-        txtSex.Location = New Point(344, 56)
-        txtSex.Margin = New Padding(3, 2, 3, 2)
-        txtSex.Multiline = True
-        txtSex.Name = "txtSex"
-        txtSex.ReadOnly = True
-        txtSex.Size = New Size(65, 26)
-        txtSex.TabIndex = 13
+        txtAge.Location = New Point(296, 56)
+        txtAge.Margin = New Padding(3, 2, 3, 2)
+        txtAge.Multiline = True
+        txtAge.Name = "txtAge"
+        txtAge.ReadOnly = True
+        txtAge.Size = New Size(65, 26)
+        txtAge.TabIndex = 13
         ' 
         ' Label6
         ' 
@@ -442,36 +442,36 @@ Partial Class PaymentDetailSlip
         txtFullName.Multiline = True
         txtFullName.Name = "txtFullName"
         txtFullName.ReadOnly = True
-        txtFullName.Size = New Size(223, 26)
+        txtFullName.Size = New Size(152, 26)
         txtFullName.TabIndex = 11
         ' 
-        ' txtAge
+        ' txtUsername
         ' 
-        txtAge.Location = New Point(344, 23)
-        txtAge.Margin = New Padding(3, 2, 3, 2)
-        txtAge.Multiline = True
-        txtAge.Name = "txtAge"
-        txtAge.ReadOnly = True
-        txtAge.Size = New Size(65, 26)
-        txtAge.TabIndex = 4
+        txtUsername.Location = New Point(296, 23)
+        txtUsername.Margin = New Padding(3, 2, 3, 2)
+        txtUsername.Multiline = True
+        txtUsername.Name = "txtUsername"
+        txtUsername.ReadOnly = True
+        txtUsername.Size = New Size(113, 26)
+        txtUsername.TabIndex = 4
         ' 
         ' Label3
         ' 
         Label3.AutoSize = True
-        Label3.Location = New Point(307, 58)
+        Label3.Location = New Point(234, 63)
         Label3.Name = "Label3"
-        Label3.Size = New Size(25, 15)
+        Label3.Size = New Size(31, 15)
         Label3.TabIndex = 3
-        Label3.Text = "Sex"
+        Label3.Text = "Age:"
         ' 
         ' Label2
         ' 
         Label2.AutoSize = True
-        Label2.Location = New Point(307, 26)
+        Label2.Location = New Point(234, 32)
         Label2.Name = "Label2"
-        Label2.Size = New Size(28, 15)
+        Label2.Size = New Size(63, 15)
         Label2.TabIndex = 2
-        Label2.Text = "Age"
+        Label2.Text = "Username:"
         ' 
         ' Label1
         ' 
@@ -506,7 +506,7 @@ Partial Class PaymentDetailSlip
     Friend WithEvents Panel1 As Panel
     Friend WithEvents GroupBox1 As GroupBox
     Friend WithEvents Label1 As Label
-    Friend WithEvents txtAge As TextBox
+    Friend WithEvents txtUsername As TextBox
     Friend WithEvents Label3 As Label
     Friend WithEvents Label2 As Label
     Friend WithEvents Label4 As Label
@@ -539,7 +539,7 @@ Partial Class PaymentDetailSlip
     Friend WithEvents Label13 As Label
     Friend WithEvents Label15 As Label
     Friend WithEvents BtnCalculate As Button
-    Friend WithEvents txtSex As TextBox
+    Friend WithEvents txtAge As TextBox
     Friend WithEvents txtDOB As TextBox
     Friend WithEvents GroupBox5 As GroupBox
 End Class
