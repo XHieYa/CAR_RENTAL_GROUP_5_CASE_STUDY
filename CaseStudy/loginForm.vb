@@ -29,9 +29,15 @@ Public Class loginForm
         con.Close()
 
         If count > 0 Then
-            MessageBox.Show("Login Successfully", "INFO", MessageBoxButtons.OK, MessageBoxIcon.Information) 'Will be key to transfering to next Form
-            Me.Hide()
-            BookingForm.Show()
+            If txtuser.Text = "admin" And txtpass.Text = "admin" Then
+                Me.Hide()
+                AdminForm.Show()
+            Else
+                MessageBox.Show("Login Successfully", "INFO", MessageBoxButtons.OK, MessageBoxIcon.Information) 'Will be key to transfering to next Form
+                Me.Hide()
+                BookingForm.Show()
+            End If
+
         Else
             MessageBox.Show("Login Error") 'Error Message if account is not existing
 

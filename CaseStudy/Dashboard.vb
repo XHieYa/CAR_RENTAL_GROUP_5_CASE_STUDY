@@ -23,7 +23,7 @@ Public Class Dashboard
         lblgreet.Text = "Hello, " & loginForm.txtuser.Text & " Welcome to Rent 4 Wheelz" 'WAS A TEST BUT OUTLINE FOR WELCOME PROMPT
         LoadLogs() 'LOADS FUNCTION
         con.Open() 'ESTABLISHES CONNECTION
-        Dim query As String = "SELECT Username, Fullname, Age, Sex, Address, Date FROM login WHERE Username = @Username" 'CONDITION PROMPT ON WHAT TO SELECT FROM THE DATA BASE
+        Dim query As String = "SELECT Username, Email, Fullname, Age, Sex, Address, Date FROM login WHERE Username = @Username" 'CONDITION PROMPT ON WHAT TO SELECT FROM THE DATA BASE
         Dim cmd As New SqlCommand(query, con) 'SEE BACK ON LOGIN FORM
         cmd.Parameters.AddWithValue("@Username", loginForm.txtuser.Text)
         Dim myReader As SqlDataReader = cmd.ExecuteReader() 'MAKES A SQL READER IN ORDER TO READ THE DATA THAT'S IN THE DATA BASE
@@ -34,6 +34,7 @@ Public Class Dashboard
             lblSex.Text = myReader("Sex").ToString()
             lblAddress.Text = myReader("Address").ToString()
             lblDOB.Text = myReader("Date").ToString()
+            lblEmail.Text = myReader("Email").ToString
         End If
         con.Close() 'CLOSES THE CONNECTION
 

@@ -24,6 +24,7 @@ Partial Class Dashboard
     Private Sub InitializeComponent()
         TabControl1 = New TabControl()
         TabPage1 = New TabPage()
+        lblEmail = New Label()
         Button1 = New Button()
         lblDOB = New Label()
         lblAddress = New Label()
@@ -39,7 +40,6 @@ Partial Class Dashboard
         ToDOB = New DateTimePicker()
         FromDOB = New DateTimePicker()
         DGLogs = New DataGridView()
-        Label4 = New Label()
         TabControl1.SuspendLayout()
         TabPage1.SuspendLayout()
         TabPage2.SuspendLayout()
@@ -58,7 +58,7 @@ Partial Class Dashboard
         ' 
         ' TabPage1
         ' 
-        TabPage1.Controls.Add(Label4)
+        TabPage1.Controls.Add(lblEmail)
         TabPage1.Controls.Add(Button1)
         TabPage1.Controls.Add(lblDOB)
         TabPage1.Controls.Add(lblAddress)
@@ -74,6 +74,15 @@ Partial Class Dashboard
         TabPage1.TabIndex = 0
         TabPage1.Text = "Home"
         TabPage1.UseVisualStyleBackColor = True
+        ' 
+        ' lblEmail
+        ' 
+        lblEmail.AutoSize = True
+        lblEmail.Location = New Point(9, 108)
+        lblEmail.Name = "lblEmail"
+        lblEmail.Size = New Size(73, 15)
+        lblEmail.TabIndex = 8
+        lblEmail.Text = "Email: [User]"
         ' 
         ' Button1
         ' 
@@ -212,15 +221,6 @@ Partial Class Dashboard
         DGLogs.Size = New Size(794, 376)
         DGLogs.TabIndex = 0
         ' 
-        ' Label4
-        ' 
-        Label4.AutoSize = True
-        Label4.Location = New Point(9, 108)
-        Label4.Name = "Label4"
-        Label4.Size = New Size(112, 15)
-        Label4.TabIndex = 8
-        Label4.Text = "Date Of Birth: [User]"
-        ' 
         ' Dashboard
         ' 
         AutoScaleDimensions = New SizeF(7F, 15F)
@@ -255,5 +255,5 @@ Partial Class Dashboard
     Friend WithEvents FromDOB As DateTimePicker
     Friend WithEvents DGLogs As DataGridView
     Friend WithEvents Button1 As Button
-    Friend WithEvents Label4 As Label
+    Friend WithEvents lblEmail As Label
 End Class
