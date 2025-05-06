@@ -28,12 +28,12 @@ Partial Class BookingForm
         ToDOB = New DateTimePicker()
         FromDOB = New DateTimePicker()
         GroupBox1 = New GroupBox()
+        Label4 = New Label()
+        Label2 = New Label()
+        Cartxt = New TextBox()
         TxtCarID = New TextBox()
         BtnConfirm = New Button()
         DGVSchedules = New DataGridView()
-        Cartxt = New TextBox()
-        Label2 = New Label()
-        Label4 = New Label()
         GroupBox1.SuspendLayout()
         CType(DGVSchedules, ComponentModel.ISupportInitialize).BeginInit()
         SuspendLayout()
@@ -94,6 +94,31 @@ Partial Class BookingForm
         GroupBox1.TabStop = False
         GroupBox1.Text = "GroupBox1"
         ' 
+        ' Label4
+        ' 
+        Label4.AutoSize = True
+        Label4.Location = New Point(6, 56)
+        Label4.Name = "Label4"
+        Label4.Size = New Size(43, 15)
+        Label4.TabIndex = 14
+        Label4.Text = "ID No.:"
+        ' 
+        ' Label2
+        ' 
+        Label2.AutoSize = True
+        Label2.Location = New Point(6, 22)
+        Label2.Name = "Label2"
+        Label2.Size = New Size(28, 15)
+        Label2.TabIndex = 13
+        Label2.Text = "Car:"
+        ' 
+        ' Cartxt
+        ' 
+        Cartxt.Location = New Point(54, 19)
+        Cartxt.Name = "Cartxt"
+        Cartxt.Size = New Size(200, 23)
+        Cartxt.TabIndex = 12
+        ' 
         ' TxtCarID
         ' 
         TxtCarID.Location = New Point(54, 48)
@@ -114,37 +139,14 @@ Partial Class BookingForm
         ' 
         DGVSchedules.AllowUserToAddRows = False
         DGVSchedules.AllowUserToDeleteRows = False
-        DGVSchedules.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill
+        DGVSchedules.AllowUserToResizeColumns = False
+        DGVSchedules.AllowUserToResizeRows = False
         DGVSchedules.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize
+        DGVSchedules.Enabled = False
         DGVSchedules.Location = New Point(12, 186)
         DGVSchedules.Name = "DGVSchedules"
         DGVSchedules.Size = New Size(1134, 351)
         DGVSchedules.TabIndex = 12
-        ' 
-        ' Cartxt
-        ' 
-        Cartxt.Location = New Point(54, 19)
-        Cartxt.Name = "Cartxt"
-        Cartxt.Size = New Size(200, 23)
-        Cartxt.TabIndex = 12
-        ' 
-        ' Label2
-        ' 
-        Label2.AutoSize = True
-        Label2.Location = New Point(6, 22)
-        Label2.Name = "Label2"
-        Label2.Size = New Size(28, 15)
-        Label2.TabIndex = 13
-        Label2.Text = "Car:"
-        ' 
-        ' Label4
-        ' 
-        Label4.AutoSize = True
-        Label4.Location = New Point(6, 56)
-        Label4.Name = "Label4"
-        Label4.Size = New Size(43, 15)
-        Label4.TabIndex = 14
-        Label4.Text = "ID No.:"
         ' 
         ' BookingForm
         ' 
