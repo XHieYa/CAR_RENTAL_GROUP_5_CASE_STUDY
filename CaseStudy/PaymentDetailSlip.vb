@@ -7,6 +7,7 @@ Public Class PaymentDetailSlip
         txtAge.Text = Dashboard.lblAge.Text
         txtSex.Text = Dashboard.lblSex.Text
         txtDOB.Text = Dashboard.lblDOB.Text
+        txtEmail.Text = Dashboard.lblEmail.Text
 
     End Sub
     Private Sub BookingAdd()

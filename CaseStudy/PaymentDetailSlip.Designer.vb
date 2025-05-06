@@ -51,7 +51,7 @@ Partial Class PaymentDetailSlip
         Label4 = New Label()
         Label5 = New Label()
         TextBox4 = New TextBox()
-        TextBox5 = New TextBox()
+        txtEmail = New TextBox()
         GroupBox1 = New GroupBox()
         txtDOB = New TextBox()
         txtSex = New TextBox()
@@ -339,7 +339,7 @@ Partial Class PaymentDetailSlip
         GroupBox2.Controls.Add(Label4)
         GroupBox2.Controls.Add(Label5)
         GroupBox2.Controls.Add(TextBox4)
-        GroupBox2.Controls.Add(TextBox5)
+        GroupBox2.Controls.Add(txtEmail)
         GroupBox2.Location = New Point(3, 100)
         GroupBox2.Margin = New Padding(3, 2, 3, 2)
         GroupBox2.Name = "GroupBox2"
@@ -376,14 +376,15 @@ Partial Class PaymentDetailSlip
         TextBox4.Size = New Size(290, 26)
         TextBox4.TabIndex = 6
         ' 
-        ' TextBox5
+        ' txtEmail
         ' 
-        TextBox5.Location = New Point(87, 22)
-        TextBox5.Margin = New Padding(3, 2, 3, 2)
-        TextBox5.Multiline = True
-        TextBox5.Name = "TextBox5"
-        TextBox5.Size = New Size(290, 26)
-        TextBox5.TabIndex = 9
+        txtEmail.Location = New Point(87, 22)
+        txtEmail.Margin = New Padding(3, 2, 3, 2)
+        txtEmail.Multiline = True
+        txtEmail.Name = "txtEmail"
+        txtEmail.ReadOnly = True
+        txtEmail.Size = New Size(290, 26)
+        txtEmail.TabIndex = 9
         ' 
         ' GroupBox1
         ' 
@@ -510,7 +511,7 @@ Partial Class PaymentDetailSlip
     Friend WithEvents Label2 As Label
     Friend WithEvents Label4 As Label
     Friend WithEvents TextBox4 As TextBox
-    Friend WithEvents TextBox5 As TextBox
+    Friend WithEvents txtEmail As TextBox
     Friend WithEvents Label5 As Label
     Friend WithEvents txtFullName As TextBox
     Friend WithEvents GroupBox2 As GroupBox
