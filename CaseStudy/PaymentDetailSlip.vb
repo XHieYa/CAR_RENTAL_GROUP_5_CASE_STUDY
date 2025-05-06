@@ -36,12 +36,24 @@ Public Class PaymentDetailSlip
         End Try
     End Sub
 
-    Private Sub BtnPayment_Click(sender As Object, e As EventArgs) Handles BtnPayment.Click
-
-    End Sub
-
     Private Sub BtnCalculate_Click(sender As Object, e As EventArgs) Handles BtnCalculate.Click
         Dim TotalDays As Integer = (ToDate.Value.Date - FromDate.Value.Date).Days
         MessageBox.Show(TotalDays, "Info", MessageBoxButtons.OK, MessageBoxIcon.Information)
+
+        Dim TotalPayment As Integer = (TotalDays * 150)
+        GroupBox5.Text = "Receipt:" & ControlChars.NewLine & "Daily rate:" & 150 &
+                                      ControlChars.NewLine & "Total Payment: " & TotalPayment
     End Sub
+
+    Private Sub BtnPayment_Click(sender As Object, e As EventArgs) Handles BtnPayment.Click
+        Dim TotalDays As Integer = (ToDate.Value.Date - FromDate.Value.Date).Days
+        Dim TotalPayment As Integer = (TotalDays * 150)
+
+        Dim PaymentInput As String = InputBox("Enter Payment Amount", "Payment Input Box")
+
+        If Val(PaymentInput) < TotalPayment Then
+            MessageBox.Show("Insufficient Amount.", "Payment Failed.", MessageBoxButtons.OK, MessageBoxIcon.Error)
+        End If
+    End Sub
+
 End Class
