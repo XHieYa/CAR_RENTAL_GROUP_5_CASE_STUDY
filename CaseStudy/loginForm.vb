@@ -86,6 +86,7 @@ Public Class loginForm
                 txtAge.Text = ""
                 txtPassword.Text = ""
                 txtAddress.Text = ""
+                txtEmail.Text = ""
                 cmbSex.Items.Clear()
                 dtpDOB.Value = Now
                 GroupBox2.Enabled = False 'Makes you relogin to ensure you created the account and it works succesfully
@@ -112,6 +113,7 @@ Public Class loginForm
         txtFullName.Text = ""
         txtAge.Text = ""
         txtPassword.Text = ""
+        txtEmail.Text = ""
         txtAddress.Text = ""
         cmbSex.Items.Clear()
         dtpDOB.Value = Now
