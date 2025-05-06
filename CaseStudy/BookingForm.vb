@@ -2,8 +2,9 @@
 Imports Microsoft.Data.SqlClient 'Importing SQL Database Access Commands
 Public Class BookingForm
     Private Sub BtnConfirm_Click(sender As Object, e As EventArgs) Handles BtnConfirm.Click
-        If FromDOB.Value.Date = ToDOB.Value.Date Then
-            MessageBox.Show("Cannot Book Within The Same Day", "info", MessageBoxButtons.OK, MessageBoxIcon.Warning)
+        If ToDOB.Value.Date <= FromDOB.Value.Date Then
+            MessageBox.Show("End date must be later than start date.", "Invalid Dates", MessageBoxButtons.OK, MessageBoxIcon.Warning)
+            Exit Sub
         Else
             Dim Con As New SqlConnection("Data Source=(localdb)\MSSQLLocalDB;Initial Catalog=CustomerDB;Integrated Security=True;Connect Timeout=30;Encrypt=False;Trust Server Certificate=False;Application Intent=ReadWrite;Multi Subnet Failover=False")
             Dim query As String = "SELECT COUNT(*) FROM Booking WHERE CarID = @CarID AND @NewStartDate <= EndBookDate AND @NewEndDate >= StartBookDate"
@@ -14,7 +15,7 @@ Public Class BookingForm
                 cmd.Parameters.AddWithValue("@NewEndDate", ToDOB.Value.Date)
                 Dim count As Integer = Convert.ToInt32(cmd.ExecuteScalar())
                 If count > 0 Then
-                    MessageBox.Show("Schedule to This Had Been Booked", "Booking Conflict", MessageBoxButtons.OK, MessageBoxIcon.Warning)
+                    MessageBox.Show("Schedule to This Had Been Booked", "INFO", MessageBoxButtons.OK, MessageBoxIcon.Warning)
                     Return
                 End If
             End Using

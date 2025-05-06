@@ -40,6 +40,7 @@ Partial Class Dashboard
         ToDOB = New DateTimePicker()
         FromDOB = New DateTimePicker()
         DGLogs = New DataGridView()
+        BtnDelete = New Button()
         TabControl1.SuspendLayout()
         TabPage1.SuspendLayout()
         TabPage2.SuspendLayout()
@@ -158,6 +159,7 @@ Partial Class Dashboard
         ' 
         ' TabPage2
         ' 
+        TabPage2.Controls.Add(BtnDelete)
         TabPage2.Controls.Add(Label3)
         TabPage2.Controls.Add(Label1)
         TabPage2.Controls.Add(BtnUpdate)
@@ -192,7 +194,7 @@ Partial Class Dashboard
         ' 
         ' BtnUpdate
         ' 
-        BtnUpdate.Location = New Point(666, 393)
+        BtnUpdate.Location = New Point(599, 393)
         BtnUpdate.Name = "BtnUpdate"
         BtnUpdate.Size = New Size(75, 23)
         BtnUpdate.TabIndex = 3
@@ -220,6 +222,15 @@ Partial Class Dashboard
         DGLogs.Name = "DGLogs"
         DGLogs.Size = New Size(794, 376)
         DGLogs.TabIndex = 0
+        ' 
+        ' BtnDelete
+        ' 
+        BtnDelete.Location = New Point(697, 393)
+        BtnDelete.Name = "BtnDelete"
+        BtnDelete.Size = New Size(75, 23)
+        BtnDelete.TabIndex = 6
+        BtnDelete.Text = "Delete"
+        BtnDelete.UseVisualStyleBackColor = True
         ' 
         ' Dashboard
         ' 
@@ -256,4 +267,5 @@ Partial Class Dashboard
     Friend WithEvents DGLogs As DataGridView
     Friend WithEvents Button1 As Button
     Friend WithEvents lblEmail As Label
+    Friend WithEvents BtnDelete As Button
 End Class
