@@ -257,6 +257,14 @@ Partial Class Seven_to_Eight_Seaters
         Label168 = New Label()
         Label169 = New Label()
         Label1 = New Label()
+        Label179 = New Label()
+        Label178 = New Label()
+        Label180 = New Label()
+        Label181 = New Label()
+        Label182 = New Label()
+        Label183 = New Label()
+        Label184 = New Label()
+        Label185 = New Label()
         TabControl1.SuspendLayout()
         TabPage1.SuspendLayout()
         Panel3.SuspendLayout()
@@ -810,6 +818,8 @@ Partial Class Seven_to_Eight_Seaters
         ' Panel1
         ' 
         Panel1.BorderStyle = BorderStyle.Fixed3D
+        Panel1.Controls.Add(Label179)
+        Panel1.Controls.Add(Label178)
         Panel1.Controls.Add(Label171)
         Panel1.Controls.Add(Label170)
         Panel1.Controls.Add(Label19)
@@ -833,9 +843,9 @@ Partial Class Seven_to_Eight_Seaters
         Label171.Font = New Font("Century", 9F, FontStyle.Underline)
         Label171.Location = New Point(141, 47)
         Label171.Name = "Label171"
-        Label171.Size = New Size(77, 18)
+        Label171.Size = New Size(80, 18)
         Label171.TabIndex = 12
-        Label171.Text = "ABC 1234"
+        Label171.Text = "CVM 0914"
         ' 
         ' Label170
         ' 
@@ -1437,6 +1447,8 @@ Partial Class Seven_to_Eight_Seaters
         ' Panel6
         ' 
         Panel6.BorderStyle = BorderStyle.Fixed3D
+        Panel6.Controls.Add(Label180)
+        Panel6.Controls.Add(Label181)
         Panel6.Controls.Add(Label172)
         Panel6.Controls.Add(Label173)
         Panel6.Controls.Add(Label82)
@@ -1462,7 +1474,7 @@ Partial Class Seven_to_Eight_Seaters
         Label172.Name = "Label172"
         Label172.Size = New Size(77, 18)
         Label172.TabIndex = 12
-        Label172.Text = "ABC 1234"
+        Label172.Text = "OPC 8764"
         ' 
         ' Label173
         ' 
@@ -2063,6 +2075,8 @@ Partial Class Seven_to_Eight_Seaters
         ' Panel9
         ' 
         Panel9.BorderStyle = BorderStyle.Fixed3D
+        Panel9.Controls.Add(Label182)
+        Panel9.Controls.Add(Label183)
         Panel9.Controls.Add(Label174)
         Panel9.Controls.Add(Label175)
         Panel9.Controls.Add(Label124)
@@ -2086,9 +2100,9 @@ Partial Class Seven_to_Eight_Seaters
         Label174.Font = New Font("Century", 9F, FontStyle.Underline)
         Label174.Location = New Point(141, 47)
         Label174.Name = "Label174"
-        Label174.Size = New Size(77, 18)
+        Label174.Size = New Size(78, 18)
         Label174.TabIndex = 12
-        Label174.Text = "ABC 1234"
+        Label174.Text = "XZM 0862"
         ' 
         ' Label175
         ' 
@@ -2689,6 +2703,8 @@ Partial Class Seven_to_Eight_Seaters
         ' Panel12
         ' 
         Panel12.BorderStyle = BorderStyle.Fixed3D
+        Panel12.Controls.Add(Label184)
+        Panel12.Controls.Add(Label185)
         Panel12.Controls.Add(Label176)
         Panel12.Controls.Add(Label177)
         Panel12.Controls.Add(Label166)
@@ -2714,7 +2730,7 @@ Partial Class Seven_to_Eight_Seaters
         Label176.Name = "Label176"
         Label176.Size = New Size(77, 18)
         Label176.TabIndex = 12
-        Label176.Text = "ABC 1234"
+        Label176.Text = "SDG 5412"
         ' 
         ' Label177
         ' 
@@ -2830,6 +2846,86 @@ Partial Class Seven_to_Eight_Seaters
         Label1.TabIndex = 4
         Label1.Text = "The available vehicle options inlcude seven- and eight-seater models." & vbCrLf
         Label1.TextAlign = ContentAlignment.TopCenter
+        ' 
+        ' Label179
+        ' 
+        Label179.AutoSize = True
+        Label179.Font = New Font("Century", 9F, FontStyle.Underline)
+        Label179.Location = New Point(141, 65)
+        Label179.Name = "Label179"
+        Label179.Size = New Size(20, 18)
+        Label179.TabIndex = 14
+        Label179.Text = "N"
+        ' 
+        ' Label178
+        ' 
+        Label178.AutoSize = True
+        Label178.Font = New Font("Century", 9F, FontStyle.Bold)
+        Label178.Location = New Point(12, 65)
+        Label178.Name = "Label178"
+        Label178.Size = New Size(121, 18)
+        Label178.TabIndex = 13
+        Label178.Text = "Body Number:"
+        ' 
+        ' Label180
+        ' 
+        Label180.AutoSize = True
+        Label180.Font = New Font("Century", 9F, FontStyle.Underline)
+        Label180.Location = New Point(141, 65)
+        Label180.Name = "Label180"
+        Label180.Size = New Size(20, 18)
+        Label180.TabIndex = 14
+        Label180.Text = "N"
+        ' 
+        ' Label181
+        ' 
+        Label181.AutoSize = True
+        Label181.Font = New Font("Century", 9F, FontStyle.Bold)
+        Label181.Location = New Point(12, 65)
+        Label181.Name = "Label181"
+        Label181.Size = New Size(121, 18)
+        Label181.TabIndex = 13
+        Label181.Text = "Body Number:"
+        ' 
+        ' Label182
+        ' 
+        Label182.AutoSize = True
+        Label182.Font = New Font("Century", 9F, FontStyle.Underline)
+        Label182.Location = New Point(141, 65)
+        Label182.Name = "Label182"
+        Label182.Size = New Size(20, 18)
+        Label182.TabIndex = 14
+        Label182.Text = "N"
+        ' 
+        ' Label183
+        ' 
+        Label183.AutoSize = True
+        Label183.Font = New Font("Century", 9F, FontStyle.Bold)
+        Label183.Location = New Point(12, 65)
+        Label183.Name = "Label183"
+        Label183.Size = New Size(121, 18)
+        Label183.TabIndex = 13
+        Label183.Text = "Body Number:"
+        ' 
+        ' Label184
+        ' 
+        Label184.AutoSize = True
+        Label184.Font = New Font("Century", 9F, FontStyle.Underline)
+        Label184.Location = New Point(141, 65)
+        Label184.Name = "Label184"
+        Label184.Size = New Size(20, 18)
+        Label184.TabIndex = 14
+        Label184.Text = "N"
+        ' 
+        ' Label185
+        ' 
+        Label185.AutoSize = True
+        Label185.Font = New Font("Century", 9F, FontStyle.Bold)
+        Label185.Location = New Point(12, 65)
+        Label185.Name = "Label185"
+        Label185.Size = New Size(121, 18)
+        Label185.TabIndex = 13
+        Label185.Text = "Body Number:"
         ' 
         ' Seven_to_Eight_Seaters
         ' 
@@ -3131,4 +3227,12 @@ Partial Class Seven_to_Eight_Seaters
     Friend WithEvents Label175 As Label
     Friend WithEvents Label176 As Label
     Friend WithEvents Label177 As Label
+    Friend WithEvents Label179 As Label
+    Friend WithEvents Label178 As Label
+    Friend WithEvents Label180 As Label
+    Friend WithEvents Label181 As Label
+    Friend WithEvents Label182 As Label
+    Friend WithEvents Label183 As Label
+    Friend WithEvents Label184 As Label
+    Friend WithEvents Label185 As Label
 End Class

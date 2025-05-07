@@ -258,6 +258,14 @@ Partial Class Four_to_Five_Seaters
         PictureBox24 = New PictureBox()
         Label168 = New Label()
         Label169 = New Label()
+        Label178 = New Label()
+        Label179 = New Label()
+        Label180 = New Label()
+        Label181 = New Label()
+        Label182 = New Label()
+        Label183 = New Label()
+        Label184 = New Label()
+        Label185 = New Label()
         TabControl1.SuspendLayout()
         TabPage1.SuspendLayout()
         Panel3.SuspendLayout()
@@ -823,6 +831,8 @@ Partial Class Four_to_Five_Seaters
         ' Panel1
         ' 
         Panel1.BorderStyle = BorderStyle.Fixed3D
+        Panel1.Controls.Add(Label179)
+        Panel1.Controls.Add(Label178)
         Panel1.Controls.Add(Label171)
         Panel1.Controls.Add(Label170)
         Panel1.Controls.Add(Label19)
@@ -1450,6 +1460,8 @@ Partial Class Four_to_Five_Seaters
         ' Panel6
         ' 
         Panel6.BorderStyle = BorderStyle.Fixed3D
+        Panel6.Controls.Add(Label180)
+        Panel6.Controls.Add(Label181)
         Panel6.Controls.Add(Label172)
         Panel6.Controls.Add(Label173)
         Panel6.Controls.Add(PictureBox25)
@@ -1474,9 +1486,9 @@ Partial Class Four_to_Five_Seaters
         Label172.Font = New Font("Century", 9F, FontStyle.Underline)
         Label172.Location = New Point(141, 47)
         Label172.Name = "Label172"
-        Label172.Size = New Size(77, 18)
+        Label172.Size = New Size(75, 18)
         Label172.TabIndex = 12
-        Label172.Text = "ABC 1234"
+        Label172.Text = "HGI 6478"
         ' 
         ' Label173
         ' 
@@ -2086,6 +2098,8 @@ Partial Class Four_to_Five_Seaters
         ' Panel9
         ' 
         Panel9.BorderStyle = BorderStyle.Fixed3D
+        Panel9.Controls.Add(Label182)
+        Panel9.Controls.Add(Label183)
         Panel9.Controls.Add(Label174)
         Panel9.Controls.Add(Label175)
         Panel9.Controls.Add(Label124)
@@ -2111,7 +2125,7 @@ Partial Class Four_to_Five_Seaters
         Label174.Name = "Label174"
         Label174.Size = New Size(77, 18)
         Label174.TabIndex = 12
-        Label174.Text = "ABC 1234"
+        Label174.Text = "DEF 2365"
         ' 
         ' Label175
         ' 
@@ -2712,6 +2726,8 @@ Partial Class Four_to_Five_Seaters
         ' Panel12
         ' 
         Panel12.BorderStyle = BorderStyle.Fixed3D
+        Panel12.Controls.Add(Label184)
+        Panel12.Controls.Add(Label185)
         Panel12.Controls.Add(Label176)
         Panel12.Controls.Add(Label177)
         Panel12.Controls.Add(Label166)
@@ -2735,9 +2751,9 @@ Partial Class Four_to_Five_Seaters
         Label176.Font = New Font("Century", 9F, FontStyle.Underline)
         Label176.Location = New Point(141, 47)
         Label176.Name = "Label176"
-        Label176.Size = New Size(77, 18)
+        Label176.Size = New Size(81, 18)
         Label176.TabIndex = 12
-        Label176.Text = "ABC 1234"
+        Label176.Text = "HGO 9125"
         ' 
         ' Label177
         ' 
@@ -2842,6 +2858,86 @@ Partial Class Four_to_Five_Seaters
         Label169.Size = New Size(105, 18)
         Label169.TabIndex = 0
         Label169.Text = "Model Year:"
+        ' 
+        ' Label178
+        ' 
+        Label178.AutoSize = True
+        Label178.Font = New Font("Century", 9F, FontStyle.Bold)
+        Label178.Location = New Point(12, 65)
+        Label178.Name = "Label178"
+        Label178.Size = New Size(121, 18)
+        Label178.TabIndex = 11
+        Label178.Text = "Body Number:"
+        ' 
+        ' Label179
+        ' 
+        Label179.AutoSize = True
+        Label179.Font = New Font("Century", 9F, FontStyle.Underline)
+        Label179.Location = New Point(141, 65)
+        Label179.Name = "Label179"
+        Label179.Size = New Size(20, 18)
+        Label179.TabIndex = 12
+        Label179.Text = "N"
+        ' 
+        ' Label180
+        ' 
+        Label180.AutoSize = True
+        Label180.Font = New Font("Century", 9F, FontStyle.Underline)
+        Label180.Location = New Point(141, 65)
+        Label180.Name = "Label180"
+        Label180.Size = New Size(20, 18)
+        Label180.TabIndex = 14
+        Label180.Text = "N"
+        ' 
+        ' Label181
+        ' 
+        Label181.AutoSize = True
+        Label181.Font = New Font("Century", 9F, FontStyle.Bold)
+        Label181.Location = New Point(12, 65)
+        Label181.Name = "Label181"
+        Label181.Size = New Size(121, 18)
+        Label181.TabIndex = 13
+        Label181.Text = "Body Number:"
+        ' 
+        ' Label182
+        ' 
+        Label182.AutoSize = True
+        Label182.Font = New Font("Century", 9F, FontStyle.Underline)
+        Label182.Location = New Point(141, 65)
+        Label182.Name = "Label182"
+        Label182.Size = New Size(20, 18)
+        Label182.TabIndex = 14
+        Label182.Text = "N"
+        ' 
+        ' Label183
+        ' 
+        Label183.AutoSize = True
+        Label183.Font = New Font("Century", 9F, FontStyle.Bold)
+        Label183.Location = New Point(12, 65)
+        Label183.Name = "Label183"
+        Label183.Size = New Size(121, 18)
+        Label183.TabIndex = 13
+        Label183.Text = "Body Number:"
+        ' 
+        ' Label184
+        ' 
+        Label184.AutoSize = True
+        Label184.Font = New Font("Century", 9F, FontStyle.Underline)
+        Label184.Location = New Point(141, 65)
+        Label184.Name = "Label184"
+        Label184.Size = New Size(20, 18)
+        Label184.TabIndex = 14
+        Label184.Text = "N"
+        ' 
+        ' Label185
+        ' 
+        Label185.AutoSize = True
+        Label185.Font = New Font("Century", 9F, FontStyle.Bold)
+        Label185.Location = New Point(12, 65)
+        Label185.Name = "Label185"
+        Label185.Size = New Size(121, 18)
+        Label185.TabIndex = 13
+        Label185.Text = "Body Number:"
         ' 
         ' Four_to_Five_Seaters
         ' 
@@ -3145,4 +3241,12 @@ Partial Class Four_to_Five_Seaters
     Friend WithEvents Label175 As Label
     Friend WithEvents Label176 As Label
     Friend WithEvents Label177 As Label
+    Friend WithEvents Label179 As Label
+    Friend WithEvents Label178 As Label
+    Friend WithEvents Label180 As Label
+    Friend WithEvents Label181 As Label
+    Friend WithEvents Label182 As Label
+    Friend WithEvents Label183 As Label
+    Friend WithEvents Label184 As Label
+    Friend WithEvents Label185 As Label
 End Class
