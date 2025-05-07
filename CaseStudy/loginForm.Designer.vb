@@ -23,8 +23,8 @@ Partial Class loginForm
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
         GroupBox1 = New GroupBox()
-        CheckBox1 = New CheckBox()
-        LinkLabel1 = New LinkLabel()
+        cbShowPassLI = New CheckBox()
+        llblCreateAccount = New LinkLabel()
         BtnLogin = New Button()
         txtpass = New TextBox()
         txtuser = New TextBox()
@@ -32,32 +32,34 @@ Partial Class loginForm
         Label3 = New Label()
         Label1 = New Label()
         GroupBox2 = New GroupBox()
-        LinkLabel2 = New LinkLabel()
+        cbShowPasswordSI = New CheckBox()
+        txtEmail = New TextBox()
+        Label12 = New Label()
+        llblHaveAnAccount = New LinkLabel()
         Label11 = New Label()
-        sifullname = New TextBox()
-        Cmbsex = New ComboBox()
-        DateTimePickerDOB = New DateTimePicker()
-        sipassword = New TextBox()
+        txtFullName = New TextBox()
+        cmbSex = New ComboBox()
+        dtpDOB = New DateTimePicker()
+        txtPassword = New TextBox()
         Label10 = New Label()
         BtnSignIn = New Button()
-        siaddress = New TextBox()
-        siage = New TextBox()
-        siusername = New TextBox()
+        txtAddress = New TextBox()
+        txtAge = New TextBox()
+        txtUsername = New TextBox()
         Label9 = New Label()
         Label8 = New Label()
         Label7 = New Label()
         Label6 = New Label()
         Label5 = New Label()
         Label2 = New Label()
-        Cmbage = New ComboBox()
         GroupBox1.SuspendLayout()
         GroupBox2.SuspendLayout()
         SuspendLayout()
         ' 
         ' GroupBox1
         ' 
-        GroupBox1.Controls.Add(CheckBox1)
-        GroupBox1.Controls.Add(LinkLabel1)
+        GroupBox1.Controls.Add(cbShowPassLI)
+        GroupBox1.Controls.Add(llblCreateAccount)
         GroupBox1.Controls.Add(BtnLogin)
         GroupBox1.Controls.Add(txtpass)
         GroupBox1.Controls.Add(txtuser)
@@ -70,25 +72,25 @@ Partial Class loginForm
         GroupBox1.TabIndex = 0
         GroupBox1.TabStop = False
         ' 
-        ' CheckBox1
+        ' cbShowPassLI
         ' 
-        CheckBox1.AutoSize = True
-        CheckBox1.Location = New Point(20, 109)
-        CheckBox1.Name = "CheckBox1"
-        CheckBox1.Size = New Size(108, 19)
-        CheckBox1.TabIndex = 7
-        CheckBox1.Text = "Show Password"
-        CheckBox1.UseVisualStyleBackColor = True
+        cbShowPassLI.AutoSize = True
+        cbShowPassLI.Location = New Point(20, 109)
+        cbShowPassLI.Name = "cbShowPassLI"
+        cbShowPassLI.Size = New Size(108, 19)
+        cbShowPassLI.TabIndex = 7
+        cbShowPassLI.Text = "Show Password"
+        cbShowPassLI.UseVisualStyleBackColor = True
         ' 
-        ' LinkLabel1
+        ' llblCreateAccount
         ' 
-        LinkLabel1.AutoSize = True
-        LinkLabel1.Location = New Point(6, 131)
-        LinkLabel1.Name = "LinkLabel1"
-        LinkLabel1.Size = New Size(89, 15)
-        LinkLabel1.TabIndex = 6
-        LinkLabel1.TabStop = True
-        LinkLabel1.Text = "Create Account"
+        llblCreateAccount.AutoSize = True
+        llblCreateAccount.Location = New Point(6, 131)
+        llblCreateAccount.Name = "llblCreateAccount"
+        llblCreateAccount.Size = New Size(89, 15)
+        llblCreateAccount.TabIndex = 6
+        llblCreateAccount.TabStop = True
+        llblCreateAccount.Text = "Create Account"
         ' 
         ' BtnLogin
         ' 
@@ -144,18 +146,20 @@ Partial Class loginForm
         ' 
         ' GroupBox2
         ' 
-        GroupBox2.Controls.Add(Cmbage)
-        GroupBox2.Controls.Add(LinkLabel2)
+        GroupBox2.Controls.Add(cbShowPasswordSI)
+        GroupBox2.Controls.Add(txtEmail)
+        GroupBox2.Controls.Add(Label12)
+        GroupBox2.Controls.Add(llblHaveAnAccount)
         GroupBox2.Controls.Add(Label11)
-        GroupBox2.Controls.Add(sifullname)
-        GroupBox2.Controls.Add(Cmbsex)
-        GroupBox2.Controls.Add(DateTimePickerDOB)
-        GroupBox2.Controls.Add(sipassword)
+        GroupBox2.Controls.Add(txtFullName)
+        GroupBox2.Controls.Add(cmbSex)
+        GroupBox2.Controls.Add(dtpDOB)
+        GroupBox2.Controls.Add(txtPassword)
         GroupBox2.Controls.Add(Label10)
         GroupBox2.Controls.Add(BtnSignIn)
-        GroupBox2.Controls.Add(siaddress)
-        GroupBox2.Controls.Add(siage)
-        GroupBox2.Controls.Add(siusername)
+        GroupBox2.Controls.Add(txtAddress)
+        GroupBox2.Controls.Add(txtAge)
+        GroupBox2.Controls.Add(txtUsername)
         GroupBox2.Controls.Add(Label9)
         GroupBox2.Controls.Add(Label8)
         GroupBox2.Controls.Add(Label7)
@@ -168,61 +172,88 @@ Partial Class loginForm
         GroupBox2.TabIndex = 1
         GroupBox2.TabStop = False
         ' 
-        ' LinkLabel2
+        ' cbShowPasswordSI
         ' 
-        LinkLabel2.AutoSize = True
-        LinkLabel2.Location = New Point(6, 263)
-        LinkLabel2.Name = "LinkLabel2"
-        LinkLabel2.Size = New Size(182, 15)
-        LinkLabel2.TabIndex = 8
-        LinkLabel2.TabStop = True
-        LinkLabel2.Text = "Have an Account already? Log-in"
+        cbShowPasswordSI.AutoSize = True
+        cbShowPasswordSI.Location = New Point(309, 164)
+        cbShowPasswordSI.Name = "cbShowPasswordSI"
+        cbShowPasswordSI.Size = New Size(76, 34)
+        cbShowPasswordSI.TabIndex = 22
+        cbShowPasswordSI.Text = "Show" & vbCrLf & "Password"
+        cbShowPasswordSI.UseVisualStyleBackColor = True
+        ' 
+        ' txtEmail
+        ' 
+        txtEmail.Location = New Point(105, 85)
+        txtEmail.Name = "txtEmail"
+        txtEmail.Size = New Size(198, 23)
+        txtEmail.TabIndex = 20
+        ' 
+        ' Label12
+        ' 
+        Label12.AutoSize = True
+        Label12.Location = New Point(6, 88)
+        Label12.Name = "Label12"
+        Label12.Size = New Size(89, 15)
+        Label12.TabIndex = 21
+        Label12.Text = "E-Mail Address:"
+        ' 
+        ' llblHaveAnAccount
+        ' 
+        llblHaveAnAccount.AutoSize = True
+        llblHaveAnAccount.Location = New Point(6, 292)
+        llblHaveAnAccount.Name = "llblHaveAnAccount"
+        llblHaveAnAccount.Size = New Size(182, 15)
+        llblHaveAnAccount.TabIndex = 8
+        llblHaveAnAccount.TabStop = True
+        llblHaveAnAccount.Text = "Have an Account already? Log-in"
         ' 
         ' Label11
         ' 
         Label11.AutoSize = True
-        Label11.Location = New Point(6, 93)
+        Label11.Location = New Point(6, 122)
         Label11.Name = "Label11"
         Label11.Size = New Size(59, 15)
         Label11.TabIndex = 18
         Label11.Text = "Fullname:"
         ' 
-        ' sifullname
+        ' txtFullName
         ' 
-        sifullname.Location = New Point(105, 85)
-        sifullname.Name = "sifullname"
-        sifullname.Size = New Size(153, 23)
-        sifullname.TabIndex = 17
+        txtFullName.Location = New Point(105, 114)
+        txtFullName.Name = "txtFullName"
+        txtFullName.Size = New Size(198, 23)
+        txtFullName.TabIndex = 17
         ' 
-        ' Cmbsex
+        ' cmbSex
         ' 
-        Cmbsex.DropDownStyle = ComboBoxStyle.DropDownList
-        Cmbsex.FormattingEnabled = True
-        Cmbsex.Items.AddRange(New Object() {"Male", "Female", "Non-Binary", "LGBTQ+", "Not Prefered to Say"})
-        Cmbsex.Location = New Point(105, 170)
-        Cmbsex.Name = "Cmbsex"
-        Cmbsex.Size = New Size(153, 23)
-        Cmbsex.TabIndex = 16
+        cmbSex.DropDownStyle = ComboBoxStyle.DropDownList
+        cmbSex.FormattingEnabled = True
+        cmbSex.Items.AddRange(New Object() {"Male", "Female", "Non-Binary", "LGBTQ+", "Not Prefered to Say"})
+        cmbSex.Location = New Point(105, 199)
+        cmbSex.Name = "cmbSex"
+        cmbSex.Size = New Size(198, 23)
+        cmbSex.TabIndex = 16
         ' 
-        ' DateTimePickerDOB
+        ' dtpDOB
         ' 
-        DateTimePickerDOB.Location = New Point(105, 228)
-        DateTimePickerDOB.Name = "DateTimePickerDOB"
-        DateTimePickerDOB.Size = New Size(198, 23)
-        DateTimePickerDOB.TabIndex = 15
-        DateTimePickerDOB.Value = New Date(2025, 3, 28, 13, 52, 21, 0)
+        dtpDOB.Location = New Point(105, 257)
+        dtpDOB.Name = "dtpDOB"
+        dtpDOB.Size = New Size(198, 23)
+        dtpDOB.TabIndex = 15
+        dtpDOB.Value = New Date(2025, 3, 28, 13, 52, 21, 0)
         ' 
-        ' sipassword
+        ' txtPassword
         ' 
-        sipassword.Location = New Point(105, 141)
-        sipassword.Name = "sipassword"
-        sipassword.Size = New Size(153, 23)
-        sipassword.TabIndex = 6
+        txtPassword.Location = New Point(105, 170)
+        txtPassword.Name = "txtPassword"
+        txtPassword.PasswordChar = "*"c
+        txtPassword.Size = New Size(198, 23)
+        txtPassword.TabIndex = 6
         ' 
         ' Label10
         ' 
         Label10.AutoSize = True
-        Label10.Location = New Point(6, 236)
+        Label10.Location = New Point(6, 265)
         Label10.Name = "Label10"
         Label10.Size = New Size(81, 15)
         Label10.TabIndex = 6
@@ -230,38 +261,38 @@ Partial Class loginForm
         ' 
         ' BtnSignIn
         ' 
-        BtnSignIn.Location = New Point(286, 263)
+        BtnSignIn.Location = New Point(286, 292)
         BtnSignIn.Name = "BtnSignIn"
         BtnSignIn.Size = New Size(75, 23)
         BtnSignIn.TabIndex = 6
         BtnSignIn.Text = "Sign-Up"
         BtnSignIn.UseVisualStyleBackColor = True
         ' 
-        ' siaddress
+        ' txtAddress
         ' 
-        siaddress.Location = New Point(105, 199)
-        siaddress.Name = "siaddress"
-        siaddress.Size = New Size(153, 23)
-        siaddress.TabIndex = 14
+        txtAddress.Location = New Point(105, 228)
+        txtAddress.Name = "txtAddress"
+        txtAddress.Size = New Size(198, 23)
+        txtAddress.TabIndex = 14
         ' 
-        ' siage
+        ' txtAge
         ' 
-        siage.Location = New Point(105, 112)
-        siage.Name = "siage"
-        siage.Size = New Size(153, 23)
-        siage.TabIndex = 11
+        txtAge.Location = New Point(105, 141)
+        txtAge.Name = "txtAge"
+        txtAge.Size = New Size(198, 23)
+        txtAge.TabIndex = 11
         ' 
-        ' siusername
+        ' txtUsername
         ' 
-        siusername.Location = New Point(105, 56)
-        siusername.Name = "siusername"
-        siusername.Size = New Size(153, 23)
-        siusername.TabIndex = 6
+        txtUsername.Location = New Point(105, 56)
+        txtUsername.Name = "txtUsername"
+        txtUsername.Size = New Size(198, 23)
+        txtUsername.TabIndex = 6
         ' 
         ' Label9
         ' 
         Label9.AutoSize = True
-        Label9.Location = New Point(6, 207)
+        Label9.Location = New Point(6, 236)
         Label9.Name = "Label9"
         Label9.Size = New Size(52, 15)
         Label9.TabIndex = 10
@@ -270,7 +301,7 @@ Partial Class loginForm
         ' Label8
         ' 
         Label8.AutoSize = True
-        Label8.Location = New Point(6, 178)
+        Label8.Location = New Point(6, 207)
         Label8.Name = "Label8"
         Label8.Size = New Size(28, 15)
         Label8.TabIndex = 9
@@ -279,7 +310,7 @@ Partial Class loginForm
         ' Label7
         ' 
         Label7.AutoSize = True
-        Label7.Location = New Point(6, 149)
+        Label7.Location = New Point(6, 178)
         Label7.Name = "Label7"
         Label7.Size = New Size(60, 15)
         Label7.TabIndex = 8
@@ -288,7 +319,7 @@ Partial Class loginForm
         ' Label6
         ' 
         Label6.AutoSize = True
-        Label6.Location = New Point(6, 120)
+        Label6.Location = New Point(6, 149)
         Label6.Name = "Label6"
         Label6.Size = New Size(34, 15)
         Label6.TabIndex = 7
@@ -312,15 +343,6 @@ Partial Class loginForm
         Label2.Size = New Size(86, 25)
         Label2.TabIndex = 1
         Label2.Text = "Sign-In"
-        ' 
-        ' Cmbage
-        ' 
-        Cmbage.FormattingEnabled = True
-        Cmbage.Items.AddRange(New Object() {"1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12", "13", "14", "15", "16", "17", "18", "19", "20", "21", "22", "23", "24", "25", "26", "27", "28", "29", "30", "31", "32", "33", "34", "35", "36", "37", "38", "39", "40", "41", "42", "43", "44", "45", "46", "47", "48", "49", "50", "51", "52", "53", "54", "55", "56", "57", "58", "59", "60", "61", "62", "63", "64", "65", "66", "67", "68", "69", "70", "71", "72", "73", "74", "75", "76", "77", "78", "79", "80", "81", "82", "83", "84", "85", "86", "87", "88", "89", "90", "91", "92", "93", "94", "95", "96", "97", "98", "99", "100"})
-        Cmbage.Location = New Point(262, 112)
-        Cmbage.Name = "Cmbage"
-        Cmbage.Size = New Size(41, 23)
-        Cmbage.TabIndex = 19
         ' 
         ' loginForm
         ' 
@@ -348,23 +370,25 @@ Partial Class loginForm
     Friend WithEvents GroupBox2 As GroupBox
     Friend WithEvents Label2 As Label
     Friend WithEvents BtnSignIn As Button
-    Friend WithEvents siaddress As TextBox
-    Friend WithEvents siage As TextBox
-    Friend WithEvents siusername As TextBox
+    Friend WithEvents txtAddress As TextBox
+    Friend WithEvents txtAge As TextBox
+    Friend WithEvents txtUsername As TextBox
     Friend WithEvents Label9 As Label
     Friend WithEvents Label8 As Label
     Friend WithEvents Label7 As Label
     Friend WithEvents Label6 As Label
     Friend WithEvents Label5 As Label
-    Friend WithEvents sipassword As TextBox
+    Friend WithEvents txtPassword As TextBox
     Friend WithEvents Label10 As Label
-    Friend WithEvents DateTimePickerDOB As DateTimePicker
-    Friend WithEvents LinkLabel1 As LinkLabel
-    Friend WithEvents Cmbsex As ComboBox
-    Friend WithEvents CheckBox1 As CheckBox
+    Friend WithEvents dtpDOB As DateTimePicker
+    Friend WithEvents llblCreateAccount As LinkLabel
+    Friend WithEvents cmbSex As ComboBox
+    Friend WithEvents cbShowPassLI As CheckBox
     Friend WithEvents Label11 As Label
-    Friend WithEvents sifullname As TextBox
-    Friend WithEvents LinkLabel2 As LinkLabel
-    Friend WithEvents Cmbage As ComboBox
+    Friend WithEvents txtFullName As TextBox
+    Friend WithEvents llblHaveAnAccount As LinkLabel
+    Friend WithEvents txtEmail As TextBox
+    Friend WithEvents Label12 As Label
+    Friend WithEvents cbShowPasswordSI As CheckBox
 
 End Class

@@ -1,9 +1,9 @@
-﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
+﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()>
 Partial Class PaymentDetailSlip
     Inherits System.Windows.Forms.Form
 
     'Form overrides dispose to clean up the component list.
-    <System.Diagnostics.DebuggerNonUserCode()> _
+    <System.Diagnostics.DebuggerNonUserCode()>
     Protected Overrides Sub Dispose(ByVal disposing As Boolean)
         Try
             If disposing AndAlso components IsNot Nothing Then
@@ -20,22 +20,25 @@ Partial Class PaymentDetailSlip
     'NOTE: The following procedure is required by the Windows Form Designer
     'It can be modified using the Windows Form Designer.  
     'Do not modify it using the code editor.
-    <System.Diagnostics.DebuggerStepThrough()> _
+    <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
         Panel1 = New Panel()
         GroupBox3 = New GroupBox()
-        TextBox11 = New TextBox()
+        txtPlateNumber = New TextBox()
+        Label16 = New Label()
+        txtCarID = New TextBox()
         Label12 = New Label()
-        TextBox10 = New TextBox()
+        Capacitytxt = New TextBox()
         Label11 = New Label()
-        TextBox9 = New TextBox()
-        TextBox8 = New TextBox()
+        Typetxt = New TextBox()
+        Colortxt = New TextBox()
         Label10 = New Label()
         Label9 = New Label()
         txtCarName = New TextBox()
-        TextBox7 = New TextBox()
+        txtBodyNumber = New TextBox()
         Label8 = New Label()
         Label7 = New Label()
+        GroupBox5 = New GroupBox()
         GroupBox4 = New GroupBox()
         Label15 = New Label()
         BtnCalculate = New Button()
@@ -45,22 +48,20 @@ Partial Class PaymentDetailSlip
         BtnPayment = New Button()
         ToDate = New DateTimePicker()
         FromDate = New DateTimePicker()
-        CheckBox2 = New CheckBox()
         GroupBox2 = New GroupBox()
         Label4 = New Label()
         Label5 = New Label()
         TextBox4 = New TextBox()
-        TextBox5 = New TextBox()
+        txtEmail = New TextBox()
         GroupBox1 = New GroupBox()
         txtDOB = New TextBox()
-        txtSex = New TextBox()
+        txtAge = New TextBox()
         Label6 = New Label()
         txtFullName = New TextBox()
-        txtAge = New TextBox()
+        txtUsername = New TextBox()
         Label3 = New Label()
         Label2 = New Label()
         Label1 = New Label()
-        GroupBox5 = New GroupBox()
         Panel1.SuspendLayout()
         GroupBox3.SuspendLayout()
         GroupBox4.SuspendLayout()
@@ -70,50 +71,70 @@ Partial Class PaymentDetailSlip
         ' 
         ' Panel1
         ' 
-        Panel1.Controls.Add(GroupBox5)
         Panel1.Controls.Add(GroupBox3)
+        Panel1.Controls.Add(GroupBox5)
         Panel1.Controls.Add(GroupBox4)
-        Panel1.Controls.Add(CheckBox2)
         Panel1.Controls.Add(GroupBox2)
         Panel1.Controls.Add(GroupBox1)
-        Panel1.Location = New Point(4, 9)
+        Panel1.Location = New Point(12, 11)
         Panel1.Margin = New Padding(3, 2, 3, 2)
         Panel1.Name = "Panel1"
-        Panel1.Size = New Size(419, 546)
+        Panel1.Size = New Size(444, 562)
         Panel1.TabIndex = 2
         ' 
         ' GroupBox3
         ' 
-        GroupBox3.Controls.Add(TextBox11)
+        GroupBox3.Controls.Add(txtPlateNumber)
+        GroupBox3.Controls.Add(Label16)
+        GroupBox3.Controls.Add(txtCarID)
         GroupBox3.Controls.Add(Label12)
-        GroupBox3.Controls.Add(TextBox10)
+        GroupBox3.Controls.Add(Capacitytxt)
         GroupBox3.Controls.Add(Label11)
-        GroupBox3.Controls.Add(TextBox9)
-        GroupBox3.Controls.Add(TextBox8)
+        GroupBox3.Controls.Add(Typetxt)
+        GroupBox3.Controls.Add(Colortxt)
         GroupBox3.Controls.Add(Label10)
         GroupBox3.Controls.Add(Label9)
         GroupBox3.Controls.Add(txtCarName)
-        GroupBox3.Controls.Add(TextBox7)
+        GroupBox3.Controls.Add(txtBodyNumber)
         GroupBox3.Controls.Add(Label8)
         GroupBox3.Controls.Add(Label7)
-        GroupBox3.Location = New Point(8, 190)
+        GroupBox3.Location = New Point(10, 206)
         GroupBox3.Margin = New Padding(3, 2, 3, 2)
         GroupBox3.Name = "GroupBox3"
         GroupBox3.Padding = New Padding(3, 2, 3, 2)
-        GroupBox3.Size = New Size(409, 160)
+        GroupBox3.Size = New Size(425, 153)
         GroupBox3.TabIndex = 4
         GroupBox3.TabStop = False
         GroupBox3.Text = "Car Details"
         ' 
-        ' TextBox11
+        ' txtPlateNumber
         ' 
-        TextBox11.Location = New Point(101, 84)
-        TextBox11.Margin = New Padding(3, 2, 3, 2)
-        TextBox11.Multiline = True
-        TextBox11.Name = "TextBox11"
-        TextBox11.ReadOnly = True
-        TextBox11.Size = New Size(303, 26)
-        TextBox11.TabIndex = 24
+        txtPlateNumber.Location = New Point(277, 54)
+        txtPlateNumber.Margin = New Padding(3, 2, 3, 2)
+        txtPlateNumber.Multiline = True
+        txtPlateNumber.Name = "txtPlateNumber"
+        txtPlateNumber.ReadOnly = True
+        txtPlateNumber.Size = New Size(102, 20)
+        txtPlateNumber.TabIndex = 26
+        ' 
+        ' Label16
+        ' 
+        Label16.AutoSize = True
+        Label16.Location = New Point(192, 57)
+        Label16.Name = "Label16"
+        Label16.Size = New Size(80, 15)
+        Label16.TabIndex = 25
+        Label16.Text = "Plate Number"
+        ' 
+        ' txtCarID
+        ' 
+        txtCarID.Location = New Point(95, 54)
+        txtCarID.Margin = New Padding(3, 2, 3, 2)
+        txtCarID.Multiline = True
+        txtCarID.Name = "txtCarID"
+        txtCarID.ReadOnly = True
+        txtCarID.Size = New Size(95, 20)
+        txtCarID.TabIndex = 24
         ' 
         ' Label12
         ' 
@@ -124,49 +145,49 @@ Partial Class PaymentDetailSlip
         Label12.TabIndex = 23
         Label12.Text = "Body Number"
         ' 
-        ' TextBox10
+        ' Capacitytxt
         ' 
-        TextBox10.Location = New Point(326, 122)
-        TextBox10.Margin = New Padding(3, 2, 3, 2)
-        TextBox10.Multiline = True
-        TextBox10.Name = "TextBox10"
-        TextBox10.ReadOnly = True
-        TextBox10.Size = New Size(78, 26)
-        TextBox10.TabIndex = 22
+        Capacitytxt.Location = New Point(310, 121)
+        Capacitytxt.Margin = New Padding(3, 2, 3, 2)
+        Capacitytxt.Multiline = True
+        Capacitytxt.Name = "Capacitytxt"
+        Capacitytxt.ReadOnly = True
+        Capacitytxt.Size = New Size(69, 20)
+        Capacitytxt.TabIndex = 22
         ' 
         ' Label11
         ' 
         Label11.AutoSize = True
-        Label11.Location = New Point(263, 124)
+        Label11.Location = New Point(251, 124)
         Label11.Name = "Label11"
         Label11.Size = New Size(53, 15)
         Label11.TabIndex = 21
         Label11.Text = "Capacity"
         ' 
-        ' TextBox9
+        ' Typetxt
         ' 
-        TextBox9.Location = New Point(168, 122)
-        TextBox9.Margin = New Padding(3, 2, 3, 2)
-        TextBox9.Multiline = True
-        TextBox9.Name = "TextBox9"
-        TextBox9.ReadOnly = True
-        TextBox9.Size = New Size(95, 26)
-        TextBox9.TabIndex = 20
+        Typetxt.Location = New Point(163, 123)
+        Typetxt.Margin = New Padding(3, 2, 3, 2)
+        Typetxt.Multiline = True
+        Typetxt.Name = "Typetxt"
+        Typetxt.ReadOnly = True
+        Typetxt.Size = New Size(84, 20)
+        Typetxt.TabIndex = 20
         ' 
-        ' TextBox8
+        ' Colortxt
         ' 
-        TextBox8.Location = New Point(48, 122)
-        TextBox8.Margin = New Padding(3, 2, 3, 2)
-        TextBox8.Multiline = True
-        TextBox8.Name = "TextBox8"
-        TextBox8.ReadOnly = True
-        TextBox8.Size = New Size(79, 26)
-        TextBox8.TabIndex = 19
+        Colortxt.Location = New Point(50, 124)
+        Colortxt.Margin = New Padding(3, 2, 3, 2)
+        Colortxt.Multiline = True
+        Colortxt.Name = "Colortxt"
+        Colortxt.ReadOnly = True
+        Colortxt.Size = New Size(70, 20)
+        Colortxt.TabIndex = 19
         ' 
         ' Label10
         ' 
         Label10.AutoSize = True
-        Label10.Location = New Point(128, 124)
+        Label10.Location = New Point(126, 126)
         Label10.Name = "Label10"
         Label10.Size = New Size(31, 15)
         Label10.TabIndex = 18
@@ -183,7 +204,7 @@ Partial Class PaymentDetailSlip
         ' 
         ' txtCarName
         ' 
-        txtCarName.Location = New Point(101, 24)
+        txtCarName.Location = New Point(94, 20)
         txtCarName.Margin = New Padding(3, 2, 3, 2)
         txtCarName.Multiline = True
         txtCarName.Name = "txtCarName"
@@ -191,24 +212,24 @@ Partial Class PaymentDetailSlip
         txtCarName.Size = New Size(303, 26)
         txtCarName.TabIndex = 16
         ' 
-        ' TextBox7
+        ' txtBodyNumber
         ' 
-        TextBox7.Location = New Point(101, 54)
-        TextBox7.Margin = New Padding(3, 2, 3, 2)
-        TextBox7.Multiline = True
-        TextBox7.Name = "TextBox7"
-        TextBox7.ReadOnly = True
-        TextBox7.Size = New Size(303, 26)
-        TextBox7.TabIndex = 15
+        txtBodyNumber.Location = New Point(95, 83)
+        txtBodyNumber.Margin = New Padding(3, 2, 3, 2)
+        txtBodyNumber.Multiline = True
+        txtBodyNumber.Name = "txtBodyNumber"
+        txtBodyNumber.ReadOnly = True
+        txtBodyNumber.Size = New Size(284, 20)
+        txtBodyNumber.TabIndex = 15
         ' 
         ' Label8
         ' 
         Label8.AutoSize = True
         Label8.Location = New Point(8, 56)
         Label8.Name = "Label8"
-        Label8.Size = New Size(80, 15)
+        Label8.Size = New Size(39, 15)
         Label8.TabIndex = 14
-        Label8.Text = "Plate Number"
+        Label8.Text = "Car ID"
         ' 
         ' Label7
         ' 
@@ -218,6 +239,15 @@ Partial Class PaymentDetailSlip
         Label7.Size = New Size(60, 15)
         Label7.TabIndex = 13
         Label7.Text = "Car Name"
+        ' 
+        ' GroupBox5
+        ' 
+        GroupBox5.Location = New Point(287, 362)
+        GroupBox5.Name = "GroupBox5"
+        GroupBox5.Size = New Size(148, 192)
+        GroupBox5.TabIndex = 5
+        GroupBox5.TabStop = False
+        GroupBox5.Text = "Receipt"
         ' 
         ' GroupBox4
         ' 
@@ -229,11 +259,11 @@ Partial Class PaymentDetailSlip
         GroupBox4.Controls.Add(BtnPayment)
         GroupBox4.Controls.Add(ToDate)
         GroupBox4.Controls.Add(FromDate)
-        GroupBox4.Location = New Point(8, 356)
+        GroupBox4.Location = New Point(5, 368)
         GroupBox4.Margin = New Padding(3, 2, 3, 2)
         GroupBox4.Name = "GroupBox4"
         GroupBox4.Padding = New Padding(3, 2, 3, 2)
-        GroupBox4.Size = New Size(270, 188)
+        GroupBox4.Size = New Size(270, 192)
         GroupBox4.TabIndex = 3
         GroupBox4.TabStop = False
         GroupBox4.Text = "Payment Method"
@@ -314,28 +344,17 @@ Partial Class PaymentDetailSlip
         FromDate.Size = New Size(211, 23)
         FromDate.TabIndex = 13
         ' 
-        ' CheckBox2
-        ' 
-        CheckBox2.AutoSize = True
-        CheckBox2.Location = New Point(98, 490)
-        CheckBox2.Margin = New Padding(3, 2, 3, 2)
-        CheckBox2.Name = "CheckBox2"
-        CheckBox2.Size = New Size(85, 19)
-        CheckBox2.TabIndex = 1
-        CheckBox2.Text = "With Driver"
-        CheckBox2.UseVisualStyleBackColor = True
-        ' 
         ' GroupBox2
         ' 
         GroupBox2.Controls.Add(Label4)
         GroupBox2.Controls.Add(Label5)
         GroupBox2.Controls.Add(TextBox4)
-        GroupBox2.Controls.Add(TextBox5)
-        GroupBox2.Location = New Point(3, 100)
+        GroupBox2.Controls.Add(txtEmail)
+        GroupBox2.Location = New Point(10, 117)
         GroupBox2.Margin = New Padding(3, 2, 3, 2)
         GroupBox2.Name = "GroupBox2"
         GroupBox2.Padding = New Padding(3, 2, 3, 2)
-        GroupBox2.Size = New Size(414, 86)
+        GroupBox2.Size = New Size(425, 85)
         GroupBox2.TabIndex = 2
         GroupBox2.TabStop = False
         GroupBox2.Text = "Contact Details"
@@ -343,7 +362,7 @@ Partial Class PaymentDetailSlip
         ' Label4
         ' 
         Label4.AutoSize = True
-        Label4.Location = New Point(5, 28)
+        Label4.Location = New Point(8, 20)
         Label4.Name = "Label4"
         Label4.Size = New Size(36, 15)
         Label4.TabIndex = 7
@@ -352,7 +371,7 @@ Partial Class PaymentDetailSlip
         ' Label5
         ' 
         Label5.AutoSize = True
-        Label5.Location = New Point(5, 55)
+        Label5.Location = New Point(10, 50)
         Label5.Name = "Label5"
         Label5.Size = New Size(71, 15)
         Label5.TabIndex = 8
@@ -360,38 +379,39 @@ Partial Class PaymentDetailSlip
         ' 
         ' TextBox4
         ' 
-        TextBox4.Location = New Point(87, 52)
+        TextBox4.Location = New Point(87, 47)
         TextBox4.Margin = New Padding(3, 2, 3, 2)
         TextBox4.Multiline = True
         TextBox4.Name = "TextBox4"
-        TextBox4.Size = New Size(290, 26)
+        TextBox4.Size = New Size(303, 26)
         TextBox4.TabIndex = 6
         ' 
-        ' TextBox5
+        ' txtEmail
         ' 
-        TextBox5.Location = New Point(87, 22)
-        TextBox5.Margin = New Padding(3, 2, 3, 2)
-        TextBox5.Multiline = True
-        TextBox5.Name = "TextBox5"
-        TextBox5.Size = New Size(290, 26)
-        TextBox5.TabIndex = 9
+        txtEmail.Location = New Point(87, 17)
+        txtEmail.Margin = New Padding(3, 2, 3, 2)
+        txtEmail.Multiline = True
+        txtEmail.Name = "txtEmail"
+        txtEmail.ReadOnly = True
+        txtEmail.Size = New Size(303, 26)
+        txtEmail.TabIndex = 9
         ' 
         ' GroupBox1
         ' 
         GroupBox1.Controls.Add(txtDOB)
-        GroupBox1.Controls.Add(txtSex)
+        GroupBox1.Controls.Add(txtAge)
         GroupBox1.Controls.Add(Label6)
         GroupBox1.Controls.Add(txtFullName)
-        GroupBox1.Controls.Add(txtAge)
+        GroupBox1.Controls.Add(txtUsername)
         GroupBox1.Controls.Add(Label3)
         GroupBox1.Controls.Add(Label2)
         GroupBox1.Controls.Add(Label1)
-        GroupBox1.Location = New Point(3, 2)
+        GroupBox1.Location = New Point(10, 11)
         GroupBox1.Margin = New Padding(3, 2, 3, 2)
         GroupBox1.Name = "GroupBox1"
         GroupBox1.Padding = New Padding(3, 2, 3, 2)
         GroupBox1.RightToLeft = RightToLeft.No
-        GroupBox1.Size = New Size(414, 93)
+        GroupBox1.Size = New Size(425, 102)
         GroupBox1.TabIndex = 1
         GroupBox1.TabStop = False
         GroupBox1.Text = "Customer Information"
@@ -403,18 +423,18 @@ Partial Class PaymentDetailSlip
         txtDOB.Multiline = True
         txtDOB.Name = "txtDOB"
         txtDOB.ReadOnly = True
-        txtDOB.Size = New Size(223, 24)
+        txtDOB.Size = New Size(152, 24)
         txtDOB.TabIndex = 14
         ' 
-        ' txtSex
+        ' txtAge
         ' 
-        txtSex.Location = New Point(344, 56)
-        txtSex.Margin = New Padding(3, 2, 3, 2)
-        txtSex.Multiline = True
-        txtSex.Name = "txtSex"
-        txtSex.ReadOnly = True
-        txtSex.Size = New Size(65, 26)
-        txtSex.TabIndex = 13
+        txtAge.Location = New Point(296, 56)
+        txtAge.Margin = New Padding(3, 2, 3, 2)
+        txtAge.Multiline = True
+        txtAge.Name = "txtAge"
+        txtAge.ReadOnly = True
+        txtAge.Size = New Size(65, 26)
+        txtAge.TabIndex = 13
         ' 
         ' Label6
         ' 
@@ -432,36 +452,36 @@ Partial Class PaymentDetailSlip
         txtFullName.Multiline = True
         txtFullName.Name = "txtFullName"
         txtFullName.ReadOnly = True
-        txtFullName.Size = New Size(223, 26)
+        txtFullName.Size = New Size(152, 26)
         txtFullName.TabIndex = 11
         ' 
-        ' txtAge
+        ' txtUsername
         ' 
-        txtAge.Location = New Point(344, 23)
-        txtAge.Margin = New Padding(3, 2, 3, 2)
-        txtAge.Multiline = True
-        txtAge.Name = "txtAge"
-        txtAge.ReadOnly = True
-        txtAge.Size = New Size(65, 26)
-        txtAge.TabIndex = 4
+        txtUsername.Location = New Point(296, 23)
+        txtUsername.Margin = New Padding(3, 2, 3, 2)
+        txtUsername.Multiline = True
+        txtUsername.Name = "txtUsername"
+        txtUsername.ReadOnly = True
+        txtUsername.Size = New Size(94, 26)
+        txtUsername.TabIndex = 4
         ' 
         ' Label3
         ' 
         Label3.AutoSize = True
-        Label3.Location = New Point(307, 58)
+        Label3.Location = New Point(234, 63)
         Label3.Name = "Label3"
-        Label3.Size = New Size(25, 15)
+        Label3.Size = New Size(31, 15)
         Label3.TabIndex = 3
-        Label3.Text = "Sex"
+        Label3.Text = "Age:"
         ' 
         ' Label2
         ' 
         Label2.AutoSize = True
-        Label2.Location = New Point(307, 26)
+        Label2.Location = New Point(234, 32)
         Label2.Name = "Label2"
-        Label2.Size = New Size(28, 15)
+        Label2.Size = New Size(63, 15)
         Label2.TabIndex = 2
-        Label2.Text = "Age"
+        Label2.Text = "Username:"
         ' 
         ' Label1
         ' 
@@ -472,26 +492,16 @@ Partial Class PaymentDetailSlip
         Label1.TabIndex = 0
         Label1.Text = "FullName"
         ' 
-        ' GroupBox5
-        ' 
-        GroupBox5.Location = New Point(281, 356)
-        GroupBox5.Name = "GroupBox5"
-        GroupBox5.Size = New Size(133, 190)
-        GroupBox5.TabIndex = 5
-        GroupBox5.TabStop = False
-        GroupBox5.Text = "Receipt"
-        ' 
         ' PaymentDetailSlip
         ' 
-        AutoScaleDimensions = New SizeF(7F, 15F)
+        AutoScaleDimensions = New SizeF(7.0F, 15.0F)
         AutoScaleMode = AutoScaleMode.Font
-        ClientSize = New Size(428, 564)
+        ClientSize = New Size(462, 580)
         Controls.Add(Panel1)
         Margin = New Padding(3, 2, 3, 2)
         Name = "PaymentDetailSlip"
         Text = "DetailsReceipt"
         Panel1.ResumeLayout(False)
-        Panel1.PerformLayout()
         GroupBox3.ResumeLayout(False)
         GroupBox3.PerformLayout()
         GroupBox4.ResumeLayout(False)
@@ -505,31 +515,30 @@ Partial Class PaymentDetailSlip
     Friend WithEvents Panel1 As Panel
     Friend WithEvents GroupBox1 As GroupBox
     Friend WithEvents Label1 As Label
-    Friend WithEvents txtAge As TextBox
+    Friend WithEvents txtUsername As TextBox
     Friend WithEvents Label3 As Label
     Friend WithEvents Label2 As Label
     Friend WithEvents Label4 As Label
     Friend WithEvents TextBox4 As TextBox
-    Friend WithEvents TextBox5 As TextBox
+    Friend WithEvents txtEmail As TextBox
     Friend WithEvents Label5 As Label
     Friend WithEvents txtFullName As TextBox
     Friend WithEvents GroupBox2 As GroupBox
     Friend WithEvents Label6 As Label
     Friend WithEvents GroupBox3 As GroupBox
-    Friend WithEvents TextBox9 As TextBox
-    Friend WithEvents TextBox8 As TextBox
+    Friend WithEvents Typetxt As TextBox
+    Friend WithEvents Colortxt As TextBox
     Friend WithEvents Label10 As Label
     Friend WithEvents Label9 As Label
     Friend WithEvents txtCarName As TextBox
-    Friend WithEvents TextBox7 As TextBox
+    Friend WithEvents txtBodyNumber As TextBox
     Friend WithEvents Label8 As Label
     Friend WithEvents Label7 As Label
-    Friend WithEvents TextBox11 As TextBox
+    Friend WithEvents txtCarID As TextBox
     Friend WithEvents Label12 As Label
-    Friend WithEvents TextBox10 As TextBox
+    Friend WithEvents Capacitytxt As TextBox
     Friend WithEvents Label11 As Label
     Friend WithEvents GroupBox4 As GroupBox
-    Friend WithEvents CheckBox2 As CheckBox
     Friend WithEvents ToDate As DateTimePicker
     Friend WithEvents FromDate As DateTimePicker
     Friend WithEvents BtnPayment As Button
@@ -538,7 +547,9 @@ Partial Class PaymentDetailSlip
     Friend WithEvents Label13 As Label
     Friend WithEvents Label15 As Label
     Friend WithEvents BtnCalculate As Button
-    Friend WithEvents txtSex As TextBox
+    Friend WithEvents txtAge As TextBox
     Friend WithEvents txtDOB As TextBox
     Friend WithEvents GroupBox5 As GroupBox
+    Friend WithEvents txtPlateNumber As TextBox
+    Friend WithEvents Label16 As Label
 End Class

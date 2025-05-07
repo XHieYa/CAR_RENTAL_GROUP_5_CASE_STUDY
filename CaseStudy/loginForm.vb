@@ -29,9 +29,15 @@ Public Class loginForm
         con.Close()
 
         If count > 0 Then
-            MessageBox.Show("Login Successfully", "INFO", MessageBoxButtons.OK, MessageBoxIcon.Information) 'Will be key to transfering to next Form
-            Me.Hide()
-            BookingForm.Show()
+            If txtuser.Text = "admin" And txtpass.Text = "admin" Then
+                Me.Hide()
+                AdminForm.Show()
+            Else
+                MessageBox.Show("Login Successfully", "INFO", MessageBoxButtons.OK, MessageBoxIcon.Information) 'Will be key to transfering to next Form
+                Me.Hide()
+                BookingForm.Show()
+            End If
+
         Else
             MessageBox.Show("Login Error") 'Error Message if account is not existing
 
@@ -39,9 +45,9 @@ Public Class loginForm
     End Sub
     Private Sub Form1_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         GroupBox2.Enabled = False 'When the form load only login and sign up will be used
-        DateTimePickerDOB.Value = Now
+        dtpDOB.Value = Now
     End Sub
-    Private Sub LinkLabel1_LinkClicked(sender As Object, e As LinkLabelLinkClickedEventArgs) Handles LinkLabel1.LinkClicked 'if Create account is clicked disable login enable sign-up
+    Private Sub llblCreateAccount_LinkClicked(sender As Object, e As LinkLabelLinkClickedEventArgs) Handles llblCreateAccount.LinkClicked 'if Create account is clicked disable login enable sign-up
         GroupBox2.Enabled = True
         GroupBox1.Enabled = False
     End Sub
@@ -54,61 +60,72 @@ Public Class loginForm
                 End If
             End If
         Next
-        Dim username As String = siusername.Text 'for username checker turns siusername to username variable
+        Dim username As String = txtUsername.Text 'for username checker turns siusername to username variable
         If UsernameExists(username) Then 'uses the UsernameExists Function mentioned above
             MessageBox.Show("Username already exists. Use Another Username", "Info", MessageBoxButtons.OK, MessageBoxIcon.Information) 'Error Message if Username is Already Existing
         Else
             Try
-                Dim query As String = "Insert Into login (Username, Fullname, Password, Age, Sex, Address, Date) VALUES (@Username, @Fullname, @Password, @Age, @Sex, @Address, @Date)" 'Basically putting the value on their own cells for the database
+                Dim query As String = "Insert Into login (Username, Email, Fullname, Password, Age, Sex, Address, Date) VALUES (@Username,@Email, @Fullname, @Password, @Age, @Sex, @Address, @Date)" 'Basically putting the value on their own cells for the database
                 Dim command As New SqlCommand(query, con) 'Individually setting the values and using parameters to be input to their cells
-                command.Parameters.AddWithValue("@Username", siusername.Text)
-                command.Parameters.AddWithValue("@Fullname", sifullname.Text)
-                command.Parameters.AddWithValue("@Password", sipassword.Text)
-                command.Parameters.AddWithValue("@Age", siage.Text)
-                command.Parameters.AddWithValue("@Sex", Cmbsex.SelectedItem.ToString())
-                command.Parameters.AddWithValue("@Address", siaddress.Text)
-                command.Parameters.AddWithValue("@Date", DateOnly.FromDateTime(DateTimePickerDOB.Value.Date))
+                command.Parameters.AddWithValue("@Username", txtUsername.Text)
+                command.Parameters.AddWithValue("@Email", txtEmail.Text)
+                command.Parameters.AddWithValue("@Fullname", txtFullName.Text)
+                command.Parameters.AddWithValue("@Password", txtPassword.Text)
+                command.Parameters.AddWithValue("@Age", txtAge.Text)
+                command.Parameters.AddWithValue("@Sex", cmbSex.SelectedItem.ToString())
+                command.Parameters.AddWithValue("@Address", txtAddress.Text)
+                command.Parameters.AddWithValue("@Date", DateOnly.FromDateTime(dtpDOB.Value.Date))
                 con.Open()
                 command.ExecuteNonQuery() 'Used to create or change data within the database
                 MessageBox.Show("Successfuly Registered Please Log-in", "info", MessageBoxButtons.OK, MessageBoxIcon.Information) 'Message confirming your info has been saved
             Catch ex As Exception
                 MessageBox.Show($"Error adding account: {ex.Message} ") 'Error message if smthng happen within the server
             Finally
-                siusername.Text = "" 'clears sign in for privacy
-                sifullname.Text = ""
-                siage.Text = ""
-                sipassword.Text = ""
-                siaddress.Text = ""
-                Cmbsex.Items.Clear()
-                DateTimePickerDOB.Value = Now
+                txtUsername.Text = "" 'clears sign in for privacy
+                txtFullName.Text = ""
+                txtAge.Text = ""
+                txtPassword.Text = ""
+                txtAddress.Text = ""
+                txtEmail.Text = ""
+                cmbSex.Items.Clear()
+                dtpDOB.Value = Now
                 GroupBox2.Enabled = False 'Makes you relogin to ensure you created the account and it works succesfully
                 GroupBox1.Enabled = True
                 con.Close()
             End Try
         End If
     End Sub
-    Private Sub CheckBox1_CheckedChanged(sender As Object, e As EventArgs) Handles CheckBox1.CheckedChanged 'Just a simple show password
-        If CheckBox1.Checked = True Then
+    Private Sub CheckBox1_CheckedChanged(sender As Object, e As EventArgs) Handles cbShowPassLI.CheckedChanged 'Just a simple show password
+        If cbShowPassLI.Checked = True Then
             txtpass.PasswordChar = ""
         Else
             txtpass.PasswordChar = "*"
         End If
     End Sub
-    Private Sub siage_KeyPress(sender As Object, e As KeyPressEventArgs) Handles siage.KeyPress 'make sure only numbers are held
+    Private Sub siage_KeyPress(sender As Object, e As KeyPressEventArgs) Handles txtAge.KeyPress 'make sure only numbers are held
         If Not Char.IsControl(e.KeyChar) AndAlso Not Char.IsDigit(e.KeyChar) Then
             e.Handled = True
         End If
     End Sub
 
-    Private Sub LinkLabel2_LinkClicked(sender As Object, e As LinkLabelLinkClickedEventArgs) Handles LinkLabel2.LinkClicked
-        siusername.Text = "" 'clears sign in for privacy
-        sifullname.Text = ""
-        siage.Text = ""
-        sipassword.Text = ""
-        siaddress.Text = ""
-        Cmbsex.Items.Clear()
-        DateTimePickerDOB.Value = Now
+    Private Sub llblHaveAnAccount_LinkClicked(sender As Object, e As LinkLabelLinkClickedEventArgs) Handles llblHaveAnAccount.LinkClicked
+        txtUsername.Text = "" 'clears sign in for privacy
+        txtFullName.Text = ""
+        txtAge.Text = ""
+        txtPassword.Text = ""
+        txtEmail.Text = ""
+        txtAddress.Text = ""
+        cmbSex.Items.Clear()
+        dtpDOB.Value = Now
         GroupBox2.Enabled = False 'Makes you relogin to ensure you created the account and it works succesfully
         GroupBox1.Enabled = True
+    End Sub
+
+    Private Sub cbShowPasswordSI_CheckedChanged(sender As Object, e As EventArgs) Handles cbShowPasswordSI.CheckedChanged 'same as the checkbox above
+        If cbShowPasswordSI.Checked = True Then
+            txtPassword.PasswordChar = ""
+        Else
+            txtPassword.PasswordChar = "*"
+        End If
     End Sub
 End Class

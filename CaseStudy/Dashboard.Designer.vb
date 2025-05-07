@@ -24,6 +24,8 @@ Partial Class Dashboard
     Private Sub InitializeComponent()
         TabControl1 = New TabControl()
         TabPage1 = New TabPage()
+        lblEmail = New Label()
+        Button1 = New Button()
         lblDOB = New Label()
         lblAddress = New Label()
         lblSex = New Label()
@@ -32,13 +34,13 @@ Partial Class Dashboard
         Label2 = New Label()
         lblgreet = New Label()
         TabPage2 = New TabPage()
+        BtnDelete = New Button()
         Label3 = New Label()
         Label1 = New Label()
         BtnUpdate = New Button()
         ToDOB = New DateTimePicker()
         FromDOB = New DateTimePicker()
         DGLogs = New DataGridView()
-        Button1 = New Button()
         TabControl1.SuspendLayout()
         TabPage1.SuspendLayout()
         TabPage2.SuspendLayout()
@@ -57,6 +59,7 @@ Partial Class Dashboard
         ' 
         ' TabPage1
         ' 
+        TabPage1.Controls.Add(lblEmail)
         TabPage1.Controls.Add(Button1)
         TabPage1.Controls.Add(lblDOB)
         TabPage1.Controls.Add(lblAddress)
@@ -72,6 +75,24 @@ Partial Class Dashboard
         TabPage1.TabIndex = 0
         TabPage1.Text = "Home"
         TabPage1.UseVisualStyleBackColor = True
+        ' 
+        ' lblEmail
+        ' 
+        lblEmail.AutoSize = True
+        lblEmail.Location = New Point(9, 108)
+        lblEmail.Name = "lblEmail"
+        lblEmail.Size = New Size(73, 15)
+        lblEmail.TabIndex = 8
+        lblEmail.Text = "Email: [User]"
+        ' 
+        ' Button1
+        ' 
+        Button1.Location = New Point(567, 328)
+        Button1.Name = "Button1"
+        Button1.Size = New Size(114, 30)
+        Button1.TabIndex = 7
+        Button1.Text = "Button1"
+        Button1.UseVisualStyleBackColor = True
         ' 
         ' lblDOB
         ' 
@@ -138,6 +159,7 @@ Partial Class Dashboard
         ' 
         ' TabPage2
         ' 
+        TabPage2.Controls.Add(BtnDelete)
         TabPage2.Controls.Add(Label3)
         TabPage2.Controls.Add(Label1)
         TabPage2.Controls.Add(BtnUpdate)
@@ -151,6 +173,15 @@ Partial Class Dashboard
         TabPage2.TabIndex = 1
         TabPage2.Text = "Logs"
         TabPage2.UseVisualStyleBackColor = True
+        ' 
+        ' BtnDelete
+        ' 
+        BtnDelete.Location = New Point(697, 393)
+        BtnDelete.Name = "BtnDelete"
+        BtnDelete.Size = New Size(75, 23)
+        BtnDelete.TabIndex = 6
+        BtnDelete.Text = "Delete"
+        BtnDelete.UseVisualStyleBackColor = True
         ' 
         ' Label3
         ' 
@@ -172,7 +203,7 @@ Partial Class Dashboard
         ' 
         ' BtnUpdate
         ' 
-        BtnUpdate.Location = New Point(666, 393)
+        BtnUpdate.Location = New Point(599, 393)
         BtnUpdate.Name = "BtnUpdate"
         BtnUpdate.Size = New Size(75, 23)
         BtnUpdate.TabIndex = 3
@@ -195,20 +226,16 @@ Partial Class Dashboard
         ' 
         ' DGLogs
         ' 
+        DGLogs.AllowUserToAddRows = False
+        DGLogs.AllowUserToDeleteRows = False
+        DGLogs.AllowUserToResizeColumns = False
+        DGLogs.AllowUserToResizeRows = False
         DGLogs.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize
         DGLogs.Location = New Point(0, 0)
         DGLogs.Name = "DGLogs"
+        DGLogs.ReadOnly = True
         DGLogs.Size = New Size(794, 376)
         DGLogs.TabIndex = 0
-        ' 
-        ' Button1
-        ' 
-        Button1.Location = New Point(567, 328)
-        Button1.Name = "Button1"
-        Button1.Size = New Size(114, 30)
-        Button1.TabIndex = 7
-        Button1.Text = "Button1"
-        Button1.UseVisualStyleBackColor = True
         ' 
         ' Dashboard
         ' 
@@ -244,4 +271,6 @@ Partial Class Dashboard
     Friend WithEvents FromDOB As DateTimePicker
     Friend WithEvents DGLogs As DataGridView
     Friend WithEvents Button1 As Button
+    Friend WithEvents lblEmail As Label
+    Friend WithEvents BtnDelete As Button
 End Class
