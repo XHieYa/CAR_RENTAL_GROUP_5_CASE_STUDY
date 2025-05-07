@@ -103,4 +103,27 @@
     Private Sub B3_Click(sender As Object, e As EventArgs) Handles B3.Click
         Close()
     End Sub
+
+    Private Sub MitsubishiStradaConfirmButton(sender As Object, e As EventArgs) Handles C.Click
+        Me.Hide()
+        BookingForm.Show()
+
+        BookingForm.txtCColor.Text = "Orange"
+        BookingForm.txtCar.Text = "Mitsubishi Strada"
+        BookingForm.txtPlateNumber.Text = ""
+        BookingForm.txtType.Text = "Gasoline"
+        BookingForm.txtCapacity.Text = "4-5 Seaters"
+        BookingForm.TxtCarID.Text = ""
+        BookingForm.txtRate.Text = ""
+    End Sub
+
+    Private Sub C1_Click(sender As Object, e As EventArgs) Handles C1.Click
+        BookingForm.txtCColor.Text = "Orange"
+        BookingForm.txtCar.Text = "Mitsubishi Strada"
+        BookingForm.txtPlateNumber.Text = ""
+        BookingForm.txtType.Text = "Gasoline"
+        BookingForm.txtCapacity.Text = "4-5 Seaters"
+        BookingForm.TxtCarID.Text = ""
+        BookingForm.txtRate.Text = ""
+    End Sub
 End Class

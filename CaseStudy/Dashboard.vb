@@ -42,12 +42,12 @@ Public Class Dashboard
 
     End Sub
     Private Function Checker() As Boolean 'Checks for exisiting data/in between dates of existing schedules so you cant update to a day that's preoccupied
-        Dim query As String = "SELECT COUNT(*) FROM Booking WHERE CarID = @CarID AND Username <> @Username AND StartBookDate <= @NewEndDate AND EndBookDate >= @NewStartDate" 'Iterates where it finds CarID to check if the date thats to be updated is not already taken
+        Dim query As String = "SELECT COUNT(*) FROM Booking WHERE CarID = @CarID AND Username = @Username AND StartBookDate <= @NewEndDate AND EndBookDate >= @NewStartDate" 'Iterates where it finds CarID to check if the date thats to be updated is not already taken
         Using cmd As New SqlCommand(query, con)
             cmd.Parameters.AddWithValue("@CarID", DGLogs.CurrentRow.Cells("CarID").Value) 'Gets the value of the selected row and specific cell
             cmd.Parameters.AddWithValue("@Username", DGLogs.CurrentRow.Cells("Username").Value)
-            cmd.Parameters.AddWithValue("@NewStartDate", FromDOB.Value.Date)
-            cmd.Parameters.AddWithValue("@NewEndDate", ToDOB.Value.Date)
+            cmd.Parameters.AddWithValue("@NewStartDate", DateOnly.FromDateTime(FromDOB.Value.Date))
+            cmd.Parameters.AddWithValue("@NewEndDate", DateOnly.FromDateTime(ToDOB.Value.Date))
 
             con.Open()
             Dim count As Integer = Convert.ToInt32(cmd.ExecuteScalar())
