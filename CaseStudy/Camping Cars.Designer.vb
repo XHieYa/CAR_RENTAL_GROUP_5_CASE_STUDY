@@ -101,6 +101,8 @@ Partial Class Camping_Cars
         Label43 = New Label()
         Label4 = New Label()
         Panel1 = New Panel()
+        Label142 = New Label()
+        Label144 = New Label()
         Label171 = New Label()
         Label170 = New Label()
         PictureBox29 = New PictureBox()
@@ -186,6 +188,8 @@ Partial Class Camping_Cars
         Label80 = New Label()
         Label81 = New Label()
         Panel6 = New Panel()
+        Label147 = New Label()
+        Label148 = New Label()
         Label172 = New Label()
         Label173 = New Label()
         PictureBox30 = New PictureBox()
@@ -275,6 +279,8 @@ Partial Class Camping_Cars
         Label122 = New Label()
         Label123 = New Label()
         Panel9 = New Panel()
+        Label290 = New Label()
+        Label291 = New Label()
         Label174 = New Label()
         Label175 = New Label()
         PictureBox31 = New PictureBox()
@@ -361,6 +367,8 @@ Partial Class Camping_Cars
         Label164 = New Label()
         Label165 = New Label()
         Panel12 = New Panel()
+        Label292 = New Label()
+        Label293 = New Label()
         Label176 = New Label()
         Label177 = New Label()
         PictureBox19 = New PictureBox()
@@ -375,14 +383,6 @@ Partial Class Camping_Cars
         Label167 = New Label()
         Label168 = New Label()
         Label169 = New Label()
-        Label142 = New Label()
-        Label144 = New Label()
-        Label147 = New Label()
-        Label148 = New Label()
-        Label290 = New Label()
-        Label291 = New Label()
-        Label292 = New Label()
-        Label293 = New Label()
         TabControl1.SuspendLayout()
         TabPage1.SuspendLayout()
         Panel3.SuspendLayout()
@@ -1311,6 +1311,26 @@ Partial Class Camping_Cars
         Panel1.Size = New Size(780, 442)
         Panel1.TabIndex = 0
         ' 
+        ' Label142
+        ' 
+        Label142.AutoSize = True
+        Label142.Font = New Font("Century", 9F, FontStyle.Underline)
+        Label142.Location = New Point(140, 65)
+        Label142.Name = "Label142"
+        Label142.Size = New Size(20, 18)
+        Label142.TabIndex = 18
+        Label142.Text = "N"
+        ' 
+        ' Label144
+        ' 
+        Label144.AutoSize = True
+        Label144.Font = New Font("Century", 9F, FontStyle.Bold)
+        Label144.Location = New Point(12, 65)
+        Label144.Name = "Label144"
+        Label144.Size = New Size(121, 18)
+        Label144.TabIndex = 17
+        Label144.Text = "Body Number:"
+        ' 
         ' Label171
         ' 
         Label171.AutoSize = True
@@ -2228,6 +2248,26 @@ Partial Class Camping_Cars
         Panel6.Size = New Size(780, 442)
         Panel6.TabIndex = 4
         ' 
+        ' Label147
+        ' 
+        Label147.AutoSize = True
+        Label147.Font = New Font("Century", 9F, FontStyle.Underline)
+        Label147.Location = New Point(141, 65)
+        Label147.Name = "Label147"
+        Label147.Size = New Size(20, 18)
+        Label147.TabIndex = 14
+        Label147.Text = "N"
+        ' 
+        ' Label148
+        ' 
+        Label148.AutoSize = True
+        Label148.Font = New Font("Century", 9F, FontStyle.Bold)
+        Label148.Location = New Point(12, 65)
+        Label148.Name = "Label148"
+        Label148.Size = New Size(121, 18)
+        Label148.TabIndex = 13
+        Label148.Text = "Body Number:"
+        ' 
         ' Label172
         ' 
         Label172.AutoSize = True
@@ -2289,7 +2329,7 @@ Partial Class Camping_Cars
         ' PictureBox8
         ' 
         PictureBox8.BorderStyle = BorderStyle.Fixed3D
-        PictureBox8.Location = New Point(263, 291)
+        PictureBox8.Location = New Point(259, 291)
         PictureBox8.Name = "PictureBox8"
         PictureBox8.Size = New Size(250, 135)
         PictureBox8.TabIndex = 6
@@ -2325,7 +2365,7 @@ Partial Class Camping_Cars
         ' PictureBox12
         ' 
         PictureBox12.BorderStyle = BorderStyle.Fixed3D
-        PictureBox12.Location = New Point(263, 9)
+        PictureBox12.Location = New Point(259, 9)
         PictureBox12.Name = "PictureBox12"
         PictureBox12.Size = New Size(250, 135)
         PictureBox12.TabIndex = 2
@@ -3196,6 +3236,26 @@ Partial Class Camping_Cars
         Panel9.Name = "Panel9"
         Panel9.Size = New Size(780, 442)
         Panel9.TabIndex = 9
+        ' 
+        ' Label290
+        ' 
+        Label290.AutoSize = True
+        Label290.Font = New Font("Century", 9F, FontStyle.Underline)
+        Label290.Location = New Point(141, 65)
+        Label290.Name = "Label290"
+        Label290.Size = New Size(20, 18)
+        Label290.TabIndex = 14
+        Label290.Text = "N"
+        ' 
+        ' Label291
+        ' 
+        Label291.AutoSize = True
+        Label291.Font = New Font("Century", 9F, FontStyle.Bold)
+        Label291.Location = New Point(12, 65)
+        Label291.Name = "Label291"
+        Label291.Size = New Size(121, 18)
+        Label291.TabIndex = 13
+        Label291.Text = "Body Number:"
         ' 
         ' Label174
         ' 
@@ -4131,6 +4191,26 @@ Partial Class Camping_Cars
         Panel12.Size = New Size(780, 442)
         Panel12.TabIndex = 9
         ' 
+        ' Label292
+        ' 
+        Label292.AutoSize = True
+        Label292.Font = New Font("Century", 9F, FontStyle.Underline)
+        Label292.Location = New Point(141, 65)
+        Label292.Name = "Label292"
+        Label292.Size = New Size(20, 18)
+        Label292.TabIndex = 22
+        Label292.Text = "N"
+        ' 
+        ' Label293
+        ' 
+        Label293.AutoSize = True
+        Label293.Font = New Font("Century", 9F, FontStyle.Bold)
+        Label293.Location = New Point(12, 65)
+        Label293.Name = "Label293"
+        Label293.Size = New Size(121, 18)
+        Label293.TabIndex = 21
+        Label293.Text = "Body Number:"
+        ' 
         ' Label176
         ' 
         Label176.AutoSize = True
@@ -4262,86 +4342,6 @@ Partial Class Camping_Cars
         Label169.Size = New Size(105, 18)
         Label169.TabIndex = 0
         Label169.Text = "Model Year:"
-        ' 
-        ' Label142
-        ' 
-        Label142.AutoSize = True
-        Label142.Font = New Font("Century", 9F, FontStyle.Underline)
-        Label142.Location = New Point(140, 65)
-        Label142.Name = "Label142"
-        Label142.Size = New Size(20, 18)
-        Label142.TabIndex = 18
-        Label142.Text = "N"
-        ' 
-        ' Label144
-        ' 
-        Label144.AutoSize = True
-        Label144.Font = New Font("Century", 9F, FontStyle.Bold)
-        Label144.Location = New Point(12, 65)
-        Label144.Name = "Label144"
-        Label144.Size = New Size(121, 18)
-        Label144.TabIndex = 17
-        Label144.Text = "Body Number:"
-        ' 
-        ' Label147
-        ' 
-        Label147.AutoSize = True
-        Label147.Font = New Font("Century", 9F, FontStyle.Underline)
-        Label147.Location = New Point(141, 65)
-        Label147.Name = "Label147"
-        Label147.Size = New Size(20, 18)
-        Label147.TabIndex = 14
-        Label147.Text = "N"
-        ' 
-        ' Label148
-        ' 
-        Label148.AutoSize = True
-        Label148.Font = New Font("Century", 9F, FontStyle.Bold)
-        Label148.Location = New Point(12, 65)
-        Label148.Name = "Label148"
-        Label148.Size = New Size(121, 18)
-        Label148.TabIndex = 13
-        Label148.Text = "Body Number:"
-        ' 
-        ' Label290
-        ' 
-        Label290.AutoSize = True
-        Label290.Font = New Font("Century", 9F, FontStyle.Underline)
-        Label290.Location = New Point(141, 65)
-        Label290.Name = "Label290"
-        Label290.Size = New Size(20, 18)
-        Label290.TabIndex = 14
-        Label290.Text = "N"
-        ' 
-        ' Label291
-        ' 
-        Label291.AutoSize = True
-        Label291.Font = New Font("Century", 9F, FontStyle.Bold)
-        Label291.Location = New Point(12, 65)
-        Label291.Name = "Label291"
-        Label291.Size = New Size(121, 18)
-        Label291.TabIndex = 13
-        Label291.Text = "Body Number:"
-        ' 
-        ' Label292
-        ' 
-        Label292.AutoSize = True
-        Label292.Font = New Font("Century", 9F, FontStyle.Underline)
-        Label292.Location = New Point(141, 65)
-        Label292.Name = "Label292"
-        Label292.Size = New Size(20, 18)
-        Label292.TabIndex = 22
-        Label292.Text = "N"
-        ' 
-        ' Label293
-        ' 
-        Label293.AutoSize = True
-        Label293.Font = New Font("Century", 9F, FontStyle.Bold)
-        Label293.Location = New Point(12, 65)
-        Label293.Name = "Label293"
-        Label293.Size = New Size(121, 18)
-        Label293.TabIndex = 21
-        Label293.Text = "Body Number:"
         ' 
         ' Camping_Cars
         ' 
