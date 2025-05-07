@@ -101,6 +101,8 @@ Partial Class Camping_Cars
         Label43 = New Label()
         Label4 = New Label()
         Panel1 = New Panel()
+        Label142 = New Label()
+        Label144 = New Label()
         Label171 = New Label()
         Label170 = New Label()
         PictureBox29 = New PictureBox()
@@ -186,6 +188,8 @@ Partial Class Camping_Cars
         Label80 = New Label()
         Label81 = New Label()
         Panel6 = New Panel()
+        Label147 = New Label()
+        Label148 = New Label()
         Label172 = New Label()
         Label173 = New Label()
         PictureBox30 = New PictureBox()
@@ -275,6 +279,8 @@ Partial Class Camping_Cars
         Label122 = New Label()
         Label123 = New Label()
         Panel9 = New Panel()
+        Label290 = New Label()
+        Label291 = New Label()
         Label174 = New Label()
         Label175 = New Label()
         PictureBox31 = New PictureBox()
@@ -361,6 +367,8 @@ Partial Class Camping_Cars
         Label164 = New Label()
         Label165 = New Label()
         Panel12 = New Panel()
+        Label292 = New Label()
+        Label293 = New Label()
         Label176 = New Label()
         Label177 = New Label()
         PictureBox19 = New PictureBox()
@@ -1279,6 +1287,8 @@ Partial Class Camping_Cars
         ' Panel1
         ' 
         Panel1.BorderStyle = BorderStyle.Fixed3D
+        Panel1.Controls.Add(Label142)
+        Panel1.Controls.Add(Label144)
         Panel1.Controls.Add(Label171)
         Panel1.Controls.Add(Label170)
         Panel1.Controls.Add(PictureBox29)
@@ -1301,15 +1311,35 @@ Partial Class Camping_Cars
         Panel1.Size = New Size(780, 442)
         Panel1.TabIndex = 0
         ' 
+        ' Label142
+        ' 
+        Label142.AutoSize = True
+        Label142.Font = New Font("Century", 9F, FontStyle.Underline)
+        Label142.Location = New Point(140, 65)
+        Label142.Name = "Label142"
+        Label142.Size = New Size(20, 18)
+        Label142.TabIndex = 18
+        Label142.Text = "N"
+        ' 
+        ' Label144
+        ' 
+        Label144.AutoSize = True
+        Label144.Font = New Font("Century", 9F, FontStyle.Bold)
+        Label144.Location = New Point(12, 65)
+        Label144.Name = "Label144"
+        Label144.Size = New Size(121, 18)
+        Label144.TabIndex = 17
+        Label144.Text = "Body Number:"
+        ' 
         ' Label171
         ' 
         Label171.AutoSize = True
         Label171.Font = New Font("Century", 9F, FontStyle.Underline)
         Label171.Location = New Point(141, 47)
         Label171.Name = "Label171"
-        Label171.Size = New Size(77, 18)
+        Label171.Size = New Size(71, 18)
         Label171.TabIndex = 16
-        Label171.Text = "ABC 1234"
+        Label171.Text = "PIC 9832"
         ' 
         ' Label170
         ' 
@@ -1324,7 +1354,7 @@ Partial Class Camping_Cars
         ' PictureBox29
         ' 
         PictureBox29.BorderStyle = BorderStyle.Fixed3D
-        PictureBox29.Location = New Point(65, 68)
+        PictureBox29.Location = New Point(56, 90)
         PictureBox29.Name = "PictureBox29"
         PictureBox29.Size = New Size(148, 108)
         PictureBox29.TabIndex = 14
@@ -1333,7 +1363,7 @@ Partial Class Camping_Cars
         ' PictureBox28
         ' 
         PictureBox28.BorderStyle = BorderStyle.Fixed3D
-        PictureBox28.Location = New Point(65, 182)
+        PictureBox28.Location = New Point(56, 204)
         PictureBox28.Name = "PictureBox28"
         PictureBox28.Size = New Size(148, 108)
         PictureBox28.TabIndex = 13
@@ -1342,7 +1372,7 @@ Partial Class Camping_Cars
         ' PictureBox27
         ' 
         PictureBox27.BorderStyle = BorderStyle.Fixed3D
-        PictureBox27.Location = New Point(9, 303)
+        PictureBox27.Location = New Point(9, 324)
         PictureBox27.Name = "PictureBox27"
         PictureBox27.Size = New Size(148, 108)
         PictureBox27.TabIndex = 12
@@ -1351,7 +1381,7 @@ Partial Class Camping_Cars
         ' PictureBox26
         ' 
         PictureBox26.BorderStyle = BorderStyle.Fixed3D
-        PictureBox26.Location = New Point(163, 303)
+        PictureBox26.Location = New Point(163, 324)
         PictureBox26.Name = "PictureBox26"
         PictureBox26.Size = New Size(148, 108)
         PictureBox26.TabIndex = 11
@@ -1360,7 +1390,7 @@ Partial Class Camping_Cars
         ' PictureBox25
         ' 
         PictureBox25.BorderStyle = BorderStyle.Fixed3D
-        PictureBox25.Location = New Point(317, 303)
+        PictureBox25.Location = New Point(317, 324)
         PictureBox25.Name = "PictureBox25"
         PictureBox25.Size = New Size(148, 108)
         PictureBox25.TabIndex = 10
@@ -1369,7 +1399,7 @@ Partial Class Camping_Cars
         ' PictureBox6
         ' 
         PictureBox6.BorderStyle = BorderStyle.Fixed3D
-        PictureBox6.Location = New Point(471, 303)
+        PictureBox6.Location = New Point(471, 324)
         PictureBox6.Name = "PictureBox6"
         PictureBox6.Size = New Size(148, 108)
         PictureBox6.TabIndex = 9
@@ -1398,7 +1428,7 @@ Partial Class Camping_Cars
         ' PictureBox5
         ' 
         PictureBox5.BorderStyle = BorderStyle.Fixed3D
-        PictureBox5.Location = New Point(625, 303)
+        PictureBox5.Location = New Point(625, 324)
         PictureBox5.Name = "PictureBox5"
         PictureBox5.Size = New Size(148, 108)
         PictureBox5.TabIndex = 6
@@ -1407,7 +1437,7 @@ Partial Class Camping_Cars
         ' PictureBox4
         ' 
         PictureBox4.BorderStyle = BorderStyle.Fixed3D
-        PictureBox4.Location = New Point(523, 16)
+        PictureBox4.Location = New Point(506, 38)
         PictureBox4.Name = "PictureBox4"
         PictureBox4.Size = New Size(250, 135)
         PictureBox4.TabIndex = 5
@@ -1416,7 +1446,7 @@ Partial Class Camping_Cars
         ' PictureBox3
         ' 
         PictureBox3.BorderStyle = BorderStyle.Fixed3D
-        PictureBox3.Location = New Point(523, 157)
+        PictureBox3.Location = New Point(506, 179)
         PictureBox3.Name = "PictureBox3"
         PictureBox3.Size = New Size(250, 135)
         PictureBox3.TabIndex = 4
@@ -1425,7 +1455,7 @@ Partial Class Camping_Cars
         ' PictureBox2
         ' 
         PictureBox2.BorderStyle = BorderStyle.Fixed3D
-        PictureBox2.Location = New Point(267, 156)
+        PictureBox2.Location = New Point(250, 178)
         PictureBox2.Name = "PictureBox2"
         PictureBox2.Size = New Size(250, 135)
         PictureBox2.TabIndex = 3
@@ -1434,7 +1464,7 @@ Partial Class Camping_Cars
         ' PictureBox1
         ' 
         PictureBox1.BorderStyle = BorderStyle.Fixed3D
-        PictureBox1.Location = New Point(267, 15)
+        PictureBox1.Location = New Point(250, 37)
         PictureBox1.Name = "PictureBox1"
         PictureBox1.Size = New Size(250, 135)
         PictureBox1.TabIndex = 2
@@ -2198,6 +2228,8 @@ Partial Class Camping_Cars
         ' Panel6
         ' 
         Panel6.BorderStyle = BorderStyle.Fixed3D
+        Panel6.Controls.Add(Label147)
+        Panel6.Controls.Add(Label148)
         Panel6.Controls.Add(Label172)
         Panel6.Controls.Add(Label173)
         Panel6.Controls.Add(PictureBox30)
@@ -2216,15 +2248,35 @@ Partial Class Camping_Cars
         Panel6.Size = New Size(780, 442)
         Panel6.TabIndex = 4
         ' 
+        ' Label147
+        ' 
+        Label147.AutoSize = True
+        Label147.Font = New Font("Century", 9F, FontStyle.Underline)
+        Label147.Location = New Point(141, 65)
+        Label147.Name = "Label147"
+        Label147.Size = New Size(20, 18)
+        Label147.TabIndex = 14
+        Label147.Text = "N"
+        ' 
+        ' Label148
+        ' 
+        Label148.AutoSize = True
+        Label148.Font = New Font("Century", 9F, FontStyle.Bold)
+        Label148.Location = New Point(12, 65)
+        Label148.Name = "Label148"
+        Label148.Size = New Size(121, 18)
+        Label148.TabIndex = 13
+        Label148.Text = "Body Number:"
+        ' 
         ' Label172
         ' 
         Label172.AutoSize = True
         Label172.Font = New Font("Century", 9F, FontStyle.Underline)
         Label172.Location = New Point(141, 47)
         Label172.Name = "Label172"
-        Label172.Size = New Size(77, 18)
+        Label172.Size = New Size(75, 18)
         Label172.TabIndex = 12
-        Label172.Text = "ABC 1234"
+        Label172.Text = "VCZ 2415"
         ' 
         ' Label173
         ' 
@@ -2277,7 +2329,7 @@ Partial Class Camping_Cars
         ' PictureBox8
         ' 
         PictureBox8.BorderStyle = BorderStyle.Fixed3D
-        PictureBox8.Location = New Point(263, 291)
+        PictureBox8.Location = New Point(259, 291)
         PictureBox8.Name = "PictureBox8"
         PictureBox8.Size = New Size(250, 135)
         PictureBox8.TabIndex = 6
@@ -2313,7 +2365,7 @@ Partial Class Camping_Cars
         ' PictureBox12
         ' 
         PictureBox12.BorderStyle = BorderStyle.Fixed3D
-        PictureBox12.Location = New Point(263, 9)
+        PictureBox12.Location = New Point(259, 9)
         PictureBox12.Name = "PictureBox12"
         PictureBox12.Size = New Size(250, 135)
         PictureBox12.TabIndex = 2
@@ -3164,6 +3216,8 @@ Partial Class Camping_Cars
         ' Panel9
         ' 
         Panel9.BorderStyle = BorderStyle.Fixed3D
+        Panel9.Controls.Add(Label290)
+        Panel9.Controls.Add(Label291)
         Panel9.Controls.Add(Label174)
         Panel9.Controls.Add(Label175)
         Panel9.Controls.Add(PictureBox31)
@@ -3183,15 +3237,35 @@ Partial Class Camping_Cars
         Panel9.Size = New Size(780, 442)
         Panel9.TabIndex = 9
         ' 
+        ' Label290
+        ' 
+        Label290.AutoSize = True
+        Label290.Font = New Font("Century", 9F, FontStyle.Underline)
+        Label290.Location = New Point(141, 65)
+        Label290.Name = "Label290"
+        Label290.Size = New Size(20, 18)
+        Label290.TabIndex = 14
+        Label290.Text = "N"
+        ' 
+        ' Label291
+        ' 
+        Label291.AutoSize = True
+        Label291.Font = New Font("Century", 9F, FontStyle.Bold)
+        Label291.Location = New Point(12, 65)
+        Label291.Name = "Label291"
+        Label291.Size = New Size(121, 18)
+        Label291.TabIndex = 13
+        Label291.Text = "Body Number:"
+        ' 
         ' Label174
         ' 
         Label174.AutoSize = True
         Label174.Font = New Font("Century", 9F, FontStyle.Underline)
         Label174.Location = New Point(141, 47)
         Label174.Name = "Label174"
-        Label174.Size = New Size(77, 18)
+        Label174.Size = New Size(73, 18)
         Label174.TabIndex = 12
-        Label174.Text = "ABC 1234"
+        Label174.Text = "UIC 6452"
         ' 
         ' Label175
         ' 
@@ -4096,6 +4170,8 @@ Partial Class Camping_Cars
         ' Panel12
         ' 
         Panel12.BorderStyle = BorderStyle.Fixed3D
+        Panel12.Controls.Add(Label292)
+        Panel12.Controls.Add(Label293)
         Panel12.Controls.Add(Label176)
         Panel12.Controls.Add(Label177)
         Panel12.Controls.Add(PictureBox19)
@@ -4115,15 +4191,35 @@ Partial Class Camping_Cars
         Panel12.Size = New Size(780, 442)
         Panel12.TabIndex = 9
         ' 
+        ' Label292
+        ' 
+        Label292.AutoSize = True
+        Label292.Font = New Font("Century", 9F, FontStyle.Underline)
+        Label292.Location = New Point(141, 65)
+        Label292.Name = "Label292"
+        Label292.Size = New Size(20, 18)
+        Label292.TabIndex = 22
+        Label292.Text = "N"
+        ' 
+        ' Label293
+        ' 
+        Label293.AutoSize = True
+        Label293.Font = New Font("Century", 9F, FontStyle.Bold)
+        Label293.Location = New Point(12, 65)
+        Label293.Name = "Label293"
+        Label293.Size = New Size(121, 18)
+        Label293.TabIndex = 21
+        Label293.Text = "Body Number:"
+        ' 
         ' Label176
         ' 
         Label176.AutoSize = True
         Label176.Font = New Font("Century", 9F, FontStyle.Underline)
         Label176.Location = New Point(141, 47)
         Label176.Name = "Label176"
-        Label176.Size = New Size(77, 18)
+        Label176.Size = New Size(75, 18)
         Label176.TabIndex = 20
-        Label176.Text = "ABC 1234"
+        Label176.Text = "ZAC 3245"
         ' 
         ' Label177
         ' 
@@ -4675,4 +4771,12 @@ Partial Class Camping_Cars
     Friend WithEvents Label287 As Label
     Friend WithEvents Label288 As Label
     Friend WithEvents Label289 As Label
+    Friend WithEvents Label142 As Label
+    Friend WithEvents Label144 As Label
+    Friend WithEvents Label147 As Label
+    Friend WithEvents Label148 As Label
+    Friend WithEvents Label290 As Label
+    Friend WithEvents Label291 As Label
+    Friend WithEvents Label292 As Label
+    Friend WithEvents Label293 As Label
 End Class
