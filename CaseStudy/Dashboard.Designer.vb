@@ -41,6 +41,7 @@ Partial Class Dashboard
         ToDOB = New DateTimePicker()
         FromDOB = New DateTimePicker()
         DGLogs = New DataGridView()
+        lblRecord = New Label()
         TabControl1.SuspendLayout()
         TabPage1.SuspendLayout()
         TabPage2.SuspendLayout()
@@ -59,6 +60,7 @@ Partial Class Dashboard
         ' 
         ' TabPage1
         ' 
+        TabPage1.Controls.Add(lblRecord)
         TabPage1.Controls.Add(lblEmail)
         TabPage1.Controls.Add(Button1)
         TabPage1.Controls.Add(lblDOB)
@@ -237,6 +239,15 @@ Partial Class Dashboard
         DGLogs.Size = New Size(794, 376)
         DGLogs.TabIndex = 0
         ' 
+        ' lblRecord
+        ' 
+        lblRecord.AutoSize = True
+        lblRecord.Location = New Point(3, 123)
+        lblRecord.Name = "lblRecord"
+        lblRecord.Size = New Size(81, 15)
+        lblRecord.TabIndex = 9
+        lblRecord.Text = "Record: [User]"
+        ' 
         ' Dashboard
         ' 
         AutoScaleDimensions = New SizeF(7F, 15F)
@@ -273,4 +284,5 @@ Partial Class Dashboard
     Friend WithEvents Button1 As Button
     Friend WithEvents lblEmail As Label
     Friend WithEvents BtnDelete As Button
+    Friend WithEvents lblRecord As Label
 End Class
