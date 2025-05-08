@@ -62,38 +62,44 @@ Public Class BookingForm
         RowLoader()
         ScheduleShower()
     End Sub
-    Private Sub ScheduleShower() 'Function that shows/loads the calendar 
+    Private Sub ScheduleShower()
         Dim con As New SqlConnection("Data Source=(localdb)\MSSQLLocalDB;Initial Catalog=CustomerDB;Integrated Security=True")
         Dim selectedMonth As DateTime = New DateTime(MnthC.SelectionStart.Year, MnthC.SelectionStart.Month, 1)
         Dim startOfMonth As DateTime = selectedMonth
         Dim endOfMonth As DateTime = selectedMonth.AddMonths(1).AddDays(-1)
-        Dim query As String = "SELECT CarID, StartBookDate, EndBookDate FROM Booking WHERE StartBookDate <= @EndOfMonth AND EndBookDate >= @StartOfMonth"
+        Dim query As String = "SELECT CarID, CarName, StartBookDate, EndBookDate FROM Booking WHERE StartBookDate <= @EndOfMonth AND EndBookDate >= @StartOfMonth"
         Dim cmd As New SqlCommand(query, con)
         cmd.Parameters.AddWithValue("@StartOfMonth", startOfMonth)
         cmd.Parameters.AddWithValue("@EndOfMonth", endOfMonth)
-
         con.Open()
         Dim Carreader As SqlDataReader = cmd.ExecuteReader()
-
-        While Carreader.Read() 'SQL DataReader
-            Dim carID As Integer = Carreader.GetInt32(0)
-            Dim startDate As DateTime = Carreader.GetDateTime(1)
-            Dim endDate As DateTime = Carreader.GetDateTime(2)
-
-            Dim row As Integer = carID - 1
-
+        For Each row As DataGridViewRow In DGVSchedules.Rows
+            For Each cell As DataGridViewCell In row.Cells
+                cell.Style.BackColor = Color.White
+            Next
+        Next
+        While Carreader.Read()
+            Dim carName As String = Carreader.GetString(1)
+            Dim startDate As DateTime = Carreader.GetDateTime(2)
+            Dim endDate As DateTime = Carreader.GetDateTime(3)
             Dim currentDate As DateTime = startDate
-            While currentDate <= endDate 'This marks the days and calculates which part should be shaded depending on the dates seted and calculated
+            While currentDate <= endDate
                 If currentDate.Month = startOfMonth.Month AndAlso currentDate.Year = startOfMonth.Year Then
                     Dim column As Integer = currentDate.Day
-                    If row >= 0 And row < DGVSchedules.Rows.Count And column >= 1 And column < DGVSchedules.ColumnCount Then
-                        DGVSchedules.Rows(row).Cells(column).Style.BackColor = Color.Red
+                    Dim rowIndex As Integer = -1
+                    For i As Integer = 0 To DGVSchedules.Rows.Count - 1
+                        If DGVSchedules.Rows(i).Cells(0).Value IsNot Nothing AndAlso DGVSchedules.Rows(i).Cells(0).Value.ToString().ToLower() = carName.ToLower() Then
+                            rowIndex = i
+                            Exit For
+                        End If
+                    Next
+                    If rowIndex >= 0 AndAlso column >= 1 AndAlso column < DGVSchedules.ColumnCount Then
+                        DGVSchedules.Rows(rowIndex).Cells(column).Style.BackColor = Color.Red
                     End If
                 End If
-                currentDate = currentDate.AddDays(1) 'iteration that adds to the days
+                currentDate = currentDate.AddDays(1)
             End While
         End While
-
         con.Close()
     End Sub
 
