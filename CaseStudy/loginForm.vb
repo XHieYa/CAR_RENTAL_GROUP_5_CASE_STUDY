@@ -128,4 +128,5 @@ Public Class loginForm
             txtPassword.PasswordChar = "*"
         End If
     End Sub
+
 End Class
