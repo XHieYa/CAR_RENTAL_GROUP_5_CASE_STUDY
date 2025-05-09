@@ -38,6 +38,7 @@ Partial Class loginForm
         txtpass = New TextBox()
         txtuser = New TextBox()
         GroupBox2 = New GroupBox()
+        PictureBox2 = New PictureBox()
         PictureBox5 = New PictureBox()
         Label19 = New Label()
         Label20 = New Label()
@@ -62,13 +63,12 @@ Partial Class loginForm
         Label7 = New Label()
         Label6 = New Label()
         Label5 = New Label()
-        PictureBox2 = New PictureBox()
         GroupBox1.SuspendLayout()
         CType(PictureBox3, ComponentModel.ISupportInitialize).BeginInit()
         CType(PictureBox1, ComponentModel.ISupportInitialize).BeginInit()
         GroupBox2.SuspendLayout()
-        CType(PictureBox5, ComponentModel.ISupportInitialize).BeginInit()
         CType(PictureBox2, ComponentModel.ISupportInitialize).BeginInit()
+        CType(PictureBox5, ComponentModel.ISupportInitialize).BeginInit()
         SuspendLayout()
         ' 
         ' GroupBox1
@@ -274,6 +274,18 @@ Partial Class loginForm
         GroupBox2.Size = New Size(637, 639)
         GroupBox2.TabIndex = 1
         GroupBox2.TabStop = False
+        ' 
+        ' PictureBox2
+        ' 
+        PictureBox2.BackColor = Color.Transparent
+        PictureBox2.Image = CType(resources.GetObject("PictureBox2.Image"), Image)
+        PictureBox2.Location = New Point(515, 15)
+        PictureBox2.Margin = New Padding(3, 4, 3, 4)
+        PictureBox2.Name = "PictureBox2"
+        PictureBox2.Size = New Size(116, 111)
+        PictureBox2.SizeMode = PictureBoxSizeMode.Zoom
+        PictureBox2.TabIndex = 25
+        PictureBox2.TabStop = False
         ' 
         ' PictureBox5
         ' 
@@ -542,18 +554,6 @@ Partial Class loginForm
         Label5.TabIndex = 6
         Label5.Text = "Account Name: "
         ' 
-        ' PictureBox2
-        ' 
-        PictureBox2.BackColor = Color.Transparent
-        PictureBox2.Image = CType(resources.GetObject("PictureBox2.Image"), Image)
-        PictureBox2.Location = New Point(515, 15)
-        PictureBox2.Margin = New Padding(3, 4, 3, 4)
-        PictureBox2.Name = "PictureBox2"
-        PictureBox2.Size = New Size(116, 111)
-        PictureBox2.SizeMode = PictureBoxSizeMode.Zoom
-        PictureBox2.TabIndex = 25
-        PictureBox2.TabStop = False
-        ' 
         ' loginForm
         ' 
         AutoScaleDimensions = New SizeF(8F, 20F)
@@ -573,8 +573,8 @@ Partial Class loginForm
         CType(PictureBox1, ComponentModel.ISupportInitialize).EndInit()
         GroupBox2.ResumeLayout(False)
         GroupBox2.PerformLayout()
-        CType(PictureBox5, ComponentModel.ISupportInitialize).EndInit()
         CType(PictureBox2, ComponentModel.ISupportInitialize).EndInit()
+        CType(PictureBox5, ComponentModel.ISupportInitialize).EndInit()
         ResumeLayout(False)
     End Sub
 
