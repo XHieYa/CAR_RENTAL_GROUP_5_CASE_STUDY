@@ -4,6 +4,7 @@ Public Class PaymentDetailSlip
     Dim rate As Integer = 150 'Val(BookingForm.txtRate.Text)
     Dim Discount As Integer
     Dim DriverFee As Integer
+    Dim Driver As String
     Private Sub PaymentDetailSlip(sender As Object, e As EventArgs) Handles MyBase.Load
         FromDate.Value = BookingForm.FromDOB.Value.Date
         ToDate.Value = BookingForm.ToDOB.Value.Date
@@ -16,12 +17,17 @@ Public Class PaymentDetailSlip
     End Sub
     Private Sub BookingAdd()
         Dim Con As New SqlConnection("Data Source=(localdb)\MSSQLLocalDB;Initial Catalog=CaseStudy;Integrated Security=True;Connect Timeout=30;Encrypt=False;Trust Server Certificate=False;Application Intent=ReadWrite;Multi Subnet Failover=False")
+        If CheckBox1.Checked Then
+            Driver = "Yes"
+        ElseIf CheckBox1.Checked = False Then
+            Driver = "No"
+        End If
         Try
             If FromDate.Value = ToDate.Value Then
                 MessageBox.Show("Cannot book within the same day", "INFO", MessageBoxButtons.OK, MessageBoxIcon.Warning)
                 Return
             End If
-            Dim query As String = "INSERT INTO Booking (CarID, CarName, StartBookDate, EndBookDate) VALUES (@CarID, @CarName, @Fdate, @Tdate)"
+            Dim query As String = "INSERT INTO Booking (CarID, CarName, StartBookDate, EndBookDate, Price, WDriver, Rate) VALUES (@CarID, @CarName, @Fdate, @Tdate, @Price, @WDriver, @Rate)"
             Con.Open()
             Using cmd As New SqlCommand(query, Con)
                 cmd.Parameters.AddWithValue("@CarID", txtCarID.Text)
@@ -30,6 +36,8 @@ Public Class PaymentDetailSlip
                 cmd.Parameters.AddWithValue("@Tdate", ToDate.Value.Date)
                 cmd.Parameters.AddWithValue("Username", txtUsername.Text)
                 cmd.Parameters.AddWithValue("@Price", totalpay)
+                cmd.Parameters.AddWithValue("@WDriver", Driver)
+                cmd.Parameters.AddWithValue("@Rate", Ratetxt.Text)
                 cmd.ExecuteNonQuery()
             End Using
             MessageBox.Show("Successfully Booked", "Info", MessageBoxButtons.OK, MessageBoxIcon.Information)
@@ -41,7 +49,12 @@ Public Class PaymentDetailSlip
     End Sub
     Public Sub CarPay()
         Dim TotalDays As Integer = (ToDate.Value.Date - FromDate.Value.Date).Days
-        If CheckBox1.Checked Then
+        If CheckBox1.Checked = True Then
+            Driver = "Yes"
+        ElseIf CheckBox1.Checked = False Then
+            Driver = "No"
+        End If
+        If Driver = "Yes" Then
             DriverFee = 1000
             If TotalDays >= 1 And TotalDays <= 6 Then
                 Discount = 0
@@ -56,7 +69,7 @@ Public Class PaymentDetailSlip
                 DriverFee = 0
             End If
             totalpay = (rate * TotalDays) - Discount + DriverFee
-        Else
+        ElseIf Driver = "No" Then
             DriverFee = 0
             If TotalDays >= 1 And TotalDays <= 6 Then
                 Discount = 0
@@ -71,25 +84,36 @@ Public Class PaymentDetailSlip
             End If
             totalpay = (rate * TotalDays) - Discount
         End If
-        totalpay = (rate * TotalDays) - Discount + DriverFee
+
+    End Sub
+    Private Sub BtnCalculate_Click(sender As Object, e As EventArgs) Handles BtnCalculate.Click
+        Dim TotalDays As Integer = (ToDate.Value.Date - FromDate.Value.Date).Days
+        CarPay()
         MessageBox.Show("Total Days:" & TotalDays &
                         ControlChars.NewLine & "Discounted Price: " & Discount &
                         ControlChars.NewLine & "Driver Fee: " & DriverFee &
                         ControlChars.NewLine & "Total: " & totalpay, "Calculations")
     End Sub
-    Private Sub BtnCalculate_Click(sender As Object, e As EventArgs) Handles BtnCalculate.Click
-        CarPay()
-    End Sub
 
     Private Sub BtnPayment_Click(sender As Object, e As EventArgs) Handles BtnPayment.Click
         Dim TotalDays As Integer = (ToDate.Value.Date - FromDate.Value.Date).Days
+        CarPay()
         Dim PaymentInput As String = InputBox("Total Days:" & TotalDays &
                         ControlChars.NewLine & "Discounted Price: " & Discount &
                         ControlChars.NewLine & "Driver Fee: " & DriverFee &
                         ControlChars.NewLine & "Total: " & totalpay, "Payment Input Box")
-        If Val(PaymentInput) < totalpay Then
-            MessageBox.Show("Insufficient Amount.", "Payment Failed.", MessageBoxButtons.OK, MessageBoxIcon.Error)
+        If PaymentInput = "" Then
+            MessageBox.Show("Payment Canceled", "Info")
+        Else
+            If Val(PaymentInput) < totalpay Then
+                MessageBox.Show("Insufficient Amount.", "Payment Failed.", MessageBoxButtons.OK, MessageBoxIcon.Error)
+            Else
+                BookingAdd()
+            End If
+
         End If
+
+
     End Sub
 
 End Class
