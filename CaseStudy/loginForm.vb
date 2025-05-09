@@ -99,7 +99,7 @@ Public Class loginForm
         If cbShowPassLI.Checked = True Then
             txtpass.PasswordChar = ""
         Else
-            txtpass.PasswordChar = "*"
+            txtpass.PasswordChar = "●"
         End If
     End Sub
     Private Sub siage_KeyPress(sender As Object, e As KeyPressEventArgs) Handles txtAge.KeyPress 'make sure only numbers are held
@@ -125,7 +125,7 @@ Public Class loginForm
         If cbShowPasswordSI.Checked = True Then
             txtPassword.PasswordChar = ""
         Else
-            txtPassword.PasswordChar = "*"
+            txtPassword.PasswordChar = "●"
         End If
     End Sub
 
