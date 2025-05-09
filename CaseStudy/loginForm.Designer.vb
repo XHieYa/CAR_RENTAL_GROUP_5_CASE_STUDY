@@ -224,7 +224,7 @@ Partial Class loginForm
         txtpass.Margin = New Padding(3, 4, 3, 4)
         txtpass.Multiline = True
         txtpass.Name = "txtpass"
-        txtpass.PasswordChar = "*"c
+        txtpass.PasswordChar = "●"c
         txtpass.Size = New Size(362, 35)
         txtpass.TabIndex = 4
         ' 
@@ -443,7 +443,7 @@ Partial Class loginForm
         txtPassword.Location = New Point(212, 272)
         txtPassword.Margin = New Padding(3, 4, 3, 4)
         txtPassword.Name = "txtPassword"
-        txtPassword.PasswordChar = "*"c
+        txtPassword.PasswordChar = "●"c
         txtPassword.Size = New Size(234, 29)
         txtPassword.TabIndex = 6
         ' 
