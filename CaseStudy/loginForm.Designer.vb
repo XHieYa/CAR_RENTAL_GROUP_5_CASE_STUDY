@@ -376,9 +376,9 @@ Partial Class loginForm
         Label12.Font = New Font("Footlight MT Light", 13.8F)
         Label12.Location = New Point(20, 179)
         Label12.Name = "Label12"
-        Label12.Size = New Size(158, 24)
+        Label12.Size = New Size(147, 24)
         Label12.TabIndex = 21
-        Label12.Text = "E-Mail Address:"
+        Label12.Text = "Email Address:"
         ' 
         ' llblHaveAnAccount
         ' 
@@ -566,7 +566,7 @@ Partial Class loginForm
         Controls.Add(GroupBox1)
         Margin = New Padding(3, 4, 3, 4)
         Name = "loginForm"
-        Text = "Form1"
+        Text = "Log-In and Sign-Up"
         GroupBox1.ResumeLayout(False)
         GroupBox1.PerformLayout()
         CType(PictureBox3, ComponentModel.ISupportInitialize).EndInit()
