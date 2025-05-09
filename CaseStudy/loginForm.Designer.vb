@@ -423,7 +423,7 @@ Partial Class loginForm
         cmbSex.Location = New Point(212, 307)
         cmbSex.Margin = New Padding(3, 4, 3, 4)
         cmbSex.Name = "cmbSex"
-        cmbSex.Size = New Size(164, 28)
+        cmbSex.Size = New Size(234, 28)
         cmbSex.TabIndex = 16
         ' 
         ' dtpDOB
