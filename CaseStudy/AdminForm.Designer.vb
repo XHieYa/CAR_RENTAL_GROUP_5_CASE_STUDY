@@ -27,6 +27,7 @@ Partial Class AdminForm
         btnGood = New Button()
         dgvRecord = New DataGridView()
         GroupBox2 = New GroupBox()
+        btnAdd = New Button()
         Label5 = New Label()
         txtRate = New TextBox()
         Label12 = New Label()
@@ -44,7 +45,6 @@ Partial Class AdminForm
         txtPlateNumber = New TextBox()
         TxtCarID = New TextBox()
         dgvCars = New DataGridView()
-        btnAdd = New Button()
         GroupBox1.SuspendLayout()
         CType(dgvRecord, ComponentModel.ISupportInitialize).BeginInit()
         GroupBox2.SuspendLayout()
@@ -60,24 +60,24 @@ Partial Class AdminForm
         GroupBox1.Margin = New Padding(3, 4, 3, 4)
         GroupBox1.Name = "GroupBox1"
         GroupBox1.Padding = New Padding(3, 4, 3, 4)
-        GroupBox1.Size = New Size(327, 567)
+        GroupBox1.Size = New Size(327, 643)
         GroupBox1.TabIndex = 0
         GroupBox1.TabStop = False
         GroupBox1.Text = "Record"
         ' 
         ' BtnBad
         ' 
-        BtnBad.Location = New Point(223, 528)
+        BtnBad.Location = New Point(100, 545)
         BtnBad.Margin = New Padding(3, 4, 3, 4)
         BtnBad.Name = "BtnBad"
-        BtnBad.Size = New Size(97, 31)
+        BtnBad.Size = New Size(127, 31)
         BtnBad.TabIndex = 2
         BtnBad.Text = "Record: Bad"
         BtnBad.UseVisualStyleBackColor = True
         ' 
         ' btnGood
         ' 
-        btnGood.Location = New Point(7, 528)
+        btnGood.Location = New Point(100, 506)
         btnGood.Margin = New Padding(3, 4, 3, 4)
         btnGood.Name = "btnGood"
         btnGood.Size = New Size(127, 31)
@@ -92,7 +92,7 @@ Partial Class AdminForm
         dgvRecord.Margin = New Padding(3, 4, 3, 4)
         dgvRecord.Name = "dgvRecord"
         dgvRecord.RowHeadersWidth = 51
-        dgvRecord.Size = New Size(313, 447)
+        dgvRecord.Size = New Size(313, 411)
         dgvRecord.TabIndex = 0
         ' 
         ' GroupBox2
@@ -119,15 +119,25 @@ Partial Class AdminForm
         GroupBox2.Margin = New Padding(3, 4, 3, 4)
         GroupBox2.Name = "GroupBox2"
         GroupBox2.Padding = New Padding(3, 4, 3, 4)
-        GroupBox2.Size = New Size(1036, 576)
+        GroupBox2.Size = New Size(976, 643)
         GroupBox2.TabIndex = 1
         GroupBox2.TabStop = False
         GroupBox2.Text = "Car List"
         ' 
+        ' btnAdd
+        ' 
+        btnAdd.Location = New Point(7, 468)
+        btnAdd.Margin = New Padding(3, 4, 3, 4)
+        btnAdd.Name = "btnAdd"
+        btnAdd.Size = New Size(208, 155)
+        btnAdd.TabIndex = 3
+        btnAdd.Text = "Add Car"
+        btnAdd.UseVisualStyleBackColor = True
+        ' 
         ' Label5
         ' 
         Label5.AutoSize = True
-        Label5.Location = New Point(624, 489)
+        Label5.Location = New Point(653, 554)
         Label5.Name = "Label5"
         Label5.Size = New Size(68, 20)
         Label5.TabIndex = 48
@@ -136,7 +146,7 @@ Partial Class AdminForm
         ' 
         ' txtRate
         ' 
-        txtRate.Location = New Point(701, 485)
+        txtRate.Location = New Point(730, 550)
         txtRate.Multiline = True
         txtRate.Name = "txtRate"
         txtRate.Size = New Size(127, 29)
@@ -145,7 +155,7 @@ Partial Class AdminForm
         ' Label12
         ' 
         Label12.AutoSize = True
-        Label12.Location = New Point(591, 447)
+        Label12.Location = New Point(620, 512)
         Label12.Name = "Label12"
         Label12.Size = New Size(104, 20)
         Label12.TabIndex = 46
@@ -153,7 +163,7 @@ Partial Class AdminForm
         ' 
         ' txtBodyNumber
         ' 
-        txtBodyNumber.Location = New Point(701, 439)
+        txtBodyNumber.Location = New Point(730, 504)
         txtBodyNumber.Multiline = True
         txtBodyNumber.Name = "txtBodyNumber"
         txtBodyNumber.Size = New Size(127, 33)
@@ -161,7 +171,7 @@ Partial Class AdminForm
         ' 
         ' txtCapacity
         ' 
-        txtCapacity.Location = New Point(701, 521)
+        txtCapacity.Location = New Point(730, 586)
         txtCapacity.Multiline = True
         txtCapacity.Name = "txtCapacity"
         txtCapacity.Size = New Size(90, 33)
@@ -170,7 +180,7 @@ Partial Class AdminForm
         ' Label11
         ' 
         Label11.AutoSize = True
-        Label11.Location = New Point(623, 526)
+        Label11.Location = New Point(652, 591)
         Label11.Name = "Label11"
         Label11.Size = New Size(69, 20)
         Label11.TabIndex = 44
@@ -178,7 +188,7 @@ Partial Class AdminForm
         ' 
         ' txtType
         ' 
-        txtType.Location = New Point(285, 525)
+        txtType.Location = New Point(315, 588)
         txtType.Multiline = True
         txtType.Name = "txtType"
         txtType.Size = New Size(90, 33)
@@ -187,7 +197,7 @@ Partial Class AdminForm
         ' Label10
         ' 
         Label10.AutoSize = True
-        Label10.Location = New Point(230, 533)
+        Label10.Location = New Point(260, 596)
         Label10.Name = "Label10"
         Label10.Size = New Size(43, 20)
         Label10.TabIndex = 43
@@ -196,7 +206,7 @@ Partial Class AdminForm
         ' Label9
         ' 
         Label9.AutoSize = True
-        Label9.Location = New Point(230, 494)
+        Label9.Location = New Point(260, 557)
         Label9.Name = "Label9"
         Label9.Size = New Size(48, 20)
         Label9.TabIndex = 42
@@ -205,7 +215,7 @@ Partial Class AdminForm
         ' Label8
         ' 
         Label8.AutoSize = True
-        Label8.Location = New Point(592, 409)
+        Label8.Location = New Point(621, 474)
         Label8.Name = "Label8"
         Label8.Size = New Size(103, 20)
         Label8.TabIndex = 40
@@ -214,7 +224,7 @@ Partial Class AdminForm
         ' Label4
         ' 
         Label4.AutoSize = True
-        Label4.Location = New Point(230, 451)
+        Label4.Location = New Point(260, 514)
         Label4.Name = "Label4"
         Label4.Size = New Size(53, 20)
         Label4.TabIndex = 36
@@ -223,7 +233,7 @@ Partial Class AdminForm
         ' Label2
         ' 
         Label2.AutoSize = True
-        Label2.Location = New Point(234, 412)
+        Label2.Location = New Point(264, 475)
         Label2.Name = "Label2"
         Label2.Size = New Size(34, 20)
         Label2.TabIndex = 35
@@ -231,7 +241,7 @@ Partial Class AdminForm
         ' 
         ' txtCColor
         ' 
-        txtCColor.Location = New Point(285, 487)
+        txtCColor.Location = New Point(315, 550)
         txtCColor.Multiline = True
         txtCColor.Name = "txtCColor"
         txtCColor.Size = New Size(90, 33)
@@ -239,7 +249,7 @@ Partial Class AdminForm
         ' 
         ' txtCar
         ' 
-        txtCar.Location = New Point(285, 409)
+        txtCar.Location = New Point(315, 472)
         txtCar.Margin = New Padding(3, 4, 3, 4)
         txtCar.Name = "txtCar"
         txtCar.Size = New Size(228, 27)
@@ -247,7 +257,7 @@ Partial Class AdminForm
         ' 
         ' txtPlateNumber
         ' 
-        txtPlateNumber.Location = New Point(701, 405)
+        txtPlateNumber.Location = New Point(730, 470)
         txtPlateNumber.Multiline = True
         txtPlateNumber.Name = "txtPlateNumber"
         txtPlateNumber.Size = New Size(127, 29)
@@ -255,7 +265,7 @@ Partial Class AdminForm
         ' 
         ' TxtCarID
         ' 
-        TxtCarID.Location = New Point(285, 447)
+        TxtCarID.Location = New Point(315, 510)
         TxtCarID.Margin = New Padding(3, 4, 3, 4)
         TxtCarID.Name = "TxtCarID"
         TxtCarID.Size = New Size(228, 27)
@@ -268,24 +278,14 @@ Partial Class AdminForm
         dgvCars.Margin = New Padding(3, 4, 3, 4)
         dgvCars.Name = "dgvCars"
         dgvCars.RowHeadersWidth = 51
-        dgvCars.Size = New Size(1023, 369)
+        dgvCars.Size = New Size(960, 411)
         dgvCars.TabIndex = 3
-        ' 
-        ' btnAdd
-        ' 
-        btnAdd.Location = New Point(7, 412)
-        btnAdd.Margin = New Padding(3, 4, 3, 4)
-        btnAdd.Name = "btnAdd"
-        btnAdd.Size = New Size(208, 155)
-        btnAdd.TabIndex = 3
-        btnAdd.Text = "Add Car"
-        btnAdd.UseVisualStyleBackColor = True
         ' 
         ' AdminForm
         ' 
         AutoScaleDimensions = New SizeF(8F, 20F)
         AutoScaleMode = AutoScaleMode.Font
-        ClientSize = New Size(1395, 600)
+        ClientSize = New Size(1326, 690)
         Controls.Add(GroupBox2)
         Controls.Add(GroupBox1)
         Margin = New Padding(3, 4, 3, 4)
