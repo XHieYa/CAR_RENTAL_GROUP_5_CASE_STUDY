@@ -36,7 +36,6 @@ Partial Class Seaters
         PictureBox12 = New PictureBox()
         TenFifteen = New Button()
         PictureBox11 = New PictureBox()
-        PictureBox9 = New PictureBox()
         PictureBox10 = New PictureBox()
         Panel3 = New Panel()
         Label3 = New Label()
@@ -62,7 +61,6 @@ Partial Class Seaters
         Panel2.SuspendLayout()
         CType(PictureBox12, ComponentModel.ISupportInitialize).BeginInit()
         CType(PictureBox11, ComponentModel.ISupportInitialize).BeginInit()
-        CType(PictureBox9, ComponentModel.ISupportInitialize).BeginInit()
         CType(PictureBox10, ComponentModel.ISupportInitialize).BeginInit()
         Panel3.SuspendLayout()
         CType(PictureBox8, ComponentModel.ISupportInitialize).BeginInit()
@@ -172,7 +170,6 @@ Partial Class Seaters
         Panel2.Controls.Add(PictureBox12)
         Panel2.Controls.Add(TenFifteen)
         Panel2.Controls.Add(PictureBox11)
-        Panel2.Controls.Add(PictureBox9)
         Panel2.Controls.Add(PictureBox10)
         Panel2.Location = New Point(22, 351)
         Panel2.Name = "Panel2"
@@ -192,9 +189,11 @@ Partial Class Seaters
         ' PictureBox12
         ' 
         PictureBox12.BorderStyle = BorderStyle.Fixed3D
+        PictureBox12.Image = CType(resources.GetObject("PictureBox12.Image"), Image)
         PictureBox12.Location = New Point(13, 12)
         PictureBox12.Name = "PictureBox12"
         PictureBox12.Size = New Size(236, 131)
+        PictureBox12.SizeMode = PictureBoxSizeMode.Zoom
         PictureBox12.TabIndex = 12
         PictureBox12.TabStop = False
         ' 
@@ -211,27 +210,22 @@ Partial Class Seaters
         ' PictureBox11
         ' 
         PictureBox11.BorderStyle = BorderStyle.Fixed3D
+        PictureBox11.Image = CType(resources.GetObject("PictureBox11.Image"), Image)
         PictureBox11.Location = New Point(255, 12)
         PictureBox11.Name = "PictureBox11"
         PictureBox11.Size = New Size(236, 131)
+        PictureBox11.SizeMode = PictureBoxSizeMode.Zoom
         PictureBox11.TabIndex = 13
         PictureBox11.TabStop = False
-        ' 
-        ' PictureBox9
-        ' 
-        PictureBox9.BorderStyle = BorderStyle.Fixed3D
-        PictureBox9.Location = New Point(255, 149)
-        PictureBox9.Name = "PictureBox9"
-        PictureBox9.Size = New Size(236, 131)
-        PictureBox9.TabIndex = 15
-        PictureBox9.TabStop = False
         ' 
         ' PictureBox10
         ' 
         PictureBox10.BorderStyle = BorderStyle.Fixed3D
-        PictureBox10.Location = New Point(13, 149)
+        PictureBox10.Image = CType(resources.GetObject("PictureBox10.Image"), Image)
+        PictureBox10.Location = New Point(135, 149)
         PictureBox10.Name = "PictureBox10"
         PictureBox10.Size = New Size(236, 131)
+        PictureBox10.SizeMode = PictureBoxSizeMode.Zoom
         PictureBox10.TabIndex = 14
         PictureBox10.TabStop = False
         ' 
@@ -263,9 +257,11 @@ Partial Class Seaters
         ' PictureBox8
         ' 
         PictureBox8.BorderStyle = BorderStyle.Fixed3D
+        PictureBox8.Image = CType(resources.GetObject("PictureBox8.Image"), Image)
         PictureBox8.Location = New Point(11, 12)
         PictureBox8.Name = "PictureBox8"
         PictureBox8.Size = New Size(236, 131)
+        PictureBox8.SizeMode = PictureBoxSizeMode.Zoom
         PictureBox8.TabIndex = 6
         PictureBox8.TabStop = False
         ' 
@@ -282,27 +278,33 @@ Partial Class Seaters
         ' PictureBox4
         ' 
         PictureBox4.BorderStyle = BorderStyle.Fixed3D
+        PictureBox4.Image = CType(resources.GetObject("PictureBox4.Image"), Image)
         PictureBox4.Location = New Point(254, 12)
         PictureBox4.Name = "PictureBox4"
         PictureBox4.Size = New Size(236, 131)
+        PictureBox4.SizeMode = PictureBoxSizeMode.Zoom
         PictureBox4.TabIndex = 7
         PictureBox4.TabStop = False
         ' 
         ' PictureBox2
         ' 
         PictureBox2.BorderStyle = BorderStyle.Fixed3D
+        PictureBox2.Image = CType(resources.GetObject("PictureBox2.Image"), Image)
         PictureBox2.Location = New Point(254, 149)
         PictureBox2.Name = "PictureBox2"
         PictureBox2.Size = New Size(236, 131)
+        PictureBox2.SizeMode = PictureBoxSizeMode.Zoom
         PictureBox2.TabIndex = 9
         PictureBox2.TabStop = False
         ' 
         ' PictureBox3
         ' 
         PictureBox3.BorderStyle = BorderStyle.Fixed3D
+        PictureBox3.Image = CType(resources.GetObject("PictureBox3.Image"), Image)
         PictureBox3.Location = New Point(11, 149)
         PictureBox3.Name = "PictureBox3"
         PictureBox3.Size = New Size(236, 131)
+        PictureBox3.SizeMode = PictureBoxSizeMode.Zoom
         PictureBox3.TabIndex = 8
         PictureBox3.TabStop = False
         ' 
@@ -333,9 +335,11 @@ Partial Class Seaters
         ' PictureBox16
         ' 
         PictureBox16.BorderStyle = BorderStyle.Fixed3D
+        PictureBox16.Image = CType(resources.GetObject("PictureBox16.Image"), Image)
         PictureBox16.Location = New Point(11, 12)
         PictureBox16.Name = "PictureBox16"
         PictureBox16.Size = New Size(236, 131)
+        PictureBox16.SizeMode = PictureBoxSizeMode.Zoom
         PictureBox16.TabIndex = 18
         PictureBox16.TabStop = False
         ' 
@@ -353,27 +357,33 @@ Partial Class Seaters
         ' PictureBox15
         ' 
         PictureBox15.BorderStyle = BorderStyle.Fixed3D
+        PictureBox15.Image = CType(resources.GetObject("PictureBox15.Image"), Image)
         PictureBox15.Location = New Point(254, 12)
         PictureBox15.Name = "PictureBox15"
         PictureBox15.Size = New Size(236, 131)
+        PictureBox15.SizeMode = PictureBoxSizeMode.Zoom
         PictureBox15.TabIndex = 19
         PictureBox15.TabStop = False
         ' 
         ' PictureBox13
         ' 
         PictureBox13.BorderStyle = BorderStyle.Fixed3D
+        PictureBox13.Image = CType(resources.GetObject("PictureBox13.Image"), Image)
         PictureBox13.Location = New Point(254, 149)
         PictureBox13.Name = "PictureBox13"
         PictureBox13.Size = New Size(236, 131)
+        PictureBox13.SizeMode = PictureBoxSizeMode.StretchImage
         PictureBox13.TabIndex = 21
         PictureBox13.TabStop = False
         ' 
         ' PictureBox14
         ' 
         PictureBox14.BorderStyle = BorderStyle.Fixed3D
+        PictureBox14.Image = CType(resources.GetObject("PictureBox14.Image"), Image)
         PictureBox14.Location = New Point(11, 149)
         PictureBox14.Name = "PictureBox14"
         PictureBox14.Size = New Size(236, 131)
+        PictureBox14.SizeMode = PictureBoxSizeMode.Zoom
         PictureBox14.TabIndex = 20
         PictureBox14.TabStop = False
         ' 
@@ -422,7 +432,6 @@ Partial Class Seaters
         Panel2.PerformLayout()
         CType(PictureBox12, ComponentModel.ISupportInitialize).EndInit()
         CType(PictureBox11, ComponentModel.ISupportInitialize).EndInit()
-        CType(PictureBox9, ComponentModel.ISupportInitialize).EndInit()
         CType(PictureBox10, ComponentModel.ISupportInitialize).EndInit()
         Panel3.ResumeLayout(False)
         Panel3.PerformLayout()
@@ -453,7 +462,6 @@ Partial Class Seaters
     Friend WithEvents PictureBox12 As PictureBox
     Friend WithEvents TenFifteen As Button
     Friend WithEvents PictureBox11 As PictureBox
-    Friend WithEvents PictureBox9 As PictureBox
     Friend WithEvents PictureBox10 As PictureBox
     Friend WithEvents Panel3 As Panel
     Friend WithEvents Label3 As Label
