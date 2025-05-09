@@ -1,7 +1,7 @@
 ﻿Imports System.Windows.Forms.VisualStyles.VisualStyleElement.StartPanel
 Imports Microsoft.Data.SqlClient 'Importing SQL Database Access Commands
 Public Class loginForm
-    Dim con As New SqlConnection("Data Source=(localdb)\MSSQLLocalDB;Initial Catalog=CustomerDB;Integrated Security=True;Connect Timeout=30;Encrypt=False;Trust Server Certificate=False;Application Intent=ReadWrite;Multi Subnet Failover=False") 'connection to SQL SERVER
+    Dim con As New SqlConnection("Data Source=(localdb)\MSSQLLocalDB;Initial Catalog=CaseStudy;Integrated Security=True;Connect Timeout=30;Encrypt=False;Trust Server Certificate=False;Application Intent=ReadWrite;Multi Subnet Failover=False") 'connection to SQL SERVER
     Private Function UsernameExists(username) As Boolean 'Function to make Username Unique
         Dim query As String = "SELECT COUNT(*) FROM login WHERE Username = @Username"
         Try

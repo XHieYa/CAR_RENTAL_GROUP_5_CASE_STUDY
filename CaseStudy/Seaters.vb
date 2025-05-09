@@ -23,7 +23,7 @@ Public Class Seaters
     End Sub
 
     Private Sub Seaters_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-        Dim con As New SqlConnection("Data Source=(localdb)\MSSQLLocalDB;Initial Catalog=CustomerDB;Integrated Security=True;Connect Timeout=30;Encrypt=False;Trust Server Certificate=False;Application Intent=ReadWrite;Multi Subnet Failover=False")
+        Dim con As New SqlConnection("Data Source=(localdb)\MSSQLLocalDB;Initial Catalog=CaseStudy;Integrated Security=True;Connect Timeout=30;Encrypt=False;Trust Server Certificate=False;Application Intent=ReadWrite;Multi Subnet Failover=False")
         con.Open()
         Dim query As String = "SELECT Username, Records FROM login WHERE Username = @Username" 'CONDITION PROMPT ON WHAT TO SELECT FROM THE DATA BASE
         Dim cmd As New SqlCommand(query, con) 'SEE BACK ON LOGIN FORM
