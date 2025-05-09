@@ -28,6 +28,8 @@ Partial Class BookingForm
         ToDOB = New DateTimePicker()
         FromDOB = New DateTimePicker()
         GroupBox1 = New GroupBox()
+        Label5 = New Label()
+        txtRate = New TextBox()
         Label12 = New Label()
         txtBodyNumber = New TextBox()
         txtCapacity = New TextBox()
@@ -44,8 +46,6 @@ Partial Class BookingForm
         TxtCarID = New TextBox()
         BtnConfirm = New Button()
         DGVSchedules = New DataGridView()
-        txtRate = New TextBox()
-        Label5 = New Label()
         GroupBox1.SuspendLayout()
         CType(DGVSchedules, ComponentModel.ISupportInitialize).BeginInit()
         SuspendLayout()
@@ -117,6 +117,26 @@ Partial Class BookingForm
         GroupBox1.TabIndex = 10
         GroupBox1.TabStop = False
         GroupBox1.Text = "GroupBox1"
+        ' 
+        ' Label5
+        ' 
+        Label5.AutoSize = True
+        Label5.Location = New Point(470, 22)
+        Label5.Name = "Label5"
+        Label5.Size = New Size(55, 15)
+        Label5.TabIndex = 32
+        Label5.Text = "Pay Rate:"
+        Label5.TextAlign = ContentAlignment.TopCenter
+        ' 
+        ' txtRate
+        ' 
+        txtRate.Location = New Point(531, 19)
+        txtRate.Margin = New Padding(3, 2, 3, 2)
+        txtRate.Multiline = True
+        txtRate.Name = "txtRate"
+        txtRate.ReadOnly = True
+        txtRate.Size = New Size(112, 23)
+        txtRate.TabIndex = 31
         ' 
         ' Label12
         ' 
@@ -268,26 +288,6 @@ Partial Class BookingForm
         DGVSchedules.Name = "DGVSchedules"
         DGVSchedules.Size = New Size(1134, 351)
         DGVSchedules.TabIndex = 12
-        ' 
-        ' txtRate
-        ' 
-        txtRate.Location = New Point(531, 19)
-        txtRate.Margin = New Padding(3, 2, 3, 2)
-        txtRate.Multiline = True
-        txtRate.Name = "txtRate"
-        txtRate.ReadOnly = True
-        txtRate.Size = New Size(112, 23)
-        txtRate.TabIndex = 31
-        ' 
-        ' Label5
-        ' 
-        Label5.AutoSize = True
-        Label5.Location = New Point(470, 22)
-        Label5.Name = "Label5"
-        Label5.Size = New Size(55, 15)
-        Label5.TabIndex = 32
-        Label5.Text = "Pay Rate:"
-        Label5.TextAlign = ContentAlignment.TopCenter
         ' 
         ' BookingForm
         ' 

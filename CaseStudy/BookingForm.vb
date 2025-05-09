@@ -1,12 +1,12 @@
 ﻿Imports System.Windows.Forms.VisualStyles.VisualStyleElement.StartPanel 'From StyleBackground from DataGrid
 Imports Microsoft.Data.SqlClient 'Importing SQL Database Access Commands
 Public Class BookingForm
+    Dim con As New SqlConnection("Data Source=(localdb)\MSSQLLocalDB;Initial Catalog=CustomerDB;Integrated Security=True")
     Private Sub BtnConfirm_Click(sender As Object, e As EventArgs) Handles BtnConfirm.Click
         If ToDOB.Value.Date <= FromDOB.Value.Date Then 'Checks if both dates are equal or reversed
             MessageBox.Show("Not Equal to Each Other Nor The ToDate must be higher than From", "INFO", MessageBoxButtons.OK, MessageBoxIcon.Warning)
             Exit Sub
         Else
-            Dim Con As New SqlConnection("Data Source=(localdb)\MSSQLLocalDB;Initial Catalog=CustomerDB;Integrated Security=True;Connect Timeout=30;Encrypt=False;Trust Server Certificate=False;Application Intent=ReadWrite;Multi Subnet Failover=False")
             Dim query As String = "SELECT COUNT(*) FROM Booking WHERE CarID = @CarID AND @NewStartDate <= EndBookDate AND @NewEndDate >= StartBookDate" 'Checks if schedule thats gonna be input is not between existing dates and divided to by Unique CarID
             Con.Open()
             Using cmd As New SqlCommand(query, Con)
@@ -40,63 +40,61 @@ Public Class BookingForm
 
     Private Sub RowLoader() 'Loads the Rows AKA the car lists
         DGVSchedules.Rows.Clear()
-
-        Dim con As New SqlConnection("Data Source=(localdb)\MSSQLLocalDB;Initial Catalog=CustomerDB;Integrated Security=True")
         Dim query As String = "SELECT DISTINCT CarID, CarName FROM Booking ORDER BY CarID" 'Loads DISTINCT CarID and CARNAME so it will iterate as one line when you seek through days
-
         con.Open()
         Dim cmd As New SqlCommand(query, con)
         Dim reader As SqlDataReader = cmd.ExecuteReader()
-
         While reader.Read() 'SQL data reader call above used before in dashboard please refer there instead but in a loop form
             Dim carName As String = reader("CarName").ToString()
             Dim row As Integer = DGVSchedules.Rows.Add()
             DGVSchedules.Rows(row).Cells("CarName").Value = carName 'Literally adds the carname within the cells in the column
         End While
-
         con.Close()
     End Sub
-
     Private Sub MnthC_DateChanged(sender As Object, e As DateRangeEventArgs) Handles MnthC.DateChanged 'calls out 3 functions that updates the datagrid
         ColumnLoader()
         RowLoader()
         ScheduleShower()
     End Sub
-    Private Sub ScheduleShower() 'Function that shows/loads the calendar 
-        Dim con As New SqlConnection("Data Source=(localdb)\MSSQLLocalDB;Initial Catalog=CustomerDB;Integrated Security=True")
+    Private Sub ScheduleShower()
         Dim selectedMonth As DateTime = New DateTime(MnthC.SelectionStart.Year, MnthC.SelectionStart.Month, 1)
         Dim startOfMonth As DateTime = selectedMonth
         Dim endOfMonth As DateTime = selectedMonth.AddMonths(1).AddDays(-1)
-        Dim query As String = "SELECT CarID, StartBookDate, EndBookDate FROM Booking WHERE StartBookDate <= @EndOfMonth AND EndBookDate >= @StartOfMonth"
+        Dim query As String = "SELECT CarID, CarName, StartBookDate, EndBookDate FROM Booking WHERE StartBookDate <= @EndOfMonth AND EndBookDate >= @StartOfMonth"
         Dim cmd As New SqlCommand(query, con)
         cmd.Parameters.AddWithValue("@StartOfMonth", startOfMonth)
         cmd.Parameters.AddWithValue("@EndOfMonth", endOfMonth)
-
         con.Open()
         Dim Carreader As SqlDataReader = cmd.ExecuteReader()
-
-        While Carreader.Read() 'SQL DataReader
-            Dim carID As Integer = Carreader.GetInt32(0)
-            Dim startDate As DateTime = Carreader.GetDateTime(1)
-            Dim endDate As DateTime = Carreader.GetDateTime(2)
-
-            Dim row As Integer = carID - 1
-
+        For Each row As DataGridViewRow In DGVSchedules.Rows
+            For Each cell As DataGridViewCell In row.Cells
+                cell.Style.BackColor = Color.White
+            Next
+        Next
+        While Carreader.Read()
+            Dim carName As String = Carreader.GetString(1)
+            Dim startDate As DateTime = Carreader.GetDateTime(2)
+            Dim endDate As DateTime = Carreader.GetDateTime(3)
             Dim currentDate As DateTime = startDate
-            While currentDate <= endDate 'This marks the days and calculates which part should be shaded depending on the dates seted and calculated
+            While currentDate <= endDate
                 If currentDate.Month = startOfMonth.Month AndAlso currentDate.Year = startOfMonth.Year Then
                     Dim column As Integer = currentDate.Day
-                    If row >= 0 And row < DGVSchedules.Rows.Count And column >= 1 And column < DGVSchedules.ColumnCount Then
-                        DGVSchedules.Rows(row).Cells(column).Style.BackColor = Color.Red
+                    Dim rowIndex As Integer = -1
+                    For i As Integer = 0 To DGVSchedules.Rows.Count - 1
+                        If DGVSchedules.Rows(i).Cells(0).Value IsNot Nothing AndAlso DGVSchedules.Rows(i).Cells(0).Value.ToString().ToLower() = carName.ToLower() Then
+                            rowIndex = i
+                            Exit For
+                        End If
+                    Next
+                    If rowIndex >= 0 AndAlso column >= 1 AndAlso column < DGVSchedules.ColumnCount Then
+                        DGVSchedules.Rows(rowIndex).Cells(column).Style.BackColor = Color.Red
                     End If
                 End If
-                currentDate = currentDate.AddDays(1) 'iteration that adds to the days
+                currentDate = currentDate.AddDays(1)
             End While
         End While
-
         con.Close()
     End Sub
-
     Private Sub BookingForm_Load(sender As Object, e As EventArgs) Handles MyBase.Load 'Loads the calendar once the form loads
         ColumnLoader()
         RowLoader()
