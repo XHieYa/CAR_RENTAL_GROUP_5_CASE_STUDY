@@ -232,7 +232,7 @@ Partial Class Dashboard
         ' 
         Label3.AutoSize = True
         Label3.Font = New Font("Century Gothic", 12F)
-        Label3.Location = New Point(359, 543)
+        Label3.Location = New Point(361, 543)
         Label3.Name = "Label3"
         Label3.Size = New Size(42, 23)
         Label3.TabIndex = 5
@@ -242,7 +242,7 @@ Partial Class Dashboard
         ' 
         Label1.AutoSize = True
         Label1.Font = New Font("Century Gothic", 12F)
-        Label1.Location = New Point(17, 543)
+        Label1.Location = New Point(19, 543)
         Label1.Name = "Label1"
         Label1.Size = New Size(63, 23)
         Label1.TabIndex = 4
@@ -262,7 +262,7 @@ Partial Class Dashboard
         ' ToDOB
         ' 
         ToDOB.Font = New Font("Century Gothic", 12F)
-        ToDOB.Location = New Point(401, 543)
+        ToDOB.Location = New Point(403, 543)
         ToDOB.Margin = New Padding(3, 4, 3, 4)
         ToDOB.Name = "ToDOB"
         ToDOB.Size = New Size(259, 32)
@@ -271,7 +271,7 @@ Partial Class Dashboard
         ' FromDOB
         ' 
         FromDOB.Font = New Font("Century Gothic", 12F)
-        FromDOB.Location = New Point(81, 543)
+        FromDOB.Location = New Point(83, 543)
         FromDOB.Margin = New Padding(3, 4, 3, 4)
         FromDOB.Name = "FromDOB"
         FromDOB.Size = New Size(259, 32)
