@@ -80,11 +80,10 @@ Public Class PaymentDetailSlip
             ElseIf TotalDays >= 30 Then
                 Discount = 1400
             Else
-                Discount = 0 ' Invalid TotalDays
+                Discount = 0
             End If
             totalpay = (rate * TotalDays) - Discount
         End If
-
     End Sub
     Private Sub BtnCalculate_Click(sender As Object, e As EventArgs) Handles BtnCalculate.Click
         Dim TotalDays As Integer = (ToDate.Value.Date - FromDate.Value.Date).Days
