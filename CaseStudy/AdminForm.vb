@@ -71,7 +71,7 @@ Public Class AdminForm
     Private Sub ColumnLoadCarList()
         dgvCars.Columns.Clear()
         dgvCars.Columns.Add("CarName", "Car Name") 'The first part which is the car Name
-        dgvCars.Columns("CarName").Width = 250
+        dgvCars.Columns("CarName").Width = 220
         dgvCars.Columns.Add("Color", "Color")
         dgvCars.Columns.Add("GasType", "Gas Type")
         dgvCars.Columns.Add("Capacity", "Capacity")
@@ -87,7 +87,7 @@ Public Class AdminForm
     End Sub
     Private Sub RowLoaderCarList() 'Loads the Rows AKA the car lists
         dgvCars.Rows.Clear()
-        Dim query As String = "SELECT CarName, Color, GasType,Capacity, PlateNo, VIN, Rate FROM CarRent ORDER BY CarName"
+        Dim query As String = "SELECT CarName, Color, GasType,Capacity, PlateNo, VIN, Rate FROM CarList ORDER BY CarName"
         con.Open()
         Dim cmd As New SqlCommand(query, con)
         Dim reader As SqlDataReader = cmd.ExecuteReader()
@@ -102,5 +102,46 @@ Public Class AdminForm
             dgvCars.Rows(rowIndex).Cells("Rate").Value = reader("Rate").ToString()
         End While
         con.Close()
+    End Sub
+
+    Private Sub btnAdd_Click(sender As Object, e As EventArgs) Handles btnAdd.Click
+        For Each item As Control In GroupBox2.Controls 'Checks if every Box Is accounted for
+            If (TypeOf item Is TextBox) Then
+                If (item.Text = "") Then
+                    MessageBox.Show("All Fields Must be Filled up", "info", MessageBoxButtons.OK, MessageBoxIcon.Information) 'Error message if things are not field up
+                    Return
+                End If
+            End If
+        Next
+        Try
+            Dim query As String = "Insert Into CarList (CarName, CarID, Color, GasType, Capacity, PlateNo, VIN, Rate) VALUES (@CarName, @CarID, @Color, @GasType, @Capacity, @PlateNo, @VIN, @Rate)" 'Basically putting the value on their own cells for the database
+            Dim command As New SqlCommand(query, con) 'Individually setting the values and using parameters to be input to their cells
+            command.Parameters.AddWithValue("@CarName", txtCar.Text)
+            command.Parameters.AddWithValue("@CarID", TxtCarID.Text)
+            command.Parameters.AddWithValue("@Color", txtCColor.Text)
+            command.Parameters.AddWithValue("@GasType", txtType.Text)
+            command.Parameters.AddWithValue("@Capacity", txtCapacity.Text)
+            command.Parameters.AddWithValue("@PlateNo", txtPlateNumber.Text)
+            command.Parameters.AddWithValue("@VIN", txtBodyNumber.Text)
+            command.Parameters.AddWithValue("@Rate", txtRate.Text)
+            con.Open()
+            command.ExecuteNonQuery() 'Used to create or change data within the database
+            MessageBox.Show("Car Successfuly Added", "INFO", MessageBoxButtons.OK, MessageBoxIcon.Information) 'Message confirming your info has been saved
+        Catch ex As Exception
+            MessageBox.Show($"Error adding account: {ex.Message} ") 'Error message if smthng happen within the server
+        Finally
+            con.Close()
+            ColumnLoadCarList()
+            RowLoaderCarList()
+            txtCar.Text = ""
+            TxtCarID.Text = ""
+            txtCColor.Text = ""
+            txtType.Text = ""
+            txtCapacity.Text = ""
+            txtPlateNumber.Text = ""
+            txtBodyNumber.Text = ""
+            txtRate.Text = ""
+
+        End Try
     End Sub
 End Class

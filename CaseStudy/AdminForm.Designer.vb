@@ -44,6 +44,7 @@ Partial Class AdminForm
         txtPlateNumber = New TextBox()
         TxtCarID = New TextBox()
         dgvCars = New DataGridView()
+        btnAdd = New Button()
         GroupBox1.SuspendLayout()
         CType(dgvRecord, ComponentModel.ISupportInitialize).BeginInit()
         GroupBox2.SuspendLayout()
@@ -96,6 +97,7 @@ Partial Class AdminForm
         ' 
         ' GroupBox2
         ' 
+        GroupBox2.Controls.Add(btnAdd)
         GroupBox2.Controls.Add(Label5)
         GroupBox2.Controls.Add(txtRate)
         GroupBox2.Controls.Add(Label12)
@@ -269,6 +271,16 @@ Partial Class AdminForm
         dgvCars.Size = New Size(1023, 369)
         dgvCars.TabIndex = 3
         ' 
+        ' btnAdd
+        ' 
+        btnAdd.Location = New Point(7, 412)
+        btnAdd.Margin = New Padding(3, 4, 3, 4)
+        btnAdd.Name = "btnAdd"
+        btnAdd.Size = New Size(208, 155)
+        btnAdd.TabIndex = 3
+        btnAdd.Text = "Add Car"
+        btnAdd.UseVisualStyleBackColor = True
+        ' 
         ' AdminForm
         ' 
         AutoScaleDimensions = New SizeF(8F, 20F)
@@ -309,4 +321,5 @@ Partial Class AdminForm
     Friend WithEvents txtCar As TextBox
     Friend WithEvents txtPlateNumber As TextBox
     Friend WithEvents TxtCarID As TextBox
+    Friend WithEvents btnAdd As Button
 End Class
