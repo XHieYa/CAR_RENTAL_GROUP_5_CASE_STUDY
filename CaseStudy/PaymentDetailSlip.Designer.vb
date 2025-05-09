@@ -31,7 +31,7 @@ Partial Class PaymentDetailSlip
         Capacitytxt = New TextBox()
         Label11 = New Label()
         Typetxt = New TextBox()
-        Colortxt = New TextBox()
+        Ratetxt = New TextBox()
         Label10 = New Label()
         Label9 = New Label()
         txtCarName = New TextBox()
@@ -91,7 +91,7 @@ Partial Class PaymentDetailSlip
         GroupBox3.Controls.Add(Capacitytxt)
         GroupBox3.Controls.Add(Label11)
         GroupBox3.Controls.Add(Typetxt)
-        GroupBox3.Controls.Add(Colortxt)
+        GroupBox3.Controls.Add(Ratetxt)
         GroupBox3.Controls.Add(Label10)
         GroupBox3.Controls.Add(Label9)
         GroupBox3.Controls.Add(txtCarName)
@@ -132,7 +132,6 @@ Partial Class PaymentDetailSlip
         txtCarID.Margin = New Padding(3, 2, 3, 2)
         txtCarID.Multiline = True
         txtCarID.Name = "txtCarID"
-        txtCarID.ReadOnly = True
         txtCarID.Size = New Size(95, 20)
         txtCarID.TabIndex = 24
         ' 
@@ -174,15 +173,15 @@ Partial Class PaymentDetailSlip
         Typetxt.Size = New Size(84, 20)
         Typetxt.TabIndex = 20
         ' 
-        ' Colortxt
+        ' Ratetxt
         ' 
-        Colortxt.Location = New Point(50, 124)
-        Colortxt.Margin = New Padding(3, 2, 3, 2)
-        Colortxt.Multiline = True
-        Colortxt.Name = "Colortxt"
-        Colortxt.ReadOnly = True
-        Colortxt.Size = New Size(70, 20)
-        Colortxt.TabIndex = 19
+        Ratetxt.Location = New Point(50, 124)
+        Ratetxt.Margin = New Padding(3, 2, 3, 2)
+        Ratetxt.Multiline = True
+        Ratetxt.Name = "Ratetxt"
+        Ratetxt.ReadOnly = True
+        Ratetxt.Size = New Size(70, 20)
+        Ratetxt.TabIndex = 19
         ' 
         ' Label10
         ' 
@@ -198,9 +197,9 @@ Partial Class PaymentDetailSlip
         Label9.AutoSize = True
         Label9.Location = New Point(8, 124)
         Label9.Name = "Label9"
-        Label9.Size = New Size(36, 15)
+        Label9.Size = New Size(30, 15)
         Label9.TabIndex = 17
-        Label9.Text = "Color"
+        Label9.Text = "Rate"
         ' 
         ' txtCarName
         ' 
@@ -328,7 +327,6 @@ Partial Class PaymentDetailSlip
         ' 
         ' ToDate
         ' 
-        ToDate.Enabled = False
         ToDate.Location = New Point(25, 100)
         ToDate.Margin = New Padding(3, 2, 3, 2)
         ToDate.Name = "ToDate"
@@ -337,7 +335,6 @@ Partial Class PaymentDetailSlip
         ' 
         ' FromDate
         ' 
-        FromDate.Enabled = False
         FromDate.Location = New Point(25, 60)
         FromDate.Margin = New Padding(3, 2, 3, 2)
         FromDate.Name = "FromDate"
@@ -494,7 +491,7 @@ Partial Class PaymentDetailSlip
         ' 
         ' PaymentDetailSlip
         ' 
-        AutoScaleDimensions = New SizeF(7.0F, 15.0F)
+        AutoScaleDimensions = New SizeF(7F, 15F)
         AutoScaleMode = AutoScaleMode.Font
         ClientSize = New Size(462, 580)
         Controls.Add(Panel1)
@@ -527,7 +524,7 @@ Partial Class PaymentDetailSlip
     Friend WithEvents Label6 As Label
     Friend WithEvents GroupBox3 As GroupBox
     Friend WithEvents Typetxt As TextBox
-    Friend WithEvents Colortxt As TextBox
+    Friend WithEvents Ratetxt As TextBox
     Friend WithEvents Label10 As Label
     Friend WithEvents Label9 As Label
     Friend WithEvents txtCarName As TextBox

@@ -1,6 +1,12 @@
-﻿Imports System.Windows.Forms.VisualStyles.VisualStyleElement.StartPanel
+﻿Imports System.Runtime.InteropServices.JavaScript.JSType
+Imports System.Windows.Forms.VisualStyles.VisualStyleElement.Button
+Imports System.Windows.Forms.VisualStyles.VisualStyleElement.StartPanel
+Imports System.Windows.Forms.VisualStyles.VisualStyleElement.TextBox
 Imports Microsoft.Data.SqlClient 'Importing SQL Database Access Commands
 Public Class Dashboard
+    Dim Discount As Integer
+    Dim DriverFee As Integer
+    Dim totalpay As Double
     Dim con As New SqlConnection("Data Source=(localdb)\MSSQLLocalDB;Initial Catalog=CaseStudy;Integrated Security=True;Connect Timeout=30;Encrypt=False;Trust Server Certificate=False;Application Intent=ReadWrite;Multi Subnet Failover=False") 'SQL Connection
     Private Sub ResetClock() 'Function to Reset time Back to Original state
         FromDOB.Value = DateTime.Now
@@ -44,9 +50,10 @@ Public Class Dashboard
         Using cmd As New SqlCommand(query, con)
             cmd.Parameters.AddWithValue("@CarID", DGLogs.CurrentRow.Cells("CarID").Value)
             cmd.Parameters.AddWithValue("@Username", DGLogs.CurrentRow.Cells("Username").Value)
+            cmd.Parameters.AddWithValue("@BookingID", DGLogs.CurrentRow.Cells("BookingID").Value)
             cmd.Parameters.AddWithValue("@NewStartDate", FromDOB.Value.Date)
             cmd.Parameters.AddWithValue("@NewEndDate", ToDOB.Value.Date)
-            cmd.Parameters.AddWithValue("@BookingID", DGLogs.CurrentRow.Cells("BookingID").Value)
+
 
             con.Open()
             Dim count As Integer = Convert.ToInt32(cmd.ExecuteScalar())
@@ -57,10 +64,60 @@ Public Class Dashboard
                 Return False
             End If
         End Using
-
         Return True
     End Function
+    Private Sub CarPay()
+        Dim TotalDays As Integer = (ToDOB.Value.Date - FromDOB.Value.Date).Days
+        Dim query As String = "SELECT Rate, WDriver FROM Booking WHERE BookingID = @BookingID AND CarID = @CarID AND Username = @Username"
+        Dim rate As Decimal = 0
+        Dim driver As String = ""
+        Dim cmd As New SqlCommand(query, con)
+        cmd.Parameters.AddWithValue("@CarID", DGLogs.CurrentRow.Cells("CarID").Value)
+        cmd.Parameters.AddWithValue("@Username", DGLogs.CurrentRow.Cells("Username").Value)
+        cmd.Parameters.AddWithValue("@BookingID", DGLogs.CurrentRow.Cells("BookingID").Value)
+        con.Open()
+        Dim reader As SqlDataReader = cmd.ExecuteReader()
+        If reader.HasRows Then
+            reader.Read()
+            rate = Convert.ToDecimal(reader("Rate"))
+            driver = reader("WDriver").ToString()
+        Else
+            MessageBox.Show("No matching booking found.")
+            Exit Sub
+        End If
+        con.Close()
 
+        If driver = "Yes" Then
+            DriverFee = 1000
+            If TotalDays >= 1 And TotalDays <= 6 Then
+                Discount = 0
+            ElseIf TotalDays >= 7 And TotalDays <= 13 Then
+                Discount = 500
+            ElseIf TotalDays >= 14 And TotalDays <= 29 Then
+                Discount = 1000
+            ElseIf TotalDays >= 30 Then
+                Discount = 1400
+            Else
+                Discount = 0
+                DriverFee = 0
+            End If
+            totalpay = (rate * TotalDays) - Discount + DriverFee
+        ElseIf driver = "No" Then
+            DriverFee = 0
+            If TotalDays >= 1 And TotalDays <= 6 Then
+                Discount = 0
+            ElseIf TotalDays >= 7 And TotalDays <= 13 Then
+                Discount = 500
+            ElseIf TotalDays >= 14 And TotalDays <= 29 Then
+                Discount = 1000
+            ElseIf TotalDays >= 30 Then
+                Discount = 1400
+            Else
+                Discount = 0
+            End If
+            totalpay = (rate * TotalDays) - Discount
+        End If
+    End Sub
     Private Sub BtnUpdate_Click(sender As Object, e As EventArgs) Handles BtnUpdate.Click
         If ToDOB.Value.Date <= FromDOB.Value.Date Then
             MessageBox.Show("The end date must be after the start date.", "INFO", MessageBoxButtons.OK, MessageBoxIcon.Warning)
@@ -72,12 +129,14 @@ Public Class Dashboard
         End If
         If Not Checker() Then Exit Sub
         Try
+            CarPay()
             Dim BookingID As Integer = Convert.ToInt32(DGLogs.CurrentRow.Cells("BookingID").Value)
-            Dim query As String = "UPDATE Booking SET StartBookDate = @FromDate, EndBookDate = @ToDate WHERE BookingID = @BookingID"
+            Dim query As String = "UPDATE Booking SET StartBookDate = @FromDate, EndBookDate = @ToDate, Price = @Price WHERE BookingID = @BookingID"
             Using cmd As New SqlCommand(query, con)
                 cmd.Parameters.AddWithValue("@FromDate", FromDOB.Value)
                 cmd.Parameters.AddWithValue("@ToDate", ToDOB.Value)
                 cmd.Parameters.AddWithValue("@BookingID", BookingID)
+                cmd.Parameters.AddWithValue("@Price", totalpay)
 
                 con.Open()
                 cmd.ExecuteNonQuery()
