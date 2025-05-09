@@ -16,7 +16,7 @@ Public Class Dashboard
         Try
             Dim query As String = "SELECT * From Booking WHERE Username = @Username" 'Finds EVERY SAME USERNAME(UNIQUE ID)
             Dim cmd As New SqlCommand(query, con)
-            cmd.Parameters.AddWithValue("@Username", "Justine")
+            cmd.Parameters.AddWithValue("@Username", loginForm.txtuser)
             Dim adapter As New SqlDataAdapter(cmd) 'CONNECTION TO ADAPTERS
             Dim table As New DataTable() 'CREATES A TABLE OUT OF THE DATABASE
             DGLogs.DataSource = table 'LOADS THE TABLE WITH THE DATASOURCE
@@ -81,9 +81,6 @@ Public Class Dashboard
             reader.Read()
             rate = Convert.ToDecimal(reader("Rate"))
             driver = reader("WDriver").ToString()
-        Else
-            MessageBox.Show("No matching booking found.")
-            Exit Sub
         End If
         con.Close()
 
