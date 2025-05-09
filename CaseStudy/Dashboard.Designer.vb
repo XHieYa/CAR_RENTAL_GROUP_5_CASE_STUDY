@@ -25,6 +25,7 @@ Partial Class Dashboard
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Dashboard))
         TabControl1 = New TabControl()
         TabPage1 = New TabPage()
+        Label4 = New Label()
         lblRecord = New Label()
         lblEmail = New Label()
         Button1 = New Button()
@@ -43,7 +44,6 @@ Partial Class Dashboard
         ToDOB = New DateTimePicker()
         FromDOB = New DateTimePicker()
         DGLogs = New DataGridView()
-        Label4 = New Label()
         TabControl1.SuspendLayout()
         TabPage1.SuspendLayout()
         TabPage2.SuspendLayout()
@@ -64,6 +64,7 @@ Partial Class Dashboard
         ' 
         ' TabPage1
         ' 
+        TabPage1.BackgroundImageLayout = ImageLayout.Stretch
         TabPage1.Controls.Add(Label4)
         TabPage1.Controls.Add(lblRecord)
         TabPage1.Controls.Add(lblEmail)
@@ -84,6 +85,17 @@ Partial Class Dashboard
         TabPage1.TabIndex = 0
         TabPage1.Text = "🚘Home── .✦"
         TabPage1.UseVisualStyleBackColor = True
+        ' 
+        ' Label4
+        ' 
+        Label4.AutoSize = True
+        Label4.Font = New Font("Stencil", 22.2F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
+        Label4.ForeColor = Color.Black
+        Label4.Location = New Point(1097, 16)
+        Label4.Name = "Label4"
+        Label4.Size = New Size(107, 44)
+        Label4.TabIndex = 10
+        Label4.Text = "🛣🛤"
         ' 
         ' lblRecord
         ' 
@@ -208,10 +220,10 @@ Partial Class Dashboard
         ' BtnDelete
         ' 
         BtnDelete.Font = New Font("Century", 12F, FontStyle.Bold)
-        BtnDelete.Location = New Point(1173, 562)
+        BtnDelete.Location = New Point(1145, 562)
         BtnDelete.Margin = New Padding(3, 4, 3, 4)
         BtnDelete.Name = "BtnDelete"
-        BtnDelete.Size = New Size(95, 31)
+        BtnDelete.Size = New Size(123, 31)
         BtnDelete.TabIndex = 6
         BtnDelete.Text = "Delete"
         BtnDelete.UseVisualStyleBackColor = True
@@ -239,10 +251,10 @@ Partial Class Dashboard
         ' BtnUpdate
         ' 
         BtnUpdate.Font = New Font("Century", 12F, FontStyle.Bold)
-        BtnUpdate.Location = New Point(1173, 525)
+        BtnUpdate.Location = New Point(1145, 525)
         BtnUpdate.Margin = New Padding(3, 4, 3, 4)
         BtnUpdate.Name = "BtnUpdate"
-        BtnUpdate.Size = New Size(95, 31)
+        BtnUpdate.Size = New Size(123, 31)
         BtnUpdate.TabIndex = 3
         BtnUpdate.Text = "Update"
         BtnUpdate.UseVisualStyleBackColor = True
@@ -280,17 +292,6 @@ Partial Class Dashboard
         DGLogs.RowHeadersWidth = 51
         DGLogs.Size = New Size(1251, 501)
         DGLogs.TabIndex = 0
-        ' 
-        ' Label4
-        ' 
-        Label4.AutoSize = True
-        Label4.Font = New Font("Stencil", 22.2F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
-        Label4.ForeColor = Color.Black
-        Label4.Location = New Point(1097, 16)
-        Label4.Name = "Label4"
-        Label4.Size = New Size(107, 44)
-        Label4.TabIndex = 10
-        Label4.Text = "🛣🛤"
         ' 
         ' Dashboard
         ' 
