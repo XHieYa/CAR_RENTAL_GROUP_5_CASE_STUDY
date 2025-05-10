@@ -28,7 +28,7 @@ Namespace My
 
         <Global.System.Diagnostics.DebuggerStepThroughAttribute()>
         Protected Overrides Sub OnCreateMainForm()
-            Me.MainForm = loginForm
+            Me.MainForm = FrontPage
         End Sub
     End Class
 End Namespace
