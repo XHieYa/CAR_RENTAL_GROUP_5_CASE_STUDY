@@ -107,7 +107,7 @@
     Private Sub MitsubishiStradaConfirmButton(sender As Object, e As EventArgs) Handles C.Click
         Me.Hide()
         BookingForm.Show()
-
+        Seaters.Hide()
         BookingForm.txtCColor.Text = "Orange"
         BookingForm.txtCar.Text = "Mitsubishi Strada"
         BookingForm.txtPlateNumber.Text = ""
@@ -118,6 +118,9 @@
     End Sub
 
     Private Sub C1_Click(sender As Object, e As EventArgs) Handles C1.Click
+        Me.Hide()
+        BookingForm.Show()
+        Seaters.Hide()
         BookingForm.txtCColor.Text = "Orange"
         BookingForm.txtCar.Text = "Mitsubishi Strada"
         BookingForm.txtPlateNumber.Text = ""

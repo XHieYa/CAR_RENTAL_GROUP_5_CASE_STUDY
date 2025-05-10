@@ -1,10 +1,12 @@
 ﻿Imports Microsoft.Data.SqlClient 'Importing SQL Database Access Commands
 Public Class PaymentDetailSlip
+    'Set up Variables
     Dim totalpay As Double
-    Dim rate As Integer = 150 'Val(BookingForm.txtRate.Text)
+    Dim rate As Integer = Val(BookingForm.txtRate.Text)
     Dim Discount As Integer
     Dim DriverFee As Integer
     Dim Driver As String
+    'when loaded takes the information from Booking Form and loginform for the username Ofc
     Private Sub PaymentDetailSlip(sender As Object, e As EventArgs) Handles MyBase.Load
         FromDate.Value = BookingForm.FromDOB.Value.Date
         ToDate.Value = BookingForm.ToDOB.Value.Date
@@ -15,20 +17,26 @@ Public Class PaymentDetailSlip
         txtEmail.Text = Dashboard.lblEmail.Text
 
     End Sub
+    'when payment is complete this shall execute
     Private Sub BookingAdd()
+        'Sql connection
         Dim Con As New SqlConnection("Data Source=(localdb)\MSSQLLocalDB;Initial Catalog=CaseStudy;Integrated Security=True;Connect Timeout=30;Encrypt=False;Trust Server Certificate=False;Application Intent=ReadWrite;Multi Subnet Failover=False")
+        'Condition if checkbox for driver is yes or a no to be sent to the sql
         If CheckBox1.Checked Then
             Driver = "Yes"
         ElseIf CheckBox1.Checked = False Then
             Driver = "No"
         End If
         Try
+            'checks if the date values are equal
             If FromDate.Value = ToDate.Value Then
                 MessageBox.Show("Cannot book within the same day", "INFO", MessageBoxButtons.OK, MessageBoxIcon.Warning)
                 Return
             End If
+            'sql query
             Dim query As String = "INSERT INTO Booking (CarID, CarName, StartBookDate, EndBookDate, Price, WDriver, Rate) VALUES (@CarID, @CarName, @Fdate, @Tdate, @Price, @WDriver, @Rate)"
             Con.Open()
+            'same as the other that adds items to sql
             Using cmd As New SqlCommand(query, Con)
                 cmd.Parameters.AddWithValue("@CarID", txtCarID.Text)
                 cmd.Parameters.AddWithValue("@CarName", txtCarName.Text)
@@ -47,6 +55,7 @@ Public Class PaymentDetailSlip
             Con.Close()
         End Try
     End Sub
+    'Sub that calculates pay
     Public Sub CarPay()
         Dim TotalDays As Integer = (ToDate.Value.Date - FromDate.Value.Date).Days
         If CheckBox1.Checked = True Then
@@ -86,18 +95,21 @@ Public Class PaymentDetailSlip
         End If
     End Sub
     Private Sub BtnCalculate_Click(sender As Object, e As EventArgs) Handles BtnCalculate.Click
+        'gets total days
         Dim TotalDays As Integer = (ToDate.Value.Date - FromDate.Value.Date).Days
+        'initiates carpay
         CarPay()
+        'shows the total day and information
         MessageBox.Show("Total Days:" & TotalDays &
                         ControlChars.NewLine & "Discounted Price: " & Discount &
                         ControlChars.NewLine & "Driver Fee: " & DriverFee &
                         ControlChars.NewLine & "Total: " & totalpay, "Calculations")
     End Sub
-
+    'same as calculate but with more if condition if they didnt put anything or decided to cancel out or insufficient funds
     Private Sub BtnPayment_Click(sender As Object, e As EventArgs) Handles BtnPayment.Click
-        Dim TotalDays As Integer = (ToDate.Value.Date - FromDate.Value.Date).Days
-        CarPay()
-        Dim PaymentInput As String = InputBox("Total Days:" & TotalDays &
+        Dim TotalDays = (ToDate.Value.Date - FromDate.Value.Date).Days
+        CarPay
+        Dim PaymentInput = InputBox("Total Days:" & TotalDays &
                         ControlChars.NewLine & "Discounted Price: " & Discount &
                         ControlChars.NewLine & "Driver Fee: " & DriverFee &
                         ControlChars.NewLine & "Total: " & totalpay, "Payment Input Box")
@@ -108,6 +120,8 @@ Public Class PaymentDetailSlip
                 MessageBox.Show("Insufficient Amount.", "Payment Failed.", MessageBoxButtons.OK, MessageBoxIcon.Error)
             Else
                 BookingAdd()
+                Dashboard.Show()
+                Me.Close()
             End If
 
         End If
@@ -115,4 +129,18 @@ Public Class PaymentDetailSlip
 
     End Sub
 
+    Private Sub btnBackToBooking_Click(sender As Object, e As EventArgs) Handles btnBackToBooking.Click
+        BookingForm.Show()
+        Me.Hide()
+    End Sub
+
+    Private Sub BtnBackToDashBoard_Click(sender As Object, e As EventArgs) Handles BtnBackToDashBoard.Click
+        Dashboard.Show()
+        Me.Hide()
+    End Sub
+
+    Private Sub BtnBackToSeater_Click(sender As Object, e As EventArgs) Handles BtnBackToSeater.Click
+        Seaters.Show()
+        Me.Hide()
+    End Sub
 End Class

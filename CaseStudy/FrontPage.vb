@@ -3,8 +3,8 @@
 
         btn.FlatStyle = FlatStyle.Flat
         btn.FlatAppearance.BorderSize = 0
-        btn.BackColor = Color.Orange
-        btn.ForeColor = Color.White
+        btn.BackColor = Color.Transparent
+        btn.ForeColor = Color.Orange
         btn.Cursor = Cursors.Hand
 
         Dim rad As New Drawing2D.GraphicsPath
@@ -20,12 +20,17 @@
 
     End Sub
 
-    Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
-        Me.Hide()
-        loginForm.Show()
+    Private Sub FrontPage_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+
+        RoundCornerButton(Button1)
+
     End Sub
 
-    Private Sub FrontPage_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-        RoundCornerButton(Button1)
+    Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
+
+        Hide()
+        loginForm.Show()
+
     End Sub
+
 End Class

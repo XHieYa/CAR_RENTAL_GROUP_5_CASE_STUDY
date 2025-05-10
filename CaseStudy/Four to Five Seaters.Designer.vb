@@ -344,7 +344,7 @@ Partial Class Four_to_Five_Seaters
         TabPage1.Font = New Font("Sylfaen", 9F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
         TabPage1.Location = New Point(4, 29)
         TabPage1.Name = "TabPage1"
-        TabPage1.Padding = New Padding(3, 3, 3, 3)
+        TabPage1.Padding = New Padding(3)
         TabPage1.Size = New Size(1293, 603)
         TabPage1.TabIndex = 0
         TabPage1.Text = "Maruti Suzuki S-Presso"
@@ -958,9 +958,11 @@ Partial Class Four_to_Five_Seaters
         ' PictureBox1
         ' 
         PictureBox1.BorderStyle = BorderStyle.Fixed3D
+        PictureBox1.Image = CType(resources.GetObject("PictureBox1.Image"), Image)
         PictureBox1.Location = New Point(263, 3)
         PictureBox1.Name = "PictureBox1"
         PictureBox1.Size = New Size(250, 135)
+        PictureBox1.SizeMode = PictureBoxSizeMode.StretchImage
         PictureBox1.TabIndex = 2
         PictureBox1.TabStop = False
         ' 
@@ -993,7 +995,7 @@ Partial Class Four_to_Five_Seaters
         TabPage2.Controls.Add(Panel6)
         TabPage2.Location = New Point(4, 29)
         TabPage2.Name = "TabPage2"
-        TabPage2.Padding = New Padding(3, 3, 3, 3)
+        TabPage2.Padding = New Padding(3)
         TabPage2.Size = New Size(1293, 603)
         TabPage2.TabIndex = 1
         TabPage2.Text = "Suzuki Jimny"
