@@ -23,6 +23,10 @@ Partial Class PaymentDetailSlip
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
         Panel1 = New Panel()
+        btnBackToBooking = New Button()
+        BtnBackToDashBoard = New Button()
+        BtnBackToSeater = New Button()
+        Btn = New Button()
         GroupBox3 = New GroupBox()
         txtPlateNumber = New TextBox()
         Label16 = New Label()
@@ -38,7 +42,6 @@ Partial Class PaymentDetailSlip
         txtBodyNumber = New TextBox()
         Label8 = New Label()
         Label7 = New Label()
-        GroupBox5 = New GroupBox()
         GroupBox4 = New GroupBox()
         Label15 = New Label()
         BtnCalculate = New Button()
@@ -71,8 +74,11 @@ Partial Class PaymentDetailSlip
         ' 
         ' Panel1
         ' 
+        Panel1.Controls.Add(btnBackToBooking)
+        Panel1.Controls.Add(BtnBackToDashBoard)
+        Panel1.Controls.Add(BtnBackToSeater)
+        Panel1.Controls.Add(Btn)
         Panel1.Controls.Add(GroupBox3)
-        Panel1.Controls.Add(GroupBox5)
         Panel1.Controls.Add(GroupBox4)
         Panel1.Controls.Add(GroupBox2)
         Panel1.Controls.Add(GroupBox1)
@@ -81,6 +87,46 @@ Partial Class PaymentDetailSlip
         Panel1.Name = "Panel1"
         Panel1.Size = New Size(444, 562)
         Panel1.TabIndex = 2
+        ' 
+        ' btnBackToBooking
+        ' 
+        btnBackToBooking.Location = New Point(306, 394)
+        btnBackToBooking.Margin = New Padding(3, 2, 3, 2)
+        btnBackToBooking.Name = "btnBackToBooking"
+        btnBackToBooking.Size = New Size(123, 27)
+        btnBackToBooking.TabIndex = 33
+        btnBackToBooking.Text = "Back To Booking"
+        btnBackToBooking.UseVisualStyleBackColor = True
+        ' 
+        ' BtnBackToDashBoard
+        ' 
+        BtnBackToDashBoard.Location = New Point(306, 441)
+        BtnBackToDashBoard.Margin = New Padding(3, 2, 3, 2)
+        BtnBackToDashBoard.Name = "BtnBackToDashBoard"
+        BtnBackToDashBoard.Size = New Size(123, 27)
+        BtnBackToDashBoard.TabIndex = 32
+        BtnBackToDashBoard.Text = "Back To DashBoard"
+        BtnBackToDashBoard.UseVisualStyleBackColor = True
+        ' 
+        ' BtnBackToSeater
+        ' 
+        BtnBackToSeater.Location = New Point(306, 484)
+        BtnBackToSeater.Margin = New Padding(3, 2, 3, 2)
+        BtnBackToSeater.Name = "BtnBackToSeater"
+        BtnBackToSeater.Size = New Size(123, 27)
+        BtnBackToSeater.TabIndex = 31
+        BtnBackToSeater.Text = "Back To Seater"
+        BtnBackToSeater.UseVisualStyleBackColor = True
+        ' 
+        ' Btn
+        ' 
+        Btn.Location = New Point(306, 525)
+        Btn.Margin = New Padding(3, 2, 3, 2)
+        Btn.Name = "Btn"
+        Btn.Size = New Size(123, 27)
+        Btn.TabIndex = 30
+        Btn.Text = "Back To ?"
+        Btn.UseVisualStyleBackColor = True
         ' 
         ' GroupBox3
         ' 
@@ -239,15 +285,6 @@ Partial Class PaymentDetailSlip
         Label7.TabIndex = 13
         Label7.Text = "Car Name"
         ' 
-        ' GroupBox5
-        ' 
-        GroupBox5.Location = New Point(287, 362)
-        GroupBox5.Name = "GroupBox5"
-        GroupBox5.Size = New Size(148, 192)
-        GroupBox5.TabIndex = 5
-        GroupBox5.TabStop = False
-        GroupBox5.Text = "Receipt"
-        ' 
         ' GroupBox4
         ' 
         GroupBox4.Controls.Add(Label15)
@@ -262,7 +299,7 @@ Partial Class PaymentDetailSlip
         GroupBox4.Margin = New Padding(3, 2, 3, 2)
         GroupBox4.Name = "GroupBox4"
         GroupBox4.Padding = New Padding(3, 2, 3, 2)
-        GroupBox4.Size = New Size(270, 192)
+        GroupBox4.Size = New Size(277, 192)
         GroupBox4.TabIndex = 3
         GroupBox4.TabStop = False
         GroupBox4.Text = "Payment Method"
@@ -546,7 +583,10 @@ Partial Class PaymentDetailSlip
     Friend WithEvents BtnCalculate As Button
     Friend WithEvents txtAge As TextBox
     Friend WithEvents txtDOB As TextBox
-    Friend WithEvents GroupBox5 As GroupBox
     Friend WithEvents txtPlateNumber As TextBox
     Friend WithEvents Label16 As Label
+    Friend WithEvents btnBackToBooking As Button
+    Friend WithEvents BtnBackToDashBoard As Button
+    Friend WithEvents BtnBackToSeater As Button
+    Friend WithEvents Btn As Button
 End Class

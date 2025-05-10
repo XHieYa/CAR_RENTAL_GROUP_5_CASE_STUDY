@@ -46,6 +46,7 @@ Partial Class BookingForm
         TxtCarID = New TextBox()
         BtnConfirm = New Button()
         DGVSchedules = New DataGridView()
+        BtnBackToSeater = New Button()
         GroupBox1.SuspendLayout()
         CType(DGVSchedules, ComponentModel.ISupportInitialize).BeginInit()
         SuspendLayout()
@@ -90,6 +91,7 @@ Partial Class BookingForm
         ' 
         ' GroupBox1
         ' 
+        GroupBox1.Controls.Add(BtnBackToSeater)
         GroupBox1.Controls.Add(Label5)
         GroupBox1.Controls.Add(txtRate)
         GroupBox1.Controls.Add(Label12)
@@ -116,7 +118,7 @@ Partial Class BookingForm
         GroupBox1.Size = New Size(649, 162)
         GroupBox1.TabIndex = 10
         GroupBox1.TabStop = False
-        GroupBox1.Text = "GroupBox1"
+        GroupBox1.Text = "Booking Detail"
         ' 
         ' Label5
         ' 
@@ -289,6 +291,16 @@ Partial Class BookingForm
         DGVSchedules.Size = New Size(1134, 351)
         DGVSchedules.TabIndex = 12
         ' 
+        ' BtnBackToSeater
+        ' 
+        BtnBackToSeater.Location = New Point(520, 123)
+        BtnBackToSeater.Margin = New Padding(3, 2, 3, 2)
+        BtnBackToSeater.Name = "BtnBackToSeater"
+        BtnBackToSeater.Size = New Size(123, 27)
+        BtnBackToSeater.TabIndex = 32
+        BtnBackToSeater.Text = "Back To Seater"
+        BtnBackToSeater.UseVisualStyleBackColor = True
+        ' 
         ' BookingForm
         ' 
         AutoScaleDimensions = New SizeF(7F, 15F)
@@ -328,4 +340,5 @@ Partial Class BookingForm
     Friend WithEvents txtBodyNumber As TextBox
     Friend WithEvents Label5 As Label
     Friend WithEvents txtRate As TextBox
+    Friend WithEvents BtnBackToSeater As Button
 End Class
