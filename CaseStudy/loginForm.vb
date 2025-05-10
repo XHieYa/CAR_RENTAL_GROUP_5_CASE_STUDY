@@ -40,7 +40,7 @@ Public Class loginForm
             Else
                 MessageBox.Show("Login Successfully", "INFO", MessageBoxButtons.OK, MessageBoxIcon.Information)
                 Me.Hide()
-                Dashboard.Show()
+                FrontPage.Show()
             End If
         Else
             MessageBox.Show("Login Error") 'Error Message if account is not existing
