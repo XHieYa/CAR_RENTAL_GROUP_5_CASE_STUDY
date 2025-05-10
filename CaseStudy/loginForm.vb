@@ -2,7 +2,8 @@
 Imports Microsoft.Data.SqlClient 'Importing SQL Database Access Commands
 Public Class loginForm
     Dim con As New SqlConnection("Data Source=(localdb)\MSSQLLocalDB;Initial Catalog=CaseStudy;Integrated Security=True;Connect Timeout=30;Encrypt=False;Trust Server Certificate=False;Application Intent=ReadWrite;Multi Subnet Failover=False") 'connection to SQL SERVER
-    Private Function UsernameExists(username) As Boolean 'Function to make Username Unique
+    'Function to check and make the Username Unique
+    Private Function UsernameExists(username) As Boolean
         Dim query As String = "SELECT COUNT(*) FROM login WHERE Username = @Username"
         Try
             con.Open() 'Open Connection to SQL
@@ -19,54 +20,66 @@ Public Class loginForm
             con.Close() 'Closes Connection to SQL
         End Try
     End Function
-    Private Sub Btnlogin_Click(sender As Object, e As EventArgs) Handles BtnLogin.Click 'Login Button
+    'Login Button
+    Private Sub Btnlogin_Click(sender As Object, e As EventArgs) Handles BtnLogin.Click
         con.Open()
-        Dim query As String = "SELECT COUNT(*) FROM login WHERE username=@username AND password=@password" 'Check Database for the matching Password and Username
+        'Check Database for the matching Password and Username
+        Dim query As String = "SELECT COUNT(*) FROM login WHERE username=@username AND password=@password"
         Dim cmd As New SqlCommand(query, con)
-        cmd.Parameters.AddWithValue("@username", txtuser.Text) 'Both adds Value to @Variables to be checked or compared as Boolean
+        'Both adds Value to @Variables to be checked or compared as Boolean
+        cmd.Parameters.AddWithValue("@username", txtuser.Text)
         cmd.Parameters.AddWithValue("@password", txtpass.Text)
         Dim count As Integer = Convert.ToInt64(cmd.ExecuteScalar)
         con.Close()
 
         If count > 0 Then
+            'If admin on user and password were entered admin form will be open else they go to dashboard
             If txtuser.Text = "admin" And txtpass.Text = "admin" Then
                 Me.Hide()
                 AdminForm.Show()
             Else
-                MessageBox.Show("Login Successfully", "INFO", MessageBoxButtons.OK, MessageBoxIcon.Information) 'Will be key to transfering to next Form
+                MessageBox.Show("Login Successfully", "INFO", MessageBoxButtons.OK, MessageBoxIcon.Information)
                 Me.Hide()
                 Dashboard.Show()
             End If
-
         Else
             MessageBox.Show("Login Error") 'Error Message if account is not existing
 
         End If
     End Sub
+    'When the form load only login and sign up will be used
     Private Sub Form1_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-        GroupBox2.Enabled = False 'When the form load only login and sign up will be used
+        GroupBox2.Enabled = False
         dtpDOB.Value = Now
     End Sub
+    'When the link label is clicked then sign up will be enabled and login will be disabled
     Private Sub llblCreateAccount_LinkClicked(sender As Object, e As LinkLabelLinkClickedEventArgs) Handles llblCreateAccount.LinkClicked 'if Create account is clicked disable login enable sign-up
         GroupBox2.Enabled = True
         GroupBox1.Enabled = False
     End Sub
-    Private Sub BtnSignIn_Click(sender As Object, e As EventArgs) Handles BtnSignIn.Click 'Sign in button Functions
-        For Each item As Control In GroupBox2.Controls 'Checks if every Box Is accounted for
+    'Sign in button sub
+    Private Sub BtnSignIn_Click(sender As Object, e As EventArgs) Handles BtnSignIn.Click
+        'Checks if every Box Is accounted for
+        For Each item As Control In GroupBox2.Controls
             If (TypeOf item Is TextBox) Then
                 If (item.Text = "") Then
-                    MessageBox.Show("All Fields Must be Filled up", "info", MessageBoxButtons.OK, MessageBoxIcon.Information) 'Error message if things are not field up
+                    'Error message if things are not field up
+                    MessageBox.Show("All Fields Must be Filled up", "info", MessageBoxButtons.OK, MessageBoxIcon.Information)
                     Return
                 End If
             End If
         Next
-        Dim username As String = txtUsername.Text 'for username checker turns siusername to username variable
-        If UsernameExists(username) Then 'uses the UsernameExists Function mentioned above
-            MessageBox.Show("Username already exists. Use Another Username", "Info", MessageBoxButtons.OK, MessageBoxIcon.Information) 'Error Message if Username is Already Existing
+        'for username checker turns siusername to username variable
+        Dim username As String = txtUsername.Text
+        'uses the UsernameExists Function mentioned above
+        If UsernameExists(username) Then
+            'Error Message if Username is Already Existing
+            MessageBox.Show("Username already exists. Use Another Username", "Info", MessageBoxButtons.OK, MessageBoxIcon.Information)
         Else
             Try
+                'Individually setting the values and using parameters to be input to their cells
                 Dim query As String = "Insert Into login (Username, Email, Fullname, Password, Age, Sex, Address, Date) VALUES (@Username,@Email, @Fullname, @Password, @Age, @Sex, @Address, @Date)" 'Basically putting the value on their own cells for the database
-                Dim command As New SqlCommand(query, con) 'Individually setting the values and using parameters to be input to their cells
+                Dim command As New SqlCommand(query, con)
                 command.Parameters.AddWithValue("@Username", txtUsername.Text)
                 command.Parameters.AddWithValue("@Email", txtEmail.Text)
                 command.Parameters.AddWithValue("@Fullname", txtFullName.Text)
@@ -76,12 +89,16 @@ Public Class loginForm
                 command.Parameters.AddWithValue("@Address", txtAddress.Text)
                 command.Parameters.AddWithValue("@Date", DateOnly.FromDateTime(dtpDOB.Value.Date))
                 con.Open()
-                command.ExecuteNonQuery() 'Used to create or change data within the database
-                MessageBox.Show("Successfuly Registered Please Log-in", "info", MessageBoxButtons.OK, MessageBoxIcon.Information) 'Message confirming your info has been saved
+                'Used to create or change data within the database
+                command.ExecuteNonQuery()
+                'Message confirming your info has been saved
+                MessageBox.Show("Successfuly Registered Please Log-in", "info", MessageBoxButtons.OK, MessageBoxIcon.Information)
             Catch ex As Exception
-                MessageBox.Show($"Error adding account: {ex.Message} ") 'Error message if smthng happen within the server
+                'Error message if smthng happen within the server
+                MessageBox.Show($"Error adding account: {ex.Message} ")
             Finally
-                txtUsername.Text = "" 'clears sign in for privacy
+                'clears sign in for privacy
+                txtUsername.Text = ""
                 txtFullName.Text = ""
                 txtAge.Text = ""
                 txtPassword.Text = ""
@@ -89,13 +106,15 @@ Public Class loginForm
                 txtEmail.Text = ""
                 cmbSex.Items.Clear()
                 dtpDOB.Value = Now
-                GroupBox2.Enabled = False 'Makes you relogin to ensure you created the account and it works succesfully
+                'Makes you relogin to ensure you created the account and it works succesfully
+                GroupBox2.Enabled = False
                 GroupBox1.Enabled = True
                 con.Close()
             End Try
         End If
     End Sub
-    Private Sub CheckBox1_CheckedChanged(sender As Object, e As EventArgs) Handles cbShowPassLI.CheckedChanged 'Just a simple show password
+    'Just a simple show password
+    Private Sub CheckBox1_CheckedChanged(sender As Object, e As EventArgs) Handles cbShowPassLI.CheckedChanged
         If cbShowPassLI.Checked = True Then
             txtpass.PasswordChar = ""
         Else
@@ -107,9 +126,9 @@ Public Class loginForm
             e.Handled = True
         End If
     End Sub
-
+    'clears sign in for privacy and enables login disables sign up
     Private Sub llblHaveAnAccount_LinkClicked(sender As Object, e As LinkLabelLinkClickedEventArgs) Handles llblHaveAnAccount.LinkClicked
-        txtUsername.Text = "" 'clears sign in for privacy
+        txtUsername.Text = ""
         txtFullName.Text = ""
         txtAge.Text = ""
         txtPassword.Text = ""
@@ -117,11 +136,11 @@ Public Class loginForm
         txtAddress.Text = ""
         cmbSex.Items.Clear()
         dtpDOB.Value = Now
-        GroupBox2.Enabled = False 'Makes you relogin to ensure you created the account and it works succesfully
+        GroupBox2.Enabled = False
         GroupBox1.Enabled = True
     End Sub
-
-    Private Sub cbShowPasswordSI_CheckedChanged(sender As Object, e As EventArgs) Handles cbShowPasswordSI.CheckedChanged 'same as the checkbox above
+    'Just a simple show password
+    Private Sub cbShowPasswordSI_CheckedChanged(sender As Object, e As EventArgs) Handles cbShowPasswordSI.CheckedChanged
         If cbShowPasswordSI.Checked = True Then
             txtPassword.PasswordChar = ""
         Else
