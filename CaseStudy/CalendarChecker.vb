@@ -1,33 +1,6 @@
-﻿Imports System.Windows.Forms.VisualStyles.VisualStyleElement.StartPanel 'From StyleBackground from DataGrid
-Imports Microsoft.Data.SqlClient 'Importing SQL Database Access Commands
-Public Class BookingForm
-    'SQL Conenction
+﻿Imports Microsoft.Data.SqlClient
+Public Class CalendarChecker
     Dim con As New SqlConnection("Data Source=(localdb)\MSSQLLocalDB;Initial Catalog=CaseStudy;Integrated Security=True;Connect Timeout=30;Encrypt=False;Trust Server Certificate=False;Application Intent=ReadWrite;Multi Subnet Failover=False")
-    Private Sub BtnConfirm_Click(sender As Object, e As EventArgs) Handles BtnConfirm.Click
-        'Checks if both dates are equal or reversed
-        If ToDOB.Value.Date <= FromDOB.Value.Date Then
-            MessageBox.Show("Not Equal to Each Other Nor The ToDate must be higher than From", "INFO", MessageBoxButtons.OK, MessageBoxIcon.Warning)
-            Exit Sub
-        Else
-            'Checks if schedule thats gonna be input is not between existing dates and divided to by Unique CarID
-            Dim query As String = "SELECT COUNT(*) FROM Booking WHERE CarID = @CarID AND @NewStartDate <= EndBookDate AND @NewEndDate >= StartBookDate"
-            con.Open()
-            Using cmd As New SqlCommand(query, con)
-                cmd.Parameters.AddWithValue("@CarID", TxtCarID.Text)
-                cmd.Parameters.AddWithValue("@NewStartDate", FromDOB.Value.Date)
-                cmd.Parameters.AddWithValue("@NewEndDate", ToDOB.Value.Date)
-                Dim count As Integer = Convert.ToInt32(cmd.ExecuteScalar())
-                If count > 0 Then
-                    MessageBox.Show("Schedule to This Has Been Booked", "INFO", MessageBoxButtons.OK, MessageBoxIcon.Warning)
-                    Return
-                End If
-            End Using
-            'Shows Payment Slip
-            PaymentDetailSlip.Show()
-            Me.Hide()
-        End If
-    End Sub
-    'Loads The Whole Column
     Private Sub ColumnLoader()
         DGVSchedules.Columns.Clear()
         'The first part which is the car Name
@@ -118,10 +91,11 @@ Public Class BookingForm
         End While
         con.Close()
     End Sub
-    'Actions called when the booking form load
-    Private Sub BookingForm_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+
+    Private Sub CalendarChecker_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         ColumnLoader()
         RowLoader()
         ScheduleShower()
     End Sub
+    'Actions called when the booking form load
 End Class

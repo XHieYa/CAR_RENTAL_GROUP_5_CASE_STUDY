@@ -116,7 +116,7 @@ Partial Class BookingForm
         GroupBox1.Size = New Size(649, 162)
         GroupBox1.TabIndex = 10
         GroupBox1.TabStop = False
-        GroupBox1.Text = "GroupBox1"
+        GroupBox1.Text = "Booking Detail"
         ' 
         ' Label5
         ' 

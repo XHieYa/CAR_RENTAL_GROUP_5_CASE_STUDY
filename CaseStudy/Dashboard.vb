@@ -228,4 +228,8 @@ Public Class Dashboard
         CarPay()
         MessageBox.Show("Your New Total Will be " & totalpay, "Info")
     End Sub
+
+    Private Sub BtnSchedCheck_Click(sender As Object, e As EventArgs) Handles BtnSchedCheck.Click
+        CalendarChecker.Show()
+    End Sub
 End Class

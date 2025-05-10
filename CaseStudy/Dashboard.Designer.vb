@@ -52,6 +52,7 @@ Partial Class Dashboard
         ToDOB = New DateTimePicker()
         FromDOB = New DateTimePicker()
         DGLogs = New DataGridView()
+        BtnSchedCheck = New Button()
         TabControl1.SuspendLayout()
         TabPage1.SuspendLayout()
         TabPage2.SuspendLayout()
@@ -283,6 +284,7 @@ Partial Class Dashboard
         ' TabPage2
         ' 
         TabPage2.BackgroundImage = CType(resources.GetObject("TabPage2.BackgroundImage"), Image)
+        TabPage2.Controls.Add(BtnSchedCheck)
         TabPage2.Controls.Add(btnCalculate)
         TabPage2.Controls.Add(BtnDelete)
         TabPage2.Controls.Add(Label3)
@@ -302,7 +304,7 @@ Partial Class Dashboard
         ' btnCalculate
         ' 
         btnCalculate.Font = New Font("Century", 12F, FontStyle.Bold)
-        btnCalculate.Location = New Point(809, 407)
+        btnCalculate.Location = New Point(809, 422)
         btnCalculate.Name = "btnCalculate"
         btnCalculate.Size = New Size(187, 23)
         btnCalculate.TabIndex = 7
@@ -371,6 +373,7 @@ Partial Class Dashboard
         DGLogs.AllowUserToDeleteRows = False
         DGLogs.AllowUserToResizeColumns = False
         DGLogs.AllowUserToResizeRows = False
+        DGLogs.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill
         DGLogs.BackgroundColor = Color.LightGoldenrodYellow
         DGLogs.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize
         DGLogs.Location = New Point(15, 11)
@@ -381,6 +384,16 @@ Partial Class Dashboard
         DGLogs.SelectionMode = DataGridViewSelectionMode.FullRowSelect
         DGLogs.Size = New Size(1095, 376)
         DGLogs.TabIndex = 0
+        ' 
+        ' BtnSchedCheck
+        ' 
+        BtnSchedCheck.Font = New Font("Century", 12F, FontStyle.Bold)
+        BtnSchedCheck.Location = New Point(809, 394)
+        BtnSchedCheck.Name = "BtnSchedCheck"
+        BtnSchedCheck.Size = New Size(187, 23)
+        BtnSchedCheck.TabIndex = 8
+        BtnSchedCheck.Text = "Schedule Check"
+        BtnSchedCheck.UseVisualStyleBackColor = True
         ' 
         ' Dashboard
         ' 
@@ -429,4 +442,5 @@ Partial Class Dashboard
     Friend WithEvents Label5 As Label
     Friend WithEvents Label11 As Label
     Friend WithEvents Label10 As Label
+    Friend WithEvents BtnSchedCheck As Button
 End Class
