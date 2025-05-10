@@ -124,4 +124,9 @@ Public Class BookingForm
         RowLoader()
         ScheduleShower()
     End Sub
+
+    Private Sub BtnBackToSeater_Click(sender As Object, e As EventArgs) Handles BtnBackToSeater.Click
+        Me.Hide()
+        Seaters.Show()
+    End Sub
 End Class

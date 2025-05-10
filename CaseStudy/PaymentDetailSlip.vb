@@ -107,9 +107,9 @@ Public Class PaymentDetailSlip
     End Sub
     'same as calculate but with more if condition if they didnt put anything or decided to cancel out or insufficient funds
     Private Sub BtnPayment_Click(sender As Object, e As EventArgs) Handles BtnPayment.Click
-        Dim TotalDays As Integer = (ToDate.Value.Date - FromDate.Value.Date).Days
-        CarPay()
-        Dim PaymentInput As String = InputBox("Total Days:" & TotalDays &
+        Dim TotalDays = (ToDate.Value.Date - FromDate.Value.Date).Days
+        CarPay
+        Dim PaymentInput = InputBox("Total Days:" & TotalDays &
                         ControlChars.NewLine & "Discounted Price: " & Discount &
                         ControlChars.NewLine & "Driver Fee: " & DriverFee &
                         ControlChars.NewLine & "Total: " & totalpay, "Payment Input Box")
@@ -120,6 +120,8 @@ Public Class PaymentDetailSlip
                 MessageBox.Show("Insufficient Amount.", "Payment Failed.", MessageBoxButtons.OK, MessageBoxIcon.Error)
             Else
                 BookingAdd()
+                Dashboard.Show()
+                Me.Close()
             End If
 
         End If
@@ -127,4 +129,18 @@ Public Class PaymentDetailSlip
 
     End Sub
 
+    Private Sub btnBackToBooking_Click(sender As Object, e As EventArgs) Handles btnBackToBooking.Click
+        BookingForm.Show()
+        Me.Hide()
+    End Sub
+
+    Private Sub BtnBackToDashBoard_Click(sender As Object, e As EventArgs) Handles BtnBackToDashBoard.Click
+        Dashboard.Show()
+        Me.Hide()
+    End Sub
+
+    Private Sub BtnBackToSeater_Click(sender As Object, e As EventArgs) Handles BtnBackToSeater.Click
+        Seaters.Show()
+        Me.Hide()
+    End Sub
 End Class
