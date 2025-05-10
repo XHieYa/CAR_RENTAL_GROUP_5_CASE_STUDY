@@ -24,7 +24,7 @@ Public Class loginForm
     Private Sub Btnlogin_Click(sender As Object, e As EventArgs) Handles BtnLogin.Click
         con.Open()
         'Check Database for the matching Password and Username
-        Dim query As String = "SELECT COUNT(*) FROM login WHERE username=@username AND password=@password"
+        Dim query = "SELECT COUNT(*) FROM login WHERE username=@username AND password=@password"
         Dim cmd As New SqlCommand(query, con)
         'Both adds Value to @Variables to be checked or compared as Boolean
         cmd.Parameters.AddWithValue("@username", txtuser.Text)
@@ -35,12 +35,12 @@ Public Class loginForm
         If count > 0 Then
             'If admin on user and password were entered admin form will be open else they go to dashboard
             If txtuser.Text = "admin" And txtpass.Text = "admin" Then
-                Me.Hide()
+                Hide()
                 AdminForm.Show()
             Else
                 MessageBox.Show("Login Successfully", "INFO", MessageBoxButtons.OK, MessageBoxIcon.Information)
-                Me.Hide()
-                HomePage.Show()
+                Hide()
+                Dashboard.Show()
             End If
         Else
             MessageBox.Show("Login Error") 'Error Message if account is not existing
@@ -148,4 +148,8 @@ Public Class loginForm
         End If
     End Sub
 
+    Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
+        Me.Close()
+        FrontPage.Show()
+    End Sub
 End Class

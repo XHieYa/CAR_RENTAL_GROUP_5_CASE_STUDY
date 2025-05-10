@@ -63,6 +63,7 @@ Partial Class loginForm
         Label7 = New Label()
         Label6 = New Label()
         Label5 = New Label()
+        Button1 = New Button()
         GroupBox1.SuspendLayout()
         CType(PictureBox3, ComponentModel.ISupportInitialize).BeginInit()
         CType(PictureBox1, ComponentModel.ISupportInitialize).BeginInit()
@@ -76,6 +77,7 @@ Partial Class loginForm
         GroupBox1.BackColor = Color.Transparent
         GroupBox1.BackgroundImage = CType(resources.GetObject("GroupBox1.BackgroundImage"), Image)
         GroupBox1.BackgroundImageLayout = ImageLayout.Zoom
+        GroupBox1.Controls.Add(Button1)
         GroupBox1.Controls.Add(PictureBox3)
         GroupBox1.Controls.Add(PictureBox1)
         GroupBox1.Controls.Add(Label15)
@@ -208,7 +210,7 @@ Partial Class loginForm
         ' BtnLogin
         ' 
         BtnLogin.Font = New Font("Felix Titling", 13.8F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
-        BtnLogin.Location = New Point(235, 421)
+        BtnLogin.Location = New Point(151, 421)
         BtnLogin.Margin = New Padding(3, 4, 3, 4)
         BtnLogin.Name = "BtnLogin"
         BtnLogin.Size = New Size(132, 51)
@@ -554,6 +556,17 @@ Partial Class loginForm
         Label5.TabIndex = 6
         Label5.Text = "Account Name: "
         ' 
+        ' Button1
+        ' 
+        Button1.Font = New Font("Felix Titling", 13.8F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        Button1.Location = New Point(310, 421)
+        Button1.Margin = New Padding(3, 4, 3, 4)
+        Button1.Name = "Button1"
+        Button1.Size = New Size(132, 51)
+        Button1.TabIndex = 25
+        Button1.Text = "Back"
+        Button1.UseVisualStyleBackColor = True
+        ' 
         ' loginForm
         ' 
         AutoScaleDimensions = New SizeF(8F, 20F)
@@ -618,5 +631,6 @@ Partial Class loginForm
     Friend WithEvents Label19 As Label
     Friend WithEvents Label20 As Label
     Friend WithEvents PictureBox2 As PictureBox
+    Friend WithEvents Button1 As Button
 
 End Class
