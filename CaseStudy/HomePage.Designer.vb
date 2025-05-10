@@ -1,5 +1,5 @@
 ﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
-Partial Class FrontPage
+Partial Class HomePage
     Inherits System.Windows.Forms.Form
 
     'Form overrides dispose to clean up the component list.
@@ -22,9 +22,11 @@ Partial Class FrontPage
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(FrontPage))
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(HomePage))
         Button1 = New Button()
         Panel1 = New Panel()
+        Button6 = New Button()
+        Button5 = New Button()
         Button4 = New Button()
         Button3 = New Button()
         Button2 = New Button()
@@ -54,6 +56,8 @@ Partial Class FrontPage
         ' Panel1
         ' 
         Panel1.BackColor = Color.FromArgb(CByte(31), CByte(30), CByte(68))
+        Panel1.Controls.Add(Button6)
+        Panel1.Controls.Add(Button5)
         Panel1.Controls.Add(Button4)
         Panel1.Controls.Add(Button3)
         Panel1.Controls.Add(Button2)
@@ -62,8 +66,34 @@ Partial Class FrontPage
         Panel1.Dock = DockStyle.Left
         Panel1.Location = New Point(0, 0)
         Panel1.Name = "Panel1"
-        Panel1.Size = New Size(350, 737)
+        Panel1.Size = New Size(350, 898)
         Panel1.TabIndex = 2
+        ' 
+        ' Button6
+        ' 
+        Button6.FlatAppearance.BorderSize = 0
+        Button6.FlatStyle = FlatStyle.Flat
+        Button6.Font = New Font("Segoe UI", 18F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
+        Button6.ForeColor = SystemColors.Window
+        Button6.Location = New Point(0, 829)
+        Button6.Name = "Button6"
+        Button6.Size = New Size(350, 61)
+        Button6.TabIndex = 7
+        Button6.Text = "Log-Out"
+        Button6.UseVisualStyleBackColor = True
+        ' 
+        ' Button5
+        ' 
+        Button5.FlatAppearance.BorderSize = 0
+        Button5.FlatStyle = FlatStyle.Flat
+        Button5.Font = New Font("Segoe UI", 18F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
+        Button5.ForeColor = SystemColors.Window
+        Button5.Location = New Point(0, 737)
+        Button5.Name = "Button5"
+        Button5.Size = New Size(350, 61)
+        Button5.TabIndex = 6
+        Button5.Text = "Ten to Fifteen Seaters"
+        Button5.UseVisualStyleBackColor = True
         ' 
         ' Button4
         ' 
@@ -71,11 +101,11 @@ Partial Class FrontPage
         Button4.FlatStyle = FlatStyle.Flat
         Button4.Font = New Font("Segoe UI", 18F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
         Button4.ForeColor = SystemColors.Window
-        Button4.Location = New Point(0, 635)
+        Button4.Location = New Point(-3, 641)
         Button4.Name = "Button4"
         Button4.Size = New Size(350, 61)
         Button4.TabIndex = 5
-        Button4.Text = "Log-Out"
+        Button4.Text = "Seven to Eight Seaters"
         Button4.UseVisualStyleBackColor = True
         ' 
         ' Button3
@@ -88,7 +118,7 @@ Partial Class FrontPage
         Button3.Name = "Button3"
         Button3.Size = New Size(350, 61)
         Button3.TabIndex = 4
-        Button3.Text = "Payment"
+        Button3.Text = "Four to FIve Seaters"
         Button3.UseVisualStyleBackColor = True
         ' 
         ' Button2
@@ -101,7 +131,7 @@ Partial Class FrontPage
         Button2.Name = "Button2"
         Button2.Size = New Size(350, 61)
         Button2.TabIndex = 4
-        Button2.Text = "Booking"
+        Button2.Text = "Seaters"
         Button2.UseVisualStyleBackColor = True
         ' 
         ' Panel2
@@ -130,7 +160,7 @@ Partial Class FrontPage
         Panel3.Dock = DockStyle.Top
         Panel3.Location = New Point(350, 0)
         Panel3.Name = "Panel3"
-        Panel3.Size = New Size(599, 65)
+        Panel3.Size = New Size(686, 65)
         Panel3.TabIndex = 3
         ' 
         ' PictureBox2
@@ -140,20 +170,20 @@ Partial Class FrontPage
         PictureBox2.Dock = DockStyle.Fill
         PictureBox2.Location = New Point(350, 65)
         PictureBox2.Name = "PictureBox2"
-        PictureBox2.Size = New Size(599, 672)
+        PictureBox2.Size = New Size(686, 833)
         PictureBox2.TabIndex = 4
         PictureBox2.TabStop = False
         ' 
-        ' FrontPage
+        ' HomePage
         ' 
         AutoScaleDimensions = New SizeF(8F, 20F)
         AutoScaleMode = AutoScaleMode.Font
-        ClientSize = New Size(949, 737)
+        ClientSize = New Size(1036, 898)
         Controls.Add(PictureBox2)
         Controls.Add(Panel3)
         Controls.Add(Panel1)
-        Name = "FrontPage"
-        Text = "FrontPage"
+        Name = "HomePage"
+        Text = "HomePage"
         Panel1.ResumeLayout(False)
         Panel2.ResumeLayout(False)
         CType(PictureBox1, ComponentModel.ISupportInitialize).EndInit()
@@ -170,4 +200,6 @@ Partial Class FrontPage
     Friend WithEvents Button3 As Button
     Friend WithEvents Button4 As Button
     Friend WithEvents PictureBox2 As PictureBox
+    Friend WithEvents Button6 As Button
+    Friend WithEvents Button5 As Button
 End Class
