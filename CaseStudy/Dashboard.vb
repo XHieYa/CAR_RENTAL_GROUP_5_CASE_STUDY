@@ -170,6 +170,7 @@ Public Class Dashboard
                 con.Close()
             End Using
             MessageBox.Show("Date successfully updated.", "INFO", MessageBoxButtons.OK, MessageBoxIcon.Information)
+            CalendarChecker.Close()
             ResetClock()
             LoadLogs()
         Catch ex As Exception
