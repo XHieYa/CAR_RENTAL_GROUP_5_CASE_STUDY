@@ -1,4 +1,4 @@
-﻿Public Class FrontPage
+﻿Public Class HomePage
     Private Sub RoundCornerButton(btn As Button)
 
         btn.FlatStyle = FlatStyle.Flat
@@ -51,6 +51,28 @@
         rad4.AddArc(New Rectangle(0, btn.Height - 20, 20, 20), 90, 90)
         Button4.Region = New Region(rad4)
 
+        Dim rad5 As New Drawing2D.GraphicsPath
+        rad5.StartFigure()
+        rad5.AddArc(New Rectangle(0, 0, 20, 20), 180, 90)
+        rad5.AddLine(10, 0, btn.Width - 20, 0)
+        rad5.AddArc(New Rectangle(btn.Width - 20, 0, 20, 20), -90, 90)
+        rad5.AddLine(Button5.Width, 20, btn.Width, btn.Height - 10)
+        rad5.AddArc(New Rectangle(btn.Width - 25, btn.Height - 25, 25, 25), 0, 90)
+        rad5.AddLine(btn.Width - 10, btn.Width, 20, btn.Height)
+        rad5.AddArc(New Rectangle(0, btn.Height - 20, 20, 20), 90, 90)
+        Button5.Region = New Region(rad5)
+
+        Dim rad6 As New Drawing2D.GraphicsPath
+        rad6.StartFigure()
+        rad6.AddArc(New Rectangle(0, 0, 20, 20), 180, 90)
+        rad6.AddLine(10, 0, btn.Width - 20, 0)
+        rad6.AddArc(New Rectangle(btn.Width - 20, 0, 20, 20), -90, 90)
+        rad6.AddLine(Button6.Width, 20, btn.Width, btn.Height - 10)
+        rad6.AddArc(New Rectangle(btn.Width - 25, btn.Height - 25, 25, 25), 0, 90)
+        rad6.AddLine(btn.Width - 10, btn.Width, 20, btn.Height)
+        rad6.AddArc(New Rectangle(0, btn.Height - 20, 20, 20), 90, 90)
+        Button6.Region = New Region(rad6)
+
     End Sub
 
     Private Sub FrontPage_Load(sender As Object, e As EventArgs) Handles MyBase.Load
@@ -59,6 +81,8 @@
         RoundCornerButton(Button2)
         RoundCornerButton(Button3)
         RoundCornerButton(Button4)
+        RoundCornerButton(Button5)
+        RoundCornerButton(Button6)
 
     End Sub
 
@@ -72,18 +96,32 @@
     Private Sub Button2_Click(sender As Object, e As EventArgs) Handles Button2.Click
 
         Me.Hide()
-        BookingForm.Show()
+        Seaters.Show()
 
     End Sub
 
     Private Sub Button3_Click(sender As Object, e As EventArgs) Handles Button3.Click
 
-        Hide()
-        PaymentDetailSlip.Show()
+        Me.Hide()
+        Four_to_Five_Seaters.Show()
 
     End Sub
 
     Private Sub Button4_Click(sender As Object, e As EventArgs) Handles Button4.Click
+
+        Me.Hide()
+        Seven_to_Eight_Seaters.Show()
+
+    End Sub
+
+    Private Sub Button5_Click(sender As Object, e As EventArgs) Handles Button5.Click
+
+        Me.Hide()
+        Ten_to_Fifteen_Seaters.Show()
+
+    End Sub
+
+    Private Sub Button6_Click(sender As Object, e As EventArgs) Handles Button6.Click
 
         Me.Close()
         loginForm.Show()

@@ -35,7 +35,7 @@ Public Class loginForm
             Else
                 MessageBox.Show("Login Successfully", "INFO", MessageBoxButtons.OK, MessageBoxIcon.Information) 'Will be key to transfering to next Form
                 Me.Hide()
-                FrontPage.Show()
+                HomePage.Show()
             End If
 
         Else
