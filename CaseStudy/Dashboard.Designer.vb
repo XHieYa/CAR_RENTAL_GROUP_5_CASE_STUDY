@@ -103,7 +103,7 @@ Partial Class Dashboard
         lblRecord.Font = New Font("Century Gothic", 12F)
         lblRecord.Location = New Point(501, 358)
         lblRecord.Name = "lblRecord"
-        lblRecord.Size = New Size(167, 23)
+        lblRecord.Size = New Size(163, 23)
         lblRecord.TabIndex = 9
         lblRecord.Text = "𓇻 Record: [User]"
         ' 
@@ -192,7 +192,7 @@ Partial Class Dashboard
         ' 
         lblgreet.AutoSize = True
         lblgreet.Font = New Font("Stencil", 18F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
-        lblgreet.Location = New Point(107, 25)
+        lblgreet.Location = New Point(90, 23)
         lblgreet.Name = "lblgreet"
         lblgreet.Size = New Size(1001, 35)
         lblgreet.TabIndex = 0
