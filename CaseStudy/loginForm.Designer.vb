@@ -24,6 +24,7 @@ Partial Class loginForm
     Private Sub InitializeComponent()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(loginForm))
         GroupBox1 = New GroupBox()
+        Button1 = New Button()
         PictureBox3 = New PictureBox()
         PictureBox1 = New PictureBox()
         Label15 = New Label()
@@ -63,7 +64,6 @@ Partial Class loginForm
         Label7 = New Label()
         Label6 = New Label()
         Label5 = New Label()
-        Button1 = New Button()
         GroupBox1.SuspendLayout()
         CType(PictureBox3, ComponentModel.ISupportInitialize).BeginInit()
         CType(PictureBox1, ComponentModel.ISupportInitialize).BeginInit()
@@ -99,10 +99,21 @@ Partial Class loginForm
         GroupBox1.TabIndex = 0
         GroupBox1.TabStop = False
         ' 
+        ' Button1
+        ' 
+        Button1.Font = New Font("Felix Titling", 13.8F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        Button1.Location = New Point(310, 421)
+        Button1.Margin = New Padding(3, 4, 3, 4)
+        Button1.Name = "Button1"
+        Button1.Size = New Size(132, 51)
+        Button1.TabIndex = 25
+        Button1.Text = "Back"
+        Button1.UseVisualStyleBackColor = True
+        ' 
         ' PictureBox3
         ' 
         PictureBox3.Image = CType(resources.GetObject("PictureBox3.Image"), Image)
-        PictureBox3.Location = New Point(1, 547)
+        PictureBox3.Location = New Point(0, 548)
         PictureBox3.Margin = New Padding(3, 4, 3, 4)
         PictureBox3.Name = "PictureBox3"
         PictureBox3.Size = New Size(136, 91)
@@ -555,17 +566,6 @@ Partial Class loginForm
         Label5.Size = New Size(161, 24)
         Label5.TabIndex = 6
         Label5.Text = "Account Name: "
-        ' 
-        ' Button1
-        ' 
-        Button1.Font = New Font("Felix Titling", 13.8F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
-        Button1.Location = New Point(310, 421)
-        Button1.Margin = New Padding(3, 4, 3, 4)
-        Button1.Name = "Button1"
-        Button1.Size = New Size(132, 51)
-        Button1.TabIndex = 25
-        Button1.Text = "Back"
-        Button1.UseVisualStyleBackColor = True
         ' 
         ' loginForm
         ' 
