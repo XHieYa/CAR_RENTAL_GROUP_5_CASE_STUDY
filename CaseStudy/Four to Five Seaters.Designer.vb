@@ -2269,9 +2269,11 @@ Partial Class Four_to_Five_Seaters
         ' PictureBox18
         ' 
         PictureBox18.BorderStyle = BorderStyle.Fixed3D
+        PictureBox18.Image = CType(resources.GetObject("PictureBox18.Image"), Image)
         PictureBox18.Location = New Point(263, 3)
         PictureBox18.Name = "PictureBox18"
         PictureBox18.Size = New Size(250, 135)
+        PictureBox18.SizeMode = PictureBoxSizeMode.StretchImage
         PictureBox18.TabIndex = 2
         PictureBox18.TabStop = False
         ' 
