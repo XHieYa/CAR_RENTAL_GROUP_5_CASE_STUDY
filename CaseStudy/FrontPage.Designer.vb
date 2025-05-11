@@ -125,13 +125,16 @@ Partial Class FrontPage
         ' 
         ' Button1
         ' 
+        Button1.BackColor = Color.White
+        Button1.BackgroundImageLayout = ImageLayout.None
+        Button1.FlatStyle = FlatStyle.System
         Button1.Font = New Font("Stencil", 16.2F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
         Button1.Location = New Point(1152, 543)
         Button1.Name = "Button1"
         Button1.Size = New Size(151, 47)
         Button1.TabIndex = 31
         Button1.Text = "➠Start"
-        Button1.UseVisualStyleBackColor = True
+        Button1.UseVisualStyleBackColor = False
         ' 
         ' FrontPage
         ' 
