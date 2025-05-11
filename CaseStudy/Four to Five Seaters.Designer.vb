@@ -350,23 +350,25 @@ Partial Class Four_to_Five_Seaters
         ' 
         ' C
         ' 
+        C.BackColor = Color.PaleGoldenrod
         C.Font = New Font("Century", 12F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
         C.Location = New Point(1161, 564)
         C.Name = "C"
         C.Size = New Size(125, 35)
         C.TabIndex = 3
         C.Text = "Confirm↪"
-        C.UseVisualStyleBackColor = True
+        C.UseVisualStyleBackColor = False
         ' 
         ' B
         ' 
+        B.BackColor = Color.PaleGoldenrod
         B.Font = New Font("Century", 12F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
         B.Location = New Point(6, 562)
         B.Name = "B"
         B.Size = New Size(125, 35)
         B.TabIndex = 2
         B.Text = "↩Back"
-        B.UseVisualStyleBackColor = True
+        B.UseVisualStyleBackColor = False
         ' 
         ' Panel3
         ' 
@@ -989,6 +991,7 @@ Partial Class Four_to_Five_Seaters
         ' 
         ' TabPage2
         ' 
+        TabPage2.BackgroundImage = CType(resources.GetObject("TabPage2.BackgroundImage"), Image)
         TabPage2.Controls.Add(C1)
         TabPage2.Controls.Add(B1)
         TabPage2.Controls.Add(Panel4)
@@ -1133,16 +1136,18 @@ Partial Class Four_to_Five_Seaters
         ' 
         ' SD1
         ' 
+        SD1.BackColor = Color.PaleGoldenrod
         SD1.Font = New Font("Century", 9F, FontStyle.Bold)
         SD1.Location = New Point(111, 501)
         SD1.Name = "SD1"
         SD1.Size = New Size(134, 29)
         SD1.TabIndex = 4
         SD1.Text = "Self Driving☆" & vbCrLf
-        SD1.UseVisualStyleBackColor = True
+        SD1.UseVisualStyleBackColor = False
         ' 
         ' WD1
         ' 
+        WD1.BackColor = Color.PaleGoldenrod
         WD1.Font = New Font("Century", 9F, FontStyle.Bold)
         WD1.Location = New Point(251, 501)
         WD1.Name = "WD1"
@@ -1150,7 +1155,7 @@ Partial Class Four_to_Five_Seaters
         WD1.TabIndex = 5
         WD1.Text = "With Driver☆" & vbCrLf
         WD1.TextAlign = ContentAlignment.TopCenter
-        WD1.UseVisualStyleBackColor = True
+        WD1.UseVisualStyleBackColor = False
         ' 
         ' Label50
         ' 
@@ -1655,6 +1660,7 @@ Partial Class Four_to_Five_Seaters
         ' 
         ' TabPage3
         ' 
+        TabPage3.BackgroundImage = CType(resources.GetObject("TabPage3.BackgroundImage"), Image)
         TabPage3.Controls.Add(C2)
         TabPage3.Controls.Add(B2)
         TabPage3.Controls.Add(Panel7)
@@ -1691,6 +1697,7 @@ Partial Class Four_to_Five_Seaters
         ' 
         ' Panel7
         ' 
+        Panel7.BackgroundImage = CType(resources.GetObject("Panel7.BackgroundImage"), Image)
         Panel7.BorderStyle = BorderStyle.Fixed3D
         Panel7.Controls.Add(Label86)
         Panel7.Controls.Add(Label87)
@@ -1797,16 +1804,18 @@ Partial Class Four_to_Five_Seaters
         ' 
         ' SD2
         ' 
+        SD2.BackColor = Color.PaleGoldenrod
         SD2.Font = New Font("Century", 9F, FontStyle.Bold)
         SD2.Location = New Point(114, 497)
         SD2.Name = "SD2"
         SD2.Size = New Size(134, 29)
         SD2.TabIndex = 4
         SD2.Text = "Self Driving☆"
-        SD2.UseVisualStyleBackColor = True
+        SD2.UseVisualStyleBackColor = False
         ' 
         ' WD2
         ' 
+        WD2.BackColor = Color.PaleGoldenrod
         WD2.Font = New Font("Century", 9F, FontStyle.Bold)
         WD2.Location = New Point(254, 497)
         WD2.Name = "WD2"
@@ -1814,7 +1823,7 @@ Partial Class Four_to_Five_Seaters
         WD2.TabIndex = 5
         WD2.Text = "With Driver☆" & vbCrLf
         WD2.TextAlign = ContentAlignment.TopCenter
-        WD2.UseVisualStyleBackColor = True
+        WD2.UseVisualStyleBackColor = False
         ' 
         ' Label92
         ' 
@@ -2118,6 +2127,7 @@ Partial Class Four_to_Five_Seaters
         ' 
         ' Panel8
         ' 
+        Panel8.BackgroundImage = CType(resources.GetObject("Panel8.BackgroundImage"), Image)
         Panel8.BorderStyle = BorderStyle.Fixed3D
         Panel8.Controls.Add(Label122)
         Panel8.Controls.Add(Label123)
@@ -2149,6 +2159,7 @@ Partial Class Four_to_Five_Seaters
         ' 
         ' Panel9
         ' 
+        Panel9.BackgroundImage = CType(resources.GetObject("Panel9.BackgroundImage"), Image)
         Panel9.BorderStyle = BorderStyle.Fixed3D
         Panel9.Controls.Add(Label182)
         Panel9.Controls.Add(Label183)
@@ -2306,6 +2317,7 @@ Partial Class Four_to_Five_Seaters
         ' 
         ' TabPage4
         ' 
+        TabPage4.BackgroundImage = CType(resources.GetObject("TabPage4.BackgroundImage"), Image)
         TabPage4.Controls.Add(C3)
         TabPage4.Controls.Add(B3)
         TabPage4.Controls.Add(Panel10)
@@ -2342,6 +2354,7 @@ Partial Class Four_to_Five_Seaters
         ' 
         ' Panel10
         ' 
+        Panel10.BackgroundImage = CType(resources.GetObject("Panel10.BackgroundImage"), Image)
         Panel10.BorderStyle = BorderStyle.Fixed3D
         Panel10.Controls.Add(Label128)
         Panel10.Controls.Add(Label129)
@@ -2448,16 +2461,18 @@ Partial Class Four_to_Five_Seaters
         ' 
         ' SD3
         ' 
+        SD3.BackColor = Color.PaleGoldenrod
         SD3.Font = New Font("Century", 9F, FontStyle.Bold)
         SD3.Location = New Point(111, 499)
         SD3.Name = "SD3"
         SD3.Size = New Size(134, 29)
         SD3.TabIndex = 4
         SD3.Text = "Self Driving☆"
-        SD3.UseVisualStyleBackColor = True
+        SD3.UseVisualStyleBackColor = False
         ' 
         ' WD3
         ' 
+        WD3.BackColor = Color.PaleGoldenrod
         WD3.Font = New Font("Century", 9F, FontStyle.Bold)
         WD3.Location = New Point(251, 499)
         WD3.Name = "WD3"
@@ -2465,7 +2480,7 @@ Partial Class Four_to_Five_Seaters
         WD3.TabIndex = 5
         WD3.Text = "With Driver☆" & vbCrLf
         WD3.TextAlign = ContentAlignment.TopCenter
-        WD3.UseVisualStyleBackColor = True
+        WD3.UseVisualStyleBackColor = False
         ' 
         ' Label134
         ' 
@@ -2769,6 +2784,7 @@ Partial Class Four_to_Five_Seaters
         ' 
         ' Panel11
         ' 
+        Panel11.BackgroundImage = CType(resources.GetObject("Panel11.BackgroundImage"), Image)
         Panel11.BorderStyle = BorderStyle.Fixed3D
         Panel11.Controls.Add(Label164)
         Panel11.Controls.Add(Label165)
@@ -2800,6 +2816,7 @@ Partial Class Four_to_Five_Seaters
         ' 
         ' Panel12
         ' 
+        Panel12.BackgroundImage = CType(resources.GetObject("Panel12.BackgroundImage"), Image)
         Panel12.BorderStyle = BorderStyle.Fixed3D
         Panel12.Controls.Add(Label184)
         Panel12.Controls.Add(Label185)
