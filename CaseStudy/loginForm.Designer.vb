@@ -201,7 +201,7 @@ Partial Class loginForm
         ' 
         llblCreateAccount.AutoSize = True
         llblCreateAccount.Font = New Font("Footlight MT Light", 12F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
-        llblCreateAccount.Location = New Point(170, 476)
+        llblCreateAccount.Location = New Point(178, 476)
         llblCreateAccount.Name = "llblCreateAccount"
         llblCreateAccount.Size = New Size(258, 20)
         llblCreateAccount.TabIndex = 6
@@ -221,7 +221,7 @@ Partial Class loginForm
         ' BtnLogin
         ' 
         BtnLogin.Font = New Font("Felix Titling", 13.8F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
-        BtnLogin.Location = New Point(151, 421)
+        BtnLogin.Location = New Point(172, 421)
         BtnLogin.Margin = New Padding(3, 4, 3, 4)
         BtnLogin.Name = "BtnLogin"
         BtnLogin.Size = New Size(132, 51)
