@@ -61,6 +61,7 @@ Public Class Dashboard
             lblAddress.Text = myReader("Address").ToString()
             lblDOB.Text = myReader("Date").ToString()
             lblEmail.Text = myReader("Email").ToString
+            lblRecord.Text = myReader("Records").ToString
         End If
         'CLOSES THE CONNECTION
         con.Close()
