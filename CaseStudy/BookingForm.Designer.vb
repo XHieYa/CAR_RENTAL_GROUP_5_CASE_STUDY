@@ -48,6 +48,7 @@ Partial Class BookingForm
         BtnBackToSeater = New Button()
         BtnConfirm = New Button()
         DGVSchedules = New DataGridView()
+        Label6 = New Label()
         GroupBox1.SuspendLayout()
         CType(DGVSchedules, ComponentModel.ISupportInitialize).BeginInit()
         SuspendLayout()
@@ -65,7 +66,7 @@ Partial Class BookingForm
         Label3.AutoSize = True
         Label3.BackColor = Color.Transparent
         Label3.Font = New Font("Century Gothic", 10.2F)
-        Label3.Location = New Point(612, 95)
+        Label3.Location = New Point(612, 85)
         Label3.Name = "Label3"
         Label3.Size = New Size(31, 19)
         Label3.TabIndex = 9
@@ -76,7 +77,7 @@ Partial Class BookingForm
         Label1.AutoSize = True
         Label1.BackColor = Color.Transparent
         Label1.Font = New Font("Century Gothic", 10.2F)
-        Label1.Location = New Point(612, 64)
+        Label1.Location = New Point(612, 36)
         Label1.Name = "Label1"
         Label1.Size = New Size(46, 19)
         Label1.TabIndex = 8
@@ -85,22 +86,23 @@ Partial Class BookingForm
         ' ToDOB
         ' 
         ToDOB.Font = New Font("Footlight MT Light", 12F)
-        ToDOB.Location = New Point(665, 89)
+        ToDOB.Location = New Point(612, 107)
         ToDOB.Name = "ToDOB"
-        ToDOB.Size = New Size(200, 24)
+        ToDOB.Size = New Size(253, 24)
         ToDOB.TabIndex = 7
         ' 
         ' FromDOB
         ' 
         FromDOB.Font = New Font("Footlight MT Light", 12F)
-        FromDOB.Location = New Point(665, 58)
+        FromDOB.Location = New Point(612, 58)
         FromDOB.Name = "FromDOB"
-        FromDOB.Size = New Size(200, 24)
+        FromDOB.Size = New Size(253, 24)
         FromDOB.TabIndex = 6
         ' 
         ' GroupBox1
         ' 
         GroupBox1.BackgroundImage = CType(resources.GetObject("GroupBox1.BackgroundImage"), Image)
+        GroupBox1.Controls.Add(Label6)
         GroupBox1.Controls.Add(Label5)
         GroupBox1.Controls.Add(txtRate)
         GroupBox1.Controls.Add(Label12)
@@ -122,7 +124,7 @@ Partial Class BookingForm
         GroupBox1.Controls.Add(Label1)
         GroupBox1.Controls.Add(ToDOB)
         GroupBox1.Font = New Font("Stencil", 9F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
-        GroupBox1.Location = New Point(12, 12)
+        GroupBox1.Location = New Point(12, 18)
         GroupBox1.Name = "GroupBox1"
         GroupBox1.Size = New Size(889, 162)
         GroupBox1.TabIndex = 10
@@ -134,7 +136,7 @@ Partial Class BookingForm
         Label5.AutoSize = True
         Label5.BackColor = Color.Transparent
         Label5.Font = New Font("Century Gothic", 10.2F)
-        Label5.Location = New Point(35, 107)
+        Label5.Location = New Point(346, 133)
         Label5.Name = "Label5"
         Label5.Size = New Size(76, 19)
         Label5.TabIndex = 32
@@ -144,12 +146,12 @@ Partial Class BookingForm
         ' txtRate
         ' 
         txtRate.BackColor = Color.FloralWhite
-        txtRate.Location = New Point(115, 100)
+        txtRate.Location = New Point(464, 128)
         txtRate.Margin = New Padding(3, 2, 3, 2)
         txtRate.Multiline = True
         txtRate.Name = "txtRate"
         txtRate.ReadOnly = True
-        txtRate.Size = New Size(200, 24)
+        txtRate.Size = New Size(119, 24)
         txtRate.TabIndex = 31
         ' 
         ' Label12
@@ -157,7 +159,7 @@ Partial Class BookingForm
         Label12.AutoSize = True
         Label12.BackColor = Color.Transparent
         Label12.Font = New Font("Century Gothic", 10.2F)
-        Label12.Location = New Point(346, 54)
+        Label12.Location = New Point(6, 77)
         Label12.Name = "Label12"
         Label12.Size = New Size(107, 19)
         Label12.TabIndex = 30
@@ -166,23 +168,23 @@ Partial Class BookingForm
         ' txtBodyNumber
         ' 
         txtBodyNumber.BackColor = Color.FloralWhite
-        txtBodyNumber.Location = New Point(464, 45)
+        txtBodyNumber.Location = New Point(115, 74)
         txtBodyNumber.Margin = New Padding(3, 2, 3, 2)
         txtBodyNumber.Multiline = True
         txtBodyNumber.Name = "txtBodyNumber"
         txtBodyNumber.ReadOnly = True
-        txtBodyNumber.Size = New Size(119, 24)
+        txtBodyNumber.Size = New Size(200, 24)
         txtBodyNumber.TabIndex = 29
         ' 
         ' txtCapacity
         ' 
         txtCapacity.BackColor = Color.FloralWhite
-        txtCapacity.Location = New Point(464, 129)
+        txtCapacity.Location = New Point(115, 102)
         txtCapacity.Margin = New Padding(3, 2, 3, 2)
         txtCapacity.Multiline = True
         txtCapacity.Name = "txtCapacity"
         txtCapacity.ReadOnly = True
-        txtCapacity.Size = New Size(119, 24)
+        txtCapacity.Size = New Size(200, 24)
         txtCapacity.TabIndex = 26
         ' 
         ' Label11
@@ -190,7 +192,7 @@ Partial Class BookingForm
         Label11.AutoSize = True
         Label11.BackColor = Color.Transparent
         Label11.Font = New Font("Century Gothic", 10.2F)
-        Label11.Location = New Point(346, 131)
+        Label11.Location = New Point(-247, 144)
         Label11.Name = "Label11"
         Label11.Size = New Size(79, 19)
         Label11.TabIndex = 28
@@ -245,7 +247,7 @@ Partial Class BookingForm
         Label4.AutoSize = True
         Label4.BackColor = Color.Transparent
         Label4.Font = New Font("Century Gothic", 10.2F)
-        Label4.Location = New Point(35, 81)
+        Label4.Location = New Point(346, 51)
         Label4.Name = "Label4"
         Label4.Size = New Size(55, 19)
         Label4.TabIndex = 14
@@ -256,7 +258,7 @@ Partial Class BookingForm
         Label2.AutoSize = True
         Label2.BackColor = Color.Transparent
         Label2.Font = New Font("Century Gothic", 10.2F)
-        Label2.Location = New Point(35, 54)
+        Label2.Location = New Point(6, 51)
         Label2.Name = "Label2"
         Label2.Size = New Size(38, 19)
         Label2.TabIndex = 13
@@ -265,7 +267,7 @@ Partial Class BookingForm
         ' txtCColor
         ' 
         txtCColor.BackColor = Color.FloralWhite
-        txtCColor.Location = New Point(464, 72)
+        txtCColor.Location = New Point(464, 74)
         txtCColor.Margin = New Padding(3, 2, 3, 2)
         txtCColor.Multiline = True
         txtCColor.Name = "txtCColor"
@@ -297,11 +299,11 @@ Partial Class BookingForm
         ' TxtCarID
         ' 
         TxtCarID.BackColor = Color.FloralWhite
-        TxtCarID.Location = New Point(115, 72)
+        TxtCarID.Location = New Point(464, 46)
         TxtCarID.Multiline = True
         TxtCarID.Name = "TxtCarID"
         TxtCarID.ReadOnly = True
-        TxtCarID.Size = New Size(200, 24)
+        TxtCarID.Size = New Size(119, 24)
         TxtCarID.TabIndex = 11
         ' 
         ' BtnBackToSeater
@@ -342,6 +344,17 @@ Partial Class BookingForm
         DGVSchedules.RowHeadersWidth = 51
         DGVSchedules.Size = New Size(1134, 301)
         DGVSchedules.TabIndex = 12
+        ' 
+        ' Label6
+        ' 
+        Label6.AutoSize = True
+        Label6.BackColor = Color.Transparent
+        Label6.Font = New Font("Century Gothic", 10.2F)
+        Label6.Location = New Point(6, 105)
+        Label6.Name = "Label6"
+        Label6.Size = New Size(79, 19)
+        Label6.TabIndex = 33
+        Label6.Text = "Capacity:"
         ' 
         ' BookingForm
         ' 
@@ -386,4 +399,5 @@ Partial Class BookingForm
     Friend WithEvents Label5 As Label
     Friend WithEvents txtRate As TextBox
     Friend WithEvents BtnBackToSeater As Button
+    Friend WithEvents Label6 As Label
 End Class
