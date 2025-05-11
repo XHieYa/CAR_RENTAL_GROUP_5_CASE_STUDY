@@ -259,7 +259,6 @@ Partial Class Four_to_Five_Seaters
         PictureBox20 = New PictureBox()
         PictureBox21 = New PictureBox()
         PictureBox22 = New PictureBox()
-        PictureBox23 = New PictureBox()
         PictureBox24 = New PictureBox()
         Label168 = New Label()
         Label169 = New Label()
@@ -300,7 +299,6 @@ Partial Class Four_to_Five_Seaters
         CType(PictureBox20, ComponentModel.ISupportInitialize).BeginInit()
         CType(PictureBox21, ComponentModel.ISupportInitialize).BeginInit()
         CType(PictureBox22, ComponentModel.ISupportInitialize).BeginInit()
-        CType(PictureBox23, ComponentModel.ISupportInitialize).BeginInit()
         CType(PictureBox24, ComponentModel.ISupportInitialize).BeginInit()
         SuspendLayout()
         ' 
@@ -2825,7 +2823,6 @@ Partial Class Four_to_Five_Seaters
         Panel12.Controls.Add(PictureBox20)
         Panel12.Controls.Add(PictureBox21)
         Panel12.Controls.Add(PictureBox22)
-        Panel12.Controls.Add(PictureBox23)
         Panel12.Controls.Add(PictureBox24)
         Panel12.Controls.Add(Label168)
         Panel12.Controls.Add(Label169)
@@ -2897,54 +2894,55 @@ Partial Class Four_to_Five_Seaters
         ' PictureBox19
         ' 
         PictureBox19.BorderStyle = BorderStyle.Fixed3D
+        PictureBox19.Image = CType(resources.GetObject("PictureBox19.Image"), Image)
         PictureBox19.Location = New Point(386, 292)
         PictureBox19.Name = "PictureBox19"
         PictureBox19.Size = New Size(250, 135)
+        PictureBox19.SizeMode = PictureBoxSizeMode.StretchImage
         PictureBox19.TabIndex = 6
         PictureBox19.TabStop = False
         ' 
         ' PictureBox20
         ' 
         PictureBox20.BorderStyle = BorderStyle.Fixed3D
+        PictureBox20.Image = CType(resources.GetObject("PictureBox20.Image"), Image)
         PictureBox20.Location = New Point(130, 292)
         PictureBox20.Name = "PictureBox20"
         PictureBox20.Size = New Size(250, 135)
+        PictureBox20.SizeMode = PictureBoxSizeMode.StretchImage
         PictureBox20.TabIndex = 6
         PictureBox20.TabStop = False
         ' 
         ' PictureBox21
         ' 
         PictureBox21.BorderStyle = BorderStyle.Fixed3D
-        PictureBox21.Location = New Point(519, 151)
+        PictureBox21.Image = CType(resources.GetObject("PictureBox21.Image"), Image)
+        PictureBox21.Location = New Point(386, 151)
         PictureBox21.Name = "PictureBox21"
         PictureBox21.Size = New Size(250, 135)
+        PictureBox21.SizeMode = PictureBoxSizeMode.StretchImage
         PictureBox21.TabIndex = 5
         PictureBox21.TabStop = False
         ' 
         ' PictureBox22
         ' 
         PictureBox22.BorderStyle = BorderStyle.Fixed3D
-        PictureBox22.Location = New Point(263, 151)
+        PictureBox22.Image = CType(resources.GetObject("PictureBox22.Image"), Image)
+        PictureBox22.Location = New Point(130, 151)
         PictureBox22.Name = "PictureBox22"
         PictureBox22.Size = New Size(250, 135)
+        PictureBox22.SizeMode = PictureBoxSizeMode.StretchImage
         PictureBox22.TabIndex = 4
         PictureBox22.TabStop = False
-        ' 
-        ' PictureBox23
-        ' 
-        PictureBox23.BorderStyle = BorderStyle.Fixed3D
-        PictureBox23.Location = New Point(7, 151)
-        PictureBox23.Name = "PictureBox23"
-        PictureBox23.Size = New Size(250, 135)
-        PictureBox23.TabIndex = 3
-        PictureBox23.TabStop = False
         ' 
         ' PictureBox24
         ' 
         PictureBox24.BorderStyle = BorderStyle.Fixed3D
-        PictureBox24.Location = New Point(263, 3)
+        PictureBox24.Image = CType(resources.GetObject("PictureBox24.Image"), Image)
+        PictureBox24.Location = New Point(263, 8)
         PictureBox24.Name = "PictureBox24"
         PictureBox24.Size = New Size(250, 135)
+        PictureBox24.SizeMode = PictureBoxSizeMode.StretchImage
         PictureBox24.TabIndex = 2
         PictureBox24.TabStop = False
         ' 
@@ -3027,7 +3025,6 @@ Partial Class Four_to_Five_Seaters
         CType(PictureBox20, ComponentModel.ISupportInitialize).EndInit()
         CType(PictureBox21, ComponentModel.ISupportInitialize).EndInit()
         CType(PictureBox22, ComponentModel.ISupportInitialize).EndInit()
-        CType(PictureBox23, ComponentModel.ISupportInitialize).EndInit()
         CType(PictureBox24, ComponentModel.ISupportInitialize).EndInit()
         ResumeLayout(False)
         PerformLayout()
@@ -3252,7 +3249,6 @@ Partial Class Four_to_Five_Seaters
     Friend WithEvents PictureBox20 As PictureBox
     Friend WithEvents PictureBox21 As PictureBox
     Friend WithEvents PictureBox22 As PictureBox
-    Friend WithEvents PictureBox23 As PictureBox
     Friend WithEvents PictureBox24 As PictureBox
     Friend WithEvents Label168 As Label
     Friend WithEvents Label169 As Label
