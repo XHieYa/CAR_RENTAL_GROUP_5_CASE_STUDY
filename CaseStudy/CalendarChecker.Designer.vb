@@ -25,6 +25,7 @@ Partial Class CalendarChecker
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(CalendarChecker))
         DGVSchedules = New DataGridView()
         MnthC = New MonthCalendar()
+        Label1 = New Label()
         CType(DGVSchedules, ComponentModel.ISupportInitialize).BeginInit()
         SuspendLayout()
         ' 
@@ -46,10 +47,22 @@ Partial Class CalendarChecker
         ' 
         ' MnthC
         ' 
-        MnthC.Location = New Point(14, 33)
+        MnthC.Location = New Point(14, 21)
         MnthC.Margin = New Padding(10, 12, 10, 12)
         MnthC.Name = "MnthC"
         MnthC.TabIndex = 13
+        ' 
+        ' Label1
+        ' 
+        Label1.AutoSize = True
+        Label1.BackColor = Color.Transparent
+        Label1.Font = New Font("Century Gothic", 13.8F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
+        Label1.Location = New Point(280, 31)
+        Label1.Name = "Label1"
+        Label1.Size = New Size(985, 81)
+        Label1.TabIndex = 15
+        Label1.Text = resources.GetString("Label1.Text")
+        Label1.TextAlign = ContentAlignment.TopCenter
         ' 
         ' CalendarChecker
         ' 
@@ -57,6 +70,7 @@ Partial Class CalendarChecker
         AutoScaleMode = AutoScaleMode.Font
         BackgroundImage = CType(resources.GetObject("$this.BackgroundImage"), Image)
         ClientSize = New Size(1261, 580)
+        Controls.Add(Label1)
         Controls.Add(DGVSchedules)
         Controls.Add(MnthC)
         Margin = New Padding(3, 4, 3, 4)
@@ -64,8 +78,10 @@ Partial Class CalendarChecker
         Text = "🚘Calendar Checker── .✦"
         CType(DGVSchedules, ComponentModel.ISupportInitialize).EndInit()
         ResumeLayout(False)
+        PerformLayout()
     End Sub
 
     Friend WithEvents DGVSchedules As DataGridView
     Friend WithEvents MnthC As MonthCalendar
+    Friend WithEvents Label1 As Label
 End Class
