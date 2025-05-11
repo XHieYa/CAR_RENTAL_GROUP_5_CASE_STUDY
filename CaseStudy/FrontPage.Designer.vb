@@ -23,94 +23,26 @@ Partial Class FrontPage
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(FrontPage))
-        Button1 = New Button()
-        Panel1 = New Panel()
-        Panel2 = New Panel()
-        PictureBox1 = New PictureBox()
-        Panel3 = New Panel()
-        PictureBox3 = New PictureBox()
         Label14 = New Label()
         Label15 = New Label()
-        Panel1.SuspendLayout()
-        Panel2.SuspendLayout()
+        Label1 = New Label()
+        PictureBox1 = New PictureBox()
+        Label2 = New Label()
+        Label3 = New Label()
+        Label4 = New Label()
+        Button1 = New Button()
         CType(PictureBox1, ComponentModel.ISupportInitialize).BeginInit()
-        Panel3.SuspendLayout()
-        CType(PictureBox3, ComponentModel.ISupportInitialize).BeginInit()
         SuspendLayout()
-        ' 
-        ' Button1
-        ' 
-        Button1.Dock = DockStyle.Right
-        Button1.FlatAppearance.BorderSize = 0
-        Button1.FlatStyle = FlatStyle.Flat
-        Button1.Font = New Font("Segoe UI", 18F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
-        Button1.ForeColor = SystemColors.Window
-        Button1.Location = New Point(436, 0)
-        Button1.Name = "Button1"
-        Button1.Size = New Size(282, 65)
-        Button1.TabIndex = 0
-        Button1.Text = "Log-In or Sign-Up"
-        Button1.UseVisualStyleBackColor = True
-        ' 
-        ' Panel1
-        ' 
-        Panel1.BackColor = Color.FromArgb(CByte(31), CByte(30), CByte(68))
-        Panel1.Controls.Add(Panel2)
-        Panel1.Dock = DockStyle.Left
-        Panel1.Location = New Point(0, 0)
-        Panel1.Name = "Panel1"
-        Panel1.Size = New Size(350, 699)
-        Panel1.TabIndex = 2
-        ' 
-        ' Panel2
-        ' 
-        Panel2.Controls.Add(PictureBox1)
-        Panel2.Dock = DockStyle.Top
-        Panel2.Location = New Point(0, 0)
-        Panel2.Name = "Panel2"
-        Panel2.Size = New Size(350, 366)
-        Panel2.TabIndex = 0
-        ' 
-        ' PictureBox1
-        ' 
-        PictureBox1.BackColor = Color.Transparent
-        PictureBox1.BackgroundImage = CType(resources.GetObject("PictureBox1.BackgroundImage"), Image)
-        PictureBox1.BackgroundImageLayout = ImageLayout.Stretch
-        PictureBox1.Location = New Point(25, 28)
-        PictureBox1.Name = "PictureBox1"
-        PictureBox1.Size = New Size(296, 308)
-        PictureBox1.TabIndex = 1
-        PictureBox1.TabStop = False
-        ' 
-        ' Panel3
-        ' 
-        Panel3.BackColor = Color.FromArgb(CByte(31), CByte(30), CByte(68))
-        Panel3.Controls.Add(Button1)
-        Panel3.Dock = DockStyle.Top
-        Panel3.Location = New Point(350, 0)
-        Panel3.Name = "Panel3"
-        Panel3.Size = New Size(718, 65)
-        Panel3.TabIndex = 3
-        ' 
-        ' PictureBox3
-        ' 
-        PictureBox3.BackColor = Color.Transparent
-        PictureBox3.Image = CType(resources.GetObject("PictureBox3.Image"), Image)
-        PictureBox3.Location = New Point(920, 575)
-        PictureBox3.Margin = New Padding(3, 4, 3, 4)
-        PictureBox3.Name = "PictureBox3"
-        PictureBox3.Size = New Size(136, 91)
-        PictureBox3.SizeMode = PictureBoxSizeMode.StretchImage
-        PictureBox3.TabIndex = 25
-        PictureBox3.TabStop = False
         ' 
         ' Label14
         ' 
         Label14.AutoSize = True
-        Label14.Font = New Font("Footlight MT Light", 7.8F)
-        Label14.Location = New Point(920, 549)
+        Label14.BackColor = Color.Transparent
+        Label14.Font = New Font("Footlight MT Light", 9F)
+        Label14.ForeColor = Color.White
+        Label14.Location = New Point(2, 671)
         Label14.Name = "Label14"
-        Label14.Size = New Size(136, 14)
+        Label14.Size = New Size(155, 15)
         Label14.TabIndex = 14
         Label14.Text = "wheelaway@gmail.com"
         Label14.TextAlign = ContentAlignment.TopCenter
@@ -118,41 +50,120 @@ Partial Class FrontPage
         ' Label15
         ' 
         Label15.AutoSize = True
-        Label15.Font = New Font("Footlight MT Light", 7.8F)
-        Label15.Location = New Point(920, 535)
+        Label15.BackColor = Color.Transparent
+        Label15.Font = New Font("Footlight MT Light", 9F)
+        Label15.ForeColor = Color.White
+        Label15.Location = New Point(2, 657)
         Label15.Name = "Label15"
-        Label15.Size = New Size(99, 14)
+        Label15.Size = New Size(114, 15)
         Label15.TabIndex = 13
         Label15.Text = "WheelAway, Inc."
         Label15.TextAlign = ContentAlignment.TopCenter
+        ' 
+        ' Label1
+        ' 
+        Label1.AutoSize = True
+        Label1.BackColor = Color.Transparent
+        Label1.Font = New Font("Century Gothic", 16.2F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
+        Label1.ForeColor = Color.White
+        Label1.Location = New Point(149, 593)
+        Label1.Name = "Label1"
+        Label1.Size = New Size(1044, 68)
+        Label1.TabIndex = 26
+        Label1.Text = "Unleash your wanderlust. We provide the wheels; you create the memories. " & vbCrLf & "Explore the world, one adventure after another."
+        Label1.TextAlign = ContentAlignment.TopCenter
+        ' 
+        ' PictureBox1
+        ' 
+        PictureBox1.BackColor = Color.Transparent
+        PictureBox1.Image = CType(resources.GetObject("PictureBox1.Image"), Image)
+        PictureBox1.Location = New Point(1192, 4)
+        PictureBox1.Margin = New Padding(3, 4, 3, 4)
+        PictureBox1.Name = "PictureBox1"
+        PictureBox1.Size = New Size(131, 108)
+        PictureBox1.SizeMode = PictureBoxSizeMode.Zoom
+        PictureBox1.TabIndex = 27
+        PictureBox1.TabStop = False
+        ' 
+        ' Label2
+        ' 
+        Label2.AutoSize = True
+        Label2.BackColor = Color.Transparent
+        Label2.Font = New Font("Stencil", 48F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
+        Label2.ForeColor = Color.White
+        Label2.Location = New Point(315, 38)
+        Label2.Name = "Label2"
+        Label2.Size = New Size(717, 95)
+        Label2.TabIndex = 28
+        Label2.Text = "Wheel-Away, INC"
+        ' 
+        ' Label3
+        ' 
+        Label3.AutoSize = True
+        Label3.BackColor = Color.Transparent
+        Label3.Font = New Font("Century Gothic", 16.2F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
+        Label3.ForeColor = Color.White
+        Label3.Location = New Point(599, 9)
+        Label3.Name = "Label3"
+        Label3.Size = New Size(182, 34)
+        Label3.TabIndex = 29
+        Label3.Text = "Welcome to"
+        Label3.TextAlign = ContentAlignment.TopCenter
+        ' 
+        ' Label4
+        ' 
+        Label4.AutoSize = True
+        Label4.BackColor = Color.Transparent
+        Label4.Font = New Font("Century Gothic", 16.2F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
+        Label4.ForeColor = Color.White
+        Label4.Location = New Point(541, 124)
+        Label4.Name = "Label4"
+        Label4.Size = New Size(307, 34)
+        Label4.TabIndex = 30
+        Label4.Text = "Get ready to explore!"
+        Label4.TextAlign = ContentAlignment.TopCenter
+        ' 
+        ' Button1
+        ' 
+        Button1.BackColor = Color.White
+        Button1.BackgroundImageLayout = ImageLayout.None
+        Button1.FlatStyle = FlatStyle.System
+        Button1.Font = New Font("Stencil", 16.2F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
+        Button1.Location = New Point(1152, 543)
+        Button1.Name = "Button1"
+        Button1.Size = New Size(151, 47)
+        Button1.TabIndex = 31
+        Button1.Text = "➠Start☆"
+        Button1.UseVisualStyleBackColor = False
         ' 
         ' FrontPage
         ' 
         AutoScaleDimensions = New SizeF(8F, 20F)
         AutoScaleMode = AutoScaleMode.Font
-        ClientSize = New Size(1068, 699)
-        Controls.Add(PictureBox3)
-        Controls.Add(Label14)
+        BackgroundImage = CType(resources.GetObject("$this.BackgroundImage"), Image)
+        BackgroundImageLayout = ImageLayout.Stretch
+        ClientSize = New Size(1326, 690)
+        Controls.Add(Button1)
+        Controls.Add(Label4)
+        Controls.Add(Label3)
+        Controls.Add(Label2)
+        Controls.Add(PictureBox1)
+        Controls.Add(Label1)
         Controls.Add(Label15)
-        Controls.Add(Panel3)
-        Controls.Add(Panel1)
+        Controls.Add(Label14)
         Name = "FrontPage"
-        Text = "HomePage"
-        Panel1.ResumeLayout(False)
-        Panel2.ResumeLayout(False)
+        Text = "🚘Front Page── .✦"
         CType(PictureBox1, ComponentModel.ISupportInitialize).EndInit()
-        Panel3.ResumeLayout(False)
-        CType(PictureBox3, ComponentModel.ISupportInitialize).EndInit()
         ResumeLayout(False)
         PerformLayout()
     End Sub
 
-    Friend WithEvents Button1 As Button
-    Friend WithEvents Panel1 As Panel
-    Friend WithEvents Panel2 As Panel
-    Friend WithEvents PictureBox1 As PictureBox
-    Friend WithEvents Panel3 As Panel
-    Friend WithEvents PictureBox3 As PictureBox
     Friend WithEvents Label14 As Label
     Friend WithEvents Label15 As Label
+    Friend WithEvents Label1 As Label
+    Friend WithEvents PictureBox1 As PictureBox
+    Friend WithEvents Label2 As Label
+    Friend WithEvents Label3 As Label
+    Friend WithEvents Label4 As Label
+    Friend WithEvents Button1 As Button
 End Class

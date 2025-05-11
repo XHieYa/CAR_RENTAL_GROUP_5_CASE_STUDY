@@ -439,6 +439,7 @@ Partial Class Camping_Cars
         ' Label1
         ' 
         Label1.AutoSize = True
+        Label1.BackColor = Color.Transparent
         Label1.Font = New Font("Courier New", 10.2F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
         Label1.Location = New Point(230, 9)
         Label1.Name = "Label1"
@@ -462,6 +463,7 @@ Partial Class Camping_Cars
         ' 
         ' TabPage1
         ' 
+        TabPage1.BackgroundImage = CType(resources.GetObject("TabPage1.BackgroundImage"), Image)
         TabPage1.Controls.Add(C)
         TabPage1.Controls.Add(B)
         TabPage1.Controls.Add(Panel3)
@@ -473,31 +475,34 @@ Partial Class Camping_Cars
         TabPage1.Padding = New Padding(3)
         TabPage1.Size = New Size(1292, 603)
         TabPage1.TabIndex = 0
-        TabPage1.Text = "MOTORHOME 1"
+        TabPage1.Text = "🚘MOTORHOME 1── .✦"
         TabPage1.UseVisualStyleBackColor = True
         ' 
         ' C
         ' 
-        C.Font = New Font("Century", 9F, FontStyle.Bold)
-        C.Location = New Point(1192, 568)
+        C.BackColor = Color.PaleGoldenrod
+        C.Font = New Font("Century", 12F, FontStyle.Bold)
+        C.Location = New Point(1163, 562)
         C.Name = "C"
-        C.Size = New Size(94, 29)
+        C.Size = New Size(125, 35)
         C.TabIndex = 3
-        C.Text = "Confirm"
-        C.UseVisualStyleBackColor = True
+        C.Text = "Confirm↪"
+        C.UseVisualStyleBackColor = False
         ' 
         ' B
         ' 
-        B.Font = New Font("Century", 9F, FontStyle.Bold)
-        B.Location = New Point(6, 568)
+        B.BackColor = Color.PaleGoldenrod
+        B.Font = New Font("Century", 12F, FontStyle.Bold)
+        B.Location = New Point(6, 562)
         B.Name = "B"
-        B.Size = New Size(94, 29)
+        B.Size = New Size(125, 35)
         B.TabIndex = 2
-        B.Text = "Back"
-        B.UseVisualStyleBackColor = True
+        B.Text = "↩Back"
+        B.UseVisualStyleBackColor = False
         ' 
         ' Panel3
         ' 
+        Panel3.BackgroundImage = CType(resources.GetObject("Panel3.BackgroundImage"), Image)
         Panel3.BorderStyle = BorderStyle.Fixed3D
         Panel3.Controls.Add(Label208)
         Panel3.Controls.Add(Label209)
@@ -934,24 +939,26 @@ Partial Class Camping_Cars
         ' 
         ' SD
         ' 
+        SD.BackColor = Color.PaleGoldenrod
         SD.Font = New Font("Century", 9F, FontStyle.Bold)
         SD.Location = New Point(114, 504)
         SD.Name = "SD"
         SD.Size = New Size(134, 29)
         SD.TabIndex = 4
-        SD.Text = "Self Driving"
-        SD.UseVisualStyleBackColor = True
+        SD.Text = "Self Driving☆"
+        SD.UseVisualStyleBackColor = False
         ' 
         ' WD
         ' 
+        WD.BackColor = Color.PaleGoldenrod
         WD.Font = New Font("Century", 9F, FontStyle.Bold)
         WD.Location = New Point(254, 504)
         WD.Name = "WD"
         WD.Size = New Size(134, 29)
         WD.TabIndex = 5
-        WD.Text = "With Driver"
+        WD.Text = "With Driver☆"
         WD.TextAlign = ContentAlignment.TopCenter
-        WD.UseVisualStyleBackColor = True
+        WD.UseVisualStyleBackColor = False
         ' 
         ' Label36
         ' 
@@ -1255,6 +1262,7 @@ Partial Class Camping_Cars
         ' 
         ' Panel2
         ' 
+        Panel2.BackgroundImage = CType(resources.GetObject("Panel2.BackgroundImage"), Image)
         Panel2.BorderStyle = BorderStyle.Fixed3D
         Panel2.Controls.Add(Label43)
         Panel2.Controls.Add(Label4)
@@ -1286,6 +1294,7 @@ Partial Class Camping_Cars
         ' 
         ' Panel1
         ' 
+        Panel1.BackgroundImage = CType(resources.GetObject("Panel1.BackgroundImage"), Image)
         Panel1.BorderStyle = BorderStyle.Fixed3D
         Panel1.Controls.Add(Label142)
         Panel1.Controls.Add(Label144)
@@ -1354,54 +1363,66 @@ Partial Class Camping_Cars
         ' PictureBox29
         ' 
         PictureBox29.BorderStyle = BorderStyle.Fixed3D
+        PictureBox29.Image = CType(resources.GetObject("PictureBox29.Image"), Image)
         PictureBox29.Location = New Point(56, 90)
         PictureBox29.Name = "PictureBox29"
         PictureBox29.Size = New Size(148, 108)
+        PictureBox29.SizeMode = PictureBoxSizeMode.StretchImage
         PictureBox29.TabIndex = 14
         PictureBox29.TabStop = False
         ' 
         ' PictureBox28
         ' 
         PictureBox28.BorderStyle = BorderStyle.Fixed3D
+        PictureBox28.Image = CType(resources.GetObject("PictureBox28.Image"), Image)
         PictureBox28.Location = New Point(56, 204)
         PictureBox28.Name = "PictureBox28"
         PictureBox28.Size = New Size(148, 108)
+        PictureBox28.SizeMode = PictureBoxSizeMode.StretchImage
         PictureBox28.TabIndex = 13
         PictureBox28.TabStop = False
         ' 
         ' PictureBox27
         ' 
         PictureBox27.BorderStyle = BorderStyle.Fixed3D
+        PictureBox27.Image = CType(resources.GetObject("PictureBox27.Image"), Image)
         PictureBox27.Location = New Point(9, 324)
         PictureBox27.Name = "PictureBox27"
         PictureBox27.Size = New Size(148, 108)
+        PictureBox27.SizeMode = PictureBoxSizeMode.StretchImage
         PictureBox27.TabIndex = 12
         PictureBox27.TabStop = False
         ' 
         ' PictureBox26
         ' 
         PictureBox26.BorderStyle = BorderStyle.Fixed3D
+        PictureBox26.Image = CType(resources.GetObject("PictureBox26.Image"), Image)
         PictureBox26.Location = New Point(163, 324)
         PictureBox26.Name = "PictureBox26"
         PictureBox26.Size = New Size(148, 108)
+        PictureBox26.SizeMode = PictureBoxSizeMode.StretchImage
         PictureBox26.TabIndex = 11
         PictureBox26.TabStop = False
         ' 
         ' PictureBox25
         ' 
         PictureBox25.BorderStyle = BorderStyle.Fixed3D
+        PictureBox25.Image = CType(resources.GetObject("PictureBox25.Image"), Image)
         PictureBox25.Location = New Point(317, 324)
         PictureBox25.Name = "PictureBox25"
         PictureBox25.Size = New Size(148, 108)
+        PictureBox25.SizeMode = PictureBoxSizeMode.StretchImage
         PictureBox25.TabIndex = 10
         PictureBox25.TabStop = False
         ' 
         ' PictureBox6
         ' 
         PictureBox6.BorderStyle = BorderStyle.Fixed3D
+        PictureBox6.Image = CType(resources.GetObject("PictureBox6.Image"), Image)
         PictureBox6.Location = New Point(471, 324)
         PictureBox6.Name = "PictureBox6"
         PictureBox6.Size = New Size(148, 108)
+        PictureBox6.SizeMode = PictureBoxSizeMode.StretchImage
         PictureBox6.TabIndex = 9
         PictureBox6.TabStop = False
         ' 
@@ -1428,45 +1449,55 @@ Partial Class Camping_Cars
         ' PictureBox5
         ' 
         PictureBox5.BorderStyle = BorderStyle.Fixed3D
+        PictureBox5.Image = CType(resources.GetObject("PictureBox5.Image"), Image)
         PictureBox5.Location = New Point(625, 324)
         PictureBox5.Name = "PictureBox5"
         PictureBox5.Size = New Size(148, 108)
+        PictureBox5.SizeMode = PictureBoxSizeMode.StretchImage
         PictureBox5.TabIndex = 6
         PictureBox5.TabStop = False
         ' 
         ' PictureBox4
         ' 
         PictureBox4.BorderStyle = BorderStyle.Fixed3D
+        PictureBox4.Image = CType(resources.GetObject("PictureBox4.Image"), Image)
         PictureBox4.Location = New Point(506, 38)
         PictureBox4.Name = "PictureBox4"
         PictureBox4.Size = New Size(250, 135)
+        PictureBox4.SizeMode = PictureBoxSizeMode.StretchImage
         PictureBox4.TabIndex = 5
         PictureBox4.TabStop = False
         ' 
         ' PictureBox3
         ' 
         PictureBox3.BorderStyle = BorderStyle.Fixed3D
+        PictureBox3.Image = CType(resources.GetObject("PictureBox3.Image"), Image)
         PictureBox3.Location = New Point(506, 179)
         PictureBox3.Name = "PictureBox3"
         PictureBox3.Size = New Size(250, 135)
+        PictureBox3.SizeMode = PictureBoxSizeMode.StretchImage
         PictureBox3.TabIndex = 4
         PictureBox3.TabStop = False
         ' 
         ' PictureBox2
         ' 
         PictureBox2.BorderStyle = BorderStyle.Fixed3D
+        PictureBox2.Image = CType(resources.GetObject("PictureBox2.Image"), Image)
         PictureBox2.Location = New Point(250, 178)
         PictureBox2.Name = "PictureBox2"
         PictureBox2.Size = New Size(250, 135)
+        PictureBox2.SizeMode = PictureBoxSizeMode.StretchImage
         PictureBox2.TabIndex = 3
         PictureBox2.TabStop = False
         ' 
         ' PictureBox1
         ' 
         PictureBox1.BorderStyle = BorderStyle.Fixed3D
+        PictureBox1.Image = CType(resources.GetObject("PictureBox1.Image"), Image)
         PictureBox1.Location = New Point(250, 37)
         PictureBox1.Name = "PictureBox1"
         PictureBox1.Size = New Size(250, 135)
+        PictureBox1.SizeMode = PictureBoxSizeMode.Zoom
         PictureBox1.TabIndex = 2
         PictureBox1.TabStop = False
         ' 
@@ -1492,6 +1523,7 @@ Partial Class Camping_Cars
         ' 
         ' TabPage2
         ' 
+        TabPage2.BackgroundImage = CType(resources.GetObject("TabPage2.BackgroundImage"), Image)
         TabPage2.Controls.Add(C1)
         TabPage2.Controls.Add(B1)
         TabPage2.Controls.Add(Panel4)
@@ -1502,31 +1534,34 @@ Partial Class Camping_Cars
         TabPage2.Padding = New Padding(3)
         TabPage2.Size = New Size(1292, 603)
         TabPage2.TabIndex = 1
-        TabPage2.Text = "MOTORHOME 2"
+        TabPage2.Text = "🚘MOTORHOME 2── .✦"
         TabPage2.UseVisualStyleBackColor = True
         ' 
         ' C1
         ' 
-        C1.Font = New Font("Century", 9F, FontStyle.Bold)
-        C1.Location = New Point(1192, 568)
+        C1.BackColor = Color.PaleGoldenrod
+        C1.Font = New Font("Century", 12F, FontStyle.Bold)
+        C1.Location = New Point(1161, 562)
         C1.Name = "C1"
-        C1.Size = New Size(94, 29)
+        C1.Size = New Size(125, 35)
         C1.TabIndex = 8
-        C1.Text = "Confirm"
-        C1.UseVisualStyleBackColor = True
+        C1.Text = "Confirm↪"
+        C1.UseVisualStyleBackColor = False
         ' 
         ' B1
         ' 
-        B1.Font = New Font("Century", 9F, FontStyle.Bold)
-        B1.Location = New Point(6, 568)
+        B1.BackColor = Color.PaleGoldenrod
+        B1.Font = New Font("Century", 12F, FontStyle.Bold)
+        B1.Location = New Point(6, 562)
         B1.Name = "B1"
-        B1.Size = New Size(94, 29)
+        B1.Size = New Size(125, 35)
         B1.TabIndex = 7
-        B1.Text = "Back"
-        B1.UseVisualStyleBackColor = True
+        B1.Text = "↩Back"
+        B1.UseVisualStyleBackColor = False
         ' 
         ' Panel4
         ' 
+        Panel4.BackgroundImage = CType(resources.GetObject("Panel4.BackgroundImage"), Image)
         Panel4.BorderStyle = BorderStyle.Fixed3D
         Panel4.Controls.Add(Label59)
         Panel4.Controls.Add(Label62)
@@ -2085,16 +2120,18 @@ Partial Class Camping_Cars
         ' 
         ' SD1
         ' 
+        SD1.BackColor = Color.PaleGoldenrod
         SD1.Font = New Font("Century", 9F, FontStyle.Bold)
         SD1.Location = New Point(117, 500)
         SD1.Name = "SD1"
         SD1.Size = New Size(134, 29)
         SD1.TabIndex = 4
         SD1.Text = "Self Driving"
-        SD1.UseVisualStyleBackColor = True
+        SD1.UseVisualStyleBackColor = False
         ' 
         ' WD1
         ' 
+        WD1.BackColor = Color.PaleGoldenrod
         WD1.Font = New Font("Century", 9F, FontStyle.Bold)
         WD1.Location = New Point(257, 501)
         WD1.Name = "WD1"
@@ -2102,7 +2139,7 @@ Partial Class Camping_Cars
         WD1.TabIndex = 5
         WD1.Text = "With Driver"
         WD1.TextAlign = ContentAlignment.TopCenter
-        WD1.UseVisualStyleBackColor = True
+        WD1.UseVisualStyleBackColor = False
         ' 
         ' Label50
         ' 
@@ -2196,6 +2233,7 @@ Partial Class Camping_Cars
         ' 
         ' Panel5
         ' 
+        Panel5.BackgroundImage = CType(resources.GetObject("Panel5.BackgroundImage"), Image)
         Panel5.BorderStyle = BorderStyle.Fixed3D
         Panel5.Controls.Add(Label80)
         Panel5.Controls.Add(Label81)
@@ -2227,6 +2265,7 @@ Partial Class Camping_Cars
         ' 
         ' Panel6
         ' 
+        Panel6.BackgroundImage = CType(resources.GetObject("Panel6.BackgroundImage"), Image)
         Panel6.BorderStyle = BorderStyle.Fixed3D
         Panel6.Controls.Add(Label147)
         Panel6.Controls.Add(Label148)
@@ -2291,9 +2330,11 @@ Partial Class Camping_Cars
         ' PictureBox30
         ' 
         PictureBox30.BorderStyle = BorderStyle.Fixed3D
+        PictureBox30.Image = CType(resources.GetObject("PictureBox30.Image"), Image)
         PictureBox30.Location = New Point(3, 150)
         PictureBox30.Name = "PictureBox30"
         PictureBox30.Size = New Size(250, 135)
+        PictureBox30.SizeMode = PictureBoxSizeMode.StretchImage
         PictureBox30.TabIndex = 9
         PictureBox30.TabStop = False
         ' 
@@ -2320,54 +2361,66 @@ Partial Class Camping_Cars
         ' PictureBox7
         ' 
         PictureBox7.BorderStyle = BorderStyle.Fixed3D
+        PictureBox7.Image = CType(resources.GetObject("PictureBox7.Image"), Image)
         PictureBox7.Location = New Point(519, 291)
         PictureBox7.Name = "PictureBox7"
         PictureBox7.Size = New Size(250, 135)
+        PictureBox7.SizeMode = PictureBoxSizeMode.StretchImage
         PictureBox7.TabIndex = 6
         PictureBox7.TabStop = False
         ' 
         ' PictureBox8
         ' 
         PictureBox8.BorderStyle = BorderStyle.Fixed3D
+        PictureBox8.Image = CType(resources.GetObject("PictureBox8.Image"), Image)
         PictureBox8.Location = New Point(259, 291)
         PictureBox8.Name = "PictureBox8"
         PictureBox8.Size = New Size(250, 135)
+        PictureBox8.SizeMode = PictureBoxSizeMode.StretchImage
         PictureBox8.TabIndex = 6
         PictureBox8.TabStop = False
         ' 
         ' PictureBox9
         ' 
         PictureBox9.BorderStyle = BorderStyle.Fixed3D
+        PictureBox9.Image = CType(resources.GetObject("PictureBox9.Image"), Image)
         PictureBox9.Location = New Point(519, 9)
         PictureBox9.Name = "PictureBox9"
         PictureBox9.Size = New Size(250, 135)
+        PictureBox9.SizeMode = PictureBoxSizeMode.StretchImage
         PictureBox9.TabIndex = 5
         PictureBox9.TabStop = False
         ' 
         ' PictureBox10
         ' 
         PictureBox10.BorderStyle = BorderStyle.Fixed3D
+        PictureBox10.Image = CType(resources.GetObject("PictureBox10.Image"), Image)
         PictureBox10.Location = New Point(519, 150)
         PictureBox10.Name = "PictureBox10"
         PictureBox10.Size = New Size(250, 135)
+        PictureBox10.SizeMode = PictureBoxSizeMode.StretchImage
         PictureBox10.TabIndex = 4
         PictureBox10.TabStop = False
         ' 
         ' PictureBox11
         ' 
         PictureBox11.BorderStyle = BorderStyle.Fixed3D
+        PictureBox11.Image = CType(resources.GetObject("PictureBox11.Image"), Image)
         PictureBox11.Location = New Point(259, 150)
         PictureBox11.Name = "PictureBox11"
         PictureBox11.Size = New Size(250, 135)
+        PictureBox11.SizeMode = PictureBoxSizeMode.StretchImage
         PictureBox11.TabIndex = 3
         PictureBox11.TabStop = False
         ' 
         ' PictureBox12
         ' 
         PictureBox12.BorderStyle = BorderStyle.Fixed3D
+        PictureBox12.Image = CType(resources.GetObject("PictureBox12.Image"), Image)
         PictureBox12.Location = New Point(259, 9)
         PictureBox12.Name = "PictureBox12"
         PictureBox12.Size = New Size(250, 135)
+        PictureBox12.SizeMode = PictureBoxSizeMode.StretchImage
         PictureBox12.TabIndex = 2
         PictureBox12.TabStop = False
         ' 
@@ -2393,6 +2446,7 @@ Partial Class Camping_Cars
         ' 
         ' TabPage3
         ' 
+        TabPage3.BackgroundImage = CType(resources.GetObject("TabPage3.BackgroundImage"), Image)
         TabPage3.Controls.Add(C2)
         TabPage3.Controls.Add(B2)
         TabPage3.Controls.Add(Panel7)
@@ -2402,31 +2456,34 @@ Partial Class Camping_Cars
         TabPage3.Name = "TabPage3"
         TabPage3.Size = New Size(1292, 603)
         TabPage3.TabIndex = 2
-        TabPage3.Text = "MOTORHOME 3"
+        TabPage3.Text = "🚘MOTORHOME 3── .✦"
         TabPage3.UseVisualStyleBackColor = True
         ' 
         ' C2
         ' 
-        C2.Font = New Font("Century", 9F, FontStyle.Bold)
-        C2.Location = New Point(1192, 568)
+        C2.BackColor = Color.PaleGoldenrod
+        C2.Font = New Font("Century", 12F, FontStyle.Bold)
+        C2.Location = New Point(1161, 565)
         C2.Name = "C2"
-        C2.Size = New Size(94, 29)
+        C2.Size = New Size(125, 35)
         C2.TabIndex = 13
-        C2.Text = "Confirm"
-        C2.UseVisualStyleBackColor = True
+        C2.Text = "Confirm↪"
+        C2.UseVisualStyleBackColor = False
         ' 
         ' B2
         ' 
-        B2.Font = New Font("Century", 9F, FontStyle.Bold)
-        B2.Location = New Point(6, 568)
+        B2.BackColor = Color.PaleGoldenrod
+        B2.Font = New Font("Century", 12F, FontStyle.Bold)
+        B2.Location = New Point(6, 565)
         B2.Name = "B2"
-        B2.Size = New Size(94, 29)
+        B2.Size = New Size(125, 35)
         B2.TabIndex = 12
-        B2.Text = "Back"
-        B2.UseVisualStyleBackColor = True
+        B2.Text = "↩Back"
+        B2.UseVisualStyleBackColor = False
         ' 
         ' Panel7
         ' 
+        Panel7.BackgroundImage = CType(resources.GetObject("Panel7.BackgroundImage"), Image)
         Panel7.BorderStyle = BorderStyle.Fixed3D
         Panel7.Controls.Add(Label110)
         Panel7.Controls.Add(Label114)
@@ -3073,24 +3130,26 @@ Partial Class Camping_Cars
         ' 
         ' SD2
         ' 
+        SD2.BackColor = Color.PaleGoldenrod
         SD2.Font = New Font("Century", 9F, FontStyle.Bold)
         SD2.Location = New Point(114, 505)
         SD2.Name = "SD2"
         SD2.Size = New Size(134, 29)
         SD2.TabIndex = 4
-        SD2.Text = "Self Driving"
-        SD2.UseVisualStyleBackColor = True
+        SD2.Text = "Self Driving☆"
+        SD2.UseVisualStyleBackColor = False
         ' 
         ' WD2
         ' 
+        WD2.BackColor = Color.PaleGoldenrod
         WD2.Font = New Font("Century", 9F, FontStyle.Bold)
         WD2.Location = New Point(254, 505)
         WD2.Name = "WD2"
         WD2.Size = New Size(134, 29)
         WD2.TabIndex = 5
-        WD2.Text = "With Driver"
+        WD2.Text = "With Driver☆"
         WD2.TextAlign = ContentAlignment.TopCenter
-        WD2.UseVisualStyleBackColor = True
+        WD2.UseVisualStyleBackColor = False
         ' 
         ' Label92
         ' 
@@ -3184,6 +3243,7 @@ Partial Class Camping_Cars
         ' 
         ' Panel8
         ' 
+        Panel8.BackgroundImage = CType(resources.GetObject("Panel8.BackgroundImage"), Image)
         Panel8.BorderStyle = BorderStyle.Fixed3D
         Panel8.Controls.Add(Label122)
         Panel8.Controls.Add(Label123)
@@ -3215,6 +3275,7 @@ Partial Class Camping_Cars
         ' 
         ' Panel9
         ' 
+        Panel9.BackgroundImage = CType(resources.GetObject("Panel9.BackgroundImage"), Image)
         Panel9.BorderStyle = BorderStyle.Fixed3D
         Panel9.Controls.Add(Label290)
         Panel9.Controls.Add(Label291)
@@ -3280,18 +3341,22 @@ Partial Class Camping_Cars
         ' PictureBox31
         ' 
         PictureBox31.BorderStyle = BorderStyle.Fixed3D
+        PictureBox31.Image = CType(resources.GetObject("PictureBox31.Image"), Image)
         PictureBox31.Location = New Point(7, 291)
         PictureBox31.Name = "PictureBox31"
         PictureBox31.Size = New Size(250, 135)
+        PictureBox31.SizeMode = PictureBoxSizeMode.StretchImage
         PictureBox31.TabIndex = 10
         PictureBox31.TabStop = False
         ' 
         ' PictureBox32
         ' 
         PictureBox32.BorderStyle = BorderStyle.Fixed3D
+        PictureBox32.Image = CType(resources.GetObject("PictureBox32.Image"), Image)
         PictureBox32.Location = New Point(7, 150)
         PictureBox32.Name = "PictureBox32"
         PictureBox32.Size = New Size(250, 135)
+        PictureBox32.SizeMode = PictureBoxSizeMode.StretchImage
         PictureBox32.TabIndex = 9
         PictureBox32.TabStop = False
         ' 
@@ -3318,54 +3383,66 @@ Partial Class Camping_Cars
         ' PictureBox13
         ' 
         PictureBox13.BorderStyle = BorderStyle.Fixed3D
+        PictureBox13.Image = CType(resources.GetObject("PictureBox13.Image"), Image)
         PictureBox13.Location = New Point(519, 291)
         PictureBox13.Name = "PictureBox13"
         PictureBox13.Size = New Size(250, 135)
+        PictureBox13.SizeMode = PictureBoxSizeMode.StretchImage
         PictureBox13.TabIndex = 6
         PictureBox13.TabStop = False
         ' 
         ' PictureBox14
         ' 
         PictureBox14.BorderStyle = BorderStyle.Fixed3D
+        PictureBox14.Image = CType(resources.GetObject("PictureBox14.Image"), Image)
         PictureBox14.Location = New Point(263, 291)
         PictureBox14.Name = "PictureBox14"
         PictureBox14.Size = New Size(250, 135)
+        PictureBox14.SizeMode = PictureBoxSizeMode.StretchImage
         PictureBox14.TabIndex = 6
         PictureBox14.TabStop = False
         ' 
         ' PictureBox15
         ' 
         PictureBox15.BorderStyle = BorderStyle.Fixed3D
+        PictureBox15.Image = CType(resources.GetObject("PictureBox15.Image"), Image)
         PictureBox15.Location = New Point(519, 12)
         PictureBox15.Name = "PictureBox15"
         PictureBox15.Size = New Size(250, 135)
+        PictureBox15.SizeMode = PictureBoxSizeMode.StretchImage
         PictureBox15.TabIndex = 5
         PictureBox15.TabStop = False
         ' 
         ' PictureBox16
         ' 
         PictureBox16.BorderStyle = BorderStyle.Fixed3D
+        PictureBox16.Image = CType(resources.GetObject("PictureBox16.Image"), Image)
         PictureBox16.Location = New Point(519, 150)
         PictureBox16.Name = "PictureBox16"
         PictureBox16.Size = New Size(250, 135)
+        PictureBox16.SizeMode = PictureBoxSizeMode.StretchImage
         PictureBox16.TabIndex = 4
         PictureBox16.TabStop = False
         ' 
         ' PictureBox17
         ' 
         PictureBox17.BorderStyle = BorderStyle.Fixed3D
+        PictureBox17.Image = CType(resources.GetObject("PictureBox17.Image"), Image)
         PictureBox17.Location = New Point(263, 150)
         PictureBox17.Name = "PictureBox17"
         PictureBox17.Size = New Size(250, 135)
+        PictureBox17.SizeMode = PictureBoxSizeMode.StretchImage
         PictureBox17.TabIndex = 3
         PictureBox17.TabStop = False
         ' 
         ' PictureBox18
         ' 
         PictureBox18.BorderStyle = BorderStyle.Fixed3D
+        PictureBox18.Image = CType(resources.GetObject("PictureBox18.Image"), Image)
         PictureBox18.Location = New Point(263, 12)
         PictureBox18.Name = "PictureBox18"
         PictureBox18.Size = New Size(250, 135)
+        PictureBox18.SizeMode = PictureBoxSizeMode.StretchImage
         PictureBox18.TabIndex = 2
         PictureBox18.TabStop = False
         ' 
@@ -3391,6 +3468,7 @@ Partial Class Camping_Cars
         ' 
         ' TabPage4
         ' 
+        TabPage4.BackgroundImage = CType(resources.GetObject("TabPage4.BackgroundImage"), Image)
         TabPage4.Controls.Add(C3)
         TabPage4.Controls.Add(B3)
         TabPage4.Controls.Add(Panel10)
@@ -3400,31 +3478,32 @@ Partial Class Camping_Cars
         TabPage4.Name = "TabPage4"
         TabPage4.Size = New Size(1292, 603)
         TabPage4.TabIndex = 3
-        TabPage4.Text = "CAMPER VAN"
+        TabPage4.Text = "🚘CAMPER VAN── .✦"
         TabPage4.UseVisualStyleBackColor = True
         ' 
         ' C3
         ' 
-        C3.Font = New Font("Century", 9F, FontStyle.Bold)
-        C3.Location = New Point(1192, 568)
+        C3.Font = New Font("Century", 12F, FontStyle.Bold)
+        C3.Location = New Point(1161, 560)
         C3.Name = "C3"
-        C3.Size = New Size(94, 29)
+        C3.Size = New Size(125, 35)
         C3.TabIndex = 13
-        C3.Text = "Confirm"
+        C3.Text = "Confirm↪"
         C3.UseVisualStyleBackColor = True
         ' 
         ' B3
         ' 
-        B3.Font = New Font("Century", 9F, FontStyle.Bold)
-        B3.Location = New Point(6, 568)
+        B3.Font = New Font("Century", 12F, FontStyle.Bold)
+        B3.Location = New Point(6, 560)
         B3.Name = "B3"
-        B3.Size = New Size(94, 29)
+        B3.Size = New Size(125, 35)
         B3.TabIndex = 12
-        B3.Text = "Back"
+        B3.Text = "↩Back"
         B3.UseVisualStyleBackColor = True
         ' 
         ' Panel10
         ' 
+        Panel10.BackgroundImage = CType(resources.GetObject("Panel10.BackgroundImage"), Image)
         Panel10.BorderStyle = BorderStyle.Fixed3D
         Panel10.Controls.Add(Label143)
         Panel10.Controls.Add(Label145)
@@ -4032,7 +4111,7 @@ Partial Class Camping_Cars
         SD3.Name = "SD3"
         SD3.Size = New Size(134, 29)
         SD3.TabIndex = 4
-        SD3.Text = "Self Driving"
+        SD3.Text = "Self Driving☆"
         SD3.UseVisualStyleBackColor = True
         ' 
         ' WD3
@@ -4042,7 +4121,7 @@ Partial Class Camping_Cars
         WD3.Name = "WD3"
         WD3.Size = New Size(134, 29)
         WD3.TabIndex = 5
-        WD3.Text = "With Driver"
+        WD3.Text = "With Driver☆"
         WD3.TextAlign = ContentAlignment.TopCenter
         WD3.UseVisualStyleBackColor = True
         ' 
@@ -4138,6 +4217,7 @@ Partial Class Camping_Cars
         ' 
         ' Panel11
         ' 
+        Panel11.BackgroundImage = CType(resources.GetObject("Panel11.BackgroundImage"), Image)
         Panel11.BorderStyle = BorderStyle.Fixed3D
         Panel11.Controls.Add(Label164)
         Panel11.Controls.Add(Label165)
@@ -4169,6 +4249,7 @@ Partial Class Camping_Cars
         ' 
         ' Panel12
         ' 
+        Panel12.BackgroundImage = CType(resources.GetObject("Panel12.BackgroundImage"), Image)
         Panel12.BorderStyle = BorderStyle.Fixed3D
         Panel12.Controls.Add(Label292)
         Panel12.Controls.Add(Label293)
@@ -4234,72 +4315,88 @@ Partial Class Camping_Cars
         ' PictureBox19
         ' 
         PictureBox19.BorderStyle = BorderStyle.Fixed3D
-        PictureBox19.Location = New Point(7, 293)
+        PictureBox19.Image = CType(resources.GetObject("PictureBox19.Image"), Image)
+        PictureBox19.Location = New Point(263, 293)
         PictureBox19.Name = "PictureBox19"
         PictureBox19.Size = New Size(250, 135)
+        PictureBox19.SizeMode = PictureBoxSizeMode.StretchImage
         PictureBox19.TabIndex = 18
         PictureBox19.TabStop = False
         ' 
         ' PictureBox20
         ' 
         PictureBox20.BorderStyle = BorderStyle.Fixed3D
+        PictureBox20.Image = CType(resources.GetObject("PictureBox20.Image"), Image)
         PictureBox20.Location = New Point(7, 152)
         PictureBox20.Name = "PictureBox20"
         PictureBox20.Size = New Size(250, 135)
+        PictureBox20.SizeMode = PictureBoxSizeMode.Zoom
         PictureBox20.TabIndex = 17
         PictureBox20.TabStop = False
         ' 
         ' PictureBox21
         ' 
         PictureBox21.BorderStyle = BorderStyle.Fixed3D
-        PictureBox21.Location = New Point(519, 293)
+        PictureBox21.Image = CType(resources.GetObject("PictureBox21.Image"), Image)
+        PictureBox21.Location = New Point(519, 152)
         PictureBox21.Name = "PictureBox21"
         PictureBox21.Size = New Size(250, 135)
+        PictureBox21.SizeMode = PictureBoxSizeMode.StretchImage
         PictureBox21.TabIndex = 15
         PictureBox21.TabStop = False
         ' 
         ' PictureBox22
         ' 
         PictureBox22.BorderStyle = BorderStyle.Fixed3D
-        PictureBox22.Location = New Point(263, 293)
+        PictureBox22.Image = CType(resources.GetObject("PictureBox22.Image"), Image)
+        PictureBox22.Location = New Point(7, 293)
         PictureBox22.Name = "PictureBox22"
         PictureBox22.Size = New Size(250, 135)
+        PictureBox22.SizeMode = PictureBoxSizeMode.StretchImage
         PictureBox22.TabIndex = 16
         PictureBox22.TabStop = False
         ' 
         ' PictureBox23
         ' 
         PictureBox23.BorderStyle = BorderStyle.Fixed3D
+        PictureBox23.Image = CType(resources.GetObject("PictureBox23.Image"), Image)
         PictureBox23.Location = New Point(519, 11)
         PictureBox23.Name = "PictureBox23"
         PictureBox23.Size = New Size(250, 135)
+        PictureBox23.SizeMode = PictureBoxSizeMode.StretchImage
         PictureBox23.TabIndex = 14
         PictureBox23.TabStop = False
         ' 
         ' PictureBox24
         ' 
         PictureBox24.BorderStyle = BorderStyle.Fixed3D
-        PictureBox24.Location = New Point(519, 152)
+        PictureBox24.Image = CType(resources.GetObject("PictureBox24.Image"), Image)
+        PictureBox24.Location = New Point(519, 293)
         PictureBox24.Name = "PictureBox24"
         PictureBox24.Size = New Size(250, 135)
+        PictureBox24.SizeMode = PictureBoxSizeMode.StretchImage
         PictureBox24.TabIndex = 13
         PictureBox24.TabStop = False
         ' 
         ' PictureBox33
         ' 
         PictureBox33.BorderStyle = BorderStyle.Fixed3D
+        PictureBox33.Image = CType(resources.GetObject("PictureBox33.Image"), Image)
         PictureBox33.Location = New Point(263, 152)
         PictureBox33.Name = "PictureBox33"
         PictureBox33.Size = New Size(250, 135)
+        PictureBox33.SizeMode = PictureBoxSizeMode.StretchImage
         PictureBox33.TabIndex = 12
         PictureBox33.TabStop = False
         ' 
         ' PictureBox34
         ' 
         PictureBox34.BorderStyle = BorderStyle.Fixed3D
+        PictureBox34.Image = CType(resources.GetObject("PictureBox34.Image"), Image)
         PictureBox34.Location = New Point(263, 11)
         PictureBox34.Name = "PictureBox34"
         PictureBox34.Size = New Size(250, 135)
+        PictureBox34.SizeMode = PictureBoxSizeMode.Zoom
         PictureBox34.TabIndex = 11
         PictureBox34.TabStop = False
         ' 
@@ -4347,11 +4444,12 @@ Partial Class Camping_Cars
         ' 
         AutoScaleDimensions = New SizeF(8F, 20F)
         AutoScaleMode = AutoScaleMode.Font
+        BackgroundImage = CType(resources.GetObject("$this.BackgroundImage"), Image)
         ClientSize = New Size(1326, 690)
         Controls.Add(Label1)
         Controls.Add(TabControl1)
         Name = "Camping_Cars"
-        Text = "Camping Cars"
+        Text = "🚘Camping ☆ Cars── .✦"
         TabControl1.ResumeLayout(False)
         TabPage1.ResumeLayout(False)
         Panel3.ResumeLayout(False)

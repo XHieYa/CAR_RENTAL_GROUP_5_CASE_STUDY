@@ -22,6 +22,7 @@ Partial Class CalendarChecker
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(CalendarChecker))
         DGVSchedules = New DataGridView()
         MnthC = New MonthCalendar()
         CType(DGVSchedules, ComponentModel.ISupportInitialize).BeginInit()
@@ -33,28 +34,34 @@ Partial Class CalendarChecker
         DGVSchedules.AllowUserToDeleteRows = False
         DGVSchedules.AllowUserToResizeColumns = False
         DGVSchedules.AllowUserToResizeRows = False
+        DGVSchedules.BackgroundColor = Color.LightGoldenrodYellow
         DGVSchedules.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize
         DGVSchedules.Enabled = False
-        DGVSchedules.Location = New Point(12, 220)
+        DGVSchedules.Location = New Point(14, 256)
+        DGVSchedules.Margin = New Padding(3, 4, 3, 4)
         DGVSchedules.Name = "DGVSchedules"
-        DGVSchedules.Size = New Size(1079, 203)
+        DGVSchedules.RowHeadersWidth = 51
+        DGVSchedules.Size = New Size(1233, 308)
         DGVSchedules.TabIndex = 14
         ' 
         ' MnthC
         ' 
-        MnthC.Location = New Point(439, 18)
+        MnthC.Location = New Point(14, 33)
+        MnthC.Margin = New Padding(10, 12, 10, 12)
         MnthC.Name = "MnthC"
         MnthC.TabIndex = 13
         ' 
         ' CalendarChecker
         ' 
-        AutoScaleDimensions = New SizeF(7F, 15F)
+        AutoScaleDimensions = New SizeF(8F, 20F)
         AutoScaleMode = AutoScaleMode.Font
-        ClientSize = New Size(1103, 435)
+        BackgroundImage = CType(resources.GetObject("$this.BackgroundImage"), Image)
+        ClientSize = New Size(1261, 580)
         Controls.Add(DGVSchedules)
         Controls.Add(MnthC)
+        Margin = New Padding(3, 4, 3, 4)
         Name = "CalendarChecker"
-        Text = "CalendarChecker"
+        Text = "🚘Calendar Checker── .✦"
         CType(DGVSchedules, ComponentModel.ISupportInitialize).EndInit()
         ResumeLayout(False)
     End Sub

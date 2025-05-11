@@ -26,11 +26,14 @@
 
     End Sub
 
-    Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
+    Private Sub Button1_Click(sender As Object, e As EventArgs)
 
-        Hide()
-        loginForm.Show()
+        Hide
+        loginForm.Show
 
     End Sub
 
+    Private Sub Label11_Click(sender As Object, e As EventArgs)
+
+    End Sub
 End Class
