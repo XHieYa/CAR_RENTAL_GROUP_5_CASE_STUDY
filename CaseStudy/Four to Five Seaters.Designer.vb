@@ -350,22 +350,22 @@ Partial Class Four_to_Five_Seaters
         ' 
         ' C
         ' 
-        C.Font = New Font("Century", 9F, FontStyle.Bold)
-        C.Location = New Point(1192, 568)
+        C.Font = New Font("Century", 12F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        C.Location = New Point(1161, 564)
         C.Name = "C"
-        C.Size = New Size(94, 29)
+        C.Size = New Size(125, 35)
         C.TabIndex = 3
-        C.Text = "Confirm"
+        C.Text = "Confirm↪"
         C.UseVisualStyleBackColor = True
         ' 
         ' B
         ' 
-        B.Font = New Font("Century", 9F, FontStyle.Bold)
-        B.Location = New Point(6, 568)
+        B.Font = New Font("Century", 12F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        B.Location = New Point(6, 562)
         B.Name = "B"
-        B.Size = New Size(94, 29)
+        B.Size = New Size(125, 35)
         B.TabIndex = 2
-        B.Text = "Back"
+        B.Text = "↩Back"
         B.UseVisualStyleBackColor = True
         ' 
         ' Panel3
@@ -1002,23 +1002,25 @@ Partial Class Four_to_Five_Seaters
         ' 
         ' C1
         ' 
-        C1.Font = New Font("Century", 9F, FontStyle.Bold)
-        C1.Location = New Point(1192, 568)
+        C1.BackColor = Color.PaleGoldenrod
+        C1.Font = New Font("Century", 12F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        C1.Location = New Point(1162, 562)
         C1.Name = "C1"
-        C1.Size = New Size(94, 29)
+        C1.Size = New Size(125, 35)
         C1.TabIndex = 8
-        C1.Text = "Confirm"
-        C1.UseVisualStyleBackColor = True
+        C1.Text = "Confirm↪"
+        C1.UseVisualStyleBackColor = False
         ' 
         ' B1
         ' 
-        B1.Font = New Font("Century", 9F, FontStyle.Bold)
-        B1.Location = New Point(6, 568)
+        B1.BackColor = Color.PaleGoldenrod
+        B1.Font = New Font("Century", 12F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        B1.Location = New Point(6, 562)
         B1.Name = "B1"
-        B1.Size = New Size(94, 29)
+        B1.Size = New Size(125, 35)
         B1.TabIndex = 7
-        B1.Text = "Back"
-        B1.UseVisualStyleBackColor = True
+        B1.Text = "↩Back"
+        B1.UseVisualStyleBackColor = False
         ' 
         ' Panel4
         ' 
@@ -1650,23 +1652,25 @@ Partial Class Four_to_Five_Seaters
         ' 
         ' C2
         ' 
-        C2.Font = New Font("Century", 9F, FontStyle.Bold)
-        C2.Location = New Point(1192, 568)
+        C2.BackColor = Color.PaleGoldenrod
+        C2.Font = New Font("Century", 12F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        C2.Location = New Point(1161, 560)
         C2.Name = "C2"
-        C2.Size = New Size(94, 29)
+        C2.Size = New Size(125, 35)
         C2.TabIndex = 13
-        C2.Text = "Confirm"
-        C2.UseVisualStyleBackColor = True
+        C2.Text = "Confirm↪"
+        C2.UseVisualStyleBackColor = False
         ' 
         ' B2
         ' 
-        B2.Font = New Font("Century", 9F, FontStyle.Bold)
-        B2.Location = New Point(6, 568)
+        B2.BackColor = Color.PaleGoldenrod
+        B2.Font = New Font("Century", 12F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        B2.Location = New Point(6, 560)
         B2.Name = "B2"
-        B2.Size = New Size(94, 29)
+        B2.Size = New Size(125, 35)
         B2.TabIndex = 12
-        B2.Text = "Back"
-        B2.UseVisualStyleBackColor = True
+        B2.Text = "↩Back"
+        B2.UseVisualStyleBackColor = False
         ' 
         ' Panel7
         ' 
@@ -2299,23 +2303,25 @@ Partial Class Four_to_Five_Seaters
         ' 
         ' C3
         ' 
-        C3.Font = New Font("Century", 9F, FontStyle.Bold)
-        C3.Location = New Point(1192, 568)
+        C3.BackColor = Color.PaleGoldenrod
+        C3.Font = New Font("Century", 12F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        C3.Location = New Point(1161, 561)
         C3.Name = "C3"
-        C3.Size = New Size(94, 29)
+        C3.Size = New Size(125, 35)
         C3.TabIndex = 13
-        C3.Text = "Confirm"
-        C3.UseVisualStyleBackColor = True
+        C3.Text = "Confirm↪"
+        C3.UseVisualStyleBackColor = False
         ' 
         ' B3
         ' 
-        B3.Font = New Font("Century", 9F, FontStyle.Bold)
-        B3.Location = New Point(6, 568)
+        B3.BackColor = Color.PaleGoldenrod
+        B3.Font = New Font("Century", 12F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        B3.Location = New Point(6, 561)
         B3.Name = "B3"
-        B3.Size = New Size(94, 29)
+        B3.Size = New Size(125, 35)
         B3.TabIndex = 12
-        B3.Text = "Back"
-        B3.UseVisualStyleBackColor = True
+        B3.Text = "↩Back"
+        B3.UseVisualStyleBackColor = False
         ' 
         ' Panel10
         ' 
