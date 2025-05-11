@@ -15,6 +15,13 @@ Public Class PaymentDetailSlip
         txtAge.Text = Dashboard.lblAge.Text
         txtDOB.Text = Dashboard.lblDOB.Text
         txtEmail.Text = Dashboard.lblEmail.Text
+        txtCarName.Text = BookingForm.txtCar.Text
+        txtCarID.Text = BookingForm.TxtCarID.Text
+        txtBodyNumber.Text = BookingForm.txtBodyNumber.Text
+        txtPlateNumber.Text = BookingForm.txtPlateNumber.Text
+        Ratetxt.Text = BookingForm.txtRate.Text
+        Typetxt.Text = BookingForm.txtType.Text
+        Capacitytxt.Text = BookingForm.txtCapacity.Text
 
     End Sub
     'when payment is complete this shall execute
