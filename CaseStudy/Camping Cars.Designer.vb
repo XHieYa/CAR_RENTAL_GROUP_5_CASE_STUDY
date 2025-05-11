@@ -1354,54 +1354,66 @@ Partial Class Camping_Cars
         ' PictureBox29
         ' 
         PictureBox29.BorderStyle = BorderStyle.Fixed3D
+        PictureBox29.Image = CType(resources.GetObject("PictureBox29.Image"), Image)
         PictureBox29.Location = New Point(56, 90)
         PictureBox29.Name = "PictureBox29"
         PictureBox29.Size = New Size(148, 108)
+        PictureBox29.SizeMode = PictureBoxSizeMode.StretchImage
         PictureBox29.TabIndex = 14
         PictureBox29.TabStop = False
         ' 
         ' PictureBox28
         ' 
         PictureBox28.BorderStyle = BorderStyle.Fixed3D
+        PictureBox28.Image = CType(resources.GetObject("PictureBox28.Image"), Image)
         PictureBox28.Location = New Point(56, 204)
         PictureBox28.Name = "PictureBox28"
         PictureBox28.Size = New Size(148, 108)
+        PictureBox28.SizeMode = PictureBoxSizeMode.StretchImage
         PictureBox28.TabIndex = 13
         PictureBox28.TabStop = False
         ' 
         ' PictureBox27
         ' 
         PictureBox27.BorderStyle = BorderStyle.Fixed3D
+        PictureBox27.Image = CType(resources.GetObject("PictureBox27.Image"), Image)
         PictureBox27.Location = New Point(9, 324)
         PictureBox27.Name = "PictureBox27"
         PictureBox27.Size = New Size(148, 108)
+        PictureBox27.SizeMode = PictureBoxSizeMode.StretchImage
         PictureBox27.TabIndex = 12
         PictureBox27.TabStop = False
         ' 
         ' PictureBox26
         ' 
         PictureBox26.BorderStyle = BorderStyle.Fixed3D
+        PictureBox26.Image = CType(resources.GetObject("PictureBox26.Image"), Image)
         PictureBox26.Location = New Point(163, 324)
         PictureBox26.Name = "PictureBox26"
         PictureBox26.Size = New Size(148, 108)
+        PictureBox26.SizeMode = PictureBoxSizeMode.StretchImage
         PictureBox26.TabIndex = 11
         PictureBox26.TabStop = False
         ' 
         ' PictureBox25
         ' 
         PictureBox25.BorderStyle = BorderStyle.Fixed3D
+        PictureBox25.Image = CType(resources.GetObject("PictureBox25.Image"), Image)
         PictureBox25.Location = New Point(317, 324)
         PictureBox25.Name = "PictureBox25"
         PictureBox25.Size = New Size(148, 108)
+        PictureBox25.SizeMode = PictureBoxSizeMode.StretchImage
         PictureBox25.TabIndex = 10
         PictureBox25.TabStop = False
         ' 
         ' PictureBox6
         ' 
         PictureBox6.BorderStyle = BorderStyle.Fixed3D
+        PictureBox6.Image = CType(resources.GetObject("PictureBox6.Image"), Image)
         PictureBox6.Location = New Point(471, 324)
         PictureBox6.Name = "PictureBox6"
         PictureBox6.Size = New Size(148, 108)
+        PictureBox6.SizeMode = PictureBoxSizeMode.StretchImage
         PictureBox6.TabIndex = 9
         PictureBox6.TabStop = False
         ' 
@@ -1428,45 +1440,55 @@ Partial Class Camping_Cars
         ' PictureBox5
         ' 
         PictureBox5.BorderStyle = BorderStyle.Fixed3D
+        PictureBox5.Image = CType(resources.GetObject("PictureBox5.Image"), Image)
         PictureBox5.Location = New Point(625, 324)
         PictureBox5.Name = "PictureBox5"
         PictureBox5.Size = New Size(148, 108)
+        PictureBox5.SizeMode = PictureBoxSizeMode.StretchImage
         PictureBox5.TabIndex = 6
         PictureBox5.TabStop = False
         ' 
         ' PictureBox4
         ' 
         PictureBox4.BorderStyle = BorderStyle.Fixed3D
+        PictureBox4.Image = CType(resources.GetObject("PictureBox4.Image"), Image)
         PictureBox4.Location = New Point(506, 38)
         PictureBox4.Name = "PictureBox4"
         PictureBox4.Size = New Size(250, 135)
+        PictureBox4.SizeMode = PictureBoxSizeMode.StretchImage
         PictureBox4.TabIndex = 5
         PictureBox4.TabStop = False
         ' 
         ' PictureBox3
         ' 
         PictureBox3.BorderStyle = BorderStyle.Fixed3D
+        PictureBox3.Image = CType(resources.GetObject("PictureBox3.Image"), Image)
         PictureBox3.Location = New Point(506, 179)
         PictureBox3.Name = "PictureBox3"
         PictureBox3.Size = New Size(250, 135)
+        PictureBox3.SizeMode = PictureBoxSizeMode.StretchImage
         PictureBox3.TabIndex = 4
         PictureBox3.TabStop = False
         ' 
         ' PictureBox2
         ' 
         PictureBox2.BorderStyle = BorderStyle.Fixed3D
+        PictureBox2.Image = CType(resources.GetObject("PictureBox2.Image"), Image)
         PictureBox2.Location = New Point(250, 178)
         PictureBox2.Name = "PictureBox2"
         PictureBox2.Size = New Size(250, 135)
+        PictureBox2.SizeMode = PictureBoxSizeMode.StretchImage
         PictureBox2.TabIndex = 3
         PictureBox2.TabStop = False
         ' 
         ' PictureBox1
         ' 
         PictureBox1.BorderStyle = BorderStyle.Fixed3D
+        PictureBox1.Image = CType(resources.GetObject("PictureBox1.Image"), Image)
         PictureBox1.Location = New Point(250, 37)
         PictureBox1.Name = "PictureBox1"
         PictureBox1.Size = New Size(250, 135)
+        PictureBox1.SizeMode = PictureBoxSizeMode.Zoom
         PictureBox1.TabIndex = 2
         PictureBox1.TabStop = False
         ' 
@@ -2291,9 +2313,11 @@ Partial Class Camping_Cars
         ' PictureBox30
         ' 
         PictureBox30.BorderStyle = BorderStyle.Fixed3D
+        PictureBox30.Image = CType(resources.GetObject("PictureBox30.Image"), Image)
         PictureBox30.Location = New Point(3, 150)
         PictureBox30.Name = "PictureBox30"
         PictureBox30.Size = New Size(250, 135)
+        PictureBox30.SizeMode = PictureBoxSizeMode.StretchImage
         PictureBox30.TabIndex = 9
         PictureBox30.TabStop = False
         ' 
@@ -2320,54 +2344,66 @@ Partial Class Camping_Cars
         ' PictureBox7
         ' 
         PictureBox7.BorderStyle = BorderStyle.Fixed3D
+        PictureBox7.Image = CType(resources.GetObject("PictureBox7.Image"), Image)
         PictureBox7.Location = New Point(519, 291)
         PictureBox7.Name = "PictureBox7"
         PictureBox7.Size = New Size(250, 135)
+        PictureBox7.SizeMode = PictureBoxSizeMode.StretchImage
         PictureBox7.TabIndex = 6
         PictureBox7.TabStop = False
         ' 
         ' PictureBox8
         ' 
         PictureBox8.BorderStyle = BorderStyle.Fixed3D
+        PictureBox8.Image = CType(resources.GetObject("PictureBox8.Image"), Image)
         PictureBox8.Location = New Point(259, 291)
         PictureBox8.Name = "PictureBox8"
         PictureBox8.Size = New Size(250, 135)
+        PictureBox8.SizeMode = PictureBoxSizeMode.StretchImage
         PictureBox8.TabIndex = 6
         PictureBox8.TabStop = False
         ' 
         ' PictureBox9
         ' 
         PictureBox9.BorderStyle = BorderStyle.Fixed3D
+        PictureBox9.Image = CType(resources.GetObject("PictureBox9.Image"), Image)
         PictureBox9.Location = New Point(519, 9)
         PictureBox9.Name = "PictureBox9"
         PictureBox9.Size = New Size(250, 135)
+        PictureBox9.SizeMode = PictureBoxSizeMode.StretchImage
         PictureBox9.TabIndex = 5
         PictureBox9.TabStop = False
         ' 
         ' PictureBox10
         ' 
         PictureBox10.BorderStyle = BorderStyle.Fixed3D
+        PictureBox10.Image = CType(resources.GetObject("PictureBox10.Image"), Image)
         PictureBox10.Location = New Point(519, 150)
         PictureBox10.Name = "PictureBox10"
         PictureBox10.Size = New Size(250, 135)
+        PictureBox10.SizeMode = PictureBoxSizeMode.StretchImage
         PictureBox10.TabIndex = 4
         PictureBox10.TabStop = False
         ' 
         ' PictureBox11
         ' 
         PictureBox11.BorderStyle = BorderStyle.Fixed3D
+        PictureBox11.Image = CType(resources.GetObject("PictureBox11.Image"), Image)
         PictureBox11.Location = New Point(259, 150)
         PictureBox11.Name = "PictureBox11"
         PictureBox11.Size = New Size(250, 135)
+        PictureBox11.SizeMode = PictureBoxSizeMode.StretchImage
         PictureBox11.TabIndex = 3
         PictureBox11.TabStop = False
         ' 
         ' PictureBox12
         ' 
         PictureBox12.BorderStyle = BorderStyle.Fixed3D
+        PictureBox12.Image = CType(resources.GetObject("PictureBox12.Image"), Image)
         PictureBox12.Location = New Point(259, 9)
         PictureBox12.Name = "PictureBox12"
         PictureBox12.Size = New Size(250, 135)
+        PictureBox12.SizeMode = PictureBoxSizeMode.StretchImage
         PictureBox12.TabIndex = 2
         PictureBox12.TabStop = False
         ' 
@@ -3280,18 +3316,22 @@ Partial Class Camping_Cars
         ' PictureBox31
         ' 
         PictureBox31.BorderStyle = BorderStyle.Fixed3D
+        PictureBox31.Image = CType(resources.GetObject("PictureBox31.Image"), Image)
         PictureBox31.Location = New Point(7, 291)
         PictureBox31.Name = "PictureBox31"
         PictureBox31.Size = New Size(250, 135)
+        PictureBox31.SizeMode = PictureBoxSizeMode.StretchImage
         PictureBox31.TabIndex = 10
         PictureBox31.TabStop = False
         ' 
         ' PictureBox32
         ' 
         PictureBox32.BorderStyle = BorderStyle.Fixed3D
+        PictureBox32.Image = CType(resources.GetObject("PictureBox32.Image"), Image)
         PictureBox32.Location = New Point(7, 150)
         PictureBox32.Name = "PictureBox32"
         PictureBox32.Size = New Size(250, 135)
+        PictureBox32.SizeMode = PictureBoxSizeMode.StretchImage
         PictureBox32.TabIndex = 9
         PictureBox32.TabStop = False
         ' 
@@ -3318,54 +3358,66 @@ Partial Class Camping_Cars
         ' PictureBox13
         ' 
         PictureBox13.BorderStyle = BorderStyle.Fixed3D
+        PictureBox13.Image = CType(resources.GetObject("PictureBox13.Image"), Image)
         PictureBox13.Location = New Point(519, 291)
         PictureBox13.Name = "PictureBox13"
         PictureBox13.Size = New Size(250, 135)
+        PictureBox13.SizeMode = PictureBoxSizeMode.StretchImage
         PictureBox13.TabIndex = 6
         PictureBox13.TabStop = False
         ' 
         ' PictureBox14
         ' 
         PictureBox14.BorderStyle = BorderStyle.Fixed3D
+        PictureBox14.Image = CType(resources.GetObject("PictureBox14.Image"), Image)
         PictureBox14.Location = New Point(263, 291)
         PictureBox14.Name = "PictureBox14"
         PictureBox14.Size = New Size(250, 135)
+        PictureBox14.SizeMode = PictureBoxSizeMode.StretchImage
         PictureBox14.TabIndex = 6
         PictureBox14.TabStop = False
         ' 
         ' PictureBox15
         ' 
         PictureBox15.BorderStyle = BorderStyle.Fixed3D
+        PictureBox15.Image = CType(resources.GetObject("PictureBox15.Image"), Image)
         PictureBox15.Location = New Point(519, 12)
         PictureBox15.Name = "PictureBox15"
         PictureBox15.Size = New Size(250, 135)
+        PictureBox15.SizeMode = PictureBoxSizeMode.StretchImage
         PictureBox15.TabIndex = 5
         PictureBox15.TabStop = False
         ' 
         ' PictureBox16
         ' 
         PictureBox16.BorderStyle = BorderStyle.Fixed3D
+        PictureBox16.Image = CType(resources.GetObject("PictureBox16.Image"), Image)
         PictureBox16.Location = New Point(519, 150)
         PictureBox16.Name = "PictureBox16"
         PictureBox16.Size = New Size(250, 135)
+        PictureBox16.SizeMode = PictureBoxSizeMode.StretchImage
         PictureBox16.TabIndex = 4
         PictureBox16.TabStop = False
         ' 
         ' PictureBox17
         ' 
         PictureBox17.BorderStyle = BorderStyle.Fixed3D
+        PictureBox17.Image = CType(resources.GetObject("PictureBox17.Image"), Image)
         PictureBox17.Location = New Point(263, 150)
         PictureBox17.Name = "PictureBox17"
         PictureBox17.Size = New Size(250, 135)
+        PictureBox17.SizeMode = PictureBoxSizeMode.StretchImage
         PictureBox17.TabIndex = 3
         PictureBox17.TabStop = False
         ' 
         ' PictureBox18
         ' 
         PictureBox18.BorderStyle = BorderStyle.Fixed3D
+        PictureBox18.Image = CType(resources.GetObject("PictureBox18.Image"), Image)
         PictureBox18.Location = New Point(263, 12)
         PictureBox18.Name = "PictureBox18"
         PictureBox18.Size = New Size(250, 135)
+        PictureBox18.SizeMode = PictureBoxSizeMode.StretchImage
         PictureBox18.TabIndex = 2
         PictureBox18.TabStop = False
         ' 
@@ -4234,72 +4286,88 @@ Partial Class Camping_Cars
         ' PictureBox19
         ' 
         PictureBox19.BorderStyle = BorderStyle.Fixed3D
-        PictureBox19.Location = New Point(7, 293)
+        PictureBox19.Image = CType(resources.GetObject("PictureBox19.Image"), Image)
+        PictureBox19.Location = New Point(263, 293)
         PictureBox19.Name = "PictureBox19"
         PictureBox19.Size = New Size(250, 135)
+        PictureBox19.SizeMode = PictureBoxSizeMode.StretchImage
         PictureBox19.TabIndex = 18
         PictureBox19.TabStop = False
         ' 
         ' PictureBox20
         ' 
         PictureBox20.BorderStyle = BorderStyle.Fixed3D
+        PictureBox20.Image = CType(resources.GetObject("PictureBox20.Image"), Image)
         PictureBox20.Location = New Point(7, 152)
         PictureBox20.Name = "PictureBox20"
         PictureBox20.Size = New Size(250, 135)
+        PictureBox20.SizeMode = PictureBoxSizeMode.Zoom
         PictureBox20.TabIndex = 17
         PictureBox20.TabStop = False
         ' 
         ' PictureBox21
         ' 
         PictureBox21.BorderStyle = BorderStyle.Fixed3D
-        PictureBox21.Location = New Point(519, 293)
+        PictureBox21.Image = CType(resources.GetObject("PictureBox21.Image"), Image)
+        PictureBox21.Location = New Point(519, 152)
         PictureBox21.Name = "PictureBox21"
         PictureBox21.Size = New Size(250, 135)
+        PictureBox21.SizeMode = PictureBoxSizeMode.StretchImage
         PictureBox21.TabIndex = 15
         PictureBox21.TabStop = False
         ' 
         ' PictureBox22
         ' 
         PictureBox22.BorderStyle = BorderStyle.Fixed3D
-        PictureBox22.Location = New Point(263, 293)
+        PictureBox22.Image = CType(resources.GetObject("PictureBox22.Image"), Image)
+        PictureBox22.Location = New Point(7, 293)
         PictureBox22.Name = "PictureBox22"
         PictureBox22.Size = New Size(250, 135)
+        PictureBox22.SizeMode = PictureBoxSizeMode.StretchImage
         PictureBox22.TabIndex = 16
         PictureBox22.TabStop = False
         ' 
         ' PictureBox23
         ' 
         PictureBox23.BorderStyle = BorderStyle.Fixed3D
+        PictureBox23.Image = CType(resources.GetObject("PictureBox23.Image"), Image)
         PictureBox23.Location = New Point(519, 11)
         PictureBox23.Name = "PictureBox23"
         PictureBox23.Size = New Size(250, 135)
+        PictureBox23.SizeMode = PictureBoxSizeMode.StretchImage
         PictureBox23.TabIndex = 14
         PictureBox23.TabStop = False
         ' 
         ' PictureBox24
         ' 
         PictureBox24.BorderStyle = BorderStyle.Fixed3D
-        PictureBox24.Location = New Point(519, 152)
+        PictureBox24.Image = CType(resources.GetObject("PictureBox24.Image"), Image)
+        PictureBox24.Location = New Point(519, 293)
         PictureBox24.Name = "PictureBox24"
         PictureBox24.Size = New Size(250, 135)
+        PictureBox24.SizeMode = PictureBoxSizeMode.StretchImage
         PictureBox24.TabIndex = 13
         PictureBox24.TabStop = False
         ' 
         ' PictureBox33
         ' 
         PictureBox33.BorderStyle = BorderStyle.Fixed3D
+        PictureBox33.Image = CType(resources.GetObject("PictureBox33.Image"), Image)
         PictureBox33.Location = New Point(263, 152)
         PictureBox33.Name = "PictureBox33"
         PictureBox33.Size = New Size(250, 135)
+        PictureBox33.SizeMode = PictureBoxSizeMode.StretchImage
         PictureBox33.TabIndex = 12
         PictureBox33.TabStop = False
         ' 
         ' PictureBox34
         ' 
         PictureBox34.BorderStyle = BorderStyle.Fixed3D
+        PictureBox34.Image = CType(resources.GetObject("PictureBox34.Image"), Image)
         PictureBox34.Location = New Point(263, 11)
         PictureBox34.Name = "PictureBox34"
         PictureBox34.Size = New Size(250, 135)
+        PictureBox34.SizeMode = PictureBoxSizeMode.Zoom
         PictureBox34.TabIndex = 11
         PictureBox34.TabStop = False
         ' 
