@@ -34,7 +34,7 @@ Public Class PaymentDetailSlip
                 Return
             End If
             'sql query
-            Dim query As String = "INSERT INTO Booking (CarID, CarName, StartBookDate, EndBookDate, Price, WDriver, Rate) VALUES (@CarID, @CarName, @Fdate, @Tdate, @Price, @WDriver, @Rate)"
+            Dim query As String = "INSERT INTO Booking (CarID, CarName, StartBookDate, EndBookDate, Price, WDriver, Rate, Contact) VALUES (@CarID, @CarName, @Fdate, @Tdate, @Price, @WDriver, @Rate, @Contact)"
             Con.Open()
             'same as the other that adds items to sql
             Using cmd As New SqlCommand(query, Con)
@@ -46,6 +46,7 @@ Public Class PaymentDetailSlip
                 cmd.Parameters.AddWithValue("@Price", totalpay)
                 cmd.Parameters.AddWithValue("@WDriver", Driver)
                 cmd.Parameters.AddWithValue("@Rate", Ratetxt.Text)
+                cmd.Parameters.AddWithValue("@Contact", txtContact.Text)
                 cmd.ExecuteNonQuery()
             End Using
             MessageBox.Show("Successfully Booked", "Info", MessageBoxButtons.OK, MessageBoxIcon.Information)
