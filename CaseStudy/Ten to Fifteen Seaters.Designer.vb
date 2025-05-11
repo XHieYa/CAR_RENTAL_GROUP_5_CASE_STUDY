@@ -71,6 +71,8 @@ Partial Class Ten_to_Fifteen_Seaters
         Label43 = New Label()
         Label4 = New Label()
         Panel1 = New Panel()
+        Label179 = New Label()
+        Label178 = New Label()
         Label171 = New Label()
         Label170 = New Label()
         Label19 = New Label()
@@ -129,6 +131,8 @@ Partial Class Ten_to_Fifteen_Seaters
         Label80 = New Label()
         Label81 = New Label()
         Panel6 = New Panel()
+        Label132 = New Label()
+        Label133 = New Label()
         Label128 = New Label()
         Label129 = New Label()
         Label82 = New Label()
@@ -187,6 +191,8 @@ Partial Class Ten_to_Fifteen_Seaters
         Label122 = New Label()
         Label123 = New Label()
         Panel9 = New Panel()
+        Label134 = New Label()
+        Label135 = New Label()
         Label130 = New Label()
         Label131 = New Label()
         Label124 = New Label()
@@ -199,12 +205,6 @@ Partial Class Ten_to_Fifteen_Seaters
         PictureBox18 = New PictureBox()
         Label126 = New Label()
         Label127 = New Label()
-        Label179 = New Label()
-        Label178 = New Label()
-        Label132 = New Label()
-        Label133 = New Label()
-        Label134 = New Label()
-        Label135 = New Label()
         TabControl1.SuspendLayout()
         TabPage1.SuspendLayout()
         Panel3.SuspendLayout()
@@ -776,6 +776,26 @@ Partial Class Ten_to_Fifteen_Seaters
         Panel1.Name = "Panel1"
         Panel1.Size = New Size(780, 442)
         Panel1.TabIndex = 0
+        ' 
+        ' Label179
+        ' 
+        Label179.AutoSize = True
+        Label179.Font = New Font("Century", 9F, FontStyle.Underline)
+        Label179.Location = New Point(141, 65)
+        Label179.Name = "Label179"
+        Label179.Size = New Size(20, 18)
+        Label179.TabIndex = 14
+        Label179.Text = "N"
+        ' 
+        ' Label178
+        ' 
+        Label178.AutoSize = True
+        Label178.Font = New Font("Century", 9F, FontStyle.Bold)
+        Label178.Location = New Point(12, 65)
+        Label178.Name = "Label178"
+        Label178.Size = New Size(121, 18)
+        Label178.TabIndex = 13
+        Label178.Text = "Body Number:"
         ' 
         ' Label171
         ' 
@@ -1406,6 +1426,26 @@ Partial Class Ten_to_Fifteen_Seaters
         Panel6.Size = New Size(780, 442)
         Panel6.TabIndex = 4
         ' 
+        ' Label132
+        ' 
+        Label132.AutoSize = True
+        Label132.Font = New Font("Century", 9F, FontStyle.Underline)
+        Label132.Location = New Point(143, 65)
+        Label132.Name = "Label132"
+        Label132.Size = New Size(20, 18)
+        Label132.TabIndex = 14
+        Label132.Text = "N"
+        ' 
+        ' Label133
+        ' 
+        Label133.AutoSize = True
+        Label133.Font = New Font("Century", 9F, FontStyle.Bold)
+        Label133.Location = New Point(14, 65)
+        Label133.Name = "Label133"
+        Label133.Size = New Size(121, 18)
+        Label133.TabIndex = 13
+        Label133.Text = "Body Number:"
+        ' 
         ' Label128
         ' 
         Label128.AutoSize = True
@@ -2034,6 +2074,26 @@ Partial Class Ten_to_Fifteen_Seaters
         Panel9.Size = New Size(780, 442)
         Panel9.TabIndex = 9
         ' 
+        ' Label134
+        ' 
+        Label134.AutoSize = True
+        Label134.Font = New Font("Century", 9F, FontStyle.Underline)
+        Label134.Location = New Point(141, 65)
+        Label134.Name = "Label134"
+        Label134.Size = New Size(20, 18)
+        Label134.TabIndex = 14
+        Label134.Text = "N"
+        ' 
+        ' Label135
+        ' 
+        Label135.AutoSize = True
+        Label135.Font = New Font("Century", 9F, FontStyle.Bold)
+        Label135.Location = New Point(12, 65)
+        Label135.Name = "Label135"
+        Label135.Size = New Size(121, 18)
+        Label135.TabIndex = 13
+        Label135.Text = "Body Number:"
+        ' 
         ' Label130
         ' 
         Label130.AutoSize = True
@@ -2147,66 +2207,6 @@ Partial Class Ten_to_Fifteen_Seaters
         Label127.Size = New Size(105, 18)
         Label127.TabIndex = 0
         Label127.Text = "Model Year:"
-        ' 
-        ' Label179
-        ' 
-        Label179.AutoSize = True
-        Label179.Font = New Font("Century", 9F, FontStyle.Underline)
-        Label179.Location = New Point(141, 65)
-        Label179.Name = "Label179"
-        Label179.Size = New Size(20, 18)
-        Label179.TabIndex = 14
-        Label179.Text = "N"
-        ' 
-        ' Label178
-        ' 
-        Label178.AutoSize = True
-        Label178.Font = New Font("Century", 9F, FontStyle.Bold)
-        Label178.Location = New Point(12, 65)
-        Label178.Name = "Label178"
-        Label178.Size = New Size(121, 18)
-        Label178.TabIndex = 13
-        Label178.Text = "Body Number:"
-        ' 
-        ' Label132
-        ' 
-        Label132.AutoSize = True
-        Label132.Font = New Font("Century", 9F, FontStyle.Underline)
-        Label132.Location = New Point(143, 65)
-        Label132.Name = "Label132"
-        Label132.Size = New Size(20, 18)
-        Label132.TabIndex = 14
-        Label132.Text = "N"
-        ' 
-        ' Label133
-        ' 
-        Label133.AutoSize = True
-        Label133.Font = New Font("Century", 9F, FontStyle.Bold)
-        Label133.Location = New Point(14, 65)
-        Label133.Name = "Label133"
-        Label133.Size = New Size(121, 18)
-        Label133.TabIndex = 13
-        Label133.Text = "Body Number:"
-        ' 
-        ' Label134
-        ' 
-        Label134.AutoSize = True
-        Label134.Font = New Font("Century", 9F, FontStyle.Underline)
-        Label134.Location = New Point(141, 65)
-        Label134.Name = "Label134"
-        Label134.Size = New Size(20, 18)
-        Label134.TabIndex = 14
-        Label134.Text = "N"
-        ' 
-        ' Label135
-        ' 
-        Label135.AutoSize = True
-        Label135.Font = New Font("Century", 9F, FontStyle.Bold)
-        Label135.Location = New Point(12, 65)
-        Label135.Name = "Label135"
-        Label135.Size = New Size(121, 18)
-        Label135.TabIndex = 13
-        Label135.Text = "Body Number:"
         ' 
         ' Ten_to_Fifteen_Seaters
         ' 
