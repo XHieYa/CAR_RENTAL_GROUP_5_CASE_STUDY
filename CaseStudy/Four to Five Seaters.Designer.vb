@@ -477,24 +477,26 @@ Partial Class Four_to_Five_Seaters
         ' 
         ' SD
         ' 
+        SD.BackColor = Color.PaleGoldenrod
         SD.Font = New Font("Century", 9F, FontStyle.Bold)
         SD.Location = New Point(119, 503)
         SD.Name = "SD"
         SD.Size = New Size(134, 29)
         SD.TabIndex = 4
-        SD.Text = "Self Driving"
-        SD.UseVisualStyleBackColor = True
+        SD.Text = "Self Driving☆" & vbCrLf
+        SD.UseVisualStyleBackColor = False
         ' 
         ' WD
         ' 
+        WD.BackColor = Color.PaleGoldenrod
         WD.Font = New Font("Century", 9F, FontStyle.Bold)
         WD.Location = New Point(259, 503)
         WD.Name = "WD"
         WD.Size = New Size(134, 29)
         WD.TabIndex = 5
-        WD.Text = "With Driver"
+        WD.Text = "With Driver☆"
         WD.TextAlign = ContentAlignment.TopCenter
-        WD.UseVisualStyleBackColor = True
+        WD.UseVisualStyleBackColor = False
         ' 
         ' Label36
         ' 
@@ -1024,6 +1026,7 @@ Partial Class Four_to_Five_Seaters
         ' 
         ' Panel4
         ' 
+        Panel4.BackgroundImage = CType(resources.GetObject("Panel4.BackgroundImage"), Image)
         Panel4.BorderStyle = BorderStyle.Fixed3D
         Panel4.Controls.Add(Label44)
         Panel4.Controls.Add(Label45)
@@ -1135,7 +1138,7 @@ Partial Class Four_to_Five_Seaters
         SD1.Name = "SD1"
         SD1.Size = New Size(134, 29)
         SD1.TabIndex = 4
-        SD1.Text = "Self Driving"
+        SD1.Text = "Self Driving☆" & vbCrLf
         SD1.UseVisualStyleBackColor = True
         ' 
         ' WD1
@@ -1145,7 +1148,7 @@ Partial Class Four_to_Five_Seaters
         WD1.Name = "WD1"
         WD1.Size = New Size(134, 29)
         WD1.TabIndex = 5
-        WD1.Text = "With Driver"
+        WD1.Text = "With Driver☆" & vbCrLf
         WD1.TextAlign = ContentAlignment.TopCenter
         WD1.UseVisualStyleBackColor = True
         ' 
@@ -1451,6 +1454,7 @@ Partial Class Four_to_Five_Seaters
         ' 
         ' Panel5
         ' 
+        Panel5.BackgroundImage = CType(resources.GetObject("Panel5.BackgroundImage"), Image)
         Panel5.BorderStyle = BorderStyle.Fixed3D
         Panel5.Controls.Add(Label80)
         Panel5.Controls.Add(Label81)
@@ -1482,6 +1486,7 @@ Partial Class Four_to_Five_Seaters
         ' 
         ' Panel6
         ' 
+        Panel6.BackgroundImage = CType(resources.GetObject("Panel6.BackgroundImage"), Image)
         Panel6.BorderStyle = BorderStyle.Fixed3D
         Panel6.Controls.Add(Label180)
         Panel6.Controls.Add(Label181)
@@ -1545,9 +1550,11 @@ Partial Class Four_to_Five_Seaters
         ' PictureBox25
         ' 
         PictureBox25.BorderStyle = BorderStyle.Fixed3D
-        PictureBox25.Location = New Point(519, 288)
+        PictureBox25.Image = CType(resources.GetObject("PictureBox25.Image"), Image)
+        PictureBox25.Location = New Point(397, 290)
         PictureBox25.Name = "PictureBox25"
         PictureBox25.Size = New Size(250, 135)
+        PictureBox25.SizeMode = PictureBoxSizeMode.StretchImage
         PictureBox25.TabIndex = 9
         PictureBox25.TabStop = False
         ' 
@@ -1574,45 +1581,55 @@ Partial Class Four_to_Five_Seaters
         ' PictureBox7
         ' 
         PictureBox7.BorderStyle = BorderStyle.Fixed3D
-        PictureBox7.Location = New Point(263, 288)
+        PictureBox7.Image = CType(resources.GetObject("PictureBox7.Image"), Image)
+        PictureBox7.Location = New Point(141, 290)
         PictureBox7.Name = "PictureBox7"
         PictureBox7.Size = New Size(250, 135)
+        PictureBox7.SizeMode = PictureBoxSizeMode.StretchImage
         PictureBox7.TabIndex = 6
         PictureBox7.TabStop = False
         ' 
         ' PictureBox8
         ' 
         PictureBox8.BorderStyle = BorderStyle.Fixed3D
-        PictureBox8.Location = New Point(7, 288)
+        PictureBox8.Image = CType(resources.GetObject("PictureBox8.Image"), Image)
+        PictureBox8.Location = New Point(519, 145)
         PictureBox8.Name = "PictureBox8"
         PictureBox8.Size = New Size(250, 135)
+        PictureBox8.SizeMode = PictureBoxSizeMode.StretchImage
         PictureBox8.TabIndex = 6
         PictureBox8.TabStop = False
         ' 
         ' PictureBox9
         ' 
         PictureBox9.BorderStyle = BorderStyle.Fixed3D
-        PictureBox9.Location = New Point(519, 151)
+        PictureBox9.Image = CType(resources.GetObject("PictureBox9.Image"), Image)
+        PictureBox9.Location = New Point(263, 145)
         PictureBox9.Name = "PictureBox9"
         PictureBox9.Size = New Size(250, 135)
+        PictureBox9.SizeMode = PictureBoxSizeMode.Zoom
         PictureBox9.TabIndex = 5
         PictureBox9.TabStop = False
         ' 
         ' PictureBox10
         ' 
         PictureBox10.BorderStyle = BorderStyle.Fixed3D
-        PictureBox10.Location = New Point(263, 151)
+        PictureBox10.Image = CType(resources.GetObject("PictureBox10.Image"), Image)
+        PictureBox10.Location = New Point(7, 145)
         PictureBox10.Name = "PictureBox10"
         PictureBox10.Size = New Size(250, 135)
+        PictureBox10.SizeMode = PictureBoxSizeMode.StretchImage
         PictureBox10.TabIndex = 4
         PictureBox10.TabStop = False
         ' 
         ' PictureBox11
         ' 
         PictureBox11.BorderStyle = BorderStyle.Fixed3D
-        PictureBox11.Location = New Point(7, 151)
+        PictureBox11.Image = CType(resources.GetObject("PictureBox11.Image"), Image)
+        PictureBox11.Location = New Point(263, 10)
         PictureBox11.Name = "PictureBox11"
         PictureBox11.Size = New Size(250, 135)
+        PictureBox11.SizeMode = PictureBoxSizeMode.StretchImage
         PictureBox11.TabIndex = 3
         PictureBox11.TabStop = False
         ' 
@@ -1785,7 +1802,7 @@ Partial Class Four_to_Five_Seaters
         SD2.Name = "SD2"
         SD2.Size = New Size(134, 29)
         SD2.TabIndex = 4
-        SD2.Text = "Self Driving"
+        SD2.Text = "Self Driving☆"
         SD2.UseVisualStyleBackColor = True
         ' 
         ' WD2
@@ -1795,7 +1812,7 @@ Partial Class Four_to_Five_Seaters
         WD2.Name = "WD2"
         WD2.Size = New Size(134, 29)
         WD2.TabIndex = 5
-        WD2.Text = "With Driver"
+        WD2.Text = "With Driver☆" & vbCrLf
         WD2.TextAlign = ContentAlignment.TopCenter
         WD2.UseVisualStyleBackColor = True
         ' 
@@ -2436,7 +2453,7 @@ Partial Class Four_to_Five_Seaters
         SD3.Name = "SD3"
         SD3.Size = New Size(134, 29)
         SD3.TabIndex = 4
-        SD3.Text = "Self Driving"
+        SD3.Text = "Self Driving☆"
         SD3.UseVisualStyleBackColor = True
         ' 
         ' WD3
@@ -2446,7 +2463,7 @@ Partial Class Four_to_Five_Seaters
         WD3.Name = "WD3"
         WD3.Size = New Size(134, 29)
         WD3.TabIndex = 5
-        WD3.Text = "With Driver"
+        WD3.Text = "With Driver☆" & vbCrLf
         WD3.TextAlign = ContentAlignment.TopCenter
         WD3.UseVisualStyleBackColor = True
         ' 

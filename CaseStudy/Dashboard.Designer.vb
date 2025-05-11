@@ -423,7 +423,7 @@ Partial Class Dashboard
         BtnSchedCheck.Name = "BtnSchedCheck"
         BtnSchedCheck.Size = New Size(214, 31)
         BtnSchedCheck.TabIndex = 8
-        BtnSchedCheck.Text = " Schedule Review"
+        BtnSchedCheck.Text = "Schedule Review☆"
         BtnSchedCheck.UseVisualStyleBackColor = False
         ' 
         ' btnCalculate
@@ -436,7 +436,7 @@ Partial Class Dashboard
         btnCalculate.Name = "btnCalculate"
         btnCalculate.Size = New Size(214, 31)
         btnCalculate.TabIndex = 7
-        btnCalculate.Text = "Review Total"
+        btnCalculate.Text = "Review Total☆"
         btnCalculate.UseVisualStyleBackColor = False
         ' 
         ' BtnDelete
@@ -449,7 +449,7 @@ Partial Class Dashboard
         BtnDelete.Name = "BtnDelete"
         BtnDelete.Size = New Size(123, 31)
         BtnDelete.TabIndex = 6
-        BtnDelete.Text = "Delete"
+        BtnDelete.Text = "Delete☆"
         BtnDelete.UseVisualStyleBackColor = False
         ' 
         ' Label3
@@ -482,7 +482,7 @@ Partial Class Dashboard
         BtnUpdate.Name = "BtnUpdate"
         BtnUpdate.Size = New Size(123, 31)
         BtnUpdate.TabIndex = 3
-        BtnUpdate.Text = "Update"
+        BtnUpdate.Text = "Update☆"
         BtnUpdate.UseVisualStyleBackColor = False
         ' 
         ' ToDOB
