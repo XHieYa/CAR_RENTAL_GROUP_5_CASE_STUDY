@@ -1,9 +1,9 @@
-﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
+﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()>
 Partial Class Seven_to_Eight_Seaters
     Inherits System.Windows.Forms.Form
 
     'Form overrides dispose to clean up the component list.
-    <System.Diagnostics.DebuggerNonUserCode()> _
+    <System.Diagnostics.DebuggerNonUserCode()>
     Protected Overrides Sub Dispose(ByVal disposing As Boolean)
         Try
             If disposing AndAlso components IsNot Nothing Then
@@ -20,7 +20,7 @@ Partial Class Seven_to_Eight_Seaters
     'NOTE: The following procedure is required by the Windows Form Designer
     'It can be modified using the Windows Form Designer.  
     'Do not modify it using the code editor.
-    <System.Diagnostics.DebuggerStepThrough()> _
+    <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Seven_to_Eight_Seaters))
         TabControl1 = New TabControl()
@@ -321,7 +321,7 @@ Partial Class Seven_to_Eight_Seaters
         TabPage1.Controls.Add(Panel3)
         TabPage1.Controls.Add(Panel2)
         TabPage1.Controls.Add(Panel1)
-        TabPage1.Font = New Font("Sylfaen", 9F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
+        TabPage1.Font = New Font("Sylfaen", 9.0F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
         TabPage1.Location = New Point(4, 29)
         TabPage1.Name = "TabPage1"
         TabPage1.Padding = New Padding(3)
@@ -333,7 +333,7 @@ Partial Class Seven_to_Eight_Seaters
         ' C
         ' 
         C.BackColor = Color.PaleGoldenrod
-        C.Font = New Font("Century", 12F, FontStyle.Bold)
+        C.Font = New Font("Century", 12.0F, FontStyle.Bold)
         C.Location = New Point(1161, 562)
         C.Name = "C"
         C.Size = New Size(125, 35)
@@ -344,7 +344,7 @@ Partial Class Seven_to_Eight_Seaters
         ' B
         ' 
         B.BackColor = Color.PaleGoldenrod
-        B.Font = New Font("Century", 12F, FontStyle.Bold)
+        B.Font = New Font("Century", 12.0F, FontStyle.Bold)
         B.Location = New Point(6, 562)
         B.Name = "B"
         B.Size = New Size(125, 35)
@@ -462,7 +462,7 @@ Partial Class Seven_to_Eight_Seaters
         ' SD
         ' 
         SD.BackColor = Color.PaleGoldenrod
-        SD.Font = New Font("Century", 9F, FontStyle.Bold)
+        SD.Font = New Font("Century", 9.0F, FontStyle.Bold)
         SD.Location = New Point(116, 503)
         SD.Name = "SD"
         SD.Size = New Size(134, 29)
@@ -473,7 +473,7 @@ Partial Class Seven_to_Eight_Seaters
         ' WD
         ' 
         WD.BackColor = Color.PaleGoldenrod
-        WD.Font = New Font("Century", 9F, FontStyle.Bold)
+        WD.Font = New Font("Century", 9.0F, FontStyle.Bold)
         WD.Location = New Point(256, 503)
         WD.Name = "WD"
         WD.Size = New Size(134, 29)
@@ -505,7 +505,7 @@ Partial Class Seven_to_Eight_Seaters
         ' Label34
         ' 
         Label34.AutoSize = True
-        Label34.Font = New Font("Century", 9F, FontStyle.Bold)
+        Label34.Font = New Font("Century", 9.0F, FontStyle.Bold)
         Label34.Location = New Point(97, 414)
         Label34.Name = "Label34"
         Label34.Size = New Size(134, 18)
@@ -515,7 +515,7 @@ Partial Class Seven_to_Eight_Seaters
         ' Label33
         ' 
         Label33.AutoSize = True
-        Label33.Font = New Font("Century", 9F, FontStyle.Bold)
+        Label33.Font = New Font("Century", 9.0F, FontStyle.Bold)
         Label33.Location = New Point(97, 393)
         Label33.Name = "Label33"
         Label33.Size = New Size(139, 18)
@@ -525,7 +525,7 @@ Partial Class Seven_to_Eight_Seaters
         ' Label32
         ' 
         Label32.AutoSize = True
-        Label32.Font = New Font("Century", 9F, FontStyle.Bold)
+        Label32.Font = New Font("Century", 9.0F, FontStyle.Bold)
         Label32.Location = New Point(97, 372)
         Label32.Name = "Label32"
         Label32.Size = New Size(156, 18)
@@ -535,7 +535,7 @@ Partial Class Seven_to_Eight_Seaters
         ' Label31
         ' 
         Label31.AutoSize = True
-        Label31.Font = New Font("Century", 9F, FontStyle.Bold)
+        Label31.Font = New Font("Century", 9.0F, FontStyle.Bold)
         Label31.Location = New Point(97, 351)
         Label31.Name = "Label31"
         Label31.Size = New Size(157, 18)
@@ -545,7 +545,7 @@ Partial Class Seven_to_Eight_Seaters
         ' Label30
         ' 
         Label30.AutoSize = True
-        Label30.Font = New Font("Century", 9F, FontStyle.Bold)
+        Label30.Font = New Font("Century", 9.0F, FontStyle.Bold)
         Label30.Location = New Point(97, 330)
         Label30.Name = "Label30"
         Label30.Size = New Size(106, 18)
@@ -565,7 +565,7 @@ Partial Class Seven_to_Eight_Seaters
         ' Label28
         ' 
         Label28.AutoSize = True
-        Label28.Font = New Font("Century", 9F, FontStyle.Underline)
+        Label28.Font = New Font("Century", 9.0F, FontStyle.Underline)
         Label28.Location = New Point(135, 271)
         Label28.Name = "Label28"
         Label28.Size = New Size(214, 18)
@@ -575,7 +575,7 @@ Partial Class Seven_to_Eight_Seaters
         ' Label27
         ' 
         Label27.AutoSize = True
-        Label27.Font = New Font("Century", 9F, FontStyle.Underline)
+        Label27.Font = New Font("Century", 9.0F, FontStyle.Underline)
         Label27.Location = New Point(135, 251)
         Label27.Name = "Label27"
         Label27.Size = New Size(248, 18)
@@ -585,7 +585,7 @@ Partial Class Seven_to_Eight_Seaters
         ' Label26
         ' 
         Label26.AutoSize = True
-        Label26.Font = New Font("Century", 9F, FontStyle.Underline)
+        Label26.Font = New Font("Century", 9.0F, FontStyle.Underline)
         Label26.Location = New Point(135, 231)
         Label26.Name = "Label26"
         Label26.Size = New Size(295, 18)
@@ -595,7 +595,7 @@ Partial Class Seven_to_Eight_Seaters
         ' Label25
         ' 
         Label25.AutoSize = True
-        Label25.Font = New Font("Century", 9F, FontStyle.Underline)
+        Label25.Font = New Font("Century", 9.0F, FontStyle.Underline)
         Label25.Location = New Point(135, 211)
         Label25.Name = "Label25"
         Label25.Size = New Size(234, 18)
@@ -605,7 +605,7 @@ Partial Class Seven_to_Eight_Seaters
         ' Label24
         ' 
         Label24.AutoSize = True
-        Label24.Font = New Font("Century", 9F, FontStyle.Underline)
+        Label24.Font = New Font("Century", 9.0F, FontStyle.Underline)
         Label24.Location = New Point(135, 191)
         Label24.Name = "Label24"
         Label24.Size = New Size(62, 18)
@@ -675,7 +675,7 @@ Partial Class Seven_to_Eight_Seaters
         ' Label15
         ' 
         Label15.AutoSize = True
-        Label15.Font = New Font("Century", 9F, FontStyle.Underline)
+        Label15.Font = New Font("Century", 9.0F, FontStyle.Underline)
         Label15.Location = New Point(165, 138)
         Label15.Name = "Label15"
         Label15.Size = New Size(99, 18)
@@ -685,7 +685,7 @@ Partial Class Seven_to_Eight_Seaters
         ' Label14
         ' 
         Label14.AutoSize = True
-        Label14.Font = New Font("Century", 9F, FontStyle.Underline)
+        Label14.Font = New Font("Century", 9.0F, FontStyle.Underline)
         Label14.Location = New Point(165, 118)
         Label14.Name = "Label14"
         Label14.Size = New Size(80, 18)
@@ -695,7 +695,7 @@ Partial Class Seven_to_Eight_Seaters
         ' Label13
         ' 
         Label13.AutoSize = True
-        Label13.Font = New Font("Century", 9F, FontStyle.Underline)
+        Label13.Font = New Font("Century", 9.0F, FontStyle.Underline)
         Label13.Location = New Point(165, 98)
         Label13.Name = "Label13"
         Label13.Size = New Size(61, 18)
@@ -705,7 +705,7 @@ Partial Class Seven_to_Eight_Seaters
         ' Label12
         ' 
         Label12.AutoSize = True
-        Label12.Font = New Font("Century", 9F, FontStyle.Underline)
+        Label12.Font = New Font("Century", 9.0F, FontStyle.Underline)
         Label12.Location = New Point(165, 60)
         Label12.Name = "Label12"
         Label12.Size = New Size(311, 36)
@@ -715,7 +715,7 @@ Partial Class Seven_to_Eight_Seaters
         ' Label11
         ' 
         Label11.AutoSize = True
-        Label11.Font = New Font("Century", 9F, FontStyle.Underline)
+        Label11.Font = New Font("Century", 9.0F, FontStyle.Underline)
         Label11.Location = New Point(165, 40)
         Label11.Name = "Label11"
         Label11.Size = New Size(119, 18)
@@ -725,7 +725,7 @@ Partial Class Seven_to_Eight_Seaters
         ' Label10
         ' 
         Label10.AutoSize = True
-        Label10.Font = New Font("Century", 9F, FontStyle.Bold)
+        Label10.Font = New Font("Century", 9.0F, FontStyle.Bold)
         Label10.Location = New Point(21, 138)
         Label10.Name = "Label10"
         Label10.Size = New Size(97, 18)
@@ -735,7 +735,7 @@ Partial Class Seven_to_Eight_Seaters
         ' Label9
         ' 
         Label9.AutoSize = True
-        Label9.Font = New Font("Century", 9F, FontStyle.Bold)
+        Label9.Font = New Font("Century", 9.0F, FontStyle.Bold)
         Label9.Location = New Point(21, 118)
         Label9.Name = "Label9"
         Label9.Size = New Size(76, 18)
@@ -745,7 +745,7 @@ Partial Class Seven_to_Eight_Seaters
         ' Label8
         ' 
         Label8.AutoSize = True
-        Label8.Font = New Font("Century", 9F, FontStyle.Bold)
+        Label8.Font = New Font("Century", 9.0F, FontStyle.Bold)
         Label8.Location = New Point(21, 98)
         Label8.Name = "Label8"
         Label8.Size = New Size(120, 18)
@@ -755,7 +755,7 @@ Partial Class Seven_to_Eight_Seaters
         ' Label7
         ' 
         Label7.AutoSize = True
-        Label7.Font = New Font("Century", 9F, FontStyle.Bold)
+        Label7.Font = New Font("Century", 9.0F, FontStyle.Bold)
         Label7.Location = New Point(21, 60)
         Label7.Name = "Label7"
         Label7.Size = New Size(69, 18)
@@ -765,7 +765,7 @@ Partial Class Seven_to_Eight_Seaters
         ' Label6
         ' 
         Label6.AutoSize = True
-        Label6.Font = New Font("Century", 9F, FontStyle.Bold)
+        Label6.Font = New Font("Century", 9.0F, FontStyle.Bold)
         Label6.Location = New Point(21, 40)
         Label6.Name = "Label6"
         Label6.Size = New Size(93, 18)
@@ -806,7 +806,7 @@ Partial Class Seven_to_Eight_Seaters
         ' Label4
         ' 
         Label4.AutoSize = True
-        Label4.Font = New Font("Century", 9F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        Label4.Font = New Font("Century", 9.0F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
         Label4.Location = New Point(18, 28)
         Label4.Name = "Label4"
         Label4.Size = New Size(764, 36)
@@ -839,7 +839,7 @@ Partial Class Seven_to_Eight_Seaters
         ' Label179
         ' 
         Label179.AutoSize = True
-        Label179.Font = New Font("Century", 9F, FontStyle.Underline)
+        Label179.Font = New Font("Century", 9.0F, FontStyle.Underline)
         Label179.Location = New Point(141, 65)
         Label179.Name = "Label179"
         Label179.Size = New Size(20, 18)
@@ -849,7 +849,7 @@ Partial Class Seven_to_Eight_Seaters
         ' Label178
         ' 
         Label178.AutoSize = True
-        Label178.Font = New Font("Century", 9F, FontStyle.Bold)
+        Label178.Font = New Font("Century", 9.0F, FontStyle.Bold)
         Label178.Location = New Point(12, 65)
         Label178.Name = "Label178"
         Label178.Size = New Size(121, 18)
@@ -859,7 +859,7 @@ Partial Class Seven_to_Eight_Seaters
         ' Label171
         ' 
         Label171.AutoSize = True
-        Label171.Font = New Font("Century", 9F, FontStyle.Underline)
+        Label171.Font = New Font("Century", 9.0F, FontStyle.Underline)
         Label171.Location = New Point(141, 47)
         Label171.Name = "Label171"
         Label171.Size = New Size(80, 18)
@@ -869,7 +869,7 @@ Partial Class Seven_to_Eight_Seaters
         ' Label170
         ' 
         Label170.AutoSize = True
-        Label170.Font = New Font("Century", 9F, FontStyle.Bold)
+        Label170.Font = New Font("Century", 9.0F, FontStyle.Bold)
         Label170.Location = New Point(12, 47)
         Label170.Name = "Label170"
         Label170.Size = New Size(123, 18)
@@ -879,7 +879,7 @@ Partial Class Seven_to_Eight_Seaters
         ' Label19
         ' 
         Label19.AutoSize = True
-        Label19.Font = New Font("Century", 9F, FontStyle.Underline)
+        Label19.Font = New Font("Century", 9.0F, FontStyle.Underline)
         Label19.Location = New Point(75, 29)
         Label19.Name = "Label19"
         Label19.Size = New Size(48, 18)
@@ -889,7 +889,7 @@ Partial Class Seven_to_Eight_Seaters
         ' Label18
         ' 
         Label18.AutoSize = True
-        Label18.Font = New Font("Century", 9F, FontStyle.Bold)
+        Label18.Font = New Font("Century", 9.0F, FontStyle.Bold)
         Label18.Location = New Point(12, 29)
         Label18.Name = "Label18"
         Label18.Size = New Size(57, 18)
@@ -954,7 +954,7 @@ Partial Class Seven_to_Eight_Seaters
         ' Label3
         ' 
         Label3.AutoSize = True
-        Label3.Font = New Font("Century", 9F, FontStyle.Underline)
+        Label3.Font = New Font("Century", 9.0F, FontStyle.Underline)
         Label3.Location = New Point(120, 9)
         Label3.Name = "Label3"
         Label3.Size = New Size(40, 18)
@@ -964,7 +964,7 @@ Partial Class Seven_to_Eight_Seaters
         ' Label2
         ' 
         Label2.AutoSize = True
-        Label2.Font = New Font("Century", 9F, FontStyle.Bold)
+        Label2.Font = New Font("Century", 9.0F, FontStyle.Bold)
         Label2.Location = New Point(12, 9)
         Label2.Name = "Label2"
         Label2.Size = New Size(105, 18)
@@ -990,7 +990,7 @@ Partial Class Seven_to_Eight_Seaters
         ' C1
         ' 
         C1.BackColor = Color.PaleGoldenrod
-        C1.Font = New Font("Century", 12F, FontStyle.Bold)
+        C1.Font = New Font("Century", 12.0F, FontStyle.Bold)
         C1.Location = New Point(1161, 562)
         C1.Name = "C1"
         C1.Size = New Size(125, 35)
@@ -1001,7 +1001,7 @@ Partial Class Seven_to_Eight_Seaters
         ' B1
         ' 
         B1.BackColor = Color.PaleGoldenrod
-        B1.Font = New Font("Century", 12F, FontStyle.Bold)
+        B1.Font = New Font("Century", 12.0F, FontStyle.Bold)
         B1.Location = New Point(6, 562)
         B1.Name = "B1"
         B1.Size = New Size(125, 35)
@@ -1119,7 +1119,7 @@ Partial Class Seven_to_Eight_Seaters
         ' SD1
         ' 
         SD1.BackColor = Color.PaleGoldenrod
-        SD1.Font = New Font("Century", 9F, FontStyle.Bold)
+        SD1.Font = New Font("Century", 9.0F, FontStyle.Bold)
         SD1.Location = New Point(118, 507)
         SD1.Name = "SD1"
         SD1.Size = New Size(134, 29)
@@ -1130,7 +1130,7 @@ Partial Class Seven_to_Eight_Seaters
         ' WD1
         ' 
         WD1.BackColor = Color.PaleGoldenrod
-        WD1.Font = New Font("Century", 9F, FontStyle.Bold)
+        WD1.Font = New Font("Century", 9.0F, FontStyle.Bold)
         WD1.Location = New Point(258, 507)
         WD1.Name = "WD1"
         WD1.Size = New Size(134, 29)
@@ -1162,7 +1162,7 @@ Partial Class Seven_to_Eight_Seaters
         ' Label52
         ' 
         Label52.AutoSize = True
-        Label52.Font = New Font("Century", 9F, FontStyle.Bold)
+        Label52.Font = New Font("Century", 9.0F, FontStyle.Bold)
         Label52.Location = New Point(97, 421)
         Label52.Name = "Label52"
         Label52.Size = New Size(134, 18)
@@ -1172,7 +1172,7 @@ Partial Class Seven_to_Eight_Seaters
         ' Label53
         ' 
         Label53.AutoSize = True
-        Label53.Font = New Font("Century", 9F, FontStyle.Bold)
+        Label53.Font = New Font("Century", 9.0F, FontStyle.Bold)
         Label53.Location = New Point(97, 400)
         Label53.Name = "Label53"
         Label53.Size = New Size(139, 18)
@@ -1182,7 +1182,7 @@ Partial Class Seven_to_Eight_Seaters
         ' Label54
         ' 
         Label54.AutoSize = True
-        Label54.Font = New Font("Century", 9F, FontStyle.Bold)
+        Label54.Font = New Font("Century", 9.0F, FontStyle.Bold)
         Label54.Location = New Point(97, 379)
         Label54.Name = "Label54"
         Label54.Size = New Size(156, 18)
@@ -1192,7 +1192,7 @@ Partial Class Seven_to_Eight_Seaters
         ' Label55
         ' 
         Label55.AutoSize = True
-        Label55.Font = New Font("Century", 9F, FontStyle.Bold)
+        Label55.Font = New Font("Century", 9.0F, FontStyle.Bold)
         Label55.Location = New Point(97, 358)
         Label55.Name = "Label55"
         Label55.Size = New Size(157, 18)
@@ -1202,7 +1202,7 @@ Partial Class Seven_to_Eight_Seaters
         ' Label56
         ' 
         Label56.AutoSize = True
-        Label56.Font = New Font("Century", 9F, FontStyle.Bold)
+        Label56.Font = New Font("Century", 9.0F, FontStyle.Bold)
         Label56.Location = New Point(97, 337)
         Label56.Name = "Label56"
         Label56.Size = New Size(106, 18)
@@ -1222,7 +1222,7 @@ Partial Class Seven_to_Eight_Seaters
         ' Label58
         ' 
         Label58.AutoSize = True
-        Label58.Font = New Font("Century", 9F, FontStyle.Underline)
+        Label58.Font = New Font("Century", 9.0F, FontStyle.Underline)
         Label58.Location = New Point(135, 273)
         Label58.Name = "Label58"
         Label58.Size = New Size(93, 18)
@@ -1232,7 +1232,7 @@ Partial Class Seven_to_Eight_Seaters
         ' Label59
         ' 
         Label59.AutoSize = True
-        Label59.Font = New Font("Century", 9F, FontStyle.Underline)
+        Label59.Font = New Font("Century", 9.0F, FontStyle.Underline)
         Label59.Location = New Point(135, 253)
         Label59.Name = "Label59"
         Label59.Size = New Size(115, 18)
@@ -1242,7 +1242,7 @@ Partial Class Seven_to_Eight_Seaters
         ' Label60
         ' 
         Label60.AutoSize = True
-        Label60.Font = New Font("Century", 9F, FontStyle.Underline)
+        Label60.Font = New Font("Century", 9.0F, FontStyle.Underline)
         Label60.Location = New Point(135, 233)
         Label60.Name = "Label60"
         Label60.Size = New Size(295, 18)
@@ -1252,7 +1252,7 @@ Partial Class Seven_to_Eight_Seaters
         ' Label61
         ' 
         Label61.AutoSize = True
-        Label61.Font = New Font("Century", 9F, FontStyle.Underline)
+        Label61.Font = New Font("Century", 9.0F, FontStyle.Underline)
         Label61.Location = New Point(135, 213)
         Label61.Name = "Label61"
         Label61.Size = New Size(234, 18)
@@ -1262,7 +1262,7 @@ Partial Class Seven_to_Eight_Seaters
         ' Label62
         ' 
         Label62.AutoSize = True
-        Label62.Font = New Font("Century", 9F, FontStyle.Underline)
+        Label62.Font = New Font("Century", 9.0F, FontStyle.Underline)
         Label62.Location = New Point(135, 193)
         Label62.Name = "Label62"
         Label62.Size = New Size(144, 18)
@@ -1332,7 +1332,7 @@ Partial Class Seven_to_Eight_Seaters
         ' Label69
         ' 
         Label69.AutoSize = True
-        Label69.Font = New Font("Century", 9F, FontStyle.Underline)
+        Label69.Font = New Font("Century", 9.0F, FontStyle.Underline)
         Label69.Location = New Point(165, 137)
         Label69.Name = "Label69"
         Label69.Size = New Size(227, 18)
@@ -1342,7 +1342,7 @@ Partial Class Seven_to_Eight_Seaters
         ' Label70
         ' 
         Label70.AutoSize = True
-        Label70.Font = New Font("Century", 9F, FontStyle.Underline)
+        Label70.Font = New Font("Century", 9.0F, FontStyle.Underline)
         Label70.Location = New Point(165, 117)
         Label70.Name = "Label70"
         Label70.Size = New Size(80, 18)
@@ -1352,7 +1352,7 @@ Partial Class Seven_to_Eight_Seaters
         ' Label71
         ' 
         Label71.AutoSize = True
-        Label71.Font = New Font("Century", 9F, FontStyle.Underline)
+        Label71.Font = New Font("Century", 9.0F, FontStyle.Underline)
         Label71.Location = New Point(165, 97)
         Label71.Name = "Label71"
         Label71.Size = New Size(241, 18)
@@ -1362,7 +1362,7 @@ Partial Class Seven_to_Eight_Seaters
         ' Label72
         ' 
         Label72.AutoSize = True
-        Label72.Font = New Font("Century", 9F, FontStyle.Underline)
+        Label72.Font = New Font("Century", 9.0F, FontStyle.Underline)
         Label72.Location = New Point(165, 60)
         Label72.Name = "Label72"
         Label72.Size = New Size(268, 36)
@@ -1372,7 +1372,7 @@ Partial Class Seven_to_Eight_Seaters
         ' Label73
         ' 
         Label73.AutoSize = True
-        Label73.Font = New Font("Century", 9F, FontStyle.Underline)
+        Label73.Font = New Font("Century", 9.0F, FontStyle.Underline)
         Label73.Location = New Point(165, 40)
         Label73.Name = "Label73"
         Label73.Size = New Size(70, 18)
@@ -1382,7 +1382,7 @@ Partial Class Seven_to_Eight_Seaters
         ' Label74
         ' 
         Label74.AutoSize = True
-        Label74.Font = New Font("Century", 9F, FontStyle.Bold)
+        Label74.Font = New Font("Century", 9.0F, FontStyle.Bold)
         Label74.Location = New Point(21, 137)
         Label74.Name = "Label74"
         Label74.Size = New Size(97, 18)
@@ -1392,7 +1392,7 @@ Partial Class Seven_to_Eight_Seaters
         ' Label75
         ' 
         Label75.AutoSize = True
-        Label75.Font = New Font("Century", 9F, FontStyle.Bold)
+        Label75.Font = New Font("Century", 9.0F, FontStyle.Bold)
         Label75.Location = New Point(21, 117)
         Label75.Name = "Label75"
         Label75.Size = New Size(76, 18)
@@ -1402,7 +1402,7 @@ Partial Class Seven_to_Eight_Seaters
         ' Label76
         ' 
         Label76.AutoSize = True
-        Label76.Font = New Font("Century", 9F, FontStyle.Bold)
+        Label76.Font = New Font("Century", 9.0F, FontStyle.Bold)
         Label76.Location = New Point(21, 97)
         Label76.Name = "Label76"
         Label76.Size = New Size(120, 18)
@@ -1412,7 +1412,7 @@ Partial Class Seven_to_Eight_Seaters
         ' Label77
         ' 
         Label77.AutoSize = True
-        Label77.Font = New Font("Century", 9F, FontStyle.Bold)
+        Label77.Font = New Font("Century", 9.0F, FontStyle.Bold)
         Label77.Location = New Point(21, 60)
         Label77.Name = "Label77"
         Label77.Size = New Size(69, 18)
@@ -1422,7 +1422,7 @@ Partial Class Seven_to_Eight_Seaters
         ' Label78
         ' 
         Label78.AutoSize = True
-        Label78.Font = New Font("Century", 9F, FontStyle.Bold)
+        Label78.Font = New Font("Century", 9.0F, FontStyle.Bold)
         Label78.Location = New Point(21, 40)
         Label78.Name = "Label78"
         Label78.Size = New Size(93, 18)
@@ -1463,7 +1463,7 @@ Partial Class Seven_to_Eight_Seaters
         ' Label81
         ' 
         Label81.AutoSize = True
-        Label81.Font = New Font("Century", 9F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        Label81.Font = New Font("Century", 9.0F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
         Label81.Location = New Point(17, 28)
         Label81.Name = "Label81"
         Label81.Size = New Size(752, 54)
@@ -1496,7 +1496,7 @@ Partial Class Seven_to_Eight_Seaters
         ' Label180
         ' 
         Label180.AutoSize = True
-        Label180.Font = New Font("Century", 9F, FontStyle.Underline)
+        Label180.Font = New Font("Century", 9.0F, FontStyle.Underline)
         Label180.Location = New Point(141, 65)
         Label180.Name = "Label180"
         Label180.Size = New Size(20, 18)
@@ -1506,7 +1506,7 @@ Partial Class Seven_to_Eight_Seaters
         ' Label181
         ' 
         Label181.AutoSize = True
-        Label181.Font = New Font("Century", 9F, FontStyle.Bold)
+        Label181.Font = New Font("Century", 9.0F, FontStyle.Bold)
         Label181.Location = New Point(12, 65)
         Label181.Name = "Label181"
         Label181.Size = New Size(121, 18)
@@ -1516,7 +1516,7 @@ Partial Class Seven_to_Eight_Seaters
         ' Label172
         ' 
         Label172.AutoSize = True
-        Label172.Font = New Font("Century", 9F, FontStyle.Underline)
+        Label172.Font = New Font("Century", 9.0F, FontStyle.Underline)
         Label172.Location = New Point(141, 47)
         Label172.Name = "Label172"
         Label172.Size = New Size(77, 18)
@@ -1526,7 +1526,7 @@ Partial Class Seven_to_Eight_Seaters
         ' Label173
         ' 
         Label173.AutoSize = True
-        Label173.Font = New Font("Century", 9F, FontStyle.Bold)
+        Label173.Font = New Font("Century", 9.0F, FontStyle.Bold)
         Label173.Location = New Point(12, 47)
         Label173.Name = "Label173"
         Label173.Size = New Size(123, 18)
@@ -1536,7 +1536,7 @@ Partial Class Seven_to_Eight_Seaters
         ' Label82
         ' 
         Label82.AutoSize = True
-        Label82.Font = New Font("Century", 9F, FontStyle.Underline)
+        Label82.Font = New Font("Century", 9.0F, FontStyle.Underline)
         Label82.Location = New Point(75, 29)
         Label82.Name = "Label82"
         Label82.Size = New Size(51, 18)
@@ -1546,7 +1546,7 @@ Partial Class Seven_to_Eight_Seaters
         ' Label83
         ' 
         Label83.AutoSize = True
-        Label83.Font = New Font("Century", 9F, FontStyle.Bold)
+        Label83.Font = New Font("Century", 9.0F, FontStyle.Bold)
         Label83.Location = New Point(12, 29)
         Label83.Name = "Label83"
         Label83.Size = New Size(57, 18)
@@ -1616,7 +1616,7 @@ Partial Class Seven_to_Eight_Seaters
         ' Label84
         ' 
         Label84.AutoSize = True
-        Label84.Font = New Font("Century", 9F, FontStyle.Underline)
+        Label84.Font = New Font("Century", 9.0F, FontStyle.Underline)
         Label84.Location = New Point(120, 9)
         Label84.Name = "Label84"
         Label84.Size = New Size(40, 18)
@@ -1626,7 +1626,7 @@ Partial Class Seven_to_Eight_Seaters
         ' Label85
         ' 
         Label85.AutoSize = True
-        Label85.Font = New Font("Century", 9F, FontStyle.Bold)
+        Label85.Font = New Font("Century", 9.0F, FontStyle.Bold)
         Label85.Location = New Point(12, 9)
         Label85.Name = "Label85"
         Label85.Size = New Size(105, 18)
@@ -1651,7 +1651,7 @@ Partial Class Seven_to_Eight_Seaters
         ' C2
         ' 
         C2.BackColor = Color.PaleGoldenrod
-        C2.Font = New Font("Century", 12F, FontStyle.Bold)
+        C2.Font = New Font("Century", 12.0F, FontStyle.Bold)
         C2.Location = New Point(1161, 562)
         C2.Name = "C2"
         C2.Size = New Size(125, 35)
@@ -1662,7 +1662,7 @@ Partial Class Seven_to_Eight_Seaters
         ' B2
         ' 
         B2.BackColor = Color.PaleGoldenrod
-        B2.Font = New Font("Century", 12F, FontStyle.Bold)
+        B2.Font = New Font("Century", 12.0F, FontStyle.Bold)
         B2.Location = New Point(6, 562)
         B2.Name = "B2"
         B2.Size = New Size(125, 35)
@@ -1780,7 +1780,7 @@ Partial Class Seven_to_Eight_Seaters
         ' SD2
         ' 
         SD2.BackColor = Color.PaleGoldenrod
-        SD2.Font = New Font("Century", 9F, FontStyle.Bold)
+        SD2.Font = New Font("Century", 9.0F, FontStyle.Bold)
         SD2.Location = New Point(119, 505)
         SD2.Name = "SD2"
         SD2.Size = New Size(134, 29)
@@ -1791,7 +1791,7 @@ Partial Class Seven_to_Eight_Seaters
         ' WD2
         ' 
         WD2.BackColor = Color.PaleGoldenrod
-        WD2.Font = New Font("Century", 9F, FontStyle.Bold)
+        WD2.Font = New Font("Century", 9.0F, FontStyle.Bold)
         WD2.Location = New Point(259, 505)
         WD2.Name = "WD2"
         WD2.Size = New Size(134, 29)
@@ -1823,7 +1823,7 @@ Partial Class Seven_to_Eight_Seaters
         ' Label94
         ' 
         Label94.AutoSize = True
-        Label94.Font = New Font("Century", 9F, FontStyle.Bold)
+        Label94.Font = New Font("Century", 9.0F, FontStyle.Bold)
         Label94.Location = New Point(97, 418)
         Label94.Name = "Label94"
         Label94.Size = New Size(134, 18)
@@ -1833,7 +1833,7 @@ Partial Class Seven_to_Eight_Seaters
         ' Label95
         ' 
         Label95.AutoSize = True
-        Label95.Font = New Font("Century", 9F, FontStyle.Bold)
+        Label95.Font = New Font("Century", 9.0F, FontStyle.Bold)
         Label95.Location = New Point(97, 397)
         Label95.Name = "Label95"
         Label95.Size = New Size(139, 18)
@@ -1843,7 +1843,7 @@ Partial Class Seven_to_Eight_Seaters
         ' Label96
         ' 
         Label96.AutoSize = True
-        Label96.Font = New Font("Century", 9F, FontStyle.Bold)
+        Label96.Font = New Font("Century", 9.0F, FontStyle.Bold)
         Label96.Location = New Point(97, 376)
         Label96.Name = "Label96"
         Label96.Size = New Size(156, 18)
@@ -1853,7 +1853,7 @@ Partial Class Seven_to_Eight_Seaters
         ' Label97
         ' 
         Label97.AutoSize = True
-        Label97.Font = New Font("Century", 9F, FontStyle.Bold)
+        Label97.Font = New Font("Century", 9.0F, FontStyle.Bold)
         Label97.Location = New Point(97, 355)
         Label97.Name = "Label97"
         Label97.Size = New Size(157, 18)
@@ -1863,7 +1863,7 @@ Partial Class Seven_to_Eight_Seaters
         ' Label98
         ' 
         Label98.AutoSize = True
-        Label98.Font = New Font("Century", 9F, FontStyle.Bold)
+        Label98.Font = New Font("Century", 9.0F, FontStyle.Bold)
         Label98.Location = New Point(97, 334)
         Label98.Name = "Label98"
         Label98.Size = New Size(106, 18)
@@ -1883,7 +1883,7 @@ Partial Class Seven_to_Eight_Seaters
         ' Label100
         ' 
         Label100.AutoSize = True
-        Label100.Font = New Font("Century", 9F, FontStyle.Underline)
+        Label100.Font = New Font("Century", 9.0F, FontStyle.Underline)
         Label100.Location = New Point(135, 274)
         Label100.Name = "Label100"
         Label100.Size = New Size(181, 18)
@@ -1893,7 +1893,7 @@ Partial Class Seven_to_Eight_Seaters
         ' Label101
         ' 
         Label101.AutoSize = True
-        Label101.Font = New Font("Century", 9F, FontStyle.Underline)
+        Label101.Font = New Font("Century", 9.0F, FontStyle.Underline)
         Label101.Location = New Point(135, 254)
         Label101.Name = "Label101"
         Label101.Size = New Size(307, 18)
@@ -1903,7 +1903,7 @@ Partial Class Seven_to_Eight_Seaters
         ' Label102
         ' 
         Label102.AutoSize = True
-        Label102.Font = New Font("Century", 9F, FontStyle.Underline)
+        Label102.Font = New Font("Century", 9.0F, FontStyle.Underline)
         Label102.Location = New Point(135, 234)
         Label102.Name = "Label102"
         Label102.Size = New Size(248, 18)
@@ -1913,7 +1913,7 @@ Partial Class Seven_to_Eight_Seaters
         ' Label103
         ' 
         Label103.AutoSize = True
-        Label103.Font = New Font("Century", 9F, FontStyle.Underline)
+        Label103.Font = New Font("Century", 9.0F, FontStyle.Underline)
         Label103.Location = New Point(135, 214)
         Label103.Name = "Label103"
         Label103.Size = New Size(234, 18)
@@ -1923,7 +1923,7 @@ Partial Class Seven_to_Eight_Seaters
         ' Label104
         ' 
         Label104.AutoSize = True
-        Label104.Font = New Font("Century", 9F, FontStyle.Underline)
+        Label104.Font = New Font("Century", 9.0F, FontStyle.Underline)
         Label104.Location = New Point(135, 194)
         Label104.Name = "Label104"
         Label104.Size = New Size(62, 18)
@@ -1993,7 +1993,7 @@ Partial Class Seven_to_Eight_Seaters
         ' Label111
         ' 
         Label111.AutoSize = True
-        Label111.Font = New Font("Century", 9F, FontStyle.Underline)
+        Label111.Font = New Font("Century", 9.0F, FontStyle.Underline)
         Label111.Location = New Point(165, 136)
         Label111.Name = "Label111"
         Label111.Size = New Size(216, 18)
@@ -2003,7 +2003,7 @@ Partial Class Seven_to_Eight_Seaters
         ' Label112
         ' 
         Label112.AutoSize = True
-        Label112.Font = New Font("Century", 9F, FontStyle.Underline)
+        Label112.Font = New Font("Century", 9.0F, FontStyle.Underline)
         Label112.Location = New Point(165, 116)
         Label112.Name = "Label112"
         Label112.Size = New Size(80, 18)
@@ -2013,7 +2013,7 @@ Partial Class Seven_to_Eight_Seaters
         ' Label113
         ' 
         Label113.AutoSize = True
-        Label113.Font = New Font("Century", 9F, FontStyle.Underline)
+        Label113.Font = New Font("Century", 9.0F, FontStyle.Underline)
         Label113.Location = New Point(165, 96)
         Label113.Name = "Label113"
         Label113.Size = New Size(165, 18)
@@ -2023,7 +2023,7 @@ Partial Class Seven_to_Eight_Seaters
         ' Label114
         ' 
         Label114.AutoSize = True
-        Label114.Font = New Font("Century", 9F, FontStyle.Underline)
+        Label114.Font = New Font("Century", 9.0F, FontStyle.Underline)
         Label114.Location = New Point(165, 60)
         Label114.Name = "Label114"
         Label114.Size = New Size(263, 36)
@@ -2033,7 +2033,7 @@ Partial Class Seven_to_Eight_Seaters
         ' Label115
         ' 
         Label115.AutoSize = True
-        Label115.Font = New Font("Century", 9F, FontStyle.Underline)
+        Label115.Font = New Font("Century", 9.0F, FontStyle.Underline)
         Label115.Location = New Point(165, 40)
         Label115.Name = "Label115"
         Label115.Size = New Size(70, 18)
@@ -2043,7 +2043,7 @@ Partial Class Seven_to_Eight_Seaters
         ' Label116
         ' 
         Label116.AutoSize = True
-        Label116.Font = New Font("Century", 9F, FontStyle.Bold)
+        Label116.Font = New Font("Century", 9.0F, FontStyle.Bold)
         Label116.Location = New Point(21, 136)
         Label116.Name = "Label116"
         Label116.Size = New Size(97, 18)
@@ -2053,7 +2053,7 @@ Partial Class Seven_to_Eight_Seaters
         ' Label117
         ' 
         Label117.AutoSize = True
-        Label117.Font = New Font("Century", 9F, FontStyle.Bold)
+        Label117.Font = New Font("Century", 9.0F, FontStyle.Bold)
         Label117.Location = New Point(21, 116)
         Label117.Name = "Label117"
         Label117.Size = New Size(76, 18)
@@ -2063,7 +2063,7 @@ Partial Class Seven_to_Eight_Seaters
         ' Label118
         ' 
         Label118.AutoSize = True
-        Label118.Font = New Font("Century", 9F, FontStyle.Bold)
+        Label118.Font = New Font("Century", 9.0F, FontStyle.Bold)
         Label118.Location = New Point(21, 96)
         Label118.Name = "Label118"
         Label118.Size = New Size(120, 18)
@@ -2073,7 +2073,7 @@ Partial Class Seven_to_Eight_Seaters
         ' Label119
         ' 
         Label119.AutoSize = True
-        Label119.Font = New Font("Century", 9F, FontStyle.Bold)
+        Label119.Font = New Font("Century", 9.0F, FontStyle.Bold)
         Label119.Location = New Point(21, 60)
         Label119.Name = "Label119"
         Label119.Size = New Size(69, 18)
@@ -2083,7 +2083,7 @@ Partial Class Seven_to_Eight_Seaters
         ' Label120
         ' 
         Label120.AutoSize = True
-        Label120.Font = New Font("Century", 9F, FontStyle.Bold)
+        Label120.Font = New Font("Century", 9.0F, FontStyle.Bold)
         Label120.Location = New Point(21, 40)
         Label120.Name = "Label120"
         Label120.Size = New Size(93, 18)
@@ -2124,7 +2124,7 @@ Partial Class Seven_to_Eight_Seaters
         ' Label123
         ' 
         Label123.AutoSize = True
-        Label123.Font = New Font("Century", 9F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        Label123.Font = New Font("Century", 9.0F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
         Label123.Location = New Point(37, 27)
         Label123.Name = "Label123"
         Label123.Size = New Size(721, 54)
@@ -2157,7 +2157,7 @@ Partial Class Seven_to_Eight_Seaters
         ' Label182
         ' 
         Label182.AutoSize = True
-        Label182.Font = New Font("Century", 9F, FontStyle.Underline)
+        Label182.Font = New Font("Century", 9.0F, FontStyle.Underline)
         Label182.Location = New Point(141, 65)
         Label182.Name = "Label182"
         Label182.Size = New Size(20, 18)
@@ -2167,7 +2167,7 @@ Partial Class Seven_to_Eight_Seaters
         ' Label183
         ' 
         Label183.AutoSize = True
-        Label183.Font = New Font("Century", 9F, FontStyle.Bold)
+        Label183.Font = New Font("Century", 9.0F, FontStyle.Bold)
         Label183.Location = New Point(12, 65)
         Label183.Name = "Label183"
         Label183.Size = New Size(121, 18)
@@ -2177,7 +2177,7 @@ Partial Class Seven_to_Eight_Seaters
         ' Label174
         ' 
         Label174.AutoSize = True
-        Label174.Font = New Font("Century", 9F, FontStyle.Underline)
+        Label174.Font = New Font("Century", 9.0F, FontStyle.Underline)
         Label174.Location = New Point(141, 47)
         Label174.Name = "Label174"
         Label174.Size = New Size(78, 18)
@@ -2187,7 +2187,7 @@ Partial Class Seven_to_Eight_Seaters
         ' Label175
         ' 
         Label175.AutoSize = True
-        Label175.Font = New Font("Century", 9F, FontStyle.Bold)
+        Label175.Font = New Font("Century", 9.0F, FontStyle.Bold)
         Label175.Location = New Point(12, 47)
         Label175.Name = "Label175"
         Label175.Size = New Size(123, 18)
@@ -2197,7 +2197,7 @@ Partial Class Seven_to_Eight_Seaters
         ' Label124
         ' 
         Label124.AutoSize = True
-        Label124.Font = New Font("Century", 9F, FontStyle.Underline)
+        Label124.Font = New Font("Century", 9.0F, FontStyle.Underline)
         Label124.Location = New Point(75, 29)
         Label124.Name = "Label124"
         Label124.Size = New Size(41, 18)
@@ -2207,7 +2207,7 @@ Partial Class Seven_to_Eight_Seaters
         ' Label125
         ' 
         Label125.AutoSize = True
-        Label125.Font = New Font("Century", 9F, FontStyle.Bold)
+        Label125.Font = New Font("Century", 9.0F, FontStyle.Bold)
         Label125.Location = New Point(12, 29)
         Label125.Name = "Label125"
         Label125.Size = New Size(57, 18)
@@ -2261,7 +2261,7 @@ Partial Class Seven_to_Eight_Seaters
         ' Label126
         ' 
         Label126.AutoSize = True
-        Label126.Font = New Font("Century", 9F, FontStyle.Underline)
+        Label126.Font = New Font("Century", 9.0F, FontStyle.Underline)
         Label126.Location = New Point(120, 9)
         Label126.Name = "Label126"
         Label126.Size = New Size(40, 18)
@@ -2271,7 +2271,7 @@ Partial Class Seven_to_Eight_Seaters
         ' Label127
         ' 
         Label127.AutoSize = True
-        Label127.Font = New Font("Century", 9F, FontStyle.Bold)
+        Label127.Font = New Font("Century", 9.0F, FontStyle.Bold)
         Label127.Location = New Point(12, 9)
         Label127.Name = "Label127"
         Label127.Size = New Size(105, 18)
@@ -2296,7 +2296,7 @@ Partial Class Seven_to_Eight_Seaters
         ' C3
         ' 
         C3.BackColor = Color.PaleGoldenrod
-        C3.Font = New Font("Century", 12F, FontStyle.Bold)
+        C3.Font = New Font("Century", 12.0F, FontStyle.Bold)
         C3.Location = New Point(1161, 563)
         C3.Name = "C3"
         C3.Size = New Size(125, 35)
@@ -2307,7 +2307,7 @@ Partial Class Seven_to_Eight_Seaters
         ' B3
         ' 
         B3.BackColor = Color.PaleGoldenrod
-        B3.Font = New Font("Century", 12F, FontStyle.Bold)
+        B3.Font = New Font("Century", 12.0F, FontStyle.Bold)
         B3.Location = New Point(6, 563)
         B3.Name = "B3"
         B3.Size = New Size(125, 35)
@@ -2425,7 +2425,7 @@ Partial Class Seven_to_Eight_Seaters
         ' SD3
         ' 
         SD3.BackColor = Color.PaleGoldenrod
-        SD3.Font = New Font("Century", 9F, FontStyle.Bold)
+        SD3.Font = New Font("Century", 9.0F, FontStyle.Bold)
         SD3.Location = New Point(107, 503)
         SD3.Name = "SD3"
         SD3.Size = New Size(134, 29)
@@ -2436,7 +2436,7 @@ Partial Class Seven_to_Eight_Seaters
         ' WD3
         ' 
         WD3.BackColor = Color.PaleGoldenrod
-        WD3.Font = New Font("Century", 9F, FontStyle.Bold)
+        WD3.Font = New Font("Century", 9.0F, FontStyle.Bold)
         WD3.Location = New Point(247, 503)
         WD3.Name = "WD3"
         WD3.Size = New Size(134, 29)
@@ -2468,7 +2468,7 @@ Partial Class Seven_to_Eight_Seaters
         ' Label136
         ' 
         Label136.AutoSize = True
-        Label136.Font = New Font("Century", 9F, FontStyle.Bold)
+        Label136.Font = New Font("Century", 9.0F, FontStyle.Bold)
         Label136.Location = New Point(97, 414)
         Label136.Name = "Label136"
         Label136.Size = New Size(134, 18)
@@ -2478,7 +2478,7 @@ Partial Class Seven_to_Eight_Seaters
         ' Label137
         ' 
         Label137.AutoSize = True
-        Label137.Font = New Font("Century", 9F, FontStyle.Bold)
+        Label137.Font = New Font("Century", 9.0F, FontStyle.Bold)
         Label137.Location = New Point(97, 393)
         Label137.Name = "Label137"
         Label137.Size = New Size(139, 18)
@@ -2488,7 +2488,7 @@ Partial Class Seven_to_Eight_Seaters
         ' Label138
         ' 
         Label138.AutoSize = True
-        Label138.Font = New Font("Century", 9F, FontStyle.Bold)
+        Label138.Font = New Font("Century", 9.0F, FontStyle.Bold)
         Label138.Location = New Point(97, 372)
         Label138.Name = "Label138"
         Label138.Size = New Size(156, 18)
@@ -2498,7 +2498,7 @@ Partial Class Seven_to_Eight_Seaters
         ' Label139
         ' 
         Label139.AutoSize = True
-        Label139.Font = New Font("Century", 9F, FontStyle.Bold)
+        Label139.Font = New Font("Century", 9.0F, FontStyle.Bold)
         Label139.Location = New Point(97, 351)
         Label139.Name = "Label139"
         Label139.Size = New Size(157, 18)
@@ -2508,7 +2508,7 @@ Partial Class Seven_to_Eight_Seaters
         ' Label140
         ' 
         Label140.AutoSize = True
-        Label140.Font = New Font("Century", 9F, FontStyle.Bold)
+        Label140.Font = New Font("Century", 9.0F, FontStyle.Bold)
         Label140.Location = New Point(97, 330)
         Label140.Name = "Label140"
         Label140.Size = New Size(106, 18)
@@ -2528,7 +2528,7 @@ Partial Class Seven_to_Eight_Seaters
         ' Label142
         ' 
         Label142.AutoSize = True
-        Label142.Font = New Font("Century", 9F, FontStyle.Underline)
+        Label142.Font = New Font("Century", 9.0F, FontStyle.Underline)
         Label142.Location = New Point(135, 271)
         Label142.Name = "Label142"
         Label142.Size = New Size(187, 18)
@@ -2538,7 +2538,7 @@ Partial Class Seven_to_Eight_Seaters
         ' Label143
         ' 
         Label143.AutoSize = True
-        Label143.Font = New Font("Century", 9F, FontStyle.Underline)
+        Label143.Font = New Font("Century", 9.0F, FontStyle.Underline)
         Label143.Location = New Point(135, 251)
         Label143.Name = "Label143"
         Label143.Size = New Size(281, 18)
@@ -2548,7 +2548,7 @@ Partial Class Seven_to_Eight_Seaters
         ' Label144
         ' 
         Label144.AutoSize = True
-        Label144.Font = New Font("Century", 9F, FontStyle.Underline)
+        Label144.Font = New Font("Century", 9.0F, FontStyle.Underline)
         Label144.Location = New Point(135, 231)
         Label144.Name = "Label144"
         Label144.Size = New Size(295, 18)
@@ -2558,7 +2558,7 @@ Partial Class Seven_to_Eight_Seaters
         ' Label145
         ' 
         Label145.AutoSize = True
-        Label145.Font = New Font("Century", 9F, FontStyle.Underline)
+        Label145.Font = New Font("Century", 9.0F, FontStyle.Underline)
         Label145.Location = New Point(135, 211)
         Label145.Name = "Label145"
         Label145.Size = New Size(234, 18)
@@ -2568,7 +2568,7 @@ Partial Class Seven_to_Eight_Seaters
         ' Label146
         ' 
         Label146.AutoSize = True
-        Label146.Font = New Font("Century", 9F, FontStyle.Underline)
+        Label146.Font = New Font("Century", 9.0F, FontStyle.Underline)
         Label146.Location = New Point(135, 191)
         Label146.Name = "Label146"
         Label146.Size = New Size(62, 18)
@@ -2638,7 +2638,7 @@ Partial Class Seven_to_Eight_Seaters
         ' Label153
         ' 
         Label153.AutoSize = True
-        Label153.Font = New Font("Century", 9F, FontStyle.Underline)
+        Label153.Font = New Font("Century", 9.0F, FontStyle.Underline)
         Label153.Location = New Point(165, 138)
         Label153.Name = "Label153"
         Label153.Size = New Size(216, 18)
@@ -2648,7 +2648,7 @@ Partial Class Seven_to_Eight_Seaters
         ' Label154
         ' 
         Label154.AutoSize = True
-        Label154.Font = New Font("Century", 9F, FontStyle.Underline)
+        Label154.Font = New Font("Century", 9.0F, FontStyle.Underline)
         Label154.Location = New Point(165, 118)
         Label154.Name = "Label154"
         Label154.Size = New Size(80, 18)
@@ -2658,7 +2658,7 @@ Partial Class Seven_to_Eight_Seaters
         ' Label155
         ' 
         Label155.AutoSize = True
-        Label155.Font = New Font("Century", 9F, FontStyle.Underline)
+        Label155.Font = New Font("Century", 9.0F, FontStyle.Underline)
         Label155.Location = New Point(165, 98)
         Label155.Name = "Label155"
         Label155.Size = New Size(241, 18)
@@ -2668,7 +2668,7 @@ Partial Class Seven_to_Eight_Seaters
         ' Label156
         ' 
         Label156.AutoSize = True
-        Label156.Font = New Font("Century", 9F, FontStyle.Underline)
+        Label156.Font = New Font("Century", 9.0F, FontStyle.Underline)
         Label156.Location = New Point(165, 60)
         Label156.Name = "Label156"
         Label156.Size = New Size(252, 36)
@@ -2678,7 +2678,7 @@ Partial Class Seven_to_Eight_Seaters
         ' Label157
         ' 
         Label157.AutoSize = True
-        Label157.Font = New Font("Century", 9F, FontStyle.Underline)
+        Label157.Font = New Font("Century", 9.0F, FontStyle.Underline)
         Label157.Location = New Point(165, 40)
         Label157.Name = "Label157"
         Label157.Size = New Size(53, 18)
@@ -2688,7 +2688,7 @@ Partial Class Seven_to_Eight_Seaters
         ' Label158
         ' 
         Label158.AutoSize = True
-        Label158.Font = New Font("Century", 9F, FontStyle.Bold)
+        Label158.Font = New Font("Century", 9.0F, FontStyle.Bold)
         Label158.Location = New Point(21, 138)
         Label158.Name = "Label158"
         Label158.Size = New Size(97, 18)
@@ -2698,7 +2698,7 @@ Partial Class Seven_to_Eight_Seaters
         ' Label159
         ' 
         Label159.AutoSize = True
-        Label159.Font = New Font("Century", 9F, FontStyle.Bold)
+        Label159.Font = New Font("Century", 9.0F, FontStyle.Bold)
         Label159.Location = New Point(21, 118)
         Label159.Name = "Label159"
         Label159.Size = New Size(76, 18)
@@ -2708,7 +2708,7 @@ Partial Class Seven_to_Eight_Seaters
         ' Label160
         ' 
         Label160.AutoSize = True
-        Label160.Font = New Font("Century", 9F, FontStyle.Bold)
+        Label160.Font = New Font("Century", 9.0F, FontStyle.Bold)
         Label160.Location = New Point(21, 98)
         Label160.Name = "Label160"
         Label160.Size = New Size(120, 18)
@@ -2718,7 +2718,7 @@ Partial Class Seven_to_Eight_Seaters
         ' Label161
         ' 
         Label161.AutoSize = True
-        Label161.Font = New Font("Century", 9F, FontStyle.Bold)
+        Label161.Font = New Font("Century", 9.0F, FontStyle.Bold)
         Label161.Location = New Point(21, 60)
         Label161.Name = "Label161"
         Label161.Size = New Size(69, 18)
@@ -2728,7 +2728,7 @@ Partial Class Seven_to_Eight_Seaters
         ' Label162
         ' 
         Label162.AutoSize = True
-        Label162.Font = New Font("Century", 9F, FontStyle.Bold)
+        Label162.Font = New Font("Century", 9.0F, FontStyle.Bold)
         Label162.Location = New Point(21, 40)
         Label162.Name = "Label162"
         Label162.Size = New Size(93, 18)
@@ -2769,7 +2769,7 @@ Partial Class Seven_to_Eight_Seaters
         ' Label165
         ' 
         Label165.AutoSize = True
-        Label165.Font = New Font("Century", 9F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        Label165.Font = New Font("Century", 9.0F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
         Label165.Location = New Point(33, 31)
         Label165.Name = "Label165"
         Label165.Size = New Size(724, 36)
@@ -2802,7 +2802,7 @@ Partial Class Seven_to_Eight_Seaters
         ' Label184
         ' 
         Label184.AutoSize = True
-        Label184.Font = New Font("Century", 9F, FontStyle.Underline)
+        Label184.Font = New Font("Century", 9.0F, FontStyle.Underline)
         Label184.Location = New Point(141, 65)
         Label184.Name = "Label184"
         Label184.Size = New Size(20, 18)
@@ -2812,7 +2812,7 @@ Partial Class Seven_to_Eight_Seaters
         ' Label185
         ' 
         Label185.AutoSize = True
-        Label185.Font = New Font("Century", 9F, FontStyle.Bold)
+        Label185.Font = New Font("Century", 9.0F, FontStyle.Bold)
         Label185.Location = New Point(12, 65)
         Label185.Name = "Label185"
         Label185.Size = New Size(121, 18)
@@ -2822,7 +2822,7 @@ Partial Class Seven_to_Eight_Seaters
         ' Label176
         ' 
         Label176.AutoSize = True
-        Label176.Font = New Font("Century", 9F, FontStyle.Underline)
+        Label176.Font = New Font("Century", 9.0F, FontStyle.Underline)
         Label176.Location = New Point(141, 47)
         Label176.Name = "Label176"
         Label176.Size = New Size(77, 18)
@@ -2832,7 +2832,7 @@ Partial Class Seven_to_Eight_Seaters
         ' Label177
         ' 
         Label177.AutoSize = True
-        Label177.Font = New Font("Century", 9F, FontStyle.Bold)
+        Label177.Font = New Font("Century", 9.0F, FontStyle.Bold)
         Label177.Location = New Point(12, 47)
         Label177.Name = "Label177"
         Label177.Size = New Size(123, 18)
@@ -2842,7 +2842,7 @@ Partial Class Seven_to_Eight_Seaters
         ' Label166
         ' 
         Label166.AutoSize = True
-        Label166.Font = New Font("Century", 9F, FontStyle.Underline)
+        Label166.Font = New Font("Century", 9.0F, FontStyle.Underline)
         Label166.Location = New Point(75, 29)
         Label166.Name = "Label166"
         Label166.Size = New Size(48, 18)
@@ -2852,7 +2852,7 @@ Partial Class Seven_to_Eight_Seaters
         ' Label167
         ' 
         Label167.AutoSize = True
-        Label167.Font = New Font("Century", 9F, FontStyle.Bold)
+        Label167.Font = New Font("Century", 9.0F, FontStyle.Bold)
         Label167.Location = New Point(12, 29)
         Label167.Name = "Label167"
         Label167.Size = New Size(57, 18)
@@ -2917,7 +2917,7 @@ Partial Class Seven_to_Eight_Seaters
         ' Label168
         ' 
         Label168.AutoSize = True
-        Label168.Font = New Font("Century", 9F, FontStyle.Underline)
+        Label168.Font = New Font("Century", 9.0F, FontStyle.Underline)
         Label168.Location = New Point(120, 9)
         Label168.Name = "Label168"
         Label168.Size = New Size(40, 18)
@@ -2927,7 +2927,7 @@ Partial Class Seven_to_Eight_Seaters
         ' Label169
         ' 
         Label169.AutoSize = True
-        Label169.Font = New Font("Century", 9F, FontStyle.Bold)
+        Label169.Font = New Font("Century", 9.0F, FontStyle.Bold)
         Label169.Location = New Point(12, 9)
         Label169.Name = "Label169"
         Label169.Size = New Size(105, 18)
@@ -2959,7 +2959,7 @@ Partial Class Seven_to_Eight_Seaters
         ' 
         ' Seven_to_Eight_Seaters
         ' 
-        AutoScaleDimensions = New SizeF(8F, 20F)
+        AutoScaleDimensions = New SizeF(8.0F, 20.0F)
         AutoScaleMode = AutoScaleMode.Font
         BackgroundImage = CType(resources.GetObject("$this.BackgroundImage"), Image)
         ClientSize = New Size(1326, 690)

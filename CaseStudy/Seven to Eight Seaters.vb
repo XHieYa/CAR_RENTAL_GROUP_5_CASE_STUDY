@@ -102,4 +102,60 @@
     Private Sub B3_Click(sender As Object, e As EventArgs) Handles B3.Click
         Close()
     End Sub
+
+    Private Sub Toyota_Fortuner_ConfirmButton(sender As Object, e As EventArgs) Handles C.Click
+        Me.Hide()
+        BookingForm.Show()
+        Seaters.Hide()
+        BookingForm.TxtCarID.Text = "3048"
+        BookingForm.txtCar.Text = "Toyota Fortuner"
+        BookingForm.txtCColor.Text = "Black"
+        BookingForm.txtType.Text = "Gasoline/Diesel"
+        BookingForm.txtCapacity.Text = "7-8 Seaters"
+        BookingForm.txtPlateNumber.Text = "CVM 0914"
+        BookingForm.txtBodyNumber.Text = "KNAGR4A65B5149652"
+        BookingForm.txtRate.Text = "3500"
+    End Sub
+
+    Private Sub Mitsubishi_Strada_Xpander_ConfirmButton(sender As Object, e As EventArgs) Handles C1.Click
+        Me.Hide()
+        BookingForm.Show()
+        Seaters.Hide()
+        BookingForm.TxtCarID.Text = "8682"
+        BookingForm.txtCar.Text = "Mitsubishi Strada Xpander"
+        BookingForm.txtCColor.Text = "White"
+        BookingForm.txtType.Text = "Gasoline"
+        BookingForm.txtCapacity.Text = "7-8 Seaters"
+        BookingForm.txtPlateNumber.Text = "OPC 8764"
+        BookingForm.txtBodyNumber.Text = "1FDWE37S6WHB90879"
+        BookingForm.txtRate.Text = "3000"
+    End Sub
+
+    Private Sub Toyota_Avanza_ConfirmButton(sender As Object, e As EventArgs) Handles C2.Click
+        Me.Hide()
+        BookingForm.Show()
+        Seaters.Hide()
+        BookingForm.TxtCarID.Text = "3011"
+        BookingForm.txtCar.Text = "Toyota Avanza"
+        BookingForm.txtCColor.Text = "Blue"
+        BookingForm.txtType.Text = "Gasoline"
+        BookingForm.txtCapacity.Text = "7-8 Seaters"
+        BookingForm.txtPlateNumber.Text = "XZM 0862"
+        BookingForm.txtBodyNumber.Text = "5N3AA08C76N800387"
+        BookingForm.txtRate.Text = "3000"
+    End Sub
+
+    Private Sub Toyota_Innova_ConfirmButton(sender As Object, e As EventArgs) Handles C3.Click
+        Me.Hide()
+        BookingForm.Show()
+        Seaters.Hide()
+        BookingForm.TxtCarID.Text = "9818"
+        BookingForm.txtCar.Text = "Toyota Innova"
+        BookingForm.txtCColor.Text = "Black"
+        BookingForm.txtType.Text = "Diesel"
+        BookingForm.txtCapacity.Text = "7-8 Seaters"
+        BookingForm.txtPlateNumber.Text = "SDG 5412"
+        BookingForm.txtBodyNumber.Text = "1J8GN28K48W216968"
+        BookingForm.txtRate.Text = "3500"
+    End Sub
 End Class

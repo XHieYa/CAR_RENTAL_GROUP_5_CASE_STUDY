@@ -77,4 +77,46 @@
     Private Sub B2_Click(sender As Object, e As EventArgs) Handles B2.Click
         Close()
     End Sub
+
+    Private Sub Nissan_NV350_Urvan_ConfirmButton(sender As Object, e As EventArgs) Handles C.Click
+        Me.Hide()
+        BookingForm.Show()
+        Seaters.Hide()
+        BookingForm.TxtCarID.Text = "1082"
+        BookingForm.txtCar.Text = "Nissan NV350 Urvan"
+        BookingForm.txtCColor.Text = "White"
+        BookingForm.txtType.Text = "Diesel"
+        BookingForm.txtCapacity.Text = "10-15 Seaters"
+        BookingForm.txtPlateNumber.Text = "NQR 8795"
+        BookingForm.txtBodyNumber.Text = "2GCEK19J271654076"
+        BookingForm.txtRate.Text = "4000"
+    End Sub
+
+    Private Sub Toyota_HIACE_Commuter_Van_ConfirmButton(sender As Object, e As EventArgs) Handles C1.Click
+        Me.Hide()
+        BookingForm.Show()
+        Seaters.Hide()
+        BookingForm.TxtCarID.Text = "3462"
+        BookingForm.txtCar.Text = "Toyota HIACE Commuter Van"
+        BookingForm.txtCColor.Text = "White"
+        BookingForm.txtType.Text = "Diesel"
+        BookingForm.txtCapacity.Text = "10-15 Seaters"
+        BookingForm.txtPlateNumber.Text = "YZX 2087"
+        BookingForm.txtBodyNumber.Text = "WDDKJ5GB8AF061062"
+        BookingForm.txtRate.Text = "4000"
+    End Sub
+
+    Private Sub Toyota_HIACE_Grandia_Van_ConfirmButton(sender As Object, e As EventArgs) Handles C2.Click
+        Me.Hide()
+        BookingForm.Show()
+        Seaters.Hide()
+        BookingForm.TxtCarID.Text = "8842"
+        BookingForm.txtCar.Text = "Toyota HIACE Grandia Van"
+        BookingForm.txtCColor.Text = "White"
+        BookingForm.txtType.Text = "Diesel"
+        BookingForm.txtCapacity.Text = "10-15 Seaters"
+        BookingForm.txtPlateNumber.Text = "XYZ 5462"
+        BookingForm.txtBodyNumber.Text = "1GNSKKE75ER172720"
+        BookingForm.txtRate.Text = "4000"
+    End Sub
 End Class

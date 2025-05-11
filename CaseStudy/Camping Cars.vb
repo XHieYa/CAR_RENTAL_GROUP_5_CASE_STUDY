@@ -102,4 +102,60 @@
     Private Sub B3_Click(sender As Object, e As EventArgs) Handles B3.Click
         Close()
     End Sub
+
+    Private Sub Motorhome_1_ConfirmButton(sender As Object, e As EventArgs) Handles C.Click
+        Me.Hide()
+        BookingForm.Show()
+        Seaters.Hide()
+        BookingForm.TxtCarID.Text = "3234"
+        BookingForm.txtCar.Text = "Motorhome 1"
+        BookingForm.txtCColor.Text = "White"
+        BookingForm.txtType.Text = "Diesel"
+        BookingForm.txtCapacity.Text = "9 Seaters"
+        BookingForm.txtPlateNumber.Text = "PIC 9832"
+        BookingForm.txtBodyNumber.Text = "1FTYR10D97PA44551"
+        BookingForm.txtRate.Text = "11000"
+    End Sub
+
+    Private Sub Motorhome_2_ConfirmButton(sender As Object, e As EventArgs) Handles C1.Click
+        Me.Hide()
+        BookingForm.Show()
+        Seaters.Hide()
+        BookingForm.TxtCarID.Text = "1358"
+        BookingForm.txtCar.Text = "Motorhome 2"
+        BookingForm.txtCColor.Text = "Silver"
+        BookingForm.txtType.Text = "Diesel"
+        BookingForm.txtCapacity.Text = "5 Seaters"
+        BookingForm.txtPlateNumber.Text = "VCZ 2415"
+        BookingForm.txtBodyNumber.Text = "1C3LC56K07N537298"
+        BookingForm.txtRate.Text = "10000"
+    End Sub
+
+    Private Sub Motorhome_3_ConfirmButton(sender As Object, e As EventArgs) Handles C2.Click
+        Me.Hide()
+        BookingForm.Show()
+        Seaters.Hide()
+        BookingForm.TxtCarID.Text = "1548"
+        BookingForm.txtCar.Text = "Motorhome 3"
+        BookingForm.txtCColor.Text = "White"
+        BookingForm.txtType.Text = "Diesel"
+        BookingForm.txtCapacity.Text = "10 Seaters"
+        BookingForm.txtPlateNumber.Text = "UIC 6452"
+        BookingForm.txtBodyNumber.Text = "3N1CE2CP0EL450229"
+        BookingForm.txtRate.Text = "12000"
+    End Sub
+
+    Private Sub Camper_Van_ConfirmButton(sender As Object, e As EventArgs) Handles C3.Click
+        Me.Hide()
+        BookingForm.Show()
+        Seaters.Hide()
+        BookingForm.TxtCarID.Text = "8645"
+        BookingForm.txtCar.Text = "Camper Van"
+        BookingForm.txtCColor.Text = "Orange"
+        BookingForm.txtType.Text = "Diesel"
+        BookingForm.txtCapacity.Text = "9 Seaters"
+        BookingForm.txtPlateNumber.Text = "ZAC 3245"
+        BookingForm.txtBodyNumber.Text = "2G1WK15K779154878"
+        BookingForm.txtRate.Text = "11000"
+    End Sub
 End Class

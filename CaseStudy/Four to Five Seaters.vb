@@ -104,29 +104,59 @@
         Close()
     End Sub
 
-    Private Sub MitsubishiStradaConfirmButton(sender As Object, e As EventArgs) Handles C.Click
+    Private Sub Maruti_Suzuki_SPresso_ConfirmButton(sender As Object, e As EventArgs) Handles C.Click
         Me.Hide()
         BookingForm.Show()
         Seaters.Hide()
         BookingForm.txtCColor.Text = "Orange"
-        BookingForm.txtCar.Text = "Mitsubishi Strada"
-        BookingForm.txtPlateNumber.Text = ""
+        BookingForm.txtCar.Text = "Maruti Suzuki S-Presso"
+        BookingForm.txtPlateNumber.Text = "ABC 1234"
         BookingForm.txtType.Text = "Gasoline"
         BookingForm.txtCapacity.Text = "4-5 Seaters"
-        BookingForm.TxtCarID.Text = ""
-        BookingForm.txtRate.Text = ""
+        BookingForm.txtBodyNumber.Text = "KNADH4A32A6694471"
+        BookingForm.TxtCarID.Text = "5520"
+        BookingForm.txtRate.Text = "3000"
     End Sub
 
-    Private Sub C1_Click(sender As Object, e As EventArgs) Handles C1.Click
+    Private Sub Suzuki_Jimmy_ConfirmButton(sender As Object, e As EventArgs) Handles C1.Click
         Me.Hide()
         BookingForm.Show()
         Seaters.Hide()
-        BookingForm.txtCColor.Text = "Orange"
-        BookingForm.txtCar.Text = "Mitsubishi Strada"
-        BookingForm.txtPlateNumber.Text = ""
+        BookingForm.txtCColor.Text = "Lime Green"
+        BookingForm.txtCar.Text = "Suzuki Jimmy"
+        BookingForm.txtPlateNumber.Text = "HGI 6478"
         BookingForm.txtType.Text = "Gasoline"
         BookingForm.txtCapacity.Text = "4-5 Seaters"
-        BookingForm.TxtCarID.Text = ""
-        BookingForm.txtRate.Text = ""
+        BookingForm.txtBodyNumber.Text = "1XKADR9X9PS506278"
+        BookingForm.TxtCarID.Text = "4210"
+        BookingForm.txtRate.Text = "4200"
+    End Sub
+
+    Private Sub Ford_Ranger_ConfirmButton(sender As Object, e As EventArgs) Handles C2.Click
+        Me.Hide()
+        BookingForm.Show()
+        Seaters.Hide()
+        BookingForm.TxtCarID.Text = "4591"
+        BookingForm.txtCar.Text = "Ford Ranger"
+        BookingForm.txtCColor.Text = "Blue"
+        BookingForm.txtType.Text = "Diesel"
+        BookingForm.txtCapacity.Text = "4-5 Seaters"
+        BookingForm.txtPlateNumber.Text = "DEF 2365"
+        BookingForm.txtBodyNumber.Text = "5UXFG43508LJ73109"
+        BookingForm.txtRate.Text = "3500"
+    End Sub
+
+    Private Sub Mitsubishi_Strada_ConfirmButton(sender As Object, e As EventArgs) Handles C3.Click
+        Me.Hide()
+        BookingForm.Show()
+        Seaters.Hide()
+        BookingForm.TxtCarID.Text = "2347"
+        BookingForm.txtCar.Text = "Mitsubishi Strada"
+        BookingForm.txtCColor.Text = "Orange"
+        BookingForm.txtType.Text = "Diesel"
+        BookingForm.txtCapacity.Text = "4-5 Seaters"
+        BookingForm.txtPlateNumber.Text = "HGO 9125"
+        BookingForm.txtBodyNumber.Text = "WDDGF5EB0AR131131"
+        BookingForm.txtRate.Text = "4200"
     End Sub
 End Class
