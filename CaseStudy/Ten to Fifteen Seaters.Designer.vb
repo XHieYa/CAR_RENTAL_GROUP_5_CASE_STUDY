@@ -2236,7 +2236,7 @@ Partial Class Ten_to_Fifteen_Seaters
         Controls.Add(Label1)
         Controls.Add(TabControl1)
         Name = "Ten_to_Fifteen_Seaters"
-        Text = "Ten to Fifteen Seaters"
+        Text = "🚘Ten ☆ Fifteen Seaters── .✦"
         TabControl1.ResumeLayout(False)
         TabPage1.ResumeLayout(False)
         Panel3.ResumeLayout(False)

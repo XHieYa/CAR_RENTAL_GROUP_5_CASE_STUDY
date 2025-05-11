@@ -4449,7 +4449,7 @@ Partial Class Camping_Cars
         Controls.Add(Label1)
         Controls.Add(TabControl1)
         Name = "Camping_Cars"
-        Text = "Camping Cars"
+        Text = "🚘Camping ☆ Cars── .✦"
         TabControl1.ResumeLayout(False)
         TabPage1.ResumeLayout(False)
         Panel3.ResumeLayout(False)

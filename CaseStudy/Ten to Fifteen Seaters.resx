@@ -1802,11 +1802,6 @@
         UUUAFFFFABRRRQB//9k=
 </value>
   </data>
-  <data name="Label4.Text" xml:space="preserve">
-    <value>The Nissan NV350 Urvan is a spacious and versatile van, perfect for group transportation. 
-Its comfortable seating and ample cargo space make it ideal for families, airport transfers,
- or small group tours. Reliable and easy to drive, it offers a comfortable ride for everyone.</value>
-  </data>
   <data name="Panel1.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         /9j/4AAQSkZJRgABAQEASABIAAD/2wBDAAMCAgMCAgMDAwMEAwMEBQgFBQQEBQoHBwYIDAoMDAsKCwsN
@@ -2471,6 +2466,11 @@ Its comfortable seating and ample cargo space make it ideal for families, airpor
         BRRRQAUyZd8TCn0dfxyKma54SiNOzucQV2Er6cUlT30fl3k6f7RP61AeTX5RUVpyXmfTxd4phRRRWBYU
         UUUAFFFFABRRRQB//9k=
 </value>
+  </data>
+  <data name="Label4.Text" xml:space="preserve">
+    <value>The Nissan NV350 Urvan is a spacious and versatile van, perfect for group transportation. 
+Its comfortable seating and ample cargo space make it ideal for families, airport transfers,
+ or small group tours. Reliable and easy to drive, it offers a comfortable ride for everyone.</value>
   </data>
   <data name="PictureBox6.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>

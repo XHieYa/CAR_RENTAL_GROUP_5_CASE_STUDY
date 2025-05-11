@@ -2966,7 +2966,7 @@ Partial Class Seven_to_Eight_Seaters
         Controls.Add(Label1)
         Controls.Add(TabControl1)
         Name = "Seven_to_Eight_Seaters"
-        Text = "Seven to Eight Seaters"
+        Text = "🚘Seven ☆ Eight Seaters── .✦"
         TabControl1.ResumeLayout(False)
         TabPage1.ResumeLayout(False)
         Panel3.ResumeLayout(False)
