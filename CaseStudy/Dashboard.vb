@@ -179,8 +179,8 @@ Public Class Dashboard
         End Try
     End Sub
     Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
-        Seaters.Show()
-        Me.Hide()
+        Seaters.Show
+        Hide
     End Sub
     'Cell selection that updates the current selected row of date and time From and To
     Private Sub DGLogs_CellContentClick(sender As Object, e As DataGridViewCellEventArgs) Handles DGLogs.CellContentClick

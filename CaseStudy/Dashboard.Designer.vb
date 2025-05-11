@@ -25,6 +25,8 @@ Partial Class Dashboard
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Dashboard))
         TabControl1 = New TabControl()
         TabPage1 = New TabPage()
+        lblgreet = New Label()
+        Label12 = New Label()
         Label11 = New Label()
         Label10 = New Label()
         Label9 = New Label()
@@ -42,7 +44,6 @@ Partial Class Dashboard
         lblAge = New Label()
         lblFullName = New Label()
         Label2 = New Label()
-        lblgreet = New Label()
         TabPage2 = New TabPage()
         BtnSchedCheck = New Button()
         btnCalculate = New Button()
@@ -53,7 +54,11 @@ Partial Class Dashboard
         ToDOB = New DateTimePicker()
         FromDOB = New DateTimePicker()
         DGLogs = New DataGridView()
-        Label12 = New Label()
+        Button2 = New Button()
+        Label13 = New Label()
+        Label14 = New Label()
+        Label15 = New Label()
+        Label16 = New Label()
         TabControl1.SuspendLayout()
         TabPage1.SuspendLayout()
         TabPage2.SuspendLayout()
@@ -87,7 +92,6 @@ Partial Class Dashboard
         TabPage1.Controls.Add(Label4)
         TabPage1.Controls.Add(lblRecord)
         TabPage1.Controls.Add(lblEmail)
-        TabPage1.Controls.Add(Button1)
         TabPage1.Controls.Add(lblDOB)
         TabPage1.Controls.Add(lblAddress)
         TabPage1.Controls.Add(lblSex)
@@ -103,6 +107,28 @@ Partial Class Dashboard
         TabPage1.TabIndex = 0
         TabPage1.Text = "🚘Home── .✦"
         TabPage1.UseVisualStyleBackColor = True
+        ' 
+        ' lblgreet
+        ' 
+        lblgreet.AutoSize = True
+        lblgreet.Font = New Font("Stencil", 19.8000011F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        lblgreet.ForeColor = Color.Black
+        lblgreet.Location = New Point(89, 27)
+        lblgreet.Name = "lblgreet"
+        lblgreet.Size = New Size(1119, 40)
+        lblgreet.TabIndex = 0
+        lblgreet.Text = "Welcome to Wheel-Away, [user]! Let's get you on the road."
+        ' 
+        ' Label12
+        ' 
+        Label12.AutoSize = True
+        Label12.Font = New Font("Stencil", 19.8000011F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
+        Label12.ForeColor = Color.Black
+        Label12.Location = New Point(3, 25)
+        Label12.Name = "Label12"
+        Label12.Size = New Size(97, 40)
+        Label12.TabIndex = 18
+        Label12.Text = "🛣🛤"
         ' 
         ' Label11
         ' 
@@ -195,7 +221,7 @@ Partial Class Dashboard
         ' lblRecord
         ' 
         lblRecord.AutoSize = True
-        lblRecord.Font = New Font("Century Gothic", 13.8F, FontStyle.Bold)
+        lblRecord.Font = New Font("Century Gothic", 13.8F, FontStyle.Bold Or FontStyle.Underline)
         lblRecord.ForeColor = Color.Black
         lblRecord.Location = New Point(636, 391)
         lblRecord.Name = "lblRecord"
@@ -206,7 +232,7 @@ Partial Class Dashboard
         ' lblEmail
         ' 
         lblEmail.AutoSize = True
-        lblEmail.Font = New Font("Century Gothic", 13.8F, FontStyle.Bold)
+        lblEmail.Font = New Font("Century Gothic", 13.8F, FontStyle.Bold Or FontStyle.Underline)
         lblEmail.ForeColor = Color.Black
         lblEmail.Location = New Point(330, 270)
         lblEmail.Name = "lblEmail"
@@ -218,18 +244,18 @@ Partial Class Dashboard
         ' 
         Button1.BackColor = Color.PaleGoldenrod
         Button1.Font = New Font("Century", 12F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
-        Button1.Location = New Point(1162, 559)
+        Button1.Location = New Point(1186, 651)
         Button1.Margin = New Padding(3, 4, 3, 4)
         Button1.Name = "Button1"
-        Button1.Size = New Size(117, 35)
+        Button1.Size = New Size(125, 35)
         Button1.TabIndex = 7
-        Button1.Text = "Continue"
+        Button1.Text = "Continue↪"
         Button1.UseVisualStyleBackColor = False
         ' 
         ' lblDOB
         ' 
         lblDOB.AutoSize = True
-        lblDOB.Font = New Font("Century Gothic", 13.8F, FontStyle.Bold)
+        lblDOB.Font = New Font("Century Gothic", 13.8F, FontStyle.Bold Or FontStyle.Underline)
         lblDOB.ForeColor = Color.Black
         lblDOB.Location = New Point(980, 270)
         lblDOB.Name = "lblDOB"
@@ -240,7 +266,7 @@ Partial Class Dashboard
         ' lblAddress
         ' 
         lblAddress.AutoSize = True
-        lblAddress.Font = New Font("Century Gothic", 13.8F, FontStyle.Bold)
+        lblAddress.Font = New Font("Century Gothic", 13.8F, FontStyle.Bold Or FontStyle.Underline)
         lblAddress.ForeColor = Color.Black
         lblAddress.Location = New Point(359, 304)
         lblAddress.Name = "lblAddress"
@@ -251,7 +277,7 @@ Partial Class Dashboard
         ' lblSex
         ' 
         lblSex.AutoSize = True
-        lblSex.Font = New Font("Century Gothic", 13.8F, FontStyle.Bold)
+        lblSex.Font = New Font("Century Gothic", 13.8F, FontStyle.Bold Or FontStyle.Underline)
         lblSex.ForeColor = Color.Black
         lblSex.Location = New Point(874, 304)
         lblSex.Name = "lblSex"
@@ -262,7 +288,7 @@ Partial Class Dashboard
         ' lblAge
         ' 
         lblAge.AutoSize = True
-        lblAge.Font = New Font("Century Gothic", 13.8F, FontStyle.Bold)
+        lblAge.Font = New Font("Century Gothic", 13.8F, FontStyle.Bold Or FontStyle.Underline)
         lblAge.ForeColor = Color.Black
         lblAge.Location = New Point(884, 232)
         lblAge.Name = "lblAge"
@@ -273,7 +299,7 @@ Partial Class Dashboard
         ' lblFullName
         ' 
         lblFullName.AutoSize = True
-        lblFullName.Font = New Font("Century Gothic", 13.8F, FontStyle.Bold)
+        lblFullName.Font = New Font("Century Gothic", 13.8F, FontStyle.Bold Or FontStyle.Underline)
         lblFullName.ForeColor = Color.Black
         lblFullName.Location = New Point(373, 232)
         lblFullName.Name = "lblFullName"
@@ -292,20 +318,13 @@ Partial Class Dashboard
         Label2.TabIndex = 1
         Label2.Text = "˙⋆✮  Basic Information ✮⋆˙"
         ' 
-        ' lblgreet
-        ' 
-        lblgreet.AutoSize = True
-        lblgreet.Font = New Font("Stencil", 19.8000011F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
-        lblgreet.ForeColor = Color.Black
-        lblgreet.Location = New Point(89, 27)
-        lblgreet.Name = "lblgreet"
-        lblgreet.Size = New Size(1119, 40)
-        lblgreet.TabIndex = 0
-        lblgreet.Text = "Welcome to Wheel-Away, [user]! Let's get you on the road."
-        ' 
         ' TabPage2
         ' 
         TabPage2.BackgroundImage = CType(resources.GetObject("TabPage2.BackgroundImage"), Image)
+        TabPage2.Controls.Add(Label16)
+        TabPage2.Controls.Add(Label15)
+        TabPage2.Controls.Add(Label14)
+        TabPage2.Controls.Add(Label13)
         TabPage2.Controls.Add(BtnSchedCheck)
         TabPage2.Controls.Add(btnCalculate)
         TabPage2.Controls.Add(BtnDelete)
@@ -433,16 +452,53 @@ Partial Class Dashboard
         DGLogs.Size = New Size(1251, 501)
         DGLogs.TabIndex = 0
         ' 
-        ' Label12
+        ' Button2
         ' 
-        Label12.AutoSize = True
-        Label12.Font = New Font("Stencil", 19.8000011F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
-        Label12.ForeColor = Color.Black
-        Label12.Location = New Point(3, 25)
-        Label12.Name = "Label12"
-        Label12.Size = New Size(97, 40)
-        Label12.TabIndex = 18
-        Label12.Text = "🛣🛤"
+        Button2.BackColor = Color.PaleGoldenrod
+        Button2.Font = New Font("Century", 12F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        Button2.Location = New Point(24, 651)
+        Button2.Margin = New Padding(3, 4, 3, 4)
+        Button2.Name = "Button2"
+        Button2.Size = New Size(125, 35)
+        Button2.TabIndex = 19
+        Button2.Text = "↩Back"
+        Button2.UseVisualStyleBackColor = False
+        ' 
+        ' Label13
+        ' 
+        Label13.AutoSize = True
+        Label13.Location = New Point(170, 519)
+        Label13.Name = "Label13"
+        Label13.Size = New Size(91, 21)
+        Label13.TabIndex = 9
+        Label13.Text = "─── ⋆⋅☆⋅⋆ ──"
+        ' 
+        ' Label14
+        ' 
+        Label14.AutoSize = True
+        Label14.Location = New Point(488, 518)
+        Label14.Name = "Label14"
+        Label14.Size = New Size(91, 21)
+        Label14.TabIndex = 10
+        Label14.Text = "─── ⋆⋅☆⋅⋆ ──"
+        ' 
+        ' Label15
+        ' 
+        Label15.AutoSize = True
+        Label15.Location = New Point(488, 576)
+        Label15.Name = "Label15"
+        Label15.Size = New Size(91, 21)
+        Label15.TabIndex = 11
+        Label15.Text = "─── ⋆⋅☆⋅⋆ ──"
+        ' 
+        ' Label16
+        ' 
+        Label16.AutoSize = True
+        Label16.Location = New Point(170, 576)
+        Label16.Name = "Label16"
+        Label16.Size = New Size(91, 21)
+        Label16.TabIndex = 12
+        Label16.Text = "─── ⋆⋅☆⋅⋆ ──"
         ' 
         ' Dashboard
         ' 
@@ -450,7 +506,9 @@ Partial Class Dashboard
         AutoScaleMode = AutoScaleMode.Font
         BackgroundImage = CType(resources.GetObject("$this.BackgroundImage"), Image)
         ClientSize = New Size(1326, 691)
+        Controls.Add(Button2)
         Controls.Add(TabControl1)
+        Controls.Add(Button1)
         Margin = New Padding(3, 4, 3, 4)
         Name = "Dashboard"
         Text = "Dashboard"
@@ -494,4 +552,9 @@ Partial Class Dashboard
     Friend WithEvents Label10 As Label
     Friend WithEvents BtnSchedCheck As Button
     Friend WithEvents Label12 As Label
+    Friend WithEvents Label16 As Label
+    Friend WithEvents Label15 As Label
+    Friend WithEvents Label14 As Label
+    Friend WithEvents Label13 As Label
+    Friend WithEvents Button2 As Button
 End Class
