@@ -341,7 +341,7 @@ Partial Class Four_to_Five_Seaters
         TabPage1.Padding = New Padding(3)
         TabPage1.Size = New Size(1293, 603)
         TabPage1.TabIndex = 0
-        TabPage1.Text = "Maruti Suzuki S-Presso"
+        TabPage1.Text = "🚘Maruti Suzuki S-Presso── .✦"
         TabPage1.UseVisualStyleBackColor = True
         ' 
         ' C
@@ -998,7 +998,7 @@ Partial Class Four_to_Five_Seaters
         TabPage2.Padding = New Padding(3)
         TabPage2.Size = New Size(1293, 603)
         TabPage2.TabIndex = 1
-        TabPage2.Text = "Suzuki Jimny"
+        TabPage2.Text = "🚘Suzuki Jimny── .✦"
         TabPage2.UseVisualStyleBackColor = True
         ' 
         ' C1
@@ -1666,7 +1666,7 @@ Partial Class Four_to_Five_Seaters
         TabPage3.Name = "TabPage3"
         TabPage3.Size = New Size(1293, 603)
         TabPage3.TabIndex = 2
-        TabPage3.Text = "Ford Ranger"
+        TabPage3.Text = "🚘Ford Ranger── .✦"
         TabPage3.UseVisualStyleBackColor = True
         ' 
         ' C2
@@ -2322,7 +2322,7 @@ Partial Class Four_to_Five_Seaters
         TabPage4.Name = "TabPage4"
         TabPage4.Size = New Size(1293, 603)
         TabPage4.TabIndex = 3
-        TabPage4.Text = "Mitsubishi Strada"
+        TabPage4.Text = "🚘Mitsubishi Strada── .✦"
         TabPage4.UseVisualStyleBackColor = True
         ' 
         ' C3

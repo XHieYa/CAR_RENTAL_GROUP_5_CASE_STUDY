@@ -475,7 +475,7 @@ Partial Class Camping_Cars
         TabPage1.Padding = New Padding(3)
         TabPage1.Size = New Size(1292, 603)
         TabPage1.TabIndex = 0
-        TabPage1.Text = "MOTORHOME 1"
+        TabPage1.Text = "🚘MOTORHOME 1── .✦"
         TabPage1.UseVisualStyleBackColor = True
         ' 
         ' C
@@ -1534,7 +1534,7 @@ Partial Class Camping_Cars
         TabPage2.Padding = New Padding(3)
         TabPage2.Size = New Size(1292, 603)
         TabPage2.TabIndex = 1
-        TabPage2.Text = "MOTORHOME 2"
+        TabPage2.Text = "🚘MOTORHOME 2── .✦"
         TabPage2.UseVisualStyleBackColor = True
         ' 
         ' C1
@@ -2456,7 +2456,7 @@ Partial Class Camping_Cars
         TabPage3.Name = "TabPage3"
         TabPage3.Size = New Size(1292, 603)
         TabPage3.TabIndex = 2
-        TabPage3.Text = "MOTORHOME 3"
+        TabPage3.Text = "🚘MOTORHOME 3── .✦"
         TabPage3.UseVisualStyleBackColor = True
         ' 
         ' C2
@@ -3478,7 +3478,7 @@ Partial Class Camping_Cars
         TabPage4.Name = "TabPage4"
         TabPage4.Size = New Size(1292, 603)
         TabPage4.TabIndex = 3
-        TabPage4.Text = "CAMPER VAN"
+        TabPage4.Text = "🚘CAMPER VAN── .✦"
         TabPage4.UseVisualStyleBackColor = True
         ' 
         ' C3

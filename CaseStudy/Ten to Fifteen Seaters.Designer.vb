@@ -270,7 +270,7 @@ Partial Class Ten_to_Fifteen_Seaters
         TabPage1.Padding = New Padding(3)
         TabPage1.Size = New Size(1292, 603)
         TabPage1.TabIndex = 0
-        TabPage1.Text = "NISSAN NV350 URVAN"
+        TabPage1.Text = "🚘NISSAN NV350 URVAN── .✦"
         TabPage1.UseVisualStyleBackColor = True
         ' 
         ' C
@@ -927,7 +927,7 @@ Partial Class Ten_to_Fifteen_Seaters
         TabPage2.Padding = New Padding(3)
         TabPage2.Size = New Size(1292, 603)
         TabPage2.TabIndex = 1
-        TabPage2.Text = "TOYOTA HIACE COMMUTER VAN"
+        TabPage2.Text = "🚘TOYOTA HIACE COMMUTER VAN── .✦"
         TabPage2.UseVisualStyleBackColor = True
         ' 
         ' C1
@@ -1583,7 +1583,7 @@ Partial Class Ten_to_Fifteen_Seaters
         TabPage3.Name = "TabPage3"
         TabPage3.Size = New Size(1292, 603)
         TabPage3.TabIndex = 2
-        TabPage3.Text = "TOYOTA HIACE GRANDIA VAN"
+        TabPage3.Text = "🚘TOYOTA HIACE GRANDIA VAN── .✦"
         TabPage3.UseVisualStyleBackColor = True
         ' 
         ' C2

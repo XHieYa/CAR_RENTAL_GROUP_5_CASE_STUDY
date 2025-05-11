@@ -11034,6 +11034,11 @@
         5251NtmQnThsmWETqZgZupYyw7tiZhB3w+lThhl4smIrMsP/B2ZrnfGlTRmJAAAAAElFTkSuQmCC
 </value>
   </data>
+  <data name="Label4.Text" xml:space="preserve">
+    <value>The Maruti Suzuki S-Presso is an economical and fuel-efficient city car, ideal for navigating 
+urban areas. Perfect for short-term rentals, it offers comfortable seating for up to four to 
+five passengers.</value>
+  </data>
   <data name="Panel1.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAABBEAAALgCAIAAABNh3i6AAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAL
@@ -16314,11 +16319,6 @@
         HqxWGyPJBwQfoXxQhINM9lDSoVgH8Jcwe507x5TTpoNl/gPuf6S3XXo1lhm2lqKpOT/nkItHyZgpNYAX
         5251NtmQnThsmWETqZgZupYyw7tiZhB3w+lThhl4smIrMsP/B2ZrnfGlTRmJAAAAAElFTkSuQmCC
 </value>
-  </data>
-  <data name="Label4.Text" xml:space="preserve">
-    <value>The Maruti Suzuki S-Presso is an economical and fuel-efficient city car, ideal for navigating 
-urban areas. Perfect for short-term rentals, it offers comfortable seating for up to four to 
-five passengers.</value>
   </data>
   <data name="PictureBox6.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
