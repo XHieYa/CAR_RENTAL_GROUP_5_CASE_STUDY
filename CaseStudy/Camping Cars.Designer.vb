@@ -478,22 +478,22 @@ Partial Class Camping_Cars
         ' 
         ' C
         ' 
-        C.Font = New Font("Century", 9F, FontStyle.Bold)
-        C.Location = New Point(1192, 568)
+        C.Font = New Font("Century", 12F, FontStyle.Bold)
+        C.Location = New Point(1163, 562)
         C.Name = "C"
-        C.Size = New Size(94, 29)
+        C.Size = New Size(125, 35)
         C.TabIndex = 3
-        C.Text = "Confirm"
+        C.Text = "Confirm↪"
         C.UseVisualStyleBackColor = True
         ' 
         ' B
         ' 
-        B.Font = New Font("Century", 9F, FontStyle.Bold)
-        B.Location = New Point(6, 568)
+        B.Font = New Font("Century", 12F, FontStyle.Bold)
+        B.Location = New Point(6, 562)
         B.Name = "B"
-        B.Size = New Size(94, 29)
+        B.Size = New Size(125, 35)
         B.TabIndex = 2
-        B.Text = "Back"
+        B.Text = "↩Back"
         B.UseVisualStyleBackColor = True
         ' 
         ' Panel3
@@ -939,7 +939,7 @@ Partial Class Camping_Cars
         SD.Name = "SD"
         SD.Size = New Size(134, 29)
         SD.TabIndex = 4
-        SD.Text = "Self Driving"
+        SD.Text = "Self Driving☆"
         SD.UseVisualStyleBackColor = True
         ' 
         ' WD
@@ -949,7 +949,7 @@ Partial Class Camping_Cars
         WD.Name = "WD"
         WD.Size = New Size(134, 29)
         WD.TabIndex = 5
-        WD.Text = "With Driver"
+        WD.Text = "With Driver☆"
         WD.TextAlign = ContentAlignment.TopCenter
         WD.UseVisualStyleBackColor = True
         ' 
@@ -1507,22 +1507,22 @@ Partial Class Camping_Cars
         ' 
         ' C1
         ' 
-        C1.Font = New Font("Century", 9F, FontStyle.Bold)
-        C1.Location = New Point(1192, 568)
+        C1.Font = New Font("Century", 12F, FontStyle.Bold)
+        C1.Location = New Point(1161, 562)
         C1.Name = "C1"
-        C1.Size = New Size(94, 29)
+        C1.Size = New Size(125, 35)
         C1.TabIndex = 8
-        C1.Text = "Confirm"
+        C1.Text = "Confirm↪"
         C1.UseVisualStyleBackColor = True
         ' 
         ' B1
         ' 
-        B1.Font = New Font("Century", 9F, FontStyle.Bold)
-        B1.Location = New Point(6, 568)
+        B1.Font = New Font("Century", 12F, FontStyle.Bold)
+        B1.Location = New Point(6, 562)
         B1.Name = "B1"
-        B1.Size = New Size(94, 29)
+        B1.Size = New Size(125, 35)
         B1.TabIndex = 7
-        B1.Text = "Back"
+        B1.Text = "↩Back"
         B1.UseVisualStyleBackColor = True
         ' 
         ' Panel4
@@ -2407,22 +2407,22 @@ Partial Class Camping_Cars
         ' 
         ' C2
         ' 
-        C2.Font = New Font("Century", 9F, FontStyle.Bold)
-        C2.Location = New Point(1192, 568)
+        C2.Font = New Font("Century", 12F, FontStyle.Bold)
+        C2.Location = New Point(1161, 565)
         C2.Name = "C2"
-        C2.Size = New Size(94, 29)
+        C2.Size = New Size(125, 35)
         C2.TabIndex = 13
-        C2.Text = "Confirm"
+        C2.Text = "Confirm↪"
         C2.UseVisualStyleBackColor = True
         ' 
         ' B2
         ' 
-        B2.Font = New Font("Century", 9F, FontStyle.Bold)
-        B2.Location = New Point(6, 568)
+        B2.Font = New Font("Century", 12F, FontStyle.Bold)
+        B2.Location = New Point(6, 565)
         B2.Name = "B2"
-        B2.Size = New Size(94, 29)
+        B2.Size = New Size(125, 35)
         B2.TabIndex = 12
-        B2.Text = "Back"
+        B2.Text = "↩Back"
         B2.UseVisualStyleBackColor = True
         ' 
         ' Panel7
@@ -3078,7 +3078,7 @@ Partial Class Camping_Cars
         SD2.Name = "SD2"
         SD2.Size = New Size(134, 29)
         SD2.TabIndex = 4
-        SD2.Text = "Self Driving"
+        SD2.Text = "Self Driving☆"
         SD2.UseVisualStyleBackColor = True
         ' 
         ' WD2
@@ -3088,7 +3088,7 @@ Partial Class Camping_Cars
         WD2.Name = "WD2"
         WD2.Size = New Size(134, 29)
         WD2.TabIndex = 5
-        WD2.Text = "With Driver"
+        WD2.Text = "With Driver☆"
         WD2.TextAlign = ContentAlignment.TopCenter
         WD2.UseVisualStyleBackColor = True
         ' 
@@ -3405,22 +3405,22 @@ Partial Class Camping_Cars
         ' 
         ' C3
         ' 
-        C3.Font = New Font("Century", 9F, FontStyle.Bold)
-        C3.Location = New Point(1192, 568)
+        C3.Font = New Font("Century", 12F, FontStyle.Bold)
+        C3.Location = New Point(1161, 560)
         C3.Name = "C3"
-        C3.Size = New Size(94, 29)
+        C3.Size = New Size(125, 35)
         C3.TabIndex = 13
-        C3.Text = "Confirm"
+        C3.Text = "Confirm↪"
         C3.UseVisualStyleBackColor = True
         ' 
         ' B3
         ' 
-        B3.Font = New Font("Century", 9F, FontStyle.Bold)
-        B3.Location = New Point(6, 568)
+        B3.Font = New Font("Century", 12F, FontStyle.Bold)
+        B3.Location = New Point(6, 560)
         B3.Name = "B3"
-        B3.Size = New Size(94, 29)
+        B3.Size = New Size(125, 35)
         B3.TabIndex = 12
-        B3.Text = "Back"
+        B3.Text = "↩Back"
         B3.UseVisualStyleBackColor = True
         ' 
         ' Panel10
@@ -4032,7 +4032,7 @@ Partial Class Camping_Cars
         SD3.Name = "SD3"
         SD3.Size = New Size(134, 29)
         SD3.TabIndex = 4
-        SD3.Text = "Self Driving"
+        SD3.Text = "Self Driving☆"
         SD3.UseVisualStyleBackColor = True
         ' 
         ' WD3
@@ -4042,7 +4042,7 @@ Partial Class Camping_Cars
         WD3.Name = "WD3"
         WD3.Size = New Size(134, 29)
         WD3.TabIndex = 5
-        WD3.Text = "With Driver"
+        WD3.Text = "With Driver☆"
         WD3.TextAlign = ContentAlignment.TopCenter
         WD3.UseVisualStyleBackColor = True
         ' 

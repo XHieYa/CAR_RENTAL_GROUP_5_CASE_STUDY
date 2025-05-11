@@ -70,6 +70,8 @@ Partial Class Seven_to_Eight_Seaters
         Label43 = New Label()
         Label4 = New Label()
         Panel1 = New Panel()
+        Label179 = New Label()
+        Label178 = New Label()
         Label171 = New Label()
         Label170 = New Label()
         Label19 = New Label()
@@ -78,7 +80,6 @@ Partial Class Seven_to_Eight_Seaters
         PictureBox5 = New PictureBox()
         PictureBox4 = New PictureBox()
         PictureBox3 = New PictureBox()
-        PictureBox2 = New PictureBox()
         PictureBox1 = New PictureBox()
         Label3 = New Label()
         Label2 = New Label()
@@ -128,6 +129,8 @@ Partial Class Seven_to_Eight_Seaters
         Label80 = New Label()
         Label81 = New Label()
         Panel6 = New Panel()
+        Label180 = New Label()
+        Label181 = New Label()
         Label172 = New Label()
         Label173 = New Label()
         Label82 = New Label()
@@ -136,7 +139,6 @@ Partial Class Seven_to_Eight_Seaters
         PictureBox8 = New PictureBox()
         PictureBox9 = New PictureBox()
         PictureBox10 = New PictureBox()
-        PictureBox11 = New PictureBox()
         PictureBox12 = New PictureBox()
         Label84 = New Label()
         Label85 = New Label()
@@ -186,6 +188,8 @@ Partial Class Seven_to_Eight_Seaters
         Label122 = New Label()
         Label123 = New Label()
         Panel9 = New Panel()
+        Label182 = New Label()
+        Label183 = New Label()
         Label174 = New Label()
         Label175 = New Label()
         Label124 = New Label()
@@ -194,8 +198,6 @@ Partial Class Seven_to_Eight_Seaters
         PictureBox14 = New PictureBox()
         PictureBox15 = New PictureBox()
         PictureBox16 = New PictureBox()
-        PictureBox17 = New PictureBox()
-        PictureBox18 = New PictureBox()
         Label126 = New Label()
         Label127 = New Label()
         TabPage4 = New TabPage()
@@ -244,6 +246,8 @@ Partial Class Seven_to_Eight_Seaters
         Label164 = New Label()
         Label165 = New Label()
         Panel12 = New Panel()
+        Label184 = New Label()
+        Label185 = New Label()
         Label176 = New Label()
         Label177 = New Label()
         Label166 = New Label()
@@ -252,19 +256,11 @@ Partial Class Seven_to_Eight_Seaters
         PictureBox20 = New PictureBox()
         PictureBox21 = New PictureBox()
         PictureBox22 = New PictureBox()
-        PictureBox23 = New PictureBox()
         PictureBox24 = New PictureBox()
         Label168 = New Label()
         Label169 = New Label()
         Label1 = New Label()
-        Label179 = New Label()
-        Label178 = New Label()
-        Label180 = New Label()
-        Label181 = New Label()
-        Label182 = New Label()
-        Label183 = New Label()
-        Label184 = New Label()
-        Label185 = New Label()
+        PictureBox18 = New PictureBox()
         TabControl1.SuspendLayout()
         TabPage1.SuspendLayout()
         Panel3.SuspendLayout()
@@ -274,7 +270,6 @@ Partial Class Seven_to_Eight_Seaters
         CType(PictureBox5, ComponentModel.ISupportInitialize).BeginInit()
         CType(PictureBox4, ComponentModel.ISupportInitialize).BeginInit()
         CType(PictureBox3, ComponentModel.ISupportInitialize).BeginInit()
-        CType(PictureBox2, ComponentModel.ISupportInitialize).BeginInit()
         CType(PictureBox1, ComponentModel.ISupportInitialize).BeginInit()
         TabPage2.SuspendLayout()
         Panel4.SuspendLayout()
@@ -284,7 +279,6 @@ Partial Class Seven_to_Eight_Seaters
         CType(PictureBox8, ComponentModel.ISupportInitialize).BeginInit()
         CType(PictureBox9, ComponentModel.ISupportInitialize).BeginInit()
         CType(PictureBox10, ComponentModel.ISupportInitialize).BeginInit()
-        CType(PictureBox11, ComponentModel.ISupportInitialize).BeginInit()
         CType(PictureBox12, ComponentModel.ISupportInitialize).BeginInit()
         TabPage3.SuspendLayout()
         Panel7.SuspendLayout()
@@ -294,8 +288,6 @@ Partial Class Seven_to_Eight_Seaters
         CType(PictureBox14, ComponentModel.ISupportInitialize).BeginInit()
         CType(PictureBox15, ComponentModel.ISupportInitialize).BeginInit()
         CType(PictureBox16, ComponentModel.ISupportInitialize).BeginInit()
-        CType(PictureBox17, ComponentModel.ISupportInitialize).BeginInit()
-        CType(PictureBox18, ComponentModel.ISupportInitialize).BeginInit()
         TabPage4.SuspendLayout()
         Panel10.SuspendLayout()
         Panel11.SuspendLayout()
@@ -304,8 +296,8 @@ Partial Class Seven_to_Eight_Seaters
         CType(PictureBox20, ComponentModel.ISupportInitialize).BeginInit()
         CType(PictureBox21, ComponentModel.ISupportInitialize).BeginInit()
         CType(PictureBox22, ComponentModel.ISupportInitialize).BeginInit()
-        CType(PictureBox23, ComponentModel.ISupportInitialize).BeginInit()
         CType(PictureBox24, ComponentModel.ISupportInitialize).BeginInit()
+        CType(PictureBox18, ComponentModel.ISupportInitialize).BeginInit()
         SuspendLayout()
         ' 
         ' TabControl1
@@ -323,6 +315,7 @@ Partial Class Seven_to_Eight_Seaters
         ' 
         ' TabPage1
         ' 
+        TabPage1.BackgroundImage = CType(resources.GetObject("TabPage1.BackgroundImage"), Image)
         TabPage1.Controls.Add(C)
         TabPage1.Controls.Add(B)
         TabPage1.Controls.Add(Panel3)
@@ -339,26 +332,29 @@ Partial Class Seven_to_Eight_Seaters
         ' 
         ' C
         ' 
-        C.Font = New Font("Century", 9F, FontStyle.Bold)
-        C.Location = New Point(1192, 568)
+        C.BackColor = Color.PaleGoldenrod
+        C.Font = New Font("Century", 12F, FontStyle.Bold)
+        C.Location = New Point(1161, 562)
         C.Name = "C"
-        C.Size = New Size(94, 29)
+        C.Size = New Size(125, 35)
         C.TabIndex = 3
-        C.Text = "Confirm"
-        C.UseVisualStyleBackColor = True
+        C.Text = "Confirm↪"
+        C.UseVisualStyleBackColor = False
         ' 
         ' B
         ' 
-        B.Font = New Font("Century", 9F, FontStyle.Bold)
-        B.Location = New Point(6, 568)
+        B.BackColor = Color.PaleGoldenrod
+        B.Font = New Font("Century", 12F, FontStyle.Bold)
+        B.Location = New Point(6, 562)
         B.Name = "B"
-        B.Size = New Size(94, 29)
+        B.Size = New Size(125, 35)
         B.TabIndex = 2
-        B.Text = "Back"
-        B.UseVisualStyleBackColor = True
+        B.Text = "↩Back"
+        B.UseVisualStyleBackColor = False
         ' 
         ' Panel3
         ' 
+        Panel3.BackgroundImage = CType(resources.GetObject("Panel3.BackgroundImage"), Image)
         Panel3.BorderStyle = BorderStyle.Fixed3D
         Panel3.Controls.Add(Label42)
         Panel3.Controls.Add(Label41)
@@ -465,24 +461,26 @@ Partial Class Seven_to_Eight_Seaters
         ' 
         ' SD
         ' 
+        SD.BackColor = Color.PaleGoldenrod
         SD.Font = New Font("Century", 9F, FontStyle.Bold)
         SD.Location = New Point(116, 503)
         SD.Name = "SD"
         SD.Size = New Size(134, 29)
         SD.TabIndex = 4
-        SD.Text = "Self Driving"
-        SD.UseVisualStyleBackColor = True
+        SD.Text = "Self Driving☆"
+        SD.UseVisualStyleBackColor = False
         ' 
         ' WD
         ' 
+        WD.BackColor = Color.PaleGoldenrod
         WD.Font = New Font("Century", 9F, FontStyle.Bold)
         WD.Location = New Point(256, 503)
         WD.Name = "WD"
         WD.Size = New Size(134, 29)
         WD.TabIndex = 5
-        WD.Text = "With Driver"
+        WD.Text = "With Driver☆"
         WD.TextAlign = ContentAlignment.TopCenter
-        WD.UseVisualStyleBackColor = True
+        WD.UseVisualStyleBackColor = False
         ' 
         ' Label36
         ' 
@@ -786,6 +784,7 @@ Partial Class Seven_to_Eight_Seaters
         ' 
         ' Panel2
         ' 
+        Panel2.BackgroundImage = CType(resources.GetObject("Panel2.BackgroundImage"), Image)
         Panel2.BorderStyle = BorderStyle.Fixed3D
         Panel2.Controls.Add(Label43)
         Panel2.Controls.Add(Label4)
@@ -817,6 +816,7 @@ Partial Class Seven_to_Eight_Seaters
         ' 
         ' Panel1
         ' 
+        Panel1.BackgroundImage = CType(resources.GetObject("Panel1.BackgroundImage"), Image)
         Panel1.BorderStyle = BorderStyle.Fixed3D
         Panel1.Controls.Add(Label179)
         Panel1.Controls.Add(Label178)
@@ -828,7 +828,6 @@ Partial Class Seven_to_Eight_Seaters
         Panel1.Controls.Add(PictureBox5)
         Panel1.Controls.Add(PictureBox4)
         Panel1.Controls.Add(PictureBox3)
-        Panel1.Controls.Add(PictureBox2)
         Panel1.Controls.Add(PictureBox1)
         Panel1.Controls.Add(Label3)
         Panel1.Controls.Add(Label2)
@@ -836,6 +835,26 @@ Partial Class Seven_to_Eight_Seaters
         Panel1.Name = "Panel1"
         Panel1.Size = New Size(780, 442)
         Panel1.TabIndex = 0
+        ' 
+        ' Label179
+        ' 
+        Label179.AutoSize = True
+        Label179.Font = New Font("Century", 9F, FontStyle.Underline)
+        Label179.Location = New Point(141, 65)
+        Label179.Name = "Label179"
+        Label179.Size = New Size(20, 18)
+        Label179.TabIndex = 14
+        Label179.Text = "N"
+        ' 
+        ' Label178
+        ' 
+        Label178.AutoSize = True
+        Label178.Font = New Font("Century", 9F, FontStyle.Bold)
+        Label178.Location = New Point(12, 65)
+        Label178.Name = "Label178"
+        Label178.Size = New Size(121, 18)
+        Label178.TabIndex = 13
+        Label178.Text = "Body Number:"
         ' 
         ' Label171
         ' 
@@ -880,54 +899,55 @@ Partial Class Seven_to_Eight_Seaters
         ' PictureBox6
         ' 
         PictureBox6.BorderStyle = BorderStyle.Fixed3D
+        PictureBox6.Image = CType(resources.GetObject("PictureBox6.Image"), Image)
         PictureBox6.Location = New Point(386, 292)
         PictureBox6.Name = "PictureBox6"
         PictureBox6.Size = New Size(250, 135)
+        PictureBox6.SizeMode = PictureBoxSizeMode.StretchImage
         PictureBox6.TabIndex = 6
         PictureBox6.TabStop = False
         ' 
         ' PictureBox5
         ' 
         PictureBox5.BorderStyle = BorderStyle.Fixed3D
+        PictureBox5.Image = CType(resources.GetObject("PictureBox5.Image"), Image)
         PictureBox5.Location = New Point(130, 292)
         PictureBox5.Name = "PictureBox5"
         PictureBox5.Size = New Size(250, 135)
+        PictureBox5.SizeMode = PictureBoxSizeMode.StretchImage
         PictureBox5.TabIndex = 6
         PictureBox5.TabStop = False
         ' 
         ' PictureBox4
         ' 
         PictureBox4.BorderStyle = BorderStyle.Fixed3D
-        PictureBox4.Location = New Point(519, 151)
+        PictureBox4.Image = CType(resources.GetObject("PictureBox4.Image"), Image)
+        PictureBox4.Location = New Point(386, 151)
         PictureBox4.Name = "PictureBox4"
         PictureBox4.Size = New Size(250, 135)
+        PictureBox4.SizeMode = PictureBoxSizeMode.StretchImage
         PictureBox4.TabIndex = 5
         PictureBox4.TabStop = False
         ' 
         ' PictureBox3
         ' 
         PictureBox3.BorderStyle = BorderStyle.Fixed3D
-        PictureBox3.Location = New Point(263, 151)
+        PictureBox3.Image = CType(resources.GetObject("PictureBox3.Image"), Image)
+        PictureBox3.Location = New Point(130, 151)
         PictureBox3.Name = "PictureBox3"
         PictureBox3.Size = New Size(250, 135)
+        PictureBox3.SizeMode = PictureBoxSizeMode.StretchImage
         PictureBox3.TabIndex = 4
         PictureBox3.TabStop = False
-        ' 
-        ' PictureBox2
-        ' 
-        PictureBox2.BorderStyle = BorderStyle.Fixed3D
-        PictureBox2.Location = New Point(7, 151)
-        PictureBox2.Name = "PictureBox2"
-        PictureBox2.Size = New Size(250, 135)
-        PictureBox2.TabIndex = 3
-        PictureBox2.TabStop = False
         ' 
         ' PictureBox1
         ' 
         PictureBox1.BorderStyle = BorderStyle.Fixed3D
-        PictureBox1.Location = New Point(263, 3)
+        PictureBox1.Image = CType(resources.GetObject("PictureBox1.Image"), Image)
+        PictureBox1.Location = New Point(262, 10)
         PictureBox1.Name = "PictureBox1"
         PictureBox1.Size = New Size(250, 135)
+        PictureBox1.SizeMode = PictureBoxSizeMode.StretchImage
         PictureBox1.TabIndex = 2
         PictureBox1.TabStop = False
         ' 
@@ -968,22 +988,22 @@ Partial Class Seven_to_Eight_Seaters
         ' 
         ' C1
         ' 
-        C1.Font = New Font("Century", 9F, FontStyle.Bold)
-        C1.Location = New Point(1192, 568)
+        C1.Font = New Font("Century", 12F, FontStyle.Bold)
+        C1.Location = New Point(1161, 562)
         C1.Name = "C1"
-        C1.Size = New Size(94, 29)
+        C1.Size = New Size(125, 35)
         C1.TabIndex = 8
-        C1.Text = "Confirm"
+        C1.Text = "Confirm↪"
         C1.UseVisualStyleBackColor = True
         ' 
         ' B1
         ' 
-        B1.Font = New Font("Century", 9F, FontStyle.Bold)
-        B1.Location = New Point(6, 568)
+        B1.Font = New Font("Century", 12F, FontStyle.Bold)
+        B1.Location = New Point(6, 562)
         B1.Name = "B1"
-        B1.Size = New Size(94, 29)
+        B1.Size = New Size(125, 35)
         B1.TabIndex = 7
-        B1.Text = "Back"
+        B1.Text = "↩Back"
         B1.UseVisualStyleBackColor = True
         ' 
         ' Panel4
@@ -1099,7 +1119,7 @@ Partial Class Seven_to_Eight_Seaters
         SD1.Name = "SD1"
         SD1.Size = New Size(134, 29)
         SD1.TabIndex = 4
-        SD1.Text = "Self Driving"
+        SD1.Text = "Self Driving☆"
         SD1.UseVisualStyleBackColor = True
         ' 
         ' WD1
@@ -1109,7 +1129,7 @@ Partial Class Seven_to_Eight_Seaters
         WD1.Name = "WD1"
         WD1.Size = New Size(134, 29)
         WD1.TabIndex = 5
-        WD1.Text = "With Driver"
+        WD1.Text = "With Driver☆"
         WD1.TextAlign = ContentAlignment.TopCenter
         WD1.UseVisualStyleBackColor = True
         ' 
@@ -1457,7 +1477,6 @@ Partial Class Seven_to_Eight_Seaters
         Panel6.Controls.Add(PictureBox8)
         Panel6.Controls.Add(PictureBox9)
         Panel6.Controls.Add(PictureBox10)
-        Panel6.Controls.Add(PictureBox11)
         Panel6.Controls.Add(PictureBox12)
         Panel6.Controls.Add(Label84)
         Panel6.Controls.Add(Label85)
@@ -1465,6 +1484,26 @@ Partial Class Seven_to_Eight_Seaters
         Panel6.Name = "Panel6"
         Panel6.Size = New Size(780, 442)
         Panel6.TabIndex = 4
+        ' 
+        ' Label180
+        ' 
+        Label180.AutoSize = True
+        Label180.Font = New Font("Century", 9F, FontStyle.Underline)
+        Label180.Location = New Point(141, 65)
+        Label180.Name = "Label180"
+        Label180.Size = New Size(20, 18)
+        Label180.TabIndex = 14
+        Label180.Text = "N"
+        ' 
+        ' Label181
+        ' 
+        Label181.AutoSize = True
+        Label181.Font = New Font("Century", 9F, FontStyle.Bold)
+        Label181.Location = New Point(12, 65)
+        Label181.Name = "Label181"
+        Label181.Size = New Size(121, 18)
+        Label181.TabIndex = 13
+        Label181.Text = "Body Number:"
         ' 
         ' Label172
         ' 
@@ -1527,7 +1566,7 @@ Partial Class Seven_to_Eight_Seaters
         ' PictureBox9
         ' 
         PictureBox9.BorderStyle = BorderStyle.Fixed3D
-        PictureBox9.Location = New Point(519, 151)
+        PictureBox9.Location = New Point(386, 151)
         PictureBox9.Name = "PictureBox9"
         PictureBox9.Size = New Size(250, 135)
         PictureBox9.TabIndex = 5
@@ -1536,25 +1575,16 @@ Partial Class Seven_to_Eight_Seaters
         ' PictureBox10
         ' 
         PictureBox10.BorderStyle = BorderStyle.Fixed3D
-        PictureBox10.Location = New Point(263, 151)
+        PictureBox10.Location = New Point(130, 151)
         PictureBox10.Name = "PictureBox10"
         PictureBox10.Size = New Size(250, 135)
         PictureBox10.TabIndex = 4
         PictureBox10.TabStop = False
         ' 
-        ' PictureBox11
-        ' 
-        PictureBox11.BorderStyle = BorderStyle.Fixed3D
-        PictureBox11.Location = New Point(7, 151)
-        PictureBox11.Name = "PictureBox11"
-        PictureBox11.Size = New Size(250, 135)
-        PictureBox11.TabIndex = 3
-        PictureBox11.TabStop = False
-        ' 
         ' PictureBox12
         ' 
         PictureBox12.BorderStyle = BorderStyle.Fixed3D
-        PictureBox12.Location = New Point(263, 3)
+        PictureBox12.Location = New Point(263, 9)
         PictureBox12.Name = "PictureBox12"
         PictureBox12.Size = New Size(250, 135)
         PictureBox12.TabIndex = 2
@@ -1596,22 +1626,22 @@ Partial Class Seven_to_Eight_Seaters
         ' 
         ' C2
         ' 
-        C2.Font = New Font("Century", 9F, FontStyle.Bold)
-        C2.Location = New Point(1192, 568)
+        C2.Font = New Font("Century", 12F, FontStyle.Bold)
+        C2.Location = New Point(1161, 562)
         C2.Name = "C2"
-        C2.Size = New Size(94, 29)
+        C2.Size = New Size(125, 35)
         C2.TabIndex = 13
-        C2.Text = "Confirm"
+        C2.Text = "Confirm↪"
         C2.UseVisualStyleBackColor = True
         ' 
         ' B2
         ' 
-        B2.Font = New Font("Century", 9F, FontStyle.Bold)
-        B2.Location = New Point(6, 568)
+        B2.Font = New Font("Century", 12F, FontStyle.Bold)
+        B2.Location = New Point(6, 562)
         B2.Name = "B2"
-        B2.Size = New Size(94, 29)
+        B2.Size = New Size(125, 35)
         B2.TabIndex = 12
-        B2.Text = "Back"
+        B2.Text = "↩Back"
         B2.UseVisualStyleBackColor = True
         ' 
         ' Panel7
@@ -1727,7 +1757,7 @@ Partial Class Seven_to_Eight_Seaters
         SD2.Name = "SD2"
         SD2.Size = New Size(134, 29)
         SD2.TabIndex = 4
-        SD2.Text = "Self Driving"
+        SD2.Text = "Self Driving☆"
         SD2.UseVisualStyleBackColor = True
         ' 
         ' WD2
@@ -1737,7 +1767,7 @@ Partial Class Seven_to_Eight_Seaters
         WD2.Name = "WD2"
         WD2.Size = New Size(134, 29)
         WD2.TabIndex = 5
-        WD2.Text = "With Driver"
+        WD2.Text = "With Driver☆"
         WD2.TextAlign = ContentAlignment.TopCenter
         WD2.UseVisualStyleBackColor = True
         ' 
@@ -2085,7 +2115,6 @@ Partial Class Seven_to_Eight_Seaters
         Panel9.Controls.Add(PictureBox14)
         Panel9.Controls.Add(PictureBox15)
         Panel9.Controls.Add(PictureBox16)
-        Panel9.Controls.Add(PictureBox17)
         Panel9.Controls.Add(PictureBox18)
         Panel9.Controls.Add(Label126)
         Panel9.Controls.Add(Label127)
@@ -2093,6 +2122,26 @@ Partial Class Seven_to_Eight_Seaters
         Panel9.Name = "Panel9"
         Panel9.Size = New Size(780, 442)
         Panel9.TabIndex = 9
+        ' 
+        ' Label182
+        ' 
+        Label182.AutoSize = True
+        Label182.Font = New Font("Century", 9F, FontStyle.Underline)
+        Label182.Location = New Point(141, 65)
+        Label182.Name = "Label182"
+        Label182.Size = New Size(20, 18)
+        Label182.TabIndex = 14
+        Label182.Text = "N"
+        ' 
+        ' Label183
+        ' 
+        Label183.AutoSize = True
+        Label183.Font = New Font("Century", 9F, FontStyle.Bold)
+        Label183.Location = New Point(12, 65)
+        Label183.Name = "Label183"
+        Label183.Size = New Size(121, 18)
+        Label183.TabIndex = 13
+        Label183.Text = "Body Number:"
         ' 
         ' Label174
         ' 
@@ -2155,7 +2204,7 @@ Partial Class Seven_to_Eight_Seaters
         ' PictureBox15
         ' 
         PictureBox15.BorderStyle = BorderStyle.Fixed3D
-        PictureBox15.Location = New Point(519, 151)
+        PictureBox15.Location = New Point(386, 151)
         PictureBox15.Name = "PictureBox15"
         PictureBox15.Size = New Size(250, 135)
         PictureBox15.TabIndex = 5
@@ -2164,29 +2213,11 @@ Partial Class Seven_to_Eight_Seaters
         ' PictureBox16
         ' 
         PictureBox16.BorderStyle = BorderStyle.Fixed3D
-        PictureBox16.Location = New Point(263, 151)
+        PictureBox16.Location = New Point(130, 151)
         PictureBox16.Name = "PictureBox16"
         PictureBox16.Size = New Size(250, 135)
         PictureBox16.TabIndex = 4
         PictureBox16.TabStop = False
-        ' 
-        ' PictureBox17
-        ' 
-        PictureBox17.BorderStyle = BorderStyle.Fixed3D
-        PictureBox17.Location = New Point(7, 151)
-        PictureBox17.Name = "PictureBox17"
-        PictureBox17.Size = New Size(250, 135)
-        PictureBox17.TabIndex = 3
-        PictureBox17.TabStop = False
-        ' 
-        ' PictureBox18
-        ' 
-        PictureBox18.BorderStyle = BorderStyle.Fixed3D
-        PictureBox18.Location = New Point(263, 3)
-        PictureBox18.Name = "PictureBox18"
-        PictureBox18.Size = New Size(250, 135)
-        PictureBox18.TabIndex = 2
-        PictureBox18.TabStop = False
         ' 
         ' Label126
         ' 
@@ -2224,22 +2255,22 @@ Partial Class Seven_to_Eight_Seaters
         ' 
         ' C3
         ' 
-        C3.Font = New Font("Century", 9F, FontStyle.Bold)
-        C3.Location = New Point(1192, 568)
+        C3.Font = New Font("Century", 12F, FontStyle.Bold)
+        C3.Location = New Point(1161, 563)
         C3.Name = "C3"
-        C3.Size = New Size(94, 29)
+        C3.Size = New Size(125, 35)
         C3.TabIndex = 13
-        C3.Text = "Confirm"
+        C3.Text = "Confirm↪"
         C3.UseVisualStyleBackColor = True
         ' 
         ' B3
         ' 
-        B3.Font = New Font("Century", 9F, FontStyle.Bold)
-        B3.Location = New Point(6, 568)
+        B3.Font = New Font("Century", 12F, FontStyle.Bold)
+        B3.Location = New Point(6, 563)
         B3.Name = "B3"
-        B3.Size = New Size(94, 29)
+        B3.Size = New Size(125, 35)
         B3.TabIndex = 12
-        B3.Text = "Back"
+        B3.Text = "↩Back"
         B3.UseVisualStyleBackColor = True
         ' 
         ' Panel10
@@ -2355,7 +2386,7 @@ Partial Class Seven_to_Eight_Seaters
         SD3.Name = "SD3"
         SD3.Size = New Size(134, 29)
         SD3.TabIndex = 4
-        SD3.Text = "Self Driving"
+        SD3.Text = "Self Driving☆"
         SD3.UseVisualStyleBackColor = True
         ' 
         ' WD3
@@ -2365,7 +2396,7 @@ Partial Class Seven_to_Eight_Seaters
         WD3.Name = "WD3"
         WD3.Size = New Size(134, 29)
         WD3.TabIndex = 5
-        WD3.Text = "With Driver"
+        WD3.Text = "With Driver☆"
         WD3.TextAlign = ContentAlignment.TopCenter
         WD3.UseVisualStyleBackColor = True
         ' 
@@ -2713,7 +2744,6 @@ Partial Class Seven_to_Eight_Seaters
         Panel12.Controls.Add(PictureBox20)
         Panel12.Controls.Add(PictureBox21)
         Panel12.Controls.Add(PictureBox22)
-        Panel12.Controls.Add(PictureBox23)
         Panel12.Controls.Add(PictureBox24)
         Panel12.Controls.Add(Label168)
         Panel12.Controls.Add(Label169)
@@ -2721,6 +2751,26 @@ Partial Class Seven_to_Eight_Seaters
         Panel12.Name = "Panel12"
         Panel12.Size = New Size(780, 442)
         Panel12.TabIndex = 9
+        ' 
+        ' Label184
+        ' 
+        Label184.AutoSize = True
+        Label184.Font = New Font("Century", 9F, FontStyle.Underline)
+        Label184.Location = New Point(141, 65)
+        Label184.Name = "Label184"
+        Label184.Size = New Size(20, 18)
+        Label184.TabIndex = 14
+        Label184.Text = "N"
+        ' 
+        ' Label185
+        ' 
+        Label185.AutoSize = True
+        Label185.Font = New Font("Century", 9F, FontStyle.Bold)
+        Label185.Location = New Point(12, 65)
+        Label185.Name = "Label185"
+        Label185.Size = New Size(121, 18)
+        Label185.TabIndex = 13
+        Label185.Text = "Body Number:"
         ' 
         ' Label176
         ' 
@@ -2783,7 +2833,7 @@ Partial Class Seven_to_Eight_Seaters
         ' PictureBox21
         ' 
         PictureBox21.BorderStyle = BorderStyle.Fixed3D
-        PictureBox21.Location = New Point(519, 151)
+        PictureBox21.Location = New Point(386, 151)
         PictureBox21.Name = "PictureBox21"
         PictureBox21.Size = New Size(250, 135)
         PictureBox21.TabIndex = 5
@@ -2792,25 +2842,16 @@ Partial Class Seven_to_Eight_Seaters
         ' PictureBox22
         ' 
         PictureBox22.BorderStyle = BorderStyle.Fixed3D
-        PictureBox22.Location = New Point(263, 151)
+        PictureBox22.Location = New Point(130, 151)
         PictureBox22.Name = "PictureBox22"
         PictureBox22.Size = New Size(250, 135)
         PictureBox22.TabIndex = 4
         PictureBox22.TabStop = False
         ' 
-        ' PictureBox23
-        ' 
-        PictureBox23.BorderStyle = BorderStyle.Fixed3D
-        PictureBox23.Location = New Point(7, 151)
-        PictureBox23.Name = "PictureBox23"
-        PictureBox23.Size = New Size(250, 135)
-        PictureBox23.TabIndex = 3
-        PictureBox23.TabStop = False
-        ' 
         ' PictureBox24
         ' 
         PictureBox24.BorderStyle = BorderStyle.Fixed3D
-        PictureBox24.Location = New Point(263, 3)
+        PictureBox24.Location = New Point(263, 9)
         PictureBox24.Name = "PictureBox24"
         PictureBox24.Size = New Size(250, 135)
         PictureBox24.TabIndex = 2
@@ -2839,6 +2880,7 @@ Partial Class Seven_to_Eight_Seaters
         ' Label1
         ' 
         Label1.AutoSize = True
+        Label1.BackColor = Color.Transparent
         Label1.Font = New Font("Courier New", 10.2F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
         Label1.Location = New Point(316, 9)
         Label1.Name = "Label1"
@@ -2847,90 +2889,20 @@ Partial Class Seven_to_Eight_Seaters
         Label1.Text = "The available vehicle options inlcude seven- and eight-seater models." & vbCrLf
         Label1.TextAlign = ContentAlignment.TopCenter
         ' 
-        ' Label179
+        ' PictureBox18
         ' 
-        Label179.AutoSize = True
-        Label179.Font = New Font("Century", 9F, FontStyle.Underline)
-        Label179.Location = New Point(141, 65)
-        Label179.Name = "Label179"
-        Label179.Size = New Size(20, 18)
-        Label179.TabIndex = 14
-        Label179.Text = "N"
-        ' 
-        ' Label178
-        ' 
-        Label178.AutoSize = True
-        Label178.Font = New Font("Century", 9F, FontStyle.Bold)
-        Label178.Location = New Point(12, 65)
-        Label178.Name = "Label178"
-        Label178.Size = New Size(121, 18)
-        Label178.TabIndex = 13
-        Label178.Text = "Body Number:"
-        ' 
-        ' Label180
-        ' 
-        Label180.AutoSize = True
-        Label180.Font = New Font("Century", 9F, FontStyle.Underline)
-        Label180.Location = New Point(141, 65)
-        Label180.Name = "Label180"
-        Label180.Size = New Size(20, 18)
-        Label180.TabIndex = 14
-        Label180.Text = "N"
-        ' 
-        ' Label181
-        ' 
-        Label181.AutoSize = True
-        Label181.Font = New Font("Century", 9F, FontStyle.Bold)
-        Label181.Location = New Point(12, 65)
-        Label181.Name = "Label181"
-        Label181.Size = New Size(121, 18)
-        Label181.TabIndex = 13
-        Label181.Text = "Body Number:"
-        ' 
-        ' Label182
-        ' 
-        Label182.AutoSize = True
-        Label182.Font = New Font("Century", 9F, FontStyle.Underline)
-        Label182.Location = New Point(141, 65)
-        Label182.Name = "Label182"
-        Label182.Size = New Size(20, 18)
-        Label182.TabIndex = 14
-        Label182.Text = "N"
-        ' 
-        ' Label183
-        ' 
-        Label183.AutoSize = True
-        Label183.Font = New Font("Century", 9F, FontStyle.Bold)
-        Label183.Location = New Point(12, 65)
-        Label183.Name = "Label183"
-        Label183.Size = New Size(121, 18)
-        Label183.TabIndex = 13
-        Label183.Text = "Body Number:"
-        ' 
-        ' Label184
-        ' 
-        Label184.AutoSize = True
-        Label184.Font = New Font("Century", 9F, FontStyle.Underline)
-        Label184.Location = New Point(141, 65)
-        Label184.Name = "Label184"
-        Label184.Size = New Size(20, 18)
-        Label184.TabIndex = 14
-        Label184.Text = "N"
-        ' 
-        ' Label185
-        ' 
-        Label185.AutoSize = True
-        Label185.Font = New Font("Century", 9F, FontStyle.Bold)
-        Label185.Location = New Point(12, 65)
-        Label185.Name = "Label185"
-        Label185.Size = New Size(121, 18)
-        Label185.TabIndex = 13
-        Label185.Text = "Body Number:"
+        PictureBox18.BorderStyle = BorderStyle.Fixed3D
+        PictureBox18.Location = New Point(263, 10)
+        PictureBox18.Name = "PictureBox18"
+        PictureBox18.Size = New Size(250, 135)
+        PictureBox18.TabIndex = 2
+        PictureBox18.TabStop = False
         ' 
         ' Seven_to_Eight_Seaters
         ' 
         AutoScaleDimensions = New SizeF(8F, 20F)
         AutoScaleMode = AutoScaleMode.Font
+        BackgroundImage = CType(resources.GetObject("$this.BackgroundImage"), Image)
         ClientSize = New Size(1326, 690)
         Controls.Add(Label1)
         Controls.Add(TabControl1)
@@ -2948,7 +2920,6 @@ Partial Class Seven_to_Eight_Seaters
         CType(PictureBox5, ComponentModel.ISupportInitialize).EndInit()
         CType(PictureBox4, ComponentModel.ISupportInitialize).EndInit()
         CType(PictureBox3, ComponentModel.ISupportInitialize).EndInit()
-        CType(PictureBox2, ComponentModel.ISupportInitialize).EndInit()
         CType(PictureBox1, ComponentModel.ISupportInitialize).EndInit()
         TabPage2.ResumeLayout(False)
         Panel4.ResumeLayout(False)
@@ -2961,7 +2932,6 @@ Partial Class Seven_to_Eight_Seaters
         CType(PictureBox8, ComponentModel.ISupportInitialize).EndInit()
         CType(PictureBox9, ComponentModel.ISupportInitialize).EndInit()
         CType(PictureBox10, ComponentModel.ISupportInitialize).EndInit()
-        CType(PictureBox11, ComponentModel.ISupportInitialize).EndInit()
         CType(PictureBox12, ComponentModel.ISupportInitialize).EndInit()
         TabPage3.ResumeLayout(False)
         Panel7.ResumeLayout(False)
@@ -2974,8 +2944,6 @@ Partial Class Seven_to_Eight_Seaters
         CType(PictureBox14, ComponentModel.ISupportInitialize).EndInit()
         CType(PictureBox15, ComponentModel.ISupportInitialize).EndInit()
         CType(PictureBox16, ComponentModel.ISupportInitialize).EndInit()
-        CType(PictureBox17, ComponentModel.ISupportInitialize).EndInit()
-        CType(PictureBox18, ComponentModel.ISupportInitialize).EndInit()
         TabPage4.ResumeLayout(False)
         Panel10.ResumeLayout(False)
         Panel10.PerformLayout()
@@ -2987,8 +2955,8 @@ Partial Class Seven_to_Eight_Seaters
         CType(PictureBox20, ComponentModel.ISupportInitialize).EndInit()
         CType(PictureBox21, ComponentModel.ISupportInitialize).EndInit()
         CType(PictureBox22, ComponentModel.ISupportInitialize).EndInit()
-        CType(PictureBox23, ComponentModel.ISupportInitialize).EndInit()
         CType(PictureBox24, ComponentModel.ISupportInitialize).EndInit()
+        CType(PictureBox18, ComponentModel.ISupportInitialize).EndInit()
         ResumeLayout(False)
         PerformLayout()
     End Sub
@@ -3046,7 +3014,6 @@ Partial Class Seven_to_Eight_Seaters
     Friend WithEvents PictureBox5 As PictureBox
     Friend WithEvents PictureBox4 As PictureBox
     Friend WithEvents PictureBox3 As PictureBox
-    Friend WithEvents PictureBox2 As PictureBox
     Friend WithEvents PictureBox1 As PictureBox
     Friend WithEvents Label3 As Label
     Friend WithEvents Label2 As Label
@@ -3102,7 +3069,6 @@ Partial Class Seven_to_Eight_Seaters
     Friend WithEvents PictureBox8 As PictureBox
     Friend WithEvents PictureBox9 As PictureBox
     Friend WithEvents PictureBox10 As PictureBox
-    Friend WithEvents PictureBox11 As PictureBox
     Friend WithEvents PictureBox12 As PictureBox
     Friend WithEvents Label84 As Label
     Friend WithEvents Label85 As Label
@@ -3158,8 +3124,6 @@ Partial Class Seven_to_Eight_Seaters
     Friend WithEvents PictureBox14 As PictureBox
     Friend WithEvents PictureBox15 As PictureBox
     Friend WithEvents PictureBox16 As PictureBox
-    Friend WithEvents PictureBox17 As PictureBox
-    Friend WithEvents PictureBox18 As PictureBox
     Friend WithEvents Label126 As Label
     Friend WithEvents Label127 As Label
     Friend WithEvents TabPage4 As TabPage
@@ -3214,7 +3178,6 @@ Partial Class Seven_to_Eight_Seaters
     Friend WithEvents PictureBox20 As PictureBox
     Friend WithEvents PictureBox21 As PictureBox
     Friend WithEvents PictureBox22 As PictureBox
-    Friend WithEvents PictureBox23 As PictureBox
     Friend WithEvents PictureBox24 As PictureBox
     Friend WithEvents Label168 As Label
     Friend WithEvents Label169 As Label
@@ -3235,4 +3198,5 @@ Partial Class Seven_to_Eight_Seaters
     Friend WithEvents Label183 As Label
     Friend WithEvents Label184 As Label
     Friend WithEvents Label185 As Label
+    Friend WithEvents PictureBox18 As PictureBox
 End Class
