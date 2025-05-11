@@ -12,19 +12,20 @@ Public Class BookingForm
             'Checks if schedule thats gonna be input is not between existing dates and divided to by Unique CarID
             Dim query As String = "SELECT COUNT(*) FROM Booking WHERE CarID = @CarID AND @NewStartDate <= EndBookDate AND @NewEndDate >= StartBookDate"
             con.Open()
-            Using cmd As New SqlCommand(query, con)
-                cmd.Parameters.AddWithValue("@CarID", TxtCarID.Text)
+            Dim cmd As New SqlCommand(query, con)
+            cmd.Parameters.AddWithValue("@CarID", TxtCarID.Text)
                 cmd.Parameters.AddWithValue("@NewStartDate", FromDOB.Value.Date)
                 cmd.Parameters.AddWithValue("@NewEndDate", ToDOB.Value.Date)
                 Dim count As Integer = Convert.ToInt32(cmd.ExecuteScalar())
-                If count > 0 Then
-                    MessageBox.Show("Schedule to This Has Been Booked", "INFO", MessageBoxButtons.OK, MessageBoxIcon.Warning)
-                    Return
-                End If
-            End Using
+            If count > 0 Then
+                MessageBox.Show("Schedule to This Has Been Booked", "INFO", MessageBoxButtons.OK, MessageBoxIcon.Warning)
+                con.Close()
+                Return
+            End If
             'Shows Payment Slip
             PaymentDetailSlip.Show()
             Me.Hide()
+            con.Close()
         End If
     End Sub
     'Loads The Whole Column

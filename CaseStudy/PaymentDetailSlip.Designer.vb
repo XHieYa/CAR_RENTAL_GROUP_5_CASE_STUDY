@@ -489,11 +489,11 @@ Partial Class PaymentDetailSlip
         ' 
         txtDOB.BackColor = Color.FloralWhite
         txtDOB.Font = New Font("Century Gothic", 12F)
-        txtDOB.Location = New Point(126, 91)
+        txtDOB.Location = New Point(126, 172)
         txtDOB.Multiline = True
         txtDOB.Name = "txtDOB"
         txtDOB.ReadOnly = True
-        txtDOB.Size = New Size(292, 33)
+        txtDOB.Size = New Size(100, 33)
         txtDOB.TabIndex = 14
         ' 
         ' txtAge
@@ -533,11 +533,11 @@ Partial Class PaymentDetailSlip
         ' 
         txtUsername.BackColor = Color.FloralWhite
         txtUsername.Font = New Font("Century Gothic", 12F)
-        txtUsername.Location = New Point(126, 172)
+        txtUsername.Location = New Point(126, 90)
         txtUsername.Multiline = True
         txtUsername.Name = "txtUsername"
         txtUsername.ReadOnly = True
-        txtUsername.Size = New Size(100, 33)
+        txtUsername.Size = New Size(292, 33)
         txtUsername.TabIndex = 4
         ' 
         ' Label3
