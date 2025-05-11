@@ -42,6 +42,7 @@ Partial Class PaymentDetailSlip
         Label8 = New Label()
         Label7 = New Label()
         GroupBox4 = New GroupBox()
+        Label17 = New Label()
         Label15 = New Label()
         BtnCalculate = New Button()
         CheckBox1 = New CheckBox()
@@ -64,7 +65,6 @@ Partial Class PaymentDetailSlip
         Label3 = New Label()
         Label2 = New Label()
         Label1 = New Label()
-        Label17 = New Label()
         PictureBox1 = New PictureBox()
         PictureBox5 = New PictureBox()
         Label19 = New Label()
@@ -298,6 +298,16 @@ Partial Class PaymentDetailSlip
         GroupBox4.TabIndex = 3
         GroupBox4.TabStop = False
         GroupBox4.Text = "Payment Method"
+        ' 
+        ' Label17
+        ' 
+        Label17.AutoSize = True
+        Label17.Font = New Font("Century", 7.8F, FontStyle.Bold Or FontStyle.Italic, GraphicsUnit.Point, CByte(0))
+        Label17.Location = New Point(30, 277)
+        Label17.Name = "Label17"
+        Label17.Size = New Size(252, 32)
+        Label17.TabIndex = 30
+        Label17.Text = "✦If your payment doesn't include a " & vbCrLf & "driver, leave this box unchecked.✦"
         ' 
         ' Label15
         ' 
@@ -536,16 +546,6 @@ Partial Class PaymentDetailSlip
         Label1.TabIndex = 0
         Label1.Text = "Full Name:"
         ' 
-        ' Label17
-        ' 
-        Label17.AutoSize = True
-        Label17.Font = New Font("Century", 7.8F, FontStyle.Bold Or FontStyle.Italic, GraphicsUnit.Point, CByte(0))
-        Label17.Location = New Point(30, 277)
-        Label17.Name = "Label17"
-        Label17.Size = New Size(252, 32)
-        Label17.TabIndex = 30
-        Label17.Text = "✦If your payment doesn't include a " & vbCrLf & "driver, leave this box unchecked.✦"
-        ' 
         ' PictureBox1
         ' 
         PictureBox1.Image = CType(resources.GetObject("PictureBox1.Image"), Image)
@@ -610,7 +610,7 @@ Partial Class PaymentDetailSlip
         Controls.Add(GroupBox2)
         Controls.Add(GroupBox3)
         Name = "PaymentDetailSlip"
-        Text = "Details Receipt"
+        Text = "🚘Details ☆ Receipt── .✦"
         GroupBox3.ResumeLayout(False)
         GroupBox3.PerformLayout()
         GroupBox4.ResumeLayout(False)

@@ -358,7 +358,7 @@ Partial Class BookingForm
         Controls.Add(BtnConfirm)
         Margin = New Padding(3, 4, 3, 4)
         Name = "BookingForm"
-        Text = "Booking"
+        Text = "🚘Booking── .✦"
         GroupBox1.ResumeLayout(False)
         GroupBox1.PerformLayout()
         CType(DGVSchedules, ComponentModel.ISupportInitialize).EndInit()

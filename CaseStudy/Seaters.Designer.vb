@@ -51,8 +51,7 @@ Partial Class Seaters
         PictureBox15 = New PictureBox()
         PictureBox13 = New PictureBox()
         PictureBox14 = New PictureBox()
-        Label6 = New Label()
-        lblRecord = New Label()
+        Button2 = New Button()
         Panel1.SuspendLayout()
         CType(PictureBox7, ComponentModel.ISupportInitialize).BeginInit()
         CType(PictureBox6, ComponentModel.ISupportInitialize).BeginInit()
@@ -77,8 +76,9 @@ Partial Class Seaters
         ' Label1
         ' 
         Label1.AutoSize = True
+        Label1.BackColor = Color.Transparent
         Label1.Font = New Font("Courier New", 10.2F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
-        Label1.Location = New Point(86, 19)
+        Label1.Location = New Point(89, 20)
         Label1.Name = "Label1"
         Label1.Size = New Size(1149, 20)
         Label1.TabIndex = 0
@@ -87,6 +87,7 @@ Partial Class Seaters
         ' 
         ' Panel1
         ' 
+        Panel1.BackgroundImage = CType(resources.GetObject("Panel1.BackgroundImage"), Image)
         Panel1.BorderStyle = BorderStyle.Fixed3D
         Panel1.Controls.Add(Label2)
         Panel1.Controls.Add(FourFive)
@@ -102,6 +103,7 @@ Partial Class Seaters
         ' Label2
         ' 
         Label2.AutoSize = True
+        Label2.BackColor = Color.Transparent
         Label2.Font = New Font("Stencil", 18F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
         Label2.Location = New Point(491, 75)
         Label2.Name = "Label2"
@@ -111,16 +113,18 @@ Partial Class Seaters
         ' 
         ' FourFive
         ' 
+        FourFive.BackColor = Color.PaleGoldenrod
         FourFive.Font = New Font("Century", 7.8F, FontStyle.Bold)
         FourFive.Location = New Point(501, 251)
         FourFive.Name = "FourFive"
         FourFive.Size = New Size(130, 29)
         FourFive.TabIndex = 4
-        FourFive.Text = "Vehicle Details"
-        FourFive.UseVisualStyleBackColor = True
+        FourFive.Text = "Vehicle Details☆"
+        FourFive.UseVisualStyleBackColor = False
         ' 
         ' PictureBox7
         ' 
+        PictureBox7.BackColor = Color.Transparent
         PictureBox7.BorderStyle = BorderStyle.Fixed3D
         PictureBox7.Image = CType(resources.GetObject("PictureBox7.Image"), Image)
         PictureBox7.Location = New Point(255, 149)
@@ -132,6 +136,7 @@ Partial Class Seaters
         ' 
         ' PictureBox6
         ' 
+        PictureBox6.BackColor = Color.Transparent
         PictureBox6.BorderStyle = BorderStyle.Fixed3D
         PictureBox6.Image = CType(resources.GetObject("PictureBox6.Image"), Image)
         PictureBox6.Location = New Point(13, 149)
@@ -143,6 +148,7 @@ Partial Class Seaters
         ' 
         ' PictureBox5
         ' 
+        PictureBox5.BackColor = Color.Transparent
         PictureBox5.BorderStyle = BorderStyle.Fixed3D
         PictureBox5.Image = CType(resources.GetObject("PictureBox5.Image"), Image)
         PictureBox5.Location = New Point(255, 12)
@@ -154,6 +160,7 @@ Partial Class Seaters
         ' 
         ' PictureBox1
         ' 
+        PictureBox1.BackColor = Color.Transparent
         PictureBox1.BorderStyle = BorderStyle.Fixed3D
         PictureBox1.Image = CType(resources.GetObject("PictureBox1.Image"), Image)
         PictureBox1.Location = New Point(13, 12)
@@ -165,6 +172,7 @@ Partial Class Seaters
         ' 
         ' Panel2
         ' 
+        Panel2.BackgroundImage = CType(resources.GetObject("Panel2.BackgroundImage"), Image)
         Panel2.BorderStyle = BorderStyle.Fixed3D
         Panel2.Controls.Add(Label4)
         Panel2.Controls.Add(PictureBox12)
@@ -179,6 +187,7 @@ Partial Class Seaters
         ' Label4
         ' 
         Label4.AutoSize = True
+        Label4.BackColor = Color.Transparent
         Label4.Font = New Font("Stencil", 18F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
         Label4.Location = New Point(491, 75)
         Label4.Name = "Label4"
@@ -188,6 +197,7 @@ Partial Class Seaters
         ' 
         ' PictureBox12
         ' 
+        PictureBox12.BackColor = Color.Transparent
         PictureBox12.BorderStyle = BorderStyle.Fixed3D
         PictureBox12.Image = CType(resources.GetObject("PictureBox12.Image"), Image)
         PictureBox12.Location = New Point(13, 12)
@@ -199,16 +209,18 @@ Partial Class Seaters
         ' 
         ' TenFifteen
         ' 
+        TenFifteen.BackColor = Color.PaleGoldenrod
         TenFifteen.Font = New Font("Century", 7.8F, FontStyle.Bold)
         TenFifteen.Location = New Point(501, 251)
         TenFifteen.Name = "TenFifteen"
         TenFifteen.Size = New Size(130, 29)
         TenFifteen.TabIndex = 16
-        TenFifteen.Text = "Vehicle Details"
-        TenFifteen.UseVisualStyleBackColor = True
+        TenFifteen.Text = "Vehicle Details☆"
+        TenFifteen.UseVisualStyleBackColor = False
         ' 
         ' PictureBox11
         ' 
+        PictureBox11.BackColor = Color.Transparent
         PictureBox11.BorderStyle = BorderStyle.Fixed3D
         PictureBox11.Image = CType(resources.GetObject("PictureBox11.Image"), Image)
         PictureBox11.Location = New Point(255, 12)
@@ -220,6 +232,7 @@ Partial Class Seaters
         ' 
         ' PictureBox10
         ' 
+        PictureBox10.BackColor = Color.Transparent
         PictureBox10.BorderStyle = BorderStyle.Fixed3D
         PictureBox10.Image = CType(resources.GetObject("PictureBox10.Image"), Image)
         PictureBox10.Location = New Point(135, 149)
@@ -231,6 +244,7 @@ Partial Class Seaters
         ' 
         ' Panel3
         ' 
+        Panel3.BackgroundImage = CType(resources.GetObject("Panel3.BackgroundImage"), Image)
         Panel3.BorderStyle = BorderStyle.Fixed3D
         Panel3.Controls.Add(Label3)
         Panel3.Controls.Add(PictureBox8)
@@ -246,6 +260,7 @@ Partial Class Seaters
         ' Label3
         ' 
         Label3.AutoSize = True
+        Label3.BackColor = Color.Transparent
         Label3.Font = New Font("Stencil", 18F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
         Label3.ForeColor = SystemColors.ControlText
         Label3.Location = New Point(491, 75)
@@ -256,6 +271,7 @@ Partial Class Seaters
         ' 
         ' PictureBox8
         ' 
+        PictureBox8.BackColor = Color.Transparent
         PictureBox8.BorderStyle = BorderStyle.Fixed3D
         PictureBox8.Image = CType(resources.GetObject("PictureBox8.Image"), Image)
         PictureBox8.Location = New Point(11, 12)
@@ -267,16 +283,18 @@ Partial Class Seaters
         ' 
         ' SevenEight
         ' 
+        SevenEight.BackColor = Color.PaleGoldenrod
         SevenEight.Font = New Font("Century", 7.8F, FontStyle.Bold)
         SevenEight.Location = New Point(499, 251)
         SevenEight.Name = "SevenEight"
         SevenEight.Size = New Size(130, 29)
         SevenEight.TabIndex = 10
-        SevenEight.Text = "Vehicle Details"
-        SevenEight.UseVisualStyleBackColor = True
+        SevenEight.Text = "Vehicle Details☆"
+        SevenEight.UseVisualStyleBackColor = False
         ' 
         ' PictureBox4
         ' 
+        PictureBox4.BackColor = Color.Transparent
         PictureBox4.BorderStyle = BorderStyle.Fixed3D
         PictureBox4.Image = CType(resources.GetObject("PictureBox4.Image"), Image)
         PictureBox4.Location = New Point(254, 12)
@@ -288,6 +306,7 @@ Partial Class Seaters
         ' 
         ' PictureBox2
         ' 
+        PictureBox2.BackColor = Color.Transparent
         PictureBox2.BorderStyle = BorderStyle.Fixed3D
         PictureBox2.Image = CType(resources.GetObject("PictureBox2.Image"), Image)
         PictureBox2.Location = New Point(254, 149)
@@ -299,6 +318,7 @@ Partial Class Seaters
         ' 
         ' PictureBox3
         ' 
+        PictureBox3.BackColor = Color.Transparent
         PictureBox3.BorderStyle = BorderStyle.Fixed3D
         PictureBox3.Image = CType(resources.GetObject("PictureBox3.Image"), Image)
         PictureBox3.Location = New Point(11, 149)
@@ -310,6 +330,7 @@ Partial Class Seaters
         ' 
         ' Panel4
         ' 
+        Panel4.BackgroundImage = CType(resources.GetObject("Panel4.BackgroundImage"), Image)
         Panel4.BorderStyle = BorderStyle.Fixed3D
         Panel4.Controls.Add(Label5)
         Panel4.Controls.Add(PictureBox16)
@@ -325,6 +346,7 @@ Partial Class Seaters
         ' Label5
         ' 
         Label5.AutoSize = True
+        Label5.BackColor = Color.Transparent
         Label5.Font = New Font("Stencil", 18F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
         Label5.Location = New Point(491, 112)
         Label5.Name = "Label5"
@@ -334,6 +356,7 @@ Partial Class Seaters
         ' 
         ' PictureBox16
         ' 
+        PictureBox16.BackColor = Color.Transparent
         PictureBox16.BorderStyle = BorderStyle.Fixed3D
         PictureBox16.Image = CType(resources.GetObject("PictureBox16.Image"), Image)
         PictureBox16.Location = New Point(11, 12)
@@ -345,17 +368,19 @@ Partial Class Seaters
         ' 
         ' CampingCars
         ' 
+        CampingCars.BackColor = Color.PaleGoldenrod
         CampingCars.Enabled = False
         CampingCars.Font = New Font("Century", 7.8F, FontStyle.Bold)
         CampingCars.Location = New Point(499, 251)
         CampingCars.Name = "CampingCars"
         CampingCars.Size = New Size(130, 29)
         CampingCars.TabIndex = 22
-        CampingCars.Text = "Vehicle Details"
+        CampingCars.Text = "Vehicle Details☆"
         CampingCars.UseVisualStyleBackColor = False
         ' 
         ' PictureBox15
         ' 
+        PictureBox15.BackColor = Color.Transparent
         PictureBox15.BorderStyle = BorderStyle.Fixed3D
         PictureBox15.Image = CType(resources.GetObject("PictureBox15.Image"), Image)
         PictureBox15.Location = New Point(254, 12)
@@ -367,6 +392,7 @@ Partial Class Seaters
         ' 
         ' PictureBox13
         ' 
+        PictureBox13.BackColor = Color.Transparent
         PictureBox13.BorderStyle = BorderStyle.Fixed3D
         PictureBox13.Image = CType(resources.GetObject("PictureBox13.Image"), Image)
         PictureBox13.Location = New Point(254, 149)
@@ -378,6 +404,7 @@ Partial Class Seaters
         ' 
         ' PictureBox14
         ' 
+        PictureBox14.BackColor = Color.Transparent
         PictureBox14.BorderStyle = BorderStyle.Fixed3D
         PictureBox14.Image = CType(resources.GetObject("PictureBox14.Image"), Image)
         PictureBox14.Location = New Point(11, 149)
@@ -387,41 +414,32 @@ Partial Class Seaters
         PictureBox14.TabIndex = 20
         PictureBox14.TabStop = False
         ' 
-        ' Label6
+        ' Button2
         ' 
-        Label6.AutoSize = True
-        Label6.Font = New Font("Courier New", 10.2F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
-        Label6.Location = New Point(1143, 19)
-        Label6.Name = "Label6"
-        Label6.Size = New Size(79, 20)
-        Label6.TabIndex = 4
-        Label6.Text = "Record:"
-        Label6.TextAlign = ContentAlignment.TopCenter
-        ' 
-        ' lblRecord
-        ' 
-        lblRecord.AutoSize = True
-        lblRecord.Font = New Font("Courier New", 10.2F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
-        lblRecord.Location = New Point(1216, 19)
-        lblRecord.Name = "lblRecord"
-        lblRecord.Size = New Size(0, 20)
-        lblRecord.TabIndex = 5
-        lblRecord.TextAlign = ContentAlignment.TopCenter
+        Button2.BackColor = Color.PaleGoldenrod
+        Button2.Font = New Font("Century", 12F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        Button2.Location = New Point(22, 651)
+        Button2.Margin = New Padding(3, 4, 3, 4)
+        Button2.Name = "Button2"
+        Button2.Size = New Size(125, 35)
+        Button2.TabIndex = 20
+        Button2.Text = "↩Back"
+        Button2.UseVisualStyleBackColor = False
         ' 
         ' Seaters
         ' 
         AutoScaleDimensions = New SizeF(8F, 20F)
         AutoScaleMode = AutoScaleMode.Font
+        BackgroundImage = CType(resources.GetObject("$this.BackgroundImage"), Image)
         ClientSize = New Size(1326, 691)
-        Controls.Add(lblRecord)
-        Controls.Add(Label6)
+        Controls.Add(Button2)
         Controls.Add(Panel4)
         Controls.Add(Panel3)
         Controls.Add(Panel2)
         Controls.Add(Panel1)
         Controls.Add(Label1)
         Name = "Seaters"
-        Text = "Seaters"
+        Text = "🚘Seaters── .✦"
         Panel1.ResumeLayout(False)
         Panel1.PerformLayout()
         CType(PictureBox7, ComponentModel.ISupportInitialize).EndInit()
@@ -477,6 +495,5 @@ Partial Class Seaters
     Friend WithEvents PictureBox15 As PictureBox
     Friend WithEvents PictureBox13 As PictureBox
     Friend WithEvents PictureBox14 As PictureBox
-    Friend WithEvents Label6 As Label
-    Friend WithEvents lblRecord As Label
+    Friend WithEvents Button2 As Button
 End Class
