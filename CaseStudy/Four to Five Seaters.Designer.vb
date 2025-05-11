@@ -309,6 +309,7 @@ Partial Class Four_to_Five_Seaters
         ' Label1
         ' 
         Label1.AutoSize = True
+        Label1.BackColor = Color.Transparent
         Label1.Font = New Font("Courier New", 10.2F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
         Label1.Location = New Point(315, 9)
         Label1.Name = "Label1"
@@ -332,6 +333,7 @@ Partial Class Four_to_Five_Seaters
         ' 
         ' TabPage1
         ' 
+        TabPage1.BackgroundImage = CType(resources.GetObject("TabPage1.BackgroundImage"), Image)
         TabPage1.Controls.Add(C)
         TabPage1.Controls.Add(B)
         TabPage1.Controls.Add(Panel3)
@@ -368,6 +370,7 @@ Partial Class Four_to_Five_Seaters
         ' 
         ' Panel3
         ' 
+        Panel3.BackgroundImage = CType(resources.GetObject("Panel3.BackgroundImage"), Image)
         Panel3.BorderStyle = BorderStyle.Fixed3D
         Panel3.Controls.Add(Label42)
         Panel3.Controls.Add(Label41)
@@ -795,6 +798,7 @@ Partial Class Four_to_Five_Seaters
         ' 
         ' Panel2
         ' 
+        Panel2.BackgroundImage = CType(resources.GetObject("Panel2.BackgroundImage"), Image)
         Panel2.BorderStyle = BorderStyle.Fixed3D
         Panel2.Controls.Add(Label43)
         Panel2.Controls.Add(Label4)
@@ -826,6 +830,7 @@ Partial Class Four_to_Five_Seaters
         ' 
         ' Panel1
         ' 
+        Panel1.BackgroundImage = CType(resources.GetObject("Panel1.BackgroundImage"), Image)
         Panel1.BorderStyle = BorderStyle.Fixed3D
         Panel1.Controls.Add(Label179)
         Panel1.Controls.Add(Label178)
@@ -908,45 +913,55 @@ Partial Class Four_to_Five_Seaters
         ' PictureBox6
         ' 
         PictureBox6.BorderStyle = BorderStyle.Fixed3D
+        PictureBox6.Image = CType(resources.GetObject("PictureBox6.Image"), Image)
         PictureBox6.Location = New Point(386, 292)
         PictureBox6.Name = "PictureBox6"
         PictureBox6.Size = New Size(250, 135)
+        PictureBox6.SizeMode = PictureBoxSizeMode.StretchImage
         PictureBox6.TabIndex = 6
         PictureBox6.TabStop = False
         ' 
         ' PictureBox5
         ' 
         PictureBox5.BorderStyle = BorderStyle.Fixed3D
+        PictureBox5.Image = CType(resources.GetObject("PictureBox5.Image"), Image)
         PictureBox5.Location = New Point(130, 292)
         PictureBox5.Name = "PictureBox5"
         PictureBox5.Size = New Size(250, 135)
+        PictureBox5.SizeMode = PictureBoxSizeMode.StretchImage
         PictureBox5.TabIndex = 6
         PictureBox5.TabStop = False
         ' 
         ' PictureBox4
         ' 
         PictureBox4.BorderStyle = BorderStyle.Fixed3D
-        PictureBox4.Location = New Point(519, 151)
+        PictureBox4.Image = CType(resources.GetObject("PictureBox4.Image"), Image)
+        PictureBox4.Location = New Point(386, 150)
         PictureBox4.Name = "PictureBox4"
         PictureBox4.Size = New Size(250, 135)
+        PictureBox4.SizeMode = PictureBoxSizeMode.StretchImage
         PictureBox4.TabIndex = 5
         PictureBox4.TabStop = False
         ' 
         ' PictureBox3
         ' 
         PictureBox3.BorderStyle = BorderStyle.Fixed3D
-        PictureBox3.Location = New Point(263, 151)
+        PictureBox3.Image = CType(resources.GetObject("PictureBox3.Image"), Image)
+        PictureBox3.Location = New Point(130, 151)
         PictureBox3.Name = "PictureBox3"
         PictureBox3.Size = New Size(250, 135)
+        PictureBox3.SizeMode = PictureBoxSizeMode.StretchImage
         PictureBox3.TabIndex = 4
         PictureBox3.TabStop = False
         ' 
         ' PictureBox2
         ' 
         PictureBox2.BorderStyle = BorderStyle.Fixed3D
-        PictureBox2.Location = New Point(7, 151)
+        PictureBox2.Image = CType(resources.GetObject("PictureBox2.Image"), Image)
+        PictureBox2.Location = New Point(263, 9)
         PictureBox2.Name = "PictureBox2"
         PictureBox2.Size = New Size(250, 135)
+        PictureBox2.SizeMode = PictureBoxSizeMode.Zoom
         PictureBox2.TabIndex = 3
         PictureBox2.TabStop = False
         ' 
@@ -2920,6 +2935,7 @@ Partial Class Four_to_Five_Seaters
         ' 
         AutoScaleDimensions = New SizeF(8F, 20F)
         AutoScaleMode = AutoScaleMode.Font
+        BackgroundImage = CType(resources.GetObject("$this.BackgroundImage"), Image)
         ClientSize = New Size(1326, 691)
         Controls.Add(TabControl1)
         Controls.Add(Label1)
