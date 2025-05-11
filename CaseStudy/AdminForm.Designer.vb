@@ -73,24 +73,24 @@ Partial Class AdminForm
         ' 
         BtnBad.BackColor = Color.FloralWhite
         BtnBad.Font = New Font("Century", 12F, FontStyle.Bold)
-        BtnBad.Location = New Point(76, 545)
+        BtnBad.Location = New Point(65, 545)
         BtnBad.Margin = New Padding(3, 4, 3, 4)
         BtnBad.Name = "BtnBad"
-        BtnBad.Size = New Size(159, 31)
+        BtnBad.Size = New Size(184, 31)
         BtnBad.TabIndex = 2
-        BtnBad.Text = "Record: Bad"
+        BtnBad.Text = "☆Bad Records☆"
         BtnBad.UseVisualStyleBackColor = False
         ' 
         ' btnGood
         ' 
         btnGood.BackColor = Color.FloralWhite
         btnGood.Font = New Font("Century", 12F, FontStyle.Bold)
-        btnGood.Location = New Point(76, 507)
+        btnGood.Location = New Point(65, 507)
         btnGood.Margin = New Padding(3, 4, 3, 4)
         btnGood.Name = "btnGood"
-        btnGood.Size = New Size(159, 31)
+        btnGood.Size = New Size(184, 31)
         btnGood.TabIndex = 1
-        btnGood.Text = "Record: Good"
+        btnGood.Text = "☆Good Records☆"
         btnGood.UseVisualStyleBackColor = False
         ' 
         ' dgvRecord
