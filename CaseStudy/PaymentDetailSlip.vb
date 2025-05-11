@@ -6,6 +6,12 @@ Public Class PaymentDetailSlip
     Dim Discount As Integer
     Dim DriverFee As Integer
     Dim Driver As String
+    Private Sub txtContact_KeyPress(sender As Object, e As KeyPressEventArgs) Handles txtContact.KeyPress 'make sure only numbers are held
+        If Not Char.IsControl(e.KeyChar) AndAlso Not Char.IsDigit(e.KeyChar) Then
+            e.Handled = True
+        End If
+    End Sub
+
     'when loaded takes the information from Booking Form and loginform for the username Ofc
     Private Sub PaymentDetailSlip(sender As Object, e As EventArgs) Handles MyBase.Load
         FromDate.Value = BookingForm.FromDOB.Value.Date

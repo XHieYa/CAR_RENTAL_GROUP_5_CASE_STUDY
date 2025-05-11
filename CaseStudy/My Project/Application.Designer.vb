@@ -8,6 +8,8 @@
 ' </auto-generated>
 '------------------------------------------------------------------------------
 
+Imports System.Runtime.InteropServices
+
 Namespace My
 
     'NOTE: This file is auto-generated; do not modify it directly.  To make changes,
@@ -28,7 +30,7 @@ Namespace My
 
         <Global.System.Diagnostics.DebuggerStepThroughAttribute()>
         Protected Overrides Sub OnCreateMainForm()
-            Me.MainForm = PaymentDetailSlip
+            Me.MainForm = FrontPage
         End Sub
     End Class
 End Namespace
