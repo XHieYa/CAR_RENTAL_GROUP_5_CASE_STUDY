@@ -37,7 +37,6 @@ Partial Class Dashboard
         Label4 = New Label()
         lblRecord = New Label()
         lblEmail = New Label()
-        Button1 = New Button()
         lblDOB = New Label()
         lblAddress = New Label()
         lblSex = New Label()
@@ -45,6 +44,10 @@ Partial Class Dashboard
         lblFullName = New Label()
         Label2 = New Label()
         TabPage2 = New TabPage()
+        Label16 = New Label()
+        Label15 = New Label()
+        Label14 = New Label()
+        Label13 = New Label()
         BtnSchedCheck = New Button()
         btnCalculate = New Button()
         BtnDelete = New Button()
@@ -54,11 +57,8 @@ Partial Class Dashboard
         ToDOB = New DateTimePicker()
         FromDOB = New DateTimePicker()
         DGLogs = New DataGridView()
+        Button1 = New Button()
         Button2 = New Button()
-        Label13 = New Label()
-        Label14 = New Label()
-        Label15 = New Label()
-        Label16 = New Label()
         TabControl1.SuspendLayout()
         TabPage1.SuspendLayout()
         TabPage2.SuspendLayout()
@@ -240,18 +240,6 @@ Partial Class Dashboard
         lblEmail.TabIndex = 8
         lblEmail.Text = "[User]"
         ' 
-        ' Button1
-        ' 
-        Button1.BackColor = Color.PaleGoldenrod
-        Button1.Font = New Font("Century", 12F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
-        Button1.Location = New Point(1186, 651)
-        Button1.Margin = New Padding(3, 4, 3, 4)
-        Button1.Name = "Button1"
-        Button1.Size = New Size(125, 35)
-        Button1.TabIndex = 7
-        Button1.Text = "Continue↪"
-        Button1.UseVisualStyleBackColor = False
-        ' 
         ' lblDOB
         ' 
         lblDOB.AutoSize = True
@@ -342,6 +330,42 @@ Partial Class Dashboard
         TabPage2.TabIndex = 1
         TabPage2.Text = "🚘Records── .✦"
         TabPage2.UseVisualStyleBackColor = True
+        ' 
+        ' Label16
+        ' 
+        Label16.AutoSize = True
+        Label16.Location = New Point(170, 576)
+        Label16.Name = "Label16"
+        Label16.Size = New Size(91, 21)
+        Label16.TabIndex = 12
+        Label16.Text = "─── ⋆⋅☆⋅⋆ ──"
+        ' 
+        ' Label15
+        ' 
+        Label15.AutoSize = True
+        Label15.Location = New Point(488, 576)
+        Label15.Name = "Label15"
+        Label15.Size = New Size(91, 21)
+        Label15.TabIndex = 11
+        Label15.Text = "─── ⋆⋅☆⋅⋆ ──"
+        ' 
+        ' Label14
+        ' 
+        Label14.AutoSize = True
+        Label14.Location = New Point(488, 518)
+        Label14.Name = "Label14"
+        Label14.Size = New Size(91, 21)
+        Label14.TabIndex = 10
+        Label14.Text = "─── ⋆⋅☆⋅⋆ ──"
+        ' 
+        ' Label13
+        ' 
+        Label13.AutoSize = True
+        Label13.Location = New Point(170, 519)
+        Label13.Name = "Label13"
+        Label13.Size = New Size(91, 21)
+        Label13.TabIndex = 9
+        Label13.Text = "─── ⋆⋅☆⋅⋆ ──"
         ' 
         ' BtnSchedCheck
         ' 
@@ -452,6 +476,18 @@ Partial Class Dashboard
         DGLogs.Size = New Size(1251, 501)
         DGLogs.TabIndex = 0
         ' 
+        ' Button1
+        ' 
+        Button1.BackColor = Color.PaleGoldenrod
+        Button1.Font = New Font("Century", 12F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        Button1.Location = New Point(1186, 651)
+        Button1.Margin = New Padding(3, 4, 3, 4)
+        Button1.Name = "Button1"
+        Button1.Size = New Size(125, 35)
+        Button1.TabIndex = 7
+        Button1.Text = "Continue↪"
+        Button1.UseVisualStyleBackColor = False
+        ' 
         ' Button2
         ' 
         Button2.BackColor = Color.PaleGoldenrod
@@ -463,42 +499,6 @@ Partial Class Dashboard
         Button2.TabIndex = 19
         Button2.Text = "↩Back"
         Button2.UseVisualStyleBackColor = False
-        ' 
-        ' Label13
-        ' 
-        Label13.AutoSize = True
-        Label13.Location = New Point(170, 519)
-        Label13.Name = "Label13"
-        Label13.Size = New Size(91, 21)
-        Label13.TabIndex = 9
-        Label13.Text = "─── ⋆⋅☆⋅⋆ ──"
-        ' 
-        ' Label14
-        ' 
-        Label14.AutoSize = True
-        Label14.Location = New Point(488, 518)
-        Label14.Name = "Label14"
-        Label14.Size = New Size(91, 21)
-        Label14.TabIndex = 10
-        Label14.Text = "─── ⋆⋅☆⋅⋆ ──"
-        ' 
-        ' Label15
-        ' 
-        Label15.AutoSize = True
-        Label15.Location = New Point(488, 576)
-        Label15.Name = "Label15"
-        Label15.Size = New Size(91, 21)
-        Label15.TabIndex = 11
-        Label15.Text = "─── ⋆⋅☆⋅⋆ ──"
-        ' 
-        ' Label16
-        ' 
-        Label16.AutoSize = True
-        Label16.Location = New Point(170, 576)
-        Label16.Name = "Label16"
-        Label16.Size = New Size(91, 21)
-        Label16.TabIndex = 12
-        Label16.Text = "─── ⋆⋅☆⋅⋆ ──"
         ' 
         ' Dashboard
         ' 

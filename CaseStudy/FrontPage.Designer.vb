@@ -133,7 +133,7 @@ Partial Class FrontPage
         Button1.Name = "Button1"
         Button1.Size = New Size(151, 47)
         Button1.TabIndex = 31
-        Button1.Text = "➠Start"
+        Button1.Text = "➠Start☆"
         Button1.UseVisualStyleBackColor = False
         ' 
         ' FrontPage
@@ -152,7 +152,7 @@ Partial Class FrontPage
         Controls.Add(Label15)
         Controls.Add(Label14)
         Name = "FrontPage"
-        Text = "HomePage"
+        Text = "Front Page"
         CType(PictureBox1, ComponentModel.ISupportInitialize).EndInit()
         ResumeLayout(False)
         PerformLayout()

@@ -95,25 +95,25 @@ Partial Class loginForm
         GroupBox1.Margin = New Padding(3, 4, 3, 4)
         GroupBox1.Name = "GroupBox1"
         GroupBox1.Padding = New Padding(3, 4, 3, 4)
-        GroupBox1.Size = New Size(635, 639)
+        GroupBox1.Size = New Size(635, 656)
         GroupBox1.TabIndex = 0
         GroupBox1.TabStop = False
         ' 
         ' Button1
         ' 
         Button1.Font = New Font("Felix Titling", 13.8F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
-        Button1.Location = New Point(310, 421)
+        Button1.Location = New Point(312, 435)
         Button1.Margin = New Padding(3, 4, 3, 4)
         Button1.Name = "Button1"
         Button1.Size = New Size(132, 51)
         Button1.TabIndex = 25
-        Button1.Text = "Back"
+        Button1.Text = "Back☆"
         Button1.UseVisualStyleBackColor = True
         ' 
         ' PictureBox3
         ' 
         PictureBox3.Image = CType(resources.GetObject("PictureBox3.Image"), Image)
-        PictureBox3.Location = New Point(0, 548)
+        PictureBox3.Location = New Point(0, 558)
         PictureBox3.Margin = New Padding(3, 4, 3, 4)
         PictureBox3.Name = "PictureBox3"
         PictureBox3.Size = New Size(136, 91)
@@ -136,7 +136,7 @@ Partial Class loginForm
         ' 
         Label15.AutoSize = True
         Label15.Font = New Font("Footlight MT Light", 7.8F)
-        Label15.Location = New Point(1, 517)
+        Label15.Location = New Point(1, 527)
         Label15.Name = "Label15"
         Label15.Size = New Size(99, 14)
         Label15.TabIndex = 12
@@ -147,7 +147,7 @@ Partial Class loginForm
         ' 
         Label14.AutoSize = True
         Label14.Font = New Font("Footlight MT Light", 7.8F)
-        Label14.Location = New Point(1, 531)
+        Label14.Location = New Point(1, 541)
         Label14.Name = "Label14"
         Label14.Size = New Size(136, 14)
         Label14.TabIndex = 11
@@ -201,7 +201,7 @@ Partial Class loginForm
         ' 
         llblCreateAccount.AutoSize = True
         llblCreateAccount.Font = New Font("Footlight MT Light", 12F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
-        llblCreateAccount.Location = New Point(178, 476)
+        llblCreateAccount.Location = New Point(180, 490)
         llblCreateAccount.Name = "llblCreateAccount"
         llblCreateAccount.Size = New Size(258, 20)
         llblCreateAccount.TabIndex = 6
@@ -214,19 +214,19 @@ Partial Class loginForm
         Label1.Font = New Font("Century", 12F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
         Label1.Location = New Point(6, 15)
         Label1.Name = "Label1"
-        Label1.Size = New Size(77, 23)
+        Label1.Size = New Size(137, 23)
         Label1.TabIndex = 0
-        Label1.Text = "Log-In"
+        Label1.Text = "✮⋆˙Log-In˙⋆✮"
         ' 
         ' BtnLogin
         ' 
         BtnLogin.Font = New Font("Felix Titling", 13.8F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
-        BtnLogin.Location = New Point(172, 421)
+        BtnLogin.Location = New Point(174, 435)
         BtnLogin.Margin = New Padding(3, 4, 3, 4)
         BtnLogin.Name = "BtnLogin"
         BtnLogin.Size = New Size(132, 51)
         BtnLogin.TabIndex = 5
-        BtnLogin.Text = "Log-in"
+        BtnLogin.Text = "Log-in☆"
         BtnLogin.UseVisualStyleBackColor = True
         ' 
         ' txtpass
@@ -284,7 +284,7 @@ Partial Class loginForm
         GroupBox2.Margin = New Padding(3, 4, 3, 4)
         GroupBox2.Name = "GroupBox2"
         GroupBox2.Padding = New Padding(3, 4, 3, 4)
-        GroupBox2.Size = New Size(637, 639)
+        GroupBox2.Size = New Size(637, 656)
         GroupBox2.TabIndex = 1
         GroupBox2.TabStop = False
         ' 
@@ -304,7 +304,7 @@ Partial Class loginForm
         ' 
         PictureBox5.BackColor = Color.Transparent
         PictureBox5.Image = CType(resources.GetObject("PictureBox5.Image"), Image)
-        PictureBox5.Location = New Point(1, 547)
+        PictureBox5.Location = New Point(1, 560)
         PictureBox5.Margin = New Padding(3, 4, 3, 4)
         PictureBox5.Name = "PictureBox5"
         PictureBox5.Size = New Size(136, 91)
@@ -317,7 +317,7 @@ Partial Class loginForm
         Label19.AutoSize = True
         Label19.BackColor = Color.Transparent
         Label19.Font = New Font("Footlight MT Light", 7.8F)
-        Label19.Location = New Point(1, 517)
+        Label19.Location = New Point(1, 530)
         Label19.Name = "Label19"
         Label19.Size = New Size(99, 14)
         Label19.TabIndex = 27
@@ -329,7 +329,7 @@ Partial Class loginForm
         Label20.AutoSize = True
         Label20.BackColor = Color.Transparent
         Label20.Font = New Font("Footlight MT Light", 7.8F)
-        Label20.Location = New Point(1, 531)
+        Label20.Location = New Point(1, 544)
         Label20.Name = "Label20"
         Label20.Size = New Size(136, 14)
         Label20.TabIndex = 26
@@ -355,9 +355,9 @@ Partial Class loginForm
         Label16.Font = New Font("Century", 12F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
         Label16.Location = New Point(7, 15)
         Label16.Name = "Label16"
-        Label16.Size = New Size(93, 23)
+        Label16.Size = New Size(153, 23)
         Label16.TabIndex = 13
-        Label16.Text = "Sign-Up"
+        Label16.Text = "✮⋆˙Sign-Up˙⋆✮"
         ' 
         ' cbShowPasswordSI
         ' 
@@ -398,7 +398,7 @@ Partial Class loginForm
         llblHaveAnAccount.AutoSize = True
         llblHaveAnAccount.BackColor = Color.Transparent
         llblHaveAnAccount.Font = New Font("Footlight MT Light", 12F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
-        llblHaveAnAccount.Location = New Point(166, 474)
+        llblHaveAnAccount.Location = New Point(182, 488)
         llblHaveAnAccount.Name = "llblHaveAnAccount"
         llblHaveAnAccount.Size = New Size(285, 20)
         llblHaveAnAccount.TabIndex = 8
@@ -474,12 +474,12 @@ Partial Class loginForm
         ' BtnSignIn
         ' 
         BtnSignIn.Font = New Font("Felix Titling", 13.8F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
-        BtnSignIn.Location = New Point(244, 421)
+        BtnSignIn.Location = New Point(260, 435)
         BtnSignIn.Margin = New Padding(3, 4, 3, 4)
         BtnSignIn.Name = "BtnSignIn"
         BtnSignIn.Size = New Size(132, 51)
         BtnSignIn.TabIndex = 6
-        BtnSignIn.Text = "SIGN-UP"
+        BtnSignIn.Text = "SIGN-UP☆"
         BtnSignIn.UseVisualStyleBackColor = True
         ' 
         ' txtAddress
