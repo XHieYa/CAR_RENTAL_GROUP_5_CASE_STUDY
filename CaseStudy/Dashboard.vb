@@ -157,9 +157,9 @@ Public Class Dashboard
             'loads calculations
             CarPay()
             'gets the item from the selected row cell
-            Dim BookingID As Integer = Convert.ToInt32(DGLogs.CurrentRow.Cells("BookingID").Value)
+            Dim BookingID = Convert.ToInt32(dgLogs.CurrentRow.Cells("BookingID").Value)
             'SQL query
-            Dim query As String = "UPDATE Booking SET StartBookDate = @FromDate, EndBookDate = @ToDate, Price = @Price WHERE BookingID = @BookingID"
+            Dim query = "UPDATE Booking SET StartBookDate = @FromDate, EndBookDate = @ToDate, Price = @Price WHERE BookingID = @BookingID"
             Using cmd As New SqlCommand(query, con)
                 cmd.Parameters.AddWithValue("@FromDate", FromDOB.Value)
                 cmd.Parameters.AddWithValue("@ToDate", ToDOB.Value)
