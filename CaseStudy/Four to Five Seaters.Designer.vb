@@ -200,7 +200,6 @@ Partial Class Four_to_Five_Seaters
         PictureBox14 = New PictureBox()
         PictureBox15 = New PictureBox()
         PictureBox16 = New PictureBox()
-        PictureBox17 = New PictureBox()
         PictureBox18 = New PictureBox()
         Label126 = New Label()
         Label127 = New Label()
@@ -292,7 +291,6 @@ Partial Class Four_to_Five_Seaters
         CType(PictureBox14, ComponentModel.ISupportInitialize).BeginInit()
         CType(PictureBox15, ComponentModel.ISupportInitialize).BeginInit()
         CType(PictureBox16, ComponentModel.ISupportInitialize).BeginInit()
-        CType(PictureBox17, ComponentModel.ISupportInitialize).BeginInit()
         CType(PictureBox18, ComponentModel.ISupportInitialize).BeginInit()
         TabPage4.SuspendLayout()
         Panel10.SuspendLayout()
@@ -1631,7 +1629,7 @@ Partial Class Four_to_Five_Seaters
         ' 
         PictureBox11.BorderStyle = BorderStyle.Fixed3D
         PictureBox11.Image = CType(resources.GetObject("PictureBox11.Image"), Image)
-        PictureBox11.Location = New Point(263, 10)
+        PictureBox11.Location = New Point(263, 4)
         PictureBox11.Name = "PictureBox11"
         PictureBox11.Size = New Size(250, 135)
         PictureBox11.SizeMode = PictureBoxSizeMode.StretchImage
@@ -2171,7 +2169,6 @@ Partial Class Four_to_Five_Seaters
         Panel9.Controls.Add(PictureBox14)
         Panel9.Controls.Add(PictureBox15)
         Panel9.Controls.Add(PictureBox16)
-        Panel9.Controls.Add(PictureBox17)
         Panel9.Controls.Add(PictureBox18)
         Panel9.Controls.Add(Label126)
         Panel9.Controls.Add(Label127)
@@ -2243,52 +2240,52 @@ Partial Class Four_to_Five_Seaters
         ' PictureBox13
         ' 
         PictureBox13.BorderStyle = BorderStyle.Fixed3D
+        PictureBox13.Image = CType(resources.GetObject("PictureBox13.Image"), Image)
         PictureBox13.Location = New Point(386, 292)
         PictureBox13.Name = "PictureBox13"
         PictureBox13.Size = New Size(250, 135)
+        PictureBox13.SizeMode = PictureBoxSizeMode.StretchImage
         PictureBox13.TabIndex = 6
         PictureBox13.TabStop = False
         ' 
         ' PictureBox14
         ' 
         PictureBox14.BorderStyle = BorderStyle.Fixed3D
+        PictureBox14.Image = CType(resources.GetObject("PictureBox14.Image"), Image)
         PictureBox14.Location = New Point(130, 292)
         PictureBox14.Name = "PictureBox14"
         PictureBox14.Size = New Size(250, 135)
+        PictureBox14.SizeMode = PictureBoxSizeMode.StretchImage
         PictureBox14.TabIndex = 6
         PictureBox14.TabStop = False
         ' 
         ' PictureBox15
         ' 
         PictureBox15.BorderStyle = BorderStyle.Fixed3D
-        PictureBox15.Location = New Point(519, 151)
+        PictureBox15.Image = CType(resources.GetObject("PictureBox15.Image"), Image)
+        PictureBox15.Location = New Point(386, 151)
         PictureBox15.Name = "PictureBox15"
         PictureBox15.Size = New Size(250, 135)
+        PictureBox15.SizeMode = PictureBoxSizeMode.StretchImage
         PictureBox15.TabIndex = 5
         PictureBox15.TabStop = False
         ' 
         ' PictureBox16
         ' 
         PictureBox16.BorderStyle = BorderStyle.Fixed3D
-        PictureBox16.Location = New Point(263, 151)
+        PictureBox16.Image = CType(resources.GetObject("PictureBox16.Image"), Image)
+        PictureBox16.Location = New Point(130, 151)
         PictureBox16.Name = "PictureBox16"
         PictureBox16.Size = New Size(250, 135)
+        PictureBox16.SizeMode = PictureBoxSizeMode.Zoom
         PictureBox16.TabIndex = 4
         PictureBox16.TabStop = False
-        ' 
-        ' PictureBox17
-        ' 
-        PictureBox17.BorderStyle = BorderStyle.Fixed3D
-        PictureBox17.Location = New Point(7, 151)
-        PictureBox17.Name = "PictureBox17"
-        PictureBox17.Size = New Size(250, 135)
-        PictureBox17.TabIndex = 3
-        PictureBox17.TabStop = False
         ' 
         ' PictureBox18
         ' 
         PictureBox18.BorderStyle = BorderStyle.Fixed3D
-        PictureBox18.Location = New Point(263, 3)
+        PictureBox18.Image = CType(resources.GetObject("PictureBox18.Image"), Image)
+        PictureBox18.Location = New Point(263, 7)
         PictureBox18.Name = "PictureBox18"
         PictureBox18.Size = New Size(250, 135)
         PictureBox18.SizeMode = PictureBoxSizeMode.StretchImage
@@ -3018,7 +3015,6 @@ Partial Class Four_to_Five_Seaters
         CType(PictureBox14, ComponentModel.ISupportInitialize).EndInit()
         CType(PictureBox15, ComponentModel.ISupportInitialize).EndInit()
         CType(PictureBox16, ComponentModel.ISupportInitialize).EndInit()
-        CType(PictureBox17, ComponentModel.ISupportInitialize).EndInit()
         CType(PictureBox18, ComponentModel.ISupportInitialize).EndInit()
         TabPage4.ResumeLayout(False)
         Panel10.ResumeLayout(False)
@@ -3202,7 +3198,6 @@ Partial Class Four_to_Five_Seaters
     Friend WithEvents PictureBox14 As PictureBox
     Friend WithEvents PictureBox15 As PictureBox
     Friend WithEvents PictureBox16 As PictureBox
-    Friend WithEvents PictureBox17 As PictureBox
     Friend WithEvents PictureBox18 As PictureBox
     Friend WithEvents Label126 As Label
     Friend WithEvents Label127 As Label
