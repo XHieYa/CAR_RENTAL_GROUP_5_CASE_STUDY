@@ -82,7 +82,6 @@ Partial Class Four_to_Five_Seaters
         PictureBox4 = New PictureBox()
         PictureBox3 = New PictureBox()
         PictureBox2 = New PictureBox()
-        PictureBox1 = New PictureBox()
         Label3 = New Label()
         Label2 = New Label()
         TabPage2 = New TabPage()
@@ -143,7 +142,6 @@ Partial Class Four_to_Five_Seaters
         PictureBox9 = New PictureBox()
         PictureBox10 = New PictureBox()
         PictureBox11 = New PictureBox()
-        PictureBox12 = New PictureBox()
         Label84 = New Label()
         Label85 = New Label()
         TabPage3 = New TabPage()
@@ -276,7 +274,6 @@ Partial Class Four_to_Five_Seaters
         CType(PictureBox4, ComponentModel.ISupportInitialize).BeginInit()
         CType(PictureBox3, ComponentModel.ISupportInitialize).BeginInit()
         CType(PictureBox2, ComponentModel.ISupportInitialize).BeginInit()
-        CType(PictureBox1, ComponentModel.ISupportInitialize).BeginInit()
         TabPage2.SuspendLayout()
         Panel4.SuspendLayout()
         Panel5.SuspendLayout()
@@ -287,7 +284,6 @@ Partial Class Four_to_Five_Seaters
         CType(PictureBox9, ComponentModel.ISupportInitialize).BeginInit()
         CType(PictureBox10, ComponentModel.ISupportInitialize).BeginInit()
         CType(PictureBox11, ComponentModel.ISupportInitialize).BeginInit()
-        CType(PictureBox12, ComponentModel.ISupportInitialize).BeginInit()
         TabPage3.SuspendLayout()
         Panel7.SuspendLayout()
         Panel8.SuspendLayout()
@@ -842,7 +838,6 @@ Partial Class Four_to_Five_Seaters
         Panel1.Controls.Add(PictureBox4)
         Panel1.Controls.Add(PictureBox3)
         Panel1.Controls.Add(PictureBox2)
-        Panel1.Controls.Add(PictureBox1)
         Panel1.Controls.Add(Label3)
         Panel1.Controls.Add(Label2)
         Panel1.Location = New Point(6, 5)
@@ -954,17 +949,6 @@ Partial Class Four_to_Five_Seaters
         PictureBox2.Size = New Size(250, 135)
         PictureBox2.TabIndex = 3
         PictureBox2.TabStop = False
-        ' 
-        ' PictureBox1
-        ' 
-        PictureBox1.BorderStyle = BorderStyle.Fixed3D
-        PictureBox1.Image = CType(resources.GetObject("PictureBox1.Image"), Image)
-        PictureBox1.Location = New Point(263, 3)
-        PictureBox1.Name = "PictureBox1"
-        PictureBox1.Size = New Size(250, 135)
-        PictureBox1.SizeMode = PictureBoxSizeMode.StretchImage
-        PictureBox1.TabIndex = 2
-        PictureBox1.TabStop = False
         ' 
         ' Label3
         ' 
@@ -1494,7 +1478,6 @@ Partial Class Four_to_Five_Seaters
         Panel6.Controls.Add(PictureBox9)
         Panel6.Controls.Add(PictureBox10)
         Panel6.Controls.Add(PictureBox11)
-        Panel6.Controls.Add(PictureBox12)
         Panel6.Controls.Add(Label84)
         Panel6.Controls.Add(Label85)
         Panel6.Location = New Point(6, 5)
@@ -1615,17 +1598,6 @@ Partial Class Four_to_Five_Seaters
         PictureBox11.Size = New Size(250, 135)
         PictureBox11.TabIndex = 3
         PictureBox11.TabStop = False
-        ' 
-        ' PictureBox12
-        ' 
-        PictureBox12.BorderStyle = BorderStyle.Fixed3D
-        PictureBox12.Image = CType(resources.GetObject("PictureBox12.Image"), Image)
-        PictureBox12.Location = New Point(263, 3)
-        PictureBox12.Name = "PictureBox12"
-        PictureBox12.Size = New Size(250, 135)
-        PictureBox12.SizeMode = PictureBoxSizeMode.StretchImage
-        PictureBox12.TabIndex = 2
-        PictureBox12.TabStop = False
         ' 
         ' Label84
         ' 
@@ -2269,7 +2241,6 @@ Partial Class Four_to_Five_Seaters
         ' PictureBox18
         ' 
         PictureBox18.BorderStyle = BorderStyle.Fixed3D
-        PictureBox18.Image = CType(resources.GetObject("PictureBox18.Image"), Image)
         PictureBox18.Location = New Point(263, 3)
         PictureBox18.Name = "PictureBox18"
         PictureBox18.Size = New Size(250, 135)
@@ -2967,7 +2938,6 @@ Partial Class Four_to_Five_Seaters
         CType(PictureBox4, ComponentModel.ISupportInitialize).EndInit()
         CType(PictureBox3, ComponentModel.ISupportInitialize).EndInit()
         CType(PictureBox2, ComponentModel.ISupportInitialize).EndInit()
-        CType(PictureBox1, ComponentModel.ISupportInitialize).EndInit()
         TabPage2.ResumeLayout(False)
         Panel4.ResumeLayout(False)
         Panel4.PerformLayout()
@@ -2981,7 +2951,6 @@ Partial Class Four_to_Five_Seaters
         CType(PictureBox9, ComponentModel.ISupportInitialize).EndInit()
         CType(PictureBox10, ComponentModel.ISupportInitialize).EndInit()
         CType(PictureBox11, ComponentModel.ISupportInitialize).EndInit()
-        CType(PictureBox12, ComponentModel.ISupportInitialize).EndInit()
         TabPage3.ResumeLayout(False)
         Panel7.ResumeLayout(False)
         Panel7.PerformLayout()
@@ -3040,7 +3009,6 @@ Partial Class Four_to_Five_Seaters
     Friend WithEvents PictureBox4 As PictureBox
     Friend WithEvents PictureBox3 As PictureBox
     Friend WithEvents PictureBox2 As PictureBox
-    Friend WithEvents PictureBox1 As PictureBox
     Friend WithEvents Label3 As Label
     Friend WithEvents Label2 As Label
     Friend WithEvents Label19 As Label
@@ -3125,7 +3093,6 @@ Partial Class Four_to_Five_Seaters
     Friend WithEvents PictureBox9 As PictureBox
     Friend WithEvents PictureBox10 As PictureBox
     Friend WithEvents PictureBox11 As PictureBox
-    Friend WithEvents PictureBox12 As PictureBox
     Friend WithEvents Label84 As Label
     Friend WithEvents Label85 As Label
     Friend WithEvents C2 As Button
