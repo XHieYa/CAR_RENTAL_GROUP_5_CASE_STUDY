@@ -22,11 +22,10 @@ Partial Class PaymentDetailSlip
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
-        Panel1 = New Panel()
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(PaymentDetailSlip))
         btnBackToBooking = New Button()
         BtnBackToDashBoard = New Button()
         BtnBackToSeater = New Button()
-        Btn = New Button()
         GroupBox3 = New GroupBox()
         txtPlateNumber = New TextBox()
         Label16 = New Label()
@@ -65,68 +64,51 @@ Partial Class PaymentDetailSlip
         Label3 = New Label()
         Label2 = New Label()
         Label1 = New Label()
-        Panel1.SuspendLayout()
+        Label17 = New Label()
+        PictureBox1 = New PictureBox()
+        PictureBox5 = New PictureBox()
+        Label19 = New Label()
+        Label20 = New Label()
         GroupBox3.SuspendLayout()
         GroupBox4.SuspendLayout()
         GroupBox2.SuspendLayout()
         GroupBox1.SuspendLayout()
+        CType(PictureBox1, ComponentModel.ISupportInitialize).BeginInit()
+        CType(PictureBox5, ComponentModel.ISupportInitialize).BeginInit()
         SuspendLayout()
-        ' 
-        ' Panel1
-        ' 
-        Panel1.Controls.Add(btnBackToBooking)
-        Panel1.Controls.Add(BtnBackToDashBoard)
-        Panel1.Controls.Add(BtnBackToSeater)
-        Panel1.Controls.Add(Btn)
-        Panel1.Controls.Add(GroupBox3)
-        Panel1.Controls.Add(GroupBox4)
-        Panel1.Controls.Add(GroupBox2)
-        Panel1.Controls.Add(GroupBox1)
-        Panel1.Location = New Point(12, 11)
-        Panel1.Margin = New Padding(3, 2, 3, 2)
-        Panel1.Name = "Panel1"
-        Panel1.Size = New Size(444, 562)
-        Panel1.TabIndex = 2
         ' 
         ' btnBackToBooking
         ' 
-        btnBackToBooking.Location = New Point(306, 394)
-        btnBackToBooking.Margin = New Padding(3, 2, 3, 2)
+        btnBackToBooking.BackColor = Color.PaleGoldenrod
+        btnBackToBooking.Font = New Font("Century", 12F, FontStyle.Bold)
+        btnBackToBooking.Location = New Point(761, 643)
         btnBackToBooking.Name = "btnBackToBooking"
-        btnBackToBooking.Size = New Size(123, 27)
+        btnBackToBooking.Size = New Size(141, 36)
         btnBackToBooking.TabIndex = 33
-        btnBackToBooking.Text = "Back To Booking"
-        btnBackToBooking.UseVisualStyleBackColor = True
+        btnBackToBooking.Text = "↩Booking"
+        btnBackToBooking.UseVisualStyleBackColor = False
         ' 
         ' BtnBackToDashBoard
         ' 
-        BtnBackToDashBoard.Location = New Point(306, 441)
-        BtnBackToDashBoard.Margin = New Padding(3, 2, 3, 2)
+        BtnBackToDashBoard.BackColor = Color.PaleGoldenrod
+        BtnBackToDashBoard.Font = New Font("Century", 12F, FontStyle.Bold)
+        BtnBackToDashBoard.Location = New Point(591, 643)
         BtnBackToDashBoard.Name = "BtnBackToDashBoard"
-        BtnBackToDashBoard.Size = New Size(123, 27)
+        BtnBackToDashBoard.Size = New Size(152, 36)
         BtnBackToDashBoard.TabIndex = 32
-        BtnBackToDashBoard.Text = "Back To DashBoard"
-        BtnBackToDashBoard.UseVisualStyleBackColor = True
+        BtnBackToDashBoard.Text = "↩DashBoard"
+        BtnBackToDashBoard.UseVisualStyleBackColor = False
         ' 
         ' BtnBackToSeater
         ' 
-        BtnBackToSeater.Location = New Point(306, 484)
-        BtnBackToSeater.Margin = New Padding(3, 2, 3, 2)
+        BtnBackToSeater.BackColor = Color.PaleGoldenrod
+        BtnBackToSeater.Font = New Font("Century", 12F, FontStyle.Bold)
+        BtnBackToSeater.Location = New Point(435, 643)
         BtnBackToSeater.Name = "BtnBackToSeater"
-        BtnBackToSeater.Size = New Size(123, 27)
+        BtnBackToSeater.Size = New Size(141, 36)
         BtnBackToSeater.TabIndex = 31
-        BtnBackToSeater.Text = "Back To Seater"
-        BtnBackToSeater.UseVisualStyleBackColor = True
-        ' 
-        ' Btn
-        ' 
-        Btn.Location = New Point(306, 525)
-        Btn.Margin = New Padding(3, 2, 3, 2)
-        Btn.Name = "Btn"
-        Btn.Size = New Size(123, 27)
-        Btn.TabIndex = 30
-        Btn.Text = "Back To ?"
-        Btn.UseVisualStyleBackColor = True
+        BtnBackToSeater.Text = "↩Seaters"
+        BtnBackToSeater.UseVisualStyleBackColor = False
         ' 
         ' GroupBox3
         ' 
@@ -144,149 +126,163 @@ Partial Class PaymentDetailSlip
         GroupBox3.Controls.Add(txtBodyNumber)
         GroupBox3.Controls.Add(Label8)
         GroupBox3.Controls.Add(Label7)
-        GroupBox3.Location = New Point(10, 206)
-        GroupBox3.Margin = New Padding(3, 2, 3, 2)
+        GroupBox3.Font = New Font("Stencil", 9F)
+        GroupBox3.Location = New Point(448, 108)
         GroupBox3.Name = "GroupBox3"
-        GroupBox3.Padding = New Padding(3, 2, 3, 2)
-        GroupBox3.Size = New Size(425, 153)
+        GroupBox3.Size = New Size(430, 449)
         GroupBox3.TabIndex = 4
         GroupBox3.TabStop = False
         GroupBox3.Text = "Car Details"
         ' 
         ' txtPlateNumber
         ' 
-        txtPlateNumber.Location = New Point(277, 54)
-        txtPlateNumber.Margin = New Padding(3, 2, 3, 2)
+        txtPlateNumber.BackColor = Color.FloralWhite
+        txtPlateNumber.Font = New Font("Century Gothic", 12F)
+        txtPlateNumber.Location = New Point(130, 170)
         txtPlateNumber.Multiline = True
         txtPlateNumber.Name = "txtPlateNumber"
         txtPlateNumber.ReadOnly = True
-        txtPlateNumber.Size = New Size(102, 20)
+        txtPlateNumber.Size = New Size(292, 33)
         txtPlateNumber.TabIndex = 26
         ' 
         ' Label16
         ' 
         Label16.AutoSize = True
-        Label16.Location = New Point(192, 57)
+        Label16.Font = New Font("Century Gothic", 12F)
+        Label16.Location = New Point(6, 180)
         Label16.Name = "Label16"
-        Label16.Size = New Size(80, 15)
+        Label16.Size = New Size(100, 23)
         Label16.TabIndex = 25
-        Label16.Text = "Plate Number"
+        Label16.Text = "Plate No:"
         ' 
         ' txtCarID
         ' 
-        txtCarID.Location = New Point(95, 54)
-        txtCarID.Margin = New Padding(3, 2, 3, 2)
+        txtCarID.BackColor = Color.FloralWhite
+        txtCarID.Font = New Font("Century Gothic", 12F)
+        txtCarID.Location = New Point(130, 88)
         txtCarID.Multiline = True
         txtCarID.Name = "txtCarID"
-        txtCarID.Size = New Size(95, 20)
+        txtCarID.Size = New Size(292, 33)
         txtCarID.TabIndex = 24
         ' 
         ' Label12
         ' 
         Label12.AutoSize = True
-        Label12.Location = New Point(8, 86)
+        Label12.Font = New Font("Century Gothic", 12F)
+        Label12.Location = New Point(6, 140)
         Label12.Name = "Label12"
-        Label12.Size = New Size(81, 15)
+        Label12.Size = New Size(98, 23)
         Label12.TabIndex = 23
-        Label12.Text = "Body Number"
+        Label12.Text = "Body No:"
         ' 
         ' Capacitytxt
         ' 
-        Capacitytxt.Location = New Point(310, 121)
-        Capacitytxt.Margin = New Padding(3, 2, 3, 2)
+        Capacitytxt.BackColor = Color.FloralWhite
+        Capacitytxt.Font = New Font("Century Gothic", 12F)
+        Capacitytxt.Location = New Point(240, 342)
         Capacitytxt.Multiline = True
         Capacitytxt.Name = "Capacitytxt"
         Capacitytxt.ReadOnly = True
-        Capacitytxt.Size = New Size(69, 20)
+        Capacitytxt.Size = New Size(103, 33)
         Capacitytxt.TabIndex = 22
         ' 
         ' Label11
         ' 
         Label11.AutoSize = True
-        Label11.Location = New Point(251, 124)
+        Label11.Font = New Font("Century Gothic", 12F)
+        Label11.Location = New Point(106, 352)
         Label11.Name = "Label11"
-        Label11.Size = New Size(53, 15)
+        Label11.Size = New Size(107, 23)
         Label11.TabIndex = 21
-        Label11.Text = "Capacity"
+        Label11.Text = "Capacity:"
         ' 
         ' Typetxt
         ' 
-        Typetxt.Location = New Point(163, 123)
-        Typetxt.Margin = New Padding(3, 2, 3, 2)
+        Typetxt.BackColor = Color.FloralWhite
+        Typetxt.Font = New Font("Century Gothic", 12F)
+        Typetxt.Location = New Point(240, 297)
         Typetxt.Multiline = True
         Typetxt.Name = "Typetxt"
         Typetxt.ReadOnly = True
-        Typetxt.Size = New Size(84, 20)
+        Typetxt.Size = New Size(103, 33)
         Typetxt.TabIndex = 20
         ' 
         ' Ratetxt
         ' 
-        Ratetxt.Location = New Point(50, 124)
-        Ratetxt.Margin = New Padding(3, 2, 3, 2)
+        Ratetxt.BackColor = Color.FloralWhite
+        Ratetxt.Font = New Font("Century Gothic", 12F)
+        Ratetxt.Location = New Point(240, 253)
         Ratetxt.Multiline = True
         Ratetxt.Name = "Ratetxt"
         Ratetxt.ReadOnly = True
-        Ratetxt.Size = New Size(70, 20)
+        Ratetxt.Size = New Size(103, 33)
         Ratetxt.TabIndex = 19
         ' 
         ' Label10
         ' 
         Label10.AutoSize = True
-        Label10.Location = New Point(126, 126)
+        Label10.Font = New Font("Century Gothic", 12F)
+        Label10.Location = New Point(106, 307)
         Label10.Name = "Label10"
-        Label10.Size = New Size(31, 15)
+        Label10.Size = New Size(61, 23)
         Label10.TabIndex = 18
-        Label10.Text = "Type"
+        Label10.Text = "Type:"
         ' 
         ' Label9
         ' 
         Label9.AutoSize = True
-        Label9.Location = New Point(8, 124)
+        Label9.Font = New Font("Century Gothic", 12F)
+        Label9.Location = New Point(106, 263)
         Label9.Name = "Label9"
-        Label9.Size = New Size(30, 15)
+        Label9.Size = New Size(61, 23)
         Label9.TabIndex = 17
-        Label9.Text = "Rate"
+        Label9.Text = "Rate:"
         ' 
         ' txtCarName
         ' 
-        txtCarName.Location = New Point(94, 20)
-        txtCarName.Margin = New Padding(3, 2, 3, 2)
+        txtCarName.BackColor = Color.FloralWhite
+        txtCarName.Font = New Font("Century Gothic", 12F)
+        txtCarName.Location = New Point(130, 44)
         txtCarName.Multiline = True
         txtCarName.Name = "txtCarName"
         txtCarName.ReadOnly = True
-        txtCarName.Size = New Size(303, 26)
+        txtCarName.Size = New Size(292, 33)
         txtCarName.TabIndex = 16
         ' 
         ' txtBodyNumber
         ' 
-        txtBodyNumber.Location = New Point(95, 83)
-        txtBodyNumber.Margin = New Padding(3, 2, 3, 2)
+        txtBodyNumber.BackColor = Color.FloralWhite
+        txtBodyNumber.Font = New Font("Century Gothic", 12F)
+        txtBodyNumber.Location = New Point(130, 130)
         txtBodyNumber.Multiline = True
         txtBodyNumber.Name = "txtBodyNumber"
         txtBodyNumber.ReadOnly = True
-        txtBodyNumber.Size = New Size(284, 20)
+        txtBodyNumber.Size = New Size(292, 33)
         txtBodyNumber.TabIndex = 15
         ' 
         ' Label8
         ' 
         Label8.AutoSize = True
-        Label8.Location = New Point(8, 56)
+        Label8.Font = New Font("Century Gothic", 12F)
+        Label8.Location = New Point(6, 98)
         Label8.Name = "Label8"
-        Label8.Size = New Size(39, 15)
+        Label8.Size = New Size(77, 23)
         Label8.TabIndex = 14
-        Label8.Text = "Car ID"
+        Label8.Text = "Car ID:"
         ' 
         ' Label7
         ' 
         Label7.AutoSize = True
-        Label7.Location = New Point(8, 26)
+        Label7.Font = New Font("Century Gothic", 12F)
+        Label7.Location = New Point(6, 54)
         Label7.Name = "Label7"
-        Label7.Size = New Size(60, 15)
+        Label7.Size = New Size(118, 23)
         Label7.TabIndex = 13
-        Label7.Text = "Car Name"
+        Label7.Text = "Car Name:"
         ' 
         ' GroupBox4
         ' 
+        GroupBox4.Controls.Add(Label17)
         GroupBox4.Controls.Add(Label15)
         GroupBox4.Controls.Add(BtnCalculate)
         GroupBox4.Controls.Add(CheckBox1)
@@ -295,11 +291,10 @@ Partial Class PaymentDetailSlip
         GroupBox4.Controls.Add(BtnPayment)
         GroupBox4.Controls.Add(ToDate)
         GroupBox4.Controls.Add(FromDate)
-        GroupBox4.Location = New Point(5, 368)
-        GroupBox4.Margin = New Padding(3, 2, 3, 2)
+        GroupBox4.Font = New Font("Stencil", 9F)
+        GroupBox4.Location = New Point(884, 108)
         GroupBox4.Name = "GroupBox4"
-        GroupBox4.Padding = New Padding(3, 2, 3, 2)
-        GroupBox4.Size = New Size(277, 192)
+        GroupBox4.Size = New Size(430, 449)
         GroupBox4.TabIndex = 3
         GroupBox4.TabStop = False
         GroupBox4.Text = "Payment Method"
@@ -307,29 +302,31 @@ Partial Class PaymentDetailSlip
         ' Label15
         ' 
         Label15.AutoSize = True
-        Label15.Location = New Point(81, 26)
+        Label15.Font = New Font("Felix Titling", 12F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        Label15.Location = New Point(6, 36)
         Label15.Name = "Label15"
-        Label15.Size = New Size(67, 15)
+        Label15.Size = New Size(245, 24)
         Label15.TabIndex = 29
-        Label15.Text = "Rental Date"
+        Label15.Text = "✮⋆˙Rental Period˙⋆✮"
         ' 
         ' BtnCalculate
         ' 
-        BtnCalculate.Location = New Point(10, 157)
-        BtnCalculate.Margin = New Padding(3, 2, 3, 2)
+        BtnCalculate.BackColor = Color.PaleGoldenrod
+        BtnCalculate.Font = New Font("Century", 12F, FontStyle.Bold)
+        BtnCalculate.Location = New Point(272, 356)
         BtnCalculate.Name = "BtnCalculate"
-        BtnCalculate.Size = New Size(123, 27)
+        BtnCalculate.Size = New Size(152, 36)
         BtnCalculate.TabIndex = 28
-        BtnCalculate.Text = "Calculate"
-        BtnCalculate.UseVisualStyleBackColor = True
+        BtnCalculate.Text = "Calculate☆"
+        BtnCalculate.UseVisualStyleBackColor = False
         ' 
         ' CheckBox1
         ' 
         CheckBox1.AutoSize = True
-        CheckBox1.Location = New Point(25, 124)
-        CheckBox1.Margin = New Padding(3, 2, 3, 2)
+        CheckBox1.Font = New Font("Century Gothic", 12F)
+        CheckBox1.Location = New Point(17, 252)
         CheckBox1.Name = "CheckBox1"
-        CheckBox1.Size = New Size(85, 19)
+        CheckBox1.Size = New Size(133, 27)
         CheckBox1.TabIndex = 27
         CheckBox1.Text = "With Driver"
         CheckBox1.UseVisualStyleBackColor = True
@@ -337,45 +334,48 @@ Partial Class PaymentDetailSlip
         ' Label14
         ' 
         Label14.AutoSize = True
-        Label14.Location = New Point(8, 85)
+        Label14.Font = New Font("Century Gothic", 12F)
+        Label14.Location = New Point(62, 154)
         Label14.Name = "Label14"
-        Label14.Size = New Size(22, 15)
+        Label14.Size = New Size(36, 23)
         Label14.TabIndex = 26
-        Label14.Text = "Till"
+        Label14.Text = "To:"
         ' 
         ' Label13
         ' 
         Label13.AutoSize = True
-        Label13.Location = New Point(8, 43)
+        Label13.Font = New Font("Century Gothic", 12F)
+        Label13.Location = New Point(62, 76)
         Label13.Name = "Label13"
-        Label13.Size = New Size(35, 15)
+        Label13.Size = New Size(63, 23)
         Label13.TabIndex = 25
-        Label13.Text = "From"
+        Label13.Text = "From:"
         ' 
         ' BtnPayment
         ' 
-        BtnPayment.Location = New Point(139, 157)
-        BtnPayment.Margin = New Padding(3, 2, 3, 2)
+        BtnPayment.BackColor = Color.PaleGoldenrod
+        BtnPayment.Font = New Font("Century", 12F, FontStyle.Bold)
+        BtnPayment.Location = New Point(272, 400)
         BtnPayment.Name = "BtnPayment"
-        BtnPayment.Size = New Size(123, 27)
+        BtnPayment.Size = New Size(152, 36)
         BtnPayment.TabIndex = 15
-        BtnPayment.Text = "Proceed to pay"
-        BtnPayment.UseVisualStyleBackColor = True
+        BtnPayment.Text = "Checkout☆"
+        BtnPayment.UseVisualStyleBackColor = False
         ' 
         ' ToDate
         ' 
-        ToDate.Location = New Point(25, 100)
-        ToDate.Margin = New Padding(3, 2, 3, 2)
+        ToDate.Font = New Font("Footlight MT Light", 13.8F)
+        ToDate.Location = New Point(125, 178)
         ToDate.Name = "ToDate"
-        ToDate.Size = New Size(211, 23)
+        ToDate.Size = New Size(249, 32)
         ToDate.TabIndex = 14
         ' 
         ' FromDate
         ' 
-        FromDate.Location = New Point(25, 60)
-        FromDate.Margin = New Padding(3, 2, 3, 2)
+        FromDate.Font = New Font("Footlight MT Light", 13.8F)
+        FromDate.Location = New Point(125, 102)
         FromDate.Name = "FromDate"
-        FromDate.Size = New Size(211, 23)
+        FromDate.Size = New Size(249, 32)
         FromDate.TabIndex = 13
         ' 
         ' GroupBox2
@@ -384,11 +384,10 @@ Partial Class PaymentDetailSlip
         GroupBox2.Controls.Add(Label5)
         GroupBox2.Controls.Add(TextBox4)
         GroupBox2.Controls.Add(txtEmail)
-        GroupBox2.Location = New Point(10, 117)
-        GroupBox2.Margin = New Padding(3, 2, 3, 2)
+        GroupBox2.Font = New Font("Stencil", 9F)
+        GroupBox2.Location = New Point(12, 361)
         GroupBox2.Name = "GroupBox2"
-        GroupBox2.Padding = New Padding(3, 2, 3, 2)
-        GroupBox2.Size = New Size(425, 85)
+        GroupBox2.Size = New Size(430, 196)
         GroupBox2.TabIndex = 2
         GroupBox2.TabStop = False
         GroupBox2.Text = "Contact Details"
@@ -396,38 +395,42 @@ Partial Class PaymentDetailSlip
         ' Label4
         ' 
         Label4.AutoSize = True
-        Label4.Location = New Point(8, 20)
+        Label4.Font = New Font("Century Gothic", 12F)
+        Label4.Location = New Point(62, 38)
         Label4.Name = "Label4"
-        Label4.Size = New Size(36, 15)
+        Label4.Size = New Size(67, 23)
         Label4.TabIndex = 7
-        Label4.Text = "Email"
+        Label4.Text = "Email:"
         ' 
         ' Label5
         ' 
         Label5.AutoSize = True
-        Label5.Location = New Point(10, 50)
+        Label5.Font = New Font("Century Gothic", 12F)
+        Label5.Location = New Point(62, 103)
         Label5.Name = "Label5"
-        Label5.Size = New Size(71, 15)
+        Label5.Size = New Size(131, 23)
         Label5.TabIndex = 8
-        Label5.Text = "Contact No."
+        Label5.Text = "Contact No:"
         ' 
         ' TextBox4
         ' 
-        TextBox4.Location = New Point(87, 47)
-        TextBox4.Margin = New Padding(3, 2, 3, 2)
+        TextBox4.BackColor = Color.FloralWhite
+        TextBox4.Font = New Font("Century Gothic", 12F)
+        TextBox4.Location = New Point(62, 129)
         TextBox4.Multiline = True
         TextBox4.Name = "TextBox4"
-        TextBox4.Size = New Size(303, 26)
+        TextBox4.Size = New Size(292, 33)
         TextBox4.TabIndex = 6
         ' 
         ' txtEmail
         ' 
-        txtEmail.Location = New Point(87, 17)
-        txtEmail.Margin = New Padding(3, 2, 3, 2)
+        txtEmail.BackColor = Color.FloralWhite
+        txtEmail.Font = New Font("Century Gothic", 12F)
+        txtEmail.Location = New Point(62, 64)
         txtEmail.Multiline = True
         txtEmail.Name = "txtEmail"
         txtEmail.ReadOnly = True
-        txtEmail.Size = New Size(303, 26)
+        txtEmail.Size = New Size(292, 33)
         txtEmail.TabIndex = 9
         ' 
         ' GroupBox1
@@ -440,102 +443,174 @@ Partial Class PaymentDetailSlip
         GroupBox1.Controls.Add(Label3)
         GroupBox1.Controls.Add(Label2)
         GroupBox1.Controls.Add(Label1)
-        GroupBox1.Location = New Point(10, 11)
-        GroupBox1.Margin = New Padding(3, 2, 3, 2)
+        GroupBox1.Font = New Font("Stencil", 9F)
+        GroupBox1.Location = New Point(12, 107)
         GroupBox1.Name = "GroupBox1"
-        GroupBox1.Padding = New Padding(3, 2, 3, 2)
         GroupBox1.RightToLeft = RightToLeft.No
-        GroupBox1.Size = New Size(425, 102)
+        GroupBox1.Size = New Size(430, 248)
         GroupBox1.TabIndex = 1
         GroupBox1.TabStop = False
         GroupBox1.Text = "Customer Information"
         ' 
         ' txtDOB
         ' 
-        txtDOB.Location = New Point(76, 58)
-        txtDOB.Margin = New Padding(3, 2, 3, 2)
+        txtDOB.BackColor = Color.FloralWhite
+        txtDOB.Font = New Font("Century Gothic", 12F)
+        txtDOB.Location = New Point(126, 90)
         txtDOB.Multiline = True
         txtDOB.Name = "txtDOB"
         txtDOB.ReadOnly = True
-        txtDOB.Size = New Size(152, 24)
+        txtDOB.Size = New Size(292, 33)
         txtDOB.TabIndex = 14
         ' 
         ' txtAge
         ' 
-        txtAge.Location = New Point(296, 56)
-        txtAge.Margin = New Padding(3, 2, 3, 2)
+        txtAge.BackColor = Color.FloralWhite
+        txtAge.Font = New Font("Century Gothic", 12F)
+        txtAge.Location = New Point(126, 132)
         txtAge.Multiline = True
         txtAge.Name = "txtAge"
         txtAge.ReadOnly = True
-        txtAge.Size = New Size(65, 26)
+        txtAge.Size = New Size(100, 33)
         txtAge.TabIndex = 13
         ' 
         ' Label6
         ' 
         Label6.AutoSize = True
-        Label6.Location = New Point(8, 63)
+        Label6.Font = New Font("Century Gothic", 12F)
+        Label6.Location = New Point(6, 182)
         Label6.Name = "Label6"
-        Label6.Size = New Size(31, 15)
+        Label6.Size = New Size(53, 23)
         Label6.TabIndex = 12
         Label6.Text = "DOB"
         ' 
         ' txtFullName
         ' 
-        txtFullName.Location = New Point(76, 26)
-        txtFullName.Margin = New Padding(3, 2, 3, 2)
+        txtFullName.BackColor = Color.FloralWhite
+        txtFullName.Font = New Font("Century Gothic", 12F)
+        txtFullName.Location = New Point(126, 45)
         txtFullName.Multiline = True
         txtFullName.Name = "txtFullName"
         txtFullName.ReadOnly = True
-        txtFullName.Size = New Size(152, 26)
+        txtFullName.Size = New Size(292, 33)
         txtFullName.TabIndex = 11
         ' 
         ' txtUsername
         ' 
-        txtUsername.Location = New Point(296, 23)
-        txtUsername.Margin = New Padding(3, 2, 3, 2)
+        txtUsername.BackColor = Color.FloralWhite
+        txtUsername.Font = New Font("Century Gothic", 12F)
+        txtUsername.Location = New Point(126, 172)
         txtUsername.Multiline = True
         txtUsername.Name = "txtUsername"
         txtUsername.ReadOnly = True
-        txtUsername.Size = New Size(94, 26)
+        txtUsername.Size = New Size(100, 33)
         txtUsername.TabIndex = 4
         ' 
         ' Label3
         ' 
         Label3.AutoSize = True
-        Label3.Location = New Point(234, 63)
+        Label3.Font = New Font("Century Gothic", 12F)
+        Label3.Location = New Point(6, 142)
         Label3.Name = "Label3"
-        Label3.Size = New Size(31, 15)
+        Label3.Size = New Size(56, 23)
         Label3.TabIndex = 3
         Label3.Text = "Age:"
         ' 
         ' Label2
         ' 
         Label2.AutoSize = True
-        Label2.Location = New Point(234, 32)
+        Label2.Font = New Font("Century Gothic", 12F)
+        Label2.Location = New Point(6, 100)
         Label2.Name = "Label2"
-        Label2.Size = New Size(63, 15)
+        Label2.Size = New Size(113, 23)
         Label2.TabIndex = 2
         Label2.Text = "Username:"
         ' 
         ' Label1
         ' 
         Label1.AutoSize = True
-        Label1.Location = New Point(8, 32)
+        Label1.Font = New Font("Century Gothic", 12F)
+        Label1.Location = New Point(6, 55)
         Label1.Name = "Label1"
-        Label1.Size = New Size(58, 15)
+        Label1.Size = New Size(114, 23)
         Label1.TabIndex = 0
-        Label1.Text = "FullName"
+        Label1.Text = "Full Name:"
+        ' 
+        ' Label17
+        ' 
+        Label17.AutoSize = True
+        Label17.Font = New Font("Century", 7.8F, FontStyle.Bold Or FontStyle.Italic, GraphicsUnit.Point, CByte(0))
+        Label17.Location = New Point(30, 277)
+        Label17.Name = "Label17"
+        Label17.Size = New Size(252, 32)
+        Label17.TabIndex = 30
+        Label17.Text = "✦If your payment doesn't include a " & vbCrLf & "driver, leave this box unchecked.✦"
+        ' 
+        ' PictureBox1
+        ' 
+        PictureBox1.Image = CType(resources.GetObject("PictureBox1.Image"), Image)
+        PictureBox1.Location = New Point(1208, 2)
+        PictureBox1.Margin = New Padding(3, 4, 3, 4)
+        PictureBox1.Name = "PictureBox1"
+        PictureBox1.Size = New Size(116, 111)
+        PictureBox1.SizeMode = PictureBoxSizeMode.Zoom
+        PictureBox1.TabIndex = 34
+        PictureBox1.TabStop = False
+        ' 
+        ' PictureBox5
+        ' 
+        PictureBox5.BackColor = Color.Transparent
+        PictureBox5.Image = CType(resources.GetObject("PictureBox5.Image"), Image)
+        PictureBox5.Location = New Point(1, 599)
+        PictureBox5.Margin = New Padding(3, 4, 3, 4)
+        PictureBox5.Name = "PictureBox5"
+        PictureBox5.Size = New Size(136, 91)
+        PictureBox5.SizeMode = PictureBoxSizeMode.StretchImage
+        PictureBox5.TabIndex = 37
+        PictureBox5.TabStop = False
+        ' 
+        ' Label19
+        ' 
+        Label19.AutoSize = True
+        Label19.BackColor = Color.Transparent
+        Label19.Font = New Font("Footlight MT Light", 7.8F)
+        Label19.Location = New Point(1, 569)
+        Label19.Name = "Label19"
+        Label19.Size = New Size(99, 14)
+        Label19.TabIndex = 36
+        Label19.Text = "WheelAway, Inc."
+        Label19.TextAlign = ContentAlignment.TopCenter
+        ' 
+        ' Label20
+        ' 
+        Label20.AutoSize = True
+        Label20.BackColor = Color.Transparent
+        Label20.Font = New Font("Footlight MT Light", 7.8F)
+        Label20.Location = New Point(1, 583)
+        Label20.Name = "Label20"
+        Label20.Size = New Size(136, 14)
+        Label20.TabIndex = 35
+        Label20.Text = "wheelaway@gmail.com"
+        Label20.TextAlign = ContentAlignment.TopCenter
         ' 
         ' PaymentDetailSlip
         ' 
-        AutoScaleDimensions = New SizeF(7F, 15F)
+        AutoScaleDimensions = New SizeF(8F, 20F)
         AutoScaleMode = AutoScaleMode.Font
-        ClientSize = New Size(462, 580)
-        Controls.Add(Panel1)
-        Margin = New Padding(3, 2, 3, 2)
+        ClientSize = New Size(1326, 691)
+        Controls.Add(PictureBox5)
+        Controls.Add(Label19)
+        Controls.Add(Label20)
+        Controls.Add(PictureBox1)
+        Controls.Add(btnBackToBooking)
+        Controls.Add(BtnBackToDashBoard)
+        Controls.Add(BtnBackToSeater)
+        Controls.Add(GroupBox1)
+        Controls.Add(GroupBox4)
+        Controls.Add(GroupBox2)
+        Controls.Add(GroupBox3)
         Name = "PaymentDetailSlip"
-        Text = "DetailsReceipt"
-        Panel1.ResumeLayout(False)
+        Text = "Details Receipt"
         GroupBox3.ResumeLayout(False)
         GroupBox3.PerformLayout()
         GroupBox4.ResumeLayout(False)
@@ -544,9 +619,11 @@ Partial Class PaymentDetailSlip
         GroupBox2.PerformLayout()
         GroupBox1.ResumeLayout(False)
         GroupBox1.PerformLayout()
+        CType(PictureBox1, ComponentModel.ISupportInitialize).EndInit()
+        CType(PictureBox5, ComponentModel.ISupportInitialize).EndInit()
         ResumeLayout(False)
+        PerformLayout()
     End Sub
-    Friend WithEvents Panel1 As Panel
     Friend WithEvents GroupBox1 As GroupBox
     Friend WithEvents Label1 As Label
     Friend WithEvents txtUsername As TextBox
@@ -588,5 +665,9 @@ Partial Class PaymentDetailSlip
     Friend WithEvents btnBackToBooking As Button
     Friend WithEvents BtnBackToDashBoard As Button
     Friend WithEvents BtnBackToSeater As Button
-    Friend WithEvents Btn As Button
+    Friend WithEvents Label17 As Label
+    Friend WithEvents PictureBox1 As PictureBox
+    Friend WithEvents PictureBox5 As PictureBox
+    Friend WithEvents Label19 As Label
+    Friend WithEvents Label20 As Label
 End Class
