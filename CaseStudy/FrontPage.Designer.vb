@@ -152,7 +152,7 @@ Partial Class FrontPage
         Controls.Add(Label15)
         Controls.Add(Label14)
         Name = "FrontPage"
-        Text = "Front Page"
+        Text = "🚘Front Page── .✦"
         CType(PictureBox1, ComponentModel.ISupportInitialize).EndInit()
         ResumeLayout(False)
         PerformLayout()

@@ -579,7 +579,7 @@ Partial Class loginForm
         Controls.Add(GroupBox1)
         Margin = New Padding(3, 4, 3, 4)
         Name = "loginForm"
-        Text = "Log-In and Sign-Up"
+        Text = "🚘Log In ☆ Sign Up── .✦"
         GroupBox1.ResumeLayout(False)
         GroupBox1.PerformLayout()
         CType(PictureBox3, ComponentModel.ISupportInitialize).EndInit()
