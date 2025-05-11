@@ -71,8 +71,6 @@ Partial Class Ten_to_Fifteen_Seaters
         Label43 = New Label()
         Label4 = New Label()
         Panel1 = New Panel()
-        Label179 = New Label()
-        Label178 = New Label()
         Label171 = New Label()
         Label170 = New Label()
         Label19 = New Label()
@@ -130,8 +128,6 @@ Partial Class Ten_to_Fifteen_Seaters
         Label80 = New Label()
         Label81 = New Label()
         Panel6 = New Panel()
-        Label132 = New Label()
-        Label133 = New Label()
         Label128 = New Label()
         Label129 = New Label()
         Label82 = New Label()
@@ -189,8 +185,6 @@ Partial Class Ten_to_Fifteen_Seaters
         Label122 = New Label()
         Label123 = New Label()
         Panel9 = New Panel()
-        Label134 = New Label()
-        Label135 = New Label()
         Label130 = New Label()
         Label131 = New Label()
         Label124 = New Label()
@@ -761,8 +755,6 @@ Partial Class Ten_to_Fifteen_Seaters
         ' 
         Panel1.BackgroundImage = CType(resources.GetObject("Panel1.BackgroundImage"), Image)
         Panel1.BorderStyle = BorderStyle.Fixed3D
-        Panel1.Controls.Add(Label179)
-        Panel1.Controls.Add(Label178)
         Panel1.Controls.Add(Label171)
         Panel1.Controls.Add(Label170)
         Panel1.Controls.Add(Label19)
@@ -778,26 +770,6 @@ Partial Class Ten_to_Fifteen_Seaters
         Panel1.Name = "Panel1"
         Panel1.Size = New Size(780, 442)
         Panel1.TabIndex = 0
-        ' 
-        ' Label179
-        ' 
-        Label179.AutoSize = True
-        Label179.Font = New Font("Century", 9F, FontStyle.Underline)
-        Label179.Location = New Point(141, 65)
-        Label179.Name = "Label179"
-        Label179.Size = New Size(20, 18)
-        Label179.TabIndex = 14
-        Label179.Text = "N"
-        ' 
-        ' Label178
-        ' 
-        Label178.AutoSize = True
-        Label178.Font = New Font("Century", 9F, FontStyle.Bold)
-        Label178.Location = New Point(12, 65)
-        Label178.Name = "Label178"
-        Label178.Size = New Size(121, 18)
-        Label178.TabIndex = 13
-        Label178.Text = "Body Number:"
         ' 
         ' Label171
         ' 
@@ -1418,8 +1390,6 @@ Partial Class Ten_to_Fifteen_Seaters
         ' 
         Panel6.BackgroundImage = CType(resources.GetObject("Panel6.BackgroundImage"), Image)
         Panel6.BorderStyle = BorderStyle.Fixed3D
-        Panel6.Controls.Add(Label132)
-        Panel6.Controls.Add(Label133)
         Panel6.Controls.Add(Label128)
         Panel6.Controls.Add(Label129)
         Panel6.Controls.Add(Label82)
@@ -1435,26 +1405,6 @@ Partial Class Ten_to_Fifteen_Seaters
         Panel6.Name = "Panel6"
         Panel6.Size = New Size(780, 442)
         Panel6.TabIndex = 4
-        ' 
-        ' Label132
-        ' 
-        Label132.AutoSize = True
-        Label132.Font = New Font("Century", 9F, FontStyle.Underline)
-        Label132.Location = New Point(143, 65)
-        Label132.Name = "Label132"
-        Label132.Size = New Size(20, 18)
-        Label132.TabIndex = 14
-        Label132.Text = "N"
-        ' 
-        ' Label133
-        ' 
-        Label133.AutoSize = True
-        Label133.Font = New Font("Century", 9F, FontStyle.Bold)
-        Label133.Location = New Point(14, 65)
-        Label133.Name = "Label133"
-        Label133.Size = New Size(121, 18)
-        Label133.TabIndex = 13
-        Label133.Text = "Body Number:"
         ' 
         ' Label128
         ' 
@@ -2074,8 +2024,6 @@ Partial Class Ten_to_Fifteen_Seaters
         ' 
         Panel9.BackgroundImage = CType(resources.GetObject("Panel9.BackgroundImage"), Image)
         Panel9.BorderStyle = BorderStyle.Fixed3D
-        Panel9.Controls.Add(Label134)
-        Panel9.Controls.Add(Label135)
         Panel9.Controls.Add(Label130)
         Panel9.Controls.Add(Label131)
         Panel9.Controls.Add(Label124)
@@ -2091,26 +2039,6 @@ Partial Class Ten_to_Fifteen_Seaters
         Panel9.Name = "Panel9"
         Panel9.Size = New Size(780, 442)
         Panel9.TabIndex = 9
-        ' 
-        ' Label134
-        ' 
-        Label134.AutoSize = True
-        Label134.Font = New Font("Century", 9F, FontStyle.Underline)
-        Label134.Location = New Point(141, 65)
-        Label134.Name = "Label134"
-        Label134.Size = New Size(20, 18)
-        Label134.TabIndex = 14
-        Label134.Text = "N"
-        ' 
-        ' Label135
-        ' 
-        Label135.AutoSize = True
-        Label135.Font = New Font("Century", 9F, FontStyle.Bold)
-        Label135.Location = New Point(12, 65)
-        Label135.Name = "Label135"
-        Label135.Size = New Size(121, 18)
-        Label135.TabIndex = 13
-        Label135.Text = "Body Number:"
         ' 
         ' Label130
         ' 
@@ -2451,10 +2379,4 @@ Partial Class Ten_to_Fifteen_Seaters
     Friend WithEvents Label129 As Label
     Friend WithEvents Label130 As Label
     Friend WithEvents Label131 As Label
-    Friend WithEvents Label179 As Label
-    Friend WithEvents Label178 As Label
-    Friend WithEvents Label132 As Label
-    Friend WithEvents Label133 As Label
-    Friend WithEvents Label134 As Label
-    Friend WithEvents Label135 As Label
 End Class

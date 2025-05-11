@@ -101,8 +101,6 @@ Partial Class Camping_Cars
         Label43 = New Label()
         Label4 = New Label()
         Panel1 = New Panel()
-        Label142 = New Label()
-        Label144 = New Label()
         Label171 = New Label()
         Label170 = New Label()
         PictureBox29 = New PictureBox()
@@ -188,8 +186,6 @@ Partial Class Camping_Cars
         Label80 = New Label()
         Label81 = New Label()
         Panel6 = New Panel()
-        Label147 = New Label()
-        Label148 = New Label()
         Label172 = New Label()
         Label173 = New Label()
         PictureBox30 = New PictureBox()
@@ -279,8 +275,6 @@ Partial Class Camping_Cars
         Label122 = New Label()
         Label123 = New Label()
         Panel9 = New Panel()
-        Label290 = New Label()
-        Label291 = New Label()
         Label174 = New Label()
         Label175 = New Label()
         PictureBox31 = New PictureBox()
@@ -367,8 +361,6 @@ Partial Class Camping_Cars
         Label164 = New Label()
         Label165 = New Label()
         Panel12 = New Panel()
-        Label292 = New Label()
-        Label293 = New Label()
         Label176 = New Label()
         Label177 = New Label()
         PictureBox19 = New PictureBox()
@@ -1296,8 +1288,6 @@ Partial Class Camping_Cars
         ' 
         Panel1.BackgroundImage = CType(resources.GetObject("Panel1.BackgroundImage"), Image)
         Panel1.BorderStyle = BorderStyle.Fixed3D
-        Panel1.Controls.Add(Label142)
-        Panel1.Controls.Add(Label144)
         Panel1.Controls.Add(Label171)
         Panel1.Controls.Add(Label170)
         Panel1.Controls.Add(PictureBox29)
@@ -1319,26 +1309,6 @@ Partial Class Camping_Cars
         Panel1.Name = "Panel1"
         Panel1.Size = New Size(780, 442)
         Panel1.TabIndex = 0
-        ' 
-        ' Label142
-        ' 
-        Label142.AutoSize = True
-        Label142.Font = New Font("Century", 9F, FontStyle.Underline)
-        Label142.Location = New Point(140, 65)
-        Label142.Name = "Label142"
-        Label142.Size = New Size(20, 18)
-        Label142.TabIndex = 18
-        Label142.Text = "N"
-        ' 
-        ' Label144
-        ' 
-        Label144.AutoSize = True
-        Label144.Font = New Font("Century", 9F, FontStyle.Bold)
-        Label144.Location = New Point(12, 65)
-        Label144.Name = "Label144"
-        Label144.Size = New Size(121, 18)
-        Label144.TabIndex = 17
-        Label144.Text = "Body Number:"
         ' 
         ' Label171
         ' 
@@ -2267,8 +2237,6 @@ Partial Class Camping_Cars
         ' 
         Panel6.BackgroundImage = CType(resources.GetObject("Panel6.BackgroundImage"), Image)
         Panel6.BorderStyle = BorderStyle.Fixed3D
-        Panel6.Controls.Add(Label147)
-        Panel6.Controls.Add(Label148)
         Panel6.Controls.Add(Label172)
         Panel6.Controls.Add(Label173)
         Panel6.Controls.Add(PictureBox30)
@@ -2286,26 +2254,6 @@ Partial Class Camping_Cars
         Panel6.Name = "Panel6"
         Panel6.Size = New Size(780, 442)
         Panel6.TabIndex = 4
-        ' 
-        ' Label147
-        ' 
-        Label147.AutoSize = True
-        Label147.Font = New Font("Century", 9F, FontStyle.Underline)
-        Label147.Location = New Point(141, 65)
-        Label147.Name = "Label147"
-        Label147.Size = New Size(20, 18)
-        Label147.TabIndex = 14
-        Label147.Text = "N"
-        ' 
-        ' Label148
-        ' 
-        Label148.AutoSize = True
-        Label148.Font = New Font("Century", 9F, FontStyle.Bold)
-        Label148.Location = New Point(12, 65)
-        Label148.Name = "Label148"
-        Label148.Size = New Size(121, 18)
-        Label148.TabIndex = 13
-        Label148.Text = "Body Number:"
         ' 
         ' Label172
         ' 
@@ -3277,8 +3225,6 @@ Partial Class Camping_Cars
         ' 
         Panel9.BackgroundImage = CType(resources.GetObject("Panel9.BackgroundImage"), Image)
         Panel9.BorderStyle = BorderStyle.Fixed3D
-        Panel9.Controls.Add(Label290)
-        Panel9.Controls.Add(Label291)
         Panel9.Controls.Add(Label174)
         Panel9.Controls.Add(Label175)
         Panel9.Controls.Add(PictureBox31)
@@ -3297,26 +3243,6 @@ Partial Class Camping_Cars
         Panel9.Name = "Panel9"
         Panel9.Size = New Size(780, 442)
         Panel9.TabIndex = 9
-        ' 
-        ' Label290
-        ' 
-        Label290.AutoSize = True
-        Label290.Font = New Font("Century", 9F, FontStyle.Underline)
-        Label290.Location = New Point(141, 65)
-        Label290.Name = "Label290"
-        Label290.Size = New Size(20, 18)
-        Label290.TabIndex = 14
-        Label290.Text = "N"
-        ' 
-        ' Label291
-        ' 
-        Label291.AutoSize = True
-        Label291.Font = New Font("Century", 9F, FontStyle.Bold)
-        Label291.Location = New Point(12, 65)
-        Label291.Name = "Label291"
-        Label291.Size = New Size(121, 18)
-        Label291.TabIndex = 13
-        Label291.Text = "Body Number:"
         ' 
         ' Label174
         ' 
@@ -3483,23 +3409,25 @@ Partial Class Camping_Cars
         ' 
         ' C3
         ' 
+        C3.BackColor = Color.PaleGoldenrod
         C3.Font = New Font("Century", 12F, FontStyle.Bold)
         C3.Location = New Point(1161, 560)
         C3.Name = "C3"
         C3.Size = New Size(125, 35)
         C3.TabIndex = 13
         C3.Text = "Confirm↪"
-        C3.UseVisualStyleBackColor = True
+        C3.UseVisualStyleBackColor = False
         ' 
         ' B3
         ' 
+        B3.BackColor = Color.PaleGoldenrod
         B3.Font = New Font("Century", 12F, FontStyle.Bold)
         B3.Location = New Point(6, 560)
         B3.Name = "B3"
         B3.Size = New Size(125, 35)
         B3.TabIndex = 12
         B3.Text = "↩Back"
-        B3.UseVisualStyleBackColor = True
+        B3.UseVisualStyleBackColor = False
         ' 
         ' Panel10
         ' 
@@ -4106,16 +4034,18 @@ Partial Class Camping_Cars
         ' 
         ' SD3
         ' 
+        SD3.BackColor = Color.PaleGoldenrod
         SD3.Font = New Font("Century", 9F, FontStyle.Bold)
         SD3.Location = New Point(114, 504)
         SD3.Name = "SD3"
         SD3.Size = New Size(134, 29)
         SD3.TabIndex = 4
         SD3.Text = "Self Driving☆"
-        SD3.UseVisualStyleBackColor = True
+        SD3.UseVisualStyleBackColor = False
         ' 
         ' WD3
         ' 
+        WD3.BackColor = Color.PaleGoldenrod
         WD3.Font = New Font("Century", 9F, FontStyle.Bold)
         WD3.Location = New Point(254, 505)
         WD3.Name = "WD3"
@@ -4123,7 +4053,7 @@ Partial Class Camping_Cars
         WD3.TabIndex = 5
         WD3.Text = "With Driver☆"
         WD3.TextAlign = ContentAlignment.TopCenter
-        WD3.UseVisualStyleBackColor = True
+        WD3.UseVisualStyleBackColor = False
         ' 
         ' Label134
         ' 
@@ -4251,8 +4181,6 @@ Partial Class Camping_Cars
         ' 
         Panel12.BackgroundImage = CType(resources.GetObject("Panel12.BackgroundImage"), Image)
         Panel12.BorderStyle = BorderStyle.Fixed3D
-        Panel12.Controls.Add(Label292)
-        Panel12.Controls.Add(Label293)
         Panel12.Controls.Add(Label176)
         Panel12.Controls.Add(Label177)
         Panel12.Controls.Add(PictureBox19)
@@ -4271,26 +4199,6 @@ Partial Class Camping_Cars
         Panel12.Name = "Panel12"
         Panel12.Size = New Size(780, 442)
         Panel12.TabIndex = 9
-        ' 
-        ' Label292
-        ' 
-        Label292.AutoSize = True
-        Label292.Font = New Font("Century", 9F, FontStyle.Underline)
-        Label292.Location = New Point(141, 65)
-        Label292.Name = "Label292"
-        Label292.Size = New Size(20, 18)
-        Label292.TabIndex = 22
-        Label292.Text = "N"
-        ' 
-        ' Label293
-        ' 
-        Label293.AutoSize = True
-        Label293.Font = New Font("Century", 9F, FontStyle.Bold)
-        Label293.Location = New Point(12, 65)
-        Label293.Name = "Label293"
-        Label293.Size = New Size(121, 18)
-        Label293.TabIndex = 21
-        Label293.Text = "Body Number:"
         ' 
         ' Label176
         ' 
@@ -4869,12 +4777,4 @@ Partial Class Camping_Cars
     Friend WithEvents Label287 As Label
     Friend WithEvents Label288 As Label
     Friend WithEvents Label289 As Label
-    Friend WithEvents Label142 As Label
-    Friend WithEvents Label144 As Label
-    Friend WithEvents Label147 As Label
-    Friend WithEvents Label148 As Label
-    Friend WithEvents Label290 As Label
-    Friend WithEvents Label291 As Label
-    Friend WithEvents Label292 As Label
-    Friend WithEvents Label293 As Label
 End Class
