@@ -166,6 +166,7 @@ Partial Class PaymentDetailSlip
         txtCarID.Location = New Point(130, 88)
         txtCarID.Multiline = True
         txtCarID.Name = "txtCarID"
+        txtCarID.ReadOnly = True
         txtCarID.Size = New Size(292, 33)
         txtCarID.TabIndex = 24
         ' 
@@ -390,6 +391,7 @@ Partial Class PaymentDetailSlip
         ' 
         ' ToDate
         ' 
+        ToDate.Enabled = False
         ToDate.Font = New Font("Footlight MT Light", 13.8F)
         ToDate.Location = New Point(125, 179)
         ToDate.Name = "ToDate"
@@ -398,6 +400,7 @@ Partial Class PaymentDetailSlip
         ' 
         ' FromDate
         ' 
+        FromDate.Enabled = False
         FromDate.Font = New Font("Footlight MT Light", 13.8F)
         FromDate.Location = New Point(125, 101)
         FromDate.Name = "FromDate"
