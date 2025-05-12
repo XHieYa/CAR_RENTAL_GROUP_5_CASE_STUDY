@@ -4,6 +4,7 @@ Public Class BookingForm
     'SQL Conenction
     Dim con As New SqlConnection("Data Source=(localdb)\MSSQLLocalDB;Initial Catalog=CaseStudy;Integrated Security=True;Connect Timeout=30;Encrypt=False;Trust Server Certificate=False;Application Intent=ReadWrite;Multi Subnet Failover=False")
     Private Sub BtnConfirm_Click(sender As Object, e As EventArgs) Handles BtnConfirm.Click
+        PaymentDetailSlip.Close()
         'Checks if both dates are equal or reversed
         If ToDOB.Value.Date <= FromDOB.Value.Date Then
             MessageBox.Show("Not Equal to Each Other Nor The ToDate must be higher than From", "INFO", MessageBoxButtons.OK, MessageBoxIcon.Warning)
@@ -14,9 +15,9 @@ Public Class BookingForm
             con.Open()
             Dim cmd As New SqlCommand(query, con)
             cmd.Parameters.AddWithValue("@CarID", TxtCarID.Text)
-                cmd.Parameters.AddWithValue("@NewStartDate", FromDOB.Value.Date)
-                cmd.Parameters.AddWithValue("@NewEndDate", ToDOB.Value.Date)
-                Dim count As Integer = Convert.ToInt32(cmd.ExecuteScalar())
+            cmd.Parameters.AddWithValue("@NewStartDate", FromDOB.Value.Date)
+            cmd.Parameters.AddWithValue("@NewEndDate", ToDOB.Value.Date)
+            Dim count As Integer = Convert.ToInt32(cmd.ExecuteScalar())
             If count > 0 Then
                 MessageBox.Show("Schedule to This Has Been Booked", "INFO", MessageBoxButtons.OK, MessageBoxIcon.Warning)
                 con.Close()

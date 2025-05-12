@@ -38,7 +38,9 @@ Public Class loginForm
             con.Close()
             If count > 0 Then
                 MessageBox.Show("Login Successfully", "INFO", MessageBoxButtons.OK, MessageBoxIcon.Information)
+                cbShowPassLI.Checked = False
                 Hide()
+                Dashboard.Close()
                 Dashboard.Show()
             Else
                 MessageBox.Show("Login Error") 'Error Message if account is not existing
