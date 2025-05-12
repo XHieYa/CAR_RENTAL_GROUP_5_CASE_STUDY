@@ -161,4 +161,11 @@ Public Class AdminForm
 
         End Try
     End Sub
+
+    Private Sub Button2_Click(sender As Object, e As EventArgs) Handles Button2.Click
+        Hide()
+        loginForm.Show()
+        loginForm.txtuser.Text = String.Empty
+        loginForm.txtpass.Text = String.Empty
+    End Sub
 End Class
