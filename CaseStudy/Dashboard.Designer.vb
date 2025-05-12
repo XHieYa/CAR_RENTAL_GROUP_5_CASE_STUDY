@@ -47,6 +47,8 @@ Partial Class Dashboard
         lblFullName = New Label()
         Label2 = New Label()
         TabPage2 = New TabPage()
+        Label14 = New Label()
+        Label13 = New Label()
         BtnSchedCheck = New Button()
         btnCalculate = New Button()
         btnDelete = New Button()
@@ -59,8 +61,6 @@ Partial Class Dashboard
         PictureBox2 = New PictureBox()
         Label3 = New Label()
         Label1 = New Label()
-        Label13 = New Label()
-        Label14 = New Label()
         TabControl1.SuspendLayout()
         TabPage1.SuspendLayout()
         CType(PictureBox1, ComponentModel.ISupportInitialize).BeginInit()
@@ -362,6 +362,26 @@ Partial Class Dashboard
         TabPage2.Text = "🚘Records── .✦"
         TabPage2.UseVisualStyleBackColor = True
         ' 
+        ' Label14
+        ' 
+        Label14.AutoSize = True
+        Label14.Font = New Font("Century Gothic", 13.8F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
+        Label14.Location = New Point(635, 36)
+        Label14.Name = "Label14"
+        Label14.Size = New Size(44, 27)
+        Label14.TabIndex = 10
+        Label14.Text = "To:"
+        ' 
+        ' Label13
+        ' 
+        Label13.AutoSize = True
+        Label13.Font = New Font("Century Gothic", 13.8F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
+        Label13.Location = New Point(146, 36)
+        Label13.Name = "Label13"
+        Label13.Size = New Size(73, 27)
+        Label13.TabIndex = 9
+        Label13.Text = "From:"
+        ' 
         ' BtnSchedCheck
         ' 
         BtnSchedCheck.BackColor = Color.PaleGoldenrod
@@ -502,26 +522,6 @@ Partial Class Dashboard
         Label1.Size = New Size(63, 23)
         Label1.TabIndex = 4
         Label1.Text = "From:"
-        ' 
-        ' Label13
-        ' 
-        Label13.AutoSize = True
-        Label13.Font = New Font("Century Gothic", 13.8F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
-        Label13.Location = New Point(146, 36)
-        Label13.Name = "Label13"
-        Label13.Size = New Size(73, 27)
-        Label13.TabIndex = 9
-        Label13.Text = "From:"
-        ' 
-        ' Label14
-        ' 
-        Label14.AutoSize = True
-        Label14.Font = New Font("Century Gothic", 13.8F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
-        Label14.Location = New Point(635, 36)
-        Label14.Name = "Label14"
-        Label14.Size = New Size(44, 27)
-        Label14.TabIndex = 10
-        Label14.Text = "To:"
         ' 
         ' Dashboard
         ' 

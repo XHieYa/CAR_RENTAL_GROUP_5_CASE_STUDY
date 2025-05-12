@@ -185,7 +185,7 @@ Partial Class BookingForm
         ' 
         txtBodyNumber.BackColor = Color.FloralWhite
         txtBodyNumber.Font = New Font("Century Gothic", 10.2F)
-        txtBodyNumber.Location = New Point(131, 99)
+        txtBodyNumber.Location = New Point(141, 99)
         txtBodyNumber.Multiline = True
         txtBodyNumber.Name = "txtBodyNumber"
         txtBodyNumber.ReadOnly = True
@@ -196,7 +196,7 @@ Partial Class BookingForm
         ' 
         txtCapacity.BackColor = Color.FloralWhite
         txtCapacity.Font = New Font("Century Gothic", 10.2F)
-        txtCapacity.Location = New Point(131, 136)
+        txtCapacity.Location = New Point(141, 136)
         txtCapacity.Multiline = True
         txtCapacity.Name = "txtCapacity"
         txtCapacity.ReadOnly = True
@@ -295,7 +295,7 @@ Partial Class BookingForm
         ' 
         txtCar.BackColor = Color.FloralWhite
         txtCar.Font = New Font("Century Gothic", 10.2F)
-        txtCar.Location = New Point(131, 61)
+        txtCar.Location = New Point(141, 61)
         txtCar.Margin = New Padding(3, 4, 3, 4)
         txtCar.Multiline = True
         txtCar.Name = "txtCar"
