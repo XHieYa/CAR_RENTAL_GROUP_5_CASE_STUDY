@@ -235,5 +235,10 @@ Public Class Dashboard
         CalendarChecker.Show()
     End Sub
 
-
+    Private Sub Button2_Click(sender As Object, e As EventArgs) Handles Button2.Click
+        Hide()
+        FrontPage.Show()
+        loginForm.txtuser.Text = String.Empty
+        loginForm.txtpass.Text = String.Empty
+    End Sub
 End Class

@@ -61,6 +61,7 @@ Partial Class Dashboard
         PictureBox2 = New PictureBox()
         Label3 = New Label()
         Label1 = New Label()
+        Button2 = New Button()
         TabControl1.SuspendLayout()
         TabPage1.SuspendLayout()
         CType(PictureBox1, ComponentModel.ISupportInitialize).BeginInit()
@@ -191,7 +192,7 @@ Partial Class Dashboard
         Label11.Font = New Font("Century Gothic", 12F)
         Label11.Location = New Point(513, 405)
         Label11.Name = "Label11"
-        Label11.Size = New Size(107, 23)
+        Label11.Size = New Size(103, 23)
         Label11.TabIndex = 17
         Label11.Text = "𓇻 Record:"
         ' 
@@ -473,7 +474,7 @@ Partial Class Dashboard
         ' 
         Button1.BackColor = Color.PaleGoldenrod
         Button1.Font = New Font("Century", 12F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
-        Button1.Location = New Point(1185, 649)
+        Button1.Location = New Point(1198, 649)
         Button1.Margin = New Padding(3, 4, 3, 4)
         Button1.Name = "Button1"
         Button1.Size = New Size(125, 35)
@@ -523,6 +524,18 @@ Partial Class Dashboard
         Label1.TabIndex = 4
         Label1.Text = "From:"
         ' 
+        ' Button2
+        ' 
+        Button2.BackColor = Color.PaleGoldenrod
+        Button2.Font = New Font("Century", 12F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        Button2.Location = New Point(3, 649)
+        Button2.Margin = New Padding(3, 4, 3, 4)
+        Button2.Name = "Button2"
+        Button2.Size = New Size(135, 35)
+        Button2.TabIndex = 21
+        Button2.Text = "↩Log Out"
+        Button2.UseVisualStyleBackColor = False
+        ' 
         ' Dashboard
         ' 
         AutoScaleDimensions = New SizeF(8F, 20F)
@@ -530,6 +543,7 @@ Partial Class Dashboard
         BackgroundImage = CType(resources.GetObject("$this.BackgroundImage"), Image)
         BackgroundImageLayout = ImageLayout.Stretch
         ClientSize = New Size(1326, 690)
+        Controls.Add(Button2)
         Controls.Add(TabControl1)
         Controls.Add(Button1)
         Margin = New Padding(3, 4, 3, 4)
@@ -585,4 +599,5 @@ Partial Class Dashboard
     Friend WithEvents btnDelete As Button
     Friend WithEvents Label14 As Label
     Friend WithEvents Label13 As Label
+    Friend WithEvents Button2 As Button
 End Class
