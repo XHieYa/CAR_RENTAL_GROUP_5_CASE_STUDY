@@ -97,5 +97,9 @@ Public Class CalendarChecker
         RowLoader()
         ScheduleShower()
     End Sub
+
+    Private Sub Button2_Click(sender As Object, e As EventArgs) Handles Button2.Click
+        Hide()
+    End Sub
     'Actions called when the booking form load
 End Class

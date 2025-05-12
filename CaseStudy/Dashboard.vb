@@ -38,7 +38,7 @@ Public Class Dashboard
     'DASHBOARD LOADER
     Private Sub Dashboard_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         'WAS A TEST BUT OUTLINE FOR WELCOME PROMPT
-        lblgreet.Text = "Hello, " & loginForm.txtuser.Text & " Welcome to Rent 4 Wheelz"
+        lblgreet.Text = "Hello, " & loginForm.txtuser.Text & " Welcome to Wheel-Away! Let's get you on the road."
         'LOADS FUNCTION
         LoadLogs()
         'ESTABLISHES CONNECTION

@@ -55,6 +55,8 @@ Public Class loginForm
     Private Sub llblCreateAccount_LinkClicked(sender As Object, e As LinkLabelLinkClickedEventArgs) Handles llblCreateAccount.LinkClicked 'if Create account is clicked disable login enable sign-up
         GroupBox2.Enabled = True
         GroupBox1.Enabled = False
+        txtuser.Text = String.Empty
+        txtpass.Text = String.Empty
     End Sub
     'Sign in button sub
     Private Sub BtnSignIn_Click(sender As Object, e As EventArgs) Handles BtnSignIn.Click

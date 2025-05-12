@@ -28,6 +28,7 @@ Partial Class CalendarChecker
         Label1 = New Label()
         PictureBox1 = New PictureBox()
         Label2 = New Label()
+        Button2 = New Button()
         CType(DGVSchedules, ComponentModel.ISupportInitialize).BeginInit()
         CType(PictureBox1, ComponentModel.ISupportInitialize).BeginInit()
         SuspendLayout()
@@ -41,11 +42,11 @@ Partial Class CalendarChecker
         DGVSchedules.BackgroundColor = Color.LightGoldenrodYellow
         DGVSchedules.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize
         DGVSchedules.Enabled = False
-        DGVSchedules.Location = New Point(14, 256)
+        DGVSchedules.Location = New Point(14, 231)
         DGVSchedules.Margin = New Padding(3, 4, 3, 4)
         DGVSchedules.Name = "DGVSchedules"
         DGVSchedules.RowHeadersWidth = 51
-        DGVSchedules.Size = New Size(1300, 422)
+        DGVSchedules.Size = New Size(1300, 410)
         DGVSchedules.TabIndex = 14
         ' 
         ' MnthC
@@ -86,9 +87,21 @@ Partial Class CalendarChecker
         Label2.Font = New Font("Segoe UI", 16.2F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
         Label2.Location = New Point(278, 21)
         Label2.Name = "Label2"
-        Label2.Size = New Size(159, 38)
+        Label2.Size = New Size(156, 38)
         Label2.TabIndex = 36
         Label2.Text = "⊹ ࣪ ˖⏱ ୭˚.⊹"
+        ' 
+        ' Button2
+        ' 
+        Button2.BackColor = Color.PaleGoldenrod
+        Button2.Font = New Font("Century", 12F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        Button2.Location = New Point(12, 649)
+        Button2.Margin = New Padding(3, 4, 3, 4)
+        Button2.Name = "Button2"
+        Button2.Size = New Size(125, 35)
+        Button2.TabIndex = 37
+        Button2.Text = "↩Back"
+        Button2.UseVisualStyleBackColor = False
         ' 
         ' CalendarChecker
         ' 
@@ -96,6 +109,7 @@ Partial Class CalendarChecker
         AutoScaleMode = AutoScaleMode.Font
         BackgroundImage = CType(resources.GetObject("$this.BackgroundImage"), Image)
         ClientSize = New Size(1326, 691)
+        Controls.Add(Button2)
         Controls.Add(Label2)
         Controls.Add(PictureBox1)
         Controls.Add(Label1)
@@ -115,4 +129,5 @@ Partial Class CalendarChecker
     Friend WithEvents Label1 As Label
     Friend WithEvents PictureBox1 As PictureBox
     Friend WithEvents Label2 As Label
+    Friend WithEvents Button2 As Button
 End Class
