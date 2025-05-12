@@ -47,7 +47,7 @@ Public Class PaymentDetailSlip
                 Return
             End If
             'sql query
-            Dim query As String = "INSERT INTO Booking (CarID, CarName, StartBookDate, EndBookDate, Price, WDriver, Rate, Contact) VALUES (@CarID, @CarName, @Fdate, @Tdate, @Price, @WDriver, @Rate, @Contact)"
+            Dim query As String = "INSERT INTO Booking (CarID, CarName, StartBookDate, EndBookDate, Price, WDriver, Rate, Contact, Username) VALUES (@CarID, @CarName, @Fdate, @Tdate, @Price, @WDriver, @Rate, @Contact, @Username)"
             Con.Open()
             'same as the other that adds items to sql
             Using cmd As New SqlCommand(query, Con)
@@ -134,6 +134,7 @@ Public Class PaymentDetailSlip
                 MessageBox.Show("Insufficient Amount.", "Payment Failed.", MessageBoxButtons.OK, MessageBoxIcon.Error)
             Else
                 BookingAdd()
+                Dashboard.Close()
                 Dashboard.Show()
                 Me.Close()
             End If
