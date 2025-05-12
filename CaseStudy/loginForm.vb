@@ -22,29 +22,28 @@ Public Class loginForm
     End Function
     'Login Button
     Private Sub Btnlogin_Click(sender As Object, e As EventArgs) Handles BtnLogin.Click
-        con.Open()
-        'Check Database for the matching Password and Username
-        Dim query = "SELECT COUNT(*) FROM login WHERE username=@username AND password=@password"
-        Dim cmd As New SqlCommand(query, con)
-        'Both adds Value to @Variables to be checked or compared as Boolean
-        cmd.Parameters.AddWithValue("@username", txtuser.Text)
-        cmd.Parameters.AddWithValue("@password", txtpass.Text)
-        Dim count As Integer = Convert.ToInt64(cmd.ExecuteScalar)
-        con.Close()
-
-        If count > 0 Then
-            'If admin on user and password were entered admin form will be open else they go to dashboard
-            If txtuser.Text = "admin" And txtpass.Text = "admin" Then
-                Hide()
-                AdminForm.Show()
-            Else
+        'If admin on user and password were entered admin form will be open else they go to dashboard
+        If txtuser.Text = "admin" And txtpass.Text = "admin" Then
+            Hide()
+            AdminForm.Show()
+        Else
+            con.Open()
+            'Check Database for the matching Password and Username
+            Dim query = "SELECT COUNT(*) FROM login WHERE username=@username AND password=@password"
+            Dim cmd As New SqlCommand(query, con)
+            'Both adds Value to @Variables to be checked or compared as Boolean
+            cmd.Parameters.AddWithValue("@username", txtuser.Text)
+            cmd.Parameters.AddWithValue("@password", txtpass.Text)
+            Dim count As Integer = Convert.ToInt64(cmd.ExecuteScalar)
+            con.Close()
+            If count > 0 Then
                 MessageBox.Show("Login Successfully", "INFO", MessageBoxButtons.OK, MessageBoxIcon.Information)
                 Hide()
                 Dashboard.Show()
-            End If
-        Else
-            MessageBox.Show("Login Error") 'Error Message if account is not existing
+            Else
+                MessageBox.Show("Login Error") 'Error Message if account is not existing
 
+            End If
         End If
     End Sub
     'When the form load only login and sign up will be used
