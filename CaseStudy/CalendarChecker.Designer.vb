@@ -26,7 +26,10 @@ Partial Class CalendarChecker
         DGVSchedules = New DataGridView()
         MnthC = New MonthCalendar()
         Label1 = New Label()
+        PictureBox1 = New PictureBox()
+        Label2 = New Label()
         CType(DGVSchedules, ComponentModel.ISupportInitialize).BeginInit()
+        CType(PictureBox1, ComponentModel.ISupportInitialize).BeginInit()
         SuspendLayout()
         ' 
         ' DGVSchedules
@@ -42,7 +45,7 @@ Partial Class CalendarChecker
         DGVSchedules.Margin = New Padding(3, 4, 3, 4)
         DGVSchedules.Name = "DGVSchedules"
         DGVSchedules.RowHeadersWidth = 51
-        DGVSchedules.Size = New Size(1233, 308)
+        DGVSchedules.Size = New Size(1300, 422)
         DGVSchedules.TabIndex = 14
         ' 
         ' MnthC
@@ -57,19 +60,44 @@ Partial Class CalendarChecker
         Label1.AutoSize = True
         Label1.BackColor = Color.Transparent
         Label1.Font = New Font("Century Gothic", 13.8F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
-        Label1.Location = New Point(280, 31)
+        Label1.Location = New Point(313, 130)
         Label1.Name = "Label1"
         Label1.Size = New Size(985, 81)
         Label1.TabIndex = 15
         Label1.Text = resources.GetString("Label1.Text")
         Label1.TextAlign = ContentAlignment.TopCenter
         ' 
+        ' PictureBox1
+        ' 
+        PictureBox1.BackColor = Color.Transparent
+        PictureBox1.Image = CType(resources.GetObject("PictureBox1.Image"), Image)
+        PictureBox1.Location = New Point(1208, 1)
+        PictureBox1.Margin = New Padding(3, 4, 3, 4)
+        PictureBox1.Name = "PictureBox1"
+        PictureBox1.Size = New Size(117, 107)
+        PictureBox1.SizeMode = PictureBoxSizeMode.Zoom
+        PictureBox1.TabIndex = 35
+        PictureBox1.TabStop = False
+        ' 
+        ' Label2
+        ' 
+        Label2.AutoSize = True
+        Label2.BackColor = Color.Transparent
+        Label2.Font = New Font("Segoe UI", 16.2F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
+        Label2.Location = New Point(278, 21)
+        Label2.Name = "Label2"
+        Label2.Size = New Size(159, 38)
+        Label2.TabIndex = 36
+        Label2.Text = "⊹ ࣪ ˖⏱ ୭˚.⊹"
+        ' 
         ' CalendarChecker
         ' 
         AutoScaleDimensions = New SizeF(8F, 20F)
         AutoScaleMode = AutoScaleMode.Font
         BackgroundImage = CType(resources.GetObject("$this.BackgroundImage"), Image)
-        ClientSize = New Size(1261, 580)
+        ClientSize = New Size(1326, 691)
+        Controls.Add(Label2)
+        Controls.Add(PictureBox1)
         Controls.Add(Label1)
         Controls.Add(DGVSchedules)
         Controls.Add(MnthC)
@@ -77,6 +105,7 @@ Partial Class CalendarChecker
         Name = "CalendarChecker"
         Text = "🚘Calendar Checker── .✦"
         CType(DGVSchedules, ComponentModel.ISupportInitialize).EndInit()
+        CType(PictureBox1, ComponentModel.ISupportInitialize).EndInit()
         ResumeLayout(False)
         PerformLayout()
     End Sub
@@ -84,4 +113,6 @@ Partial Class CalendarChecker
     Friend WithEvents DGVSchedules As DataGridView
     Friend WithEvents MnthC As MonthCalendar
     Friend WithEvents Label1 As Label
+    Friend WithEvents PictureBox1 As PictureBox
+    Friend WithEvents Label2 As Label
 End Class
