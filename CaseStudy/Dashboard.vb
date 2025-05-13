@@ -65,6 +65,29 @@ Public Class Dashboard
         End If
         'CLOSES THE CONNECTION
         con.Close()
+        CheckBookingDates()
+    End Sub
+    ' Get the current booking details for the selected row
+    Private Sub CheckBookingDates()
+        If dgLogs.SelectedRows.Count > 0 Then
+            Dim row As DataGridViewRow = dgLogs.SelectedRows(0)
+            Dim currentFromDate As DateTime = Convert.ToDateTime(row.Cells("StartBookDate").Value)
+            Dim currentToDate As DateTime = Convert.ToDateTime(row.Cells("EndBookDate").Value)
+            ' If both FromDOB and ToDOB are in the past, disable FromDOB and allow only ToDOB to be changed
+            If currentFromDate < DateTime.Now AndAlso currentToDate < DateTime.Now Then
+                FromDOB.Enabled = False
+                ' Allow modification of ToDOB (but check if it's before current date)
+                If ToDOB.Value.Date < DateTime.Now.Date Then
+                    ToDOB.Enabled = False
+                Else
+                    ToDOB.Enabled = True
+                End If
+            Else
+                ' If the booking is in the future, allow both FromDOB and ToDOB to be modified
+                FromDOB.Enabled = True
+                ToDOB.Enabled = True
+            End If
+        End If
     End Sub
     'Function that checks if there was a booking that is already existing
     Private Function Checker() As Boolean
@@ -147,11 +170,6 @@ Public Class Dashboard
             MessageBox.Show("The end date must be after the start date.", "INFO", MessageBoxButtons.OK, MessageBoxIcon.Warning)
             Exit Sub
         End If
-        ' Checks if either FromDate or ToDate is in the past
-        If FromDOB.Value.Date < DateTime.Now.Date Or ToDOB.Value.Date < DateTime.Now.Date Then
-            MessageBox.Show("The booking dates cannot be in the past.", "INFO", MessageBoxButtons.OK, MessageBoxIcon.Warning)
-            Exit Sub
-        End If
         'check if user selected a row
         If DGLogs.SelectedRows.Count = 0 Then
             MessageBox.Show("Select a row to update.", "INFO", MessageBoxButtons.OK, MessageBoxIcon.Information)
@@ -194,6 +212,7 @@ Public Class Dashboard
             Dim row As DataGridViewRow = DGLogs.Rows(e.RowIndex)
             FromDOB.Value = Convert.ToDateTime(row.Cells("StartBookDate").Value)
             ToDOB.Value = Convert.ToDateTime(row.Cells("EndBookDate").Value)
+            CheckBookingDates()
         End If
     End Sub
     'Deletes log it has query and the selection where it compares the Username,CarID and Booking ID for a perfect log deletion
