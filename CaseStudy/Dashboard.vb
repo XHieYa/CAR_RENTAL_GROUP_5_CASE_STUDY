@@ -209,10 +209,23 @@ Public Class Dashboard
     'Cell selection that updates the current selected row of date and time From and To
     Private Sub DGLogs_CellContentClick(sender As Object, e As DataGridViewCellEventArgs) Handles DGLogs.CellContentClick
         If e.RowIndex >= 0 Then
-            Dim row As DataGridViewRow = DGLogs.Rows(e.RowIndex)
-            FromDOB.Value = Convert.ToDateTime(row.Cells("StartBookDate").Value)
-            ToDOB.Value = Convert.ToDateTime(row.Cells("EndBookDate").Value)
-            CheckBookingDates()
+            Dim row As DataGridViewRow = dgLogs.Rows(e.RowIndex)
+            Dim currentFromDate As DateTime = Convert.ToDateTime(row.Cells("StartBookDate").Value)
+            Dim currentToDate As DateTime = Convert.ToDateTime(row.Cells("EndBookDate").Value)
+            ' If both FromDOB and ToDOB are in the past, disable FromDOB and allow only ToDOB to be changed
+            If currentFromDate < DateTime.Now AndAlso currentToDate < DateTime.Now Then
+                FromDOB.Enabled = False
+                ' Allow modification of ToDOB (but check if it's before current date)
+                If ToDOB.Value.Date < DateTime.Now.Date Then
+                    ToDOB.Enabled = False
+                Else
+                    ToDOB.Enabled = True
+                End If
+            Else
+                ' If the booking is in the future, allow both FromDOB and ToDOB to be modified
+                FromDOB.Enabled = True
+                ToDOB.Enabled = True
+            End If
         End If
     End Sub
     'Deletes log it has query and the selection where it compares the Username,CarID and Booking ID for a perfect log deletion
