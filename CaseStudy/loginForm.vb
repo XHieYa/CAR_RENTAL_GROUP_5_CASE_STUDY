@@ -81,6 +81,12 @@ Public Class loginForm
             MessageBox.Show("The entered age does not match the selected date of birth.", "Info", MessageBoxButtons.OK, MessageBoxIcon.Warning)
             Return
         End If
+        ' Validate Email using StringBuilder for custom email validation
+        Dim sb As New Text.StringBuilder(txtEmail.Text)
+        If Not sb.ToString().Contains("@") OrElse Not sb.ToString().EndsWith(".com") Then
+            MessageBox.Show("Please enter a valid email address (must contain '@' and end with '.com').", "Invalid Email", MessageBoxButtons.OK, MessageBoxIcon.Warning)
+            Return
+        End If
         ' For username checker turns siusername to username variable
         Dim username As String = txtUsername.Text
         ' Uses the UsernameExists Function mentioned above
