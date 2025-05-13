@@ -147,6 +147,11 @@ Public Class Dashboard
             MessageBox.Show("The end date must be after the start date.", "INFO", MessageBoxButtons.OK, MessageBoxIcon.Warning)
             Exit Sub
         End If
+        ' Checks if either FromDate or ToDate is in the past
+        If FromDOB.Value.Date < DateTime.Now.Date Or ToDOB.Value.Date < DateTime.Now.Date Then
+            MessageBox.Show("The booking dates cannot be in the past.", "INFO", MessageBoxButtons.OK, MessageBoxIcon.Warning)
+            Exit Sub
+        End If
         'check if user selected a row
         If DGLogs.SelectedRows.Count = 0 Then
             MessageBox.Show("Select a row to update.", "INFO", MessageBoxButtons.OK, MessageBoxIcon.Information)

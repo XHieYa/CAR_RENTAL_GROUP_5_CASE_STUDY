@@ -5,29 +5,33 @@ Public Class BookingForm
     Dim con As New SqlConnection("Data Source=(localdb)\MSSQLLocalDB;Initial Catalog=CaseStudy;Integrated Security=True;Connect Timeout=30;Encrypt=False;Trust Server Certificate=False;Application Intent=ReadWrite;Multi Subnet Failover=False")
     Private Sub BtnConfirm_Click(sender As Object, e As EventArgs) Handles BtnConfirm.Click
         PaymentDetailSlip.Close()
-        'Checks if both dates are equal or reversed
+        ' Checks if both dates are equal or reversed
         If ToDOB.Value.Date <= FromDOB.Value.Date Then
-            MessageBox.Show("Not Equal to Each Other Nor The ToDate must be higher than From", "INFO", MessageBoxButtons.OK, MessageBoxIcon.Warning)
+            MessageBox.Show("ToDate must be greater than FromDate", "INFO", MessageBoxButtons.OK, MessageBoxIcon.Warning)
             Exit Sub
-        Else
-            'Checks if schedule thats gonna be input is not between existing dates and divided to by Unique CarID
-            Dim query As String = "SELECT COUNT(*) FROM Booking WHERE CarID = @CarID AND @NewStartDate <= EndBookDate AND @NewEndDate >= StartBookDate"
-            con.Open()
-            Dim cmd As New SqlCommand(query, con)
-            cmd.Parameters.AddWithValue("@CarID", TxtCarID.Text)
-            cmd.Parameters.AddWithValue("@NewStartDate", FromDOB.Value.Date)
-            cmd.Parameters.AddWithValue("@NewEndDate", ToDOB.Value.Date)
-            Dim count As Integer = Convert.ToInt32(cmd.ExecuteScalar())
-            If count > 0 Then
-                MessageBox.Show("Schedule to This Has Been Booked", "INFO", MessageBoxButtons.OK, MessageBoxIcon.Warning)
-                con.Close()
-                Return
-            End If
-            'Shows Payment Slip
-            PaymentDetailSlip.Show()
-            Me.Hide()
-            con.Close()
         End If
+        ' Checks if either FromDate or ToDate is in the past
+        If FromDOB.Value.Date < DateTime.Now.Date Or ToDOB.Value.Date < DateTime.Now.Date Then
+            MessageBox.Show("The booking dates cannot be in the past.", "INFO", MessageBoxButtons.OK, MessageBoxIcon.Warning)
+            Exit Sub
+        End If
+        ' Checks if the schedule to be input is not between existing dates and divided by Unique CarID
+        Dim query As String = "SELECT COUNT(*) FROM Booking WHERE CarID = @CarID AND @NewStartDate <= EndBookDate AND @NewEndDate >= StartBookDate"
+        con.Open()
+        Dim cmd As New SqlCommand(query, con)
+        cmd.Parameters.AddWithValue("@CarID", TxtCarID.Text)
+        cmd.Parameters.AddWithValue("@NewStartDate", FromDOB.Value.Date)
+        cmd.Parameters.AddWithValue("@NewEndDate", ToDOB.Value.Date)
+        Dim count As Integer = Convert.ToInt32(cmd.ExecuteScalar())
+        If count > 0 Then
+            MessageBox.Show("This schedule has already been booked.", "INFO", MessageBoxButtons.OK, MessageBoxIcon.Warning)
+            con.Close()
+            Return
+        End If
+        ' Shows Payment Slip
+        PaymentDetailSlip.Show()
+        Me.Hide()
+        con.Close()
     End Sub
     'Loads The Whole Column
     Private Sub ColumnLoader()

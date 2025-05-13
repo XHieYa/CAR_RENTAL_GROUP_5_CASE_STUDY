@@ -62,26 +62,35 @@ Public Class loginForm
     End Sub
     'Sign in button sub
     Private Sub BtnSignIn_Click(sender As Object, e As EventArgs) Handles BtnSignIn.Click
-        'Checks if every Box Is accounted for
+        ' Automatically update txtAge based on the selected date of birth
+        Dim DateNow As DateTime = dtpDOB.Value.Date
+        Dim age As Integer = AgeaCalculator(DateNow)
+        txtAge.Text = age.ToString()
+        ' Checks if every Box Is accounted for
         For Each item As Control In GroupBox2.Controls
             If (TypeOf item Is TextBox) Then
                 If (item.Text = "") Then
-                    'Error message if things are not field up
-                    MessageBox.Show("All Fields Must be Filled up", "info", MessageBoxButtons.OK, MessageBoxIcon.Information)
+                    ' Error message if things are not filled up
+                    MessageBox.Show("All Fields Must be Filled up", "Info", MessageBoxButtons.OK, MessageBoxIcon.Information)
                     Return
                 End If
             End If
         Next
-        'for username checker turns siusername to username variable
+        ' Validate that the age in txtAge matches the calculated age
+        If Not Integer.TryParse(txtAge.Text, age) OrElse age <> AgeaCalculator(DateNow) Then
+            MessageBox.Show("The entered age does not match the selected date of birth.", "Info", MessageBoxButtons.OK, MessageBoxIcon.Warning)
+            Return
+        End If
+        ' For username checker turns siusername to username variable
         Dim username As String = txtUsername.Text
-        'uses the UsernameExists Function mentioned above
+        ' Uses the UsernameExists Function mentioned above
         If UsernameExists(username) Then
-            'Error Message if Username is Already Existing
+            ' Error Message if Username is Already Existing
             MessageBox.Show("Username already exists. Use Another Username", "Info", MessageBoxButtons.OK, MessageBoxIcon.Information)
         Else
             Try
-                'Individually setting the values and using parameters to be input to their cells
-                Dim query As String = "Insert Into login (Username, Email, Fullname, Password, Age, Sex, Address, Date) VALUES (@Username,@Email, @Fullname, @Password, @Age, @Sex, @Address, @Date)" 'Basically putting the value on their own cells for the database
+                ' Individually setting the values and using parameters to be input to their cells
+                Dim query As String = "Insert Into login (Username, Email, Fullname, Password, Age, Sex, Address, Date) VALUES (@Username,@Email, @Fullname, @Password, @Age, @Sex, @Address, @Date)" ' Basically putting the value on their own cells for the database
                 Dim command As New SqlCommand(query, con)
                 command.Parameters.AddWithValue("@Username", txtUsername.Text)
                 command.Parameters.AddWithValue("@Email", txtEmail.Text)
@@ -92,15 +101,15 @@ Public Class loginForm
                 command.Parameters.AddWithValue("@Address", txtAddress.Text)
                 command.Parameters.AddWithValue("@Date", DateOnly.FromDateTime(dtpDOB.Value.Date))
                 con.Open()
-                'Used to create or change data within the database
+                ' Used to create or change data within the database
                 command.ExecuteNonQuery()
-                'Message confirming your info has been saved
-                MessageBox.Show("Successfuly Registered Please Log-in", "info", MessageBoxButtons.OK, MessageBoxIcon.Information)
+                ' Message confirming your info has been saved
+                MessageBox.Show("Successfully Registered! Please Log-in", "Info", MessageBoxButtons.OK, MessageBoxIcon.Information)
             Catch ex As Exception
-                'Error message if smthng happen within the server
+                ' Error message if something happens within the server
                 MessageBox.Show($"Error adding account: {ex.Message} ")
             Finally
-                'clears sign in for privacy
+                ' Clears sign-in for privacy
                 txtUsername.Text = ""
                 txtFullName.Text = ""
                 txtAge.Text = ""
@@ -109,13 +118,22 @@ Public Class loginForm
                 txtEmail.Text = ""
                 cmbSex.Items.Clear()
                 dtpDOB.Value = Now
-                'Makes you relogin to ensure you created the account and it works succesfully
+                ' Makes you re-login to ensure you created the account and it works successfully
                 GroupBox2.Enabled = False
                 GroupBox1.Enabled = True
                 con.Close()
             End Try
         End If
     End Sub
+    ' Function to calculate the age based on the date of birth
+    Private Function AgeaCalculator(birthDate As DateTime) As Integer
+        Dim today As DateTime = DateTime.Now
+        Dim age As Integer = today.Year - birthDate.Year
+        If today.Month < birthDate.Month Or (today.Month = birthDate.Month And today.Day < birthDate.Day) Then
+            age -= 1
+        End If
+        Return age
+    End Function
     'Just a simple show password
     Private Sub CheckBox1_CheckedChanged(sender As Object, e As EventArgs) Handles cbShowPassLI.CheckedChanged
         If cbShowPassLI.Checked = True Then
