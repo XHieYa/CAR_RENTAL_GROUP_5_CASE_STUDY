@@ -121,8 +121,13 @@ Public Class PaymentDetailSlip
     End Sub
     'same as calculate but with more if condition if they didnt put anything or decided to cancel out or insufficient funds
     Private Sub BtnPayment_Click(sender As Object, e As EventArgs) Handles BtnPayment.Click
+        If (txtContact.Text = "") Then
+            ' Error message if contact wasn't filled up
+            MessageBox.Show("Please put your contact number first before proceeding.", "Info", MessageBoxButtons.OK, MessageBoxIcon.Warning)
+            Return
+        End If
         Dim TotalDays = (ToDate.Value.Date - FromDate.Value.Date).Days
-        CarPay
+        CarPay()
         Dim PaymentInput = InputBox("Total Days:" & TotalDays &
                         ControlChars.NewLine & "Discounted Price: " & Discount &
                         ControlChars.NewLine & "Driver Fee: " & DriverFee &
@@ -133,6 +138,9 @@ Public Class PaymentDetailSlip
             If Val(PaymentInput) < totalpay Then
                 MessageBox.Show("Insufficient Amount.", "Payment Failed.", MessageBoxButtons.OK, MessageBoxIcon.Error)
             Else
+                Dim change As Integer = PaymentInput - totalpay
+                MessageBox.Show("Your change is " & change &
+                                ControlChars.NewLine & "Thank you for booking with WheelAway", "Your Change")
                 BookingAdd()
                 Dashboard.Close()
                 Dashboard.Show()

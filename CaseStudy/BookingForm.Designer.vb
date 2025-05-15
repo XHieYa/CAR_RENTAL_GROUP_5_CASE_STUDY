@@ -357,11 +357,11 @@ Partial Class BookingForm
         DGVSchedules.AllowUserToResizeRows = False
         DGVSchedules.BackgroundColor = Color.LightGoldenrodYellow
         DGVSchedules.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        DGVSchedules.Enabled = False
         DGVSchedules.GridColor = Color.Black
         DGVSchedules.Location = New Point(14, 248)
         DGVSchedules.Margin = New Padding(3, 4, 3, 4)
         DGVSchedules.Name = "DGVSchedules"
+        DGVSchedules.ReadOnly = True
         DGVSchedules.RowHeadersWidth = 51
         DGVSchedules.Size = New Size(1296, 401)
         DGVSchedules.TabIndex = 12

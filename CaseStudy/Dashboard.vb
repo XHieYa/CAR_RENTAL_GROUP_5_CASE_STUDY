@@ -203,20 +203,21 @@ Public Class Dashboard
         End Try
     End Sub
     Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
-        Seaters.Show
-        Hide
+        Seaters.Close()
+        Seaters.Show()
+        Hide()
     End Sub
     'Cell selection that updates the current selected row of date and time From and To
-    Private Sub DGLogs_CellContentClick(sender As Object, e As DataGridViewCellEventArgs) Handles DGLogs.CellContentClick
+    Private Sub DGLogs_CellContentClick(sender As Object, e As DataGridViewCellEventArgs) Handles dgLogs.CellContentClick
         If e.RowIndex >= 0 Then
             Dim row As DataGridViewRow = dgLogs.Rows(e.RowIndex)
             Dim currentFromDate As DateTime = Convert.ToDateTime(row.Cells("StartBookDate").Value)
             Dim currentToDate As DateTime = Convert.ToDateTime(row.Cells("EndBookDate").Value)
             ' If both FromDOB and ToDOB are in the past, disable FromDOB and allow only ToDOB to be changed
-            If currentFromDate < DateTime.Now AndAlso currentToDate < DateTime.Now Then
+            If currentFromDate < DateTime.Now OrElse currentToDate < DateTime.Now Then
                 FromDOB.Enabled = False
                 ' Allow modification of ToDOB (but check if it's before current date)
-                If ToDOB.Value.Date < DateTime.Now.Date Then
+                If currentToDate < DateTime.Now.Date Then
                     ToDOB.Enabled = False
                 Else
                     ToDOB.Enabled = True
@@ -269,6 +270,7 @@ Public Class Dashboard
     End Sub
 
     Private Sub BtnSchedCheck_Click(sender As Object, e As EventArgs) Handles BtnSchedCheck.Click
+        CalendarChecker.Close()
         CalendarChecker.Show()
     End Sub
 
