@@ -6,4 +6,5 @@
 * @TwyLaven 
 * @Daeeeeeeeeee
 * @chillman203
-SELF NOTES: Intialization of public database is a must within the back-end of the system as well as the photos must be pre-uploaded through back-end
+#SELF NOTES:
+Intialization of public database is a must within the back-end of the system as well as the photos must be pre-uploaded through back-end
